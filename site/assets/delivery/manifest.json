@@ -1657,7 +1657,7 @@
       "format": "avif",
       "width": 1080,
       "height": 810,
-      "bytes": 215539
+      "bytes": 216362
     },
     {
       "kind": "recipe",
@@ -1666,7 +1666,7 @@
       "format": "avif",
       "width": 480,
       "height": 360,
-      "bytes": 55280
+      "bytes": 58912
     },
     {
       "kind": "recipe",
@@ -1675,7 +1675,7 @@
       "format": "avif",
       "width": 720,
       "height": 540,
-      "bytes": 112945
+      "bytes": 119885
     },
     {
       "kind": "recipe",
@@ -4627,7 +4627,7 @@
       "format": "webp",
       "width": 1080,
       "height": 810,
-      "bytes": 169174
+      "bytes": 174834
     },
     {
       "kind": "recipe",
@@ -4636,7 +4636,7 @@
       "format": "webp",
       "width": 480,
       "height": 360,
-      "bytes": 45076
+      "bytes": 48526
     },
     {
       "kind": "recipe",
@@ -4645,7 +4645,7 @@
       "format": "webp",
       "width": 720,
       "height": 540,
-      "bytes": 89866
+      "bytes": 96170
     },
     {
       "kind": "recipe",

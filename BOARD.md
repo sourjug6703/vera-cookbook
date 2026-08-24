@@ -19,6 +19,15 @@ publication-safe cookbook reader.
 ## Next
 
 - Add a print / Save as PDF experience after the public reader is live.
+- [ ] `TASK-007` After pending UI work, add a cited recipe-context and
+  cook's-learning layer: Czech/Czechoslovak context, traditional
+  preparation/serving, qualified curiosities, and explanations of unfamiliar
+  techniques or ingredients. Keep it separate from canonical transcription;
+  distinguish evidence, interpretation, and unknowns.
+- [ ] `TASK-008` After the recipe-context work, explore a small stylized
+  portrait mark of Vera for optional reader branding, using owner-supplied
+  photographs and testing it against the existing recipe-study illustration
+  language before it becomes part of the interface.
 
 ## Completed
 

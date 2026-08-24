@@ -137,17 +137,18 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
 .sort-control { display: inline-flex; align-items: center; gap: .4rem; border: 0; color: var(--ink); background: transparent; font-size: .88rem; font-weight: 700; white-space: nowrap; }
 
 .recipe-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding-top: 1.1rem; }
-.recipe-card { min-width: 0; border: 1px solid var(--line); background: var(--paper-strong); transition: transform 180ms cubic-bezier(.16,1,.3,1), box-shadow 180ms ease; }
+.recipe-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); background: var(--paper-strong); transition: transform 180ms cubic-bezier(.16,1,.3,1), box-shadow 180ms ease; }
 .recipe-card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(16,16,15,.18); }
-.card-image { position: relative; display: block; width: 100%; aspect-ratio: 1.27 / 1; overflow: hidden; border: 0; border-bottom: 1px solid var(--line); background-color: #dfd9cd; }
+.card-image { position: relative; display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border: 0; border-bottom: 1px solid var(--line); background-color: #dfd9cd; }
 .card-image picture, .card-image img, .featured-visual picture, .featured-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.card-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(125deg, transparent 52%, rgba(246,242,233,.24) 52% 58%, transparent 58%); mix-blend-mode: screen; }
-.collection-study { position: absolute; z-index: 1; left: .45rem; bottom: .45rem; max-width: calc(100% - .9rem); padding: .25rem .38rem; color: var(--paper); background: var(--ink); font-size: .61rem; font-weight: 800; letter-spacing: .065em; line-height: 1.1; text-align: left; text-transform: uppercase; }
-.card-copy { padding: .8rem .8rem .7rem; }
-.card-order { color: var(--red); font-size: .71rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
-.recipe-card h2 { min-height: 2.15em; margin: .26rem 0 .35rem; font-family: var(--font-display); font-size: clamp(1.35rem, 2vw, 2.05rem); line-height: .95; letter-spacing: -.04em; }
-.card-meta { min-height: 2.55em; margin: 0; color: var(--muted); font-size: .83rem; line-height: 1.22; }
-.card-actions { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: .7rem; padding-top: .6rem; border-top: 1px solid var(--soft); }
+.card-copy { display: flex; min-width: 0; flex-direction: column; padding: 0 .8rem .7rem; }
+.card-order { display: flex; align-items: center; justify-content: space-between; gap: .55rem; min-height: 2.5rem; margin: 0 -.8rem .58rem; padding: .7rem .8rem .45rem; border-bottom: 1px solid var(--line); font-size: .71rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.card-order strong { color: var(--red); }
+.card-order span { color: var(--muted); font-size: .68rem; letter-spacing: .08em; white-space: nowrap; }
+.recipe-card h2 { margin: .12rem 0 .42rem; font-family: var(--font-display); font-size: clamp(1.45rem, 1.8vw, 2.15rem); line-height: .92; letter-spacing: -.04em; }
+.card-czech-name { display: block; margin-top: .14em; color: var(--red-dark); font-size: .8em; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
+.card-meta { margin: 0; color: var(--muted); font-size: .83rem; line-height: 1.22; }
+.card-actions { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: auto; padding-top: .6rem; border-top: 1px solid var(--soft); }
 .open-recipe { border: 0; padding: 0; color: var(--ink); background: transparent; font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .045em; }
 .open-recipe svg { width: .95rem; height: .95rem; margin-left: .25rem; vertical-align: -.12rem; fill: none; stroke: var(--red); stroke-width: 2; stroke-linecap: round; }
 .save-recipe { position: relative; width: 1.7rem; height: 1.8rem; border: 0; background: transparent; }
@@ -186,7 +187,8 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
 .dialog-art img { object-position: 50% 54%; }
 .dialog-recipe-body { padding: 1.1rem 2.4rem 2.4rem; border-top: 1px solid var(--line); }
 .dialog-eyeline { margin: 0 0 .55rem; color: var(--red); font-size: .76rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.dialog-recipe h2 { max-width: 16ch; margin: 0; font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: .84; letter-spacing: -.065em; }
+.dialog-recipe h2 { max-width: 20ch; margin: 0; font-family: var(--font-display); font-size: clamp(2.25rem, 3.6vw, 3.5rem); line-height: .9; letter-spacing: -.04em; }
+.dialog-czech-name { display: block; margin-top: .14em; color: var(--red-dark); font-size: .8em; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
 .dialog-meta { margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .95rem; font-weight: 700; }
 .dialog-actions { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: flex-start; margin: -0.55rem 0 1.5rem; }
 .dialog-save { min-height: 2.8rem; padding: .6rem .9rem; border: 1px solid var(--red-dark); border-radius: 5px; color: #fffaf2; background: var(--red); font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
@@ -239,7 +241,6 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .source-note { display: none; }
   .recipe-library { padding: 1.25rem 1rem 2rem; }
   .recipe-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: .75rem; }
-  .recipe-card h2 { font-size: 1.45rem; }
   .recipe-panel { display: block; padding: 1.25rem 1rem 1.6rem; }
   .featured-recipe { display: block; }
   .featured-visual { margin-top: .9rem; }
@@ -256,5 +257,5 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .site-header { grid-template-columns: minmax(0, 1fr) auto; }
   .recipe-grid { grid-template-columns: 1fr; }
   .library-heading { align-items: flex-start; flex-direction: column; }
-  .recipe-card h2 { min-height: auto; font-size: 1.8rem; }
+  .recipe-card h2 { font-size: 1.8rem; }
 }

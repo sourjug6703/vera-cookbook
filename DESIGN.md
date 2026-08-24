@@ -79,6 +79,13 @@ typography:
     fontSize: "clamp(1.35rem, 2vw, 2.05rem)"
     lineHeight: 0.95
     letterSpacing: "-0.04em"
+  card-czech-title:
+    fontFamily: "Bodoni Cookbook, Didot, serif"
+    fontSize: "0.8em of card-title"
+    fontStyle: italic
+    fontWeight: 400
+    letterSpacing: "-0.025em"
+    color: "{colors.tomato-red-dark}"
   card-meta:
     fontFamily: "Barlow Kitchen, Arial, sans-serif"
     fontSize: "0.83rem"
@@ -124,9 +131,16 @@ typography:
     letterSpacing: "0.12em"
   dialog-title:
     fontFamily: "Bodoni Cookbook, Didot, serif"
-    fontSize: "clamp(3rem, 7vw, 6rem)"
-    lineHeight: 0.84
-    letterSpacing: "-0.065em"
+    fontSize: "clamp(2.25rem, 3.6vw, 3.5rem)"
+    lineHeight: 0.9
+    letterSpacing: "-0.04em"
+  dialog-czech-title:
+    fontFamily: "Bodoni Cookbook, Didot, serif"
+    fontSize: "0.8em of dialog-title"
+    fontStyle: italic
+    fontWeight: 400
+    letterSpacing: "-0.025em"
+    color: "{colors.tomato-red-dark}"
   source-dialog-title:
     fontFamily: "Bodoni Cookbook, Didot, serif"
     fontSize: "clamp(2.5rem, 5vw, 4.75rem)"
@@ -250,7 +264,7 @@ The palette is a warm paper-and-ink base with one culinary red accent; the contr
 
 - **Display** (400, `clamp(2rem, 3.4vw, 3.65rem)`, 0.9 line-height): collection heading; the frontmatter records the distinct wordmark, featured, card, and dialog display clamps alongside their mobile variants.
 - **Headline** (400, `clamp(2.1rem, 3.2vw, 3.5rem)`, 0.88 line-height): featured recipe title.
-- **Title** (400–700, `clamp(1.35rem, 2vw, 2.05rem)`, 0.95 line-height): card titles, panel labels, and smaller section heads.
+- **Title** (400–700, `clamp(1.35rem, 2vw, 2.05rem)`, 0.95 line-height): card titles, panel labels, and smaller section heads. On recipe cards, the Czech name follows as an italic deep-tomato companion at 0.8em.
 - **Body** (400, 1rem, 1.2 line-height): searching, browse labels, metadata, and ingredient previews; dialog recipe lists open to 1.48 line-height for cooking readability.
 - **Label** (800, 0.71–0.82rem, tracked uppercase): recipe order, source stamps, image studies, and direct action labels.
 

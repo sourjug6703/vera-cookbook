@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Local category-label card mockups for Vera's Family Recipes." />
+    <title>Card category-label study · Vera's Family Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root { --study-paper: #f6f2e9; --study-clean: #fffdf7; --study-ink: #10100f; --study-red: #bd2c1f; --study-soft: #ddd7ca; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--study-ink); background: #161615; }
+      .study-shell { width: min(1440px, calc(100% - 2rem)); margin: 1rem auto; border: 2px solid var(--study-ink); background: var(--study-paper); }
+      .study-header { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, .7fr); gap: 2rem; align-items: end; padding: clamp(1.5rem, 4vw, 4rem); border-bottom: 1px solid var(--study-ink); }
+      .study-header h1, .variant-title, .recipe-card h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -.04em; }
+      .study-header h1 { max-width: 12ch; margin: 0; font-size: clamp(2.25rem, 4vw, 4.3rem); line-height: .82; }
+      .study-header p { max-width: 39ch; margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.48; }
+      .study-section { padding: clamp(1.5rem, 4vw, 4rem); border-bottom: 1px solid var(--study-ink); }
+      .study-section:last-child { border-bottom: 0; }
+      .variant-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, .65fr); gap: 2rem; align-items: end; margin-bottom: 1.25rem; }
+      .variant-title { margin: 0; font-size: clamp(2rem, 3.4vw, 3.65rem); line-height: .9; }
+      .variant-note { margin: 0; color: var(--muted); line-height: 1.45; }
+      .mock-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+      .recipe-card { min-width: 0; overflow: hidden; border: 1px solid var(--study-ink); background: var(--study-clean); }
+      .card-image { position: relative; display: block; width: 100%; aspect-ratio: 1.27 / 1; overflow: hidden; background: #dfd9cd; }
+      .card-image picture, .card-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .card-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(125deg, transparent 52%, rgba(246,242,233,.24) 52% 58%, transparent 58%); mix-blend-mode: screen; }
+      .card-copy { padding: 0 .85rem .78rem; }
+      .card-copy h2 { min-height: 2.15em; margin: .32rem 0 .38rem; font-size: clamp(1.35rem, 2vw, 2.05rem); line-height: .95; }
+      .card-meta { min-height: 2.55em; margin: 0; color: var(--muted); font-size: .83rem; line-height: 1.22; }
+      .card-actions { display: flex; align-items: center; justify-content: space-between; margin-top: .72rem; padding-top: .62rem; border-top: 1px solid var(--study-soft); }
+      .read-label { font-size: .78rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+      .save-mark { width: .85rem; height: 1.35rem; border: 2px solid var(--study-ink); border-bottom: 0; }
+
+      /* A — tab: strongest category recognition, with a printed recipe index below. */
+      .tab-label { display: inline-flex; align-items: center; min-height: 1.8rem; margin: 0 0 .58rem -.85rem; padding: .32rem .62rem .3rem .85rem; color: var(--study-clean); background: var(--study-red); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .tab-order { margin: 0; color: var(--study-ink); font-size: .68rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+
+      /* B — running line: the quietest option, putting category and recipe number on one editorial line. */
+      .line-label { display: flex; align-items: center; justify-content: space-between; gap: .8rem; min-height: 2.5rem; margin: 0 -.85rem .58rem; padding: .7rem .85rem .45rem; border-bottom: 1px solid var(--study-ink); }
+      .line-label strong { color: var(--study-red); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+      .line-label span { color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+      /* C — index pair: category leads, while the recipe number becomes a compact opposing column. */
+      .index-label { display: grid; grid-template-columns: auto 1fr; gap: .62rem; align-items: baseline; min-height: 2.45rem; margin: 0 0 .45rem; padding-top: .65rem; }
+      .index-label strong { color: var(--study-red); font-family: var(--font-display); font-size: 1.38rem; font-weight: 600; letter-spacing: -.02em; line-height: 1; }
+      .index-label span { padding-left: .62rem; border-left: 1px solid var(--study-ink); font-size: .7rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+
+      @media (max-width: 800px) {
+        .study-header, .variant-heading { grid-template-columns: 1fr; gap: .9rem; }
+        .mock-grid { grid-template-columns: 1fr; }
+        .recipe-card { display: grid; grid-template-columns: minmax(9rem, .78fr) minmax(0, 1.22fr); }
+        .card-image { aspect-ratio: auto; min-height: 12rem; }
+      }
+      @media (max-width: 520px) {
+        .study-shell { width: 100%; margin: 0; border-width: 0; }
+        .recipe-card { display: block; }
+        .card-image { aspect-ratio: 1.27 / 1; min-height: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="study-shell">
+      <header class="study-header">
+        <h1>Category labels below the image</h1>
+        <p>Three card treatments that move “Soups” into the text space. Each retains the existing image crop and uses the current AVIF/WebP delivery assets.</p>
+      </header>
+
+      <section class="study-section" aria-labelledby="tab-title">
+        <div class="variant-heading"><h2 class="variant-title" id="tab-title">A. Section tab</h2><p class="variant-note">The most pronounced option. “Soups” becomes a small printed tab at the top of the text block, with the recipe number immediately beneath it.</p></div>
+        <div class="mock-grid" data-variant="tab">
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="card-copy"><p class="tab-label">Soups</p><p class="tab-order">Recipe 064</p><h2>Goulash soup · Gulášová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0065-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="card-copy"><p class="tab-label">Soups</p><p class="tab-order">Recipe 065</p><h2>Cream of chicken soup · Krém z kuřat</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0066-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="card-copy"><p class="tab-label">Soups</p><p class="tab-order">Recipe 066</p><h2>Tripe soup · Dršťková polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+        </div>
+      </section>
+
+      <section class="study-section" aria-labelledby="line-title">
+        <div class="variant-heading"><h2 class="variant-title" id="line-title">B. Running collection line</h2><p class="variant-note">The quietest and most editorial option. Category and recipe number share one ruled line before the title, so the title gets the next clear beat.</p></div>
+        <div class="mock-grid" data-variant="line">
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="card-copy"><p class="line-label"><strong>Soups</strong><span>Recipe 064</span></p><h2>Goulash soup · Gulášová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0065-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="card-copy"><p class="line-label"><strong>Soups</strong><span>Recipe 065</span></p><h2>Cream of chicken soup · Krém z kuřat</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0066-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="card-copy"><p class="line-label"><strong>Soups</strong><span>Recipe 066</span></p><h2>Tripe soup · Dršťková polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+        </div>
+      </section>
+
+      <section class="study-section" aria-labelledby="index-title">
+        <div class="variant-heading"><h2 class="variant-title" id="index-title">C. Recipe index pair</h2><p class="variant-note">The most bookish option. A compact red index carries the recipe number, while the category name becomes the first full line of the card’s copy.</p></div>
+        <div class="mock-grid" data-variant="index">
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="card-copy"><p class="index-label"><strong>064</strong><span>Soups</span></p><h2>Goulash soup · Gulášová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0065-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="card-copy"><p class="index-label"><strong>065</strong><span>Soups</span></p><h2>Cream of chicken soup · Krém z kuřat</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          <article class="recipe-card"><div class="card-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0066-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="card-copy"><p class="index-label"><strong>066</strong><span>Soups</span></p><h2>Tripe soup · Dršťková polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="read-label">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Local Czech-name typography studies for Vera's Family Recipes." />
+    <title>Czech-name studies · Vera's Family Recipes</title>
+    <link rel="stylesheet" href="styles.css?v=portrait-cards-20260824" />
+    <style>
+      :root { --study-red: #852116; --study-sage: #405744; --study-plum: #623c4c; }
+      body { background: var(--ink); }
+      .study-shell { width: min(1680px, calc(100% - 2rem)); margin: 1rem auto; border: 2px solid var(--line); background: var(--paper); }
+      .study-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, .72fr); gap: 2rem; align-items: end; padding: clamp(1.7rem, 4vw, 4rem); border-bottom: 1px solid var(--line); }
+      .study-intro h1, .variant-heading h2 { margin: 0; font-family: var(--font-display); font-weight: 400; letter-spacing: -.04em; }
+      .study-intro h1 { max-width: 12ch; font-size: clamp(2.25rem, 4vw, 4.3rem); line-height: .84; }
+      .study-intro p { max-width: 40ch; margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.45; }
+      .variant { padding: clamp(1.6rem, 3.2vw, 3.2rem); border-bottom: 1px solid var(--line); }
+      .variant:last-child { border-bottom: 0; }
+      .variant-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, .72fr); gap: 2rem; align-items: end; margin-bottom: 1.1rem; }
+      .variant-heading h2 { font-size: clamp(1.85rem, 3vw, 3rem); line-height: .9; }
+      .variant-heading p { max-width: 38ch; margin: 0; color: var(--muted); line-height: 1.45; }
+      .variant-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+      .study-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); background: var(--paper-strong); }
+      .study-image { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-bottom: 1px solid var(--line); background: #dfd9cd; }
+      .study-image picture, .study-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .study-copy { display: flex; min-height: 12rem; flex-direction: column; padding: 0 .8rem .7rem; }
+      .collection-line { display: flex; align-items: center; justify-content: space-between; gap: .55rem; min-height: 2.5rem; margin: 0 -.8rem .58rem; padding: .7rem .8rem .45rem; border-bottom: 1px solid var(--line); font-size: .71rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+      .collection-line strong { color: var(--red); }
+      .collection-line span { color: var(--muted); font-size: .68rem; letter-spacing: .08em; white-space: nowrap; }
+      .english-name { margin: .08rem 0 0; color: var(--ink); font-family: var(--font-display); font-size: clamp(1.55rem, 2.3vw, 2.25rem); font-weight: 400; line-height: .92; letter-spacing: -.04em; }
+      .czech-name { display: block; }
+      .meta { margin: auto 0 0; padding-top: .55rem; border-top: 1px solid var(--soft); color: var(--muted); font-size: .83rem; line-height: 1.22; }
+
+      /* A: handwritten emphasis, with the Czech name reading like a familial second voice. */
+      .heritage .czech-name { margin-top: .14em; color: var(--study-red); font-family: var(--font-display); font-size: .8em; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
+
+      /* B: a compact indexed translation, deliberately distinct from the display title. */
+      .imprint .czech-name { margin-top: .62rem; color: var(--study-sage); font-family: var(--font-ui); font-size: .42em; font-style: normal; font-weight: 800; letter-spacing: .095em; line-height: 1.18; text-transform: uppercase; }
+
+      /* C: an equal but quieter title, colored like a deep cooking wine rather than a UI signal. */
+      .wine-note .czech-name { margin-top: .2em; color: var(--study-plum); font-family: var(--font-display); font-size: .68em; font-style: normal; font-weight: 600; letter-spacing: -.025em; line-height: .98; }
+
+      @media (max-width: 900px) {
+        .study-intro, .variant-heading { grid-template-columns: 1fr; gap: .9rem; }
+        .variant-grid { grid-template-columns: 1fr; }
+        .study-card { display: grid; grid-template-columns: minmax(12rem, .85fr) minmax(0, 1.15fr); }
+        .study-image { height: 100%; min-height: 14rem; aspect-ratio: auto; border-right: 1px solid var(--line); border-bottom: 0; }
+      }
+      @media (max-width: 560px) {
+        .study-shell { width: 100%; margin: 0; border-width: 0; }
+        .study-card { display: block; }
+        .study-image { min-height: 0; aspect-ratio: 4 / 3; border-right: 0; border-bottom: 1px solid var(--line); }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="study-shell">
+      <header class="study-intro">
+        <h1>Czech dish-name studies</h1>
+        <p>Three ways to let the Czech name feel intentional and alive without competing with the recipe’s English title or the practical card information.</p>
+      </header>
+
+      <section class="variant heritage" aria-labelledby="heritage-title">
+        <div class="variant-heading"><h2 id="heritage-title">A. Heritage italic</h2><p>The Czech name becomes a warm, slightly personal second voice in a deep tomato tone. It is the most romantic interpretation.</p></div>
+        <div class="variant-grid">
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 064</span></p><h3 class="english-name">Goulash soup<span class="czech-name">Gulášová polévka</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 065</span></p><h3 class="english-name">Cream of chicken soup<span class="czech-name">Krém z kuřat</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 066</span></p><h3 class="english-name">Tripe soup<span class="czech-name">Dršťková polévka</span></h3><p class="meta">Serves 6 · Preparation time: 1 hour</p></div></article>
+        </div>
+      </section>
+
+      <section class="variant imprint" aria-labelledby="imprint-title">
+        <div class="variant-heading"><h2 id="imprint-title">B. Czech imprint</h2><p>The Czech name becomes a clear, small printed imprint in dark sage. This is the most library-like and most compact option.</p></div>
+        <div class="variant-grid">
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 064</span></p><h3 class="english-name">Goulash soup<span class="czech-name">Gulášová polévka</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 065</span></p><h3 class="english-name">Cream of chicken soup<span class="czech-name">Krém z kuřat</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 066</span></p><h3 class="english-name">Tripe soup<span class="czech-name">Dršťková polévka</span></h3><p class="meta">Serves 6 · Preparation time: 1 hour</p></div></article>
+        </div>
+      </section>
+
+      <section class="variant wine-note" aria-labelledby="wine-title">
+        <div class="variant-heading"><h2 id="wine-title">C. Wine-note serif</h2><p>The Czech name stays in the display family but becomes a deep plum companion title. It gives both languages more equal weight.</p></div>
+        <div class="variant-grid">
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 064</span></p><h3 class="english-name">Goulash soup<span class="czech-name">Gulášová polévka</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 065</span></p><h3 class="english-name">Cream of chicken soup<span class="czech-name">Krém z kuřat</span></h3><p class="meta">Serves 6 · Preparation time: 2 hours</p></div></article>
+          <article class="study-card"><div class="study-image"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="study-copy"><p class="collection-line"><strong>Soups</strong><span>Recipe 066</span></p><h3 class="english-name">Tripe soup<span class="czech-name">Dršťková polévka</span></h3><p class="meta">Serves 6 · Preparation time: 1 hour</p></div></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

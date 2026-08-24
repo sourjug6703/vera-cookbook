@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Local horizontal recipe-card mockup for Vera's Family Recipes." />
+    <title>Horizontal recipe cards · Vera's Family Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body { background: var(--ink); }
+      .mock-note { max-width: 1680px; margin: 0 auto; padding: .55rem 2.35rem; color: var(--paper); background: var(--ink); font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-align: center; text-transform: uppercase; }
+      .mock-layout { display: grid; grid-template-columns: 238px minmax(0, 1fr) 300px; min-height: calc(100vh - 136px); }
+      .mock-nav { padding: 1.65rem 1.2rem 1.6rem 2.35rem; border-right: 1px solid var(--line); }
+      .mock-tabs { display: grid; gap: .3rem; margin-top: 1.2rem; }
+      .mock-tab { display: grid; grid-template-columns: 12px 1fr auto; gap: .68rem; align-items: center; padding: .6rem .45rem; border-bottom: 1px solid rgba(16,16,15,.15); font-size: .98rem; font-weight: 600; }
+      .mock-tab::before { content: ""; width: 9px; height: 9px; background: var(--ink); clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%); }
+      .mock-tab.is-active { color: var(--red); }
+      .mock-tab.is-active::before { background: var(--red); border-radius: 50%; clip-path: none; }
+      .mock-tab span { color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; }
+      .mock-source { display: flex; gap: .6rem; margin-top: 1.55rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; line-height: 1.3; }
+      .mock-source i { flex: none; width: .63rem; height: .63rem; margin-top: .25rem; border-radius: 50%; background: var(--red); }
+      .mock-source p { margin: 0; }
+      .mock-source strong { color: var(--ink); }
+      .mock-library { min-width: 0; padding: 1.6rem 1.45rem 3rem; }
+      .mock-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--line); }
+      .mock-heading h1 { margin: 0; font-family: var(--font-display); font-size: clamp(2rem, 3.4vw, 3.65rem); font-weight: 400; line-height: .9; letter-spacing: -.04em; }
+      .mock-heading p { margin: .45rem 0 0; color: var(--muted); font-size: .93rem; }
+      .mock-heading button { border: 0; color: var(--ink); background: transparent; font: inherit; font-size: .88rem; font-weight: 700; white-space: nowrap; }
+      .horizontal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding-top: 1.1rem; }
+      .horizontal-card { display: grid; grid-template-columns: minmax(9rem, .88fr) minmax(0, 1.12fr); min-width: 0; overflow: hidden; border: 1px solid var(--line); background: var(--paper-strong); transition: transform 180ms cubic-bezier(.16,1,.3,1), box-shadow 180ms ease; }
+      .horizontal-card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(16,16,15,.18); }
+      .horizontal-art { position: relative; min-height: 14rem; overflow: hidden; border-right: 1px solid var(--line); background: #dfd9cd; }
+      .horizontal-art picture, .horizontal-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .horizontal-art::after { position: absolute; inset: 0; content: ""; background: linear-gradient(125deg, transparent 52%, rgba(246,242,233,.24) 52% 58%, transparent 58%); mix-blend-mode: screen; pointer-events: none; }
+      .horizontal-copy { display: flex; min-width: 0; flex-direction: column; padding: 0 .85rem .78rem; }
+      .running-line { display: flex; align-items: center; justify-content: space-between; gap: .6rem; min-height: 2.5rem; margin: 0 -.85rem .58rem; padding: .7rem .85rem .45rem; border-bottom: 1px solid var(--line); }
+      .running-line strong { color: var(--red); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+      .running-line span { color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+      .horizontal-copy h2 { margin: .12rem 0 .42rem; font-family: var(--font-display); font-size: clamp(1.45rem, 1.8vw, 2.15rem); font-weight: 400; line-height: .92; letter-spacing: -.04em; }
+      .horizontal-copy .card-meta { min-height: 0; }
+      .horizontal-copy .card-actions { margin-top: auto; }
+      .mock-panel { padding: 1.65rem 1.3rem 1.5rem; border-left: 1px solid var(--line); background: rgba(255,253,247,.34); }
+      .mock-panel h2 { margin: 0; font-family: var(--font-display); font-size: 1.64rem; font-weight: 700; }
+      .mock-feature-art { position: relative; aspect-ratio: 1.25 / 1; overflow: hidden; margin-top: 1rem; border: 1px solid var(--line); background: #dfd9cd; }
+      .mock-feature-art picture, .mock-feature-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .mock-feature-art::after { position: absolute; right: 0; bottom: 0; content: "Featured / source-checked"; padding: .32rem .48rem; color: var(--paper); background: var(--ink); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .mock-feature-title { margin: .95rem 0 .45rem; font-family: var(--font-display); font-size: clamp(2.1rem, 3.2vw, 3.5rem); font-weight: 400; line-height: .88; letter-spacing: -.04em; }
+      .mock-feature-meta { margin: 0; padding-bottom: .9rem; border-bottom: 1px solid var(--line); font-size: .83rem; font-weight: 700; }
+      .mock-ingredients { margin: 1rem 0 .55rem; font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
+      .mock-ingredient-list { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; font-size: .91rem; line-height: 1.2; }
+      .mock-ingredient-list li { position: relative; padding-left: .9rem; }
+      .mock-ingredient-list li::before { position: absolute; top: .35rem; left: 0; width: .34rem; height: .34rem; content: ""; border-radius: 50%; background: var(--red); }
+      .mock-feature-action { width: 100%; min-height: 2.95rem; margin-top: 1.25rem; border: 1px solid var(--red-dark); border-radius: 5px; color: #fffaf2; background: var(--red); font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
+      @media (max-width: 1250px) {
+        .mock-layout { grid-template-columns: 210px minmax(0, 1fr); }
+        .mock-panel { grid-column: 1 / -1; display: grid; grid-template-columns: 210px minmax(220px, .75fr) minmax(0, 1.25fr); gap: 1.25rem; padding-left: 2.35rem; border-top: 1px solid var(--line); border-left: 0; }
+        .mock-panel h2 { grid-row: 1 / span 3; }
+        .mock-feature-art { grid-row: 1 / span 3; margin: 0; }
+        .mock-feature-title, .mock-feature-meta, .mock-ingredients, .mock-ingredient-list, .mock-feature-action { grid-column: 3; }
+        .mock-feature-title { margin: 0 0 .45rem; }
+        .mock-ingredients { margin-top: .2rem; }
+      }
+      @media (max-width: 880px) {
+        .horizontal-grid { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 780px) {
+        .mock-note { padding: .55rem 1rem; font-size: .71rem; }
+        .mock-layout { display: block; }
+        .mock-nav { padding: 1rem; border-right: 0; border-bottom: 1px solid var(--line); }
+        .mock-tabs { display: flex; gap: .55rem; overflow-x: auto; margin-top: .7rem; }
+        .mock-tab { flex: 0 0 auto; grid-template-columns: 12px auto; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 99px; font-size: .86rem; }
+        .mock-tab span, .mock-source { display: none; }
+        .mock-library { padding: 1.25rem 1rem 2rem; }
+        .mock-panel { display: block; padding: 1.25rem 1rem 1.6rem; }
+        .mock-feature-art { margin-top: .9rem; }
+        .mock-feature-title { margin-top: .9rem; }
+      }
+      @media (max-width: 500px) {
+        .mock-heading { align-items: flex-start; flex-direction: column; }
+        .horizontal-card { grid-template-columns: 1fr; }
+        .horizontal-art { min-height: 0; aspect-ratio: 1.35 / 1; border-right: 0; border-bottom: 1px solid var(--line); }
+        .horizontal-copy h2 { font-size: 2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="mock-note">Layout study · Horizontal recipe cards with B. Running collection line · Not yet applied to the reader</p>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top">Vera's<span>Family Recipes</span></a>
+        <label class="search-field"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg><input type="search" placeholder="Find a recipe" /></label>
+        <button class="saved-button" type="button">Saved recipes</button>
+      </header>
+      <main class="mock-layout" id="top">
+        <aside class="mock-nav" aria-label="Browse collection">
+          <div class="nav-heading">Browse by</div>
+          <div class="mock-tabs">
+            <div class="mock-tab"><span>All recipes</span><span>110</span></div>
+            <div class="mock-tab"><span>Meats &amp; poultry</span><span>42</span></div>
+            <div class="mock-tab"><span>Fish</span><span>5</span></div>
+            <div class="mock-tab"><span>Sides &amp; dumplings</span><span>13</span></div>
+            <div class="mock-tab is-active"><span>Soups</span><span>7</span></div>
+            <div class="mock-tab"><span>Baking &amp; sweets</span><span>43</span></div>
+          </div>
+          <div class="mock-source"><i></i><p><strong>110 source-checked recipes.</strong><br />Browse groups follow the cookbook's sequence.</p></div>
+        </aside>
+        <section class="mock-library" aria-labelledby="collection-title">
+          <div class="mock-heading"><div><h1 id="collection-title">The full collection</h1><p>7 recipes in Soups</p></div><button type="button">Cookbook order⌄</button></div>
+          <div class="horizontal-grid">
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 064</span></p><h2>Goulash soup · Gulášová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0065-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0065-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0065-720.webp" alt="Cream of chicken soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 065</span></p><h2>Cream of chicken soup · Krém z kuřat</h2><p class="card-meta">Serves 6 · Preparation time: 2 hours</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0066-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0066-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0066-720.webp" alt="Tripe soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 066</span></p><h2>Tripe soup · Dršťková polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0067-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0067-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0067-720.webp" alt="Mushroom soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 067</span></p><h2>Mushroom soup · Houbová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0068-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0068-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0068-720.webp" alt="Garlic soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 068</span></p><h2>Garlic soup · Česneková polévka</h2><p class="card-meta">Serves 6 · Preparation time: 35 minutes</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+            <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0069-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0069-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0069-720.webp" alt="Potato soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 069</span></p><h2>Potato soup · Bramborová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
+          </div>
+        </section>
+        <aside class="mock-panel">
+          <h2>Tonight's table</h2>
+          <div class="mock-feature-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div>
+          <h3 class="mock-feature-title">Goulash soup · Gulášová polévka</h3>
+          <p class="mock-feature-meta">Serves 6 · Preparation time: 2 hours · Soups</p>
+          <h3 class="mock-ingredients">Ingredients preview</h3>
+          <ul class="mock-ingredient-list"><li>1-1/2 quarts beef stock</li><li>1 lb. beef stew meat</li><li>3 tablespoons vegetable oil</li><li>1 medium onion, finely chopped</li></ul>
+          <button class="mock-feature-action" type="button">View full recipe</button>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

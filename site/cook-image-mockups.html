@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Local comparison of five cook-view image treatments for Vera's Family Recipes." />
+    <title>Cook-view image directions · Vera's Family Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root { --mock-ink: #10100f; --mock-red: #bd2c1f; --mock-paper: #f6f2e9; --mock-clean: #fffdf7; --mock-line: #161615; --mock-soft: #ddd7ca; --mock-muted: #726d65; --mock-image: image-set(url("assets/delivery/recipes/avif/vera-r0004-1080.avif") type("image/avif") 1x, url("assets/delivery/recipes/webp/vera-r0004-1080.webp") type("image/webp") 1x); }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { min-width: 0; margin: 0; color: var(--mock-ink); background: #161615; }
+      .mock-shell { width: min(1440px, calc(100% - 2rem)); margin: 1rem auto; overflow: clip; border: 2px solid var(--mock-line); background: var(--mock-paper); }
+      .mock-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; align-items: end; padding: clamp(1.25rem, 3vw, 3rem); border-bottom: 2px solid var(--mock-line); }
+      .mock-header h1, .direction h2, .recipe-title { margin: 0; font-family: var(--font-display); font-weight: 400; letter-spacing: -.04em; }
+      .mock-header h1 { max-width: 13ch; font-size: clamp(2.25rem, 6vw, 4.3rem); line-height: .82; }
+      .mock-header p { max-width: 48ch; margin: 1rem 0 0; color: var(--mock-muted); font-size: .98rem; line-height: 1.42; }
+      .direction-nav { display: flex; flex-wrap: wrap; gap: .45rem; justify-content: flex-end; max-width: 28rem; }
+      .direction-nav a { min-height: 2.3rem; padding: .55rem .7rem; border: 1px solid var(--mock-line); border-radius: 999px; color: var(--mock-ink); background: var(--mock-clean); font-size: .75rem; font-weight: 800; letter-spacing: .04em; text-decoration: none; text-transform: uppercase; }
+      .direction-nav a:hover, .direction-nav a:focus-visible { color: #fffaf2; background: var(--mock-red); outline: 3px solid var(--mock-red); outline-offset: 2px; }
+      .direction { padding: clamp(1.25rem, 3vw, 3rem); border-bottom: 1px solid var(--mock-line); scroll-margin-top: 1rem; }
+      .direction:last-child { border-bottom: 0; }
+      .direction-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, .65fr); gap: 2rem; align-items: end; margin-bottom: 1.25rem; }
+      .direction h2 { max-width: 17ch; font-size: clamp(2.15rem, 4vw, 4.3rem); line-height: .86; }
+      .direction-heading p { margin: 0; color: var(--mock-muted); line-height: 1.4; }
+      .kitchen-sheet { position: relative; overflow: hidden; border: 1px solid var(--mock-line); background: var(--mock-clean); }
+      .recipe-copy { position: relative; z-index: 1; min-width: 0; }
+      .recipe-heading { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--mock-line); }
+      .recipe-heading p { margin: 0 0 .45rem; color: var(--mock-red); font-size: .72rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+      .recipe-title { max-width: 13ch; font-size: clamp(3rem, 5vw, 6rem); line-height: .83; }
+      .recipe-meta { margin: .8rem 0 0; font-size: .84rem; font-weight: 700; }
+      .recipe-columns { display: grid; grid-template-columns: minmax(12rem, .78fr) minmax(16rem, 1.28fr); gap: clamp(1.25rem, 4vw, 4rem); }
+      .recipe-columns section + section { border-left: 1px solid var(--mock-soft); padding-left: clamp(1.25rem, 4vw, 4rem); }
+      .recipe-columns h3 { margin: 0 0 .75rem; font-family: var(--font-display); font-size: 1.7rem; letter-spacing: -.02em; }
+      .recipe-columns ul, .recipe-columns ol { margin: 0; padding-left: 1.1rem; font-size: .98rem; line-height: 1.55; }
+      .recipe-columns li + li { margin-top: .5rem; }
+      .recipe-columns li::marker { color: var(--mock-red); font-weight: 800; }
+      picture { display: block; }
+      picture img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .asset-note { margin: 1rem 0 0; color: var(--mock-muted); font-size: .78rem; line-height: 1.35; }
+      .asset-note strong { color: var(--mock-ink); }
+
+      /* 1 — a practical, above-the-fold photo strip. */
+      .strip-sheet { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(20rem, .9fr); min-height: 35rem; }
+      .strip-art { min-height: 21rem; border-right: 1px solid var(--mock-line); }
+      .strip-art img { object-position: 50% 48%; }
+      .strip-sheet .recipe-copy { align-self: center; padding: clamp(1.5rem, 4vw, 4rem); }
+      .panorama-sheet { overflow: visible; }
+      .panorama-art { height: clamp(14rem, 31vw, 27rem); border-bottom: 1px solid var(--mock-line); }
+      .panorama-art img { object-position: 50% 56%; }
+      .panorama-sheet .recipe-copy { padding: clamp(1.5rem, 4vw, 3.5rem); }
+      .panorama-sheet .recipe-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.4rem; align-items: end; }
+      .panorama-sheet .recipe-heading p { grid-column: 1 / -1; }
+      .panorama-sheet .recipe-meta { max-width: 15rem; padding: .7rem 0; border-top: 1px solid var(--mock-line); }
+      .bookfold-sheet { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(14rem, .82fr); min-height: 34rem; }
+      .bookfold-sheet .recipe-copy { order: -1; padding: clamp(1.5rem, 4vw, 4rem); }
+      .bookfold-art { position: sticky; top: 1rem; height: calc(100vh - 2rem); min-height: 30rem; border-left: 1px solid var(--mock-line); }
+      .bookfold-art img { object-position: 58% center; }
+
+      /* 2 — one CSS background, with an opaque reading surface above it. */
+      .watermark-sheet { isolation: isolate; padding: clamp(1.25rem, 5vw, 5.5rem); }
+      .watermark-sheet::before { position: absolute; z-index: -2; inset: 0; content: ""; background: center 38% / cover no-repeat var(--mock-image); filter: grayscale(1) contrast(.9); opacity: .18; }
+      .watermark-sheet::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, rgba(246,242,233,.94), rgba(246,242,233,.78)); }
+      .watermark-sheet .recipe-copy { max-width: 54rem; padding: clamp(1.25rem, 3vw, 3rem); border: 1px solid rgba(22,22,21,.72); background: rgba(255,253,247,.9); }
+
+      /* 3 — the recommended desktop cook layout: a sticky picture beside working copy. */
+      .side-sheet { display: grid; grid-template-columns: minmax(16rem, .75fr) minmax(0, 1.25fr); align-items: start; }
+      .side-art { position: sticky; top: 1rem; height: 37rem; border-right: 1px solid var(--mock-line); }
+      .side-art img { object-position: 52% center; }
+      .side-sheet .recipe-copy { padding: clamp(1.5rem, 4vw, 4rem); }
+
+      /* 4 — a restrained ghost study, never behind the actual prose. */
+      .margin-sheet { min-height: 37rem; padding: clamp(1.5rem, 5vw, 5rem); }
+      .margin-ghost { position: absolute; right: -9%; bottom: -4%; width: min(48%, 35rem); aspect-ratio: .74; opacity: .18; filter: grayscale(1) contrast(1.15); transform: rotate(3deg); }
+      .margin-ghost::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, var(--mock-clean) 0%, transparent 50%); }
+      .margin-sheet .recipe-copy { width: min(100%, 46rem); padding: clamp(1rem, 3vw, 2.25rem); background: var(--mock-clean); }
+
+      /* 5 — one existing study becomes a sticky canvas that recedes as cooking begins. */
+      .canvas-sheet { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); min-height: 42rem; background: var(--mock-ink); }
+      .canvas-art { position: sticky; top: 0; height: 100vh; min-height: 42rem; }
+      .canvas-art img { filter: saturate(.84) contrast(1.04); }
+      .canvas-art::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 55%, rgba(16,16,15,.84)); }
+      .canvas-sheet .recipe-copy { align-self: start; min-height: 100vh; padding: clamp(1.5rem, 5vw, 5rem); background: var(--mock-paper); }
+      @supports (animation-timeline: view()) { .canvas-art { animation: canvas-recedes linear both; animation-timeline: view(); animation-range: exit 0% exit 70%; } @keyframes canvas-recedes { to { clip-path: inset(0 0 78% 0); filter: grayscale(1); } } }
+      .fold-canvas { padding-bottom: clamp(1.5rem, 4vw, 4rem); background: var(--mock-paper); }
+      .fold-canvas-art { height: min(56vh, 34rem); }
+      .fold-canvas-art img { object-position: 50% 54%; }
+      .fold-canvas .recipe-copy { width: min(92%, 62rem); margin: clamp(-5rem, -9vw, -2rem) auto 0; padding: clamp(1.5rem, 4vw, 3.5rem); border: 1px solid var(--mock-line); background: var(--mock-clean); }
+      .dissolve-canvas { padding-bottom: clamp(1.5rem, 4vw, 4rem); background: var(--mock-paper); }
+      .dissolve-art { height: min(59vh, 36rem); margin-bottom: clamp(-6rem, -10vw, -2rem); mask-image: linear-gradient(to bottom, #000 0%, #000 69%, transparent 100%); }
+      .dissolve-art img { object-position: 50% 54%; }
+      .dissolve-canvas .recipe-copy { width: min(92%, 62rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem); border: 1px solid var(--mock-line); background: var(--mock-clean); }
+      .frost-canvas { padding-bottom: clamp(1.5rem, 4vw, 4rem); background: var(--mock-paper); }
+      .frost-art { position: relative; height: min(58vh, 35rem); overflow: hidden; }
+      .frost-art::after { position: absolute; inset: 0; content: ""; background: linear-gradient(to bottom, transparent 46%, rgba(246,242,233,.96) 100%); backdrop-filter: blur(10px) saturate(.76); mask-image: linear-gradient(to bottom, transparent 42%, #000 100%); }
+      .frost-art img { object-position: 50% 54%; }
+      .frost-canvas .recipe-copy { width: min(92%, 62rem); margin: clamp(-4rem, -7vw, -2rem) auto 0; padding: clamp(1.5rem, 4vw, 3.5rem); border: 1px solid var(--mock-line); background: var(--mock-clean); }
+      .feather-canvas { padding: clamp(1.5rem, 4vw, 4rem) 0; background: var(--mock-paper); }
+      .feather-art { width: min(92%, 75rem); height: min(53vh, 32rem); margin: 0 auto clamp(1.25rem, 3vw, 2.5rem); mask-image: radial-gradient(ellipse 89% 88% at 50% 43%, #000 60%, transparent 100%); }
+      .feather-art img { object-position: 50% 54%; }
+      .feather-canvas .recipe-copy { width: min(85%, 52rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem); border-top: 1px solid var(--mock-line); border-bottom: 1px solid var(--mock-line); background: var(--mock-paper); }
+      .broad-feather-canvas { padding: clamp(1.25rem, 3vw, 3rem) 0; background: var(--mock-paper); }
+      .broad-feather-art { width: min(96%, 82rem); height: min(57vh, 35rem); margin: 0 auto clamp(.8rem, 2vw, 1.5rem); mask-image: radial-gradient(ellipse 104% 93% at 50% 42%, #000 65%, transparent 100%); }
+      .broad-feather-art img { object-position: 50% 54%; }
+      .broad-feather-canvas .recipe-copy { width: min(86%, 54rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem); border-top: 1px solid var(--mock-line); background: var(--mock-paper); }
+      .horizon-feather-canvas { padding: clamp(1.25rem, 3vw, 3rem) 0; background: var(--mock-paper); }
+      .horizon-feather-art { width: min(94%, 78rem); height: min(55vh, 33rem); margin: 0 auto clamp(-3rem, -5vw, -1.5rem); mask-image: radial-gradient(ellipse 112% 86% at 50% 24%, #000 57%, transparent 100%); }
+      .horizon-feather-art img { object-position: 50% 54%; }
+      .horizon-feather-canvas .recipe-copy { position: relative; width: min(86%, 54rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem); border: 1px solid var(--mock-line); background: var(--mock-clean); }
+      .center-feather-canvas { padding: clamp(1.5rem, 4vw, 4rem) 0; background: var(--mock-paper); }
+      .center-feather-art { width: min(78%, 58rem); height: min(47vh, 29rem); margin: 0 auto clamp(1.5rem, 3vw, 2.5rem); mask-image: radial-gradient(ellipse 78% 88% at 50% 45%, #000 58%, transparent 100%); }
+      .center-feather-art img { object-position: 50% 54%; }
+      .center-feather-canvas .recipe-copy { width: min(78%, 47rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem); border-top: 1px solid var(--mock-line); border-bottom: 1px solid var(--mock-line); background: var(--mock-paper); }
+      .rail-canvas { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(15rem, .7fr); min-height: 45rem; background: var(--mock-ink); }
+      .rail-canvas .recipe-copy { min-height: 45rem; padding: clamp(1.5rem, 5vw, 5rem); background: var(--mock-paper); }
+      .rail-art { position: sticky; top: 0; height: 100vh; min-height: 45rem; overflow: hidden; }
+      .rail-art img { object-position: 55% center; filter: saturate(.8) contrast(1.06); }
+      @supports (mask-image: linear-gradient(black, transparent)) { .rail-art { mask-image: linear-gradient(180deg, #000 0%, #000 74%, transparent 100%); } }
+
+      @media (max-width: 760px) {
+        .mock-shell { width: 100%; margin: 0; border-width: 0; }
+        .mock-header, .direction-heading { grid-template-columns: 1fr; }
+        .direction-nav { justify-content: flex-start; }
+        .strip-sheet, .side-sheet, .canvas-sheet, .bookfold-sheet, .rail-canvas { grid-template-columns: 1fr; }
+        .strip-art, .side-art { min-height: 18rem; border-right: 0; border-bottom: 1px solid var(--mock-line); }
+        .side-art, .canvas-art, .rail-art { position: relative; top: auto; height: 20rem; min-height: 0; border-left: 0; border-bottom: 1px solid var(--mock-line); }
+        .canvas-sheet .recipe-copy { min-height: 0; }
+        .bookfold-sheet .recipe-copy { order: 0; }
+        .bookfold-art { min-height: 18rem; border-left: 0; border-bottom: 1px solid var(--mock-line); }
+        .panorama-sheet .recipe-heading { display: block; }
+        .fold-canvas .recipe-copy { width: calc(100% - 2rem); margin-top: -2rem; }
+        .dissolve-art, .frost-art { height: 20rem; margin-bottom: -2rem; }
+        .dissolve-canvas .recipe-copy, .frost-canvas .recipe-copy { width: calc(100% - 2rem); }
+        .feather-canvas { padding-top: 1rem; }
+        .feather-art { width: 100%; height: 19rem; margin-bottom: 1rem; }
+        .feather-canvas .recipe-copy { width: calc(100% - 2rem); }
+        .broad-feather-art, .horizon-feather-art, .center-feather-art { width: 100%; height: 19rem; margin-bottom: 1rem; }
+        .broad-feather-canvas .recipe-copy, .horizon-feather-canvas .recipe-copy, .center-feather-canvas .recipe-copy { width: calc(100% - 2rem); }
+        .rail-canvas .recipe-copy { min-height: 0; }
+        .rail-art { order: -1; }
+        .recipe-columns { grid-template-columns: 1fr; gap: 1.5rem; }
+        .recipe-columns section + section { border-top: 1px solid var(--mock-soft); border-left: 0; padding-top: 1.5rem; padding-left: 0; }
+        .watermark-sheet { padding: 1rem; }
+        .margin-ghost { right: -30%; width: 78%; opacity: .13; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .canvas-art { animation: none !important; } }
+    </style>
+  </head>
+  <body>
+    <!--
+      THESIS: Compare five readable ways to bring the existing recipe study into the cook view, without introducing any new image asset.
+      OWN-WORLD: The established ivory-paper, black-ink, tomato-red Family Recipe Issue language; each option changes composition rather than the visual system.
+      STORY: A family cook can judge how much image presence helps while ingredients and preparation remain immediately usable.
+      FIRST VIEWPORT: A direct comparison header with five anchors leads into full-width, realistic cook-view studies.
+      FORM: Narrow extension of the existing recipe dialog; no visual-world replacement or production behavior change.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
+    <main class="mock-shell">
+      <header class="mock-header">
+        <div>
+          <h1>Fifteen ways to cook with the image</h1>
+          <p>Local mock-ups for the full recipe view. They pair existing responsive delivery images with both a compact record and a genuinely text-heavy one; no images have been copied, edited, or newly generated.</p>
+        </div>
+        <nav class="direction-nav" aria-label="Mock-up directions">
+          <a href="#strip">Study strip</a><a href="#panorama">Wide strip</a><a href="#bookfold">Book strip</a><a href="#watermark">Watermark</a><a href="#side">Kitchen side</a><a href="#margin">Ghost margin</a><a href="#canvas">Cooking canvas</a><a href="#fold">Fold canvas</a><a href="#dissolve">Paper dissolve</a><a href="#frost">Frosted fold</a><a href="#feather">Feathered field</a><a href="#broad-feather">Broad feather</a><a href="#horizon-feather">Horizon feather</a><a href="#center-feather">Centered feather</a><a href="#rail">Step rail</a>
+        </nav>
+      </header>
+
+      <section class="direction" id="strip">
+        <div class="direction-heading"><h2>1. Recipe study strip</h2><p>The clearest and most literal treatment: an image gets one generous, independent piece of the cook view.</p></div>
+        <article class="kitchen-sheet strip-sheet">
+          <picture class="strip-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0004-480.avif 480w, assets/delivery/recipes/avif/vera-r0004-720.avif 720w, assets/delivery/recipes/avif/vera-r0004-1080.avif 1080w" sizes="(max-width: 760px) 100vw, 55vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0004-480.webp 480w, assets/delivery/recipes/webp/vera-r0004-720.webp 720w, assets/delivery/recipes/webp/vera-r0004-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 55vw" /><img src="assets/recipes/vera-r0004.png" alt="Illustration for Stuffed meat loaf" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 004 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed meat loaf</h3><div class="recipe-meta">Source page 6 · Source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Ground meat</li><li>Eggs</li><li>Breadcrumbs</li><li>Parsley</li></ul></section><section><h3>Preparation</h3><ol><li>Combine the ground meat, eggs, breadcrumbs, and seasoning.</li><li>Fill and shape the loaf as preserved in the cookbook.</li><li>Bake until done; serve warm.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one existing responsive image element—AVIF, then WebP, then the retained PNG fallback.</p>
+      </section>
+
+      <section class="direction" id="panorama">
+        <div class="direction-heading"><h2>1A. Wide study strip</h2><p>Compact-record test: let the food lead across the full page before one short preserved instruction opens into a calm, classic kitchen sheet.</p></div>
+        <article class="kitchen-sheet panorama-sheet">
+          <picture class="panorama-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> exactly one existing responsive `<picture>`; only the crop and page geometry differ from the original study strip.</p>
+      </section>
+
+      <section class="direction" id="bookfold">
+        <div class="direction-heading"><h2>1B. Bookfold strip</h2><p>Text-rich record test: the recipe claims the left-hand page while a tall, sticky edge study preserves the visual memory of the dish through a long cook.</p></div>
+        <article class="kitchen-sheet bookfold-sheet">
+          <picture class="bookfold-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0029-480.avif 480w, assets/delivery/recipes/avif/vera-r0029-720.avif 720w, assets/delivery/recipes/avif/vera-r0029-1080.avif 1080w" sizes="(max-width: 760px) 100vw, 35vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0029-480.webp 480w, assets/delivery/recipes/webp/vera-r0029-720.webp 720w, assets/delivery/recipes/webp/vera-r0029-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 35vw" /><img src="assets/recipes/vera-r0029.png" alt="Illustration for Stuffed turkey" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 029 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed turkey</h3><div class="recipe-meta">Source pages 21–22 · 25 ingredients · 11 preserved steps</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Giblets from the turkey</li><li>3 hard baked rolls</li><li>1 cup milk or water</li><li>2 whole eggs</li><li>1 small onion, chopped</li><li>4 tablespoons butter</li><li>1/2 cup bread crumbs</li><li>salt, marjoram, thyme</li><li>1 lb. chestnuts</li><li>10 tablespoons butter</li><li>4 eggs</li><li>5 hard baked rolls</li><li>2 cups milk</li><li>1/2 cup bread crumbs</li><li>dash of ground nutmeg</li><li>1/2 teaspoon sugar</li><li>salt</li><li>5 oz. chopped or sliced almonds</li><li>8 tablespoons butter</li><li>4 egg yolks, 3 egg whites</li><li>5 hard baked rolls</li><li>2 cups milk</li><li>1/4 cup sugar</li><li>1/4 cup bread crumbs</li><li>salt</li></ul></section><section><h3>Preparation</h3><ol><li>Prepare the bird as indicated in “roast turkey”. Turn the neck into the body cavity to block the passage between the neck and the body. The stuffing will stay in the neck cavity while roasting. Lightly fill neck cavity with stuffing. Do not pack · stuffing will expand while cooking. Fasten neck skin with stitches or skewer. Roast turkey as shown above.</li><li>Soak the rolls in milk or water, squeeze off excess liquid, shred them. Rinse and finely chop the giblets.</li><li>In a bowl cream butter, eggs, add the chopped onion, thyme, marjoram, shredded rolls, giblets, bread crumbs. Salt the mixture and mix thoroughly.</li><li>Simmer chestnuts in water for 10·15 minutes. When the shells crack, peel and chop them coarsely.</li><li>Break the rolls, soak them in milk, squeeze off excess, shred them. In a bowl cream butter, one whole egg and three egg yolks. Add the shredded rolls, nutmeg, sugar and coarsely chopped chestnuts. Salt the mixture; Fold in half of the bread crumbs and three stiffly whipped egg whites.</li><li>Turn the stuffing into a fluted tube pan or a flan ring, buttered and dusted with bread crumbs. Bake in a bain-marie at 350F for 1·1/2 hours. When done, let it stand 5 minutes, then invert on a serving dish. Slice it like a cake.</li><li>Serve with apricot or pear compote, cranberries, etc.</li><li>Break the rolls and soak them in milk. Squeeze off excess, shred and strain them.</li><li>In a bowl cream butter, egg yolks and sugar. Combine all ingredients. Fold in three stiffly beaten egg whites.</li><li>Bake and serve in the same manner as chestnut stuffing.</li><li>Same as almond stuffing, replacing half of the almonds with 3/4 cup golden raisins.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> the same responsive recipe study becomes the outer page of a two-page composition.</p>
+      </section>
+
+      <section class="direction" id="watermark">
+        <div class="direction-heading"><h2>2. Paper watermark</h2><p>The food study becomes atmosphere rather than content. The recipe itself stays on a separate, high-contrast paper surface.</p></div>
+        <article class="kitchen-sheet watermark-sheet"><div class="recipe-copy"><div class="recipe-heading"><p>Recipe 004 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed meat loaf</h3><div class="recipe-meta">Source page 6 · Source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Ground meat</li><li>Eggs</li><li>Breadcrumbs</li><li>Parsley</li></ul></section><section><h3>Preparation</h3><ol><li>Combine the ground meat, eggs, breadcrumbs, and seasoning.</li><li>Fill and shape the loaf as preserved in the cookbook.</li><li>Bake until done; serve warm.</li></ol></section></div></div></article>
+        <p class="asset-note"><strong>Asset use:</strong> a CSS-only `::before` background referencing the delivered AVIF/WebP URL through `image-set()`.</p>
+      </section>
+
+      <section class="direction" id="side">
+        <div class="direction-heading"><h2>3. Sticky kitchen-side illustration</h2><p>A calm companion while cooking: the illustration stays visible on a wide screen while the working recipe remains the center of attention.</p></div>
+        <article class="kitchen-sheet side-sheet">
+          <picture class="side-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0004-480.avif 480w, assets/delivery/recipes/avif/vera-r0004-720.avif 720w, assets/delivery/recipes/avif/vera-r0004-1080.avif 1080w" sizes="(max-width: 760px) 100vw, 35vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0004-480.webp 480w, assets/delivery/recipes/webp/vera-r0004-720.webp 720w, assets/delivery/recipes/webp/vera-r0004-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 35vw" /><img src="assets/recipes/vera-r0004.png" alt="Illustration for Stuffed meat loaf" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 004 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed meat loaf</h3><div class="recipe-meta">Source page 6 · Source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Ground meat</li><li>Eggs</li><li>Breadcrumbs</li><li>Parsley</li></ul></section><section><h3>Preparation</h3><ol><li>Combine the ground meat, eggs, breadcrumbs, and seasoning.</li><li>Fill and shape the loaf as preserved in the cookbook.</li><li>Bake until done; serve warm.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one existing `<picture>` alongside the transcription; CSS grid and `position: sticky` handle the layout.</p>
+      </section>
+
+      <section class="direction" id="margin">
+        <div class="direction-heading"><h2>4. Ghost image in the margin</h2><p>A more editorial option: the illustration appears as a light printed echo in the empty edge, never under the words that need to be read.</p></div>
+        <article class="kitchen-sheet margin-sheet">
+          <picture class="margin-ghost" aria-hidden="true"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0004-480.avif 480w, assets/delivery/recipes/avif/vera-r0004-720.avif 720w, assets/delivery/recipes/avif/vera-r0004-1080.avif 1080w" sizes="40vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0004-480.webp 480w, assets/delivery/recipes/webp/vera-r0004-720.webp 720w, assets/delivery/recipes/webp/vera-r0004-1080.webp 1080w" sizes="40vw" /><img src="assets/recipes/vera-r0004.png" alt="" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 004 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed meat loaf</h3><div class="recipe-meta">Source page 6 · Source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Ground meat</li><li>Eggs</li><li>Breadcrumbs</li><li>Parsley</li></ul></section><section><h3>Preparation</h3><ol><li>Combine the ground meat, eggs, breadcrumbs, and seasoning.</li><li>Fill and shape the loaf as preserved in the cookbook.</li><li>Bake until done; serve warm.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> the same responsive illustration is only positioned, desaturated, and faded with CSS. It is decorative, so it has no alternative text.</p>
+      </section>
+
+      <section class="direction" id="canvas">
+        <div class="direction-heading"><h2>5. Cooking canvas</h2><p>The most immersive option: the study starts as the visual setting and recedes as the recipe becomes practical. It respects reduced-motion preferences.</p></div>
+        <article class="kitchen-sheet canvas-sheet">
+          <picture class="canvas-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0004-480.avif 480w, assets/delivery/recipes/avif/vera-r0004-720.avif 720w, assets/delivery/recipes/avif/vera-r0004-1080.avif 1080w" sizes="(max-width: 760px) 100vw, 44vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0004-480.webp 480w, assets/delivery/recipes/webp/vera-r0004-720.webp 720w, assets/delivery/recipes/webp/vera-r0004-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 44vw" /><img src="assets/recipes/vera-r0004.png" alt="Illustration for Stuffed meat loaf" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 004 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed meat loaf</h3><div class="recipe-meta">Source page 6 · Source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Ground meat</li><li>Eggs</li><li>Breadcrumbs</li><li>Parsley</li></ul></section><section><h3>Preparation</h3><ol><li>Combine the ground meat, eggs, breadcrumbs, and seasoning.</li><li>Fill and shape the loaf as preserved in the cookbook.</li><li>Bake until done; serve warm.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one existing responsive image is a sticky companion; capable browsers apply a CSS scroll-linked crop, with a static fallback everywhere else.</p>
+      </section>
+
+      <section class="direction" id="fold">
+        <div class="direction-heading"><h2>5A. Fold-over canvas</h2><p>Compact-record test: start with a full-width food canvas, then let a small, solid recipe sheet fold upward from its lower edge.</p></div>
+        <article class="kitchen-sheet fold-canvas">
+          <picture class="fold-canvas-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one responsive art element sets the scene; the lifted paper sheet is entirely CSS and normal document layout.</p>
+      </section>
+
+      <section class="direction" id="dissolve">
+        <div class="direction-heading"><h2>5A-I. Soft paper dissolve</h2><p>The image quietly loses density at its lower edge and seems to sink into the same paper that holds the recipe. There is no hard seam and no added image output.</p></div>
+        <article class="kitchen-sheet dissolve-canvas">
+          <picture class="dissolve-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> the existing responsive image uses a CSS bottom mask only; no blur is baked into, or saved with, the asset.</p>
+      </section>
+
+      <section class="direction" id="frost">
+        <div class="direction-heading"><h2>5A-II. Frosted fold</h2><p>A light, localized blur enters only near the lower transition, as though the image passes behind translucent kitchen paper before the recipe sheet begins.</p></div>
+        <article class="kitchen-sheet frost-canvas">
+          <picture class="frost-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> the unchanged responsive image stays sharp above the threshold; CSS applies the blur only through a fading overlay at the transition.</p>
+      </section>
+
+      <section class="direction" id="feather">
+        <div class="direction-heading"><h2>5A-III. Feathered field</h2><p>The image gets a softly feathered perimeter on every side, like a food study printed directly into the paper rather than placed in a frame.</p></div>
+        <article class="kitchen-sheet feather-canvas">
+          <picture class="feather-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one existing responsive image with a CSS radial mask; the soft perimeter is not a second rendered image.</p>
+      </section>
+
+      <section class="direction" id="broad-feather">
+        <div class="direction-heading"><h2>5A-IIIa. Broad feather</h2><p>The lightest touch: retain almost the whole image, but let its edges breathe softly into the paper rather than meeting it as a hard rectangle.</p></div>
+        <article class="kitchen-sheet broad-feather-canvas">
+          <picture class="broad-feather-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> the existing responsive image uses a wide radial CSS mask; it is the closest alternative to the original field.</p>
+      </section>
+
+      <section class="direction" id="horizon-feather">
+        <div class="direction-heading"><h2>5A-IIIb. Horizon feather</h2><p>The image remains strong at the top but disperses lower down, giving the recipe a gentle rising transition without any active blur.</p></div>
+        <article class="kitchen-sheet horizon-feather-canvas">
+          <picture class="horizon-feather-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> an asymmetric CSS radial mask controls the lower fade; the image file itself remains unchanged.</p>
+      </section>
+
+      <section class="direction" id="center-feather">
+        <div class="direction-heading"><h2>5A-IIIc. Centered feather</h2><p>The most restrained variation: a smaller, centered food study fades fully into generous paper before the recipe begins.</p></div>
+        <article class="kitchen-sheet center-feather-canvas">
+          <picture class="center-feather-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0021-480.avif 480w, assets/delivery/recipes/avif/vera-r0021-720.avif 720w, assets/delivery/recipes/avif/vera-r0021-1080.avif 1080w" sizes="100vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0021-480.webp 480w, assets/delivery/recipes/webp/vera-r0021-720.webp 720w, assets/delivery/recipes/webp/vera-r0021-1080.webp 1080w" sizes="100vw" /><img src="assets/recipes/vera-r0021.png" alt="Illustration for Leg of lamb in cream sauce · Skopová kýta na smetaně" /></picture>
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 021 · Soups & meat dishes</p><h3 class="recipe-title">Leg of lamb in cream sauce · Skopová kýta na smetaně</h3><div class="recipe-meta">Source page 17 · Compact source-checked record</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>No standalone ingredient list is printed for this record.</li></ul></section><section><h3>Preparation</h3><ol><li>At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.</li></ol></section></div></div>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> a smaller existing responsive image is feathered only through CSS, leaving the surrounding paper as the visual transition.</p>
+      </section>
+
+      <section class="direction" id="rail">
+        <div class="direction-heading"><h2>5B. Preparation rail</h2><p>Text-rich record test: turn the canvas into a narrow, persistent image rail and reserve almost all width for the 25-ingredient, 11-step working copy.</p></div>
+        <article class="kitchen-sheet rail-canvas">
+          <div class="recipe-copy"><div class="recipe-heading"><p>Recipe 029 · Soups & meat dishes</p><h3 class="recipe-title">Stuffed turkey</h3><div class="recipe-meta">Source pages 21–22 · 25 ingredients · 11 preserved steps</div></div><div class="recipe-columns"><section><h3>Ingredients</h3><ul><li>Giblets from the turkey</li><li>3 hard baked rolls</li><li>1 cup milk or water</li><li>2 whole eggs</li><li>1 small onion, chopped</li><li>4 tablespoons butter</li><li>1/2 cup bread crumbs</li><li>salt, marjoram, thyme</li><li>1 lb. chestnuts</li><li>10 tablespoons butter</li><li>4 eggs</li><li>5 hard baked rolls</li><li>2 cups milk</li><li>1/2 cup bread crumbs</li><li>dash of ground nutmeg</li><li>1/2 teaspoon sugar</li><li>salt</li><li>5 oz. chopped or sliced almonds</li><li>8 tablespoons butter</li><li>4 egg yolks, 3 egg whites</li><li>5 hard baked rolls</li><li>2 cups milk</li><li>1/4 cup sugar</li><li>1/4 cup bread crumbs</li><li>salt</li></ul></section><section><h3>Preparation</h3><ol><li>Prepare the bird as indicated in “roast turkey”. Turn the neck into the body cavity to block the passage between the neck and the body. The stuffing will stay in the neck cavity while roasting. Lightly fill neck cavity with stuffing. Do not pack · stuffing will expand while cooking. Fasten neck skin with stitches or skewer. Roast turkey as shown above.</li><li>Soak the rolls in milk or water, squeeze off excess liquid, shred them. Rinse and finely chop the giblets.</li><li>In a bowl cream butter, eggs, add the chopped onion, thyme, marjoram, shredded rolls, giblets, bread crumbs. Salt the mixture and mix thoroughly.</li><li>Simmer chestnuts in water for 10·15 minutes. When the shells crack, peel and chop them coarsely.</li><li>Break the rolls, soak them in milk, squeeze off excess, shred them. In a bowl cream butter, one whole egg and three egg yolks. Add the shredded rolls, nutmeg, sugar and coarsely chopped chestnuts. Salt the mixture; Fold in half of the bread crumbs and three stiffly whipped egg whites.</li><li>Turn the stuffing into a fluted tube pan or a flan ring, buttered and dusted with bread crumbs. Bake in a bain-marie at 350F for 1·1/2 hours. When done, let it stand 5 minutes, then invert on a serving dish. Slice it like a cake.</li><li>Serve with apricot or pear compote, cranberries, etc.</li><li>Break the rolls and soak them in milk. Squeeze off excess, shred and strain them.</li><li>In a bowl cream butter, egg yolks and sugar. Combine all ingredients. Fold in three stiffly beaten egg whites.</li><li>Bake and serve in the same manner as chestnut stuffing.</li><li>Same as almond stuffing, replacing half of the almonds with 3/4 cup golden raisins.</li></ol></section></div></div>
+          <picture class="rail-art"><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0029-480.avif 480w, assets/delivery/recipes/avif/vera-r0029-720.avif 720w, assets/delivery/recipes/avif/vera-r0029-1080.avif 1080w" sizes="(max-width: 760px) 100vw, 27vw" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0029-480.webp 480w, assets/delivery/recipes/webp/vera-r0029-720.webp 720w, assets/delivery/recipes/webp/vera-r0029-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 27vw" /><img src="assets/recipes/vera-r0029.png" alt="Illustration for Stuffed turkey" /></picture>
+        </article>
+        <p class="asset-note"><strong>Asset use:</strong> one existing sticky image, narrowed to a visual rail and softly dissolved with a CSS mask where supported.</p>
+      </section>
+    </main>
+  </body>
+</html>

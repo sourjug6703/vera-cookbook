@@ -111,10 +111,21 @@ function cardFor(recipe) {
   const open = (event) => openRecipe(recipe, event.currentTarget);
   image.dataset.openRecipeId = recipe.id;
   fragment.querySelector(".open-recipe").dataset.openRecipeId = recipe.id;
-  image.innerHTML = `${recipePicture(recipe, "(max-width: 470px) 100vw, (max-width: 780px) 50vw, (max-width: 1120px) 33vw, 340px", "card-art")}<span class="collection-study">${recipe.illustration ? "Recipe study" : "Collection study"} · ${escapeHtml(recipe.section)}</span>`;
+  image.innerHTML = recipePicture(recipe, "(max-width: 500px) 100vw, (max-width: 980px) 45vw, 22vw", "card-art");
   image.addEventListener("click", open);
-  title.textContent = recipe.title;
-  fragment.querySelector(".card-order").textContent = `Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${recipe.section}`;
+  title.textContent = recipe.titleEnglish || recipe.title;
+  if (recipe.titleCzech) {
+    const czechName = document.createElement("span");
+    czechName.className = "card-czech-name";
+    czechName.textContent = recipe.titleCzech;
+    title.append(czechName);
+  }
+  const order = fragment.querySelector(".card-order");
+  const section = document.createElement("strong");
+  const number = document.createElement("span");
+  section.textContent = recipe.section;
+  number.textContent = `Recipe ${String(recipe.sourceOrder).padStart(3, "0")}`;
+  order.append(section, number);
   meta.textContent = recipe.yieldTime[0] || "Source-checked family recipe";
   fragment.querySelector(".open-recipe").addEventListener("click", open);
   save.setAttribute("aria-pressed", String(state.saved.has(recipe.id)));
@@ -192,12 +203,13 @@ function openRecipe(recipe, trigger) {
   const sourceAction = recipe.sourcePreview?.pages?.length
     ? '<button class="source-open" type="button">View source</button>'
     : "";
+  const dialogTitle = `${escapeHtml(recipe.titleEnglish || recipe.title)}${recipe.titleCzech ? `<span class="dialog-czech-name">${escapeHtml(recipe.titleCzech)}</span>` : ""}`;
   dialogContent.innerHTML = `
     <article class="dialog-recipe">
       <div class="dialog-art-field" aria-hidden="true">${recipePicture(recipe, "(max-width: 780px) calc(100vw - 2rem), 900px", "dialog-art")}</div>
       <div class="dialog-recipe-body">
         <p class="dialog-eyeline">Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${escapeHtml(recipe.section)}</p>
-        <h2 id="dialog-title">${escapeHtml(recipe.title)}</h2>
+        <h2 id="dialog-title">${dialogTitle}</h2>
         <p class="dialog-meta">${escapeHtml(recipe.yieldTime.join(" · ") || "Source-checked family recipe")} · Source page ${escapeHtml(recipe.sourcePages.join(", ") || "not labeled")}</p>
         <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button>${sourceAction}</div>
         <div class="dialog-grid"><section><h3>Ingredients</h3><ul>${ingredientItems}</ul></section><section><h3>Preparation</h3><ol>${instructionItems}</ol>${notes}</section></div>

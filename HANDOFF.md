@@ -2,14 +2,14 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T19:31:34Z
-Generated from commit: b9917ab798da
+Generated at: 2026-08-24T22:40:31Z
+Generated from commit: 962d21ea31b7
 Git observed at generation: branch main, upstream origin/main, dirty
 Manifest SHA-256: 6dd64461d75839e0535e66c0d719467552fd5d2a4385456f08e8b477d77e1900
-Board SHA-256: f8d0a6efa2c425a9cdeb07f4abc75a5e64ce4fe35200bc1bfbbb3b935bece1bf
+Board SHA-256: 86daa48bc8b5063cac26dc30a235d836b11677d9b0e80499915c7d2bed222b84
 Plan SHA-256: none
-Latest session SHA-256: c41629f3daa80fac6aca251ae1c54be8a8b7b7d319e31b822db773843c765417
-Upstream at generation: origin/main b9917ab798da09febb257217b49c038ec131c6fd
+Latest session SHA-256: 3f14d43c0a60f6d8c688be84e4bbea39fd5b6d1e904b4121864df2d7df7ce2b4
+Upstream at generation: origin/main 962d21ea31b73c3ef1038d44318a20ba393a50e5
 Profile: lite
 
 ## Wake-up snapshot
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T193134810397Z-macbook-052r3-df89464bb9a340b4a3ff017f4c0cfbb6.md
-- Summary: TASK-006 public GitHub Pages release
+- Session: SESSIONS/20260824T224031081674Z-macbook-052r3-a1855c6b41034021a28b438f05b1b7c7.md
+- Summary: Checkpoint only.
 
 ## Source pointers
 
