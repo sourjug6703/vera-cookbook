@@ -37,7 +37,7 @@ typography:
     letterSpacing: "-0.055em"
   wordmark-mobile:
     fontFamily: "Bodoni Cookbook, Didot, serif"
-    fontSize: "clamp(2.15rem, 12vw, 3.25rem)"
+    fontSize: "clamp(2.15rem, 10vw, 2.75rem)"
   search:
     fontFamily: "Barlow Kitchen, Arial, sans-serif"
     fontSize: "1.13rem"

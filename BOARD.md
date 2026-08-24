@@ -12,19 +12,23 @@ publication-safe cookbook reader.
 
 ## Now
 
-- `TASK-004` Explore and design a local static cookbook reader for family
-  cooks. The full cookbook corpus may inform the local experience. Do not
-  enable GitHub Pages or publish without separate approval.
+- No active implementation task. `TASK-004` is complete as a local family-cook
+  reader; do not enable GitHub Pages or publish without separate approval.
 
 ## Next
 
-- Review the first local reader build against the approved recipe-collection
-  direction and refine its family-cook workflow.
-- After local review, make a separately approved decision about GitHub Pages
-  publication.
+- If broader access is wanted later, make a separately approved decision about
+  GitHub Pages publication. Keep the reader local unless that decision is made.
 
 ## Completed
 
+- [x] `TASK-004` Completed and locally reviewed the dependency-free static
+  family recipe reader. It presents all 110 source-checked records with
+  source-order browsing, recipe and ingredient search, local saved recipes,
+  and full preserved transcriptions; the final family-cook pass made saving
+  available from the transcription, clarified an empty saved list, restored
+  dialog focus, and kept the narrow mobile header usable. No hosting or public
+  publication was enabled.
 - [x] `TASK-002` Finalized the versioned YAML/JSON recipe-record schema, source-region provenance model, visual verification contract, promotion validator, and tested example fixture.
 - [x] `TASK-001` Ran a reproducible 15-page Marker bake-off against an independently verified visual gold set. Adopt Marker as the local first-pass OCR/layout engine, with geometry-aware recipe segmentation and a separate visual source audit required before canonical promotion.
 - [x] `TASK-003` Completed the source-audit gate for all 110 materialized

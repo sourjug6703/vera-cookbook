@@ -2,21 +2,21 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T06:48:32Z
-Generated from commit: 31aead6236c2
+Generated at: 2026-08-24T07:05:31Z
+Generated from commit: a6b310cd12b5
 Git observed at generation: branch main, upstream origin/main, dirty
 Manifest SHA-256: cc0ffa754faec5e33dd50f6c1cadf27d83ba424f14609e26611444674c5401a3
-Board SHA-256: d7762ceb72795e83282cd070343939e697903c85fc386ed0575041c05b09164a
+Board SHA-256: ad822fdf2f9b469e2bc4b1909def2602cc640ffe2f6b2c9001fece65b9858885
 Plan SHA-256: none
-Latest session SHA-256: 18e678bf047d539c9b051dca694e167172866595abaddc3aff92fb5018f1bca9
-Upstream at generation: origin/main 31aead6236c25b48aee91e9525a513bc11446d5a
+Latest session SHA-256: da80f20681fa832188476a5ca4cff1d0876ac05a65aab8aab840e5c64ee45261
+Upstream at generation: origin/main a6b310cd12b56f5d8212340b2ab6e32d5a60a485
 Profile: lite
 
 ## Wake-up snapshot
 
-- Current objective: `TASK-004` Explore and design a local static cookbook reader for family
+- Current objective: No active implementation task. `TASK-004` is complete as a local family-cook
 - Current task IDs: TASK-004
-- Next safe action: Continue current objective: `TASK-004` Explore and design a local static cookbook reader for family
+- Next safe action: Continue current objective: No active implementation task. `TASK-004` is complete as a local family-cook
 
 ## Active blockers
 
@@ -28,7 +28,7 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T064832051742Z-macbook-052r3-efe78198992c43688abc2384e5992b2a.md
+- Session: SESSIONS/20260824T070531190332Z-macbook-052r3-bef463fd862542abb9d86a7ca423fe54.md
 - Summary: Checkpoint only.
 
 ## Source pointers

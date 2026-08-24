@@ -29,6 +29,8 @@ const savedFilter = document.querySelector("#saved-filter");
 const savedCount = document.querySelector("#saved-count");
 const dialog = document.querySelector("#recipe-dialog");
 const dialogContent = document.querySelector("#dialog-content");
+const clearSearch = document.querySelector("#clear-search");
+let recipeTrigger = null;
 
 function escapeHtml(value = "") {
   return String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[character]));
@@ -73,7 +75,9 @@ function cardFor(recipe) {
   const title = fragment.querySelector("h2");
   const meta = fragment.querySelector(".card-meta");
   const save = fragment.querySelector(".save-recipe");
-  const open = () => openRecipe(recipe);
+  const open = (event) => openRecipe(recipe, event.currentTarget);
+  image.dataset.openRecipeId = recipe.id;
+  fragment.querySelector(".open-recipe").dataset.openRecipeId = recipe.id;
   image.style.backgroundImage = `url("${artFor[recipe.section]}")`;
   image.innerHTML = `<span class="collection-study">Collection study · ${escapeHtml(recipe.section)}</span>`;
   image.addEventListener("click", open);
@@ -112,7 +116,9 @@ function renderFeature(recipe) {
       <ul class="ingredient-preview">${ingredients || "<li>Ingredients are preserved in the full recipe.</li>"}</ul>
     </div>
     <div class="feature-actions"><button class="feature-open" type="button">View full recipe</button><button class="feature-save" type="button" aria-label="Save featured recipe"></button></div>`;
-  feature.querySelector(".feature-open").addEventListener("click", () => openRecipe(recipe));
+  const featureOpen = feature.querySelector(".feature-open");
+  featureOpen.dataset.openRecipeId = recipe.id;
+  featureOpen.addEventListener("click", (event) => openRecipe(recipe, event.currentTarget));
   const saveButton = feature.querySelector(".feature-save");
   saveButton.setAttribute("aria-pressed", String(state.saved.has(recipe.id)));
   saveButton.addEventListener("click", () => toggleSaved(recipe.id));
@@ -125,7 +131,16 @@ function render() {
   grid.replaceChildren(...display.map(cardFor));
   emptyState.hidden = matching.length !== 0;
   loadMore.hidden = matching.length <= display.length;
-  summary.textContent = `${matching.length} ${matching.length === 1 ? "recipe" : "recipes"}${state.activeSection === "All recipes" ? " in the collection" : ` in ${state.activeSection}`}`;
+  const collectionLabel = state.savedOnly
+    ? " in saved recipes"
+    : state.activeSection === "All recipes" ? " in the collection" : ` in ${state.activeSection}`;
+  summary.textContent = `${matching.length} ${matching.length === 1 ? "recipe" : "recipes"}${collectionLabel}`;
+  if (!matching.length) {
+    emptyState.querySelector("p").textContent = state.savedOnly && !state.saved.size
+      ? "No saved recipes yet."
+      : "No recipe matches this view yet.";
+    clearSearch.textContent = state.savedOnly ? "Browse all recipes" : "Clear search";
+  }
   renderFeature(matching[0] || null);
   savedFilter.setAttribute("aria-pressed", String(state.savedOnly));
   persistSaved();
@@ -136,28 +151,48 @@ function toggleSaved(id) {
   render();
 }
 
-function openRecipe(recipe) {
+function openRecipe(recipe, trigger) {
+  recipeTrigger = trigger || recipeTrigger;
   const ingredientItems = recipe.ingredients.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>No ingredient list is printed for this source record.</li>";
   const instructionItems = recipe.instructions.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>No preparation text is printed for this source record.</li>";
   const notes = recipe.notes.length ? `<section><h3>Notes from the cookbook</h3><ul>${recipe.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul></section>` : "";
+  const isSaved = state.saved.has(recipe.id);
   dialogContent.innerHTML = `
     <article class="dialog-recipe">
       <p class="dialog-eyeline">Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${escapeHtml(recipe.section)}</p>
       <h2 id="dialog-title">${escapeHtml(recipe.title)}</h2>
       <p class="dialog-meta">${escapeHtml(recipe.yieldTime.join(" · ") || "Source-checked family recipe")} · Source page ${escapeHtml(recipe.sourcePages.join(", ") || "not labeled")}</p>
+      <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button></div>
       <div class="dialog-grid"><section><h3>Ingredients</h3><ul>${ingredientItems}</ul></section><section><h3>Preparation</h3><ol>${instructionItems}</ol>${notes}</section></div>
       <p class="source-stamp">Transcription is shown as preserved from the source-checked record. Recipe ID: ${escapeHtml(recipe.id)}.</p>
     </article>`;
-  dialog.showModal();
+  const dialogSave = dialogContent.querySelector(".dialog-save");
+  dialogSave.addEventListener("click", () => {
+    state.saved.has(recipe.id) ? state.saved.delete(recipe.id) : state.saved.add(recipe.id);
+    render();
+    const saved = state.saved.has(recipe.id);
+    dialogSave.setAttribute("aria-pressed", String(saved));
+    dialogSave.setAttribute("aria-label", `${saved ? "Remove" : "Save"} ${recipe.title}`);
+    dialogSave.textContent = saved ? "Saved for the table" : "Save for the table";
+  });
+  if (!dialog.open) dialog.showModal();
 }
 
 search.addEventListener("input", (event) => { state.query = event.target.value; state.visible = 9; render(); });
 loadMore.addEventListener("click", () => { state.visible += 9; render(); });
-document.querySelector("#clear-search").addEventListener("click", () => { search.value = ""; state.query = ""; state.savedOnly = false; render(); search.focus(); });
+clearSearch.addEventListener("click", () => { search.value = ""; state.query = ""; state.savedOnly = false; render(); search.focus(); });
 savedFilter.addEventListener("click", () => { state.savedOnly = !state.savedOnly; state.visible = 9; render(); });
 document.querySelector("#sort-control").addEventListener("click", () => { state.sort = state.sort === "source" ? "title" : "source"; document.querySelector("#sort-label").textContent = state.sort === "source" ? "Cookbook order" : "Title A–Z"; render(); });
 document.querySelector("#dialog-close").addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+dialog.addEventListener("close", () => {
+  if (recipeTrigger?.isConnected) {
+    recipeTrigger.focus();
+    return;
+  }
+  const recipeId = recipeTrigger?.dataset.openRecipeId;
+  document.querySelector(`[data-open-recipe-id="${recipeId}"]`)?.focus();
+});
 
 fetch("data/recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("Could not load the recipe collection.")))
