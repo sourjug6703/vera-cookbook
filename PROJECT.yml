@@ -1,0 +1,161 @@
+schema: ai-project/v1alpha1
+project_id: 19a5d19f-2573-40da-bf58-15c39ffe456c
+name: vera-cookbook
+title: vera-cookbook
+profile: lite
+status: active
+created: '2026-08-23'
+manifest_updated: '2026-08-23T18:14:36Z'
+classification:
+  level: internal
+  contains_personal_data: false
+  contains_secret_values: false
+control:
+  readme: README.md
+  board: BOARD.md
+  handoff: HANDOFF.md
+  sessions: SESSIONS
+load_profiles:
+  quick:
+  - project
+  - board
+  - handoff
+  standard:
+  - project
+  - readme
+  - board
+  - handoff
+limits:
+  board_max_now: 3
+  board_max_next: 5
+  board_max_blockers: 5
+  board_warn_bytes: 6144
+  handoff_warn_bytes: 4096
+  plan_warn_bytes: 32768
+  registry_warn_bytes: 32768
+  sessions_warn_count: 200
+  upstream_verify_warn_hours: 24
+session:
+  filename_format: utc-machine-uuid
+  append_only: true
+  partition: flat
+artifacts:
+  editor_config:
+    path: .editorconfig
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  git_attributes:
+    path: .gitattributes
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  git_ignore:
+    path: .gitignore
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  recipe_data:
+    path: data
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  documentation:
+    path: docs
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  evidence:
+    path: evidence
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  examples:
+    path: examples
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  pilot:
+    path: pilot
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: true
+  requirements_data:
+    path: requirements-data.txt
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  requirements_marker:
+    path: requirements-marker.txt
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  review:
+    path: review
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  schemas:
+    path: schemas
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  scripts:
+    path: scripts
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  source:
+    path: source
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+sync:
+  mode: git
+  remote_required: false
+  automatic_push: false
+  backup_required: false
+policy:
+  authority_model: domain-specific
+  repo_grants_capabilities: false
+  external_writes_require_approval: true
+  commit_requires_approval: true
+  push_requires_approval: true
+  destructive_actions_require_approval: true
+rules:
+  handoff_is_generated: true
+  sessions_are_append_only: true
+  archive_default_read: false
+  references_default_read: false
+  status_changes_move_repository: false
+  raw_transcripts_allowed: false
+runtime:
+  minimum_aip: 0.3.0

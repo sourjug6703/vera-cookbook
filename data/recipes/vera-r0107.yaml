@@ -1,0 +1,410 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0107
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 72
+  printed_pages:
+  - '71'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0107-title
+  pdf_page: 72
+  printed_page: '71'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1149
+    - 1122
+  - - 1881
+    - 1122
+  - - 1881
+    - 1246
+  - - 1149
+    - 1246
+  candidate_block_ids:
+  - /page/71/SectionHeader/8
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-title.png
+  region_image_pixel_sha256: dfd57d849a29b6c588748679095b6e596eacdbef09f9e585028fb96b2a4f1f23
+- region_id: vera-r0107-listgroup-1
+  pdf_page: 72
+  printed_page: '71'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 237
+    - 1199
+  - - 1086
+    - 1199
+  - - 1086
+    - 1550
+  - - 237
+    - 1550
+  candidate_block_ids:
+  - /page/71/ListGroup/3
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-listgroup-1.png
+  region_image_pixel_sha256: ea6d3572e4f63a5da249bbc05dc1d48dc77ede3dcaa83081cc1681fdba1f8549
+- region_id: vera-r0107-text-2
+  pdf_page: 72
+  printed_page: '71'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1131
+    - 1217
+  - - 2742
+    - 1217
+  - - 2742
+    - 1784
+  - - 1131
+    - 1784
+  candidate_block_ids:
+  - /page/71/Text/9
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-text-2.png
+  region_image_pixel_sha256: c6c82116741d7ab8d214a4cd13386906a29778e6da295deb65082b4111ed9119
+- region_id: vera-r0107-listgroup-3
+  pdf_page: 72
+  printed_page: '71'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 237
+    - 1557
+  - - 909
+    - 1557
+  - - 909
+    - 1656
+  - - 237
+    - 1656
+  candidate_block_ids:
+  - /page/71/ListGroup/4
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-listgroup-3.png
+  region_image_pixel_sha256: 7eba1b415efa35b7bff1c3d9b62309d4cc0838a4ea2a8686e334ebebe609c169
+- region_id: vera-r0107-text-4
+  pdf_page: 72
+  printed_page: '71'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1748
+  - - 2652
+    - 1748
+  - - 2652
+    - 1986
+  - - 1122
+    - 1986
+  candidate_block_ids:
+  - /page/71/Text/10
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-text-4.png
+  region_image_pixel_sha256: 77ff94406b6180288e8b58251dde3b89bfb532255da8ab8546256f5fcc0ecfa3
+- region_id: vera-r0107-yield-manual
+  pdf_page: 72
+  printed_page: '71'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1950
+  - - 1816
+    - 1950
+  - - 1816
+    - 2052
+  - - 1122
+    - 2052
+  candidate_block_ids:
+  - manual-bbox:570,984,899,1017
+  region_image: evidence/production-batch-013/regions/vera-r0107/p72-yield-manual.png
+  region_image_pixel_sha256: 2b01c3e4b46754b197f73107f7f987269a4a881b2ba594448875b3e1872433d2
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Nut cake · Ořechový dort
+    language: mul
+    source_region_ids:
+    - vera-r0107-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Nut cake
+    language: en
+    source_region_ids:
+    - vera-r0107-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Ořechový dort
+    language: cs
+    source_region_ids:
+    - vera-r0107-title
+    title_role: parallel
+  source_order: 107
+  slug_candidate: nutcake
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '1 cake – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0107-yield-manual
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 eggs, separated
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 1 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 1 cup hazelnuts or walnuts, ground or finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 1 tablespoon water
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-1
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-6
+      text_verbatim: butter and flour for cake pan
+      language: en
+      source_region_ids:
+      - vera-r0107-listgroup-3
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Beat egg whites until stiff, set aside. In a separate bowl cream sugar and egg yolks,
+        adding one at a time and beating well after each addition. Add 1 tablespoon water. Continue beating
+        until light and fluffy, about 10 minutes total. Fold in flour, nuts and stiffly whipped egg whites.
+        Mix thoroughly, pour batter into buttered and floured 9" spring form cake pan. Preheat oven to
+        350F, bake about 40 minutes or until cake tester or wooden pick comes out clean and cake separates
+        from side of spring form.
+      language: en
+      source_region_ids:
+      - vera-r0107-text-2
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: When cooled, cut cake horizontally, spread evenly with chocolate or mocca filling,
+        then frost top and sides with the same. Decorate with walnuts or pecan halves or tosted almonds
+        slivers.
+      language: en
+      source_region_ids:
+      - vera-r0107-text-4
+      step_number: 2
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0108
+  - vera-r0109
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:28:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0107
+    source_region_ids: &id001
+    - vera-r0107-title
+    - vera-r0107-listgroup-1
+    - vera-r0107-text-2
+    - vera-r0107-listgroup-3
+    - vera-r0107-text-4
+    - vera-r0107-yield-manual
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0107
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0107-title
+    - vera-r0107-listgroup-1
+    - vera-r0107-listgroup-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    source_region_ids:
+    - vera-r0107-title
+    - vera-r0107-text-2
+    - vera-r0107-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    - step-2
+    source_region_ids:
+    - vera-r0107-title
+    - vera-r0107-yield-manual
+    - vera-r0107-listgroup-1
+    - vera-r0107-listgroup-3
+    - vera-r0107-text-2
+    - vera-r0107-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0107-yield-manual
+    - vera-r0107-listgroup-1
+    - vera-r0107-text-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0107-yield-manual
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0107
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0107-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

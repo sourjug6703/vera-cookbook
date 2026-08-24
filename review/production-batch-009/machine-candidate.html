@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Cookbook · Production batch 009 source review</title>
+<style>
+:root { --ink:#27231d; --paper:#f3eee3; --card:#fffdf6; --rule:#b9aa92; --accent:#8f2924; --green:#245c47; --muted:#685d4d; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 Palatino, "Book Antiqua", Georgia, serif; }
+.mast { padding:64px max(24px,6vw) 46px; border-bottom:1px solid var(--rule); background:#e5dac5; }
+h1 { max-width:920px; margin:0 0 16px; font-size:clamp(42px,7vw,88px); line-height:.96; font-weight:500; letter-spacing:-.035em; text-wrap:balance; }
+.mast p { max-width:760px; margin:0; font-size:19px; line-height:1.55; }
+.toolbar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; padding:12px max(24px,6vw); background:#f3eee3; border-bottom:1px solid var(--rule); }
+.toolbar button { min-height:44px; border:1px solid var(--ink); background:var(--ink); color:#fff; padding:10px 16px; border-radius:999px; font:700 12px ui-monospace,SFMono-Regular,monospace; cursor:pointer; }
+.toolbar button.secondary { background:transparent; color:var(--ink); }
+.toolbar output { margin-inline-start:auto; font:700 13px ui-monospace,SFMono-Regular,monospace; }
+.toolbar span { color:var(--muted); }
+main { width:min(1500px,94vw); margin:42px auto 90px; display:grid; gap:42px; }
+.recipe { min-width:0; overflow:hidden; background:var(--card); border:1px solid var(--rule); border-radius:14px; }
+.recipe-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; padding:28px 32px; border-bottom:1px solid var(--rule); }
+.recipe h2 { margin:0; font-size:clamp(25px,3vw,42px); line-height:1.08; font-weight:500; overflow-wrap:anywhere; }
+.record-meta { margin:8px 0 0; color:var(--muted); font:12px/1.4 ui-monospace,SFMono-Regular,monospace; }
+.record-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px; flex:none; }
+.record-actions a { color:var(--ink); font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.08em; }
+.status { flex:none; border:1px solid var(--accent); color:var(--accent); padding:7px 11px; border-radius:999px; font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+.status-source_checked { border-color:var(--green); color:var(--green); }
+.compare { display:grid; grid-template-columns:auto minmax(0,1fr); }
+.source-disclosure { width:max-content; max-width:100%; border-inline-end:1px solid var(--rule); }
+.source-disclosure.is-open { width:min(720px,48vw); }
+.source-toggle { display:flex; width:100%; min-height:52px; align-items:center; gap:12px; padding:14px 18px; border:0; color:#fff; background:var(--ink); cursor:pointer; font:700 13px ui-monospace,SFMono-Regular,monospace; text-align:left; }
+.region-disclosure>summary::-webkit-details-marker { display:none; }
+.source-toggle small { color:#e8dcc8; font:11px ui-monospace,SFMono-Regular,monospace; white-space:nowrap; }
+.source-toggle-icon { margin-inline-start:auto; font-size:20px; line-height:1; }
+.source-panel { padding:24px; }
+.overview-grid { display:grid; gap:18px; }
+.region-disclosure { margin-top:22px; border-top:1px solid var(--rule); }
+.region-disclosure>summary { min-height:44px; padding:14px 0; color:var(--accent); cursor:pointer; font-weight:700; }
+.region-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.candidate { min-width:0; padding:28px 32px; }
+h3 { margin:0 0 18px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+h4 { margin:24px 0 7px; font-size:16px; }
+h5 { margin:18px 0 6px; color:var(--accent); font:700 12px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+figure { margin:0 0 20px; }
+figure a { display:block; }
+figure img { display:block; width:100%; max-height:720px; object-fit:contain; object-position:top; background:#eee4d4; border:1px solid #d8ccb8; }
+.region-crop img { height:150px; object-fit:contain; }
+figcaption { margin-top:6px; color:var(--muted); font:12px ui-monospace,SFMono-Regular,monospace; overflow-wrap:anywhere; }
+.candidate ul,.candidate ol { padding-left:22px; }
+.candidate li,.candidate p { max-width:75ch; margin:0 0 8px; line-height:1.5; overflow-wrap:anywhere; }
+.verbatim-title { padding:12px 14px; background:#f2eadc; border:1px solid #d9cbb5; }
+.risk { padding:24px 32px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); background:#f8eee7; }
+.risk ul { margin:0 0 12px; padding-left:20px; }
+.risk li,.risk p { max-width:100ch; margin:8px 0; line-height:1.45; overflow-wrap:anywhere; }
+.risk li span { margin-right:9px; color:var(--accent); font:700 10px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+fieldset { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; margin:0; padding:24px 32px 30px; border:0; }
+legend { padding-top:24px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+label { display:flex; gap:10px; align-items:flex-start; line-height:1.35; cursor:pointer; }
+input { appearance:none; width:20px; height:20px; flex:none; margin:1px 0 0; border:1px solid #75664f; background:#fff; }
+input:checked { background:var(--green); box-shadow:inset 0 0 0 4px #fff; }
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible { outline:3px solid #146b8c; outline-offset:3px; }
+#copy-feedback { min-width:16ch; color:var(--green); font-weight:700; }
+@media (hover:hover) { .source-toggle:hover,.toolbar button:hover { filter:brightness(1.16); } .record-actions a:hover { color:var(--accent); } }
+@media (max-width:900px) {
+  .recipe-head { flex-direction:column; } .record-actions { justify-content:flex-start; }
+  .compare { grid-template-columns:1fr; } .source-disclosure,.source-disclosure.is-open { width:100%; border-inline-end:0; border-bottom:1px solid var(--rule); }
+  .region-grid,fieldset { grid-template-columns:1fr; } .toolbar output { margin-inline-start:0; }
+}
+@media (max-width:560px) { .mast { padding-block:44px 34px; } .recipe-head,.candidate,.risk,fieldset { padding-inline:20px; } .toolbar span:not(#copy-feedback) { width:100%; } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+@media print { .toolbar { display:none; } body { background:#fff; } .recipe { break-before:page; } .source-disclosure { width:48%!important; } }
+</style>
+</head>
+<body>
+<header class="mast"><h1>Production batch 009 source review</h1><p>Local Marker machine candidates for production batch 009; no trust promotion has been performed.</p></header>
+<div class="toolbar"><button type="button" onclick="window.print()">Print review packet</button><button type="button" class="secondary" onclick="copyStatus()">Copy checklist status</button><span>Optional human checks persist in this browser only.</span><output id="progress">0 / 88 checked</output><span id="copy-feedback" role="status" aria-live="polite"></span></div>
+<main>
+            <article class="recipe" id="vera-r0062">
+              <header class="recipe-head">
+                <div><h2>Potato dumplings · Bramborové knedlíky</h2><p class="record-meta">vera-r0062 · PDF 41 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0062.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0062">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0062" aria-label="View source for Potato dumplings · Bramborové knedlíky" data-source-title="Potato dumplings · Bramborové knedlíky"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0062" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0062/page-41.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0062/page-41.png" alt="Source page context for Potato dumplings · Bramborové knedlíky"></a><figcaption>PDF page 41 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-title.png" alt="Exact cited title crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>title · PDF 41</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-listgroup-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-listgroup-1.png" alt="Exact cited ingredient crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>listgroup 1 · PDF 41</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-text-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-text-2.png" alt="Exact cited instruction crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>text 2 · PDF 41</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-text-3.png" alt="Exact cited instruction crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>text 3 · PDF 41</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-text-4.png" alt="Exact cited instruction crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>text 4 · PDF 41</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0062/p41-text-5.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0062/p41-text-5.png" alt="Exact cited yield_time crop for Potato dumplings · Bramborové knedlíky on PDF page 41"></a><figcaption>text 5 · PDF 41</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Potato dumplings · Bramborové knedlíky</p>
+                  <h4>Ingredients</h4><ul><li>5 medium potatoes</li><li>1 cup flour</li><li>1 cup cream of wheat, regular, not precooked</li><li>4 tablespoons butter</li><li>2 whole eggs</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Peel potatoes, cook in salted water, drain. Mash them, add butter, eggs, salt. Mix thoroughly, blend in flour and cream of wheat. Knead until dough is smooth and dry.</li><li>Pinch off bits of dough, roll into 2&quot; balls. Cook in lightly salted boiling water 10-12 minutes. Serve immediately.</li><li>Serve with roast goose, pork, cabbage, sauerkraut.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 5 · 4 · 2 · 2&quot; · 10-12</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0062"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0062"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0063">
+              <header class="recipe-head">
+                <div><h2>Potato salad · Bramborový salát</h2><p class="record-meta">vera-r0063 · PDF 42 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0063.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0063">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0063" aria-label="View source for Potato salad · Bramborový salát" data-source-title="Potato salad · Bramborový salát"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0063" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0063/page-42.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0063/page-42.png" alt="Source page context for Potato salad · Bramborový salát"></a><figcaption>PDF page 42 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0063/p42-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0063/p42-title.png" alt="Exact cited title crop for Potato salad · Bramborový salát on PDF page 42"></a><figcaption>title · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0063/p42-listgroup-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0063/p42-listgroup-1.png" alt="Exact cited ingredient crop for Potato salad · Bramborový salát on PDF page 42"></a><figcaption>listgroup 1 · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0063/p42-text-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0063/p42-text-2.png" alt="Exact cited instruction crop for Potato salad · Bramborový salát on PDF page 42"></a><figcaption>text 2 · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0063/p42-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0063/p42-text-3.png" alt="Exact cited yield_time crop for Potato salad · Bramborový salát on PDF page 42"></a><figcaption>text 3 · PDF 42</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Potato salad · Bramborový salát</p>
+                  <h4>Ingredients</h4><ul><li>5 medium potatoes, boiled, cooled, peeled and diced</li><li>2 medium onions, finely chopped</li><li>5 slices ham cut in thin strips</li><li>7 pickled cucumbers, peeled, diced, squeezed dry</li><li>2 large green apples, Granny Smith, peeled, cored, diced</li><li>2/3 cup Hellmann&#x27;s mayonnaise mixed with 1 tablespoon Dijon mustard</li><li>2 teaspoons vinegar</li><li>2 teaspoons white wine Worcestershire sauce</li><li>white pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Place potatoes in a large bowl, sprinkle with vinegar, Worcestershire sauce, pepper. Add onions, ham, apples. Add pickles last, making sure they are squeezed dry. Lightly toss together all ingredients. With a spatula thoroughly but carefully blend in mayonnaise/mustard mixture. Chill to blend flavors, at least several hours. To serve, spoon salad in a bowl lined with lettuce. Serve with roasts, chicken, meatloaf.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 8-10 – Preparation time 1 hour 15 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 8-10 · 1 · 15 · 5 · 2 · 7 · 2/3</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0063"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0063"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0064">
+              <header class="recipe-head">
+                <div><h2>Goulash soup · Gulášová polévka</h2><p class="record-meta">vera-r0064 · PDF 42 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0064.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0064">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0064" aria-label="View source for Goulash soup · Gulášová polévka" data-source-title="Goulash soup · Gulášová polévka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0064" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0064/page-42.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0064/page-42.png" alt="Source page context for Goulash soup · Gulášová polévka"></a><figcaption>PDF page 42 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0064/p42-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0064/p42-title.png" alt="Exact cited title crop for Goulash soup · Gulášová polévka on PDF page 42"></a><figcaption>title · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0064/p42-listgroup-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0064/p42-listgroup-1.png" alt="Exact cited ingredient crop for Goulash soup · Gulášová polévka on PDF page 42"></a><figcaption>listgroup 1 · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0064/p42-text-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0064/p42-text-2.png" alt="Exact cited instruction crop for Goulash soup · Gulášová polévka on PDF page 42"></a><figcaption>text 2 · PDF 42</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0064/p42-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0064/p42-text-3.png" alt="Exact cited yield_time crop for Goulash soup · Gulášová polévka on PDF page 42"></a><figcaption>text 3 · PDF 42</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Goulash soup · Gulášová polévka</p>
+                  <h4>Ingredients</h4><ul><li>1-1/2 quarts beef stock</li><li>1 lb. beef stew meat cut in 1/2&quot; cubes</li><li>3 tablespoons vegetable oil</li><li>2 slices bacon cut in short strips</li><li>1 medium onion, finely chopped</li><li>2 medium potatoes, peeled and cut in 1/2&quot; cubes</li><li>1 tablespoon paprika</li><li>4 tablespoons flour</li><li>1/2 teaspoon each of caraway seeds, marjoram, ground nutmeg</li><li>3 cloves garlic, pressed or chopped</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>In a large saucepan combine oil, bacon and onion, brown it lightly. Add paprika, beef, pepper, caraway seeds, marjoram, nutmeg, garlic. Cover and simmer until beef is almost tender, about 45 minutes, stirring occasionally and adding 2-3 tablespoons beef stock, just enough to keep moisture in the pan. Uncover, blend in flour, braise 5 minutes. Add potatoes, beef stock, bring to boiling. Cook over medium/low heat until potatoes and beef are tender, 15-20 minutes. Season to taste with salt and pepper.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 1-1/2 · 1 · 1/2&quot; · 3 · 4 · 1/2 · 45 · 2-3 · 5 · 15-20</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0064"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0064"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0065">
+              <header class="recipe-head">
+                <div><h2>Cream of chicken soup · Krém z kuřat</h2><p class="record-meta">vera-r0065 · PDF 43 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0065.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0065">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0065" aria-label="View source for Cream of chicken soup · Krém z kuřat" data-source-title="Cream of chicken soup · Krém z kuřat"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0065" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0065/page-43.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0065/page-43.png" alt="Source page context for Cream of chicken soup · Krém z kuřat"></a><figcaption>PDF page 43 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-title.png" alt="Exact cited title crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>title · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-text-1.png" alt="Exact cited instruction crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>text 1 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-listgroup-2.png" alt="Exact cited ingredient crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>listgroup 2 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-text-3.png" alt="Exact cited instruction crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>text 3 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-text-4.png" alt="Exact cited instruction crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>text 4 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0065/p43-text-5.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0065/p43-text-5.png" alt="Exact cited yield_time crop for Cream of chicken soup · Krém z kuřat on PDF page 43"></a><figcaption>text 5 · PDF 43</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Cream of chicken soup · Krém z kuřat</p>
+                  <h4>Ingredients</h4><ul><li>2 quarts water</li><li>1 small chicken, 2 lbs., quartered</li><li>2 beef soup bones</li><li>soup greens (carrot, celery, parsley)</li><li>1 medium onion, quartered</li><li>1/3 teaspoon ground allspice</li><li>1 egg yolk</li><li>1/2 cup heavy cream</li><li>salt and pepper</li><li>2 tablespoons butter and 3 tablespoons flour for the roux</li></ul>
+                  <h4>Instructions</h4><ol><li>Place water, chicken, bones, soup greens, onion, salt in a large saucepan. Bring to boiling. Simmer, covered, 45 minutes or until chicken is tender.</li><li>Remove chicken when cool, discard skin and bones, puree chicken meat. Reserve.</li><li>In a separate saucepan stir flour into melted butter and cook until bubbly and golden brown. Gradually add the broth from the chicken, bones, allspice and pepper. Cook 10 minutes over medium heat. Strain. Stir in puréed chicken. Lightly beat egg yolk and cream and blend mixture into soup. Season with salt and pepper. Heat through. Do not boil after egg yolk/cream addition.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 1 · 1/3 · 1/2 · 3 · 45 · 10</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0065"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0065"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0066">
+              <header class="recipe-head">
+                <div><h2>Tripe soup · Drštková polévka</h2><p class="record-meta">vera-r0066 · PDF 43, 44 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0066.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0066">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0066" aria-label="View source for Tripe soup · Drštková polévka" data-source-title="Tripe soup · Drštková polévka"><span class="source-toggle-label">View source</span><small>9 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0066" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0066/page-43.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0066/page-43.png" alt="Source page context for Tripe soup · Drštková polévka"></a><figcaption>PDF page 43 context</figcaption></figure><figure><a href="../../evidence/production-batch-009/overview/vera-r0066/page-44.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0066/page-44.png" alt="Source page context for Tripe soup · Drštková polévka"></a><figcaption>PDF page 44 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p43-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p43-title.png" alt="Exact cited title crop for Tripe soup · Drštková polévka on PDF page 43"></a><figcaption>title · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p43-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p43-text-1.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 43"></a><figcaption>text 1 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p43-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p43-listgroup-2.png" alt="Exact cited ingredient crop for Tripe soup · Drštková polévka on PDF page 43"></a><figcaption>listgroup 2 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p43-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p43-text-3.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 43"></a><figcaption>text 3 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p43-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p43-text-4.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 43"></a><figcaption>text 4 · PDF 43</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p44-text-5.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p44-text-5.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 44"></a><figcaption>text 5 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p44-text-6.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p44-text-6.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 44"></a><figcaption>text 6 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p44-text-7.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p44-text-7.png" alt="Exact cited instruction crop for Tripe soup · Drštková polévka on PDF page 44"></a><figcaption>text 7 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0066/p44-text-8.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0066/p44-text-8.png" alt="Exact cited yield_time crop for Tripe soup · Drštková polévka on PDF page 44"></a><figcaption>text 8 · PDF 44</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Tripe soup · Drštková polévka</p>
+                  <h4>Ingredients</h4><ul><li>2 lbs. tripe</li><li>2 quarts chicken broth</li><li>2 carrots</li><li>1 celery root, or 4 stalks</li><li>1 medium onion, quartered</li><li>4 cloves garlic, pressed or chopped</li><li>2 tablespoons paprika</li><li>1/2 teaspoon each of marjoram, ground allspice, black pepper, ginger</li><li>3 tablespoons butter and 4 tablespoons flour for the roux</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Most supermarkets and butchers sell tripe already cleaned and parboiled, so just rinse it well in cold water. However, if you need to start from scratch, here&#x27;s how:</li><li>Clean tripe well and rinse thoroughly under running cold water. Rub with salt, scald with boiling water, then rinse again under running cold water. Put in a large pot, cover with salted water, and boil covered for 1 hour. Drain. Rinse thoroughly in cold water again. Start with clean salted water and boil tripe until almost tender. 1-2 hours.</li><li>Cook tripe with carrots, celery and onion in chicken broth until tripe</li><li>and vegetables are tender, 30-40 minutes. Remove tripe and vegetables, reserve the broth.</li><li>Melt butter in a saucepan. Stir in flour to make a smooth paste. Cook and stir until golden. Add garlic, paprika, marjoram, allspice, pepper and ginger. Brown mixture lightly. Add the broth, simmer 10 minutes, strain.</li><li>Cut tripe in 2&quot; long thin strips, slice vegetables, stir into soup. Season to taste with salt and pepper.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 2 · 4 · 1/2 · 3 · 1-2 · 30-40 · 10 · 2&quot;</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0066"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0066"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0067">
+              <header class="recipe-head">
+                <div><h2>Country potato soup · Bramborová polévka</h2><p class="record-meta">vera-r0067 · PDF 44 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0067.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0067">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0067" aria-label="View source for Country potato soup · Bramborová polévka" data-source-title="Country potato soup · Bramborová polévka"><span class="source-toggle-label">View source</span><small>5 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0067" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0067/page-44.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0067/page-44.png" alt="Source page context for Country potato soup · Bramborová polévka"></a><figcaption>PDF page 44 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0067/p44-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0067/p44-title.png" alt="Exact cited title crop for Country potato soup · Bramborová polévka on PDF page 44"></a><figcaption>title · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0067/p44-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0067/p44-text-1.png" alt="Exact cited instruction crop for Country potato soup · Bramborová polévka on PDF page 44"></a><figcaption>text 1 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0067/p44-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0067/p44-listgroup-2.png" alt="Exact cited ingredient crop for Country potato soup · Bramborová polévka on PDF page 44"></a><figcaption>listgroup 2 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0067/p44-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0067/p44-text-3.png" alt="Exact cited instruction crop for Country potato soup · Bramborová polévka on PDF page 44"></a><figcaption>text 3 · PDF 44</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0067/p44-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0067/p44-text-4.png" alt="Exact cited yield_time crop for Country potato soup · Bramborová polévka on PDF page 44"></a><figcaption>text 4 · PDF 44</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Country potato soup · Bramborová polévka</p>
+                  <h4>Ingredients</h4><ul><li>1-1/2 quarts water</li><li>3 medium potatoes, peeled, cut in cubes</li><li>1 medium onion, finely chopped</li><li>4 cloves garlic, pressed</li><li>1/2 teaspoon each of caraway seeds, and marjoram</li><li>2 tablespoons butter</li><li>3 tablespoons flour</li><li>1 cup fresh mushrooms, sliced lengthwise, sautéed in butter</li><li>parsley, finely chopped</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>In a large saucepot combine potatoes, salt, caraway seeds, marjoram, water. Cook 20 minutes, or until potatoes are crisp-tender.</li><li>Sauté onion and garlic in butter, stir in flour, brown lightly. Add 2 cups cooking liquid from the potatoes. Bring to boiling, cook and stir 5 minutes. Strain mixture into potatoes. Simmer 10 minutes, add mushrooms and parsley. Season to taste with salt and pepper.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 1-1/2 · 3 · 4 · 1/2 · 2 · 20 · 5 · 10</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0067"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0067"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0068">
+              <header class="recipe-head">
+                <div><h2>Milk soup · Mléčná polévka</h2><p class="record-meta">vera-r0068 · PDF 45 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0068.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0068">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0068" aria-label="View source for Milk soup · Mléčná polévka" data-source-title="Milk soup · Mléčná polévka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0068" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0068/page-45.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0068/page-45.png" alt="Source page context for Milk soup · Mléčná polévka"></a><figcaption>PDF page 45 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0068/p45-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0068/p45-title.png" alt="Exact cited title crop for Milk soup · Mléčná polévka on PDF page 45"></a><figcaption>title · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0068/p45-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0068/p45-text-1.png" alt="Exact cited instruction crop for Milk soup · Mléčná polévka on PDF page 45"></a><figcaption>text 1 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0068/p45-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0068/p45-listgroup-2.png" alt="Exact cited ingredient crop for Milk soup · Mléčná polévka on PDF page 45"></a><figcaption>listgroup 2 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0068/p45-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0068/p45-text-3.png" alt="Exact cited yield_time crop for Milk soup · Mléčná polévka on PDF page 45"></a><figcaption>text 3 · PDF 45</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Milk soup · Mléčná polévka</p>
+                  <h4>Ingredients</h4><ul><li>2 quarts milk</li><li>3 egg yolks</li><li>1/4 cup sugar</li><li>1/4 teaspoon salt</li><li>toasts or croutons</li></ul>
+                  <h4>Instructions</h4><ol><li>Lightly beat egg yolks in one cup milk. Pour remaining milk in a saucepot, add sugar and salt. Set over medium/low heat, bring to boiling, stirring constantly. Blend in yolks/milk mixture, heat through, but do not boil. Serve with toasts or croutons.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 15 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 15 · 2 · 3 · 1/4</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0068"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0068"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0069">
+              <header class="recipe-head">
+                <div><h2>Wine soup · Vinná polévka</h2><p class="record-meta">vera-r0069 · PDF 45 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0069.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0069">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0069" aria-label="View source for Wine soup · Vinná polévka" data-source-title="Wine soup · Vinná polévka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0069" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0069/page-45.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0069/page-45.png" alt="Source page context for Wine soup · Vinná polévka"></a><figcaption>PDF page 45 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0069/p45-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0069/p45-title.png" alt="Exact cited title crop for Wine soup · Vinná polévka on PDF page 45"></a><figcaption>title · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0069/p45-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0069/p45-text-1.png" alt="Exact cited instruction crop for Wine soup · Vinná polévka on PDF page 45"></a><figcaption>text 1 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0069/p45-text-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0069/p45-text-2.png" alt="Exact cited yield_time crop for Wine soup · Vinná polévka on PDF page 45"></a><figcaption>text 2 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0069/p45-ingredients-wine.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0069/p45-ingredients-wine.png" alt="Exact cited ingredient crop for Wine soup · Vinná polévka on PDF page 45"></a><figcaption>ingredients wine · PDF 45</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Wine soup · Vinná polévka</p>
+                  <h4>Ingredients</h4><ul><li>1·1/2 bottles white table wine</li><li>6 egg yolks</li><li>1/3 cup sugar</li><li>grated rind of 1 lemon</li><li>toasts or crackers</li></ul>
+                  <h4>Instructions</h4><ol><li>Combine all ingredients in a saucepan, set over medium heat. Beat at low speed until soup starts to boil. Serve with toasts or crackers.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 15 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 15 · 1·1/2 · 1/3 · 1</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0069"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0069"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0070">
+              <header class="recipe-head">
+                <div><h2>Beer soup · Pivní polévka</h2><p class="record-meta">vera-r0070 · PDF 45 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0070.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0070">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0070" aria-label="View source for Beer soup · Pivní polévka" data-source-title="Beer soup · Pivní polévka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0070" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0070/page-45.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0070/page-45.png" alt="Source page context for Beer soup · Pivní polévka"></a><figcaption>PDF page 45 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0070/p45-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0070/p45-title.png" alt="Exact cited title crop for Beer soup · Pivní polévka on PDF page 45"></a><figcaption>title · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0070/p45-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0070/p45-text-1.png" alt="Exact cited instruction crop for Beer soup · Pivní polévka on PDF page 45"></a><figcaption>text 1 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0070/p45-text-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0070/p45-text-2.png" alt="Exact cited yield_time crop for Beer soup · Pivní polévka on PDF page 45"></a><figcaption>text 2 · PDF 45</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0070/p45-ingredients-beer.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0070/p45-ingredients-beer.png" alt="Exact cited ingredient crop for Beer soup · Pivní polévka on PDF page 45"></a><figcaption>ingredients beer · PDF 45</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Beer soup · Pivní polévka</p>
+                  <h4>Ingredients</h4><ul><li>1·1/2 quarts light beer</li><li>6 egg yolks</li><li>3 level tablespoons sugar</li><li>grated rind of 1 lemon</li><li>dash of cinnamon, ground clove, nutmeg</li><li>French bread</li></ul>
+                  <h4>Instructions</h4><ol><li>Combine all ingredients in a saucepan, set over medium heat. Beat at low speed until soup is hot. Must not boil. Serve with French bread.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 15 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 15 · 1·1/2 · 3 · 1</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0070"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0070"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0071">
+              <header class="recipe-head">
+                <div><h2>Bohemian open-faced pastries · České koláčky</h2><p class="record-meta">vera-r0071 · PDF 48 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0071.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0071">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0071" aria-label="View source for Bohemian open-faced pastries · České koláčky" data-source-title="Bohemian open-faced pastries · České koláčky"><span class="source-toggle-label">View source</span><small>12 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0071" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0071/page-48.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0071/page-48.png" alt="Source page context for Bohemian open-faced pastries · České koláčky"></a><figcaption>PDF page 48 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-title.png" alt="Exact cited title crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>title · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-1.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 1 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-listgroup-2.png" alt="Exact cited ingredient crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>listgroup 2 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-3.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 3 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-4.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 4 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-5.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-5.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 5 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-6.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-6.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 6 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-7.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-7.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 7 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-8.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-8.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 8 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-9.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-9.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 9 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-10.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-10.png" alt="Exact cited instruction crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 10 · PDF 48</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0071/p48-text-11.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0071/p48-text-11.png" alt="Exact cited yield_time crop for Bohemian open-faced pastries · České koláčky on PDF page 48"></a><figcaption>text 11 · PDF 48</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Bohemian open-faced pastries · České koláčky</p>
+                  <h4>Ingredients</h4><ul><li>4 cups flour</li><li>1 oz. fresh yeast</li><li>2 cups milk</li><li>1/3 cup sugar</li><li>6 tablespoons butter</li><li>grated rind of 1 lemon</li><li>2 egg yolks</li><li>dash of grated nutmeg</li><li>1 whole egg for brushing</li><li>1 cup filling or thick fruit preserve</li></ul>
+                  <h4>Instructions</h4><ol><li>Leavening: In a bowl stir yeast with 2 teaspoons sugar until dissolved. Add 2/3 cup flour and 1/2 cup lukewarm milk. Knead into a ball. Dust with flour, cover with napkin, let rise in a warm place. It will double in bulk within 20 minutes.</li><li>In a separate bowl combine remaining flour and sugar, lemon rind, nutmeg, salt. Place risen leavening in center.</li><li>Lightly beat egg yolks and the remaining lukewarm milk, then add it gradually to flour/leavening while mixing thoroughly. Finally add melted lukewarm butter and knead dough until smooth and elastic.</li><li>Dust with flour, cover with a napkin and let rise 40 minutes in a warm place.</li><li>Punch dough down and turn onto lightly floured pastry board. Break off dough and form balls the size of a walnut. Place them on a greased baking sheet, 4&quot; apart. Let rise 10 minutes.</li><li>Press down the center of each ball, using bottom of a small glass or other round object, or with your fingers, so that a higher border will be formed. Brush borders with beaten egg. Spread filling evenly over center wells. Let rise 15 minutes.</li><li>(If using butter crumbs filling, brush with melted butter first. This way filling will stick).</li><li>Preheat oven to 350F, bake 15 minutes, or until borders are golden brown.</li><li>Dust with sugar while warm.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 3 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 3 · 4 · 1 · 2 · 1/3 · 6 · 2/3 · 1/2 · 20 · 40 · 4&quot; · 15 · 350F</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0071"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0071"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0072">
+              <header class="recipe-head">
+                <div><h2>Bohemian muffins · Buchty</h2><p class="record-meta">vera-r0072 · PDF 49 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0072.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0072">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0072" aria-label="View source for Bohemian muffins · Buchty" data-source-title="Bohemian muffins · Buchty"><span class="source-toggle-label">View source</span><small>7 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0072" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-009/overview/vera-r0072/page-49.png"><img loading="lazy" src="../../evidence/production-batch-009/overview/vera-r0072/page-49.png" alt="Source page context for Bohemian muffins · Buchty"></a><figcaption>PDF page 49 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-title.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-title.png" alt="Exact cited title crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>title · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-text-1.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-text-1.png" alt="Exact cited instruction crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>text 1 · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-listgroup-2.png" alt="Exact cited ingredient crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>listgroup 2 · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-text-3.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-text-3.png" alt="Exact cited instruction crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>text 3 · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-text-4.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-text-4.png" alt="Exact cited instruction crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>text 4 · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-text-5.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-text-5.png" alt="Exact cited instruction crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>text 5 · PDF 49</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-009/regions/vera-r0072/p49-yield-manual.png"><img loading="lazy" src="../../evidence/production-batch-009/regions/vera-r0072/p49-yield-manual.png" alt="Exact cited yield_time crop for Bohemian muffins · Buchty on PDF page 49"></a><figcaption>yield manual · PDF 49</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Bohemian muffins · Buchty</p>
+                  <h4>Ingredients</h4><ul><li>4 cups coarse flour, Gold Medal Wondra</li><li>1 oz. fresh yeast</li><li>1-1/4 cups milk</li><li>1/3 cup sugar</li><li>1 whole egg</li><li>3 egg yolks</li><li>8 tablespoons butter</li><li>dash of salt</li><li>4 tablespoons butter for brushing and for baking pan</li><li>1 cup filling</li></ul>
+                  <h4>Instructions</h4><ol><li>Leavening: In a bowl stir yeast with 2 teaspoons sugar until dissolved. Add 2/3 cup flour and 1/2 cup lukewarm milk. Knead into a ball. Dust with flour, cover with a napkin, set aside to rise – in a warm draft free place. It should double in bulk within 15-20 minutes.</li><li>In a separate bowl blend remaining flour with sugar, lemon rind and salt. Push to sides making a well in the center. Place risen leavening in the well.</li><li>Lightly beat egg yolks and whole egg in remaining lukewarm milk. Add it gradually to flour/leavening mixture, mixing thoroughly. Lastly, add melted lukewarm butter. Knead dough until smooth and no longer sticks to the bowl. Dust with flour, cover with napkin and let it rise 40 minutes.</li><li>Turn dough over onto a floured pastry board and roll it out to 1/3&quot; thickness. Cut into 2 × 3&quot; rectangles. Drop filling by teaspoonfuls on narrower side of each rectangle, roll over so that filling will be well covered with the dough. Pinch sides firmly to seal them. Dip each piece in butter, or brush on all sides with melted butter. Arrange them close together in a buttered baking pan. Let them rise 30 minutes. Preheat oven to 350F and bake 25 minutes or until golden on top. Invert &#x27;buchty&#x27; onto a wire rack and cool, at least 20 minutes. Separate them carefully and sprinkle with sugar.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 3 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 3 · 4 · 1 · 1-1/4 · 1/3 · 8 · 2 · 2/3 · 1/2 · 15-20 · 40 · 1/3&quot; · 3&quot; · 30 · 350F · 25 · 20</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0072"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0072"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            </main>
+<script>
+const key='vera-production-batch-009-human-checklist-v2';
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}');}catch(error){saved={};}
+boxes.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',()=>{saved[index]=box.checked;localStorage.setItem(key,JSON.stringify(saved));update();});});
+function update(){const count=boxes.filter(box=>box.checked).length;document.querySelector('#progress').textContent=`${count} / ${boxes.length} checked`;}
+async function writeClipboard(text){
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return;}
+  const area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+  if(!document.execCommand('copy')){throw new Error('Copy command was unavailable.');}area.remove();
+}
+async function copyStatus(){
+  const lines=['Vera Cookbook production batch 009 review status'];
+  document.querySelectorAll('.recipe').forEach(card=>{
+    const cardBoxes=[...card.querySelectorAll('input[type=checkbox]')];
+    const checked=cardBoxes.filter(box=>box.checked).length;
+    const status=card.querySelector('.status').textContent.trim();
+    lines.push(`${card.id}: ${status}; ${checked} / ${cardBoxes.length} optional human checks complete`);
+  });
+  const feedback=document.querySelector('#copy-feedback');
+  try{await writeClipboard(lines.join('\n'));feedback.textContent='Copied.';}catch(error){feedback.textContent='Copy failed; select the status manually.';}
+}
+const sourceDetails=[...document.querySelectorAll('[data-source]')];
+function setSourceOpen(container,open){
+  const toggle=container.querySelector('.source-toggle');
+  const panel=container.querySelector('.source-panel');
+  toggle.setAttribute('aria-expanded',String(open));
+  toggle.setAttribute('aria-label',`${open?'Hide':'View'} source for ${toggle.dataset.sourceTitle}`);
+  toggle.querySelector('.source-toggle-label').textContent=open?'Hide source':'View source';
+  toggle.querySelector('.source-toggle-icon').textContent=open?'−':'+';
+  panel.hidden=!open;
+  container.classList.toggle('is-open',open);
+}
+sourceDetails.forEach(container=>{
+  const toggle=container.querySelector('.source-toggle');
+  toggle.addEventListener('click',()=>setSourceOpen(container,toggle.getAttribute('aria-expanded')!=='true'));
+  toggle.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle.click();}
+  });
+});
+let printOpen=[];
+window.addEventListener('beforeprint',()=>{printOpen=sourceDetails.map(item=>item.classList.contains('is-open'));sourceDetails.forEach(item=>setSourceOpen(item,true));});
+window.addEventListener('afterprint',()=>{sourceDetails.forEach((item,index)=>setSourceOpen(item,printOpen[index]));});
+update();
+</script>
+</body>
+</html>

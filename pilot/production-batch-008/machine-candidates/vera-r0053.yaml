@@ -1,0 +1,236 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0053
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 37
+  printed_pages:
+  - '36'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0053-title
+  pdf_page: 37
+  printed_page: '36'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2136
+    origin: top_left
+  polygon:
+  - - 879
+    - 345
+  - - 1980
+    - 345
+  - - 1980
+    - 449
+  - - 879
+    - 449
+  candidate_block_ids:
+  - /page/36/SectionHeader/1
+  region_image: evidence/production-batch-008/regions/vera-r0053/p37-title.png
+  region_image_pixel_sha256: d762923ecd20fc3b9c3cbb13e144cb91552ade844b9cf56a87073c178ca13f82
+- region_id: vera-r0053-ingredients
+  pdf_page: 37
+  printed_page: '36'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2136
+    origin: top_left
+  polygon:
+  - - 213
+    - 460
+  - - 966
+    - 460
+  - - 966
+    - 1109
+  - - 213
+    - 1109
+  candidate_block_ids:
+  - /page/36/ListGroup/2
+  region_image: evidence/production-batch-008/regions/vera-r0053/p37-ingredients.png
+  region_image_pixel_sha256: 2636bbcc6ef6aeabb703ce778cb7707e3abc94ef0fb4b2d5b1a78ab4f98a93e2
+- region_id: vera-r0053-step-1
+  pdf_page: 37
+  printed_page: '36'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2136
+    origin: top_left
+  polygon:
+  - - 1050
+    - 439
+  - - 2670
+    - 439
+  - - 2670
+    - 1156
+  - - 1050
+    - 1156
+  candidate_block_ids:
+  - /page/36/Text/3
+  region_image: evidence/production-batch-008/regions/vera-r0053/p37-step-1.png
+  region_image_pixel_sha256: 69eebd90cc76a38ad62332b9d640ccf216598948f7cd704ce26a60a9a6925082
+- region_id: vera-r0053-yield
+  pdf_page: 37
+  printed_page: '36'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2136
+    origin: top_left
+  polygon:
+  - - 1053
+    - 1150
+  - - 1992
+    - 1150
+  - - 1992
+    - 1235
+  - - 1053
+    - 1235
+  candidate_block_ids:
+  - /page/36/Text/4
+  region_image: evidence/production-batch-008/regions/vera-r0053/p37-yield.png
+  region_image_pixel_sha256: 6e3295e1c76876ae50f3be25745cf86817146739cd3204bb7654f43a459a7740
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Stuffed cabbage rolls · Plněná kapusta
+    language: mul
+    source_region_ids:
+    - vera-r0053-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Stuffed cabbage rolls
+    language: en
+    source_region_ids:
+    - vera-r0053-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Plněná kapusta
+    language: cs
+    source_region_ids:
+    - vera-r0053-title
+    title_role: parallel
+  source_order: 53
+  slug_candidate: stuffed-cabbage-rolls
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0053-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 savoy cabbage head
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 lb. ground veal
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 lb. ground pork
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 hard baked roll
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1/2 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 2 small onions, chopped
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 2 cloves garlic, pressed or chopped
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 1 egg, whole
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: minced parsely
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: marjoram
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+    - segment_id: ingredient-13
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0053-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pull off 12 large leaves from the cabbage head. Parboil them in salted water, place
+        each on a napkin and flatten it with rolling pin or hand. Soak roll in milk, squeeze off excess
+        and shred it. In a mixing bowl combine ground meat, shredded roll, 1 chopped onion, minced parsely,
+        marjoram, garlic, salt and pepper. Mix thoroughly and spread evenly on the cabbage leaves. Roll
+        them tightly, fasten each with a string or wooden pick. In a large skillet sauté onion in butter,
+        add the stuffed cabbage rolls, simmer 30·40 minutes, adding occasionally some of the chicken stock.
+        Lift rolls onto a serving dish, sprinkle with juices from the pan, serve with rice or potatoes.
+      language: en
+      source_region_ids:
+      - vera-r0053-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T02:24:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T02:23:27Z'
+    artifact_path: pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T02:24:00Z'
+  checks: []
+  open_issues: []

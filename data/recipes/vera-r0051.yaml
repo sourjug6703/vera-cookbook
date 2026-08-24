@@ -1,0 +1,369 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0051
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 36
+  printed_pages:
+  - '35'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0051-title
+  pdf_page: 36
+  printed_page: '35'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 867
+    - 371
+  - - 2151
+    - 371
+  - - 2151
+    - 528
+  - - 867
+    - 528
+  candidate_block_ids:
+  - /page/35/SectionHeader/1
+  region_image: evidence/production-batch-007/regions/vera-r0051/p36-title.png
+  region_image_pixel_sha256: 352c64f7310abff09499862589ac2179e4e3aa664d4db1c6af2f68305760057b
+- region_id: vera-r0051-ingredients
+  pdf_page: 36
+  printed_page: '35'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 231
+    - 461
+  - - 1077
+    - 461
+  - - 1077
+    - 1012
+  - - 231
+    - 1012
+  candidate_block_ids:
+  - /page/35/ListGroup/2
+  region_image: evidence/production-batch-007/regions/vera-r0051/p36-ingredients.png
+  region_image_pixel_sha256: 345fbdf136e92021e69955713b2e1587f94de24e2fb211393e6be515c4aad809
+- region_id: vera-r0051-step-1
+  pdf_page: 36
+  printed_page: '35'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1128
+    - 492
+  - - 2733
+    - 492
+  - - 2733
+    - 974
+  - - 1128
+    - 974
+  candidate_block_ids:
+  - /page/35/Text/3
+  region_image: evidence/production-batch-007/regions/vera-r0051/p36-step-1.png
+  region_image_pixel_sha256: 444d308ab84ea46d040d372610d8857758d6d6ecd9491f842ceea0df41fdb329
+- region_id: vera-r0051-yield
+  pdf_page: 36
+  printed_page: '35'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1128
+    - 931
+  - - 2082
+    - 931
+  - - 2082
+    - 1041
+  - - 1128
+    - 1041
+  candidate_block_ids:
+  - /page/35/Text/4
+  region_image: evidence/production-batch-007/regions/vera-r0051/p36-yield.png
+  region_image_pixel_sha256: 15504307537f5d7e7267813f29246ac827fa02cce615baa323dd8d23b672c23b
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Ham and noodles casserole · Šunkové nudle
+    language: mul
+    source_region_ids:
+    - vera-r0051-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Ham and noodles casserole
+    language: en
+    source_region_ids:
+    - vera-r0051-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Šunkové nudle
+    language: cs
+    source_region_ids:
+    - vera-r0051-title
+    title_role: parallel
+  source_order: 51
+  slug_candidate: ham-and-noodles-casserole
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0051-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 12 oz. egg noodles
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 8 oz. fully cooked ham slices, cut into short strips
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 3 eggs, separated
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 tablespoon butter
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 2 tablespoons bread crumbs.
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 2/3 cup heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0051-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Cook noodles in lightly salted water, drain and splash with cold water. In a bowl
+        cream butter, egg yolks, lemon rind. Combine mixture with noodles and ham. Blend thoroughly. Fold
+        in 3 stiffly beaten egg whites. Put into buttered and bread crumbs coated casserole. Pour the
+        cream evenly over top and bake uncovered at 350F 35·40 minutes or until golden brown on top. Serve
+        straight from oven, with green salad or tomato salad.
+      language: en
+      source_region_ids:
+      - vera-r0051-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:27:37Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0051
+    source_region_ids: &id001
+    - vera-r0051-title
+    - vera-r0051-ingredients
+    - vera-r0051-step-1
+    - vera-r0051-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0051
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    source_region_ids:
+    - vera-r0051-title
+    - vera-r0051-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0051-title
+    - vera-r0051-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - step-1
+    source_region_ids:
+    - vera-r0051-title
+    - vera-r0051-yield
+    - vera-r0051-ingredients
+    - vera-r0051-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - step-1
+    source_region_ids:
+    - vera-r0051-yield
+    - vera-r0051-ingredients
+    - vera-r0051-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0051-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0051
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0051-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

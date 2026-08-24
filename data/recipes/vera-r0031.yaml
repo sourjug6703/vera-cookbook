@@ -1,0 +1,444 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0031
+record_revision: 2
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 24
+  - 25
+  printed_pages:
+  - '23'
+  - '24'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0031-title
+  pdf_page: 24
+  printed_page: '23'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1809
+  - - 1863
+    - 1809
+  - - 1863
+    - 1911
+  - - 1080
+    - 1911
+  candidate_block_ids:
+  - /page/23/SectionHeader/14
+  region_image: evidence/production-batch-001/regions/vera-r0031/p24-title.png
+  region_image_pixel_sha256: 1e959c317db627f82405b6b3f6edcc55770722cad1afe972ef6a79d8e7a0de85
+- region_id: vera-r0031-ingredients
+  pdf_page: 24
+  printed_page: '23'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 219
+    - 1917
+  - - 678
+    - 1917
+  - - 678
+    - 2141
+  - - 219
+    - 2141
+  candidate_block_ids:
+  - /page/23/ListGroup/15
+  region_image: evidence/production-batch-001/regions/vera-r0031/p24-ingredients.png
+  region_image_pixel_sha256: 8702301ddb281f9b6ff698f400107c16ddddb28a5e60813d92731c6ffa02342b
+- region_id: vera-r0031-step-1
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1907
+  - - 2706
+    - 1907
+  - - 2706
+    - 2114
+  - - 1092
+    - 2114
+  candidate_block_ids:
+  - /page/23/Text/16
+  region_image: evidence/production-batch-001/regions/vera-r0031/p24-step-1.png
+  region_image_pixel_sha256: bf44fd7b40e316ab4fa565b4c93d41ff9bf3e073a299c47ec83820512ae66b35
+- region_id: vera-r0031-step-2
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 2075
+  - - 2652
+    - 2075
+  - - 2652
+    - 2170
+  - - 1092
+    - 2170
+  candidate_block_ids:
+  - /page/23/Text/17
+  region_image: evidence/production-batch-001/regions/vera-r0031/p24-step-2.png
+  region_image_pixel_sha256: cb4b7924bead623dcd663bf98db576cc0eeddbdef98cab44b94e8b802a8b0bc4
+- region_id: vera-r0031-step-3a
+  pdf_page: 24
+  printed_page: '23'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 2132
+  - - 2709
+    - 2132
+  - - 2709
+    - 2284
+  - - 1092
+    - 2284
+  candidate_block_ids:
+  - /page/23/Text/18
+  region_image: evidence/production-batch-001/regions/vera-r0031/p24-step-3a.png
+  region_image_pixel_sha256: 84dfdb2c10b8deeabec3e525a226614b8261da8f1ac09f7840e83f5d6273aeb0
+- region_id: vera-r0031-step-3b
+  pdf_page: 25
+  printed_page: '24'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1822
+    origin: top_left
+  polygon:
+  - - 1077
+    - 23
+  - - 2718
+    - 23
+  - - 2718
+    - 630
+  - - 1077
+    - 630
+  candidate_block_ids:
+  - /page/24/Text/0
+  region_image: evidence/production-batch-001/regions/vera-r0031/p25-step-3b.png
+  region_image_pixel_sha256: 62f19f6d6664a7e3105b73fb0cc8620567c28b8a65309a62d6aa788fdd5d372d
+- region_id: vera-r0031-yield
+  pdf_page: 25
+  printed_page: '24'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1822
+    origin: top_left
+  polygon:
+  - - 1077
+    - 623
+  - - 2112
+    - 623
+  - - 2112
+    - 712
+  - - 1077
+    - 712
+  candidate_block_ids:
+  - /page/24/Text/1
+  region_image: evidence/production-batch-001/regions/vera-r0031/p25-yield.png
+  region_image_pixel_sha256: 1438855ca4e9bf727e345d1af6c084d79b4ed2f5350b28df8ee0ec5c9dbf7bb8
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Roast goose · Husa pečená
+    language: mul
+    source_region_ids:
+    - vera-r0031-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Roast goose
+    language: en
+    source_region_ids:
+    - vera-r0031-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Husa pečená
+    language: cs
+    source_region_ids:
+    - vera-r0031-title
+    title_role: parallel
+  source_order: 31
+  slug_candidate: roast-goose
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 8-10 – Preparation time: 3 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0031-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 goose, 10 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0031-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 4·5 medium apples
+      language: en
+      source_region_ids:
+      - vera-r0031-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: salt, caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0031-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: water
+      language: en
+      source_region_ids:
+      - vera-r0031-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      step_number: 1
+      text_verbatim: Rinse goose, pat dry. Rinse the apples-do not peel them. Rub the goose inside and
+        out with salt and caraway seeds. Fill body cavity with apples.
+      language: en
+      source_region_ids:
+      - vera-r0031-step-1
+    - segment_id: step-2
+      step_number: 2
+      text_verbatim: Place goose in a roasting pan with a little hot water at the bottom.
+      language: en
+      source_region_ids:
+      - vera-r0031-step-2
+    - segment_id: step-3
+      step_number: 3
+      text_verbatim: Roast at 350F, first breast side down for 1·1/2 hrs, basting with water and pan drippings.
+        When golden brown on top, turn goose breast side up. Continue roasting for 1-1/2 hours. While
+        roasting, prick the skin with a fork over the fatty areas to release fat. (Just the skin, not
+        the meat. If the juice from the meat runs out, the goose will become dry.) Total roasting time
+        is approximately 20 minutes per pound. During the last 15 minutes of roasting, raise oven temperature
+        to 400F and stop basting to achieve a crunchy skin. Remove apples and slice goose. Skim fat from
+        pan juices and pour into a gravy boat to accompany goose. Serve with dumplings, potato dumplings,
+        cabbage, red cabbage, sauerkraut.
+      language: en
+      source_region_ids:
+      - vera-r0031-step-3a
+      - vera-r0031-step-3b
+  notes: []
+  cross_references: []
+relationships:
+  continuations:
+  - from_region_id: vera-r0031-step-3a
+    to_region_id: vera-r0031-step-3b
+    relationship: continues_on
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T20:00:00Z'
+  created_by: codex-preflight
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T19:59:12Z'
+    artifact_path: pilot/production-batch-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T20:32:18Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0031
+    source_region_ids: &id001
+    - vera-r0031-title
+    - vera-r0031-ingredients
+    - vera-r0031-step-1
+    - vera-r0031-step-2
+    - vera-r0031-step-3a
+    - vera-r0031-step-3b
+    - vera-r0031-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0031
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    source_region_ids:
+    - vera-r0031-title
+    - vera-r0031-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids: &id002
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0031-title
+    - vera-r0031-step-1
+    - vera-r0031-step-2
+    - vera-r0031-step-3a
+    - vera-r0031-step-3b
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0031-title
+    - vera-r0031-yield
+    - vera-r0031-ingredients
+    - vera-r0031-step-1
+    - vera-r0031-step-2
+    - vera-r0031-step-3a
+    - vera-r0031-step-3b
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - step-3
+    source_region_ids:
+    - vera-r0031-yield
+    - vera-r0031-ingredients
+    - vera-r0031-step-3a
+    - vera-r0031-step-3b
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0031-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0031
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0031-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: ai-continuation
+    check_type: continuation
+    target_ids: *id002
+    source_region_ids:
+    - vera-r0031-step-1
+    - vera-r0031-step-2
+    - vera-r0031-step-3a
+    - vera-r0031-step-3b
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: The final sentence on PDF page 24 continues with 'up.' on PDF page 25.
+  open_issues: []

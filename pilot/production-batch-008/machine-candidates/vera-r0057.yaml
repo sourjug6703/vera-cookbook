@@ -1,0 +1,186 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0057
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 38
+  printed_pages:
+  - '37'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0057-title
+  pdf_page: 38
+  printed_page: '37'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 942
+    - 1410
+  - - 1980
+    - 1410
+  - - 1980
+    - 1514
+  - - 942
+    - 1514
+  candidate_block_ids:
+  - /page/37/SectionHeader/8
+  region_image: evidence/production-batch-008/regions/vera-r0057/p38-title.png
+  region_image_pixel_sha256: 62227c520b88fc7e7f8fdc72645c993f3dd7ed3274c9979bae33bee8220a3480
+- region_id: vera-r0057-ingredients
+  pdf_page: 38
+  printed_page: '37'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 222
+    - 1506
+  - - 705
+    - 1506
+  - - 705
+    - 1718
+  - - 222
+    - 1718
+  candidate_block_ids:
+  - /page/37/ListGroup/9
+  region_image: evidence/production-batch-008/regions/vera-r0057/p38-ingredients.png
+  region_image_pixel_sha256: d62baa848da7ccec3860bc1b3ade0ece48cf3337d13dbed40acd92449a94149c
+- region_id: vera-r0057-step-1
+  pdf_page: 38
+  printed_page: '37'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 1506
+  - - 2691
+    - 1506
+  - - 2691
+    - 1714
+  - - 1074
+    - 1714
+  candidate_block_ids:
+  - /page/37/Text/10
+  region_image: evidence/production-batch-008/regions/vera-r0057/p38-step-1.png
+  region_image_pixel_sha256: 99eb533cee221984f23aafd93805973e2715359491d759276445cc01e17ad721
+- region_id: vera-r0057-yield
+  pdf_page: 38
+  printed_page: '37'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 1696
+  - - 1812
+    - 1696
+  - - 1812
+    - 1786
+  - - 1074
+    - 1786
+  candidate_block_ids:
+  - /page/37/Text/11
+  region_image: evidence/production-batch-008/regions/vera-r0057/p38-yield.png
+  region_image_pixel_sha256: 3258e59e3deb5bf8a3425cc96d91920d945be2c3cd1cf060461a3832faa32904
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Mashed potatoes · Bramborová kaše
+    language: mul
+    source_region_ids:
+    - vera-r0057-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Mashed potatoes
+    language: en
+    source_region_ids:
+    - vera-r0057-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Bramborová kaše
+    language: cs
+    source_region_ids:
+    - vera-r0057-title
+    title_role: parallel
+  source_order: 57
+  slug_candidate: mashed-potatoes
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour.'
+    language: en
+    source_region_ids:
+    - vera-r0057-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 lbs. potatoes
+      language: en
+      source_region_ids:
+      - vera-r0057-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1·1/2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0057-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0057-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: salt.
+      language: en
+      source_region_ids:
+      - vera-r0057-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Peel potatoes and cook them in salted water. Drain. While hot mash them thoroughly,
+        adding gradually hot milk and butter. Taste for salt. Serve with roasts, meatloaf, fried chicken.
+      language: en
+      source_region_ids:
+      - vera-r0057-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T02:24:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T02:23:27Z'
+    artifact_path: pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T02:24:00Z'
+  checks: []
+  open_issues: []

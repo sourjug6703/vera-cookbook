@@ -1,0 +1,547 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vera-cookbook.local/schemas/recipe-record.schema.json",
+  "title": "Vera Cookbook Recipe Record",
+  "description": "A source-grounded, versioned recipe transcription with separate derived normalization and visual source-audit evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "recipe_id",
+    "record_revision",
+    "source_work",
+    "source_regions",
+    "identity",
+    "transcription",
+    "provenance",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": { "enum": ["1.2.0", "1.3.0"] },
+    "record_type": { "const": "recipe" },
+    "recipe_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{2,127}$"
+    },
+    "record_revision": { "type": "integer", "minimum": 1 },
+    "source_work": { "$ref": "#/$defs/sourceWork" },
+    "source_regions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sourceRegion" }
+    },
+    "identity": { "$ref": "#/$defs/identity" },
+    "transcription": { "$ref": "#/$defs/transcription" },
+    "relationships": { "$ref": "#/$defs/relationships" },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "verification": { "$ref": "#/$defs/verification" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "schema_version": { "const": "1.2.0" } },
+        "required": ["schema_version"]
+      },
+      "then": {
+        "properties": {
+          "transcription": {
+            "properties": {
+              "ingredient_sections": { "minItems": 1 }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{1,127}$"
+    },
+    "languageTag": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$"
+    },
+    "sourceWork": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["work_id", "source_file", "source_sha256", "pdf_page_count", "pdf_pages"],
+      "properties": {
+        "work_id": { "$ref": "#/$defs/identifier" },
+        "source_file": { "$ref": "#/$defs/relativePath" },
+        "source_sha256": { "$ref": "#/$defs/sha256" },
+        "pdf_page_count": { "type": "integer", "minimum": 1 },
+        "pdf_pages": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 1 }
+        },
+        "printed_pages": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "rights_status": {
+          "enum": ["not_assessed", "private_use", "permission_granted", "public_domain", "restricted"]
+        }
+      }
+    },
+    "point": {
+      "type": "array",
+      "prefixItems": [{ "type": "number" }, { "type": "number" }],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "coordinateSpace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit", "width", "height", "origin"],
+      "properties": {
+        "unit": { "enum": ["pixel", "pdf_point", "normalized"] },
+        "width": { "type": "number", "exclusiveMinimum": 0 },
+        "height": { "type": "number", "exclusiveMinimum": 0 },
+        "origin": { "const": "top_left" }
+      }
+    },
+    "sourceRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region_id", "pdf_page", "role", "coordinate_space", "polygon"],
+      "properties": {
+        "region_id": { "$ref": "#/$defs/identifier" },
+        "pdf_page": { "type": "integer", "minimum": 1 },
+        "printed_page": { "type": ["string", "null"] },
+        "role": {
+          "enum": [
+            "title",
+            "headnote",
+            "ingredient",
+            "instruction",
+            "yield_time",
+            "note",
+            "cross-reference",
+            "continuation",
+            "other"
+          ]
+        },
+        "coordinate_space": { "$ref": "#/$defs/coordinateSpace" },
+        "polygon": {
+          "type": "array",
+          "minItems": 4,
+          "items": { "$ref": "#/$defs/point" }
+        },
+        "candidate_block_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "region_image": { "$ref": "#/$defs/relativePath" },
+        "region_image_pixel_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["substring", "issue"],
+      "properties": {
+        "substring": { "type": "string", "minLength": 1 },
+        "issue": {
+          "enum": ["illegible", "ambiguous_glyph", "punctuation", "diacritic", "ownership", "continuation", "other"]
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "segmentCore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_id", "text_verbatim", "language", "source_region_ids"],
+      "properties": {
+        "segment_id": { "$ref": "#/$defs/identifier" },
+        "text_verbatim": { "type": "string", "minLength": 1 },
+        "language": { "$ref": "#/$defs/languageTag" },
+        "source_region_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/uncertainty" }
+        }
+      }
+    },
+    "titleSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_id", "text_verbatim", "language", "source_region_ids", "title_role"],
+      "properties": {
+        "segment_id": { "$ref": "#/$defs/identifier" },
+        "text_verbatim": { "type": "string", "minLength": 1 },
+        "language": { "$ref": "#/$defs/languageTag" },
+        "source_region_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "title_role": { "enum": ["primary", "parallel", "subtitle", "alternative"] },
+        "uncertainties": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/uncertainty" }
+        }
+      }
+    },
+    "normalizedIngredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional derived cooking data. It never replaces text_verbatim.",
+      "required": ["normalization_status"],
+      "properties": {
+        "normalization_status": { "enum": ["not_attempted", "machine_candidate", "human_reviewed"] },
+        "quantity_text": { "type": "string" },
+        "quantity_value": {
+          "type": "string",
+          "description": "Exact rational or decimal string, never a binary float."
+        },
+        "quantity_min": { "type": "string" },
+        "quantity_max": { "type": "string" },
+        "unit_text": { "type": "string" },
+        "unit_normalized": { "type": "string" },
+        "ingredient_name": { "type": "string" },
+        "preparation": { "type": "string" },
+        "optional": { "type": "boolean" },
+        "alternatives": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "ingredientLine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_id", "text_verbatim", "language", "source_region_ids"],
+      "properties": {
+        "segment_id": { "$ref": "#/$defs/identifier" },
+        "text_verbatim": { "type": "string", "minLength": 1 },
+        "language": { "$ref": "#/$defs/languageTag" },
+        "source_region_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/uncertainty" }
+        },
+        "normalized": { "$ref": "#/$defs/normalizedIngredient" }
+      }
+    },
+    "ingredientSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["section_id", "ingredients"],
+      "properties": {
+        "section_id": { "$ref": "#/$defs/identifier" },
+        "label": { "$ref": "#/$defs/segmentCore" },
+        "ingredients": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/ingredientLine" }
+        }
+      }
+    },
+    "instructionStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_id", "text_verbatim", "language", "source_region_ids", "step_number"],
+      "properties": {
+        "segment_id": { "$ref": "#/$defs/identifier" },
+        "text_verbatim": { "type": "string", "minLength": 1 },
+        "language": { "$ref": "#/$defs/languageTag" },
+        "source_region_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "step_number": { "type": "integer", "minimum": 1 },
+        "uncertainties": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/uncertainty" }
+        },
+        "derived_measurements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source_text", "kind", "normalized_value", "normalization_status"],
+            "properties": {
+              "source_text": { "type": "string", "minLength": 1 },
+              "kind": { "enum": ["time", "temperature", "length", "weight", "volume", "count"] },
+              "normalized_value": { "type": "string", "minLength": 1 },
+              "normalization_status": { "enum": ["machine_candidate", "human_reviewed"] }
+            }
+          }
+        }
+      }
+    },
+    "instructionSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["section_id", "steps"],
+      "properties": {
+        "section_id": { "$ref": "#/$defs/identifier" },
+        "label": { "$ref": "#/$defs/segmentCore" },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/instructionStep" }
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display_title", "titles", "source_order"],
+      "properties": {
+        "display_title": {
+          "$ref": "#/$defs/segmentCore",
+          "description": "The complete bilingual title line with its printed punctuation preserved."
+        },
+        "titles": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/titleSegment" }
+        },
+        "source_order": { "type": "integer", "minimum": 1 },
+        "slug_candidate": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Derived convenience value; recipe_id remains the stable identity."
+        }
+      }
+    },
+    "transcription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ingredient_sections", "instruction_sections"],
+      "properties": {
+        "headnotes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/segmentCore" }
+        },
+        "yield_time_lines": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/segmentCore" }
+        },
+        "ingredient_sections": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ingredientSection" }
+        },
+        "instruction_sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/instructionSection" }
+        },
+        "notes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/segmentCore" }
+        },
+        "cross_references": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/segmentCore" }
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "continuations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["from_region_id", "to_region_id", "relationship"],
+            "properties": {
+              "from_region_id": { "$ref": "#/$defs/identifier" },
+              "to_region_id": { "$ref": "#/$defs/identifier" },
+              "relationship": { "enum": ["continues_on", "continued_from"] }
+            }
+          }
+        },
+        "related_recipe_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        }
+      }
+    },
+    "candidateSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool", "tool_version", "generated_at", "artifact_path"],
+      "properties": {
+        "tool": { "type": "string", "minLength": 1 },
+        "tool_version": { "type": "string", "minLength": 1 },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "artifact_path": { "$ref": "#/$defs/relativePath" },
+        "remote_model_used": { "type": "boolean" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_at", "created_by", "candidate_sources"],
+      "properties": {
+        "created_at": { "type": "string", "format": "date-time" },
+        "created_by": { "$ref": "#/$defs/identifier" },
+        "candidate_sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/candidateSource" }
+        }
+      }
+    },
+    "reviewCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "check_id",
+        "check_type",
+        "target_ids",
+        "source_region_ids",
+        "result",
+        "method",
+        "performed_by",
+        "auditor_id",
+        "audited_at",
+        "independent_of_extractor"
+      ],
+      "properties": {
+        "check_id": { "$ref": "#/$defs/identifier" },
+        "check_type": {
+          "enum": [
+            "region_coverage",
+            "recipe_boundary",
+            "ingredient_ownership",
+            "ingredient_list_presence",
+            "instruction_ownership",
+            "transcription_exactness",
+            "numeric_tokens",
+            "diacritics",
+            "yield_time_presence",
+            "occurrence_count",
+            "continuation",
+            "cross_reference"
+          ]
+        },
+        "target_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "source_region_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "result": { "enum": ["pass", "fail", "ambiguous", "not_applicable"] },
+        "method": { "const": "direct_visual_source" },
+        "performed_by": { "enum": ["ai", "human"] },
+        "auditor_id": { "$ref": "#/$defs/identifier" },
+        "audited_at": { "type": "string", "format": "date-time" },
+        "independent_of_extractor": { "const": true },
+        "note": { "type": "string" }
+      }
+    },
+    "openIssue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["issue_id", "target_ids", "description", "severity"],
+      "properties": {
+        "issue_id": { "$ref": "#/$defs/identifier" },
+        "target_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/identifier" }
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "severity": { "enum": ["consequential", "textual", "layout"] }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "audit_policy", "status_set_at", "checks", "open_issues"],
+      "properties": {
+        "status": {
+          "enum": [
+            "machine_candidate",
+            "source_checked",
+            "needs_attention",
+            "human_verified",
+            "human_verified_two_person",
+            "rejected"
+          ]
+        },
+        "audit_policy": { "enum": ["source_audit", "human_single", "human_double"] },
+        "status_set_at": { "type": "string", "format": "date-time" },
+        "checks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/reviewCheck" }
+        },
+        "open_issues": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/openIssue" }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": ["source_checked", "human_verified", "human_verified_two_person"]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "open_issues": { "maxItems": 0 }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "status": { "const": "source_checked" } } },
+          "then": { "properties": { "audit_policy": { "const": "source_audit" } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "human_verified" } } },
+          "then": { "properties": { "audit_policy": { "const": "human_single" } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "human_verified_two_person" } } },
+          "then": {
+            "properties": { "audit_policy": { "const": "human_double" } }
+          }
+        }
+      ]
+    }
+  }
+}

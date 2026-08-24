@@ -1,0 +1,276 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0094
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 62
+  printed_pages:
+  - '61'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0094-title
+  pdf_page: 62
+  printed_page: '61'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 858
+    - 331
+  - - 2142
+    - 331
+  - - 2142
+    - 458
+  - - 858
+    - 458
+  candidate_block_ids:
+  - /page/61/SectionHeader/1
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-title.png
+  region_image_pixel_sha256: 54d582e2d13044b59fc9ed86a7884c5b46e209b6fdbaefcf6a12a9da883e0d97
+- region_id: vera-r0094-listgroup-1
+  pdf_page: 62
+  printed_page: '61'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 255
+    - 431
+  - - 1047
+    - 431
+  - - 1047
+    - 813
+  - - 255
+    - 813
+  candidate_block_ids:
+  - /page/61/ListGroup/2
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-listgroup-1.png
+  region_image_pixel_sha256: 7294dc333b31f42d9886248ebd2657468bc1b3ca619d2e46ce9b159d112a414e
+- region_id: vera-r0094-text-2
+  pdf_page: 62
+  printed_page: '61'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1125
+    - 444
+  - - 2721
+    - 444
+  - - 2721
+    - 882
+  - - 1125
+    - 882
+  candidate_block_ids:
+  - /page/61/Text/5
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-text-2.png
+  region_image_pixel_sha256: 43637fa71b8038b5a4148857db82e4efbb318baaed89dda082608294901b042c
+- region_id: vera-r0094-sectionheader-3
+  pdf_page: 62
+  printed_page: '61'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 267
+    - 806
+  - - 450
+    - 806
+  - - 450
+    - 891
+  - - 267
+    - 891
+  candidate_block_ids:
+  - /page/61/SectionHeader/3
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-sectionheader-3.png
+  region_image_pixel_sha256: 5e236465f84e082faf99eb3ae5235d6f61d424eb868271292f58c21757c74b60
+- region_id: vera-r0094-listgroup-4
+  pdf_page: 62
+  printed_page: '61'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 267
+    - 866
+  - - 1119
+    - 866
+  - - 1119
+    - 1188
+  - - 267
+    - 1188
+  candidate_block_ids:
+  - /page/61/ListGroup/4
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-listgroup-4.png
+  region_image_pixel_sha256: 469511ed63fdc1e2ba4595cdb561b882c2bb95e050e112a427af65aaf484a530
+- region_id: vera-r0094-text-5
+  pdf_page: 62
+  printed_page: '61'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1134
+    - 870
+  - - 1854
+    - 870
+  - - 1854
+    - 959
+  - - 1134
+    - 959
+  candidate_block_ids:
+  - /page/61/Text/6
+  region_image: evidence/production-batch-012/regions/vera-r0094/p62-text-5.png
+  region_image_pixel_sha256: 961d7ed08701acb5c29afeaeea522cfd2fccae8e6f589a30cdf4a2c7c9a074de
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Potato apple pie · Jablkový koláč bramborový
+    language: mul
+    source_region_ids:
+    - vera-r0094-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Potato apple pie
+    language: en
+    source_region_ids:
+    - vera-r0094-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Jablkový koláč bramborový
+    language: cs
+    source_region_ids:
+    - vera-r0094-title
+    title_role: parallel
+  source_order: 94
+  slug_candidate: potatoapplepie
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0094-text-5
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1-1/2 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1 teaspoon baking powder
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 2 medium potatoes, boiled, mashed
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 1 egg
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: grease for baking dish
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-1
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-8
+      text_verbatim: 1/2 cup hazelnuts or walnuts, ground or chopped
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-4
+    - segment_id: ingredient-9
+      text_verbatim: 3 medium apples, Granny Smith, peeled, thinly sliced parboiled
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-4
+    - segment_id: ingredient-10
+      text_verbatim: 2/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-4
+    - segment_id: ingredient-11
+      text_verbatim: rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0094-listgroup-4
+    label:
+      segment_id: label-3
+      text_verbatim: 'Filling:'
+      language: en
+      source_region_ids:
+      - vera-r0094-sectionheader-3
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Blend baking powder into flour. Add all ingredients and mix thoroughly. Knead about
+        10 minutes, until dough is smooth and dry. On a floured surface roll dough out to 1/3" thickness,
+        cut in two halves. Place one half in a buttered baking dish, evenly spread apple mixture. Cover
+        with other half of dough. Preheat oven to 375F, bake 30 minutes or until golden on top. Cut in
+        squares, lightly dust with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0094-text-2
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

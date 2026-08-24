@@ -1,0 +1,481 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0013
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 13
+  printed_pages:
+  - '12'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0013-title
+  pdf_page: 13
+  printed_page: '12'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1050
+    - 284
+  - - 1866
+    - 284
+  - - 1866
+    - 388
+  - - 1050
+    - 388
+  candidate_block_ids:
+  - /page/12/SectionHeader/2
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-title.png
+  region_image_pixel_sha256: 686b289e94d4537d20a0b15039ff68435b533084de18b760b99e4a92735541ce
+- region_id: vera-r0013-ingredients
+  pdf_page: 13
+  printed_page: '12'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 216
+    - 360
+  - - 1056
+    - 360
+  - - 1056
+    - 857
+  - - 216
+    - 857
+  candidate_block_ids:
+  - /page/12/ListGroup/1
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-ingredients.png
+  region_image_pixel_sha256: 137a8d8732e768e2096c563a8868da9b86033efa34a848e4dc1f013135f8345b
+- region_id: vera-r0013-step-1
+  pdf_page: 13
+  printed_page: '12'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 360
+  - - 2706
+    - 360
+  - - 2706
+    - 508
+  - - 1074
+    - 508
+  candidate_block_ids:
+  - /page/12/Text/3
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-step-1.png
+  region_image_pixel_sha256: bd2e323525fc6cbe1bb16db71e9f0614a672aa73d8d1a22d00a81e14393386e7
+- region_id: vera-r0013-step-2
+  pdf_page: 13
+  printed_page: '12'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 469
+  - - 2703
+    - 469
+  - - 2703
+    - 830
+  - - 1074
+    - 830
+  candidate_block_ids:
+  - /page/12/Text/4
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-step-2.png
+  region_image_pixel_sha256: 40b68e8789fce2e7d1540682ed9997f26231ad6e6d911c22d90d56c4620876d0
+- region_id: vera-r0013-step-3
+  pdf_page: 13
+  printed_page: '12'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 792
+  - - 2007
+    - 792
+  - - 2007
+    - 882
+  - - 1074
+    - 882
+  candidate_block_ids:
+  - /page/12/Text/5
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-step-3.png
+  region_image_pixel_sha256: 346ec529613e8f03053d1fd7156539ec93d4a6b0217212baa40acfc3427e9fec
+- region_id: vera-r0013-step-4
+  pdf_page: 13
+  printed_page: '12'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 846
+  - - 2655
+    - 846
+  - - 2655
+    - 984
+  - - 1074
+    - 984
+  candidate_block_ids:
+  - /page/12/Text/6
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-step-4.png
+  region_image_pixel_sha256: 96c5754b655c6414a37a6cbd31c6834db11213e4ece6ffb0ca9bbe64ac6e9b2b
+- region_id: vera-r0013-step-5
+  pdf_page: 13
+  printed_page: '12'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 948
+  - - 2694
+    - 948
+  - - 2694
+    - 1040
+  - - 1074
+    - 1040
+  candidate_block_ids:
+  - /page/12/Text/7
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-step-5.png
+  region_image_pixel_sha256: d840acbf764f128964bc708bfc1e52fc263a8f2f8525aee12540f136bb6281b1
+- region_id: vera-r0013-yield
+  pdf_page: 13
+  printed_page: '12'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 1016
+  - - 1818
+    - 1016
+  - - 1818
+    - 1098
+  - - 1074
+    - 1098
+  candidate_block_ids:
+  - /page/12/Text/8
+  region_image: evidence/production-batch-003/regions/vera-r0013/p13-yield.png
+  region_image_pixel_sha256: 434ebaf960605672191ce0e73776a9830ee0f5aebead6ab37d1e9e993a282077
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Pork roast · Vepřová pečeně
+    language: mul
+    source_region_ids:
+    - vera-r0013-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Pork roast
+    language: en
+    source_region_ids:
+    - vera-r0013-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vepřová pečeně
+    language: cs
+    source_region_ids:
+    - vera-r0013-title
+    title_role: parallel
+  source_order: 13
+  slug_candidate: pork-roast
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 3 hours'
+    language: en
+    source_region_ids:
+    - vera-r0013-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3·4 lbs. center cut pork roast – (ask the butcher to saw across the rib bones of
+        the roast, at the base of the backbone – separating the ribs from the backbone. It will ease the
+        carving).
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 2 cups chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 teaspoons caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 3 cloves garlic, pressed
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 2 bay leaves
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0013-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a saucepan heat the chicken stock, caraway seeds, bay leaves and garlic.
+      language: en
+      source_region_ids:
+      - vera-r0013-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Rinse and pat dry the meat and rub it with salt and pepper. Place it, skin down,
+        on a rack in an open roasting pan. Pour half of the liquid from the saucepan over the meat and
+        roast at 350F for 1 hour, basting frequently with the juices from the pan and the liquid from
+        the saucepan. Turn the meat and continue roasting for 1·1/2 hours, until the top is golden brown
+        and the meat tender. Allow 35 minutes per pound.
+      language: en
+      source_region_ids:
+      - vera-r0013-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: When done let it rest 5 minutes, carve.
+      language: en
+      source_region_ids:
+      - vera-r0013-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Skim fat from the pan drippings, strain some over the roast, serve the rest in a
+        saucedish.
+      language: en
+      source_region_ids:
+      - vera-r0013-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Serve with dumplings, potato dumplings, boiled potatoes and sauerkraut.
+      language: en
+      source_region_ids:
+      - vera-r0013-step-5
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T21:31:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T21:29:23Z'
+    artifact_path: pilot/production-batch-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T21:35:39Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0013
+    source_region_ids: &id001
+    - vera-r0013-title
+    - vera-r0013-ingredients
+    - vera-r0013-step-1
+    - vera-r0013-step-2
+    - vera-r0013-step-3
+    - vera-r0013-step-4
+    - vera-r0013-step-5
+    - vera-r0013-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0013
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0013-title
+    - vera-r0013-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    source_region_ids:
+    - vera-r0013-title
+    - vera-r0013-step-1
+    - vera-r0013-step-2
+    - vera-r0013-step-3
+    - vera-r0013-step-4
+    - vera-r0013-step-5
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    source_region_ids:
+    - vera-r0013-title
+    - vera-r0013-yield
+    - vera-r0013-ingredients
+    - vera-r0013-step-1
+    - vera-r0013-step-2
+    - vera-r0013-step-3
+    - vera-r0013-step-4
+    - vera-r0013-step-5
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0013-yield
+    - vera-r0013-ingredients
+    - vera-r0013-step-2
+    - vera-r0013-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0013-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0013
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0013-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

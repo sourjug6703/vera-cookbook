@@ -1,0 +1,48 @@
+schema_version: "1.2"
+batch_id: production-batch-002
+frozen_on: "2026-08-23"
+purpose: "Second production extraction cohort; next five contiguous recipes in source order"
+source:
+  path: "source/Culinary Adventures - Vera Gaeta.pdf"
+  sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+  page_count: 75
+marker:
+  package: marker-pdf
+  version: "2.0.0"
+  mode: balanced
+  force_ocr: true
+  remote_llm: false
+pdf_pages: [6, 7, 8, 9, 10]
+marker_page_indexes: [5, 6, 7, 8, 9]
+recipes:
+  - recipe_id: vera-r0004
+    recipe_key: stuffed-meat-loaf
+    title: "Stuffed meat loaf"
+    pdf_pages: [6]
+    risks: [fraction, shaped_loaf, bilingual_title]
+  - recipe_id: vera-r0005
+    recipe_key: beef-goulash
+    title: "Beef goulash"
+    pdf_pages: [7]
+    risks: [alternatives, fractions, quantity_range]
+  - recipe_id: vera-r0006
+    recipe_key: bohemian-brasciole-stuffed-beef-veal-rolls
+    title: "Bohemian “brasciole” - stuffed beef (veal) rolls"
+    pdf_pages: [8]
+    risks: [multi_recipe_page, quoted_word, ownership, marinating_time]
+  - recipe_id: vera-r0007
+    recipe_key: roast-veal
+    title: "Roast veal"
+    pdf_pages: [8, 9]
+    risks: [page_continuation, ingredient_continuation, ownership, temperature]
+  - recipe_id: vera-r0008
+    recipe_key: stuffed-veal-breast
+    title: "Stuffed veal breast"
+    pdf_pages: [9, 10]
+    risks: [multi_recipe_page, page_continuation, stuffing_subsections, cross_reference, cavity_instruction]
+promotion_boundary:
+  allowed_ai_statuses: [source_checked, needs_attention]
+  human_verification_separate: true
+  automatic_promotion_allowed: false
+  audit_performed_by: ai
+  audit_completed_at: "2026-08-23T21:09:29Z"

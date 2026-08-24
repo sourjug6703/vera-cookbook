@@ -1,0 +1,679 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0038
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 29
+  printed_pages:
+  - '28'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0038-title
+  pdf_page: 29
+  printed_page: '28'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 828
+    - 366
+  - - 2124
+    - 366
+  - - 2124
+    - 490
+  - - 828
+    - 490
+  candidate_block_ids:
+  - /page/28/SectionHeader/1
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-title.png
+  region_image_pixel_sha256: b468c8516add11fb1b953f8c7ba68b1e4f3abf991d37e7d08e3f0ab3a0f637de
+- region_id: vera-r0038-marinade-label
+  pdf_page: 29
+  printed_page: '28'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 228
+    - 463
+  - - 528
+    - 463
+  - - 528
+    - 555
+  - - 228
+    - 555
+  candidate_block_ids:
+  - /page/28/SectionHeader/2
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-marinade-label.png
+  region_image_pixel_sha256: a407470fa90196036271ef8118be0bb39679c8546fa46d459655b4a0d3ea96e5
+- region_id: vera-r0038-marinade-ingredients
+  pdf_page: 29
+  printed_page: '28'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 228
+    - 519
+  - - 795
+    - 519
+  - - 795
+    - 1055
+  - - 228
+    - 1055
+  candidate_block_ids:
+  - /page/28/ListGroup/3
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-marinade-ingredients.png
+  region_image_pixel_sha256: 93039d35e284e1370629134118ba5ccb21342a3d4c2aa8afa13ab9f458ef9f08
+- region_id: vera-r0038-hare-sauce-label
+  pdf_page: 29
+  printed_page: '28'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 234
+    - 1062
+  - - 687
+    - 1062
+  - - 687
+    - 1156
+  - - 234
+    - 1156
+  candidate_block_ids:
+  - /page/28/SectionHeader/4
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-hare-sauce-label.png
+  region_image_pixel_sha256: 4eba433ed13f0a6fd5cab8eddd7e5bba2bfc73bc74f94aed08d6ab251b8172dc
+- region_id: vera-r0038-hare-sauce-ingredients
+  pdf_page: 29
+  printed_page: '28'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 234
+    - 1120
+  - - 1092
+    - 1120
+  - - 1092
+    - 1910
+  - - 234
+    - 1910
+  candidate_block_ids:
+  - /page/28/ListGroup/5
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-hare-sauce-ingredients.png
+  region_image_pixel_sha256: ef92b77516eb067df8f6e644cbb15eb2828d415a26d3c477aa0f2857acf3bcdf
+- region_id: vera-r0038-instruction-label
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 531
+  - - 1449
+    - 531
+  - - 1449
+    - 623
+  - - 1101
+    - 623
+  candidate_block_ids:
+  - /page/28/SectionHeader/6
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-instruction-label.png
+  region_image_pixel_sha256: e30d2c017809e0a4a1090884321cbbbfadabda5b4de5b2d6f96329fe4bed5e96
+- region_id: vera-r0038-step-1
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 589
+  - - 2709
+    - 589
+  - - 2709
+    - 740
+  - - 1101
+    - 740
+  candidate_block_ids:
+  - /page/28/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-1.png
+  region_image_pixel_sha256: 731e10c01e930481b7424a9f2a81a2a71dfa723f3ce6a80ad3775b77a991defa
+- region_id: vera-r0038-step-2
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 704
+  - - 2712
+    - 704
+  - - 2712
+    - 866
+  - - 1101
+    - 866
+  candidate_block_ids:
+  - /page/28/Text/8
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-2.png
+  region_image_pixel_sha256: b3e1b9d9743b2fb61125eac8991eaf4e2b079eb3ddf47684d2b604c21b835fa8
+- region_id: vera-r0038-step-3
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 821
+  - - 1938
+    - 821
+  - - 1938
+    - 918
+  - - 1101
+    - 918
+  candidate_block_ids:
+  - /page/28/Text/9
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-3.png
+  region_image_pixel_sha256: 7fa1a75850637e53310aab43eabacf97ac6d4e3096b26318e251df51b8c4af3a
+- region_id: vera-r0038-step-4
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 893
+  - - 2712
+    - 893
+  - - 2712
+    - 1113
+  - - 1101
+    - 1113
+  candidate_block_ids:
+  - /page/28/Text/10
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-4.png
+  region_image_pixel_sha256: 9f4f758d4dfb4721f9421b7ee9c6c5f84bb084efae6591a75bb336361815cb2b
+- region_id: vera-r0038-step-5
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1068
+  - - 2118
+    - 1068
+  - - 2118
+    - 1163
+  - - 1101
+    - 1163
+  candidate_block_ids:
+  - /page/28/Text/11
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-5.png
+  region_image_pixel_sha256: d4dd64fe8b83aa101b491ec2c9d5b7162e3c36a9ed9c6ee86e05efb97fa82b80
+- region_id: vera-r0038-step-6
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1127
+  - - 2721
+    - 1127
+  - - 2721
+    - 1284
+  - - 1101
+    - 1284
+  candidate_block_ids:
+  - /page/28/Text/12
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-6.png
+  region_image_pixel_sha256: 4fb3f9d12305d9d543b39f667813e77e81d090feecb0a6aa8573067449e18a15
+- region_id: vera-r0038-step-7
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1244
+  - - 1926
+    - 1244
+  - - 1926
+    - 1338
+  - - 1101
+    - 1338
+  candidate_block_ids:
+  - /page/28/Text/13
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-7.png
+  region_image_pixel_sha256: de14bcc6aa2debf8a01a8b5c977e3a44099420d40f4a1275ac2fb94175831db5
+- region_id: vera-r0038-step-8
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1302
+  - - 2721
+    - 1302
+  - - 2721
+    - 1462
+  - - 1101
+    - 1462
+  candidate_block_ids:
+  - /page/28/Text/14
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-8.png
+  region_image_pixel_sha256: dbee4bdd9fdfdfb3570022cae416614d6c4d77d80ec5240836f007329b283a9f
+- region_id: vera-r0038-step-9
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1419
+  - - 2670
+    - 1419
+  - - 2670
+    - 1624
+  - - 1101
+    - 1624
+  candidate_block_ids:
+  - /page/28/Text/15
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-9.png
+  region_image_pixel_sha256: 52d5a0014c6f8b45a834512eac6bb9eac1781dc35c98a642495b81482a39789f
+- region_id: vera-r0038-step-10
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1588
+  - - 1980
+    - 1588
+  - - 1980
+    - 1685
+  - - 1101
+    - 1685
+  candidate_block_ids:
+  - /page/28/Text/16
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-10.png
+  region_image_pixel_sha256: 41faf0ebebd95fab0f113a4d72e146044825e43945bf6a083a91d9e8be660e9c
+- region_id: vera-r0038-step-11
+  pdf_page: 29
+  printed_page: '28'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1647
+  - - 2079
+    - 1647
+  - - 2079
+    - 1743
+  - - 1101
+    - 1743
+  candidate_block_ids:
+  - /page/28/Text/17
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-step-11.png
+  region_image_pixel_sha256: 4467f283d1d75b3a522895a7fde93e2ea79d550a56ddfda0e207d8bc1498169e
+- region_id: vera-r0038-yield
+  pdf_page: 29
+  printed_page: '28'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1110
+    - 1770
+  - - 2178
+    - 1770
+  - - 2178
+    - 1860
+  - - 1110
+    - 1860
+  candidate_block_ids:
+  - /page/28/Text/18
+  region_image: evidence/production-batch-006/regions/vera-r0038/p29-yield.png
+  region_image_pixel_sha256: 29a12a30fede290dd864eeefc5a03ca81ae2024cb102df5ace027e878d747152
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Marinated hare in wine sauce · Zajíc na černo
+    language: mul
+    source_region_ids:
+    - vera-r0038-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Marinated hare in wine sauce
+    language: en
+    source_region_ids:
+    - vera-r0038-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Zajíc na černo
+    language: cs
+    source_region_ids:
+    - vera-r0038-title
+    title_role: parallel
+  source_order: 38
+  slug_candidate: marinated-hare-in-wine-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours,plus marinating'
+    language: en
+    source_region_ids:
+    - vera-r0038-yield
+  ingredient_sections:
+  - section_id: ingredients-marinade
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 cup sliced carrots
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1 cup sliced onions
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1 cup sliced shallots
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 3 cloves garlic, crushed
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 10 black peppercorns
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 3 bay leaves
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: thyme
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1/4 cup cognac
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 3 cups red wine
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 1·1/2 cups vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-ingredients
+    label:
+      segment_id: label-marinade
+      text_verbatim: 'Marinade:'
+      language: en
+      source_region_ids:
+      - vera-r0038-marinade-label
+  - section_id: ingredients-hare-and-sauce
+    ingredients:
+    - segment_id: ingredient-11
+      text_verbatim: Front part of 1 hare, 4·5 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-13
+      text_verbatim: 3 oz. bacon, diced
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-14
+      text_verbatim: 1 medium onion, chopped
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-15
+      text_verbatim: 3 tablespoons vinegar
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-16
+      text_verbatim: 1·1/2 cups beef stock
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-17
+      text_verbatim: 1 cup red wine
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-18
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-19
+      text_verbatim: 5 grains each of black peppercorns and whole allspice
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-20
+      text_verbatim: 2 bay leaves, thyme
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-21
+      text_verbatim: 4 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-22
+      text_verbatim: 2 tablespoons brown sugar
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-23
+      text_verbatim: 1/4 cup cranberry sauce
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    - segment_id: ingredient-24
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-ingredients
+    label:
+      segment_id: label-hare-and-sauce
+      text_verbatim: 'Hare and sauce:'
+      language: en
+      source_region_ids:
+      - vera-r0038-hare-sauce-label
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Place hare in a large crock. Add all dry ingredients, top with cognac, add wine.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Add oil to seal air out. The hare must be submerged in the marinade. Soak hare overnight,
+        or even better 2·3 days.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Remove and wipe dry with a cloth.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Heat butter in a 4 quart top·of·range casserole. Add bacon and onion and cook until
+        soft. Add all spices and lemon rind. Sprinkle hare with salt and vinegar, put into casserole,
+        and brown lightly on all sides.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Reduce heat. Add some of the beef stock.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Cover tightly and simmer 1·1·1/2 hours, or until meat is tender when pierced with
+        a fork. Add beef stock occasionally.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-6
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: Transfer hare to a heated platter.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-7
+      step_number: 7
+    - segment_id: step-8
+      text_verbatim: Skim off fat from the cooking liquid, stir in the flour and continue cooking to a
+        rich brown. Add the remaining beef stock and the wine.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-8
+      step_number: 8
+    - segment_id: step-9
+      text_verbatim: Cook until sauce thickens. Strain, blend in sugar and cranberry sauce. Season to
+        taste with salt and pepper. Bring to boil, stirring constantly.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-9
+      step_number: 9
+    - segment_id: step-10
+      text_verbatim: Slice hare, pour hot sauce over top.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-10
+      step_number: 10
+    - segment_id: step-11
+      text_verbatim: Serve with noodles, gnocchi, dumplings.
+      language: en
+      source_region_ids:
+      - vera-r0038-step-11
+      step_number: 11
+    label:
+      segment_id: label-to-marinate
+      text_verbatim: 'To marinate:'
+      language: en
+      source_region_ids:
+      - vera-r0038-instruction-label
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T23:39:26Z'
+    artifact_path: pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:42:00Z'
+  checks: []
+  open_issues: []

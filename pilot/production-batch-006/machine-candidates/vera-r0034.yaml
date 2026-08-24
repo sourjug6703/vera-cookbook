@@ -1,0 +1,364 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0034
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 26
+  printed_pages:
+  - '25'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0034-title
+  pdf_page: 26
+  printed_page: '25'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 837
+    - 1030
+  - - 2118
+    - 1030
+  - - 2118
+    - 1141
+  - - 837
+    - 1141
+  candidate_block_ids:
+  - /page/25/SectionHeader/4
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-title.png
+  region_image_pixel_sha256: 9eef387009d7a16c6ed656f1971dd9609717e385500c03bb0e7f41208357d8cf
+- region_id: vera-r0034-ingredients
+  pdf_page: 26
+  printed_page: '25'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 228
+    - 1132
+  - - 1080
+    - 1132
+  - - 1080
+    - 1781
+  - - 228
+    - 1781
+  candidate_block_ids:
+  - /page/25/ListGroup/5
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-ingredients.png
+  region_image_pixel_sha256: e8ed8c6144e68ca928ef3a2700d54e74b0600a9299be649f761d7e48a9013f87
+- region_id: vera-r0034-step-1
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1134
+  - - 2658
+    - 1134
+  - - 2658
+    - 1279
+  - - 1095
+    - 1279
+  candidate_block_ids:
+  - /page/25/Text/6
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-1.png
+  region_image_pixel_sha256: ff08ed7a0d6b370420352d23736656947b34a1db30eb03d3f17b850ecdb5754f
+- region_id: vera-r0034-step-2
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1243
+  - - 2679
+    - 1243
+  - - 2679
+    - 1445
+  - - 1095
+    - 1445
+  candidate_block_ids:
+  - /page/25/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-2.png
+  region_image_pixel_sha256: 111c9fa11233ed98f698e8689fe64e44d71608e8bccf5fd6ffeb28d8f6000e0c
+- region_id: vera-r0034-step-3
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1409
+  - - 2682
+    - 1409
+  - - 2682
+    - 1554
+  - - 1095
+    - 1554
+  candidate_block_ids:
+  - /page/25/Text/8
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-3.png
+  region_image_pixel_sha256: 95dc3464fdcb7ada69c18673a782fd209b027da3284ee0c82b1519e0ce05a993
+- region_id: vera-r0034-step-4
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1518
+  - - 2667
+    - 1518
+  - - 2667
+    - 1663
+  - - 1095
+    - 1663
+  candidate_block_ids:
+  - /page/25/Text/9
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-4.png
+  region_image_pixel_sha256: 6805031b03a5159705515ffc30777d322fee97d0cd7e731630e64bbc825d49f2
+- region_id: vera-r0034-step-5
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1627
+  - - 2688
+    - 1627
+  - - 2688
+    - 1895
+  - - 1095
+    - 1895
+  candidate_block_ids:
+  - /page/25/Text/10
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-5.png
+  region_image_pixel_sha256: 223f8e458476b063d6d68ffafead8e550d3497bca5abd8367c7c5b92d548857f
+- region_id: vera-r0034-step-6
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1851
+  - - 2067
+    - 1851
+  - - 2067
+    - 1945
+  - - 1095
+    - 1945
+  candidate_block_ids:
+  - /page/25/Text/11
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-step-6.png
+  region_image_pixel_sha256: 54ce6211d2a2defe1a4eedd51787a600ff019ccaf46739cd9d8b1244b4b6d16c
+- region_id: vera-r0034-yield
+  pdf_page: 26
+  printed_page: '25'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 1936
+  - - 1848
+    - 1936
+  - - 1848
+    - 2025
+  - - 1095
+    - 2025
+  candidate_block_ids:
+  - /page/25/Text/12
+  region_image: evidence/production-batch-006/regions/vera-r0034/p26-yield.png
+  region_image_pixel_sha256: 243c308b7d4813db951fffb7e76b7934bf83b0eb45a8eaceab125a06cb7a40e4
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Rabbit with paprika sauce · Králík na paprice
+    language: mul
+    source_region_ids:
+    - vera-r0034-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Rabbit with paprika sauce
+    language: en
+    source_region_ids:
+    - vera-r0034-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Králík na paprice
+    language: cs
+    source_region_ids:
+    - vera-r0034-title
+    title_role: parallel
+  source_order: 34
+  slug_candidate: rabbit-with-paprika-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0034-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 rabbit, 4·5 lbs., skinned, cleaned, cut in pieces
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 3 slices bacon, cut in strips
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/3 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 small onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 3 tablespoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 6 grains each of whole allspice and black peppercorns
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: thyme, 2 bay leaves
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 2 cups chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 1·1/2 cups sour cream
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0034-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Rinse, pat dry rabbit pieces. Sprinkle with salt and lard each with bacon strips.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Heat oil in a large pan; add onion and cook until translucent. Add paprika, whole
+        allspice, black peppercorns, thyme, bay leaves and rabbit pieces.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Simmer, covered, for 1·1/2 hours, or until rabbit is tender, adding chicken stock
+        when needed.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Using a slotted spoon, lift rabbit pieces from liquid and place in a casserole.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Stir flour into the liquid and simmer uncovered for 5 minutes. Add remaining chicken
+        stock and sour cream and cook, stirring as necessary, until sauce is reduced to desired consistency,
+        about 5 minutes. Strain sauce over rabbit. Simmer until heated through.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Serve with gnocchi, dumplings, noodles.
+      language: en
+      source_region_ids:
+      - vera-r0034-step-6
+      step_number: 6
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T23:39:26Z'
+    artifact_path: pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:42:00Z'
+  checks: []
+  open_issues: []

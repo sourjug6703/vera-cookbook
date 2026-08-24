@@ -1,0 +1,981 @@
+batch_id: production-batch-010
+batch_title: Production batch 010 source review
+batch_copy_title: Vera Cookbook production batch 010 review status
+candidate_summary: Local Marker machine candidates for production batch 010; no trust promotion has been
+  performed.
+audited_summary: Production batch 010 after a separate direct local AI visual source audit. Source-clear
+  records are source_checked; genuine ambiguity remains needs_attention. This is not human verification.
+recipe_schema_version: 1.3.0
+source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+pdf_page_count: 75
+marker_version: 2.0.0
+marker_generated_at: '2026-08-24T03:09:28Z'
+marker_artifact: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures
+  - Vera Gaeta.json
+created_at: '2026-08-24T03:12:00Z'
+audited_at: '2026-08-24T03:28:00Z'
+auditor_id: openai-codex
+readback_record_ids:
+- vera-r0079
+recipes:
+- recipe_id: vera-r0073
+  source_order: 73
+  slug: ricottafilling
+  pages:
+  - 50
+  printed_pages:
+  - '49'
+  display_title: Ricotta filling · Tvarohová nádivka
+  titles:
+  - segment_id: title-en
+    text: Ricotta filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Tvarohová nádivka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 50
+    block_ids:
+    - /page/49/SectionHeader/2
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 50
+    block_ids:
+    - /page/49/ListGroup/3
+  - key: text-2
+    role: instruction
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/4
+  - key: text-3
+    role: yield-time
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/5
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 8 oz. ricotta
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: 2-3 tablespoons sponge crumbs
+      region_keys:
+      - listgroup-1
+    - text: 1 tablespoon rum
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons golden raisins
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl cream the sugar and the egg yolks. Add ricotta, lemon rind, sponge crumbs, rum and
+        raisins - mix well. The sponge crumbs are added to thicken the filling. You can add a little more
+        or less, to achieve the right consistency. If the filling is not thick enough, is runny, it would
+        run out while baking and jeopardize the good look of the finished product.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Makes approx. 1 - 1/2 cups - Preparation time: 20 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0074
+  source_order: 74
+  slug: walnutsfilling
+  pages:
+  - 50
+  printed_pages:
+  - '49'
+  display_title: Walnuts filling · Ořechová nádivka
+  titles:
+  - segment_id: title-en
+    text: Walnuts filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Ořechová nádivka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 50
+    block_ids:
+    - /page/49/SectionHeader/6
+  - key: text-1
+    role: instruction
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/8
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 50
+    block_ids:
+    - /page/49/ListGroup/7
+  - key: text-3
+    role: yield-time
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 6 oz. ground or chopped walnuts
+      region_keys:
+      - listgroup-2
+    - text: 2/3 cup maple syrup
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup sponge crumbs
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons heavy cream
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Pour the maple syrup in a saucepan and bring over medium heat. When hot, but not boiling,
+        remove from heat, add the walnuts, vanilla sugar, lemon rind and heavy cream and as much of the
+        sponge crumbs as needed to thicken the mixture. Mix well.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Makes approx. 1 - 1/2 cups - Preparation time: 30 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0075
+  source_order: 75
+  slug: applefilling
+  pages:
+  - 50
+  printed_pages:
+  - '49'
+  display_title: Apple filling · Jablková nádivka
+  titles:
+  - segment_id: title-en
+    text: Apple filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Jablková nádivka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 50
+    block_ids:
+    - /page/49/SectionHeader/10
+  - key: text-1
+    role: instruction
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/12
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 50
+    block_ids:
+    - /page/49/ListGroup/11
+  - key: text-3
+    role: yield-time
+    pdf_page: 50
+    block_ids:
+    - /page/49/Text/13
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 3 large apples (Granny Smith)
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1/4 cup water
+      region_keys:
+      - listgroup-2
+    - text: 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon rum
+      region_keys:
+      - listgroup-2
+    - text: 3 oz. ground or chopped almonds
+      region_keys:
+      - listgroup-2
+    - text: 1/2 cup sponge crumbs
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Peel, core and quarter the apples. In a saucepan combine apples and water and simmer until
+        soft. Purée the apples in a bowl, and mix in all remaining ingredients. To attain the desired
+        thickness, add some of the sponge crumbs.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Makes approx. 1 - 1/2 cups - Preparation time: 30 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0076
+  source_order: 76
+  slug: buttercrumbfilling
+  pages:
+  - 51
+  printed_pages:
+  - '50'
+  display_title: Butter crumb filling · Máslová drobenka
+  titles:
+  - segment_id: title-en
+    text: Butter crumb filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Máslová drobenka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 51
+    block_ids:
+    - /page/50/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 51
+    block_ids:
+    - /page/50/Text/2
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 51
+    block_ids:
+    - /page/50/ListGroup/4
+  - key: text-3
+    role: yield-time
+    pdf_page: 51
+    block_ids:
+    - /page/50/Text/3
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 6 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: 1·1/2 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a saucepan melt butter, add flour, sugar and vanilla sugar and stir until the mixture crumbles.
+        Cool.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Makes approx. 1 - 1/2 cups - Preparation time: 15 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0077
+  source_order: 77
+  slug: poppyseedsfilling
+  pages:
+  - 51
+  printed_pages:
+  - '50'
+  display_title: Poppy seeds filling · Maková nádivka
+  titles:
+  - segment_id: title-en
+    text: Poppy seeds filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Maková nádivka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 51
+    block_ids:
+    - /page/50/SectionHeader/5
+  - key: text-1
+    role: instruction
+    pdf_page: 51
+    block_ids:
+    - /page/50/Text/7
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 51
+    block_ids:
+    - /page/50/ListGroup/6
+  - key: text-3
+    role: yield-time
+    pdf_page: 51
+    block_ids:
+    - /page/50/Text/8
+  - key: text-4
+    role: instruction
+    pdf_page: 51
+    block_ids:
+    - /page/50/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 cup ground or pounded poppy seeds
+      region_keys:
+      - listgroup-2
+    - text: 1 cup milk
+      region_keys:
+      - listgroup-2
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons golden raisins
+      region_keys:
+      - listgroup-2
+    - text: 1/4 teaspoon cinnamon
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a saucepan combine poppy seeds and milk. Cook over medium/low heat, stirring often, until
+        poppy seeds are mashed, 10-15 minutes. Add all remaining ingredients. Mix thoroughly. Cool.
+      region_keys:
+      - text-1
+    - text: ⇒ A thick fruit preserve may also be used to fill "Buchty" and "Koláčky".
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: 'Makes approx. 1 - 1/2 cups - Preparation time: 20 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0071
+  - vera-r0072
+  status: needs_attention
+  open_issues:
+  - issue_id: r0077-arrow-ornament
+    target_ids:
+    - vera-r0077
+    description: The note begins with an outlined arrow ornament whose exact Unicode encoding is not source-clear;
+      it is not guessed as canonical text.
+    severity: textual
+- recipe_id: vera-r0078
+  source_order: 78
+  slug: silverdollarsminiatureplainmuffins
+  pages:
+  - 52
+  printed_pages:
+  - '51'
+  display_title: “Silver dollars” (miniature plain muffins) · Dukátové buchtičky
+  titles:
+  - segment_id: title-en
+    text: “Silver dollars” (miniature plain muffins)
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Dukátové buchtičky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 52
+    block_ids:
+    - /page/51/SectionHeader/0
+  - key: text-1
+    role: instruction
+    pdf_page: 52
+    block_ids:
+    - /page/51/Text/4
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 52
+    block_ids:
+    - /page/51/ListGroup/1
+  - key: text-3
+    role: instruction
+    pdf_page: 52
+    block_ids:
+    - /page/51/Text/5
+  - key: text-4
+    role: yield-time
+    pdf_page: 52
+    block_ids:
+    - /page/51/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 cups coarse flour, Gold Medal Wondra
+      region_keys:
+      - listgroup-2
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 1-1/4 cups milk
+      region_keys:
+      - listgroup-2
+    - text: 1/2 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 4 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 6 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: dash of salt
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: 4 tablespoons butter for baking pan and brushing
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Prepare dough in the same manner as in Bohemian muffins. Roll it out to 1/3" thickness. Using
+        a cookie cutter or a glass 1" in diameter cut out round cakes and lay them tightly together in
+        a buttered baking pan. Brush sides and top with melted butter. Let rise 30 minutes in a warm place.
+        Preheat oven to 350F, bake 20-25 minutes or until golden brown on top.
+      region_keys:
+      - text-1
+    - text: Serve warm with vanilla sauce or wine froth.
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 2 hours 30 minutes.'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0072
+  - vera-r0079
+  - vera-r0080
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0080
+  source_order: 80
+  slug: whitewinefroth
+  pages:
+  - 52
+  printed_pages:
+  - '51'
+  display_title: White wine froth · Vinná omáčka
+  titles:
+  - segment_id: title-en
+    text: White wine froth
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Vinná omáčka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 52
+    block_ids:
+    - /page/51/SectionHeader/10
+  - key: text-1
+    role: instruction
+    pdf_page: 52
+    block_ids:
+    - /page/51/Text/11
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 52
+    block_ids:
+    - /page/51/ListGroup/3
+  - key: text-3
+    role: yield-time
+    pdf_page: 52
+    block_ids:
+    - /page/51/Text/12
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 cup white table wine
+      region_keys:
+      - listgroup-2
+    - text: 1 whole egg
+      region_keys:
+      - listgroup-2
+    - text: 3 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-2
+    - text: dash of cinnamon
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Combine all ingredients in a saucepan. Set over low heat, beat with a wire whisk or electric
+        mixer at low speed until mixture thickens and foams. Serve warm.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 20 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0081
+  source_order: 81
+  slug: poppyseedloaf
+  pages:
+  - 53
+  printed_pages:
+  - '52'
+  display_title: Poppy seed loaf · Makový závin
+  titles:
+  - segment_id: title-en
+    text: Poppy seed loaf
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Makový závin
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 53
+    block_ids:
+    - /page/52/SectionHeader/0
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 53
+    block_ids:
+    - /page/52/ListGroup/1
+  - key: sectionheader-2
+    role: note
+    pdf_page: 53
+    block_ids:
+    - /page/52/SectionHeader/2
+  - key: text-3
+    role: instruction
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/3
+  - key: text-4
+    role: instruction
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/4
+  - key: text-5
+    role: instruction
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/5
+  - key: text-6
+    role: yield-time
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 lb. flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-1
+    - text: 8 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 2 whole eggs
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: dash of salt
+      region_keys:
+      - listgroup-1
+    - text: 1 egg yolk to brush the loaf with
+      region_keys:
+      - listgroup-1
+    - text: grease for baking sheet
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Dissolve the yeast by mixing it with a teaspoon of sugar. Add three tablespoons of flour and
+        1/4 cup lukewarm milk; knead the leavening into a small ball. Let it rise 20 minutes, it should
+        double in size.
+      region_keys:
+      - text-3
+    - text: Place the remaining flour in a bowl, add eggs, lemon rind, remaining sugar, salt and milk,
+        mix well. Finally add melted or softened butter. Knead the dough until it becames smooth and dry
+        and no longer sticks to the bowl. Let it rise 30 minutes.
+      region_keys:
+      - text-4
+    - text: Turn the dough onto a floured pastry board and roll it out into 1/8" thick rectangle. Cover
+        evenly with poppy seed filling and roll it into a long narrow loaf (16-17" long). Place loaf on
+        a greased baking sheet and let rise 10 minutes. Brush with lightly beaten egg yolk and bake 20-25
+        minutes in 35OF oven. When cooled, cut in 3/4" slices and serve.
+      region_keys:
+      - text-5
+  yield_time_lines:
+  - text: '1 loaf - Preparation time: 2 hours 30 minutes'
+    region_keys:
+    - text-6
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0077
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0082
+  source_order: 82
+  slug: czechdoughnuts
+  pages:
+  - 53
+  - 54
+  printed_pages:
+  - '52'
+  - '53'
+  display_title: Czech doughnuts · Koblihy
+  titles:
+  - segment_id: title-en
+    text: Czech doughnuts
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Koblihy
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 53
+    block_ids:
+    - /page/52/SectionHeader/7
+  - key: text-1
+    role: instruction
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/8
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 53
+    block_ids:
+    - /page/52/ListGroup/10
+  - key: text-3
+    role: instruction
+    pdf_page: 53
+    block_ids:
+    - /page/52/Text/9
+  - key: text-4
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/0
+  - key: text-5
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/1
+  - key: text-6
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/2
+  - key: text-7
+    role: yield-time
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/3
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 3 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 6 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup heavy cream
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup milk
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar mixed with vanilla sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon rum
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon orange juice
+      region_keys:
+      - listgroup-2
+    - text: pinch of salt
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup thick fruit preserve
+      region_keys:
+      - listgroup-2
+    - text: 2 cups oil for frying
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: In a bowl stir yeast with 2 teaspoons sugar until liquefied. Add 1 cup flour and
+        3/4 cup milk. Mix thoroughly. Knead into a smooth neat ball. Dust with flour, cover with a napkin
+        and let rise 20 minutes. It should double in bulk.'
+      region_keys:
+      - text-1
+    - text: In a separate bowl cream egg yolks and vanilla sugar. Gradually adding heavy cream beat at
+        low speed until foamy. Blend in remaining flour, salt, rum, orange juice and risen leavening.
+        Mix thoroughly. Knead into a smooth, dry, elastic dough. Let rise 30 minutes.
+      region_keys:
+      - text-3
+    - text: Punch dough down, turn onto a floured pastry board and roll out to 1/3" thickness.
+      region_keys:
+      - text-4
+    - text: Using a cookie cutter or a small cup, cut out round cakes, about 2-1/2" in diameter.
+      region_keys:
+      - text-5
+    - text: Drop fruit preserve by teaspoonfuls in center of half of round cakes. Top each with a plain
+        round cake. Press borders firmly together. Be sure they are well sealed to prevent the filling
+        from leaking out. With a smaller round cutter cut out the final shape of the doughnuts. Put doughnuts
+        on lightly floured board, cover with a large napkin, let rest 20 minutes. Fry in hot oil, starting
+        with top side down, in a covered frying pan. When bottom is golden brown turn them over and finish
+        frying, uncovered. Drain on a sieve or paper towel. When cooled, sprinkle with sugar.
+      region_keys:
+      - text-6
+  yield_time_lines:
+  - text: 'Serves 8 – Preparation time: 3 hours'
+    region_keys:
+    - text-7
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+  continuations:
+  - from_region_key: text-1
+    to_region_key: text-4
+- recipe_id: vera-r0083
+  source_order: 83
+  slug: openfaceddoughnuts
+  pages:
+  - 54
+  printed_pages:
+  - '53'
+  display_title: Open-faced doughnuts · Vdolky
+  titles:
+  - segment_id: title-en
+    text: Open-faced doughnuts
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Vdolky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 54
+    block_ids:
+    - /page/53/SectionHeader/4
+  - key: text-1
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/8
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 54
+    block_ids:
+    - /page/53/ListGroup/5
+  - key: text-3
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/9
+  - key: text-4
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/10
+  - key: text-5
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/11
+  - key: text-6
+    role: instruction
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/6
+  - key: listgroup-7
+    role: ingredient
+    pdf_page: 54
+    block_ids:
+    - /page/53/ListGroup/7
+  - key: text-8
+    role: yield-time
+    pdf_page: 54
+    block_ids:
+    - /page/53/Text/12
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 1-1/2 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 1-1/2 cups milk
+      region_keys:
+      - listgroup-2
+    - text: 3 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cups sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon rum
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: dash of salt
+      region_keys:
+      - listgroup-2
+    - text: 1-1/2 cups oil for frying
+      region_keys:
+      - listgroup-2
+  - section_id: ingredients-2
+    items:
+    - text: 1 cup plum or blueberry jam
+      region_keys:
+      - listgroup-7
+    - text: 1/2 cup crumbled farmer's cheese
+      region_keys:
+      - listgroup-7
+    - text: 1/2 cup sour cream
+      region_keys:
+      - listgroup-7
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Prepare dough in the same manner as in Czech doughnuts, Roll it out to 1/3" thickness. Cut
+        out 3" round cakes. Let rise 30 minutes, in a warm place.
+      region_keys:
+      - text-1
+    - text: Just before frying make an indentation with teaspoon or finger in center of each cake. For
+        frying, follow directions in Czech doughnuts recipe.
+      region_keys:
+      - text-3
+    - text: Cool, sprinkle with sugar.
+      region_keys:
+      - text-4
+    - text: 'Optional: Spread jam over each depression, sprinkle with crumbled farmer''s cheese, dot with
+        sour cream.'
+      region_keys:
+      - text-5
+    - text: 'Optional:'
+      region_keys:
+      - text-6
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 2 hours 30 minutes'
+    region_keys:
+    - text-8
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0082
+  status: source_checked
+  open_issues: []

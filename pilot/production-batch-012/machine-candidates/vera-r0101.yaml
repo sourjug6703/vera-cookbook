@@ -1,0 +1,790 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0101
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 67
+  - 68
+  printed_pages:
+  - '66'
+  - '67'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0101-title
+  pdf_page: 67
+  printed_page: '66'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 726
+    - 224
+  - - 2268
+    - 224
+  - - 2268
+    - 402
+  - - 726
+    - 402
+  candidate_block_ids:
+  - /page/66/SectionHeader/1
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-title.png
+  region_image_pixel_sha256: bb62849311d89b8a25fb703d222f58756ba857481b6a8f0d5f7be6f62fa59dc3
+- region_id: vera-r0101-sectionheader-1
+  pdf_page: 67
+  printed_page: '66'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 396
+  - - 1638
+    - 396
+  - - 1638
+    - 492
+  - - 1119
+    - 492
+  candidate_block_ids:
+  - /page/66/SectionHeader/2
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-sectionheader-1.png
+  region_image_pixel_sha256: 04e3c86af15e8051444b0080747e129f31c7c9e5d9786f32cdaa8012f0fbb1b0
+- region_id: vera-r0101-listgroup-2
+  pdf_page: 67
+  printed_page: '66'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 261
+    - 468
+  - - 720
+    - 468
+  - - 720
+    - 788
+  - - 261
+    - 788
+  candidate_block_ids:
+  - /page/66/ListGroup/3
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-listgroup-2.png
+  region_image_pixel_sha256: 9ba5eaa527cd057ce36db27b7b530cf4e440012ced7bc305a1b3accdbc1a1352
+- region_id: vera-r0101-text-3
+  pdf_page: 67
+  printed_page: '66'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 468
+  - - 2736
+    - 468
+  - - 2736
+    - 620
+  - - 1119
+    - 620
+  candidate_block_ids:
+  - /page/66/Text/4
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-3.png
+  region_image_pixel_sha256: 5a0d66e6735d4eaf1c3ab097bee863d08453ee119a55024d5c373bb1c467b952
+- region_id: vera-r0101-text-4
+  pdf_page: 67
+  printed_page: '66'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 608
+  - - 1731
+    - 608
+  - - 1731
+    - 696
+  - - 1119
+    - 696
+  candidate_block_ids:
+  - /page/66/Text/5
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-4.png
+  region_image_pixel_sha256: 3e65877f1592093aff8c20fd5da9c866bc81ea61fc5673ddde5605d394c2a58c
+- region_id: vera-r0101-sectionheader-5
+  pdf_page: 67
+  printed_page: '66'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 795
+  - - 1641
+    - 795
+  - - 1641
+    - 892
+  - - 1119
+    - 892
+  candidate_block_ids:
+  - /page/66/SectionHeader/6
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-sectionheader-5.png
+  region_image_pixel_sha256: 91113dd0a75304b66b7c0079a778d37f611f8bd18517635cdaf6395572fae2e8
+- region_id: vera-r0101-text-6
+  pdf_page: 67
+  printed_page: '66'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 868
+  - - 2712
+    - 868
+  - - 2712
+    - 1076
+  - - 1119
+    - 1076
+  candidate_block_ids:
+  - /page/66/Text/8
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-6.png
+  region_image_pixel_sha256: 8a6225a066b5ae34f47b5e328f793c9f85dd6beecc85d9e3acde495433fb2e3a
+- region_id: vera-r0101-listgroup-7
+  pdf_page: 67
+  printed_page: '66'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 261
+    - 872
+  - - 825
+    - 872
+  - - 825
+    - 1196
+  - - 261
+    - 1196
+  candidate_block_ids:
+  - /page/66/ListGroup/7
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-listgroup-7.png
+  region_image_pixel_sha256: 8ae2314a3586fd737fec0a0f9dd9d9637fb6483707c4ee2ea2945205bb7994f8
+- region_id: vera-r0101-text-8
+  pdf_page: 67
+  printed_page: '66'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1070
+  - - 1737
+    - 1070
+  - - 1737
+    - 1153
+  - - 1119
+    - 1153
+  candidate_block_ids:
+  - /page/66/Text/9
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-8.png
+  region_image_pixel_sha256: 725da2a9ced2133e3d9b5c86463164e5146ca3885ba4bf3b66c1337d715a9cd1
+- region_id: vera-r0101-sectionheader-9
+  pdf_page: 67
+  printed_page: '66'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1041
+    - 1206
+  - - 1977
+    - 1206
+  - - 1977
+    - 1310
+  - - 1041
+    - 1310
+  candidate_block_ids:
+  - /page/66/SectionHeader/10
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-sectionheader-9.png
+  region_image_pixel_sha256: b81d45963c3c0fc12b6ba182c3186c27bc9044051801ab0885f846d1db6952c3
+- region_id: vera-r0101-text-10
+  pdf_page: 67
+  printed_page: '66'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1310
+  - - 2739
+    - 1310
+  - - 2739
+    - 1566
+  - - 1119
+    - 1566
+  candidate_block_ids:
+  - /page/66/Text/12
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-10.png
+  region_image_pixel_sha256: 526d940e003c0c6908bc01966ff2fd704925ffac03ed86ac0b18f5de4de1435e
+- region_id: vera-r0101-listgroup-11
+  pdf_page: 67
+  printed_page: '66'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 261
+    - 1320
+  - - 999
+    - 1320
+  - - 999
+    - 1550
+  - - 261
+    - 1550
+  candidate_block_ids:
+  - /page/66/ListGroup/11
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-listgroup-11.png
+  region_image_pixel_sha256: cd70b7813d758ae982f8c8c5b6f04a7ede5d4de8e01a0c8a964e97aac62d7b17
+- region_id: vera-r0101-text-12
+  pdf_page: 67
+  printed_page: '66'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1564
+  - - 1950
+    - 1564
+  - - 1950
+    - 1652
+  - - 1119
+    - 1652
+  candidate_block_ids:
+  - /page/66/Text/13
+  region_image: evidence/production-batch-012/regions/vera-r0101/p67-text-12.png
+  region_image_pixel_sha256: 18883243869eff99889f1afe2a8a2012e1c59c31d1e56ba05c99319163ed6c61
+- region_id: vera-r0101-sectionheader-13
+  pdf_page: 68
+  printed_page: '67'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1032
+    - 262
+  - - 2040
+    - 262
+  - - 2040
+    - 398
+  - - 1032
+    - 398
+  candidate_block_ids:
+  - /page/67/SectionHeader/1
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-sectionheader-13.png
+  region_image_pixel_sha256: d5ab533613f0b2359d2dbfc3fb854382f819c8b281457e00bfd5aa49d136ea61
+- region_id: vera-r0101-listgroup-14
+  pdf_page: 68
+  printed_page: '67'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 246
+    - 338
+  - - 867
+    - 338
+  - - 867
+    - 676
+  - - 246
+    - 676
+  candidate_block_ids:
+  - /page/67/ListGroup/2
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-listgroup-14.png
+  region_image_pixel_sha256: 708eb16d08754ff057fe9152d0172364d98ffa8c8ed72ca82b174d7bab968213
+- region_id: vera-r0101-text-15
+  pdf_page: 68
+  printed_page: '67'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1158
+    - 368
+  - - 2742
+    - 368
+  - - 2742
+    - 702
+  - - 1158
+    - 702
+  candidate_block_ids:
+  - /page/67/Text/3
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-text-15.png
+  region_image_pixel_sha256: a22b4fa886b4e8114e2848b737df3989254b3ba3e4e3617a24396c384952028f
+- region_id: vera-r0101-text-16
+  pdf_page: 68
+  printed_page: '67'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1164
+    - 674
+  - - 1977
+    - 674
+  - - 1977
+    - 776
+  - - 1164
+    - 776
+  candidate_block_ids:
+  - /page/67/Text/4
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-text-16.png
+  region_image_pixel_sha256: 69171d46eefd7214d92371328512ff7cd92fa03a783521c1516c1515be53749a
+- region_id: vera-r0101-sectionheader-17
+  pdf_page: 68
+  printed_page: '67'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 774
+    - 762
+  - - 2289
+    - 762
+  - - 2289
+    - 894
+  - - 774
+    - 894
+  candidate_block_ids:
+  - /page/67/SectionHeader/5
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-sectionheader-17.png
+  region_image_pixel_sha256: 796763d5253cbeb0f40d3ca4948e2db5b27052bde958758efbce3788e79cde63
+- region_id: vera-r0101-listgroup-18
+  pdf_page: 68
+  printed_page: '67'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 270
+    - 856
+  - - 1032
+    - 856
+  - - 1032
+    - 1090
+  - - 270
+    - 1090
+  candidate_block_ids:
+  - /page/67/ListGroup/6
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-listgroup-18.png
+  region_image_pixel_sha256: d00a0525f84004994c04668664523e5a046532644b329a56f66f8ac176a51281
+- region_id: vera-r0101-text-19
+  pdf_page: 68
+  printed_page: '67'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1167
+    - 866
+  - - 2736
+    - 866
+  - - 2736
+    - 1074
+  - - 1167
+    - 1074
+  candidate_block_ids:
+  - /page/67/Text/7
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-text-19.png
+  region_image_pixel_sha256: 7dd5c8b8906513741dd40806c119603a144ab092c71332e45dc5b825ce217a5d
+- region_id: vera-r0101-text-20
+  pdf_page: 68
+  printed_page: '67'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1170
+    - 1030
+  - - 2592
+    - 1030
+  - - 2592
+    - 1174
+  - - 1170
+    - 1174
+  candidate_block_ids:
+  - /page/67/Text/8
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-text-20.png
+  region_image_pixel_sha256: abf49654127fe1e4c6a13c4c133b11d2159d2d5b542465e1b28fb35fb300ebba
+- region_id: vera-r0101-text-21
+  pdf_page: 68
+  printed_page: '67'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1170
+    - 1170
+  - - 1977
+    - 1170
+  - - 1977
+    - 1260
+  - - 1170
+    - 1260
+  candidate_block_ids:
+  - /page/67/Text/9
+  region_image: evidence/production-batch-012/regions/vera-r0101/p68-text-21.png
+  region_image_pixel_sha256: f64d372940a0d523f0ae2913299919d19481c4aa86489996a00f6f9c4be4f064
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Apple, plum, peach, banana fritters (or other fruits of similar consistency) · Ovocné
+      kobližky
+    language: mul
+    source_region_ids:
+    - vera-r0101-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Apple, plum, peach, banana fritters (or other fruits of similar consistency)
+    language: en
+    source_region_ids:
+    - vera-r0101-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Ovocné kobližky
+    language: cs
+    source_region_ids:
+    - vera-r0101-title
+    title_role: parallel
+  source_order: 101
+  slug_candidate: appleplumpeachbananafrittersorotherfruitsofsimilarconsistency
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Preparation time: 10 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0101-text-4
+  - segment_id: yield-2
+    text_verbatim: 'Preparation time: 10 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0101-text-8
+  - segment_id: yield-3
+    text_verbatim: 'Serves 6 – Preparation time: 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0101-text-12
+  - segment_id: yield-4
+    text_verbatim: 'Serves 6 – Preparation time: 20 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0101-text-16
+  - segment_id: yield-5
+    text_verbatim: 'Serves 6 – Preparation time: 20 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0101-text-21
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3/4 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 2/3 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: pinch of salt
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 1 tablespoon sugar
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 1 egg, whole
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 1 teaspoon rum
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-2
+    label:
+      segment_id: label-1
+      text_verbatim: 'Batter for frying (1):'
+      language: en
+      source_region_ids:
+      - vera-r0101-sectionheader-1
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-7
+      text_verbatim: 2/3 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    - segment_id: ingredient-8
+      text_verbatim: 1/2 cup white wine
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    - segment_id: ingredient-9
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    - segment_id: ingredient-10
+      text_verbatim: 2 eggs, separated
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    - segment_id: ingredient-11
+      text_verbatim: 1 teaspoon vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    - segment_id: ingredient-12
+      text_verbatim: pinch of salt
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-7
+    label:
+      segment_id: label-5
+      text_verbatim: 'Batter for frying (2):'
+      language: en
+      source_region_ids:
+      - vera-r0101-sectionheader-5
+  - section_id: ingredients-3
+    ingredients:
+    - segment_id: ingredient-13
+      text_verbatim: 4-5 apples
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-11
+    - segment_id: ingredient-14
+      text_verbatim: 1-1/2 cups oil or butter for frying
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-11
+    - segment_id: ingredient-15
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-11
+    - segment_id: ingredient-16
+      text_verbatim: batter for frying
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-11
+    label:
+      segment_id: label-9
+      text_verbatim: Apple fritters - Jablkové kobližky
+      language: en
+      source_region_ids:
+      - vera-r0101-sectionheader-9
+  - section_id: ingredients-4
+    ingredients:
+    - segment_id: ingredient-17
+      text_verbatim: 1 cup apricot preserve
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    - segment_id: ingredient-18
+      text_verbatim: 1 cup white wine
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    - segment_id: ingredient-19
+      text_verbatim: 1/4 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    - segment_id: ingredient-20
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    - segment_id: ingredient-21
+      text_verbatim: 2 tablespoons cornstarch
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    - segment_id: ingredient-22
+      text_verbatim: 1 tablespoon water.
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-14
+    label:
+      segment_id: label-13
+      text_verbatim: Apricot sauce - Meruňková omáčka
+      language: en
+      source_region_ids:
+      - vera-r0101-sectionheader-13
+  - section_id: ingredients-5
+    ingredients:
+    - segment_id: ingredient-23
+      text_verbatim: 2 lbs. plums or peaches
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-18
+    - segment_id: ingredient-24
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-18
+    - segment_id: ingredient-25
+      text_verbatim: 1-1/2 cups oil or butter for frying
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-18
+    - segment_id: ingredient-26
+      text_verbatim: batter for frying
+      language: en
+      source_region_ids:
+      - vera-r0101-listgroup-18
+    label:
+      segment_id: label-17
+      text_verbatim: Plum or peach fritters - Švestkové, broskvové kobližky
+      language: en
+      source_region_ids:
+      - vera-r0101-sectionheader-17
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a bowl blend flour, salt, milk, mixing constantly (use wire whisk or electric
+        mixer at low speed). Add egg, rum and sugar. Mix well.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-3
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a bowl thoroughly blend egg yolks and wine. Gradually add flour, salt, sugar and
+        oil. (use wire whisk or electric mixer at low speed). Gently fold in stiffly whipped egg whites.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-6
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Peel and core the apples. Cut them in round slices (approx 1/3" thick), dip each
+        in the batter and deep fry until golden brown. Drain on a paper towel, dust with sugar and serve.
+        Or serve with apricot sauce.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-10
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: In a saucepan combine the wine, lemon rind, apricot preserve and sugar. Set over
+        medium heat and bring to boil stirring constantly. Boil for 1 minute. Add the cornstarch dissolved
+        in water and boil one minute more. Pass the sauce through a sieve. Serve warm with warm desserts
+        and cold with cold desserts.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-15
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Peel and pit the plums or peaches. Cut in halves or sections, dip in the batter and
+        deep fry until golden brown. Drain on paper towel, dust with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-19
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Sliced bananas and other fruits may be prepared in the same manner.
+      language: en
+      source_region_ids:
+      - vera-r0101-text-20
+      step_number: 6
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

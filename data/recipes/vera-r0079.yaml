@@ -1,0 +1,333 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0079
+record_revision: 2
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 52
+  printed_pages:
+  - '51'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0079-title
+  pdf_page: 52
+  printed_page: '51'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1092
+    - 672
+  - - 1905
+    - 672
+  - - 1905
+    - 759
+  - - 1092
+    - 759
+  candidate_block_ids:
+  - /page/51/SectionHeader/7
+  region_image: evidence/production-batch-001/regions/vera-r0079/p52-title.png
+  region_image_pixel_sha256: 9ef0d0321c5319cd028040af6976ab4482c33abd1606ca4746ddf5ae385706b7
+- region_id: vera-r0079-ingredients
+  pdf_page: 52
+  printed_page: '51'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 243
+    - 758
+  - - 861
+    - 758
+  - - 861
+    - 1033
+  - - 243
+    - 1033
+  candidate_block_ids:
+  - /page/51/ListGroup/2
+  region_image: evidence/production-batch-001/regions/vera-r0079/p52-ingredients.png
+  region_image_pixel_sha256: 55c97d91155b5340502bb414e69754eb5cf666cfab6d73de34a0995e8653c722
+- region_id: vera-r0079-step-1
+  pdf_page: 52
+  printed_page: '51'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1119
+    - 732
+  - - 2736
+    - 732
+  - - 2736
+    - 998
+  - - 1119
+    - 998
+  candidate_block_ids:
+  - /page/51/Text/8
+  region_image: evidence/production-batch-001/regions/vera-r0079/p52-step-1.png
+  region_image_pixel_sha256: 59d636ad8bc3587632e83f952c9038bee49030d26f874f3eddc73f816e9fec27
+- region_id: vera-r0079-yield
+  pdf_page: 52
+  printed_page: '51'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1119
+    - 994
+  - - 1962
+    - 994
+  - - 1962
+    - 1081
+  - - 1119
+    - 1081
+  candidate_block_ids:
+  - /page/51/Text/9
+  region_image: evidence/production-batch-001/regions/vera-r0079/p52-yield.png
+  region_image_pixel_sha256: c0b28a33a5360b5b38c2b422873b2d7331ce6c1072230fe52df1ee79f66215cb
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Vanilla sauce - Vanilková omáčka
+    language: mul
+    source_region_ids:
+    - vera-r0079-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Vanilla sauce
+    language: en
+    source_region_ids:
+    - vera-r0079-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vanilková omáčka
+    language: cs
+    source_region_ids:
+    - vera-r0079-title
+    title_role: parallel
+  source_order: 79
+  slug_candidate: vanilla-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 10 – Preparation time: 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0079-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 cups milk, or light cream
+      language: en
+      source_region_ids:
+      - vera-r0079-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 4 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0079-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0079-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 teaspoon vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0079-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 tablespoon corn starch
+      language: en
+      source_region_ids:
+      - vera-r0079-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      step_number: 1
+      text_verbatim: In a saucepan cream egg yolks, sugar mixed with vanilla sugar, corn starch. Gradually
+        add hot milk or cream, stirring constantly. Set over low heat, bring to boiling, stirring steadily
+        until desired thickness is reached. Sauce should be medium thick. Strain, serve warm.
+      language: en
+      source_region_ids:
+      - vera-r0079-step-1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T20:00:00Z'
+  created_by: codex-preflight
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T19:59:12Z'
+    artifact_path: pilot/production-batch-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T20:32:18Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0079
+    source_region_ids: &id001
+    - vera-r0079-title
+    - vera-r0079-ingredients
+    - vera-r0079-step-1
+    - vera-r0079-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0079
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    source_region_ids:
+    - vera-r0079-title
+    - vera-r0079-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0079-title
+    - vera-r0079-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0079-title
+    - vera-r0079-yield
+    - vera-r0079-ingredients
+    - vera-r0079-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    source_region_ids:
+    - vera-r0079-yield
+    - vera-r0079-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0079-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0079
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0079-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

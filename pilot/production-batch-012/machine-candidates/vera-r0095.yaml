@@ -1,0 +1,214 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0095
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 62
+  printed_pages:
+  - '61'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0095-title
+  pdf_page: 62
+  printed_page: '61'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1038
+    - 1205
+  - - 1992
+    - 1205
+  - - 1992
+    - 1313
+  - - 1038
+    - 1313
+  candidate_block_ids:
+  - /page/61/SectionHeader/7
+  region_image: evidence/production-batch-012/regions/vera-r0095/p62-title.png
+  region_image_pixel_sha256: 3c2807e4e70b25c99e01332323bb8f8c6bc0566d69f9912f11916f641b7a97ee
+- region_id: vera-r0095-text-1
+  pdf_page: 62
+  printed_page: '61'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1309
+  - - 2730
+    - 1309
+  - - 2730
+    - 1735
+  - - 1143
+    - 1735
+  candidate_block_ids:
+  - /page/61/Text/9
+  region_image: evidence/production-batch-012/regions/vera-r0095/p62-text-1.png
+  region_image_pixel_sha256: 289e2b47e0cea209c37bac918762f37e245429f495c5c31f772f920255a17e39
+- region_id: vera-r0095-listgroup-2
+  pdf_page: 62
+  printed_page: '61'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 279
+    - 1313
+  - - 1065
+    - 1313
+  - - 1065
+    - 1921
+  - - 279
+    - 1921
+  candidate_block_ids:
+  - /page/61/ListGroup/8
+  region_image: evidence/production-batch-012/regions/vera-r0095/p62-listgroup-2.png
+  region_image_pixel_sha256: aadf7402556320dcd747b3486808b916b70b02cff5cfa91e2496b88a065283da
+- region_id: vera-r0095-text-3
+  pdf_page: 62
+  printed_page: '61'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1728
+  - - 1887
+    - 1728
+  - - 1887
+    - 1815
+  - - 1143
+    - 1815
+  candidate_block_ids:
+  - /page/61/Text/10
+  region_image: evidence/production-batch-012/regions/vera-r0095/p62-text-3.png
+  region_image_pixel_sha256: 118778122f45a84abe1538109e9167a067046123bc7a6558837e895b31ebdb08
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Bread and apple baba · Žemlovka
+    language: mul
+    source_region_ids:
+    - vera-r0095-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Bread and apple baba
+    language: en
+    source_region_ids:
+    - vera-r0095-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Žemlovka
+    language: cs
+    source_region_ids:
+    - vera-r0095-title
+    title_role: parallel
+  source_order: 95
+  slug_candidate: breadandapplebaba
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 10 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0095-text-3
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 hard baked rolls, italian or french, sliced 1/3" thick
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 quart milk
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 2 eggs
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 3 large apples, Granny Smith type, peeled, thinly sliced
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 1/3 cup golden raisins
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: 2 tablespoons sugar mixed with 1/2 teaspoon cinnamon
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0095-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Beat lightly milk, eggs, sugar, salt. Soak bread slices in the mixture. Squeeze off
+        excess and arrange bread in a single layer in a generously buttered ovenproof casserole. Follow
+        with a layer of apples. Spread raisins and cinnamon/sugar evenly over apples. Top with a layer
+        of bread slices. Preheat oven to 350F. Bake 30-40 minutes until top is golden brown. Dust with
+        sugar. Serve hot or cooled.
+      language: en
+      source_region_ids:
+      - vera-r0095-text-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

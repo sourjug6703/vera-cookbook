@@ -1,0 +1,342 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0074
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 50
+  printed_pages:
+  - '49'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0074-title
+  pdf_page: 50
+  printed_page: '49'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1044
+    - 914
+  - - 1890
+    - 914
+  - - 1890
+    - 1004
+  - - 1044
+    - 1004
+  candidate_block_ids:
+  - /page/49/SectionHeader/6
+  region_image: evidence/production-batch-010/regions/vera-r0074/p50-title.png
+  region_image_pixel_sha256: 014a93ba5a6e9c031006c6da5e79412833228462dcbf04deab7f6c04fcd4264e
+- region_id: vera-r0074-text-1
+  pdf_page: 50
+  printed_page: '49'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1089
+    - 984
+  - - 2700
+    - 984
+  - - 2700
+    - 1228
+  - - 1089
+    - 1228
+  candidate_block_ids:
+  - /page/49/Text/8
+  region_image: evidence/production-batch-010/regions/vera-r0074/p50-text-1.png
+  region_image_pixel_sha256: 5b2b61ec0bf9a2a58cf750ec1174c47b6642edac82f7e572cea21680721b0837
+- region_id: vera-r0074-listgroup-2
+  pdf_page: 50
+  printed_page: '49'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 222
+    - 988
+  - - 948
+    - 988
+  - - 948
+    - 1300
+  - - 222
+    - 1300
+  candidate_block_ids:
+  - /page/49/ListGroup/7
+  region_image: evidence/production-batch-010/regions/vera-r0074/p50-listgroup-2.png
+  region_image_pixel_sha256: fa142b5620682b0e41428963195c506af3d3a566e38b60ddc48f67ee222f5047
+- region_id: vera-r0074-text-3
+  pdf_page: 50
+  printed_page: '49'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1089
+    - 1222
+  - - 2223
+    - 1222
+  - - 2223
+    - 1310
+  - - 1089
+    - 1310
+  candidate_block_ids:
+  - /page/49/Text/9
+  region_image: evidence/production-batch-010/regions/vera-r0074/p50-text-3.png
+  region_image_pixel_sha256: 75795eab12fe523b08cd5359090ee2f699a1cfa19477177b0ab6546c30379afc
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Walnuts filling · Ořechová nádivka
+    language: mul
+    source_region_ids:
+    - vera-r0074-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Walnuts filling
+    language: en
+    source_region_ids:
+    - vera-r0074-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Ořechová nádivka
+    language: cs
+    source_region_ids:
+    - vera-r0074-title
+    title_role: parallel
+  source_order: 74
+  slug_candidate: walnutsfilling
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Makes approx. 1 - 1/2 cups - Preparation time: 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0074-text-3
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 oz. ground or chopped walnuts
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 2/3 cup maple syrup
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 3/4 cup sponge crumbs
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 1 teaspoon vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 2 tablespoons heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0074-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pour the maple syrup in a saucepan and bring over medium heat. When hot, but not
+        boiling, remove from heat, add the walnuts, vanilla sugar, lemon rind and heavy cream and as much
+        of the sponge crumbs as needed to thicken the mixture. Mix well.
+      language: en
+      source_region_ids:
+      - vera-r0074-text-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:28:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0074
+    source_region_ids: &id001
+    - vera-r0074-title
+    - vera-r0074-text-1
+    - vera-r0074-listgroup-2
+    - vera-r0074-text-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0074
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0074-title
+    - vera-r0074-listgroup-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0074-title
+    - vera-r0074-text-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    source_region_ids:
+    - vera-r0074-title
+    - vera-r0074-text-3
+    - vera-r0074-listgroup-2
+    - vera-r0074-text-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0074-text-3
+    - vera-r0074-listgroup-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0074-text-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0074
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0074-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

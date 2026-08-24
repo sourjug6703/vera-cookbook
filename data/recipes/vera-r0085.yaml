@@ -1,0 +1,476 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0085
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 56
+  printed_pages:
+  - '55'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0085-title
+  pdf_page: 56
+  printed_page: '55'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1158
+    - 254
+  - - 1887
+    - 254
+  - - 1887
+    - 364
+  - - 1158
+    - 364
+  candidate_block_ids:
+  - /page/55/SectionHeader/2
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-title.png
+  region_image_pixel_sha256: 30b9e04eb0e4da4b199253bc2a79ed52c4a673e9f57f28e93b7eb607b43f574e
+- region_id: vera-r0085-listgroup-1
+  pdf_page: 56
+  printed_page: '55'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 246
+    - 344
+  - - 1080
+    - 344
+  - - 1080
+    - 1046
+  - - 246
+    - 1046
+  candidate_block_ids:
+  - /page/55/ListGroup/1
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-listgroup-1.png
+  region_image_pixel_sha256: 9b80a2606952bc95088ab4165aae0aa1f1e0a5a1958211176be3ddb2ea643f7a
+- region_id: vera-r0085-text-2
+  pdf_page: 56
+  printed_page: '55'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 356
+  - - 2739
+    - 356
+  - - 2739
+    - 630
+  - - 1140
+    - 630
+  candidate_block_ids:
+  - /page/55/Text/3
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-text-2.png
+  region_image_pixel_sha256: 7d774fe2b0b4d106a86c3690f51a69b4be282d4d0bdc305bf36876e23e88604b
+- region_id: vera-r0085-text-3
+  pdf_page: 56
+  printed_page: '55'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 582
+  - - 2739
+    - 582
+  - - 2739
+    - 1002
+  - - 1140
+    - 1002
+  candidate_block_ids:
+  - /page/55/Text/4
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-text-3.png
+  region_image_pixel_sha256: 607382b129fc682d9137a01dd0ae9e508069dd9b49aa375e14c579a7055fef8c
+- region_id: vera-r0085-text-4
+  pdf_page: 56
+  printed_page: '55'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 960
+  - - 2739
+    - 960
+  - - 2739
+    - 1382
+  - - 1140
+    - 1382
+  candidate_block_ids:
+  - /page/55/Text/5
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-text-4.png
+  region_image_pixel_sha256: 96c496908ffaa70dfc04c11dfb57fb9b5758552ffef7500815ff9174b3b4f782
+- region_id: vera-r0085-text-5
+  pdf_page: 56
+  printed_page: '55'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1149
+    - 1370
+  - - 2121
+    - 1370
+  - - 2121
+    - 1458
+  - - 1149
+    - 1458
+  candidate_block_ids:
+  - /page/55/Text/6
+  region_image: evidence/production-batch-011/regions/vera-r0085/p56-text-5.png
+  region_image_pixel_sha256: e907a714970e2a51db319f938f9924c1d17ae1d4d303fd214d31fc8d32b84996
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Easter bread · Bochánek
+    language: mul
+    source_region_ids:
+    - vera-r0085-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Easter bread
+    language: en
+    source_region_ids:
+    - vera-r0085-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Bochánek
+    language: cs
+    source_region_ids:
+    - vera-r0085-title
+    title_role: parallel
+  source_order: 85
+  slug_candidate: easterbread
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '2 breads – Preparation time: 3 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0085-text-5
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 8 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 2 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 1 whole egg
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: grated rind of one lemon
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-8
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-9
+      text_verbatim: 1 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-10
+      text_verbatim: 1/2 cup golden raisins
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-11
+      text_verbatim: 1/2 cup slivered almonds
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-12
+      text_verbatim: 1/2 teaspoon baking powder
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+    - segment_id: ingredient-13
+      text_verbatim: 1 egg for brushing, butter for baking tray
+      language: en
+      source_region_ids:
+      - vera-r0085-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Leavening: In a bowl stir the yeast and 2 teaspoons sugar until the yeast dissolves.
+        Add 1/2 cup flour and one third of the milk and knead it into a ball. Sprinkle with flour and
+        set aside to rise, in a warm, draft free area. It will double in bulk within 20 minutes.'
+      language: en
+      source_region_ids:
+      - vera-r0085-text-2
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a separate bowl combine the remaining flour, sugar, salt and lemon rind. Make
+        a well in the center and place the risen leavening, egg yolks and whole egg in it. Gradually adding
+        the remaining milk, mix well. Lastly add raisins and melted butter and knead with a wooden spoon,
+        or with hands, until dough is smooth and no longer sticks to the bowl. Set aside, dust with flour
+        and let rise 30 minutes. Punch dough down, let rise 30 minutes again.
+      language: en
+      source_region_ids:
+      - vera-r0085-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: After the dough has risen at the second time, turn it over a floured pastry board
+        and divide in two halves. Shape each into a ball. Place on a baking tray lined with buttered wax
+        paper. Let rise 30 minutes. Brush with lightly beaten egg. With a sharp knife slit the top of
+        each bread cross-wise. Let rise 10 minutes. Preheat oven to 350°F. Sprinkle with slivered almonds
+        and bake 30-35 minutes or until breads are golden brown. Dust with sugar and cool at room temperature.
+      language: en
+      source_region_ids:
+      - vera-r0085-text-4
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:28:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0085
+    source_region_ids: &id001
+    - vera-r0085-title
+    - vera-r0085-listgroup-1
+    - vera-r0085-text-2
+    - vera-r0085-text-3
+    - vera-r0085-text-4
+    - vera-r0085-text-5
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0085
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    source_region_ids:
+    - vera-r0085-title
+    - vera-r0085-listgroup-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0085-title
+    - vera-r0085-text-2
+    - vera-r0085-text-3
+    - vera-r0085-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0085-title
+    - vera-r0085-text-5
+    - vera-r0085-listgroup-1
+    - vera-r0085-text-2
+    - vera-r0085-text-3
+    - vera-r0085-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0085-text-5
+    - vera-r0085-listgroup-1
+    - vera-r0085-text-2
+    - vera-r0085-text-3
+    - vera-r0085-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0085-text-5
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0085
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0085-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

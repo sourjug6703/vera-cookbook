@@ -1,0 +1,1360 @@
+batch_id: production-batch-012
+batch_title: Production batch 012 source review
+batch_copy_title: Vera Cookbook production batch 012 review status
+candidate_summary: Local Marker machine candidates for production batch 012; no trust promotion has been
+  performed.
+audited_summary: Production batch 012 after a separate direct local AI visual source audit. Source-clear
+  records are source_checked; genuine ambiguity remains needs_attention. This is not human verification.
+recipe_schema_version: 1.3.0
+source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+pdf_page_count: 75
+marker_version: 2.0.0
+marker_generated_at: '2026-08-24T03:09:28Z'
+marker_artifact: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures
+  - Vera Gaeta.json
+created_at: '2026-08-24T03:12:00Z'
+audited_at: '2026-08-24T03:28:00Z'
+auditor_id: openai-codex
+readback_record_ids: []
+recipes:
+- recipe_id: vera-r0094
+  source_order: 94
+  slug: potatoapplepie
+  pages:
+  - 62
+  printed_pages:
+  - '61'
+  display_title: Potato apple pie · Jablkový koláč bramborový
+  titles:
+  - segment_id: title-en
+    text: Potato apple pie
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Jablkový koláč bramborový
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 62
+    block_ids:
+    - /page/61/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 62
+    block_ids:
+    - /page/61/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 62
+    block_ids:
+    - /page/61/Text/5
+  - key: sectionheader-3
+    role: note
+    pdf_page: 62
+    block_ids:
+    - /page/61/SectionHeader/3
+  - key: listgroup-4
+    role: ingredient
+    pdf_page: 62
+    block_ids:
+    - /page/61/ListGroup/4
+  - key: text-5
+    role: yield-time
+    pdf_page: 62
+    block_ids:
+    - /page/61/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon baking powder
+      region_keys:
+      - listgroup-1
+    - text: 2 medium potatoes, boiled, mashed
+      region_keys:
+      - listgroup-1
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 egg
+      region_keys:
+      - listgroup-1
+    - text: grease for baking dish
+      region_keys:
+      - listgroup-1
+  - section_id: ingredients-2
+    label:
+      segment_id: label-3
+      text: 'Filling:'
+      region_key: sectionheader-3
+    items:
+    - text: 1/2 cup hazelnuts or walnuts, ground or chopped
+      region_keys:
+      - listgroup-4
+    - text: 3 medium apples, Granny Smith, peeled, thinly sliced parboiled
+      region_keys:
+      - listgroup-4
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-4
+    - text: rind of 1 lemon
+      region_keys:
+      - listgroup-4
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Blend baking powder into flour. Add all ingredients and mix thoroughly. Knead about 10 minutes,
+        until dough is smooth and dry. On a floured surface roll dough out to 1/3" thickness, cut in two
+        halves. Place one half in a buttered baking dish, evenly spread apple mixture. Cover with other
+        half of dough. Preheat oven to 375F, bake 30 minutes or until golden on top. Cut in squares, lightly
+        dust with sugar.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0095
+  source_order: 95
+  slug: breadandapplebaba
+  pages:
+  - 62
+  printed_pages:
+  - '61'
+  display_title: Bread and apple baba · Žemlovka
+  titles:
+  - segment_id: title-en
+    text: Bread and apple baba
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Žemlovka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 62
+    block_ids:
+    - /page/61/SectionHeader/7
+  - key: text-1
+    role: instruction
+    pdf_page: 62
+    block_ids:
+    - /page/61/Text/9
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 62
+    block_ids:
+    - /page/61/ListGroup/8
+  - key: text-3
+    role: yield-time
+    pdf_page: 62
+    block_ids:
+    - /page/61/Text/10
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 6 hard baked rolls, italian or french, sliced 1/3" thick
+      region_keys:
+      - listgroup-2
+    - text: 1 quart milk
+      region_keys:
+      - listgroup-2
+    - text: 2 eggs
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: dash of salt
+      region_keys:
+      - listgroup-2
+    - text: 3 large apples, Granny Smith type, peeled, thinly sliced
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup golden raisins
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons sugar mixed with 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-2
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Beat lightly milk, eggs, sugar, salt. Soak bread slices in the mixture. Squeeze off excess
+        and arrange bread in a single layer in a generously buttered ovenproof casserole. Follow with
+        a layer of apples. Spread raisins and cinnamon/sugar evenly over apples. Top with a layer of bread
+        slices. Preheat oven to 350F. Bake 30-40 minutes until top is golden brown. Dust with sugar. Serve
+        hot or cooled.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 1 hour'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0096
+  source_order: 96
+  slug: applestrudel
+  pages:
+  - 63
+  printed_pages:
+  - '62'
+  display_title: Apple strudel · Jablkový závin
+  titles:
+  - segment_id: title-en
+    text: Apple strudel
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Jablkový závin
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 63
+    block_ids:
+    - /page/62/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 63
+    block_ids:
+    - /page/62/Text/6
+  - key: sectionheader-2
+    role: note
+    pdf_page: 63
+    block_ids:
+    - /page/62/SectionHeader/2
+  - key: listgroup-3
+    role: ingredient
+    pdf_page: 63
+    block_ids:
+    - /page/62/ListGroup/3
+  - key: text-4
+    role: instruction
+    pdf_page: 63
+    block_ids:
+    - /page/62/Text/7
+  - key: sectionheader-5
+    role: note
+    pdf_page: 63
+    block_ids:
+    - /page/62/SectionHeader/4
+  - key: listgroup-6
+    role: ingredient
+    pdf_page: 63
+    block_ids:
+    - /page/62/ListGroup/5
+  - key: text-7
+    role: instruction
+    pdf_page: 63
+    block_ids:
+    - /page/62/Text/8
+  - key: text-8
+    role: yield-time
+    pdf_page: 63
+    block_ids:
+    - /page/62/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    label:
+      segment_id: label-2
+      text: 'Dough:'
+      region_key: sectionheader-2
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-3
+    - text: 2/3 cup water
+      region_keys:
+      - listgroup-3
+    - text: 1 tablespoon butter
+      region_keys:
+      - listgroup-3
+    - text: 1 whole egg
+      region_keys:
+      - listgroup-3
+    - text: dash of salt
+      region_keys:
+      - listgroup-3
+  - section_id: ingredients-2
+    label:
+      segment_id: label-5
+      text: 'Filling:'
+      region_key: sectionheader-5
+    items:
+    - text: 6 tablespoons butter, melted
+      region_keys:
+      - listgroup-6
+    - text: 3/4 cup bread crumbs
+      region_keys:
+      - listgroup-6
+    - text: 3 large apples, Granny Smith
+      region_keys:
+      - listgroup-6
+    - text: 3/4 cup sugar
+      region_keys:
+      - listgroup-6
+    - text: 1/4 cup golden raisins
+      region_keys:
+      - listgroup-6
+    - text: 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-6
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Place the flour on a pastry board and make a well in the center. Pour lukewarm water in the
+        well. Add salt, softened butter and the egg. With the palm of your hands knead all ingredients
+        into a ball. Let it rest in a warm place for 30 minutes.
+      region_keys:
+      - text-1
+    - text: Turn the dough over a floured cloth napkin, flatten it a little with a rolling pin and brush
+        with melted hot butter. Then stretch it with hands into a thin oblong shape. Cover two thirds
+        with bread crumbs browned in butter.
+      region_keys:
+      - text-4
+    - text: Peel the apples, slice them thinly and spread them evenly over the bread crumbs. Top with
+        sugar mixed with cinnamon and raisins. Brush the edges of the dough with melted butter. With the
+        help of the napkin roll the dough with the filling into a loaf. Put the loaf on a greased baking
+        sheet and brush it with butter. Bake 30 minutes at 375F. When done, slice it and dust with sugar.
+        May be served warm, or cooled. Can be reheated.
+      region_keys:
+      - text-7
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour 30 minutes'
+    region_keys:
+    - text-8
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0097
+  source_order: 97
+  slug: yellowcake
+  pages:
+  - 64
+  printed_pages:
+  - '63'
+  display_title: Yellow cake · Bábovka
+  titles:
+  - segment_id: title-en
+    text: Yellow cake
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bábovka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 64
+    block_ids:
+    - /page/63/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 64
+    block_ids:
+    - /page/63/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 64
+    block_ids:
+    - /page/63/Text/3
+  - key: text-3
+    role: yield-time
+    pdf_page: 64
+    block_ids:
+    - /page/63/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2-1/2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 10 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 1 whole egg, 3 egg yolks, 4 egg whites
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup golden raisins
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon baking powder
+      region_keys:
+      - listgroup-1
+    - text: butter and flour for baking pan
+      region_keys:
+      - listgroup-1
+    - text: sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl cream the butter, sugar, whole egg, egg yolks, lemon rind and vanilla sugar. Beat
+        at medium speed until fluffy. Add the milk, raisins and half of the flour, mix thoroughly. In
+        the end fold in stiffly whipped egg whites and the remaining flour mixed with baking powder. Pour
+        the batter in a buttered and floured fluted tube pan and bake for one hour at 350F. Test for doneness
+        with a tester or toothpick. Turn the cake out onto a cake rack, dust lightly with powdered sugar,
+        cool and slice.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: '1 cake – Preparation time: 1 hour 30 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0098
+  source_order: 98
+  slug: fudgemarblecake
+  pages:
+  - 64
+  printed_pages:
+  - '63'
+  display_title: Fudge Marble cake · Mramorová bábovka
+  titles:
+  - segment_id: title-en
+    text: Fudge Marble cake
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Mramorová bábovka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 64
+    block_ids:
+    - /page/63/SectionHeader/5
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 64
+    block_ids:
+    - /page/63/ListGroup/6
+  - key: text-2
+    role: instruction
+    pdf_page: 64
+    block_ids:
+    - /page/63/Text/7
+  - key: text-3
+    role: instruction
+    pdf_page: 64
+    block_ids:
+    - /page/63/Text/8
+  - key: text-4
+    role: yield-time
+    pdf_page: 64
+    block_ids:
+    - /page/63/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2-1/4 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1-1/3 cups sugar
+      region_keys:
+      - listgroup-1
+    - text: 10 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 3 eggs, separated
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons cocoa powder
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons water
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-1
+    - text: 1-1/2 teaspoons baking powder
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: butter and flour for baking pan
+      region_keys:
+      - listgroup-1
+    - text: sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl cream the butter, sugar, egg yolks, vanilla sugar and lemon rind. Beat until fluffy.
+        Add the milk and the flour mixed with baking powder. Fold in the stiffly whipped egg whites. Pour
+        half of the batter in a separate bowl. Dissolve the cocoa powder in water and combine with one
+        of the yellow batter halves. Turn the mixture into a buttered and floured fluted tube pan, alternating
+        the yellow and the brown batter.
+      region_keys:
+      - text-2
+    - text: Bake at 350F for 1 hour, or until the toothpick comes out clean. Invert the cake onto wire
+        rack, dust with sugar, cool and slice.
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: '1 cake – Preparation time: 1 hour 30 minutes'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0099
+  source_order: 99
+  slug: plumdumplings
+  pages:
+  - 65
+  printed_pages:
+  - '64'
+  display_title: Plum dumplings · Švestkové knedlíky
+  titles:
+  - segment_id: title-en
+    text: Plum dumplings
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Švestkové knedlíky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 65
+    block_ids:
+    - /page/64/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 65
+    block_ids:
+    - /page/64/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 65
+    block_ids:
+    - /page/64/Text/5
+  - key: sectionheader-3
+    role: note
+    pdf_page: 65
+    block_ids:
+    - /page/64/SectionHeader/3
+  - key: listgroup-4
+    role: ingredient
+    pdf_page: 65
+    block_ids:
+    - /page/64/ListGroup/4
+  - key: sectionheader-5
+    role: note
+    pdf_page: 65
+    block_ids:
+    - /page/64/SectionHeader/6
+  - key: listgroup-6
+    role: ingredient
+    pdf_page: 65
+    block_ids:
+    - /page/64/ListGroup/7
+  - key: text-7
+    role: instruction
+    pdf_page: 65
+    block_ids:
+    - /page/64/Text/8
+  - key: text-8
+    role: instruction
+    pdf_page: 65
+    block_ids:
+    - /page/64/Text/9
+  - key: text-9
+    role: yield-time
+    pdf_page: 65
+    block_ids:
+    - /page/64/Text/10
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4·1/2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 8 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 2 tablespoons sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 whole egg, 1 egg yolk
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 2 lbs. plums, apricots, cherries or other fruits
+      region_keys:
+      - listgroup-1
+  - section_id: ingredients-2
+    label:
+      segment_id: label-3
+      text: 'Topping:'
+      region_key: sectionheader-3
+    items:
+    - text: 3/4 cup bread crumbs
+      region_keys:
+      - listgroup-4
+    - text: 3 tablespoons sugar
+      region_keys:
+      - listgroup-4
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-4
+  - section_id: ingredients-3
+    label:
+      segment_id: label-5
+      text: Topping variations
+      region_key: sectionheader-5
+    items:
+    - text: (1) Sugar mixed with a little cinnamon (2) Ground poppy seeds mixed with sugar (3) Grated
+        farmers cheese (4) Cream or sour cream can substitute the hot butter
+      region_keys:
+      - listgroup-6
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl cream the butter, the egg, the egg yolk and sugar, using wire whisk or electric
+        mixer at low speed. Add flour and lukewarm milk. Knead the dough until it no longer sticks to
+        the bowl. Turn it over on a floured pastry board and roll it out to 1/2" thickness. Cut in squares
+        2 × 2". Place one plum, or other fruit pitted or not, in the center of each square. Enclose the
+        dumplings by pressing the four corners firmly together and round them in the palm of your hand.
+        Boil in lightly salted water for 6 - 7 minutes. Drain. Sprinkle with browned bread crumbs, sugar
+        and melted hot butter.
+      region_keys:
+      - text-2
+    - text: These dumplings can be prepared ahead of time and reheated in double boiler.
+      region_keys:
+      - text-7
+    - text: Serve warm as a dessert or a meal.
+      region_keys:
+      - text-8
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-9
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0100
+  source_order: 100
+  slug: potatoplumdumplings
+  pages:
+  - 66
+  printed_pages:
+  - '65'
+  display_title: Potato plum dumplings · Švestkové knedlíky bramborové
+  titles:
+  - segment_id: title-en
+    text: Potato plum dumplings
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Švestkové knedlíky bramborové
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 66
+    block_ids:
+    - /page/65/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 66
+    block_ids:
+    - /page/65/Text/4
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 66
+    block_ids:
+    - /page/65/ListGroup/2
+  - key: text-3
+    role: yield-time
+    pdf_page: 66
+    block_ids:
+    - /page/65/Text/5
+  - key: text-4
+    role: instruction
+    pdf_page: 66
+    block_ids:
+    - /page/65/Text/3
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 medium potatoes
+      region_keys:
+      - listgroup-2
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 3 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: 1 egg, whole
+      region_keys:
+      - listgroup-2
+    - text: dash of salt
+      region_keys:
+      - listgroup-2
+    - text: 2 lbs. plums, apricots, cherries or other fruits
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Boil the potatoes, peel and purée them while hot. When cooled add the flour, salt, butter
+        and egg and knead the dough until smooth. Turn the dough over on a floured pastry board and continue
+        as indicated above.
+      region_keys:
+      - text-1
+    - text: 'Topping: same as above'
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour 15 minutes.'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0099
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0101
+  source_order: 101
+  slug: appleplumpeachbananafrittersorotherfruitsofsimilarconsistency
+  pages:
+  - 67
+  - 68
+  printed_pages:
+  - '66'
+  - '67'
+  display_title: Apple, plum, peach, banana fritters (or other fruits of similar consistency) · Ovocné
+    kobližky
+  titles:
+  - segment_id: title-en
+    text: Apple, plum, peach, banana fritters (or other fruits of similar consistency)
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Ovocné kobližky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 67
+    block_ids:
+    - /page/66/SectionHeader/1
+  - key: sectionheader-1
+    role: note
+    pdf_page: 67
+    block_ids:
+    - /page/66/SectionHeader/2
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 67
+    block_ids:
+    - /page/66/ListGroup/3
+  - key: text-3
+    role: instruction
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/4
+  - key: text-4
+    role: yield-time
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/5
+  - key: sectionheader-5
+    role: note
+    pdf_page: 67
+    block_ids:
+    - /page/66/SectionHeader/6
+  - key: text-6
+    role: instruction
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/8
+  - key: listgroup-7
+    role: ingredient
+    pdf_page: 67
+    block_ids:
+    - /page/66/ListGroup/7
+  - key: text-8
+    role: yield-time
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/9
+  - key: sectionheader-9
+    role: note
+    pdf_page: 67
+    block_ids:
+    - /page/66/SectionHeader/10
+  - key: text-10
+    role: instruction
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/12
+  - key: listgroup-11
+    role: ingredient
+    pdf_page: 67
+    block_ids:
+    - /page/66/ListGroup/11
+  - key: text-12
+    role: yield-time
+    pdf_page: 67
+    block_ids:
+    - /page/66/Text/13
+  - key: sectionheader-13
+    role: note
+    pdf_page: 68
+    block_ids:
+    - /page/67/SectionHeader/1
+  - key: listgroup-14
+    role: ingredient
+    pdf_page: 68
+    block_ids:
+    - /page/67/ListGroup/2
+  - key: text-15
+    role: instruction
+    pdf_page: 68
+    block_ids:
+    - /page/67/Text/3
+  - key: text-16
+    role: yield-time
+    pdf_page: 68
+    block_ids:
+    - /page/67/Text/4
+  - key: sectionheader-17
+    role: note
+    pdf_page: 68
+    block_ids:
+    - /page/67/SectionHeader/5
+  - key: listgroup-18
+    role: ingredient
+    pdf_page: 68
+    block_ids:
+    - /page/67/ListGroup/6
+  - key: text-19
+    role: instruction
+    pdf_page: 68
+    block_ids:
+    - /page/67/Text/7
+  - key: text-20
+    role: instruction
+    pdf_page: 68
+    block_ids:
+    - /page/67/Text/8
+  - key: text-21
+    role: yield-time
+    pdf_page: 68
+    block_ids:
+    - /page/67/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    label:
+      segment_id: label-1
+      text: 'Batter for frying (1):'
+      region_key: sectionheader-1
+    items:
+    - text: 3/4 cup flour
+      region_keys:
+      - listgroup-2
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-2
+    - text: pinch of salt
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 egg, whole
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon rum
+      region_keys:
+      - listgroup-2
+  - section_id: ingredients-2
+    label:
+      segment_id: label-5
+      text: 'Batter for frying (2):'
+      region_key: sectionheader-5
+    items:
+    - text: 2/3 cup flour
+      region_keys:
+      - listgroup-7
+    - text: 1/2 cup white wine
+      region_keys:
+      - listgroup-7
+    - text: 3 tablespoons sugar
+      region_keys:
+      - listgroup-7
+    - text: 2 eggs, separated
+      region_keys:
+      - listgroup-7
+    - text: 1 teaspoon vegetable oil
+      region_keys:
+      - listgroup-7
+    - text: pinch of salt
+      region_keys:
+      - listgroup-7
+  - section_id: ingredients-3
+    label:
+      segment_id: label-9
+      text: Apple fritters - Jablkové kobližky
+      region_key: sectionheader-9
+    items:
+    - text: 4-5 apples
+      region_keys:
+      - listgroup-11
+    - text: 1-1/2 cups oil or butter for frying
+      region_keys:
+      - listgroup-11
+    - text: 3 tablespoons sugar
+      region_keys:
+      - listgroup-11
+    - text: batter for frying
+      region_keys:
+      - listgroup-11
+  - section_id: ingredients-4
+    label:
+      segment_id: label-13
+      text: Apricot sauce - Meruňková omáčka
+      region_key: sectionheader-13
+    items:
+    - text: 1 cup apricot preserve
+      region_keys:
+      - listgroup-14
+    - text: 1 cup white wine
+      region_keys:
+      - listgroup-14
+    - text: 1/4 cup sugar
+      region_keys:
+      - listgroup-14
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-14
+    - text: 2 tablespoons cornstarch
+      region_keys:
+      - listgroup-14
+    - text: 1 tablespoon water.
+      region_keys:
+      - listgroup-14
+  - section_id: ingredients-5
+    label:
+      segment_id: label-17
+      text: Plum or peach fritters - Švestkové, broskvové kobližky
+      region_key: sectionheader-17
+    items:
+    - text: 2 lbs. plums or peaches
+      region_keys:
+      - listgroup-18
+    - text: 3 tablespoons sugar
+      region_keys:
+      - listgroup-18
+    - text: 1-1/2 cups oil or butter for frying
+      region_keys:
+      - listgroup-18
+    - text: batter for frying
+      region_keys:
+      - listgroup-18
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl blend flour, salt, milk, mixing constantly (use wire whisk or electric mixer at
+        low speed). Add egg, rum and sugar. Mix well.
+      region_keys:
+      - text-3
+    - text: In a bowl thoroughly blend egg yolks and wine. Gradually add flour, salt, sugar and oil. (use
+        wire whisk or electric mixer at low speed). Gently fold in stiffly whipped egg whites.
+      region_keys:
+      - text-6
+    - text: Peel and core the apples. Cut them in round slices (approx 1/3" thick), dip each in the batter
+        and deep fry until golden brown. Drain on a paper towel, dust with sugar and serve. Or serve with
+        apricot sauce.
+      region_keys:
+      - text-10
+    - text: In a saucepan combine the wine, lemon rind, apricot preserve and sugar. Set over medium heat
+        and bring to boil stirring constantly. Boil for 1 minute. Add the cornstarch dissolved in water
+        and boil one minute more. Pass the sauce through a sieve. Serve warm with warm desserts and cold
+        with cold desserts.
+      region_keys:
+      - text-15
+    - text: Peel and pit the plums or peaches. Cut in halves or sections, dip in the batter and deep fry
+        until golden brown. Drain on paper towel, dust with sugar.
+      region_keys:
+      - text-19
+    - text: Sliced bananas and other fruits may be prepared in the same manner.
+      region_keys:
+      - text-20
+  yield_time_lines:
+  - text: 'Preparation time: 10 minutes'
+    region_keys:
+    - text-4
+  - text: 'Preparation time: 10 minutes'
+    region_keys:
+    - text-8
+  - text: 'Serves 6 – Preparation time: 30 minutes'
+    region_keys:
+    - text-12
+  - text: 'Serves 6 – Preparation time: 20 minutes'
+    region_keys:
+    - text-16
+  - text: 'Serves 6 – Preparation time: 20 minutes'
+    region_keys:
+    - text-21
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0102
+  source_order: 102
+  slug: cabbagepockets
+  pages:
+  - 69
+  printed_pages:
+  - '68'
+  display_title: Cabbage pockets · Zelné taštičky
+  titles:
+  - segment_id: title-en
+    text: Cabbage pockets
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Zelné taštičky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 69
+    block_ids:
+    - /page/68/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/8
+  - key: sectionheader-2
+    role: note
+    pdf_page: 69
+    block_ids:
+    - /page/68/SectionHeader/2
+  - key: listgroup-3
+    role: ingredient
+    pdf_page: 69
+    block_ids:
+    - /page/68/ListGroup/3
+  - key: text-4
+    role: instruction
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/9
+  - key: text-5
+    role: instruction
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/10
+  - key: sectionheader-6
+    role: note
+    pdf_page: 69
+    block_ids:
+    - /page/68/SectionHeader/4
+  - key: listgroup-7
+    role: ingredient
+    pdf_page: 69
+    block_ids:
+    - /page/68/ListGroup/5
+  - key: text-8
+    role: instruction
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/11
+  - key: text-9
+    role: instruction
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/12
+  - key: sectionheader-10
+    role: note
+    pdf_page: 69
+    block_ids:
+    - /page/68/SectionHeader/6
+  - key: text-11
+    role: yield-time
+    pdf_page: 69
+    block_ids:
+    - /page/68/Text/13
+  - key: listgroup-12
+    role: ingredient
+    pdf_page: 69
+    block_ids:
+    - /page/68/ListGroup/7
+  ingredient_sections:
+  - section_id: ingredients-1
+    label:
+      segment_id: label-2
+      text: 'Dough:'
+      region_key: sectionheader-2
+    items:
+    - text: 4 medium potatoes, boiled, mashed, cooled
+      region_keys:
+      - listgroup-3
+    - text: 1-1/2 cups flour
+      region_keys:
+      - listgroup-3
+    - text: 1 egg
+      region_keys:
+      - listgroup-3
+    - text: 2 tablespoons butter
+      region_keys:
+      - listgroup-3
+    - text: dash of salt
+      region_keys:
+      - listgroup-3
+    - text: 1 egg white for brushing
+      region_keys:
+      - listgroup-3
+  - section_id: ingredients-2
+    label:
+      segment_id: label-6
+      text: 'Stuffing:'
+      region_key: sectionheader-6
+    items:
+    - text: 3 tablespoons vegetable oil
+      region_keys:
+      - listgroup-7
+    - text: 1 small onion, finely chopped
+      region_keys:
+      - listgroup-7
+    - text: 1 tablespoon sugar
+      region_keys:
+      - listgroup-7
+    - text: 2 cups shredded cabbage
+      region_keys:
+      - listgroup-7
+    - text: salt and pepper
+      region_keys:
+      - listgroup-7
+  - section_id: ingredients-3
+    label:
+      segment_id: label-10
+      text: 'Topping:'
+      region_key: sectionheader-10
+    items:
+    - text: 3/4 cup bread crumbs
+      region_keys:
+      - listgroup-12
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-12
+    - text: 3 tablespoons sugar
+      region_keys:
+      - listgroup-12
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Make stuffing: Sauté onion in oil until translucent. Stir in sugar. Add cabbage, salt and
+        pepper, cook 10-15 minutes, until cabbage is tender. Do not overcook. Properly cooked cabbage
+        should be crisp.'
+      region_keys:
+      - text-1
+    - text: Combine dough ingredients and knead until smooth, for about 10 minutes.
+      region_keys:
+      - text-4
+    - text: On a floured surface roll dough out to 1/4" thickness. Cut out 2-1/2" squares. Drop a spoonful
+        of cabbage in center of each square. Brush edges with egg white, fold squares to form a triangle.
+        Press edges firmly together.
+      region_keys:
+      - text-5
+    - text: Boil slowly in lightly salted water for 5 minutes.
+      region_keys:
+      - text-8
+    - text: Drain, dredge in bread crumbs browned in butter, sprinkle with sugar.
+      region_keys:
+      - text-9
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-11
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0103
+  source_order: 103
+  slug: countrypancakes
+  pages:
+  - 70
+  printed_pages:
+  - '69'
+  display_title: Country pancakes · Lívance
+  titles:
+  - segment_id: title-en
+    text: Country pancakes
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Lívance
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 70
+    block_ids:
+    - /page/69/SectionHeader/2
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 70
+    block_ids:
+    - /page/69/ListGroup/1
+  - key: text-2
+    role: instruction
+    pdf_page: 70
+    block_ids:
+    - /page/69/Text/3
+  - key: text-3
+    role: instruction
+    pdf_page: 70
+    block_ids:
+    - /page/69/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 70
+    block_ids:
+    - /page/69/Text/5
+  - key: text-5
+    role: instruction
+    pdf_page: 70
+    block_ids:
+    - /page/69/Text/6
+  - key: text-6
+    role: yield-time
+    pdf_page: 70
+    block_ids:
+    - /page/69/Text/7
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1/4 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1·1/3 cups milk
+      region_keys:
+      - listgroup-1
+    - text: 1/2 oz. fresh yeast
+      region_keys:
+      - listgroup-1
+    - text: 2 eggs, separated
+      region_keys:
+      - listgroup-1
+    - text: 1/4 teaspoon ground nutmeg
+      region_keys:
+      - listgroup-1
+    - text: dash of salt
+      region_keys:
+      - listgroup-1
+    - text: 'grease for griddle Topping:'
+      region_keys:
+      - listgroup-1
+    - text: 2 tablespoons sugar mixed with 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-1
+    - text: '4 tablespoons melted butter Optional:'
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup each of fruit jam and sour cream
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a large bowl stir yeast and 2 teaspoons sugar until dissolved. Gradually add lukewarm milk,
+        flour, salt, remaining sugar, nutmeg, and egg yolks. Mix thoroughly, let rise in a warm place
+        30 minutes or until doubled in bulk. Gently fold in stiffly whipped egg whites. Let rise 15 minutes.
+      region_keys:
+      - text-2
+    - text: Lightly grease griddle, and set over medium heat. After 4·5 minutes griddle should be hot
+        enough for baking. Pour batter onto griddle by scoopfuls, about 3·1/2" in diameter, leaving at
+        least 1" between cakes. Turn pancakes as they become puffy and full of bubbles on top.
+      region_keys:
+      - text-3
+    - text: Brush each with melted butter, sprinkle with sugar mixed with cinnamon.
+      region_keys:
+      - text-4
+    - text: 'Optional: Spread fruit jam over pancakes and dot with sour cream. Serve hot.'
+      region_keys:
+      - text-5
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour 15 minutes'
+    region_keys:
+    - text-6
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []

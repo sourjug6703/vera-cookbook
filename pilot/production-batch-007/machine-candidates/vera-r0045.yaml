@@ -1,0 +1,225 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0045
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 32
+  printed_pages:
+  - '31'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0045-title
+  pdf_page: 32
+  printed_page: '31'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1167
+    - 679
+  - - 1923
+    - 679
+  - - 1923
+    - 814
+  - - 1167
+    - 814
+  candidate_block_ids:
+  - /page/31/SectionHeader/3
+  region_image: evidence/production-batch-007/regions/vera-r0045/p32-title.png
+  region_image_pixel_sha256: 11b8608f7d2c664c75ca7f8e7ad0f525d5675524f8462df2c18967003d4b98fc
+- region_id: vera-r0045-ingredients
+  pdf_page: 32
+  printed_page: '31'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 249
+    - 753
+  - - 909
+    - 753
+  - - 909
+    - 1057
+  - - 249
+    - 1057
+  candidate_block_ids:
+  - /page/31/ListGroup/9
+  region_image: evidence/production-batch-007/regions/vera-r0045/p32-ingredients.png
+  region_image_pixel_sha256: b5329a12c40c6d0df965ca476411c6d8efdf5e06b8dc35a50a80b7b03694f756
+- region_id: vera-r0045-step-1
+  pdf_page: 32
+  printed_page: '31'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1158
+    - 783
+  - - 2691
+    - 783
+  - - 2691
+    - 1194
+  - - 1158
+    - 1194
+  candidate_block_ids:
+  - /page/31/Text/4
+  region_image: evidence/production-batch-007/regions/vera-r0045/p32-step-1.png
+  region_image_pixel_sha256: c9ee7d11dac28709fdd04fcd4b92bd7721b7bf890331c55b10898e482b0b3d20
+- region_id: vera-r0045-annotation
+  pdf_page: 32
+  printed_page: '31'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1158
+    - 783
+  - - 2691
+    - 783
+  - - 2691
+    - 1194
+  - - 1158
+    - 1194
+  candidate_block_ids:
+  - /page/31/Text/4
+  region_image: evidence/production-batch-007/regions/vera-r0045/p32-annotation.png
+  region_image_pixel_sha256: c9ee7d11dac28709fdd04fcd4b92bd7721b7bf890331c55b10898e482b0b3d20
+- region_id: vera-r0045-yield
+  pdf_page: 32
+  printed_page: '31'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1167
+    - 1167
+  - - 1980
+    - 1167
+  - - 1980
+    - 1275
+  - - 1167
+    - 1275
+  candidate_block_ids:
+  - /page/31/Text/5
+  region_image: evidence/production-batch-007/regions/vera-r0045/p32-yield.png
+  region_image_pixel_sha256: 86c9b6900391536cdacfb785971cb536289215646c5e23309d34f3c2f03c9acb
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Baked carp · Kapr pečený
+    language: mul
+    source_region_ids:
+    - vera-r0045-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Baked carp
+    language: en
+    source_region_ids:
+    - vera-r0045-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kapr pečený
+    language: cs
+    source_region_ids:
+    - vera-r0045-title
+    title_role: parallel
+  source_order: 45
+  slug_candidate: baked-carp
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 40 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0045-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 carp steaks, 3·4 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0045-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0045-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0045-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 teaspoons caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0045-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0045-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Arrange carp steaks in a single layer in a well oiled baking pan. Season with caraway
+        seeds, salt and pepper. Bake at 350F 25·30 minutes, or until fish flakes easily when tested with
+        a fork. In a saucepan heat butter until lightly browned. Pour over fish. Garnish with lemon wedges.
+        Serve with potatoes, vegetables, salad.
+      language: en
+      source_region_ids:
+      - vera-r0045-step-1
+      step_number: 1
+  notes:
+  - segment_id: note-1
+    text_verbatim: ⟦overlapping inline corrections in the Baked carp instructions⟧
+    language: und
+    source_region_ids:
+    - vera-r0045-annotation
+    uncertainties:
+    - substring: ⟦overlapping inline corrections in the Baked carp instructions⟧
+      issue: illegible
+      note: Lighter characters overlap the source-clear printed phrases ‘baking pan.’ and ‘25·30’ and
+        appear again after ‘fish.’; their exact text and correction intent are not source-clear.
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:18:25Z'
+  checks: []
+  open_issues: []

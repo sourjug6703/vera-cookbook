@@ -1,0 +1,248 @@
+schema_version: "1.2.0"
+record_type: recipe
+recipe_id: fixture-recipe-0001
+record_revision: 1
+
+source_work:
+  work_id: fixture-cookbook
+  source_file: fixtures/example-cookbook.pdf
+  source_sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+  pdf_page_count: 1
+  pdf_pages: [1]
+  printed_pages: ["1"]
+  rights_status: not_assessed
+
+source_regions:
+  - region_id: region-title
+    pdf_page: 1
+    printed_page: "1"
+    role: title
+    coordinate_space:
+      unit: pixel
+      width: 1000
+      height: 1400
+      origin: top_left
+    polygon: [[100, 100], [900, 100], [900, 180], [100, 180]]
+    candidate_block_ids: ["/page/0/SectionHeader/0"]
+  - region_id: region-ingredients
+    pdf_page: 1
+    printed_page: "1"
+    role: ingredient
+    coordinate_space:
+      unit: pixel
+      width: 1000
+      height: 1400
+      origin: top_left
+    polygon: [[100, 220], [450, 220], [450, 650], [100, 650]]
+    candidate_block_ids: ["/page/0/ListGroup/1"]
+  - region_id: region-instructions
+    pdf_page: 1
+    printed_page: "1"
+    role: instruction
+    coordinate_space:
+      unit: pixel
+      width: 1000
+      height: 1400
+      origin: top_left
+    polygon: [[500, 220], [900, 220], [900, 850], [500, 850]]
+    candidate_block_ids: ["/page/0/Text/2"]
+  - region_id: region-yield
+    pdf_page: 1
+    printed_page: "1"
+    role: "yield\u005ftime"
+    coordinate_space:
+      unit: pixel
+      width: 1000
+      height: 1400
+      origin: top_left
+    polygon: [[500, 900], [900, 900], [900, 960], [500, 960]]
+    candidate_block_ids: ["/page/0/Text/3"]
+
+identity:
+  source_order: 1
+  slug_candidate: example-recipe
+  display_title:
+    segment_id: title-display
+    text_verbatim: Example recipe - Ukázkový recept
+    language: mul
+    source_region_ids: [region-title]
+  titles:
+    - segment_id: title-en
+      text_verbatim: Example recipe
+      language: en
+      title_role: primary
+      source_region_ids: [region-title]
+    - segment_id: title-cs
+      text_verbatim: Ukázkový recept
+      language: cs
+      title_role: parallel
+      source_region_ids: [region-title]
+
+transcription:
+  yield_time_lines:
+    - segment_id: yield-1
+      text_verbatim: "Serves 2 - Preparation time: 10 minutes"
+      language: en
+      source_region_ids: [region-yield]
+  ingredient_sections:
+    - section_id: ingredients-main
+      ingredients:
+        - segment_id: ingredient-1
+          text_verbatim: 3/4 cup example ingredient
+          language: en
+          source_region_ids: [region-ingredients]
+          normalized:
+            normalization_status: human_reviewed
+            quantity_text: 3/4
+            quantity_value: 3/4
+            unit_text: cup
+            unit_normalized: cup
+            ingredient_name: example ingredient
+        - segment_id: ingredient-2
+          text_verbatim: salt to taste
+          language: en
+          source_region_ids: [region-ingredients]
+          normalized:
+            normalization_status: human_reviewed
+            ingredient_name: salt
+            preparation: to taste
+  instruction_sections:
+    - section_id: instructions-main
+      steps:
+        - segment_id: step-1
+          step_number: 1
+          text_verbatim: Combine the ingredients.
+          language: en
+          source_region_ids: [region-instructions]
+        - segment_id: step-2
+          step_number: 2
+          text_verbatim: Cook for 10 minutes.
+          language: en
+          source_region_ids: [region-instructions]
+          derived_measurements:
+            - source_text: 10 minutes
+              kind: time
+              normalized_value: PT10M
+              normalization_status: human_reviewed
+  notes: []
+  cross_references: []
+
+relationships:
+  continuations: []
+  related_recipe_ids: []
+
+provenance:
+  created_at: "2026-08-23T20:00:00Z"
+  created_by: fixture-author
+  candidate_sources:
+    - tool: marker-pdf
+      tool_version: 2.0.0
+      generated_at: "2026-08-23T19:00:00Z"
+      artifact_path: fixtures/marker/example.json
+      remote_model_used: false
+
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: "2026-08-23T21:00:00Z"
+  open_issues: []
+  checks:
+    -
+      check_id: check-region-coverage
+      check_type: region_coverage
+      target_ids: [fixture-recipe-0001]
+      source_region_ids: [region-title, region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-boundary
+      check_type: recipe_boundary
+      target_ids: [fixture-recipe-0001]
+      source_region_ids: [region-title, region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-yield-presence
+      check_type: "yield\u005ftime_presence"
+      target_ids: [fixture-recipe-0001]
+      source_region_ids: [region-title, region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-occurrence-count
+      check_type: occurrence_count
+      target_ids: [fixture-recipe-0001]
+      source_region_ids: [region-title, region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-diacritics
+      check_type: diacritics
+      target_ids: [title-cs]
+      source_region_ids: [region-title]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-ingredient-ownership
+      check_type: ingredient_ownership
+      target_ids: [ingredient-1, ingredient-2]
+      source_region_ids: [region-title, region-ingredients]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-instruction-ownership
+      check_type: instruction_ownership
+      target_ids: [step-1, step-2]
+      source_region_ids: [region-title, region-instructions]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-transcription
+      check_type: transcription_exactness
+      target_ids: [title-display, title-en, title-cs, yield-1, ingredient-1, ingredient-2, step-1, step-2]
+      source_region_ids: [region-title, region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true
+    -
+      check_id: check-numeric
+      check_type: numeric_tokens
+      target_ids: [yield-1, ingredient-1, step-2]
+      source_region_ids: [region-ingredients, region-instructions, region-yield]
+      result: pass
+      method: direct_visual_source
+      performed_by: ai
+      auditor_id: fixture-ai-auditor
+      audited_at: "2026-08-23T21:00:00Z"
+      independent_of_extractor: true

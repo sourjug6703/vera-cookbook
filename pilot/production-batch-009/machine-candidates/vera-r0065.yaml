@@ -1,0 +1,275 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0065
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 43
+  printed_pages:
+  - '42'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0065-title
+  pdf_page: 43
+  printed_page: '42'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 912
+    - 225
+  - - 2007
+    - 225
+  - - 2007
+    - 332
+  - - 912
+    - 332
+  candidate_block_ids:
+  - /page/42/SectionHeader/1
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-title.png
+  region_image_pixel_sha256: 1e765d6a8cec49c4af78f95057e4746c8d9fff27bbef574f79c62f2d042b7c4a
+- region_id: vera-r0065-text-1
+  pdf_page: 43
+  printed_page: '42'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1077
+    - 322
+  - - 2625
+    - 322
+  - - 2625
+    - 538
+  - - 1077
+    - 538
+  candidate_block_ids:
+  - /page/42/Text/3
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-text-1.png
+  region_image_pixel_sha256: 260a56ad22bd7f1aa99364d36d92c333d592d1c85d4542105a83351612205904
+- region_id: vera-r0065-listgroup-2
+  pdf_page: 43
+  printed_page: '42'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 225
+    - 346
+  - - 1062
+    - 346
+  - - 1062
+    - 896
+  - - 225
+    - 896
+  candidate_block_ids:
+  - /page/42/ListGroup/2
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-listgroup-2.png
+  region_image_pixel_sha256: 2ddabfd92769955800ad6a692584ff146e1876b8ef176593820e336bf2e17d75
+- region_id: vera-r0065-text-3
+  pdf_page: 43
+  printed_page: '42'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1077
+    - 492
+  - - 2670
+    - 492
+  - - 2670
+    - 648
+  - - 1077
+    - 648
+  candidate_block_ids:
+  - /page/42/Text/4
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-text-3.png
+  region_image_pixel_sha256: d671924ab60420c16a2e5f36bf476e840db3f91eacd1a2be24e9fae081af6bf7
+- region_id: vera-r0065-text-4
+  pdf_page: 43
+  printed_page: '42'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1077
+    - 600
+  - - 2679
+    - 600
+  - - 2679
+    - 976
+  - - 1077
+    - 976
+  candidate_block_ids:
+  - /page/42/Text/5
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-text-4.png
+  region_image_pixel_sha256: 46177456ea1c2d0e031a3708a888e3db225ad66a9c23a9630db9d87fadd7444c
+- region_id: vera-r0065-text-5
+  pdf_page: 43
+  printed_page: '42'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1077
+    - 970
+  - - 1821
+    - 970
+  - - 1821
+    - 1056
+  - - 1077
+    - 1056
+  candidate_block_ids:
+  - /page/42/Text/6
+  region_image: evidence/production-batch-009/regions/vera-r0065/p43-text-5.png
+  region_image_pixel_sha256: 1496ce7d44903de882ccf00406822262769d26047bf28f21e22b50af9b02fa4e
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Cream of chicken soup · Krém z kuřat
+    language: mul
+    source_region_ids:
+    - vera-r0065-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Cream of chicken soup
+    language: en
+    source_region_ids:
+    - vera-r0065-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Krém z kuřat
+    language: cs
+    source_region_ids:
+    - vera-r0065-title
+    title_role: parallel
+  source_order: 65
+  slug_candidate: creamofchickensoup
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0065-text-5
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 quarts water
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 small chicken, 2 lbs., quartered
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 2 beef soup bones
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: soup greens (carrot, celery, parsley)
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 1 medium onion, quartered
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 1/3 teaspoon ground allspice
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 1 egg yolk
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: 1/2 cup heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 2 tablespoons butter and 3 tablespoons flour for the roux
+      language: en
+      source_region_ids:
+      - vera-r0065-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Place water, chicken, bones, soup greens, onion, salt in a large saucepan. Bring
+        to boiling. Simmer, covered, 45 minutes or until chicken is tender.
+      language: en
+      source_region_ids:
+      - vera-r0065-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Remove chicken when cool, discard skin and bones, puree chicken meat. Reserve.
+      language: en
+      source_region_ids:
+      - vera-r0065-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: In a separate saucepan stir flour into melted butter and cook until bubbly and golden
+        brown. Gradually add the broth from the chicken, bones, allspice and pepper. Cook 10 minutes over
+        medium heat. Strain. Stir in puréed chicken. Lightly beat egg yolk and cream and blend mixture
+        into soup. Season with salt and pepper. Heat through. Do not boil after egg yolk/cream addition.
+      language: en
+      source_region_ids:
+      - vera-r0065-text-4
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

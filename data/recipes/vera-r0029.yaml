@@ -1,0 +1,1199 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0029
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 22
+  - 23
+  printed_pages:
+  - '21'
+  - '22'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0029-title
+  pdf_page: 22
+  printed_page: '21'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 999
+    - 302
+  - - 1944
+    - 302
+  - - 1944
+    - 404
+  - - 999
+    - 404
+  candidate_block_ids:
+  - /page/21/SectionHeader/1
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-title.png
+  region_image_pixel_sha256: e04d30988894e6c4d4d8ea268648936bb4440421b0006182116ff7eed49d537d
+- region_id: vera-r0029-step-main
+  pdf_page: 22
+  printed_page: '21'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 398
+  - - 2679
+    - 398
+  - - 2679
+    - 656
+  - - 228
+    - 656
+  candidate_block_ids:
+  - /page/21/Text/2
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-step-main.png
+  region_image_pixel_sha256: 25340a2090e27384fda2c6d55836da45047f5f5a28035cfdfcc3c0742a7fe718
+- region_id: vera-r0029-giblets-label
+  pdf_page: 22
+  printed_page: '21'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 738
+  - - 1518
+    - 738
+  - - 1518
+    - 828
+  - - 1092
+    - 828
+  candidate_block_ids:
+  - /page/21/SectionHeader/3
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-giblets-label.png
+  region_image_pixel_sha256: a553fee0c8080b8af0e2b32ee0cdf1caba9518d540250bbbf844139c6b894f6f
+- region_id: vera-r0029-giblets-ingredients
+  pdf_page: 22
+  printed_page: '21'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 814
+  - - 768
+    - 814
+  - - 768
+    - 1218
+  - - 228
+    - 1218
+  candidate_block_ids:
+  - /page/21/ListGroup/4
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-giblets-ingredients.png
+  region_image_pixel_sha256: e41ad0f4426ebe625345622cca6a6a06a4f8cfc9e15ffd57e4343f8f92088acb
+- region_id: vera-r0029-giblets-step-1
+  pdf_page: 22
+  printed_page: '21'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 804
+  - - 2712
+    - 804
+  - - 2712
+    - 948
+  - - 1092
+    - 948
+  candidate_block_ids:
+  - /page/21/Text/5
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-giblets-step-1.png
+  region_image_pixel_sha256: a053f134321f4e5114ff7ea0c4cb1b89befe9465c4248509136db4168ef6776e
+- region_id: vera-r0029-giblets-step-2
+  pdf_page: 22
+  printed_page: '21'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 912
+  - - 2655
+    - 912
+  - - 2655
+    - 1110
+  - - 1092
+    - 1110
+  candidate_block_ids:
+  - /page/21/Text/6
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-giblets-step-2.png
+  region_image_pixel_sha256: bd0352ea502d6c09c9600f06b1d5f6cbfc70334c246784f923caab9e54ec6321
+- region_id: vera-r0029-giblets-time
+  pdf_page: 22
+  printed_page: '21'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1104
+  - - 1701
+    - 1104
+  - - 1701
+    - 1188
+  - - 1092
+    - 1188
+  candidate_block_ids:
+  - /page/21/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-giblets-time.png
+  region_image_pixel_sha256: 67c3e391bfc30ab4c38daf355640a2fd6c8e10f5cad926c84aad384fa0ab4bac
+- region_id: vera-r0029-chestnuts-label
+  pdf_page: 22
+  printed_page: '21'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1292
+  - - 1584
+    - 1292
+  - - 1584
+    - 1382
+  - - 1092
+    - 1382
+  candidate_block_ids:
+  - /page/21/SectionHeader/8
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-chestnuts-label.png
+  region_image_pixel_sha256: 81d2f85ae4b985b4d3214cd4ed2ceabcbcb145f7d0fc987d02d09184edb8879f
+- region_id: vera-r0029-chestnuts-ingredients
+  pdf_page: 22
+  printed_page: '21'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 1376
+  - - 768
+    - 1376
+  - - 768
+    - 1818
+  - - 228
+    - 1818
+  candidate_block_ids:
+  - /page/21/ListGroup/9
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-chestnuts-ingredients.png
+  region_image_pixel_sha256: 0a41dee8e4c0bc27da1cc3e6c0d1ee394eb1859ad5b629bc3ec5073b0ad972b0
+- region_id: vera-r0029-chestnuts-step-1
+  pdf_page: 22
+  printed_page: '21'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1358
+  - - 2718
+    - 1358
+  - - 2718
+    - 1504
+  - - 1092
+    - 1504
+  candidate_block_ids:
+  - /page/21/Text/10
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-chestnuts-step-1.png
+  region_image_pixel_sha256: d857e5c0d62d106739b232ba177ab6c7a239a5d0648d9f90f8699e7af9cdd7b8
+- region_id: vera-r0029-chestnuts-step-2
+  pdf_page: 22
+  printed_page: '21'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1466
+  - - 2727
+    - 1466
+  - - 2727
+    - 1774
+  - - 1092
+    - 1774
+  candidate_block_ids:
+  - /page/21/Text/11
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-chestnuts-step-2.png
+  region_image_pixel_sha256: 7637f2f423885f3a1d089da85c221b3e8f5b487744a9f6298c460e5180bc169e
+- region_id: vera-r0029-chestnuts-step-3a
+  pdf_page: 22
+  printed_page: '21'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1736
+  - - 2706
+    - 1736
+  - - 2706
+    - 1828
+  - - 1092
+    - 1828
+  candidate_block_ids:
+  - /page/21/Text/12
+  region_image: evidence/production-batch-006/regions/vera-r0029/p22-chestnuts-step-3a.png
+  region_image_pixel_sha256: 9c5a96ebc01a8e02edca135450549a09bab217f769e393214c3ae2bd50631e0f
+- region_id: vera-r0029-chestnuts-step-3b
+  pdf_page: 23
+  printed_page: '22'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 250
+  - - 2691
+    - 250
+  - - 2691
+    - 470
+  - - 1122
+    - 470
+  candidate_block_ids:
+  - /page/22/Text/1
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-chestnuts-step-3b.png
+  region_image_pixel_sha256: ddc23ceeabb77c27586b07cea2a64bcbde07846e1b82f19238f79d043de68cde
+- region_id: vera-r0029-chestnuts-step-4
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 418
+  - - 2376
+    - 418
+  - - 2376
+    - 544
+  - - 1122
+    - 544
+  candidate_block_ids:
+  - /page/22/Text/2
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-chestnuts-step-4.png
+  region_image_pixel_sha256: 4f889564aca24335f59406ffc5ab51f88f44a3b31def14fb2ef6019cbb0c61a2
+- region_id: vera-r0029-chestnuts-time
+  pdf_page: 23
+  printed_page: '22'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 504
+  - - 1674
+    - 504
+  - - 1674
+    - 601
+  - - 1122
+    - 601
+  candidate_block_ids:
+  - /page/22/Text/3
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-chestnuts-time.png
+  region_image_pixel_sha256: 89ca2207f98fb88a7735c663471fc3205b88d03e4094bde221565339d0ace806
+- region_id: vera-r0029-chestnuts-note
+  pdf_page: 23
+  printed_page: '22'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 570
+  - - 2679
+    - 570
+  - - 2679
+    - 748
+  - - 1122
+    - 748
+  candidate_block_ids:
+  - /page/22/Text/4
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-chestnuts-note.png
+  region_image_pixel_sha256: 9fa57c1f5a95fefcfd4b697699464edf79ab78d655c4c1c862e4c7300d6115d1
+- region_id: vera-r0029-almond-label
+  pdf_page: 23
+  printed_page: '22'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 786
+  - - 1572
+    - 786
+  - - 1572
+    - 890
+  - - 1122
+    - 890
+  candidate_block_ids:
+  - /page/22/SectionHeader/5
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-label.png
+  region_image_pixel_sha256: fd3b0e105326db53e8c932a05d1e370c6310c02b83f635bd16172a109992f91a
+- region_id: vera-r0029-almond-ingredients
+  pdf_page: 23
+  printed_page: '22'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 234
+    - 850
+  - - 975
+    - 850
+  - - 975
+    - 1268
+  - - 234
+    - 1268
+  candidate_block_ids:
+  - /page/22/ListGroup/6
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-ingredients.png
+  region_image_pixel_sha256: 9c3fc710b8d9decd8910cb2ebdc6636ce545603a710a9763231f166315faf7a6
+- region_id: vera-r0029-almond-step-1
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 858
+  - - 2721
+    - 858
+  - - 2721
+    - 1009
+  - - 1122
+    - 1009
+  candidate_block_ids:
+  - /page/22/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-step-1.png
+  region_image_pixel_sha256: 2845824e00f30e1e520b5f9842a615a52e3832b61d01f49e69959458c08b58c2
+- region_id: vera-r0029-almond-step-2
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 970
+  - - 2724
+    - 970
+  - - 2724
+    - 1134
+  - - 1122
+    - 1134
+  candidate_block_ids:
+  - /page/22/Text/8
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-step-2.png
+  region_image_pixel_sha256: 1026ad59f33d8b2dc9c9c8a7892578ccb297273ebd5fab515e9e6a3cd6bd4257
+- region_id: vera-r0029-almond-step-3
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1084
+  - - 2481
+    - 1084
+  - - 2481
+    - 1196
+  - - 1122
+    - 1196
+  candidate_block_ids:
+  - /page/22/Text/9
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-step-3.png
+  region_image_pixel_sha256: 1bcfebb84d6b0f692976ecf53b4a4099ddea6cfc49ad9f845019e5501aad4862
+- region_id: vera-r0029-almond-time
+  pdf_page: 23
+  printed_page: '22'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1168
+  - - 1671
+    - 1168
+  - - 1671
+    - 1260
+  - - 1122
+    - 1260
+  candidate_block_ids:
+  - /page/22/Text/10
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-almond-time.png
+  region_image_pixel_sha256: 5850524ac0fc76c4155798e913e9e39e14e460bfba5dc0b389def515f7a86663
+- region_id: vera-r0029-raisins-label
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1350
+  - - 1560
+    - 1350
+  - - 1560
+    - 1446
+  - - 1122
+    - 1446
+  candidate_block_ids:
+  - /page/22/SectionHeader/11
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-raisins-label.png
+  region_image_pixel_sha256: b4017884b6e4a6c3b9915e1162d2c7a7e666b2592c9bdcae04e688ece8ce979d
+- region_id: vera-r0029-raisins-step
+  pdf_page: 23
+  printed_page: '22'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1422
+  - - 2724
+    - 1422
+  - - 2724
+    - 1572
+  - - 1122
+    - 1572
+  candidate_block_ids:
+  - /page/22/Text/12
+  region_image: evidence/production-batch-006/regions/vera-r0029/p23-raisins-step.png
+  region_image_pixel_sha256: f35d2f9df0d5f6a4be8bd73dfdb9af975b032f8bd287106e9050069235987999
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Stuffed turkey · Krocan nadívaný
+    language: mul
+    source_region_ids:
+    - vera-r0029-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Stuffed turkey
+    language: en
+    source_region_ids:
+    - vera-r0029-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Krocan nadívaný
+    language: cs
+    source_region_ids:
+    - vera-r0029-title
+    title_role: parallel
+  source_order: 29
+  slug_candidate: stuffed-turkey
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Preparation time: 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0029-giblets-time
+  - segment_id: yield-2
+    text_verbatim: 'Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0029-chestnuts-time
+  - segment_id: yield-3
+    text_verbatim: 'Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0029-almond-time
+  ingredient_sections:
+  - section_id: ingredients-giblets
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: Giblets from the turkey
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 3 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1 cup milk or water
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 whole eggs
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 small onion, chopped
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1/2 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: salt, marjoram, thyme
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-ingredients
+    label:
+      segment_id: label-giblets
+      text_verbatim: 'Giblets stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-label
+  - section_id: ingredients-chestnuts
+    ingredients:
+    - segment_id: ingredient-9
+      text_verbatim: 1 lb. chestnuts
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 10 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: 4 eggs
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: 5 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-13
+      text_verbatim: 2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-14
+      text_verbatim: 1/2 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-15
+      text_verbatim: dash of ground nutmeg
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-16
+      text_verbatim: 1/2 teaspoon sugar
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    - segment_id: ingredient-17
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-ingredients
+    label:
+      segment_id: label-chestnuts
+      text_verbatim: 'Chestnuts stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-label
+  - section_id: ingredients-almond
+    ingredients:
+    - segment_id: ingredient-18
+      text_verbatim: 5 oz. chopped or sliced almonds
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-19
+      text_verbatim: 8 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-20
+      text_verbatim: 4 egg yolks, 3 egg whites
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-21
+      text_verbatim: 5 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-22
+      text_verbatim: 2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-23
+      text_verbatim: 1/4 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-24
+      text_verbatim: 1/4 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    - segment_id: ingredient-25
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-ingredients
+    label:
+      segment_id: label-almond
+      text_verbatim: 'Almond stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-label
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Prepare the bird as indicated in “roast turkey”. Turn the neck into the body cavity
+        to block the passage between the neck and the body. The stuffing will stay in the neck cavity
+        while roasting. Lightly fill neck cavity with stuffing. Do not pack · stuffing will expand while
+        cooking. Fasten neck skin with stitches or skewer. Roast turkey as shown above.
+      language: en
+      source_region_ids:
+      - vera-r0029-step-main
+      step_number: 1
+  - section_id: instructions-giblets
+    steps:
+    - segment_id: step-2
+      text_verbatim: Soak the rolls in milk or water, squeeze off excess liquid, shred them. Rinse and
+        finely chop the giblets.
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-step-1
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: In a bowl cream butter, eggs, add the chopped onion, thyme, marjoram, shredded rolls,
+        giblets, bread crumbs. Salt the mixture and mix thoroughly.
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-step-2
+      step_number: 3
+    label:
+      segment_id: instruction-label-giblets
+      text_verbatim: 'Giblets stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-giblets-label
+  - section_id: instructions-chestnuts
+    steps:
+    - segment_id: step-4
+      text_verbatim: Simmer chestnuts in water for 10·15 minutes. When the shells crack, peel and chop
+        them coarsely.
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-step-1
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Break the rolls, soak them in milk, squeeze off excess, shred them. In a bowl cream
+        butter, one whole egg and three egg yolks. Add the shredded rolls, nutmeg, sugar and coarsely
+        chopped chestnuts. Salt the mixture; Fold in half of the bread crumbs and three stiffly whipped
+        egg whites.
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-step-2
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Turn the stuffing into a fluted tube pan or a flan ring, buttered and dusted with
+        bread crumbs. Bake in a bain-marie at 350F for 1·1/2 hours. When done, let it stand 5 minutes,
+        then invert on a serving dish. Slice it like a cake.
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-step-3a
+      - vera-r0029-chestnuts-step-3b
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: Serve with apricot or pear compote, cranberries, etc.
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-step-4
+      step_number: 7
+    label:
+      segment_id: instruction-label-chestnuts
+      text_verbatim: 'Chestnuts stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-chestnuts-label
+  - section_id: instructions-almond
+    steps:
+    - segment_id: step-8
+      text_verbatim: Break the rolls and soak them in milk. Squeeze off excess, shred and strain them.
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-step-1
+      step_number: 8
+    - segment_id: step-9
+      text_verbatim: In a bowl cream butter, egg yolks and sugar. Combine all ingredients. Fold in three
+        stiffly beaten egg whites.
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-step-2
+      step_number: 9
+    - segment_id: step-10
+      text_verbatim: Bake and serve in the same manner as chestnut stuffing.
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-step-3
+      step_number: 10
+    label:
+      segment_id: instruction-label-almond
+      text_verbatim: 'Almond stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-almond-label
+  - section_id: instructions-raisins
+    steps:
+    - segment_id: step-11
+      text_verbatim: Same as almond stuffing, replacing half of the almonds with 3/4 cup golden raisins.
+      language: en
+      source_region_ids:
+      - vera-r0029-raisins-step
+      step_number: 11
+    label:
+      segment_id: instruction-label-raisins
+      text_verbatim: 'Raisins stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0029-raisins-label
+  notes:
+  - segment_id: note-1
+    text_verbatim: (Have chestnuts ready ahead of time. Bake stuffing while roasting turkey, so that both
+      will be done at the same time).
+    language: en
+    source_region_ids:
+    - vera-r0029-chestnuts-note
+  cross_references: []
+relationships:
+  continuations:
+  - from_region_id: vera-r0029-chestnuts-step-3a
+    to_region_id: vera-r0029-chestnuts-step-3b
+    relationship: continues_on
+  related_recipe_ids:
+  - vera-r0028
+provenance:
+  created_at: '2026-08-23T23:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T23:39:26Z'
+    artifact_path: pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:50:40Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0029
+    source_region_ids: &id001
+    - vera-r0029-title
+    - vera-r0029-step-main
+    - vera-r0029-giblets-label
+    - vera-r0029-giblets-ingredients
+    - vera-r0029-giblets-step-1
+    - vera-r0029-giblets-step-2
+    - vera-r0029-giblets-time
+    - vera-r0029-chestnuts-label
+    - vera-r0029-chestnuts-ingredients
+    - vera-r0029-chestnuts-step-1
+    - vera-r0029-chestnuts-step-2
+    - vera-r0029-chestnuts-step-3a
+    - vera-r0029-chestnuts-step-3b
+    - vera-r0029-chestnuts-step-4
+    - vera-r0029-chestnuts-time
+    - vera-r0029-chestnuts-note
+    - vera-r0029-almond-label
+    - vera-r0029-almond-ingredients
+    - vera-r0029-almond-step-1
+    - vera-r0029-almond-step-2
+    - vera-r0029-almond-step-3
+    - vera-r0029-almond-time
+    - vera-r0029-raisins-label
+    - vera-r0029-raisins-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0029
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-15
+    - ingredient-16
+    - ingredient-17
+    - ingredient-18
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - ingredient-25
+    source_region_ids:
+    - vera-r0029-title
+    - vera-r0029-giblets-ingredients
+    - vera-r0029-chestnuts-ingredients
+    - vera-r0029-almond-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids: &id002
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    - step-7
+    - step-8
+    - step-9
+    - step-10
+    - step-11
+    source_region_ids:
+    - vera-r0029-title
+    - vera-r0029-step-main
+    - vera-r0029-giblets-step-1
+    - vera-r0029-giblets-step-2
+    - vera-r0029-chestnuts-step-1
+    - vera-r0029-chestnuts-step-2
+    - vera-r0029-chestnuts-step-3a
+    - vera-r0029-chestnuts-step-3b
+    - vera-r0029-chestnuts-step-4
+    - vera-r0029-almond-step-1
+    - vera-r0029-almond-step-2
+    - vera-r0029-almond-step-3
+    - vera-r0029-raisins-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - yield-2
+    - yield-3
+    - label-giblets
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - label-chestnuts
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-15
+    - ingredient-16
+    - ingredient-17
+    - label-almond
+    - ingredient-18
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - ingredient-25
+    - step-1
+    - instruction-label-giblets
+    - step-2
+    - step-3
+    - instruction-label-chestnuts
+    - step-4
+    - step-5
+    - step-6
+    - step-7
+    - instruction-label-almond
+    - step-8
+    - step-9
+    - step-10
+    - instruction-label-raisins
+    - step-11
+    - note-1
+    source_region_ids:
+    - vera-r0029-title
+    - vera-r0029-giblets-time
+    - vera-r0029-chestnuts-time
+    - vera-r0029-almond-time
+    - vera-r0029-giblets-label
+    - vera-r0029-giblets-ingredients
+    - vera-r0029-chestnuts-label
+    - vera-r0029-chestnuts-ingredients
+    - vera-r0029-almond-label
+    - vera-r0029-almond-ingredients
+    - vera-r0029-step-main
+    - vera-r0029-giblets-step-1
+    - vera-r0029-giblets-step-2
+    - vera-r0029-chestnuts-step-1
+    - vera-r0029-chestnuts-step-2
+    - vera-r0029-chestnuts-step-3a
+    - vera-r0029-chestnuts-step-3b
+    - vera-r0029-chestnuts-step-4
+    - vera-r0029-almond-step-1
+    - vera-r0029-almond-step-2
+    - vera-r0029-almond-step-3
+    - vera-r0029-raisins-label
+    - vera-r0029-raisins-step
+    - vera-r0029-chestnuts-note
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - yield-2
+    - yield-3
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-16
+    - ingredient-18
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - step-4
+    - step-6
+    - step-11
+    source_region_ids:
+    - vera-r0029-giblets-time
+    - vera-r0029-chestnuts-time
+    - vera-r0029-almond-time
+    - vera-r0029-giblets-ingredients
+    - vera-r0029-chestnuts-ingredients
+    - vera-r0029-almond-ingredients
+    - vera-r0029-chestnuts-step-1
+    - vera-r0029-chestnuts-step-3a
+    - vera-r0029-chestnuts-step-3b
+    - vera-r0029-raisins-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    - yield-2
+    - yield-3
+    source_region_ids:
+    - vera-r0029-giblets-time
+    - vera-r0029-chestnuts-time
+    - vera-r0029-almond-time
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0029
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0029-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: ai-continuation
+    check_type: continuation
+    target_ids: *id002
+    source_region_ids:
+    - vera-r0029-step-main
+    - vera-r0029-giblets-step-1
+    - vera-r0029-giblets-step-2
+    - vera-r0029-chestnuts-step-1
+    - vera-r0029-chestnuts-step-2
+    - vera-r0029-chestnuts-step-3a
+    - vera-r0029-chestnuts-step-3b
+    - vera-r0029-chestnuts-step-4
+    - vera-r0029-almond-step-1
+    - vera-r0029-almond-step-2
+    - vera-r0029-almond-step-3
+    - vera-r0029-raisins-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every declared cross-page continuation was followed directly across its cited regions.
+  open_issues: []

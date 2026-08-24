@@ -1,0 +1,376 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0017
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 15
+  printed_pages:
+  - '14'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0017-title
+  pdf_page: 15
+  printed_page: '14'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 888
+    - 850
+  - - 2025
+    - 850
+  - - 2025
+    - 954
+  - - 888
+    - 954
+  candidate_block_ids:
+  - /page/14/SectionHeader/8
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-title.png
+  region_image_pixel_sha256: 90f0eaf562c05e65e6a5190990482253f4f04ec8d51c4ec02b9b3094369712ee
+- region_id: vera-r0017-ingredients
+  pdf_page: 15
+  printed_page: '14'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 231
+    - 962
+  - - 1035
+    - 962
+  - - 1035
+    - 1140
+  - - 231
+    - 1140
+  candidate_block_ids:
+  - /page/14/ListGroup/9
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-ingredients.png
+  region_image_pixel_sha256: 708256b44a3bbe40189c8bba53aa7630e31e25651afa46c6df9443388268b7f5
+- region_id: vera-r0017-step-1
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 950
+  - - 2589
+    - 950
+  - - 2589
+    - 1046
+  - - 1080
+    - 1046
+  candidate_block_ids:
+  - /page/14/Text/10
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-step-1.png
+  region_image_pixel_sha256: c5bec879001d52922d7e0e4dffa204b1125ae9881c1af01135b75c67ab6c34d5
+- region_id: vera-r0017-step-2
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1008
+  - - 2238
+    - 1008
+  - - 2238
+    - 1098
+  - - 1080
+    - 1098
+  candidate_block_ids:
+  - /page/14/Text/11
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-step-2.png
+  region_image_pixel_sha256: a7eeadcb63e0ada8e5de8815e6b9010d35c070fc67e8ccd86f1af11d33759689
+- region_id: vera-r0017-step-3
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1062
+  - - 2520
+    - 1062
+  - - 2520
+    - 1214
+  - - 1080
+    - 1214
+  candidate_block_ids:
+  - /page/14/Text/12
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-step-3.png
+  region_image_pixel_sha256: d477435676e928668ea18f6a8c1de15a308e9247d93c4a832d54eebb91bcfe37
+- region_id: vera-r0017-yield
+  pdf_page: 15
+  printed_page: '14'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1206
+  - - 1887
+    - 1206
+  - - 1887
+    - 1294
+  - - 1080
+    - 1294
+  candidate_block_ids:
+  - /page/14/Text/13
+  region_image: evidence/production-batch-004/regions/vera-r0017/p15-yield.png
+  region_image_pixel_sha256: 1fac692c6ef4962442e604ea0f0f970524f22694839d970ac0f1ad111ee14ff1
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Smoked pork loin · Uzené vepřové maso
+    language: mul
+    source_region_ids:
+    - vera-r0017-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Smoked pork loin
+    language: en
+    source_region_ids:
+    - vera-r0017-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Uzené vepřové maso
+    language: cs
+    source_region_ids:
+    - vera-r0017-title
+    title_role: parallel
+  source_order: 17
+  slug_candidate: smoked-pork-loin
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 40 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0017-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2·3 lbs. fully cooked smoked pork loin or shoulder
+      language: en
+      source_region_ids:
+      - vera-r0017-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: water
+      language: en
+      source_region_ids:
+      - vera-r0017-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Place meat in boiling water and simmer until thoroughly heated.
+      language: en
+      source_region_ids:
+      - vera-r0017-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: About 30 minutes. To serve, cut meat into slices.
+      language: en
+      source_region_ids:
+      - vera-r0017-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Serve with boiled potatoes and sauerkraut, mashed potatoes, vegetables, poached apples,
+        salad.
+      language: en
+      source_region_ids:
+      - vera-r0017-step-3
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T22:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T22:43:44Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0017
+    source_region_ids: &id001
+    - vera-r0017-title
+    - vera-r0017-ingredients
+    - vera-r0017-step-1
+    - vera-r0017-step-2
+    - vera-r0017-step-3
+    - vera-r0017-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0017
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    source_region_ids:
+    - vera-r0017-title
+    - vera-r0017-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0017-title
+    - vera-r0017-step-1
+    - vera-r0017-step-2
+    - vera-r0017-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0017-title
+    - vera-r0017-yield
+    - vera-r0017-ingredients
+    - vera-r0017-step-1
+    - vera-r0017-step-2
+    - vera-r0017-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - step-2
+    source_region_ids:
+    - vera-r0017-yield
+    - vera-r0017-ingredients
+    - vera-r0017-step-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0017-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0017
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0017-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

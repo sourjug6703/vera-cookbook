@@ -1,0 +1,235 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0046
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 32
+  printed_pages:
+  - '31'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0046-title
+  pdf_page: 32
+  printed_page: '31'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1167
+    - 1273
+  - - 1932
+    - 1273
+  - - 1932
+    - 1392
+  - - 1167
+    - 1392
+  candidate_block_ids:
+  - /page/31/SectionHeader/6
+  region_image: evidence/production-batch-007/regions/vera-r0046/p32-title.png
+  region_image_pixel_sha256: b35d46664645e25da83203a58ae77a1bc019cdd66520ba6424eaccf9be51586f
+- region_id: vera-r0046-ingredients
+  pdf_page: 32
+  printed_page: '31'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 255
+    - 1374
+  - - 936
+    - 1374
+  - - 936
+    - 1770
+  - - 255
+    - 1770
+  candidate_block_ids:
+  - /page/31/ListGroup/10
+  region_image: evidence/production-batch-007/regions/vera-r0046/p32-ingredients.png
+  region_image_pixel_sha256: 67f47054f1e7ef201ba48c3e2bc20f6ffa405c342e09ed849a1bc1e8b2d78d19
+- region_id: vera-r0046-step-1
+  pdf_page: 32
+  printed_page: '31'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1158
+    - 1379
+  - - 2739
+    - 1379
+  - - 2739
+    - 1779
+  - - 1158
+    - 1779
+  candidate_block_ids:
+  - /page/31/Text/7
+  region_image: evidence/production-batch-007/regions/vera-r0046/p32-step-1.png
+  region_image_pixel_sha256: 9e8e75bac93a20c2e318063205ecfdbae5c5c5c70132adf4b17363682479b473
+- region_id: vera-r0046-annotation
+  pdf_page: 32
+  printed_page: '31'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1158
+    - 1379
+  - - 2739
+    - 1379
+  - - 2739
+    - 1779
+  - - 1158
+    - 1779
+  candidate_block_ids:
+  - /page/31/Text/7
+  region_image: evidence/production-batch-007/regions/vera-r0046/p32-annotation.png
+  region_image_pixel_sha256: 9e8e75bac93a20c2e318063205ecfdbae5c5c5c70132adf4b17363682479b473
+- region_id: vera-r0046-yield
+  pdf_page: 32
+  printed_page: '31'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1167
+    - 1768
+  - - 1896
+    - 1768
+  - - 1896
+    - 1858
+  - - 1167
+    - 1858
+  candidate_block_ids:
+  - /page/31/Text/8
+  region_image: evidence/production-batch-007/regions/vera-r0046/p32-yield.png
+  region_image_pixel_sha256: fe1b84168eaa851dc80a68a085a8cafb955d185869c8314277e201896185c23d
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Fried carp · Kapr smažený
+    language: mul
+    source_region_ids:
+    - vera-r0046-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Fried carp
+    language: en
+    source_region_ids:
+    - vera-r0046-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kapr smažený
+    language: cs
+    source_region_ids:
+    - vera-r0046-title
+    title_role: parallel
+  source_order: 46
+  slug_candidate: fried-carp
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0046-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 carp steaks, 3·4 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 3/4 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 eggs
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 cup vegetable oil for frying
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0046-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Soak fish 30 minutes in lightly salted milk. Dredge each piece in flour, dip in beaten
+        eggs, coat with bread crumbs. Fry in hot oil until golden, about 4 minutes each side. Drain on
+        paper towel. Serve on lettuce lined platter, garnish with lemon wedges and parsley sprigs. Serve
+        with potato salad, green salad, vegetables.
+      language: en
+      source_region_ids:
+      - vera-r0046-step-1
+      step_number: 1
+  notes:
+  - segment_id: note-1
+    text_verbatim: ⟦overwritten punctuation in the Fried carp instructions⟧
+    language: und
+    source_region_ids:
+    - vera-r0046-annotation
+    uncertainties:
+    - substring: ⟦overwritten punctuation in the Fried carp instructions⟧
+      issue: ambiguous_glyph
+      note: Lighter marks overlap or follow the source-clear commas after ‘flour’ and ‘golden’; their
+        exact punctuation and correction intent are not source-clear.
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:18:25Z'
+  checks: []
+  open_issues: []

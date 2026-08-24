@@ -1,0 +1,382 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0027
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 21
+  printed_pages:
+  - '20'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0027-title
+  pdf_page: 21
+  printed_page: '20'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 543
+    - 297
+  - - 2454
+    - 297
+  - - 2454
+    - 472
+  - - 543
+    - 472
+  candidate_block_ids:
+  - /page/20/SectionHeader/1
+  region_image: evidence/production-batch-005/regions/vera-r0027/p21-title.png
+  region_image_pixel_sha256: 44553f192fdf0f6cfe0fb87a06f39c84b847173751308727a7e3e8b3fe211513
+- region_id: vera-r0027-ingredients
+  pdf_page: 21
+  printed_page: '20'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 249
+    - 408
+  - - 858
+    - 408
+  - - 858
+    - 692
+  - - 249
+    - 692
+  candidate_block_ids:
+  - /page/20/ListGroup/2
+  region_image: evidence/production-batch-005/regions/vera-r0027/p21-ingredients.png
+  region_image_pixel_sha256: bb68bd3a0b9b12a8e076022ede7ee49c635b5ad27be87595a9a661994cb76cd8
+- region_id: vera-r0027-step-1
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 430
+  - - 2655
+    - 430
+  - - 2655
+    - 671
+  - - 1143
+    - 671
+  candidate_block_ids:
+  - /page/20/Text/3
+  region_image: evidence/production-batch-005/regions/vera-r0027/p21-step-1.png
+  region_image_pixel_sha256: 985bae125a214e9f4617fc02f81cf6e61cc83891bfc3f29dafc382673eef4324
+- region_id: vera-r0027-yield
+  pdf_page: 21
+  printed_page: '20'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 632
+  - - 1689
+    - 632
+  - - 1689
+    - 730
+  - - 1143
+    - 730
+  candidate_block_ids:
+  - /page/20/Text/4
+  region_image: evidence/production-batch-005/regions/vera-r0027/p21-yield.png
+  region_image_pixel_sha256: 120c244b88ed52ffca0712b270d7374dabd16f37c5da0d3f5f4ad0f4f57792dc
+- region_id: vera-r0027-time
+  pdf_page: 21
+  printed_page: '20'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 681
+  - - 1887
+    - 681
+  - - 1887
+    - 779
+  - - 1143
+    - 779
+  candidate_block_ids:
+  - /page/20/Text/5
+  region_image: evidence/production-batch-005/regions/vera-r0027/p21-time.png
+  region_image_pixel_sha256: a51d08816ba8aaeb167c2531bb5d6048d8606a08f9a0a8061e8d0074026bb405
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Chicken ragoût on a half shell · as an appetizer · Ragoût na mušlích
+    language: mul
+    source_region_ids:
+    - vera-r0027-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Chicken ragoût on a half shell
+    language: en
+    source_region_ids:
+    - vera-r0027-title
+    title_role: primary
+  - segment_id: title-en-subtitle
+    text_verbatim: as an appetizer
+    language: en
+    source_region_ids:
+    - vera-r0027-title
+    title_role: subtitle
+  - segment_id: title-cs
+    text_verbatim: Ragoût na mušlích
+    language: cs
+    source_region_ids:
+    - vera-r0027-title
+    title_role: parallel
+  source_order: 27
+  slug_candidate: chicken-ragout-on-a-half-shell
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: Serves 12 as an appetizer
+    language: en
+    source_region_ids:
+    - vera-r0027-yield
+  - segment_id: yield-2
+    text_verbatim: 'Preparation time: 1 hour 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0027-time
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: Chicken ragoût
+      language: en
+      source_region_ids:
+      - vera-r0027-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0027-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup grated Parmesan
+      language: en
+      source_region_ids:
+      - vera-r0027-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1/2 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0027-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 12 shells
+      language: en
+      source_region_ids:
+      - vera-r0027-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Butter the shells, fill each little over half full with chicken ragoût, sprinkle
+        with grated Parmesan, bread crumbs and melted butter. Bake at 400F about 15 minutes or until golden
+        on top.
+      language: en
+      source_region_ids:
+      - vera-r0027-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0026
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:13:24Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0027
+    source_region_ids: &id001
+    - vera-r0027-title
+    - vera-r0027-ingredients
+    - vera-r0027-step-1
+    - vera-r0027-yield
+    - vera-r0027-time
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0027
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    source_region_ids:
+    - vera-r0027-title
+    - vera-r0027-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0027-title
+    - vera-r0027-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-en-subtitle
+    - title-cs
+    - yield-1
+    - yield-2
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0027-title
+    - vera-r0027-yield
+    - vera-r0027-time
+    - vera-r0027-ingredients
+    - vera-r0027-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - yield-2
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0027-yield
+    - vera-r0027-time
+    - vera-r0027-ingredients
+    - vera-r0027-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    - yield-2
+    source_region_ids:
+    - vera-r0027-yield
+    - vera-r0027-time
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0027
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - ingredient-1
+    - step-1
+    source_region_ids:
+    - vera-r0027-title
+    - vera-r0027-ingredients
+    - vera-r0027-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

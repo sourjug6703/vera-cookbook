@@ -1,0 +1,483 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0030
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 24
+  printed_pages:
+  - '23'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0030-title
+  pdf_page: 24
+  printed_page: '23'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1011
+    - 702
+  - - 1935
+    - 702
+  - - 1935
+    - 819
+  - - 1011
+    - 819
+  candidate_block_ids:
+  - /page/23/SectionHeader/1
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-title.png
+  region_image_pixel_sha256: b3ba85807843e059142b9c9b04e9ce96c9ae4f94e4467481463eadda86f1167a
+- region_id: vera-r0030-instruction-label
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 805
+  - - 1644
+    - 805
+  - - 1644
+    - 905
+  - - 1092
+    - 905
+  candidate_block_ids:
+  - /page/23/SectionHeader/2
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-instruction-label.png
+  region_image_pixel_sha256: deebf16a13d673d2842269b98ebffc108b7f20e2a36e806ebe2e55630494f7c6
+- region_id: vera-r0030-ingredients-main
+  pdf_page: 24
+  printed_page: '23'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 219
+    - 867
+  - - 741
+    - 867
+  - - 741
+    - 1100
+  - - 219
+    - 1100
+  candidate_block_ids:
+  - /page/23/ListGroup/3
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-ingredients-main.png
+  region_image_pixel_sha256: f1cf78480de953e6cf9737692ae275ade348ffe29fb71bf0d98667cd9c7499e3
+- region_id: vera-r0030-stuffing-label
+  pdf_page: 24
+  printed_page: '23'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 219
+    - 1089
+  - - 441
+    - 1089
+  - - 441
+    - 1179
+  - - 219
+    - 1179
+  candidate_block_ids:
+  - /page/23/SectionHeader/4
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-stuffing-label.png
+  region_image_pixel_sha256: d7948d6e94aa8c56dbb2c5c1e776c5dfd515dcaaf2d0ce23ee3bd3ef9ef193f3
+- region_id: vera-r0030-ingredients-stuffing
+  pdf_page: 24
+  printed_page: '23'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 219
+    - 1153
+  - - 1068
+    - 1153
+  - - 1068
+    - 1660
+  - - 219
+    - 1660
+  candidate_block_ids:
+  - /page/23/ListGroup/5
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-ingredients-stuffing.png
+  region_image_pixel_sha256: 24412953c3af10d39063240af409f61719d94b8bcece72dd8bb684758cf8ce2a
+- region_id: vera-r0030-step-1
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 877
+  - - 2700
+    - 877
+  - - 2700
+    - 1132
+  - - 1092
+    - 1132
+  candidate_block_ids:
+  - /page/23/Text/6
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-1.png
+  region_image_pixel_sha256: 54f2cb8cc194828a3b8b1c8de4b9b23a7c7b3b3463850dae560c99c14fbee08c
+- region_id: vera-r0030-step-2
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1099
+  - - 2595
+    - 1099
+  - - 2595
+    - 1251
+  - - 1092
+    - 1251
+  candidate_block_ids:
+  - /page/23/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-2.png
+  region_image_pixel_sha256: a50c3fca5f35d73802412814e37f0b167bd597a7bbcd4a9fa313c8ada5656d39
+- region_id: vera-r0030-step-3
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1215
+  - - 2643
+    - 1215
+  - - 2643
+    - 1361
+  - - 1092
+    - 1361
+  candidate_block_ids:
+  - /page/23/Text/8
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-3.png
+  region_image_pixel_sha256: c09ec257f5a125bff9417e06aac07c0df2f2e6fe68b820ee909385b9d8b555c5
+- region_id: vera-r0030-step-4
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1321
+  - - 2628
+    - 1321
+  - - 2628
+    - 1463
+  - - 1092
+    - 1463
+  candidate_block_ids:
+  - /page/23/Text/9
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-4.png
+  region_image_pixel_sha256: c824dadb091c0bfed6bd3240074b4acb790951487eab08cf5ba0c8407252e5bf
+- region_id: vera-r0030-step-5
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1429
+  - - 2628
+    - 1429
+  - - 2628
+    - 1529
+  - - 1092
+    - 1529
+  candidate_block_ids:
+  - /page/23/Text/10
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-5.png
+  region_image_pixel_sha256: 88ae0dcf9f71fab69f23492e0d2339b419d8e894e0535cafa6cbf324f943b20e
+- region_id: vera-r0030-step-6
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1486
+  - - 2688
+    - 1486
+  - - 2688
+    - 1638
+  - - 1092
+    - 1638
+  candidate_block_ids:
+  - /page/23/Text/11
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-6.png
+  region_image_pixel_sha256: 07b3128d351627bb3e57fffd927131ee8fe2a645968bb10c3b3f37ac88fbf512
+- region_id: vera-r0030-step-7
+  pdf_page: 24
+  printed_page: '23'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1594
+  - - 2130
+    - 1594
+  - - 2130
+    - 1689
+  - - 1092
+    - 1689
+  candidate_block_ids:
+  - /page/23/Text/12
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-step-7.png
+  region_image_pixel_sha256: 39d2db0988067511db975bb2bb556009b7171262258723d29d6f3f3532f3e9cb
+- region_id: vera-r0030-yield
+  pdf_page: 24
+  printed_page: '23'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2466
+    origin: top_left
+  polygon:
+  - - 1092
+    - 1678
+  - - 1818
+    - 1678
+  - - 1818
+    - 1768
+  - - 1092
+    - 1768
+  candidate_block_ids:
+  - /page/23/Text/13
+  region_image: evidence/production-batch-006/regions/vera-r0030/p24-yield.png
+  region_image_pixel_sha256: 487a1ca14a4a4d6ec591d1b315820d0ae0bf694f9a1f468d1d09a481bdea7061
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Stuffed pigeon · Holub nadívaný
+    language: mul
+    source_region_ids:
+    - vera-r0030-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Stuffed pigeon
+    language: en
+    source_region_ids:
+    - vera-r0030-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Holub nadívaný
+    language: cs
+    source_region_ids:
+    - vera-r0030-title
+    title_role: parallel
+  source_order: 30
+  slug_candidate: stuffed-pigeon
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0030-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 young pigeons
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-main
+    - segment_id: ingredient-2
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-main
+    - segment_id: ingredient-3
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-main
+    - segment_id: ingredient-4
+      text_verbatim: 3/4 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-main
+  - section_id: ingredients-stuffing
+    ingredients:
+    - segment_id: ingredient-5
+      text_verbatim: 4 and 2 tablespoons butter (2. tbsp for braising the liver)
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-6
+      text_verbatim: 2 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-7
+      text_verbatim: 1 egg white
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-8
+      text_verbatim: 2 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-9
+      text_verbatim: 1/2 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-10
+      text_verbatim: liver from three pigeons, chopped
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-11
+      text_verbatim: parsley
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-12
+      text_verbatim: 1/2 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    - segment_id: ingredient-13
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0030-ingredients-stuffing
+    label:
+      segment_id: label-stuffing
+      text_verbatim: 'Stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0030-stuffing-label
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Soak the rolls in milk, squeeze off excess, shred them. Cream the butter and the
+        egg yolks, add the shredded rolls, the liver sautéed in butter, salt, snipped parsley, bread crumbs.
+        Add stiffly whipped egg white.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Carefully loosen the skin of the breasts and fill the pockets with stuffing. Enclose
+        with stitches.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Salt the pigeons. Place them in a roasting pan with melted butter, breasts down,
+        roast at 350F for 20 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Baste with melted butter, juices from the pan and a little chicken stock.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Turn pigeons breasts up and finish roasting in the same manner.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: To serve, cut the pigeons in halves, sprinkle with pan drippings and snipped parsley.
+        (Remove the stitches, of course).
+      language: en
+      source_region_ids:
+      - vera-r0030-step-6
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: Serve with potatoes, green peas, salad, etc.
+      language: en
+      source_region_ids:
+      - vera-r0030-step-7
+      step_number: 7
+    label:
+      segment_id: label-prepare-stuffing
+      text_verbatim: 'Prepare stuffing first:'
+      language: en
+      source_region_ids:
+      - vera-r0030-instruction-label
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T23:39:26Z'
+    artifact_path: pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:42:00Z'
+  checks: []
+  open_issues: []

@@ -1,0 +1,1043 @@
+{
+  "schema_version": "1.0",
+  "gold_id": "marker-bakeoff-v1-visual-probes",
+  "candidate": "marker-pdf==2.0.0 / surya-ocr==0.22.1 / balanced forced OCR / no remote LLM",
+  "candidate_pages": [
+    2,
+    3,
+    4,
+    5,
+    11,
+    17,
+    25,
+    34,
+    35,
+    36,
+    41,
+    46,
+    47,
+    52,
+    75
+  ],
+  "metrics": {
+    "exact": {
+      "passed": 118,
+      "total": 124,
+      "percent": 95.2
+    },
+    "numeric": {
+      "passed": 68,
+      "total": 71,
+      "percent": 95.8
+    },
+    "diacritic": {
+      "passed": 32,
+      "total": 35,
+      "percent": 91.4
+    },
+    "title": {
+      "passed": 14,
+      "total": 17,
+      "percent": 82.4
+    },
+    "order": {
+      "passed": 19,
+      "total": 19,
+      "percent": 100.0
+    },
+    "ownership": {
+      "passed": 10,
+      "total": 14,
+      "percent": 71.4
+    },
+    "count": {
+      "passed": 1,
+      "total": 3,
+      "percent": 33.3
+    },
+    "combined_checks": {
+      "passed": 262,
+      "total": 283,
+      "percent": 92.6
+    }
+  },
+  "pages": [
+    {
+      "pdf_page": 2,
+      "printed_page": 1,
+      "page_kind": "section inventory",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Beef - Hovězí maso.",
+          "passed": true
+        },
+        {
+          "probe": "Tenderloin with sour cream sauce - Svíčková na smetaně.",
+          "passed": true
+        },
+        {
+          "probe": "Brasciole (stuffed beef rolls) - Hovězí závitky.",
+          "passed": true
+        },
+        {
+          "probe": "Stuffed veal breast - Telecí hrudí nadivané.",
+          "passed": false
+        },
+        {
+          "probe": "Veal chops with caraway seeds - Telecí žebírka na kmíně.",
+          "passed": true
+        },
+        {
+          "probe": "Fresh ham with cream sauce - Vepřová kýta na smetaně.",
+          "passed": true
+        },
+        {
+          "probe": "Mutton or lamb goulash - Guláš skopový.",
+          "passed": true
+        }
+      ],
+      "titles": [],
+      "order": [
+        {
+          "before": "Beef - Hovězí maso.",
+          "after": "Veal - Telecí maso.",
+          "passed": true
+        },
+        {
+          "before": "Veal - Telecí maso.",
+          "after": "Pork - Vepřové maso.",
+          "passed": true
+        },
+        {
+          "before": "Pork - Vepřové maso.",
+          "after": "Lamb - Skopové maso.",
+          "passed": true
+        }
+      ],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": [
+        "Stuffed veal breast - Telecí hrudí nadivané."
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 2,
+      "page_kind": "section inventory continuation",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Chicken - Kuře.",
+          "passed": true
+        },
+        {
+          "probe": "Chicken ragoût on a half shell - Ragoût na mušlich.",
+          "passed": true
+        },
+        {
+          "probe": "Duckling with Madeira wine - Kachna na víně.",
+          "passed": true
+        },
+        {
+          "probe": "Rabbit with paprika sauce - Králík na paprice.",
+          "passed": true
+        },
+        {
+          "probe": "Marinated hare in wine sauce - Zajíc na černo.",
+          "passed": true
+        },
+        {
+          "probe": "Venison cutlets with fresh mushrooms - Srnčí žebírka s houbami.",
+          "passed": true
+        },
+        {
+          "probe": "Partridge/Quail - Koroptev/Křepelka.",
+          "passed": true
+        },
+        {
+          "probe": "Salmon trout with dill sauce - Pstruh s koprovou omáčkou.",
+          "passed": true
+        }
+      ],
+      "titles": [],
+      "order": [
+        {
+          "before": "Chicken - Kuře.",
+          "after": "Turkey - Krocan.",
+          "passed": true
+        },
+        {
+          "before": "Turkey - Krocan.",
+          "after": "Pigeon - Holub.",
+          "passed": true
+        },
+        {
+          "before": "Pigeon - Holub.",
+          "after": "Goose - Husa.",
+          "passed": true
+        },
+        {
+          "before": "Goose - Husa.",
+          "after": "Duck - Kachna.",
+          "passed": true
+        },
+        {
+          "before": "Duck - Kachna.",
+          "after": "Rabbit - Králík.",
+          "passed": true
+        },
+        {
+          "before": "Rabbit - Králík.",
+          "after": "Hare - Zajíc.",
+          "passed": true
+        },
+        {
+          "before": "Hare - Zajíc.",
+          "after": "Venison - Srnčí maso.",
+          "passed": true
+        },
+        {
+          "before": "Venison - Srnčí maso.",
+          "after": "Pheasant - Bažant.",
+          "passed": true
+        },
+        {
+          "before": "Pheasant - Bažant.",
+          "after": "Partridge/Quail - Koroptev/Křepelka.",
+          "passed": true
+        },
+        {
+          "before": "Partridge/Quail - Koroptev/Křepelka.",
+          "after": "Fresh water fish - Ryby sladkovodní.",
+          "passed": true
+        }
+      ],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 3,
+      "page_kind": "recipe",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "4 lbs. beef tenderloin",
+          "passed": true
+        },
+        {
+          "probe": "1/2 cup vegetable oil",
+          "passed": true
+        },
+        {
+          "probe": "1-1/2 cups sour cream",
+          "passed": false
+        },
+        {
+          "probe": "Roast 40-45 minutes",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 2 hours",
+          "passed": true
+        },
+        {
+          "probe": "Alternative - Lard the tenderloin",
+          "passed": true
+        },
+        {
+          "probe": "475F",
+          "passed": true
+        },
+        {
+          "probe": "350F",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Roast beef tenderloin in sour cream sauce - Svíčková",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Roast beef tenderloin in sour cream sauce",
+          "owned_text": "1-1/2 cups sour cream",
+          "passed": false
+        }
+      ],
+      "counts": [],
+      "missing_exact_probes": [
+        "1-1/2 cups sour cream"
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 4,
+      "page_kind": "two recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "2-1/2 minutes on each side",
+          "passed": true
+        },
+        {
+          "probe": "1-1/2 cups chicken or beef stock, or water",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 1 hour",
+          "passed": true
+        },
+        {
+          "probe": "3/4 cup water",
+          "passed": true
+        },
+        {
+          "probe": "3/4 cup bread crumbs",
+          "passed": true
+        },
+        {
+          "probe": "Form 12 hamburgers",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Beef tenderloin slices (shortcut for “svíčková”) - Řezy ze svíčkové",
+          "passed": true
+        },
+        {
+          "title": "Beef croquettes - Karbanátky",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Beef tenderloin slices (shortcut for “svíčková”)",
+          "owned_text": "1-1/2 cups sour cream",
+          "passed": true
+        },
+        {
+          "title": "Beef croquettes",
+          "owned_text": "3/4 cup bread crumbs",
+          "passed": false
+        }
+      ],
+      "counts": [
+        {
+          "text": "Serves 6 - Preparation time: 1 hour",
+          "expected_count": 2,
+          "actual_count": 1,
+          "passed": false
+        }
+      ],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 10,
+      "page_kind": "two recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "6 veal chops",
+          "passed": true
+        },
+        {
+          "probe": "1/2 cup vegetable oil",
+          "passed": true
+        },
+        {
+          "probe": "1 teaspoon caraway seeds",
+          "passed": true
+        },
+        {
+          "probe": "1/2” thick",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 45 minutes",
+          "passed": true
+        },
+        {
+          "probe": "1/3 cup milk",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Veal chops with caraway seeds - Telecí žebírka na kmíně",
+          "passed": false
+        },
+        {
+          "title": "Breaded veal chops - Telecí žebírka smažená",
+          "passed": false
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Veal chops with caraway seeds",
+          "owned_text": "1 teaspoon caraway seeds",
+          "passed": true
+        },
+        {
+          "title": "Breaded veal chops",
+          "owned_text": "1/3 cup milk",
+          "passed": true
+        }
+      ],
+      "counts": [
+        {
+          "text": "Serves 6 - Preparation time: 45 minutes",
+          "expected_count": 2,
+          "actual_count": 1,
+          "passed": false
+        }
+      ],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": 16,
+      "page_kind": "recipe",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "3-4 lbs. lamb leg, boned, skinned (4-5 lbs. with bone)",
+          "passed": true
+        },
+        {
+          "probe": "1/2 teaspoon each of ginger and ground nutmeg",
+          "passed": true
+        },
+        {
+          "probe": "1/4 cup cranberry juice, unsweetened",
+          "passed": true
+        },
+        {
+          "probe": "1-2 cups chicken stock",
+          "passed": true
+        },
+        {
+          "probe": "Cover and simmer 1 hour",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 2 hours 30 minutes",
+          "passed": false
+        }
+      ],
+      "titles": [
+        {
+          "title": "Leg of lamb in wine sauce - Skopová kýta dušená",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": [
+        "Serves 6 - Preparation time: 2 hours 30 minutes"
+      ]
+    },
+    {
+      "pdf_page": 25,
+      "printed_page": 24,
+      "page_kind": "continuation plus two recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Continue roasting for 1-1/2 hours.",
+          "passed": true
+        },
+        {
+          "probe": "Total roasting time is approximately 20 minutes per pound.",
+          "passed": true
+        },
+        {
+          "probe": "400F",
+          "passed": true
+        },
+        {
+          "probe": "Serves 8-10 - Preparation time: 3 hours 30 minutes",
+          "passed": true
+        },
+        {
+          "probe": "1 duck (approx 8 lbs.)",
+          "passed": true
+        },
+        {
+          "probe": "Roast the duck in the same manner as the goose.",
+          "passed": true
+        },
+        {
+          "probe": "1 duckling, 5-6 lbs.",
+          "passed": true
+        },
+        {
+          "probe": "Roast 1 to 1-1/2 hours",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Roast duck - Kachna pečená",
+          "passed": true
+        },
+        {
+          "title": "Duckling with Madeira wine - Kachna na víně",
+          "passed": false
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Roast duck",
+          "owned_text": "1 duck (approx 8 lbs.)",
+          "passed": true
+        },
+        {
+          "title": "Duckling with Madeira wine",
+          "owned_text": "1 cup Madeira wine",
+          "passed": true
+        }
+      ],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 34,
+      "printed_page": 33,
+      "page_kind": "recipe with ingredient subgroup",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "6 trouts, 4 lbs., cleaned, with heads and tails left on",
+          "passed": true
+        },
+        {
+          "probe": "1-1/2 quarts water",
+          "passed": false
+        },
+        {
+          "probe": "Sauce:",
+          "passed": true
+        },
+        {
+          "probe": "2 tablespoons finely chopped dill",
+          "passed": true
+        },
+        {
+          "probe": "1/2 cup heavy cream",
+          "passed": true
+        },
+        {
+          "probe": "Hand sauce separately.",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 45 minutes",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Salmon trout with dill sauce - Pstruh s koprovou omáčkou",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": [
+        "1-1/2 quarts water"
+      ]
+    },
+    {
+      "pdf_page": 35,
+      "printed_page": 34,
+      "page_kind": "section inventory",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Ham and noodles casserole - Šunkové nudle.",
+          "passed": true
+        },
+        {
+          "probe": "Stuffed cabbage rolls - Plněná kapusta.",
+          "passed": true
+        },
+        {
+          "probe": "Red cabbage - Červené zelí.",
+          "passed": true
+        },
+        {
+          "probe": "Mashed potatoes - Bramborová kaše.",
+          "passed": true
+        },
+        {
+          "probe": "Dumplings with croutons - Houskové knedlíky.",
+          "passed": false
+        },
+        {
+          "probe": "Potato salad - Bramborový salát.",
+          "passed": true
+        },
+        {
+          "probe": "Soups - Polévky:",
+          "passed": true
+        },
+        {
+          "probe": "Tripe soup - Dršťková polévka.",
+          "passed": false
+        },
+        {
+          "probe": "Beer soup - Pivní polévka.",
+          "passed": true
+        }
+      ],
+      "titles": [],
+      "order": [
+        {
+          "before": "Miscellaneous",
+          "after": "Ham and noodles casserole - Šunkové nudle.",
+          "passed": true
+        },
+        {
+          "before": "Ham and noodles casserole - Šunkové nudle.",
+          "after": "Mashed potatoes - Bramborová kaše.",
+          "passed": true
+        },
+        {
+          "before": "Mashed potatoes - Bramborová kaše.",
+          "after": "Soups - Polévky:",
+          "passed": true
+        }
+      ],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": [
+        "Dumplings with croutons - Houskové knedlíky.",
+        "Tripe soup - Dršťková polévka."
+      ]
+    },
+    {
+      "pdf_page": 36,
+      "printed_page": 35,
+      "page_kind": "two recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "12 oz. egg noodles",
+          "passed": true
+        },
+        {
+          "probe": "2/3 cup heavy cream",
+          "passed": true
+        },
+        {
+          "probe": "350F 35-40 minutes",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 1 hour 15 minutes",
+          "passed": true
+        },
+        {
+          "probe": "1 lb. finely ground pork or beef",
+          "passed": true
+        },
+        {
+          "probe": "1/2 cup firmly cooked rice",
+          "passed": true
+        },
+        {
+          "probe": "Pat dry cavities.",
+          "passed": true
+        },
+        {
+          "probe": "Simmer, covered, 30-35 minutes.",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Ham and noodles casserole - Šunkové nudle",
+          "passed": true
+        },
+        {
+          "title": "Stuffed peppers - Plněné papriky",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Ham and noodles casserole",
+          "owned_text": "2/3 cup heavy cream",
+          "passed": true
+        },
+        {
+          "title": "Stuffed peppers",
+          "owned_text": "2 cups tomato sauce",
+          "passed": true
+        }
+      ],
+      "counts": [
+        {
+          "text": "Serves 6 - Preparation time: 1 hour 15 minutes",
+          "expected_count": 2,
+          "actual_count": 2,
+          "passed": true
+        }
+      ],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 41,
+      "printed_page": 40,
+      "page_kind": "continuation plus recipe",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Optional:",
+          "passed": true
+        },
+        {
+          "probe": "3 tablespoons fried bread crumbs",
+          "passed": true
+        },
+        {
+          "probe": "Optional: Coat with fried bread crumbs.",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 1 hour 15 minutes",
+          "passed": true
+        },
+        {
+          "probe": "5 medium potatoes",
+          "passed": true
+        },
+        {
+          "probe": "1 cup cream of wheat, regular, not precooked",
+          "passed": true
+        },
+        {
+          "probe": "roll into 2” balls",
+          "passed": true
+        },
+        {
+          "probe": "Cook in lightly salted boiling water 10-12 minutes.",
+          "passed": true
+        },
+        {
+          "probe": "Serves 6 - Preparation time: 1 hour",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Potato dumplings - Bramborové knedlíky",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 46,
+      "printed_page": 45,
+      "page_kind": "section inventory",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Baking guidelines.",
+          "passed": true
+        },
+        {
+          "probe": "Bohemian open face pastries - České koláčky",
+          "passed": true
+        },
+        {
+          "probe": "Ricotta filling - Tvarohová nádivka",
+          "passed": true
+        },
+        {
+          "probe": "Poppy seeds filling - Maková nádivka",
+          "passed": true
+        },
+        {
+          "probe": "Silver dollars - Dukátové buchtičky",
+          "passed": true
+        },
+        {
+          "probe": "Czech doughnuts, fried - Koblihy",
+          "passed": true
+        },
+        {
+          "probe": "Karlasbader biscuits - Karlovarské suchary",
+          "passed": true
+        },
+        {
+          "probe": "Christmas loaf - Vánočka",
+          "passed": true
+        },
+        {
+          "probe": "Bread and apple baba - Žemlovka",
+          "passed": true
+        },
+        {
+          "probe": "Plum dumplings - Švestkové knedlíky",
+          "passed": true
+        },
+        {
+          "probe": "God's graces - Boží milosti",
+          "passed": true
+        },
+        {
+          "probe": "Christmas cookies - Vánoční cukroví",
+          "passed": true
+        },
+        {
+          "probe": "Truffles - Lanýže.",
+          "passed": true
+        }
+      ],
+      "titles": [],
+      "order": [
+        {
+          "before": "Baking guidelines.",
+          "after": "Bohemian open face pastries - České koláčky",
+          "passed": true
+        },
+        {
+          "before": "Bohemian open face pastries - České koláčky",
+          "after": "Karlasbader biscuits - Karlovarské suchary",
+          "passed": true
+        },
+        {
+          "before": "Karlasbader biscuits - Karlovarské suchary",
+          "after": "Plum dumplings - Švestkové knedlíky",
+          "passed": true
+        }
+      ],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 47,
+      "printed_page": 46,
+      "page_kind": "reference guidance, not a recipe",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "Baking guidelines",
+          "passed": true
+        },
+        {
+          "probe": "Baking with fresh yeast:",
+          "passed": true
+        },
+        {
+          "probe": "packed in 2 oz. cubes",
+          "passed": true
+        },
+        {
+          "probe": "remove it at least 1 hour prior to using.",
+          "passed": true
+        },
+        {
+          "probe": "Milk and butter must be lukewarm, not hot.",
+          "passed": true
+        },
+        {
+          "probe": "The quantities of ingredients indicated are to be followed exactly.",
+          "passed": true
+        },
+        {
+          "probe": "Butter always means unsalted butter",
+          "passed": true
+        },
+        {
+          "probe": "Flour - means sifted flour.",
+          "passed": true
+        },
+        {
+          "probe": "Grated lemon rind - If you do not have a manual grater",
+          "passed": true
+        }
+      ],
+      "titles": [],
+      "order": [],
+      "ownership": [],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 52,
+      "printed_page": 51,
+      "page_kind": "three related recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "4 cups coarse flour, Gold Medal Wondra",
+          "passed": true
+        },
+        {
+          "probe": "1-1/4 cups milk",
+          "passed": true
+        },
+        {
+          "probe": "Prepare dough in the same manner as in Bohemian muffins.",
+          "passed": true
+        },
+        {
+          "probe": "350F, bake 20-25 minutes",
+          "passed": true
+        },
+        {
+          "probe": "Serves 10 - Preparation time: 2 hours 30 minutes.",
+          "passed": true
+        },
+        {
+          "probe": "1 tablespoon corn starch",
+          "passed": true
+        },
+        {
+          "probe": "Serves 10 - Preparation time: 30 minutes",
+          "passed": true
+        },
+        {
+          "probe": "1 cup white table wine",
+          "passed": true
+        },
+        {
+          "probe": "1/3 cup sugar",
+          "passed": true
+        },
+        {
+          "probe": "Serves 10 - Preparation time: 20 minutes",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "“Silver dollars” (miniature plain muffins) - Dukátové buchtičky",
+          "passed": true
+        },
+        {
+          "title": "Vanilla sauce - Vanilková omáčka",
+          "passed": true
+        },
+        {
+          "title": "White wine froth - Vinná omáčka",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "“Silver dollars” (miniature plain muffins)",
+          "owned_text": "1-1/4 cups milk",
+          "passed": true
+        },
+        {
+          "title": "Vanilla sauce",
+          "owned_text": "1 tablespoon corn starch",
+          "passed": false
+        },
+        {
+          "title": "White wine froth",
+          "owned_text": "1 cup white table wine",
+          "passed": false
+        }
+      ],
+      "counts": [],
+      "missing_exact_probes": []
+    },
+    {
+      "pdf_page": 75,
+      "printed_page": 74,
+      "page_kind": "two recipes",
+      "candidate_present": true,
+      "exact": [
+        {
+          "probe": "1/3 cup sugar mixed with 1 teaspoon vanilla sugar",
+          "passed": true
+        },
+        {
+          "probe": "roll the dough out as thin as possible. (1/8”).",
+          "passed": true
+        },
+        {
+          "probe": "1-1/4” round cakes",
+          "passed": true
+        },
+        {
+          "probe": "bake at 350F for 15 minutes",
+          "passed": true
+        },
+        {
+          "probe": "one “holed” round.",
+          "passed": true
+        },
+        {
+          "probe": "Preparation time - 1 hour 30 minutes",
+          "passed": true
+        },
+        {
+          "probe": "2/3 cup heavy cream",
+          "passed": true
+        },
+        {
+          "probe": "3/4 cup grated dark semi-sweet chocolate",
+          "passed": true
+        },
+        {
+          "probe": "Let the “truffles” dry for 10 minutes",
+          "passed": true
+        },
+        {
+          "probe": "Preparation time: 30 minutes, plus refrigeration.",
+          "passed": true
+        }
+      ],
+      "titles": [
+        {
+          "title": "Butter rounds - Máslová kolečka",
+          "passed": true
+        },
+        {
+          "title": "Truffles - Lanýže",
+          "passed": true
+        }
+      ],
+      "order": [],
+      "ownership": [
+        {
+          "title": "Butter rounds",
+          "owned_text": "red raspberry or red currant preserve",
+          "passed": true
+        },
+        {
+          "title": "Truffles",
+          "owned_text": "3/4 cup grated dark semi-sweet chocolate",
+          "passed": true
+        }
+      ],
+      "counts": [],
+      "missing_exact_probes": []
+    }
+  ]
+}

@@ -1,0 +1,466 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0003
+record_revision: 2
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 5
+  printed_pages:
+  - '4'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0003-title
+  pdf_page: 5
+  printed_page: '4'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1035
+    - 1094
+  - - 1875
+    - 1094
+  - - 1875
+    - 1204
+  - - 1035
+    - 1204
+  candidate_block_ids:
+  - /page/4/SectionHeader/8
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-title.png
+  region_image_pixel_sha256: 841b2883da6ef97bd75bc1ad1e1fe44e305ef11cea08934e4535b47a38b586cf
+- region_id: vera-r0003-ingredients
+  pdf_page: 5
+  printed_page: '4'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 234
+    - 1182
+  - - 741
+    - 1182
+  - - 741
+    - 1628
+  - - 234
+    - 1628
+  candidate_block_ids:
+  - /page/4/ListGroup/3
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-ingredients.png
+  region_image_pixel_sha256: 24ea765e2ce23c47dcfd250bca818bfe343bf18dd0ce28559ff1bddcf92cab09
+- region_id: vera-r0003-step-1
+  pdf_page: 5
+  printed_page: '4'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1188
+  - - 2685
+    - 1188
+  - - 2685
+    - 1392
+  - - 1068
+    - 1392
+  candidate_block_ids:
+  - /page/4/Text/9
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-step-1.png
+  region_image_pixel_sha256: 60d27d501189db7e456b0d3e83efdda709b1577bc3e88324fcbfd2936a6cbf3d
+- region_id: vera-r0003-step-2
+  pdf_page: 5
+  printed_page: '4'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1348
+  - - 2682
+    - 1348
+  - - 2682
+    - 1486
+  - - 1068
+    - 1486
+  candidate_block_ids:
+  - /page/4/Text/10
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-step-2.png
+  region_image_pixel_sha256: 8d846bbfec513803d6a8e699a87f93edb1f9db19d03bbc9656597f8532116200
+- region_id: vera-r0003-step-3
+  pdf_page: 5
+  printed_page: '4'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1450
+  - - 2682
+    - 1450
+  - - 2682
+    - 1618
+  - - 1068
+    - 1618
+  candidate_block_ids:
+  - /page/4/Text/11
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-step-3.png
+  region_image_pixel_sha256: 91327e0402e06488d0e060b7ed2b724393e780212b89fd3aa2d9e3ad4afcec49
+- region_id: vera-r0003-step-4
+  pdf_page: 5
+  printed_page: '4'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1558
+  - - 2676
+    - 1558
+  - - 2676
+    - 1706
+  - - 1068
+    - 1706
+  candidate_block_ids:
+  - /page/4/Text/12
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-step-4.png
+  region_image_pixel_sha256: fb3ee132166c3b9ef89cf51aaedf309e63bbfebb86ca9547fe73c9b6bbc91f23
+- region_id: vera-r0003-yield
+  pdf_page: 5
+  printed_page: '4'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1059
+    - 1722
+  - - 1782
+    - 1722
+  - - 1782
+    - 1814
+  - - 1059
+    - 1814
+  candidate_block_ids:
+  - /page/4/Text/13
+  region_image: evidence/production-batch-001/regions/vera-r0003/p05-yield.png
+  region_image_pixel_sha256: 4328f1173b864c5afd5e5940410b25baf8d9e46834cc76d03585320f8cf4c5fe
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Beef croquettes · Karbanátky
+    language: mul
+    source_region_ids:
+    - vera-r0003-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Beef croquettes
+    language: en
+    source_region_ids:
+    - vera-r0003-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Karbanátky
+    language: cs
+    source_region_ids:
+    - vera-r0003-title
+    title_role: parallel
+  source_order: 3
+  slug_candidate: beef-croquettes
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0003-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 lbs. ground round
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1 whole egg
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 slices bacon
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: salt, pepper, marjoram
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 medium size onion
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 3/4 cup water
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 3/4 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 1/2 cup oil for frying
+      language: en
+      source_region_ids:
+      - vera-r0003-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      step_number: 1
+      text_verbatim: Soak the rolls in water, squeeze off excess liquid, shred them. Blend them with the
+        ground meat, egg, chopped onion, diced bacon, salt, pepper and marjoram.
+      language: en
+      source_region_ids:
+      - vera-r0003-step-1
+    - segment_id: step-2
+      step_number: 2
+      text_verbatim: Form 12 hamburgers, coat them with bread crumbs and fry on both sides.
+      language: en
+      source_region_ids:
+      - vera-r0003-step-2
+    - segment_id: step-3
+      step_number: 3
+      text_verbatim: Instead of frying, they can be roasted in the oven, basting them with hot oil, their
+        own juices, chicken or beef stock, or water.
+      language: en
+      source_region_ids:
+      - vera-r0003-step-3
+    - segment_id: step-4
+      step_number: 4
+      text_verbatim: Serve with mashed potatoes and salad. Or serve cold with dark bread, potato salad,
+        or pickles.
+      language: en
+      source_region_ids:
+      - vera-r0003-step-4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T20:00:00Z'
+  created_by: codex-preflight
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T19:59:12Z'
+    artifact_path: pilot/production-batch-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T20:32:18Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0003
+    source_region_ids: &id001
+    - vera-r0003-title
+    - vera-r0003-ingredients
+    - vera-r0003-step-1
+    - vera-r0003-step-2
+    - vera-r0003-step-3
+    - vera-r0003-step-4
+    - vera-r0003-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0003
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    source_region_ids:
+    - vera-r0003-title
+    - vera-r0003-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0003-title
+    - vera-r0003-step-1
+    - vera-r0003-step-2
+    - vera-r0003-step-3
+    - vera-r0003-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0003-title
+    - vera-r0003-yield
+    - vera-r0003-ingredients
+    - vera-r0003-step-1
+    - vera-r0003-step-2
+    - vera-r0003-step-3
+    - vera-r0003-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - step-2
+    source_region_ids:
+    - vera-r0003-yield
+    - vera-r0003-ingredients
+    - vera-r0003-step-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0003-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0003
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0003-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

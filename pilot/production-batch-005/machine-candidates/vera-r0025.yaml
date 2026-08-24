@@ -1,0 +1,391 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0025
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 19
+  printed_pages:
+  - '18'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0025-title
+  pdf_page: 19
+  printed_page: '18'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 978
+    - 912
+  - - 1962
+    - 912
+  - - 1962
+    - 1009
+  - - 978
+    - 1009
+  candidate_block_ids:
+  - /page/18/SectionHeader/7
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-title.png
+  region_image_pixel_sha256: 9035399423af71d66e35d153c72dc748a91e6c6552400333f447dd5d157e73c4
+- region_id: vera-r0025-ingredients
+  pdf_page: 19
+  printed_page: '18'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 225
+    - 1016
+  - - 1017
+    - 1016
+  - - 1017
+    - 1550
+  - - 225
+    - 1550
+  candidate_block_ids:
+  - /page/18/ListGroup/8
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-ingredients.png
+  region_image_pixel_sha256: 2e80b0fa24dfd19c1cadc33bc03e6b9e17746971d03a09014c07bdaf15cf3201
+- region_id: vera-r0025-handwriting
+  pdf_page: 19
+  printed_page: '18'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 261
+    - 1538
+  - - 582
+    - 1538
+  - - 582
+    - 1707
+  - - 261
+    - 1707
+  candidate_block_ids:
+  - /page/18/Text/16
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-handwriting.png
+  region_image_pixel_sha256: 8e2ff5957b581adfa82ca7d252e81f07d928d5b44fcfe38f7295a84ea6b2bc38
+- region_id: vera-r0025-step-1
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1008
+  - - 2700
+    - 1008
+  - - 2700
+    - 1304
+  - - 1083
+    - 1304
+  candidate_block_ids:
+  - /page/18/Text/9
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-1.png
+  region_image_pixel_sha256: fd6468cccc05abf3eff033ec61dbd82497fbdfa5269dc071c0c80e8a6067816c
+- region_id: vera-r0025-step-2
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1270
+  - - 2178
+    - 1270
+  - - 2178
+    - 1362
+  - - 1083
+    - 1362
+  candidate_block_ids:
+  - /page/18/Text/10
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-2.png
+  region_image_pixel_sha256: ce116cd9d32fc080f93d05a1f789f189612ec1227fafa75f66669b1e9a63da93
+- region_id: vera-r0025-step-3
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1324
+  - - 2706
+    - 1324
+  - - 2706
+    - 1464
+  - - 1083
+    - 1464
+  candidate_block_ids:
+  - /page/18/Text/11
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-3.png
+  region_image_pixel_sha256: 8c1cd516fc63cc6dda0053df135c45d76adae3b7b77b29d199c017b7f2eccf81
+- region_id: vera-r0025-step-4
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1428
+  - - 2703
+    - 1428
+  - - 2703
+    - 1568
+  - - 1083
+    - 1568
+  candidate_block_ids:
+  - /page/18/Text/12
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-4.png
+  region_image_pixel_sha256: 1eca9187465efae533b7f7166df3b2f3ec0caeb65686c234202f4f1f3b94ba96
+- region_id: vera-r0025-step-5
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1532
+  - - 2706
+    - 1532
+  - - 2706
+    - 1677
+  - - 1083
+    - 1677
+  candidate_block_ids:
+  - /page/18/Text/13
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-5.png
+  region_image_pixel_sha256: f5d7370f89482be0ec10d4a0f75dce9da9445b13d66045c609779d1415ab7476
+- region_id: vera-r0025-step-6
+  pdf_page: 19
+  printed_page: '18'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1639
+  - - 2052
+    - 1639
+  - - 2052
+    - 1729
+  - - 1083
+    - 1729
+  candidate_block_ids:
+  - /page/18/Text/14
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-step-6.png
+  region_image_pixel_sha256: aded5c3986fe0f6182998c1934283c5c5f35a9b13e1cb4d5f6299124c39b9f38
+- region_id: vera-r0025-yield
+  pdf_page: 19
+  printed_page: '18'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1083
+    - 1724
+  - - 1821
+    - 1724
+  - - 1821
+    - 1808
+  - - 1083
+    - 1808
+  candidate_block_ids:
+  - /page/18/Text/15
+  region_image: evidence/production-batch-005/regions/vera-r0025/p19-yield.png
+  region_image_pixel_sha256: cca13aadbf7f8446022adac72392c308414e48b18e05403d83f9564100df7e78
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Chicken paprika · Kuře na paprice
+    language: mul
+    source_region_ids:
+    - vera-r0025-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Chicken paprika
+    language: en
+    source_region_ids:
+    - vera-r0025-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kuře na paprice
+    language: cs
+    source_region_ids:
+    - vera-r0025-title
+    title_role: parallel
+  source_order: 25
+  slug_candidate: chicken-paprika
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0025-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 chicken, 4·5 lbs., cut up into small serving portions or
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 12 chicken thighs
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 medium onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 2 tablespoons vinegar
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 3 tablespoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 cup chicken broth
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1·1/2 cups sour cream
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 2 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0025-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a large heavy skillet sauté onion in butter until translucent. Stir in paprika
+        and vinegar. Lay chicken pieces on top, cover, and simmer until almost tender, about 20 minutes.
+        Gradually add chicken broth, if needed. Cooking liquid should be just enough that onion and chicken
+        do not burn.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Using a slotted spoon remove chicken pieces.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Blend flour and sour cream, stir into liquid in pan, and add remaining chicken broth.
+        Simmer for 5 minutes, stirring often.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Return chicken to pan, simmer until tender but not overcooked, 5·10 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Season to taste with salt and pepper. Sauce should be medium thick and mildly piquant.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Serve with rice, noodles, gnocchi, salad.
+      language: en
+      source_region_ids:
+      - vera-r0025-step-6
+      step_number: 6
+  notes:
+  - segment_id: note-1
+    text_verbatim: ⟦blue handwritten marginal word⟧
+    language: und
+    source_region_ids:
+    - vera-r0025-handwriting
+    uncertainties:
+    - substring: ⟦blue handwritten marginal word⟧
+      issue: illegible
+      note: The blue cursive word appears to belong to Chicken paprika and resembles ‘curry’, but its
+        exact letterforms are not source-clear; the bracketed text is an explicit placeholder, not a guess.
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:02:08Z'
+  checks: []
+  open_issues: []

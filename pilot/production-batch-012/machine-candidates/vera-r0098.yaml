@@ -1,0 +1,258 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0098
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 64
+  printed_pages:
+  - '63'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0098-title
+  pdf_page: 64
+  printed_page: '63'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 930
+    - 960
+  - - 2100
+    - 960
+  - - 2100
+    - 1076
+  - - 930
+    - 1076
+  candidate_block_ids:
+  - /page/63/SectionHeader/5
+  region_image: evidence/production-batch-012/regions/vera-r0098/p64-title.png
+  region_image_pixel_sha256: beed8e8f098e5e850c56e82bd0cbe91e7de4786b54d01f1003bf3afe7ddc43ca
+- region_id: vera-r0098-listgroup-1
+  pdf_page: 64
+  printed_page: '63'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 249
+    - 1056
+  - - 969
+    - 1056
+  - - 969
+    - 1662
+  - - 249
+    - 1662
+  candidate_block_ids:
+  - /page/63/ListGroup/6
+  region_image: evidence/production-batch-012/regions/vera-r0098/p64-listgroup-1.png
+  region_image_pixel_sha256: b7e4189786f6a18158cac79fc787df56d46de39c78741665633fe38d2ea1c6f9
+- region_id: vera-r0098-text-2
+  pdf_page: 64
+  printed_page: '63'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 1064
+  - - 2727
+    - 1064
+  - - 2727
+    - 1480
+  - - 1140
+    - 1480
+  candidate_block_ids:
+  - /page/63/Text/7
+  region_image: evidence/production-batch-012/regions/vera-r0098/p64-text-2.png
+  region_image_pixel_sha256: 0b5f4b27f416765959ca1789c53599182918d473799cacb53f7e50297d46660a
+- region_id: vera-r0098-text-3
+  pdf_page: 64
+  printed_page: '63'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 1444
+  - - 2631
+    - 1444
+  - - 2631
+    - 1604
+  - - 1140
+    - 1604
+  candidate_block_ids:
+  - /page/63/Text/8
+  region_image: evidence/production-batch-012/regions/vera-r0098/p64-text-3.png
+  region_image_pixel_sha256: 0566f78b0a03e7ab9a1ac9b717ee9853f3ae3e17381de8415ed9e8b58deb16d3
+- region_id: vera-r0098-text-4
+  pdf_page: 64
+  printed_page: '63'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1140
+    - 1586
+  - - 2046
+    - 1586
+  - - 2046
+    - 1674
+  - - 1140
+    - 1674
+  candidate_block_ids:
+  - /page/63/Text/9
+  region_image: evidence/production-batch-012/regions/vera-r0098/p64-text-4.png
+  region_image_pixel_sha256: 5319df42f9bcb9e4e018612be83d81a5e4387700b5f616467dfcb4729fffc3ad
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Fudge Marble cake · Mramorová bábovka
+    language: mul
+    source_region_ids:
+    - vera-r0098-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Fudge Marble cake
+    language: en
+    source_region_ids:
+    - vera-r0098-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Mramorová bábovka
+    language: cs
+    source_region_ids:
+    - vera-r0098-title
+    title_role: parallel
+  source_order: 98
+  slug_candidate: fudgemarblecake
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '1 cake – Preparation time: 1 hour 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0098-text-4
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2-1/4 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1-1/3 cups sugar
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 10 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 3 eggs, separated
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 2/3 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 3 tablespoons cocoa powder
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: 3 tablespoons water
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-8
+      text_verbatim: 1 teaspoon vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-9
+      text_verbatim: 1-1/2 teaspoons baking powder
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-10
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-11
+      text_verbatim: butter and flour for baking pan
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+    - segment_id: ingredient-12
+      text_verbatim: sugar for dusting
+      language: en
+      source_region_ids:
+      - vera-r0098-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a bowl cream the butter, sugar, egg yolks, vanilla sugar and lemon rind. Beat
+        until fluffy. Add the milk and the flour mixed with baking powder. Fold in the stiffly whipped
+        egg whites. Pour half of the batter in a separate bowl. Dissolve the cocoa powder in water and
+        combine with one of the yellow batter halves. Turn the mixture into a buttered and floured fluted
+        tube pan, alternating the yellow and the brown batter.
+      language: en
+      source_region_ids:
+      - vera-r0098-text-2
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Bake at 350F for 1 hour, or until the toothpick comes out clean. Invert the cake
+        onto wire rack, dust with sugar, cool and slice.
+      language: en
+      source_region_ids:
+      - vera-r0098-text-3
+      step_number: 2
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

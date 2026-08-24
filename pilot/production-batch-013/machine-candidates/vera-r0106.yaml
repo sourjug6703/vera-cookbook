@@ -1,0 +1,244 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0106
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 72
+  printed_pages:
+  - '71'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0106-title
+  pdf_page: 72
+  printed_page: '71'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1140
+    - 362
+  - - 1911
+    - 362
+  - - 1911
+    - 506
+  - - 1140
+    - 506
+  candidate_block_ids:
+  - /page/71/SectionHeader/5
+  region_image: evidence/production-batch-013/regions/vera-r0106/p72-title.png
+  region_image_pixel_sha256: 16f09bba9393a8cf5218997233ca507db8cef2522151d6e5c57862d2773efd02
+- region_id: vera-r0106-listgroup-1
+  pdf_page: 72
+  printed_page: '71'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 237
+    - 416
+  - - 999
+    - 416
+  - - 999
+    - 834
+  - - 237
+    - 834
+  candidate_block_ids:
+  - /page/71/ListGroup/1
+  region_image: evidence/production-batch-013/regions/vera-r0106/p72-listgroup-1.png
+  region_image_pixel_sha256: 31d6aed15e6851fa55cc26e4484082a39481a10f8076f6333f9e2541beb0c439
+- region_id: vera-r0106-text-2
+  pdf_page: 72
+  printed_page: '71'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1131
+    - 461
+  - - 2742
+    - 461
+  - - 2742
+    - 1089
+  - - 1131
+    - 1089
+  candidate_block_ids:
+  - /page/71/Text/6
+  region_image: evidence/production-batch-013/regions/vera-r0106/p72-text-2.png
+  region_image_pixel_sha256: 9e99ad8c6505d49ae7a1fe5c7448a26ecf01e5f3244a71b47f6956f39833a387
+- region_id: vera-r0106-listgroup-3
+  pdf_page: 72
+  printed_page: '71'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 243
+    - 837
+  - - 804
+    - 837
+  - - 804
+    - 1032
+  - - 243
+    - 1032
+  candidate_block_ids:
+  - /page/71/ListGroup/2
+  region_image: evidence/production-batch-013/regions/vera-r0106/p72-listgroup-3.png
+  region_image_pixel_sha256: 3a04f6a747079b72bc000e58798a5d9090c96b7cb3660f5084f03ae15fe9724d
+- region_id: vera-r0106-text-4
+  pdf_page: 72
+  printed_page: '71'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1131
+    - 1017
+  - - 1677
+    - 1017
+  - - 1677
+    - 1122
+  - - 1131
+    - 1122
+  candidate_block_ids:
+  - /page/71/Text/7
+  region_image: evidence/production-batch-013/regions/vera-r0106/p72-text-4.png
+  region_image_pixel_sha256: 1db17ac64dcb4f1d327b742bb1a704885378e64b561548965f9b0fb146fdc6c4
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Pretzels, sweet · Preclíčky
+    language: mul
+    source_region_ids:
+    - vera-r0106-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Pretzels, sweet
+    language: en
+    source_region_ids:
+    - vera-r0106-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Preclíčky
+    language: cs
+    source_region_ids:
+    - vera-r0106-title
+    title_role: parallel
+  source_order: 106
+  slug_candidate: pretzelssweet
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0106-text-4
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1-1/2 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 2/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 8 tablespoons butter, creamed
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 2 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 2 oz. almonds, grated or crushed
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 3 hard boiled egg yolks, puréed
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-1
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-8
+      text_verbatim: grease for cookie sheet
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-3
+    - segment_id: ingredient-9
+      text_verbatim: 1 egg, lightly beaten
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-3
+    - segment_id: ingredient-10
+      text_verbatim: crystal sugar
+      language: en
+      source_region_ids:
+      - vera-r0106-listgroup-3
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: On a floured board sift together flour and sugar, make a well in center. Thoroughly
+        blend all remaining ingredients and place in well. Gradually mixing in flour, knead with the palms
+        of your hands until smooth. Form a neat ball. Let dough rest at least 1 hour in a cool place,
+        or refrigerate overnight. Divide dough into equal pieces, the size of a ping-pong ball. Form pencil-thin
+        strands and shape them into pretzels. Place on a greased cookie sheet, brush with beaten egg and
+        sprinkle with crystal sugar. Bake at 350F 10-12 minutes or until golden.
+      language: en
+      source_region_ids:
+      - vera-r0106-text-2
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

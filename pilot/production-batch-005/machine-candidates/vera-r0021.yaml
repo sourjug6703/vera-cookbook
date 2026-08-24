@@ -1,0 +1,143 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0021
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 18
+  printed_pages:
+  - '17'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0021-title
+  pdf_page: 18
+  printed_page: '17'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 705
+    - 329
+  - - 2259
+    - 329
+  - - 2259
+    - 493
+  - - 705
+    - 493
+  candidate_block_ids:
+  - /page/17/SectionHeader/1
+  region_image: evidence/production-batch-005/regions/vera-r0021/p18-title.png
+  region_image_pixel_sha256: 78cb80b9802e1c422c3628b9ff322ba4776fc862f919c4dbaad1a69356ac449d
+- region_id: vera-r0021-cross-reference
+  pdf_page: 18
+  printed_page: '17'
+  role: cross-reference
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 237
+    - 389
+  - - 1398
+    - 389
+  - - 1398
+    - 528
+  - - 237
+    - 528
+  candidate_block_ids:
+  - /page/17/Text/2
+  region_image: evidence/production-batch-005/regions/vera-r0021/p18-cross-reference.png
+  region_image_pixel_sha256: 5fe37e6920c1b5b09c8c4ad62257a583bdafed8d08b6836991f4904a1e86ac2e
+- region_id: vera-r0021-step-1
+  pdf_page: 18
+  printed_page: '17'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 237
+    - 447
+  - - 2697
+    - 447
+  - - 2697
+    - 624
+  - - 237
+    - 624
+  candidate_block_ids:
+  - /page/17/Text/3
+  region_image: evidence/production-batch-005/regions/vera-r0021/p18-step-1.png
+  region_image_pixel_sha256: c0f4479249d5ec527d99cd9c85455a957dfb16304d15126693f593ed593724df
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Leg of lamb in cream sauce · Skopová kýta na smetaně
+    language: mul
+    source_region_ids:
+    - vera-r0021-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Leg of lamb in cream sauce
+    language: en
+    source_region_ids:
+    - vera-r0021-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Skopová kýta na smetaně
+    language: cs
+    source_region_ids:
+    - vera-r0021-title
+    title_role: parallel
+  source_order: 21
+  slug_candidate: leg-of-lamb-in-cream-sauce
+transcription:
+  yield_time_lines: []
+  ingredient_sections: []
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup
+        sour cream for chicken stock.
+      language: en
+      source_region_ids:
+      - vera-r0021-step-1
+      step_number: 1
+  notes: []
+  cross_references:
+  - segment_id: cross-reference-1
+    text_verbatim: Follow instructions for Leg of lamb in wine sauce.
+    language: en
+    source_region_ids:
+    - vera-r0021-cross-reference
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0020
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:02:08Z'
+  checks: []
+  open_issues: []

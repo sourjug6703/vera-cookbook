@@ -1,0 +1,1628 @@
+{
+  "children": [
+    {
+      "id": "/page/10/Page/12",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/10/PageHeader/0'></content-ref><content-ref src='/page/10/SectionHeader/1'></content-ref><content-ref src='/page/10/ListGroup/2'></content-ref><content-ref src='/page/10/Text/3'></content-ref><content-ref src='/page/10/Text/4'></content-ref><content-ref src='/page/10/Text/5'></content-ref><content-ref src='/page/10/Text/6'></content-ref><content-ref src='/page/10/SectionHeader/7'></content-ref><content-ref src='/page/10/ListGroup/8'></content-ref><content-ref src='/page/10/Text/9'></content-ref><content-ref src='/page/10/Text/10'></content-ref><content-ref src='/page/10/Text/11'></content-ref><content-ref src='/page/10/PageFooter/12'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/10/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              171.0,
+              87.75
+            ],
+            [
+              289.5,
+              87.75
+            ],
+            [
+              289.5,
+              117.0
+            ],
+            [
+              171.0,
+              117.0
+            ]
+          ],
+          "bbox": [
+            171.0,
+            87.75,
+            289.5,
+            117.0
+          ],
+          "children": null,
+          "section_hierarchy": {},
+          "images": {}
+        },
+        {
+          "id": "/page/10/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Veal chops with caraway seeds - Teleci žebirka na kminë</h2>",
+          "polygon": [
+            [
+              355.5,
+              195.75
+            ],
+            [
+              1140.0,
+              195.75
+            ],
+            [
+              1140.0,
+              261.0
+            ],
+            [
+              355.5,
+              261.0
+            ]
+          ],
+          "bbox": [
+            355.5,
+            195.75,
+            1140.0,
+            261.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 veal chops</li>\n<li>• 1/2 cup flour</li>\n<li>• 1/2 cup vegetable oil</li>\n<li>• 2 tablespoons butter</li>\n<li>• 1 cup chicken stock</li>\n<li>• 1 small onion</li>\n<li>• 1 teaspoon caraway seeds</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              124.5,
+              246.375
+            ],
+            [
+              417.0,
+              246.375
+            ],
+            [
+              417.0,
+              448.875
+            ],
+            [
+              124.5,
+              448.875
+            ]
+          ],
+          "bbox": [
+            124.5,
+            246.375,
+            417.0,
+            448.875
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/10/Text/3",
+          "block_type": "Text",
+          "html": "<p>Pound the veal chops lightly-they should not be more than 1/2\" thick. Make a few short cuts on the edges to prevent curling, salt them on both sides, and dust with flour on one side. Brown chops in hot oil on both sides, floured side first. In a skillet combine the butter and finely chopped onion and set over medium heat.</p>",
+          "polygon": [
+            [
+              570.0,
+              259.875
+            ],
+            [
+              1351.5,
+              259.875
+            ],
+            [
+              1351.5,
+              421.875
+            ],
+            [
+              570.0,
+              421.875
+            ]
+          ],
+          "bbox": [
+            570.0,
+            259.875,
+            1351.5,
+            421.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/Text/4",
+          "block_type": "Text",
+          "html": "<p>When the onion becomes translucent add the caraway seeds, some of the chicken stock and the veal chops and simmer about 30 minutes or until the chops are tender.</p>",
+          "polygon": [
+            [
+              570.0,
+              407.25
+            ],
+            [
+              1341.0,
+              407.25
+            ],
+            [
+              1341.0,
+              504.0
+            ],
+            [
+              570.0,
+              504.0
+            ]
+          ],
+          "bbox": [
+            570.0,
+            407.25,
+            1341.0,
+            504.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/Text/5",
+          "block_type": "Text",
+          "html": "<p>Remove the veal chops. Bring the liquid to boil, blend in flour and remaining stock, and boil until the sauce thickens (about 5 minutes). Strain the sauce over the veal chops, simmer 5 minutes. Serve with noodles, rice, salad.</p>",
+          "polygon": [
+            [
+              570.0,
+              493.875
+            ],
+            [
+              1347.0,
+              493.875
+            ],
+            [
+              1347.0,
+              616.5000000000001
+            ],
+            [
+              570.0,
+              616.5000000000001
+            ]
+          ],
+          "bbox": [
+            570.0,
+            493.875,
+            1347.0,
+            616.5000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/Text/6",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 45 minutes</b></p>",
+          "polygon": [
+            [
+              570.0,
+              626.6250000000001
+            ],
+            [
+              960.0,
+              626.6250000000001
+            ],
+            [
+              960.0,
+              657.0
+            ],
+            [
+              570.0,
+              657.0
+            ]
+          ],
+          "bbox": [
+            570.0,
+            626.6250000000001,
+            960.0,
+            657.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/SectionHeader/7",
+          "block_type": "SectionHeader",
+          "html": "<h2>Breaded veal chops - Teleci žebirka smažená</h2>",
+          "polygon": [
+            [
+              438.0,
+              716.625
+            ],
+            [
+              1059.0,
+              716.625
+            ],
+            [
+              1059.0,
+              757.1250000000001
+            ],
+            [
+              438.0,
+              757.1250000000001
+            ]
+          ],
+          "bbox": [
+            438.0,
+            716.625,
+            1059.0,
+            757.1250000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/ListGroup/8",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 veal chops</li>\n<li>• 1/2 cup flour</li>\n<li>• 2 eggs</li>\n<li>• 1/3 cup milk</li>\n<li>• 1 cup bread crumbs</li>\n<li>• 1 cup vegetable oil</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              124.5,
+              771.75
+            ],
+            [
+              355.5,
+              771.75
+            ],
+            [
+              355.5,
+              948.375
+            ],
+            [
+              124.5,
+              948.375
+            ]
+          ],
+          "bbox": [
+            124.5,
+            771.75,
+            355.5,
+            948.375
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/10/Text/9",
+          "block_type": "Text",
+          "html": "<p>Pound the veal chops. Make a few short cuts on the edges to prevent curling, salt them on both sides. Dip each in milk, dredge in flour shaking off excess, then dip in beaten eggs and coat with bread crumbs.</p>",
+          "polygon": [
+            [
+              570.0,
+              771.75
+            ],
+            [
+              1351.5,
+              771.75
+            ],
+            [
+              1351.5,
+              891.0
+            ],
+            [
+              570.0,
+              891.0
+            ]
+          ],
+          "bbox": [
+            570.0,
+            771.75,
+            1351.5,
+            891.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/Text/10",
+          "block_type": "Text",
+          "html": "<p>Fry in hot oil in a covered pan for 5 minutes, turn them and finish frying uncovered. Drain on paper towel. Serve with potato salad, mashed potatoes, green vegetables, salad.</p>",
+          "polygon": [
+            [
+              570.0,
+              891.0
+            ],
+            [
+              1338.0,
+              891.0
+            ],
+            [
+              1338.0,
+              985.5
+            ],
+            [
+              570.0,
+              985.5
+            ]
+          ],
+          "bbox": [
+            570.0,
+            891.0,
+            1338.0,
+            985.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/Text/11",
+          "block_type": "Text",
+          "html": "",
+          "polygon": [
+            [
+              570.0,
+              996.75
+            ],
+            [
+              960.0,
+              996.75
+            ],
+            [
+              960.0,
+              1023.75
+            ],
+            [
+              570.0,
+              1023.75
+            ]
+          ],
+          "bbox": [
+            570.0,
+            996.75,
+            960.0,
+            1023.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/10/PageFooter/12",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              706.5,
+              1063.125
+            ],
+            [
+              796.5,
+              1063.125
+            ],
+            [
+              796.5,
+              1085.625
+            ],
+            [
+              706.5,
+              1085.625
+            ]
+          ],
+          "bbox": [
+            706.5,
+            1063.125,
+            796.5,
+            1085.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/10/SectionHeader/7"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/11/Page/12",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/11/PageHeader/0'></content-ref><content-ref src='/page/11/SectionHeader/1'></content-ref><content-ref src='/page/11/ListGroup/2'></content-ref><content-ref src='/page/11/Text/3'></content-ref><content-ref src='/page/11/SectionHeader/4'></content-ref><content-ref src='/page/11/ListGroup/5'></content-ref><content-ref src='/page/11/SectionHeader/6'></content-ref><content-ref src='/page/11/ListGroup/7'></content-ref><content-ref src='/page/11/Text/8'></content-ref><content-ref src='/page/11/Text/9'></content-ref><content-ref src='/page/11/Text/10'></content-ref><content-ref src='/page/11/SectionHeader/11'></content-ref><content-ref src='/page/11/PageFooter/12'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/11/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1168.5,
+              48.0
+            ],
+            [
+              1288.5,
+              48.0
+            ],
+            [
+              1288.5,
+              71.99999999999999
+            ],
+            [
+              1168.5,
+              71.99999999999999
+            ]
+          ],
+          "bbox": [
+            1168.5,
+            48.0,
+            1288.5,
+            71.99999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/10/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Wiener Schnitzel - Breaded veal scallops - Řízky</h2>",
+          "polygon": [
+            [
+              402.0,
+              139.0
+            ],
+            [
+              1063.5,
+              139.0
+            ],
+            [
+              1063.5,
+              177.0
+            ],
+            [
+              402.0,
+              177.0
+            ]
+          ],
+          "bbox": [
+            402.0,
+            139.0,
+            1063.5,
+            177.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 6 veal scallops – leg of veal or veal top round, thin sliced</li>\n<li>• 1/2 cup flour</li>\n<li>• 2 eggs</li>\n<li>• 1 cup bread crumbs</li>\n<li>• 1 cup vegetable oil</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              121.5,
+              196.0
+            ],
+            [
+              514.5,
+              196.0
+            ],
+            [
+              514.5,
+              356.0
+            ],
+            [
+              121.5,
+              356.0
+            ]
+          ],
+          "bbox": [
+            121.5,
+            196.0,
+            514.5,
+            356.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/11/Text/3",
+          "block_type": "Text",
+          "html": "<p>Pound the scallops. Make a few short cuts on the edges to prevent curling, salt them on both sides. Dredge them in flour, shake off excess, dip in beaten eggs and coat with bread crumbs. Fry in hot oil in a covered pan about 4 minutes or until golden brown; turn and fry the other side uncovered. Drain on paper towel. Serve with potatoes, potato salad, mashed potatoes, green salad.</p>",
+          "polygon": [
+            [
+              549.0,
+              191.0
+            ],
+            [
+              1345.5,
+              191.0
+            ],
+            [
+              1345.5,
+              356.0
+            ],
+            [
+              549.0,
+              356.0
+            ]
+          ],
+          "bbox": [
+            549.0,
+            191.0,
+            1345.5,
+            356.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/SectionHeader/4",
+          "block_type": "SectionHeader",
+          "html": "<h3>Serves 6 – Preparation time: 45 minutes</h3>",
+          "polygon": [
+            [
+              549.0,
+              370.0
+            ],
+            [
+              940.5,
+              370.0
+            ],
+            [
+              940.5,
+              394.0
+            ],
+            [
+              549.0,
+              394.0
+            ]
+          ],
+          "bbox": [
+            549.0,
+            370.0,
+            940.5,
+            394.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/1",
+            "3": "/page/11/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/ListGroup/5",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>⇒ This is the correct way to prepare Wiener Schnitzels, a very popular meal in Bohemia.<br/>Thinly sliced boneless pork chops, beef tenderloin slices, boned and skinned chicken breast or cutlets may be prepared in the same manner.</li>\n</ul>",
+          "polygon": [
+            [
+              549.0,
+              402.0
+            ],
+            [
+              1294.5,
+              402.0
+            ],
+            [
+              1294.5,
+              495.99999999999994
+            ],
+            [
+              549.0,
+              495.99999999999994
+            ]
+          ],
+          "bbox": [
+            549.0,
+            402.0,
+            1294.5,
+            495.99999999999994
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/1",
+            "3": "/page/11/SectionHeader/4"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/11/SectionHeader/6",
+          "block_type": "SectionHeader",
+          "html": "<h2>Veal goulash - Guláš telecí</h2>",
+          "polygon": [
+            [
+              549.0,
+              506.0
+            ],
+            [
+              912.0,
+              506.0
+            ],
+            [
+              912.0,
+              539.0000000000001
+            ],
+            [
+              549.0,
+              539.0000000000001
+            ]
+          ],
+          "bbox": [
+            549.0,
+            506.0,
+            912.0,
+            539.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/ListGroup/7",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3 lbs. boneless veal shoulder, cut in 1\" cubes</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• 2 tablespoons paprika</li>\n<li>• dash of hot curry powder</li>\n<li>• 2 cups chicken broth</li>\n<li>• juice of 1 lemon</li>\n<li>• 4 tablespoons flour</li>\n<li>• 1 pint heavy cream</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              121.5,
+              559.0
+            ],
+            [
+              514.5,
+              559.0
+            ],
+            [
+              514.5,
+              809.0
+            ],
+            [
+              121.5,
+              809.0
+            ]
+          ],
+          "bbox": [
+            121.5,
+            559.0,
+            514.5,
+            809.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/11/Text/8",
+          "block_type": "Text",
+          "html": "<p>Melt butter in a heavy 3 quart saucepan. Add onion and cook over medium heat until translucent. Add paprika, curry, veal, 2-3 tablespoons chicken broth.</p>",
+          "polygon": [
+            [
+              549.0,
+              555.0000000000001
+            ],
+            [
+              1324.5,
+              555.0000000000001
+            ],
+            [
+              1324.5,
+              634.0
+            ],
+            [
+              549.0,
+              634.0
+            ]
+          ],
+          "bbox": [
+            549.0,
+            555.0000000000001,
+            1324.5,
+            634.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/Text/9",
+          "block_type": "Text",
+          "html": "<p>Simmer over low heat about 1 hr. adding gradually chicken broth, if needed. The meat must be simmering in just enough liquid so that it does not stick to the pot. You may not use up all of the chicken broth. When the veal is tender, not overcooked, add lemon juice. Mix well flour and cream and blend the mixture into the stew. Bring to boil, simmer 5 minutes, stirring often. Season to taste with salt and pepper.</p>",
+          "polygon": [
+            [
+              549.0,
+              635.0
+            ],
+            [
+              1344.0,
+              635.0
+            ],
+            [
+              1344.0,
+              823.0
+            ],
+            [
+              549.0,
+              823.0
+            ]
+          ],
+          "bbox": [
+            549.0,
+            635.0,
+            1344.0,
+            823.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/Text/10",
+          "block_type": "Text",
+          "html": "<p>Serve with dumplings, noodles, salad.</p>",
+          "polygon": [
+            [
+              549.0,
+              823.0
+            ],
+            [
+              981.0,
+              823.0
+            ],
+            [
+              981.0,
+              850.9999999999999
+            ],
+            [
+              549.0,
+              850.9999999999999
+            ]
+          ],
+          "bbox": [
+            549.0,
+            823.0,
+            981.0,
+            850.9999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/SectionHeader/11",
+          "block_type": "SectionHeader",
+          "html": "<h3>Serves 6 – Preparation time: 1 hour 30 minutes</h3>",
+          "polygon": [
+            [
+              549.0,
+              865.0
+            ],
+            [
+              1003.5,
+              865.0
+            ],
+            [
+              1003.5,
+              890.0000000000001
+            ],
+            [
+              549.0,
+              890.0000000000001
+            ]
+          ],
+          "bbox": [
+            549.0,
+            865.0,
+            1003.5,
+            890.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/11/SectionHeader/11"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/11/PageFooter/12",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              679.5,
+              928.0000000000001
+            ],
+            [
+              769.5,
+              928.0000000000001
+            ],
+            [
+              769.5,
+              947.0
+            ],
+            [
+              679.5,
+              947.0
+            ]
+          ],
+          "bbox": [
+            679.5,
+            928.0000000000001,
+            769.5,
+            947.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/11/SectionHeader/11"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/11/SectionHeader/6",
+        "3": "/page/11/SectionHeader/11"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/12/Page/17",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/12/PageHeader/0'></content-ref><content-ref src='/page/12/ListGroup/1'></content-ref><content-ref src='/page/12/SectionHeader/2'></content-ref><content-ref src='/page/12/Text/3'></content-ref><content-ref src='/page/12/Text/4'></content-ref><content-ref src='/page/12/Text/5'></content-ref><content-ref src='/page/12/Text/6'></content-ref><content-ref src='/page/12/Text/7'></content-ref><content-ref src='/page/12/Text/8'></content-ref><content-ref src='/page/12/SectionHeader/9'></content-ref><content-ref src='/page/12/ListGroup/10'></content-ref><content-ref src='/page/12/Text/11'></content-ref><content-ref src='/page/12/Text/12'></content-ref><content-ref src='/page/12/Text/13'></content-ref><content-ref src='/page/12/Text/14'></content-ref><content-ref src='/page/12/Text/15'></content-ref><content-ref src='/page/12/Text/16'></content-ref><content-ref src='/page/12/PageFooter/17'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/12/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              160.5,
+              57.00000000000001
+            ],
+            [
+              273.0,
+              57.00000000000001
+            ],
+            [
+              273.0,
+              79.0
+            ],
+            [
+              160.5,
+              79.0
+            ]
+          ],
+          "bbox": [
+            160.5,
+            57.00000000000001,
+            273.0,
+            79.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/11/SectionHeader/11"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/ListGroup/1",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3-4 lbs. center cut pork roast – (ask the butcher to saw across the rib bones of the roast, at the base of the backbone – separating the ribs from the backbone. It will ease the carving).</li>\n<li>• 2 cups chicken stock</li>\n<li>• 2 teaspoons caraway seeds</li>\n<li>• 3 cloves garlic, pressed</li>\n<li>• 2 bay leaves</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              117.0,
+              189.0
+            ],
+            [
+              519.0,
+              189.0
+            ],
+            [
+              519.0,
+              419.99999999999994
+            ],
+            [
+              117.0,
+              419.99999999999994
+            ]
+          ],
+          "bbox": [
+            117.0,
+            189.0,
+            519.0,
+            419.99999999999994
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/11/SectionHeader/11"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/12/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<h3>Pork roast - Vepřová pečeně</h3>",
+          "polygon": [
+            [
+              534.0,
+              151.0
+            ],
+            [
+              924.0,
+              151.0
+            ],
+            [
+              924.0,
+              185.0
+            ],
+            [
+              534.0,
+              185.0
+            ]
+          ],
+          "bbox": [
+            534.0,
+            151.0,
+            924.0,
+            185.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/3",
+          "block_type": "Text",
+          "html": "<p>In a saucepan heat the chicken stock, caraway seeds, bay leaves and garlic.</p>",
+          "polygon": [
+            [
+              546.0,
+              189.0
+            ],
+            [
+              1344.0,
+              189.0
+            ],
+            [
+              1344.0,
+              245.0
+            ],
+            [
+              546.0,
+              245.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            189.0,
+            1344.0,
+            245.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/4",
+          "block_type": "Text",
+          "html": "<p>Rinse and pat dry the meat and rub it with salt and pepper. Place it, skin down, on a rack in an open roasting pan. Pour half of the liquid from the saucepan over the meat and roast at 350F for 1 hour, basting frequently with the juices from the pan and the liquid from the saucepan. Turn the meat and continue roasting for 1-1/2 hours, until the top is golden brown and the meat tender. Allow 35 minutes per pound.</p>",
+          "polygon": [
+            [
+              546.0,
+              243.99999999999997
+            ],
+            [
+              1342.5,
+              243.99999999999997
+            ],
+            [
+              1342.5,
+              406.00000000000006
+            ],
+            [
+              546.0,
+              406.00000000000006
+            ]
+          ],
+          "bbox": [
+            546.0,
+            243.99999999999997,
+            1342.5,
+            406.00000000000006
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/5",
+          "block_type": "Text",
+          "html": "<p>When done let it rest 5 minutes, carve.</p>",
+          "polygon": [
+            [
+              546.0,
+              405.0
+            ],
+            [
+              994.5,
+              405.0
+            ],
+            [
+              994.5,
+              432.0
+            ],
+            [
+              546.0,
+              432.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            405.0,
+            994.5,
+            432.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/6",
+          "block_type": "Text",
+          "html": "<p>Skim fat from the pan drippings, strain some over the roast, serve the rest in a saucedish.</p>",
+          "polygon": [
+            [
+              546.0,
+              432.0
+            ],
+            [
+              1318.5,
+              432.0
+            ],
+            [
+              1318.5,
+              483.00000000000006
+            ],
+            [
+              546.0,
+              483.00000000000006
+            ]
+          ],
+          "bbox": [
+            546.0,
+            432.0,
+            1318.5,
+            483.00000000000006
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/7",
+          "block_type": "Text",
+          "html": "<p>Serve with dumplings, potato dumplings, boiled potatoes and sauerkraut.</p>",
+          "polygon": [
+            [
+              546.0,
+              483.00000000000006
+            ],
+            [
+              1338.0,
+              483.00000000000006
+            ],
+            [
+              1338.0,
+              511.0
+            ],
+            [
+              546.0,
+              511.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            483.00000000000006,
+            1338.0,
+            511.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/8",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 3 hours</b></p>",
+          "polygon": [
+            [
+              546.0,
+              517.0
+            ],
+            [
+              900.0,
+              517.0
+            ],
+            [
+              900.0,
+              540.0
+            ],
+            [
+              546.0,
+              540.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            517.0,
+            900.0,
+            540.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/SectionHeader/9",
+          "block_type": "SectionHeader",
+          "html": "<h3>Fresh ham in cream sauce - Vepřová kýta na smetaně</h3>",
+          "polygon": [
+            [
+              358.5,
+              561.0000000000001
+            ],
+            [
+              1095.0,
+              561.0000000000001
+            ],
+            [
+              1095.0,
+              593.0
+            ],
+            [
+              358.5,
+              593.0
+            ]
+          ],
+          "bbox": [
+            358.5,
+            561.0000000000001,
+            1095.0,
+            593.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/ListGroup/10",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3-4 lbs. fresh ham, boned and skinned</li>\n<li>• 4 slices bacon</li>\n<li>• 6 tablespoons butter</li>\n<li>• 2 carrots</li>\n<li>• 1 celery root</li>\n<li>• 1 parsnip</li>\n<li>• 3 bay leaves, thyme, whole allspice, whole black pepper</li>\n<li>• 1 lemon</li>\n<li>• 1-1/2 cups sour cream</li>\n<li>• 2 tablespoons flour</li>\n<li>• 1-1/2 cups chicken stock or water</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              120.0,
+              601.0
+            ],
+            [
+              513.0,
+              601.0
+            ],
+            [
+              513.0,
+              891.0
+            ],
+            [
+              120.0,
+              891.0
+            ]
+          ],
+          "bbox": [
+            120.0,
+            601.0,
+            513.0,
+            891.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/12/Text/11",
+          "block_type": "Text",
+          "html": "<p>Dice the carrots, celery root and parsnip. Cut the bacon into short strips.</p>",
+          "polygon": [
+            [
+              546.0,
+              599.0
+            ],
+            [
+              1312.5,
+              599.0
+            ],
+            [
+              1312.5,
+              651.0
+            ],
+            [
+              546.0,
+              651.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            599.0,
+            1312.5,
+            651.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/12",
+          "block_type": "Text",
+          "html": "<p>Skim off fat from the meat, rinse and pat it dry, salt it and lard with bacon strips.</p>",
+          "polygon": [
+            [
+              546.0,
+              652.0
+            ],
+            [
+              1333.5,
+              652.0
+            ],
+            [
+              1333.5,
+              705.0
+            ],
+            [
+              546.0,
+              705.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            652.0,
+            1333.5,
+            705.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/13",
+          "block_type": "Text",
+          "html": "<p>In a large stewpot combine melted butter, vegetables, spices, lemon rind, grated or chopped.</p>",
+          "polygon": [
+            [
+              546.0,
+              705.0
+            ],
+            [
+              1336.5,
+              705.0
+            ],
+            [
+              1336.5,
+              758.0
+            ],
+            [
+              546.0,
+              758.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            705.0,
+            1336.5,
+            758.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/14",
+          "block_type": "Text",
+          "html": "<p>Set over medium heat. Add the meat and brown it lightly on all sides. Lower the heat, cover tightly and simmer over low heat until tender, about 2 hours, gradually adding the chicken stock or water.</p>",
+          "polygon": [
+            [
+              546.0,
+              758.0
+            ],
+            [
+              1335.0,
+              758.0
+            ],
+            [
+              1335.0,
+              842.0
+            ],
+            [
+              546.0,
+              842.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            758.0,
+            1335.0,
+            842.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/15",
+          "block_type": "Text",
+          "html": "<p>Remove meat from pot, keep it warm.</p>",
+          "polygon": [
+            [
+              546.0,
+              838.0
+            ],
+            [
+              981.0,
+              838.0
+            ],
+            [
+              981.0,
+              866.0
+            ],
+            [
+              546.0,
+              866.0
+            ]
+          ],
+          "bbox": [
+            546.0,
+            838.0,
+            981.0,
+            866.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/Text/16",
+          "block_type": "Text",
+          "html": "<p>Strain the gravy into a saucepan. Combine flour and sour cream and</p>",
+          "polygon": [
+            [
+              546.0,
+              864.0
+            ],
+            [
+              1336.5,
+              864.0
+            ],
+            [
+              1336.5,
+              895.0000000000001
+            ],
+            [
+              546.0,
+              895.0000000000001
+            ]
+          ],
+          "bbox": [
+            546.0,
+            864.0,
+            1336.5,
+            895.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/12/PageFooter/17",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              678.0,
+              927.0000000000001
+            ],
+            [
+              766.5,
+              927.0000000000001
+            ],
+            [
+              766.5,
+              946.0
+            ],
+            [
+              678.0,
+              946.0
+            ]
+          ],
+          "bbox": [
+            678.0,
+            927.0000000000001,
+            766.5,
+            946.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/11/SectionHeader/6",
+            "3": "/page/12/SectionHeader/9"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/11/SectionHeader/6",
+        "3": "/page/12/SectionHeader/9"
+      },
+      "images": null
+    }
+  ],
+  "block_type": "Document"
+}

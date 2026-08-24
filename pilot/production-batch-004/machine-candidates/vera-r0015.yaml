@@ -1,0 +1,323 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0015
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 14
+  printed_pages:
+  - '13'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0015-title
+  pdf_page: 14
+  printed_page: '13'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 651
+    - 544
+  - - 2310
+    - 544
+  - - 2310
+    - 656
+  - - 651
+    - 656
+  candidate_block_ids:
+  - /page/13/SectionHeader/3
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-title.png
+  region_image_pixel_sha256: 2c5f4460eeabea41652cb0baa5313f641f22d207b5ae038f81ea3dabd3f9658c
+- region_id: vera-r0015-ingredients
+  pdf_page: 14
+  printed_page: '13'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 237
+    - 644
+  - - 855
+    - 644
+  - - 855
+    - 1044
+  - - 237
+    - 1044
+  candidate_block_ids:
+  - /page/13/ListGroup/4
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-ingredients.png
+  region_image_pixel_sha256: be7f2ec8ad4630f56793daeb5236b7cdb66fa28c5f94ee1d24b4d8d686f23f1f
+- region_id: vera-r0015-step-1
+  pdf_page: 14
+  printed_page: '13'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 648
+  - - 2715
+    - 648
+  - - 2715
+    - 900
+  - - 1101
+    - 900
+  candidate_block_ids:
+  - /page/13/Text/5
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-step-1.png
+  region_image_pixel_sha256: 7e089b82a7e9d20d49a8aaf4eb3dbbf2148af6679a6598638cb5309e27af590d
+- region_id: vera-r0015-step-2
+  pdf_page: 14
+  printed_page: '13'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 862
+  - - 2721
+    - 862
+  - - 2721
+    - 1004
+  - - 1101
+    - 1004
+  candidate_block_ids:
+  - /page/13/Text/6
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-step-2.png
+  region_image_pixel_sha256: c39c39d6a047497cc5fd88788f086566e64b3fa9c96db63b30b254f40667cff5
+- region_id: vera-r0015-step-3
+  pdf_page: 14
+  printed_page: '13'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 968
+  - - 2712
+    - 968
+  - - 2712
+    - 1168
+  - - 1101
+    - 1168
+  candidate_block_ids:
+  - /page/13/Text/7
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-step-3.png
+  region_image_pixel_sha256: 7339e73fa6b763c95b2cdef9f3eabf171796a7244e2b4637e500c6d78de4c815
+- region_id: vera-r0015-step-4
+  pdf_page: 14
+  printed_page: '13'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1132
+  - - 2712
+    - 1132
+  - - 2712
+    - 1322
+  - - 1101
+    - 1322
+  candidate_block_ids:
+  - /page/13/Text/8
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-step-4.png
+  region_image_pixel_sha256: 2bcb9b93b2e9aaad765aec98e6d272c810b5880e49ef13620a1f6fefc1c60b1f
+- region_id: vera-r0015-step-5
+  pdf_page: 14
+  printed_page: '13'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1288
+  - - 2565
+    - 1288
+  - - 2565
+    - 1434
+  - - 1101
+    - 1434
+  candidate_block_ids:
+  - /page/13/Text/9
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-step-5.png
+  region_image_pixel_sha256: b52391bb86aaa33ea89813598ad1155839bbee65b28be3ecf705885f9b568c55
+- region_id: vera-r0015-yield
+  pdf_page: 14
+  printed_page: '13'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 1426
+  - - 1911
+    - 1426
+  - - 1911
+    - 1512
+  - - 1101
+    - 1512
+  candidate_block_ids:
+  - /page/13/Text/10
+  region_image: evidence/production-batch-004/regions/vera-r0015/p14-yield.png
+  region_image_pixel_sha256: 8f8ac8619d09725d3ca5623443bad1db02b9398810d8514ae57020f1cfc6a84e
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Pork chops with caraway seeds - Vepřová žebírka na kmíně
+    language: mul
+    source_region_ids:
+    - vera-r0015-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Pork chops with caraway seeds
+    language: en
+    source_region_ids:
+    - vera-r0015-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vepřová žebírka na kmíně
+    language: cs
+    source_region_ids:
+    - vera-r0015-title
+    title_role: parallel
+  source_order: 15
+  slug_candidate: pork-chops-with-caraway-seeds
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0015-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 pork chops
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 small onion
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 2 teaspoons caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0015-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pound the pork chops lightly-they should not be more than 1/2" thick. Make a few
+        short cuts on the edges to prevent curling, salt them on both sides and dust with flour on one
+        side. Brown chops in hot oil, floured side first.
+      language: en
+      source_region_ids:
+      - vera-r0015-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a large skillet combine the butter and finely chopped onion and set over medium
+        heat.
+      language: en
+      source_region_ids:
+      - vera-r0015-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: When the onion becomes translucent, add caraway seeds and some of the chicken stock.
+        Add the pork chops and simmer about 30 minutes or until they are tender.
+      language: en
+      source_region_ids:
+      - vera-r0015-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Remove the chops, bring the liquid to boil, blend in flour and chicken stock and
+        simmer until the sauce thickens. The sauce should be medium thick. Strain.
+      language: en
+      source_region_ids:
+      - vera-r0015-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Return pork chops in the sauce, simmer until heated through. Serve with boiled potatoes,
+        rice, salad.
+      language: en
+      source_region_ids:
+      - vera-r0015-step-5
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T22:48:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T22:48:00Z'
+  checks: []
+  open_issues: []

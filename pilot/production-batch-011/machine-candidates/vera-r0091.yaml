@@ -1,0 +1,226 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0091
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 60
+  printed_pages:
+  - '59'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0091-title
+  pdf_page: 60
+  printed_page: '59'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1149
+    - 1066
+  - - 1848
+    - 1066
+  - - 1848
+    - 1166
+  - - 1149
+    - 1166
+  candidate_block_ids:
+  - /page/59/SectionHeader/9
+  region_image: evidence/production-batch-011/regions/vera-r0091/p60-title.png
+  region_image_pixel_sha256: 357c62a47aa50283ac3924833c238e31f6ea00ad2d49bbaad98b7b14f4c4b28f
+- region_id: vera-r0091-listgroup-1
+  pdf_page: 60
+  printed_page: '59'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 267
+    - 1166
+  - - 1107
+    - 1166
+  - - 1107
+    - 1814
+  - - 267
+    - 1814
+  candidate_block_ids:
+  - /page/59/ListGroup/3
+  region_image: evidence/production-batch-011/regions/vera-r0091/p60-listgroup-1.png
+  region_image_pixel_sha256: df3450ffd635652513f67f16d4548e9ec0998539bb35cdea57d41a0a194687f4
+- region_id: vera-r0091-text-2
+  pdf_page: 60
+  printed_page: '59'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1166
+  - - 2727
+    - 1166
+  - - 2727
+    - 1700
+  - - 1122
+    - 1700
+  candidate_block_ids:
+  - /page/59/Text/10
+  region_image: evidence/production-batch-011/regions/vera-r0091/p60-text-2.png
+  region_image_pixel_sha256: 976c3e3fa054a3a5b08ee2b9afe73420f33c506540d96e6beac0d09d0b0d335a
+- region_id: vera-r0091-text-3
+  pdf_page: 60
+  printed_page: '59'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1128
+    - 1690
+  - - 1938
+    - 1690
+  - - 1938
+    - 1778
+  - - 1128
+    - 1778
+  candidate_block_ids:
+  - /page/59/Text/11
+  region_image: evidence/production-batch-011/regions/vera-r0091/p60-text-3.png
+  region_image_pixel_sha256: 3867e37308cedfa1d757fd10af91d44ce82f7e8170aa9a4a9dd7b3224bd4374f
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Cherry cake · Bublanina
+    language: mul
+    source_region_ids:
+    - vera-r0091-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Cherry cake
+    language: en
+    source_region_ids:
+    - vera-r0091-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Bublanina
+    language: cs
+    source_region_ids:
+    - vera-r0091-title
+    title_role: parallel
+  source_order: 91
+  slug_candidate: cherrycake
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 8 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0091-text-3
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2·1/2 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 10 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 2 eggs, separated
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 2 teaspoons vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: 2·1/2 teaspoons baking powder
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-8
+      text_verbatim: 2/3 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-9
+      text_verbatim: 1 lb. cherries (preferably Morello cherries)
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-10
+      text_verbatim: butter or margarine and flour for baking dish
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+    - segment_id: ingredient-11
+      text_verbatim: sugar for dusting
+      language: en
+      source_region_ids:
+      - vera-r0091-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Beat two egg whites and half of the sugar until stiff, set aside. In a bowl combine
+        the butter, the egg yolks and the remaining sugar and beat until creamy and fluffy. Add lemon
+        rind, vanilla sugar and milk, mix well. Fold in the beaten egg whites by spoonfuls, mixing gently
+        after each addition. Fold in the flour mixed with baking powder. Pour the batter into a buttered
+        and floured baking dish – fill no more than half full. Spread the cherries evenly over the batter
+        and bake at 375F for 30 minutes, or until golden on top. Remove from oven, cool, cut into squares,
+        dust with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0091-text-2
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

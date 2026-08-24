@@ -1,0 +1,301 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0081
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 53
+  printed_pages:
+  - '52'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0081-title
+  pdf_page: 53
+  printed_page: '52'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1035
+    - 384
+  - - 1941
+    - 384
+  - - 1941
+    - 499
+  - - 1035
+    - 499
+  candidate_block_ids:
+  - /page/52/SectionHeader/0
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-title.png
+  region_image_pixel_sha256: 65055866e95ddf68132792a38e4d4b2b5056e39659f275848a7bf65e4c671eeb
+- region_id: vera-r0081-listgroup-1
+  pdf_page: 53
+  printed_page: '52'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 240
+    - 468
+  - - 960
+    - 468
+  - - 960
+    - 1010
+  - - 240
+    - 1010
+  candidate_block_ids:
+  - /page/52/ListGroup/1
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-listgroup-1.png
+  region_image_pixel_sha256: 5cdebcb00ce76e6f15c365b89266734a69290ac307b4b4bfc0dd407ada76a160
+- region_id: vera-r0081-sectionheader-2
+  pdf_page: 53
+  printed_page: '52'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1107
+    - 477
+  - - 1410
+    - 477
+  - - 1410
+    - 573
+  - - 1107
+    - 573
+  candidate_block_ids:
+  - /page/52/SectionHeader/2
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-sectionheader-2.png
+  region_image_pixel_sha256: 4130640d97701b5522bc71c91986c0e05d9d0fed9bd0521fd53fd38e85d3c683
+- region_id: vera-r0081-text-3
+  pdf_page: 53
+  printed_page: '52'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1107
+    - 537
+  - - 2724
+    - 537
+  - - 2724
+    - 762
+  - - 1107
+    - 762
+  candidate_block_ids:
+  - /page/52/Text/3
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-text-3.png
+  region_image_pixel_sha256: bd6f8265e1188ce177d07e8b13815ce9120c17a36674610a87a295d105c2c99e
+- region_id: vera-r0081-text-4
+  pdf_page: 53
+  printed_page: '52'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1107
+    - 715
+  - - 2724
+    - 715
+  - - 2724
+    - 990
+  - - 1107
+    - 990
+  candidate_block_ids:
+  - /page/52/Text/4
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-text-4.png
+  region_image_pixel_sha256: ea94f8ae594d92d952f52b1cc7a46c191e2723067330309a74f4f40d0b37f1e6
+- region_id: vera-r0081-text-5
+  pdf_page: 53
+  printed_page: '52'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1107
+    - 947
+  - - 2721
+    - 947
+  - - 2721
+    - 1282
+  - - 1107
+    - 1282
+  candidate_block_ids:
+  - /page/52/Text/5
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-text-5.png
+  region_image_pixel_sha256: 9bb2c94e42ac8fde05c287672b7720fcf664e5cb38e495b2dcc334ac6f6f7e39
+- region_id: vera-r0081-text-6
+  pdf_page: 53
+  printed_page: '52'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1116
+    - 1268
+  - - 2028
+    - 1268
+  - - 2028
+    - 1363
+  - - 1116
+    - 1363
+  candidate_block_ids:
+  - /page/52/Text/6
+  region_image: evidence/production-batch-010/regions/vera-r0081/p53-text-6.png
+  region_image_pixel_sha256: 897a888906a25f04238faa8985e0b437ee0093e71f65aeeb7cf88266d29b8b35
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Poppy seed loaf · Makový závin
+    language: mul
+    source_region_ids:
+    - vera-r0081-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Poppy seed loaf
+    language: en
+    source_region_ids:
+    - vera-r0081-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Makový závin
+    language: cs
+    source_region_ids:
+    - vera-r0081-title
+    title_role: parallel
+  source_order: 81
+  slug_candidate: poppyseedloaf
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '1 loaf - Preparation time: 2 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0081-text-6
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 lb. flour
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 8 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 2 whole eggs
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-8
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-9
+      text_verbatim: 1 egg yolk to brush the loaf with
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+    - segment_id: ingredient-10
+      text_verbatim: grease for baking sheet
+      language: en
+      source_region_ids:
+      - vera-r0081-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Dissolve the yeast by mixing it with a teaspoon of sugar. Add three tablespoons of
+        flour and 1/4 cup lukewarm milk; knead the leavening into a small ball. Let it rise 20 minutes,
+        it should double in size.
+      language: en
+      source_region_ids:
+      - vera-r0081-text-3
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Place the remaining flour in a bowl, add eggs, lemon rind, remaining sugar, salt
+        and milk, mix well. Finally add melted or softened butter. Knead the dough until it becames smooth
+        and dry and no longer sticks to the bowl. Let it rise 30 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0081-text-4
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Turn the dough onto a floured pastry board and roll it out into 1/8" thick rectangle.
+        Cover evenly with poppy seed filling and roll it into a long narrow loaf (16-17" long). Place
+        loaf on a greased baking sheet and let rise 10 minutes. Brush with lightly beaten egg yolk and
+        bake 20-25 minutes in 35OF oven. When cooled, cut in 3/4" slices and serve.
+      language: en
+      source_region_ids:
+      - vera-r0081-text-5
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0077
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

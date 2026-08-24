@@ -1,0 +1,43 @@
+schema_version: "1.1"
+batch_id: production-batch-001
+frozen_on: "2026-08-23"
+purpose: "First end-to-end extraction and source-audit pilot"
+source:
+  path: "source/Culinary Adventures - Vera Gaeta.pdf"
+  sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+  page_count: 75
+marker:
+  package: marker-pdf
+  version: "2.0.0"
+  mode: balanced
+  force_ocr: true
+  remote_llm: false
+pdf_pages: [4, 5, 24, 25, 52]
+marker_page_indexes: [3, 4, 23, 24, 51]
+recipes:
+  - recipe_key: roast-beef-tenderloin-sour-cream
+    title: "Roast beef tenderloin in sour cream sauce"
+    pdf_pages: [4]
+    risks: [mixed_fractions, three_column_flow, alternative_method]
+  - recipe_key: beef-tenderloin-slices
+    title: "Beef tenderloin slices"
+    pdf_pages: [5]
+    risks: [multi_recipe_page, ingredient_ownership, mixed_fractions]
+  - recipe_key: beef-croquettes
+    title: "Beef croquettes"
+    pdf_pages: [5]
+    risks: [multi_recipe_page, ingredient_ownership, repeated_yield_line]
+  - recipe_key: roast-goose
+    title: "Roast goose"
+    pdf_pages: [24, 25]
+    risks: [page_continuation, footer_handling, temperatures]
+  - recipe_key: vanilla-sauce
+    title: "Vanilla sauce"
+    pdf_pages: [52]
+    risks: [three_recipe_page, ingredient_ownership, Czech_diacritics]
+promotion_boundary:
+  allowed_ai_statuses: [source_checked, needs_attention]
+  human_verification_separate: true
+  automatic_promotion_allowed: false
+  audit_performed_by: ai
+  audit_completed_at: "2026-08-23T20:32:18Z"

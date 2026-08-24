@@ -1,0 +1,280 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0019
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 16
+  printed_pages:
+  - '15'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0019-title
+  pdf_page: 16
+  printed_page: '15'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 789
+    - 1040
+  - - 2139
+    - 1040
+  - - 2139
+    - 1152
+  - - 789
+    - 1152
+  candidate_block_ids:
+  - /page/15/SectionHeader/8
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-title.png
+  region_image_pixel_sha256: 29f10b68c6cc7ef710249045e2d717251154b190c67a365b27984af75a38631d
+- region_id: vera-r0019-ingredients
+  pdf_page: 16
+  printed_page: '15'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 222
+    - 1146
+  - - 1002
+    - 1146
+  - - 1002
+    - 1796
+  - - 222
+    - 1796
+  candidate_block_ids:
+  - /page/15/ListGroup/9
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-ingredients.png
+  region_image_pixel_sha256: 97134f9512caf3c7f61bbd7c10df6cc562fe5a63d800ed9028409f50a7e19b4e
+- region_id: vera-r0019-step-1
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1144
+  - - 2691
+    - 1144
+  - - 2691
+    - 1466
+  - - 1080
+    - 1466
+  candidate_block_ids:
+  - /page/15/Text/10
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-step-1.png
+  region_image_pixel_sha256: e70b50930d4d1c7cdb263486d7cf47347f5bb8b4b56b2e47ccf12b4b2241dcaf
+- region_id: vera-r0019-step-2
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1424
+  - - 2688
+    - 1424
+  - - 2688
+    - 1624
+  - - 1080
+    - 1624
+  candidate_block_ids:
+  - /page/15/Text/11
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-step-2.png
+  region_image_pixel_sha256: bba48a92e35d79ab1e196b96842c77940b0abd54bd71e686b7738185201e56aa
+- region_id: vera-r0019-step-3
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 1590
+  - - 2187
+    - 1590
+  - - 2187
+    - 1686
+  - - 1074
+    - 1686
+  candidate_block_ids:
+  - /page/15/Text/12
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-step-3.png
+  region_image_pixel_sha256: 2b7e685537f4bd7b73964c23f7810119ccd27324881e8a33ebcea0f10fa456ba
+- region_id: vera-r0019-yield
+  pdf_page: 16
+  printed_page: '15'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1706
+  - - 1812
+    - 1706
+  - - 1812
+    - 1794
+  - - 1068
+    - 1794
+  candidate_block_ids:
+  - /page/15/Text/13
+  region_image: evidence/production-batch-005/regions/vera-r0019/p16-yield.png
+  region_image_pixel_sha256: 8bfe2a81160d8161073afa29066434c990c3193e2a2a94dc0c66a1884a0e8e0f
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Goulash with sauerkraut · Guláš s kyselým zelím
+    language: mul
+    source_region_ids:
+    - vera-r0019-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Goulash with sauerkraut
+    language: en
+    source_region_ids:
+    - vera-r0019-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Guláš s kyselým zelím
+    language: cs
+    source_region_ids:
+    - vera-r0019-title
+    title_role: parallel
+  source_order: 19
+  slug_candidate: goulash-with-sauerkraut
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0019-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 lbs. boned pork shoulder, cut in 1·1/2" cubes
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 4 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1 large onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 tablespoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 teaspoon caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 2 tablespoons vinegar
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 lb. sauerkraut
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1 cup heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 1 large raw potato, peeled, grated or finely sliced,
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: salt and pepper,
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: water
+      language: en
+      source_region_ids:
+      - vera-r0019-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Sauté onion in oil until translucent. Sprinkle paprika evenly over onion, add pork,
+        vinegar, caraway seeds, salt and pepper, 1/4 cup water. Cover and simmer until meat is almost
+        tender, about 1 hr. 15 minutes. Occasionally add 1·2 tablespoons water, just enough to keep moisture
+        in the stew. Stir and turn pork after each addition.
+      language: en
+      source_region_ids:
+      - vera-r0019-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Stir sauerkraut into the goulash, blend in cream and potato. Simmer 10·15 minutes,
+        or until meat is tender. Add salt, pepper and more paprika if desired.
+      language: en
+      source_region_ids:
+      - vera-r0019-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Serve with crouton dumplings, boiled potatoes.
+      language: en
+      source_region_ids:
+      - vera-r0019-step-3
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:02:08Z'
+  checks: []
+  open_issues: []

@@ -1,0 +1,251 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0088
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 59
+  printed_pages:
+  - '58'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0088-title
+  pdf_page: 59
+  printed_page: '58'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 780
+    - 411
+  - - 2172
+    - 411
+  - - 2172
+    - 528
+  - - 780
+    - 528
+  candidate_block_ids:
+  - /page/58/SectionHeader/1
+  region_image: evidence/production-batch-011/regions/vera-r0088/p59-title.png
+  region_image_pixel_sha256: e96dc02c05b1e621f50596705d1c144d07cf555cd28f1f5f713e2bc2d75660de
+- region_id: vera-r0088-listgroup-1
+  pdf_page: 59
+  printed_page: '58'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 225
+    - 524
+  - - 1080
+    - 524
+  - - 1080
+    - 1107
+  - - 225
+    - 1107
+  candidate_block_ids:
+  - /page/58/ListGroup/2
+  region_image: evidence/production-batch-011/regions/vera-r0088/p59-listgroup-1.png
+  region_image_pixel_sha256: 3085b0aeeae1ad81ddee25370d16cc758617732e70eca6049fb05512b7512819
+- region_id: vera-r0088-text-2
+  pdf_page: 59
+  printed_page: '58'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 524
+  - - 2712
+    - 524
+  - - 2712
+    - 1143
+  - - 1104
+    - 1143
+  candidate_block_ids:
+  - /page/58/Text/3
+  region_image: evidence/production-batch-011/regions/vera-r0088/p59-text-2.png
+  region_image_pixel_sha256: 27d01ab26e01a04391d09663a504ed879f01055ecc5126964d95d7ef8d9967f1
+- region_id: vera-r0088-text-3
+  pdf_page: 59
+  printed_page: '58'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1145
+  - - 2649
+    - 1145
+  - - 2649
+    - 1365
+  - - 1122
+    - 1365
+  candidate_block_ids:
+  - /page/58/Text/4
+  region_image: evidence/production-batch-011/regions/vera-r0088/p59-text-3.png
+  region_image_pixel_sha256: 9bcae70e88b40d0f51d2d6f15f9e3ae3a3c587c39ef6ee2e46f8f48bd554bd62
+- region_id: vera-r0088-text-4
+  pdf_page: 59
+  printed_page: '58'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1359
+  - - 2052
+    - 1359
+  - - 2052
+    - 1451
+  - - 1122
+    - 1451
+  candidate_block_ids:
+  - /page/58/Text/5
+  region_image: evidence/production-batch-011/regions/vera-r0088/p59-text-4.png
+  region_image_pixel_sha256: 3792e12437cacccf75db76cb93ad2192baca9c5d3ce5876888ae4d1b9e17f10c
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Bishop’s bread (fruit cake) · Biskupský chlebíček
+    language: mul
+    source_region_ids:
+    - vera-r0088-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Bishop’s bread (fruit cake)
+    language: en
+    source_region_ids:
+    - vera-r0088-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Biskupský chlebíček
+    language: cs
+    source_region_ids:
+    - vera-r0088-title
+    title_role: parallel
+  source_order: 88
+  slug_candidate: bishopsbreadfruitcake
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '1 bread – Preparation time: 1 hour 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0088-text-4
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1-1/4 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1 whole egg
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-3
+      text_verbatim: 6 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-4
+      text_verbatim: 2/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-5
+      text_verbatim: 1 teaspoon baking powder
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-6
+      text_verbatim: 1/2 cup diced dried apricots, other dry fruit can substitute
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-7
+      text_verbatim: 1/4 cup slivered almonds
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-8
+      text_verbatim: 1/2 cup golden raisins
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-9
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+    - segment_id: ingredient-10
+      text_verbatim: grated rind of one lemon
+      language: en
+      source_region_ids:
+      - vera-r0088-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a saucepan combine the egg yolks, the egg, sugar and lemon rind and set over medium/low
+        heat. Beat until the mixture is lukewarm. Remove from heat and continue beating until cool and
+        creamy. Fold in the flour mixed with baking powder, dried apricots, almonds, raisins. Lastly,
+        add melted butter. Turn the batter into a buttered oblong loaf pan lined with wax paper. Bake
+        30 minutes at 350F. Test for doneness with a cake tester or toothpick. Inserting it in the center,
+        it should come out clean. Let stand for 5 minutes before turning the bread out onto a cake rack.
+        Dust lightly with sugar. Cool and slice.
+      language: en
+      source_region_ids:
+      - vera-r0088-text-2
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: 'Optional: Spread apricot jelly very thinly over the bread and top with sugar icing.
+        When cooled, or when the icing hardens (approximately 2 hours), slice.'
+      language: en
+      source_region_ids:
+      - vera-r0088-text-3
+      step_number: 2
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0089
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

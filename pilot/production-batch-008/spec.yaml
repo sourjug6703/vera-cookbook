@@ -1,0 +1,363 @@
+batch_id: production-batch-008
+batch_title: "Production batch 008 source review"
+batch_copy_title: "Vera Cookbook production batch 008 review status"
+candidate_summary: "Ten new local Marker machine candidates in source order following the page-36 boundary and through the Yeast dumplings continuation. No trust promotion has been performed."
+audited_summary: "Ten new records in source order after a separate direct local AI visual source audit. All ten are source_checked; this is not human verification."
+recipe_schema_version: "1.3.0"
+source_sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+pdf_page_count: 75
+marker_version: "2.0.0"
+marker_generated_at: "2026-08-24T02:23:27Z"
+marker_artifact: "pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures - Vera Gaeta.json"
+created_at: "2026-08-24T02:24:00Z"
+audited_at: "2026-08-24T02:31:00Z"
+auditor_id: "openai-codex"
+readback_record_ids: [vera-r0051]
+recipes:
+  - recipe_id: vera-r0052
+    source_order: 52
+    slug: stuffed-peppers
+    pages: [36]
+    printed_pages: ["35"]
+    display_title: "Stuffed peppers · Plněné papriky"
+    titles: [{segment_id: title-en, text: "Stuffed peppers", language: en, title_role: primary}, {segment_id: title-cs, text: "Plněné papriky", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 36, block_ids: [/page/35/SectionHeader/5]}
+      - {key: ingredients, role: ingredient, pdf_page: 36, block_ids: [/page/35/ListGroup/6]}
+      - {key: step-1, role: instruction, pdf_page: 36, block_ids: [/page/35/Text/7]}
+      - {key: step-2, role: instruction, pdf_page: 36, block_ids: [/page/35/Text/8]}
+      - {key: step-3, role: instruction, pdf_page: 36, block_ids: [/page/35/Text/9]}
+      - {key: yield, role: yield-time, pdf_page: 36, block_ids: [/page/35/Text/10]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 medium size green peppers", region_keys: [ingredients]}
+          - {text: "3 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "1 small onion, finely chopped", region_keys: [ingredients]}
+          - {text: "1 lb. finely ground pork or beef", region_keys: [ingredients]}
+          - {text: "1 egg, whole", region_keys: [ingredients]}
+          - {text: "1/2 cup firmly cooked rice", region_keys: [ingredients]}
+          - {text: "2 tablespoons butter", region_keys: [ingredients]}
+          - {text: "2 cups tomato sauce", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Slice stem ends from peppers, remove white fiber and seeds. Drop into boiling salted water, simmer 1 minute. Drain on a sieve or paper towel. Pat dry cavities.", region_keys: [step-1]}
+          - {text: "Meanwhile, heat oil in a skillet, add onion and ground meat, sauté 10 minutes, mixing often. Blend in the egg, rice and salt. Spoon mixture into peppers, pressing firmly towards bottom and sides.", region_keys: [step-2]}
+          - {text: "Arrange stuffed peppers in a flameproof buttered casserole, pour tomato sauce over all. Simmer, covered, 30·35 minutes. Serve with noodles or gnocchi.", region_keys: [step-3]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 1 hour 15 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0053
+    source_order: 53
+    slug: stuffed-cabbage-rolls
+    pages: [37]
+    printed_pages: ["36"]
+    display_title: "Stuffed cabbage rolls · Plněná kapusta"
+    titles: [{segment_id: title-en, text: "Stuffed cabbage rolls", language: en, title_role: primary}, {segment_id: title-cs, text: "Plněná kapusta", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 37, block_ids: [/page/36/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 37, block_ids: [/page/36/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 37, block_ids: [/page/36/Text/3]}
+      - {key: yield, role: yield-time, pdf_page: 37, block_ids: [/page/36/Text/4]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 savoy cabbage head", region_keys: [ingredients]}
+          - {text: "1/2 lb. ground veal", region_keys: [ingredients]}
+          - {text: "1/2 lb. ground pork", region_keys: [ingredients]}
+          - {text: "1 cup chicken stock", region_keys: [ingredients]}
+          - {text: "1 hard baked roll", region_keys: [ingredients]}
+          - {text: "1/2 cup milk", region_keys: [ingredients]}
+          - {text: "2 small onions, chopped", region_keys: [ingredients]}
+          - {text: "2 cloves garlic, pressed or chopped", region_keys: [ingredients]}
+          - {text: "1 egg, whole", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "minced parsely", region_keys: [ingredients]}
+          - {text: "marjoram", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Pull off 12 large leaves from the cabbage head. Parboil them in salted water, place each on a napkin and flatten it with rolling pin or hand. Soak roll in milk, squeeze off excess and shred it. In a mixing bowl combine ground meat, shredded roll, 1 chopped onion, minced parsely, marjoram, garlic, salt and pepper. Mix thoroughly and spread evenly on the cabbage leaves. Roll them tightly, fasten each with a string or wooden pick. In a large skillet sauté onion in butter, add the stuffed cabbage rolls, simmer 30·40 minutes, adding occasionally some of the chicken stock. Lift rolls onto a serving dish, sprinkle with juices from the pan, serve with rice or potatoes.", region_keys: [step-1]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 1 hour 15 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0054
+    source_order: 54
+    slug: green-cabbage
+    pages: [37]
+    printed_pages: ["36"]
+    display_title: "Green cabbage · Hlávkové zelí"
+    titles: [{segment_id: title-en, text: "Green cabbage", language: en, title_role: primary}, {segment_id: title-cs, text: "Hlávkové zelí", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 37, block_ids: [/page/36/SectionHeader/5]}
+      - {key: ingredients, role: ingredient, pdf_page: 37, block_ids: [/page/36/ListGroup/6]}
+      - {key: step-1, role: instruction, pdf_page: 37, block_ids: [/page/36/Text/7]}
+      - {key: yield, role: yield-time, pdf_page: 37, block_ids: [/page/36/Text/8]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 head of cabbage, about 2 lbs.", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "4 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "caraway seeds", region_keys: [ingredients]}
+          - {text: "1/3 cup vinegar", region_keys: [ingredients]}
+          - {text: "2 tablespoons sugar", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Discard outside leaves from the fresh head of cabbage. Quarter, core, rinse and cut in strips. Scald with boiling water. Drain. Sauté onion in oil until translucent. Add cabbage, salt and caraway seeds. Simmer, turning occasionally, until cabbage is tender but crisp, about 15·20 minutes. Blend in flour, simmer 2·3 minutes. Add vinegar and sugar, simmer 1·2 minutes until thoroughly heated through. Serve with pork roast, meatloaf, smoked pork.", region_keys: [step-1]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0055
+    source_order: 55
+    slug: red-cabbage
+    pages: [38]
+    printed_pages: ["37"]
+    display_title: "Red cabbage · Červené zelí"
+    titles: [{segment_id: title-en, text: "Red cabbage", language: en, title_role: primary}, {segment_id: title-cs, text: "Červené zelí", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 38, block_ids: [/page/37/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 38, block_ids: [/page/37/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 38, block_ids: [/page/37/Text/3]}
+      - {key: yield, role: yield-time, pdf_page: 38, block_ids: [/page/37/Text/4]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 fresh head of red cabbage, about 2 lbs.", region_keys: [ingredients]}
+          - {text: "1·1/2 cups vinegar", region_keys: [ingredients]}
+          - {text: "4 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "1 medium onion, chopped", region_keys: [ingredients]}
+          - {text: "2 oz. bacon, diced", region_keys: [ingredients]}
+          - {text: "3 tablespoons sugar", region_keys: [ingredients]}
+          - {text: "caraway seeds", region_keys: [ingredients]}
+          - {text: "1 large apple, peeled and thinly sliced", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "2/3 cup red wine", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Remove wilted outside leaves from the head of red cabbage. Quarter, core and rinse it. Cut in strips, scald with hot vinegar. In a skillet combine oil, bacon, onion, caraway seeds and sugar. Sauté mixture until brownned. Add cabbage, thinly sliced apple, dash of salt, cover and simmer 15 minutes, or until cabbage is almost tender. Uncover, let liquid almost dry out, blend in flour and red wine, simmer 5·10 minutes. Cabbage should be tender but crisp. Serve with roast goose, duckling, pork, game.", region_keys: [step-1]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0056
+    source_order: 56
+    slug: sauerkraut
+    pages: [38]
+    printed_pages: ["37"]
+    display_title: "Sauerkraut · Kyselé zelí"
+    titles: [{segment_id: title-en, text: "Sauerkraut", language: en, title_role: primary}, {segment_id: title-cs, text: "Kyselé zelí", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 38, block_ids: [/page/37/SectionHeader/5]}
+      - {key: ingredients, role: ingredient, pdf_page: 38, block_ids: ["manual-bbox:120,510,520,705"]}
+      - {key: step-1, role: instruction, pdf_page: 38, block_ids: [/page/37/Text/6]}
+      - {key: yield, role: yield-time, pdf_page: 38, block_ids: [/page/37/Text/7]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "2 lbs. sauerkraut, drained", region_keys: [ingredients]}
+          - {text: "4 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "3 tablespoons sugar", region_keys: [ingredients]}
+          - {text: "caraway seeds", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "In a skillet combine oil, onion and flour. Brown mixture lightly. Add sauerkraut, caraway seeds, dash of salt and simmer 15 minutes, or until tender. Add sugar, mix thoroughly, simmer about 5 minutes more. Sauerkraut should be tender but crisp. Taste sweet-sour. Serve with pork roast, roast goose, smoked pork.", region_keys: [step-1]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 30 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0057
+    source_order: 57
+    slug: mashed-potatoes
+    pages: [38]
+    printed_pages: ["37"]
+    display_title: "Mashed potatoes · Bramborová kaše"
+    titles: [{segment_id: title-en, text: "Mashed potatoes", language: en, title_role: primary}, {segment_id: title-cs, text: "Bramborová kaše", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 38, block_ids: [/page/37/SectionHeader/8]}
+      - {key: ingredients, role: ingredient, pdf_page: 38, block_ids: [/page/37/ListGroup/9]}
+      - {key: step-1, role: instruction, pdf_page: 38, block_ids: [/page/37/Text/10]}
+      - {key: yield, role: yield-time, pdf_page: 38, block_ids: [/page/37/Text/11]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "3 lbs. potatoes", region_keys: [ingredients]}
+          - {text: "1·1/2 cups milk", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "salt.", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items: [{text: "Peel potatoes and cook them in salted water. Drain. While hot mash them thoroughly, adding gradually hot milk and butter. Taste for salt. Serve with roasts, meatloaf, fried chicken.", region_keys: [step-1]}]
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 1 hour.", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0058
+    source_order: 58
+    slug: gnocchi
+    pages: [39]
+    printed_pages: ["38"]
+    display_title: "Gnocchi · Krupicové noky"
+    titles: [{segment_id: title-en, text: "Gnocchi", language: en, title_role: primary}, {segment_id: title-cs, text: "Krupicové noky", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 39, block_ids: [/page/38/SectionHeader/2]}
+      - {key: ingredients, role: ingredient, pdf_page: 39, block_ids: [/page/38/ListGroup/1]}
+      - {key: step-1, role: instruction, pdf_page: 39, block_ids: [/page/38/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 39, block_ids: [/page/38/Text/4]}
+      - {key: yield, role: yield-time, pdf_page: 39, block_ids: [/page/38/Text/5]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "2 whole eggs", region_keys: [ingredients]}
+          - {text: "7 oz. regular cream of wheat, not precooked", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "In a bowl cream butter and eggs, add cream of wheat, salt, mix thoroughly. Let it rest 20 minutes.", region_keys: [step-1]}
+          - {text: "Using a wet teaspoon, scoop gnocchi into lightly salted boiling water. Cook over medium heat for 10 minutes, uncovered. Remove pan from heat, cover and let stand 5 minutes. Drain.", region_keys: [step-2]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0059
+    source_order: 59
+    slug: country-gnocchi
+    pages: [39]
+    printed_pages: ["38"]
+    display_title: "Country gnocchi · Škubánky"
+    titles: [{segment_id: title-en, text: "Country gnocchi", language: en, title_role: primary}, {segment_id: title-cs, text: "Škubánky", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 39, block_ids: [/page/38/SectionHeader/6]}
+      - {key: ingredients, role: ingredient, pdf_page: 39, block_ids: ["manual-bbox:120,540,520,700"]}
+      - {key: step-1, role: instruction, pdf_page: 39, block_ids: [/page/38/Text/7]}
+      - {key: step-2, role: instruction, pdf_page: 39, block_ids: [/page/38/Text/8]}
+      - {key: step-3, role: instruction, pdf_page: 39, block_ids: [/page/38/Text/9]}
+      - {key: yield, role: yield-time, pdf_page: 39, block_ids: [/page/38/Text/10]}
+      - {key: alternative, role: note, pdf_page: 39, block_ids: [/page/38/Text/11]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "3 lbs. potatoes, peeled, rinsed, quartered", region_keys: [ingredients]}
+          - {text: "1·1/2 cups flour", region_keys: [ingredients]}
+          - {text: "5 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Parboil potatoes in lightly salted water. Drain some of the water, leaving potatoes barely covered. Stir in flour and simmer over low heat about 10 minutes or until potatoes flake when tested with a fork. Drain excess water, if any, salt the mixture and mash it thoroughly. Mixture will be rather thick.", region_keys: [step-1]}
+          - {text: "Meanwhile, brown onion in butter.", region_keys: [step-2]}
+          - {text: "Dip a tablespoon in hot butter and scoop gnocchi onto a warmed serving dish. Sprinkle with browned onion and butter. Serve as a side dish with meats, or as a meal.", region_keys: [step-3]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}]
+    notes: [{text: "Alternative – Substitute ground poppy seeds mixed with powdered sugar for browned onion. Sprinkle with hot butter.", region_keys: [alternative]}]
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0060
+    source_order: 60
+    slug: dumplings-with-croutons
+    pages: [40]
+    printed_pages: ["39"]
+    display_title: "Dumplings with croutons · Houskové knedlíky"
+    titles: [{segment_id: title-en, text: "Dumplings with croutons", language: en, title_role: primary}, {segment_id: title-cs, text: "Houskové knedlíky", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 40, block_ids: [/page/39/SectionHeader/0]}
+      - {key: ingredients, role: ingredient, pdf_page: 40, block_ids: [/page/39/ListGroup/1]}
+      - {key: step-1, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/2]}
+      - {key: step-2, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/3]}
+      - {key: step-3, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/4]}
+      - {key: step-4, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/5]}
+      - {key: step-5, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/6]}
+      - {key: yield, role: yield-time, pdf_page: 40, block_ids: [/page/39/Text/7]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 cups coarse flour, (Gold Medal Wondra)", region_keys: [ingredients]}
+          - {text: "1 whole egg", region_keys: [ingredients]}
+          - {text: "1 egg yolk", region_keys: [ingredients]}
+          - {text: "2·1/2 cups club soda", region_keys: [ingredients]}
+          - {text: "3 cups croutons, (4 hard baked rolls)", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Croutons: Cut rolls in 1/2\" thick slices, cut each slice in uniform squares, braise lightly in butter. Set aside.", region_keys: [step-1]}
+          - {text: "In a bowl combine flour, egg, egg yolk, salt, and club soda. Knead until the dough is smooth and no longer sticks to the bowl. Dough should be of medium consistency, not too thick. Add croutons, mix well. Turn the dough over onto a floured pastry board and form two oblong balls-dumplings. Place them in lightly salted boiling water and boil over medium heat for 25 minutes. While cooking turn them with a spatula.", region_keys: [step-2]}
+          - {text: "Remove dumplings to a cutting board and cut each into 1/2 · 3/4\" slices. Use a thread or very sharp knife. Brush each slice lightly with melted butter.", region_keys: [step-3]}
+          - {text: "Serve with roasts, fowl, game, sauces.", region_keys: [step-4]}
+          - {text: "Dumpling slices can be frozen and reheated in double boiler.", region_keys: [step-5]}
+    yield_time_lines: [{text: "Serves 6 - Preparation time: 45 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+  - recipe_id: vera-r0061
+    source_order: 61
+    slug: yeast-dumplings
+    pages: [40, 41]
+    printed_pages: ["39", "40"]
+    display_title: "Yeast dumplings · Kynuté knedlíky"
+    titles: [{segment_id: title-en, text: "Yeast dumplings", language: en, title_role: primary}, {segment_id: title-cs, text: "Kynuté knedlíky", language: cs, title_role: parallel}]
+    regions:
+      - {key: title, role: title, pdf_page: 40, block_ids: [/page/39/SectionHeader/8]}
+      - {key: ingredients-main, role: ingredient, pdf_page: 40, block_ids: [/page/39/ListGroup/9]}
+      - {key: leavening, role: instruction, pdf_page: 40, block_ids: [/page/39/Text/10]}
+      - {key: step-1a, role: continuation, pdf_page: 40, block_ids: [/page/39/Text/11]}
+      - {key: optional-label, role: note, pdf_page: 41, block_ids: [/page/40/Text/1]}
+      - {key: optional-ingredients, role: ingredient, pdf_page: 41, block_ids: [/page/40/ListGroup/2]}
+      - {key: step-1b, role: continuation, pdf_page: 41, block_ids: [/page/40/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 41, block_ids: [/page/40/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 41, block_ids: [/page/40/Text/5]}
+      - {key: yield, role: yield-time, pdf_page: 41, block_ids: [/page/40/Text/6]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "5 cups coarse flour, Gold Medal Wondra", region_keys: [ingredients-main]}
+          - {text: "1 teaspoon baking powder", region_keys: [ingredients-main]}
+          - {text: "1·1/2 cups milk, lukewarm", region_keys: [ingredients-main]}
+          - {text: "grated rind of 1 lemon", region_keys: [ingredients-main]}
+          - {text: "2 egg yolks", region_keys: [ingredients-main]}
+          - {text: "1 oz. fresh yeast", region_keys: [ingredients-main]}
+          - {text: "1 teaspoon sugar", region_keys: [ingredients-main]}
+          - {text: "salt", region_keys: [ingredients-main]}
+      - section_id: ingredients-optional
+        label: {segment_id: ingredient-label-optional, text: "Optional:", region_key: optional-label}
+        items: [{text: "3 tablespoons fried bread crumbs", region_keys: [optional-ingredients]}]
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Leavening: In a bowl stir fresh yeast and sugar until it dissolves. Add 1/4 cup lukewarm milk and 1/3 cup flour, mix thoroughly into a smooth ball. Dust with flour, set aside to rise, in a warm draft free place. Should double in bulk within 15 minutes.", region_keys: [leavening]}
+          - {text: "In a separate bowl combine remaining flour, baking powder, lemon rind, salt. Make a well in center where you put egg yolks and the risen leavening. Mix all, gradually adding the remaining lukewarm milk. Knead until dough is smooth and separates from the bowl. Let it rise in a warm place for 30 minutes.", region_keys: [step-1a, step-1b]}
+          - {text: "Cut tablespoonsfuls of dough, round them into balls, let them rise on a floured surface for 10 minutes. Drop dumplings into rapidly boiling salted water, boil 5 minutes, turn them around with a spatula and cook another 5 minutes. Drain, pierce each with fork, sprinkle with hot butter.", region_keys: [step-2]}
+          - {text: "Optional: Coat with fried bread crumbs. Serve with meats and sauces.", region_keys: [step-3]}
+    yield_time_lines: [{text: "Serves 6 – Preparation time: 1 hour 15 minutes", region_keys: [yield]}]
+    notes: []
+    cross_references: []
+    continuations: [{from_region_key: step-1a, to_region_key: step-1b}]
+    status: source_checked
+    open_issues: []

@@ -1,0 +1,873 @@
+batch_id: production-batch-013
+batch_title: Production batch 013 source review
+batch_copy_title: Vera Cookbook production batch 013 review status
+candidate_summary: Local Marker machine candidates for production batch 013; no trust promotion has been
+  performed.
+audited_summary: Production batch 013 after a separate direct local AI visual source audit. Source-clear
+  records are source_checked; genuine ambiguity remains needs_attention. This is not human verification.
+recipe_schema_version: 1.3.0
+source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+pdf_page_count: 75
+marker_version: 2.0.0
+marker_generated_at: '2026-08-24T03:09:28Z'
+marker_artifact: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures
+  - Vera Gaeta.json
+created_at: '2026-08-24T03:12:00Z'
+audited_at: '2026-08-24T03:28:00Z'
+auditor_id: openai-codex
+readback_record_ids: []
+recipes:
+- recipe_id: vera-r0104
+  source_order: 104
+  slug: applepancakes
+  pages:
+  - 71
+  printed_pages:
+  - '70'
+  display_title: Apple pancakes · Jablkové palačinky
+  titles:
+  - segment_id: title-en
+    text: Apple pancakes
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Jablkové palačinky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 71
+    block_ids:
+    - /page/70/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 71
+    block_ids:
+    - /page/70/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 71
+    block_ids:
+    - /page/70/Text/4
+  - key: text-3
+    role: instruction
+    pdf_page: 71
+    block_ids:
+    - /page/70/Text/5
+  - key: text-4
+    role: yield-time
+    pdf_page: 71
+    block_ids:
+    - /page/70/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 cup flour
+      region_keys:
+      - listgroup-1
+    - text: 1·1/2 cups milk
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 5 eggs, separated
+      region_keys:
+      - listgroup-1
+    - text: pinch of salt
+      region_keys:
+      - listgroup-1
+    - text: 2 large apples, Granny Smith type, peeled, diced
+      region_keys:
+      - listgroup-1
+    - text: 6 tablespoons butter for frying
+      region_keys:
+      - listgroup-1
+    - text: 2 tablespoons sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Cream egg yolks and sugar, using wire whisk or electric mixer at low speed. When mixture becomes
+        foamy, gradually add flour, salt and milk mixing well after each addition.
+      region_keys:
+      - text-2
+    - text: Blend in apples and stiffly whipped egg whites. Drop by scoopfuls in hot butter and fry on
+        both sides. Roll each pancake, sprinkle with sugar and place on a serving dish.
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 45 minutes'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0105
+  source_order: 105
+  slug: godsgraces
+  pages:
+  - 71
+  printed_pages:
+  - '70'
+  display_title: God’s graces · Boží milosti
+  titles:
+  - segment_id: title-en
+    text: God’s graces
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Boží milosti
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 71
+    block_ids:
+    - /page/70/SectionHeader/7
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 71
+    block_ids:
+    - /page/70/ListGroup/3
+  - key: text-2
+    role: instruction
+    pdf_page: 71
+    block_ids:
+    - /page/70/Text/8
+  - key: text-3
+    role: yield-time
+    pdf_page: 71
+    block_ids:
+    - /page/70/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1/4 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-1
+    - text: 6 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: dash of salt
+      region_keys:
+      - listgroup-1
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup heavy cream
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons white wine
+      region_keys:
+      - listgroup-1
+    - text: 1 cup vegetable oil or butter for frying
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar mixed with vanilla sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: On a lightly floured surface sift together flour, salt, sugar and vanilla sugar. Make a well
+        in the center. Put egg yolks, cream, wine and crumbled butter in the well. Knead, with the palms
+        of your hands, until dough is smooth and shiny. Roll out into a paper-thin sheet. Cut into 2"
+        squares. Make two 1" cuts inside each square. Fry in hot oil or butter on both sides, until lightly
+        golden. Drain on paper towel, sprinkle with sugar mixed with vanilla sugar.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0106
+  source_order: 106
+  slug: pretzelssweet
+  pages:
+  - 72
+  printed_pages:
+  - '71'
+  display_title: Pretzels, sweet · Preclíčky
+  titles:
+  - segment_id: title-en
+    text: Pretzels, sweet
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Preclíčky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 72
+    block_ids:
+    - /page/71/SectionHeader/5
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 72
+    block_ids:
+    - /page/71/ListGroup/1
+  - key: text-2
+    role: instruction
+    pdf_page: 72
+    block_ids:
+    - /page/71/Text/6
+  - key: listgroup-3
+    role: ingredient
+    pdf_page: 72
+    block_ids:
+    - /page/71/ListGroup/2
+  - key: text-4
+    role: yield-time
+    pdf_page: 72
+    block_ids:
+    - /page/71/Text/7
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 8 tablespoons butter, creamed
+      region_keys:
+      - listgroup-1
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 2 oz. almonds, grated or crushed
+      region_keys:
+      - listgroup-1
+    - text: 3 hard boiled egg yolks, puréed
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+  - section_id: ingredients-2
+    items:
+    - text: grease for cookie sheet
+      region_keys:
+      - listgroup-3
+    - text: 1 egg, lightly beaten
+      region_keys:
+      - listgroup-3
+    - text: crystal sugar
+      region_keys:
+      - listgroup-3
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: On a floured board sift together flour and sugar, make a well in center. Thoroughly blend
+        all remaining ingredients and place in well. Gradually mixing in flour, knead with the palms of
+        your hands until smooth. Form a neat ball. Let dough rest at least 1 hour in a cool place, or
+        refrigerate overnight. Divide dough into equal pieces, the size of a ping-pong ball. Form pencil-thin
+        strands and shape them into pretzels. Place on a greased cookie sheet, brush with beaten egg and
+        sprinkle with crystal sugar. Bake at 350F 10-12 minutes or until golden.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Preparation time: 2 hours'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0107
+  source_order: 107
+  slug: nutcake
+  pages:
+  - 72
+  printed_pages:
+  - '71'
+  display_title: Nut cake · Ořechový dort
+  titles:
+  - segment_id: title-en
+    text: Nut cake
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Ořechový dort
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 72
+    block_ids:
+    - /page/71/SectionHeader/8
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 72
+    block_ids:
+    - /page/71/ListGroup/3
+  - key: text-2
+    role: instruction
+    pdf_page: 72
+    block_ids:
+    - /page/71/Text/9
+  - key: listgroup-3
+    role: ingredient
+    pdf_page: 72
+    block_ids:
+    - /page/71/ListGroup/4
+  - key: text-4
+    role: instruction
+    pdf_page: 72
+    block_ids:
+    - /page/71/Text/10
+  - key: yield-manual
+    role: yield-time
+    pdf_page: 72
+    block_ids:
+    - manual-bbox:570,984,899,1017
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 6 eggs, separated
+      region_keys:
+      - listgroup-1
+    - text: 1 cup flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 cup hazelnuts or walnuts, ground or finely chopped
+      region_keys:
+      - listgroup-1
+    - text: 1 tablespoon water
+      region_keys:
+      - listgroup-1
+  - section_id: ingredients-2
+    items:
+    - text: butter and flour for cake pan
+      region_keys:
+      - listgroup-3
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Beat egg whites until stiff, set aside. In a separate bowl cream sugar and egg yolks, adding
+        one at a time and beating well after each addition. Add 1 tablespoon water. Continue beating until
+        light and fluffy, about 10 minutes total. Fold in flour, nuts and stiffly whipped egg whites.
+        Mix thoroughly, pour batter into buttered and floured 9" spring form cake pan. Preheat oven to
+        350F, bake about 40 minutes or until cake tester or wooden pick comes out clean and cake separates
+        from side of spring form.
+      region_keys:
+      - text-2
+    - text: When cooled, cut cake horizontally, spread evenly with chocolate or mocca filling, then frost
+        top and sides with the same. Decorate with walnuts or pecan halves or tosted almonds slivers.
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: '1 cake – Preparation time: 1 hour'
+    region_keys:
+    - yield-manual
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0108
+  - vera-r0109
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0108
+  source_order: 108
+  slug: chocolatefilling
+  pages:
+  - 73
+  printed_pages:
+  - '72'
+  display_title: Chocolate filling · Čokoládový krém
+  titles:
+  - segment_id: title-en
+    text: Chocolate filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Čokoládový krém
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 73
+    block_ids:
+    - /page/72/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 73
+    block_ids:
+    - /page/72/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 73
+    block_ids:
+    - /page/72/Text/3
+  - key: text-3
+    role: yield-time
+    pdf_page: 73
+    block_ids:
+    - /page/72/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 pint heavy cream
+      region_keys:
+      - listgroup-1
+    - text: 1·1/2 cups semi sweet chocolate morsels
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Combine cream and chocolate in a saucepan, set over low heat and bring to boil, stirring constantly.
+        Remove from heat and pour mixture in a clean bowl. Refrigerate at least 3 hours or overnight.
+        Whip with electric mixer at medium speed until smooth and creamy for about 7 minutes.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'For 1 cake – Preparation time: 15 minutes, plus refrigeration'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0109
+  source_order: 109
+  slug: mochafilling
+  pages:
+  - 73
+  printed_pages:
+  - '72'
+  display_title: Mocha filling · Mocca krém
+  titles:
+  - segment_id: title-en
+    text: Mocha filling
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Mocca krém
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 73
+    block_ids:
+    - /page/72/SectionHeader/5
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 73
+    block_ids:
+    - /page/72/ListGroup/6
+  - key: text-2
+    role: instruction
+    pdf_page: 73
+    block_ids:
+    - /page/72/Text/7
+  - key: text-3
+    role: yield-time
+    pdf_page: 73
+    block_ids:
+    - /page/72/Text/8
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 14 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons strong black coffee
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a saucepan cream sugar and egg yolks. Add coffee, set over medium heat. Stir constantly
+        until mixture becomes hot. Do not boil. Remove from heat, turn mixture into a clean bowl, let
+        cool. In a bowl cream butter and gradually add the cooled sugar/egg yolks/coffee mixture. Beat
+        until fluffy.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'For 1 cake – Preparation time: 45 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0110
+  source_order: 110
+  slug: vanillahorns
+  pages:
+  - 74
+  printed_pages:
+  - '73'
+  display_title: Vanilla horns · Vanilkové rohlíčky
+  titles:
+  - segment_id: title-en
+    text: Vanilla horns
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Vanilkové rohlíčky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 74
+    block_ids:
+    - /page/73/SectionHeader/2
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 74
+    block_ids:
+    - /page/73/ListGroup/3
+  - key: text-2
+    role: instruction
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/4
+  - key: text-3
+    role: yield-time
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/5
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 8 oz. ground almonds
+      region_keys:
+      - listgroup-1
+    - text: 3 sticks butter
+      region_keys:
+      - listgroup-1
+    - text: 2 packages vanilla sugar (1 package into dough, 1 for sprinkling)
+      region_keys:
+      - listgroup-1
+    - text: 4 tablespoons sugar mixed with vanilla sugar
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: On a floured pastry board knead all ingredients into a ball. Use palms of your hands, not
+        fingers, so that dough will not crumble. Dough is ready when smooth and no longer sticks to the
+        board. Refrigerate 1 hour, or overnight as it will be easier to work with. Shape tiny horns the
+        size of your little finger or smaller, according to your preference and patience. A small grinder
+        is available in some speciality stores, which makes them all equal in size and is faster than
+        the "manual method". Place horns on a clean dry cookie sheet, 1" apart. Preheat oven to 325F,
+        bake 15-20 minutes, until pale golden. Remove from oven and let stand 5 minutes. While hot, sprinkle
+        with sugar mixed with vanilla sugar. When cooled remove carefully from cookie sheet. They keep
+        for many weeks in an airtight tin.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Preparation time: 1 hour 15 minutes, plus refrigeration'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: needs_attention
+  open_issues:
+  - issue_id: r0110-handwritten-flour
+    target_ids:
+    - vera-r0110
+    description: The printed 2 cups flour carries a handwritten 2 1/2 annotation and arrow; its authoritative
+      transcription policy is unresolved.
+    severity: textual
+- recipe_id: vera-r0111
+  source_order: 111
+  slug: almondsnowballs
+  pages:
+  - 74
+  printed_pages:
+  - '73'
+  display_title: Almond snow-balls · Kostrby
+  titles:
+  - segment_id: title-en
+    text: Almond snow-balls
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Kostrby
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 74
+    block_ids:
+    - /page/73/SectionHeader/6
+  - key: text-1
+    role: instruction
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/8
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 74
+    block_ids:
+    - /page/73/ListGroup/7
+  - key: text-3
+    role: instruction
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/9
+  - key: text-4
+    role: instruction
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/10
+  - key: text-5
+    role: yield-time
+    pdf_page: 74
+    block_ids:
+    - /page/73/Text/11
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 3 egg whites
+      region_keys:
+      - listgroup-2
+    - text: 1/2 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 5 oz. slivered almonds
+      region_keys:
+      - listgroup-2
+    - text: Butter and flour for cookie sheet
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Beat egg whites and sugar in a bain-marie, until the mixture thickens. Remove from heat, stir
+        in almonds. Drop by teaspoonfuls on a buttered and floured cookie sheet 1\frac{1}{2} " apart.
+        Bake 14 minutes at 325F. Snow-balls should puff-up and be pale-golden. Remove carefully from cookie
+        sheet.
+      region_keys:
+      - text-1
+    - text: Let snow-balls dry thoroughly, at least 2 hours, in a warm oven under 200F.
+      region_keys:
+      - text-3
+    - text: Store in a dry place.
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: 'Preparation time: 45 minutes'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0112
+  source_order: 112
+  slug: butterrounds
+  pages:
+  - 75
+  printed_pages:
+  - '74'
+  display_title: Butter rounds · Máslová kolečka
+  titles:
+  - segment_id: title-en
+    text: Butter rounds
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Máslová kolečka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 75
+    block_ids:
+    - /page/74/SectionHeader/0
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 75
+    block_ids:
+    - /page/74/ListGroup/1
+  - key: text-2
+    role: instruction
+    pdf_page: 75
+    block_ids:
+    - /page/74/Text/2
+  - key: text-3
+    role: instruction
+    pdf_page: 75
+    block_ids:
+    - /page/74/Text/3
+  - key: text-4
+    role: yield-time
+    pdf_page: 75
+    block_ids:
+    - /page/74/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar mixed with 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 stick butter
+      region_keys:
+      - listgroup-1
+    - text: 2 tablespoons milk
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: red raspberry or red currant preserve
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: On a floured pastry board knead all ingredients into a ball using the palms of your hands,
+        not the fingers. The dough will be smooth and will not crumble. You can let it rest for a few
+        hours, overnight or more. You can use it right away also.
+      region_keys:
+      - text-2
+    - text: With a roller pin roll the dough out as thin as possible. (1/8"). Cut it into 1-1/4" round
+        cakes, using a cookie cutter or a glass. Separate half of the round cakes and cut out a small
+        round hole in the center, the size of a thimble. Use a cookie cutter or a thimble. Place the round
+        cakes on a clean, dry cookie sheet and bake at 350F for 15 minutes, or until they are pink/golden.
+        Remove from oven and cool. Before serving put 1/2 teaspoon of red raspberry or red currant seedless
+        preserve in the center of each plain round, top it with one "holed" round. The red color is important
+        for the look of the cookies and the sour flavor of raspberry or currant compliments them well.
+        Unfilled cookies can be stored for weeks in an airtight container.
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: Preparation time - 1 hour 30 minutes
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0113
+  source_order: 113
+  slug: truffles
+  pages:
+  - 75
+  printed_pages:
+  - '74'
+  display_title: Truffles · Lanýže
+  titles:
+  - segment_id: title-en
+    text: Truffles
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Lanýže
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 75
+    block_ids:
+    - /page/74/SectionHeader/5
+  - key: text-1
+    role: instruction
+    pdf_page: 75
+    block_ids:
+    - /page/74/Text/6
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 75
+    block_ids:
+    - /page/74/ListGroup/8
+  - key: text-3
+    role: yield-time
+    pdf_page: 75
+    block_ids:
+    - /page/74/Text/7
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2/3 cup heavy cream
+      region_keys:
+      - listgroup-2
+    - text: 6 oz. ground walnuts or hazelnuts
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon vanilla sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 egg white
+      region_keys:
+      - listgroup-2
+    - text: 3/4 cup grated dark semi-sweet chocolate
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Pour the cream in a saucepan and set over medium heat. When hot, but not boiling, add sugar,
+        vanilla sugar and the ground nuts. Stirring steadily, boil until the mixture stiffens and separates
+        from the pan. Remove from heat. Let it cool or refrigerate overnight. Next day: Make little balls,
+        dip each in egg white and dredge in grated chocolate. Let the "truffles" dry for 10 minutes and
+        place them in petit-four holders.'
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Preparation time: 30 minutes, plus refrigeration.'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []

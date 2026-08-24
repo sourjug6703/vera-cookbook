@@ -1,0 +1,792 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Marinated hare in wine sauce - Zajic na \u010derno",
+      "heading_level": null,
+      "page_id": 28,
+      "polygon": [
+        [
+          423.0,
+          192.375
+        ],
+        [
+          1053.0,
+          192.375
+        ],
+        [
+          1053.0,
+          236.25
+        ],
+        [
+          423.0,
+          236.25
+        ]
+      ]
+    },
+    {
+      "title": "Marinade:",
+      "heading_level": null,
+      "page_id": 28,
+      "polygon": [
+        [
+          123.0,
+          240.75
+        ],
+        [
+          255.0,
+          240.75
+        ],
+        [
+          255.0,
+          268.875
+        ],
+        [
+          123.0,
+          268.875
+        ]
+      ]
+    },
+    {
+      "title": "Hare and sauce:",
+      "heading_level": null,
+      "page_id": 28,
+      "polygon": [
+        [
+          126.0,
+          540.0
+        ],
+        [
+          334.5,
+          540.0
+        ],
+        [
+          334.5,
+          569.25
+        ],
+        [
+          126.0,
+          569.25
+        ]
+      ]
+    },
+    {
+      "title": "To marinate:",
+      "heading_level": null,
+      "page_id": 28,
+      "polygon": [
+        [
+          559.5,
+          274.5
+        ],
+        [
+          715.5,
+          274.5
+        ],
+        [
+          715.5,
+          302.625
+        ],
+        [
+          559.5,
+          302.625
+        ]
+      ]
+    },
+    {
+      "title": "Venison cutlets, or medallions - Srn\u010di \u017eeb\u00edrka",
+      "heading_level": null,
+      "page_id": 29,
+      "polygon": [
+        [
+          432.0,
+          168.112
+        ],
+        [
+          1056.0,
+          168.112
+        ],
+        [
+          1056.0,
+          226.632
+        ],
+        [
+          432.0,
+          226.632
+        ]
+      ]
+    },
+    {
+      "title": "Roast pheasant - Ba\u017eant pe\u010den\u00fd",
+      "heading_level": null,
+      "page_id": 29,
+      "polygon": [
+        [
+          531.0,
+          680.9599999999999
+        ],
+        [
+          970.5,
+          680.9599999999999
+        ],
+        [
+          970.5,
+          720.328
+        ],
+        [
+          531.0,
+          720.328
+        ]
+      ]
+    },
+    {
+      "title": "Pheasant in cream sauce - Ba\u017eant na smetan\u00eb",
+      "heading_level": null,
+      "page_id": 30,
+      "polygon": [
+        [
+          406.5,
+          321.0
+        ],
+        [
+          1045.5,
+          321.0
+        ],
+        [
+          1045.5,
+          360.0
+        ],
+        [
+          406.5,
+          360.0
+        ]
+      ]
+    },
+    {
+      "title": "Partridge/Quail - Koroptev/K\u0159epelka",
+      "heading_level": null,
+      "page_id": 30,
+      "polygon": [
+        [
+          474.0,
+          672.0000000000001
+        ],
+        [
+          970.5,
+          672.0000000000001
+        ],
+        [
+          970.5,
+          706.0
+        ],
+        [
+          474.0,
+          706.0
+        ]
+      ]
+    },
+    {
+      "title": "Baked carp - Kapr pe\u010den\u00fd",
+      "heading_level": null,
+      "page_id": 31,
+      "polygon": [
+        [
+          592.5,
+          348.75
+        ],
+        [
+          952.5,
+          348.75
+        ],
+        [
+          952.5,
+          398.25
+        ],
+        [
+          592.5,
+          398.25
+        ]
+      ]
+    },
+    {
+      "title": "Fried carp - Kapr sma\u017een\u00fd",
+      "heading_level": null,
+      "page_id": 31,
+      "polygon": [
+        [
+          592.5,
+          645.7499999999999
+        ],
+        [
+          957.0,
+          645.7499999999999
+        ],
+        [
+          957.0,
+          687.375
+        ],
+        [
+          592.5,
+          687.375
+        ]
+      ]
+    },
+    {
+      "title": "Carp with paprika sauce - Kapr na paprice",
+      "heading_level": null,
+      "page_id": 32,
+      "polygon": [
+        [
+          457.5,
+          192.375
+        ],
+        [
+          1050.0,
+          192.375
+        ],
+        [
+          1050.0,
+          254.25
+        ],
+        [
+          457.5,
+          254.25
+        ]
+      ]
+    },
+    {
+      "title": "Baked pike with sour cream - \u0160tika pe\u010den\u00e1 se smetanou",
+      "heading_level": null,
+      "page_id": 32,
+      "polygon": [
+        [
+          360.0,
+          680.625
+        ],
+        [
+          1135.5,
+          680.625
+        ],
+        [
+          1135.5,
+          727.875
+        ],
+        [
+          360.0,
+          727.875
+        ]
+      ]
+    },
+    {
+      "title": "Salmon trout with dill sauce - Pstruh s koprovou om\u00e1\u010dkou",
+      "heading_level": null,
+      "page_id": 33,
+      "polygon": [
+        [
+          322.5,
+          150.0
+        ],
+        [
+          1126.5,
+          150.0
+        ],
+        [
+          1126.5,
+          185.0
+        ],
+        [
+          322.5,
+          185.0
+        ]
+      ]
+    },
+    {
+      "title": "Sauce:",
+      "heading_level": null,
+      "page_id": 33,
+      "polygon": [
+        [
+          115.5,
+          475.00000000000006
+        ],
+        [
+          205.5,
+          475.00000000000006
+        ],
+        [
+          205.5,
+          500.0
+        ],
+        [
+          115.5,
+          500.0
+        ]
+      ]
+    },
+    {
+      "title": "SECOND",
+      "heading_level": null,
+      "page_id": 34,
+      "polygon": [
+        [
+          541.5,
+          438.75
+        ],
+        [
+          963.0,
+          438.75
+        ],
+        [
+          963.0,
+          501.75
+        ],
+        [
+          541.5,
+          501.75
+        ]
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "heading_level": null,
+      "page_id": 34,
+      "polygon": [
+        [
+          127.5,
+          613.1250000000001
+        ],
+        [
+          330.0,
+          613.1250000000001
+        ],
+        [
+          330.0,
+          645.7499999999999
+        ],
+        [
+          127.5,
+          645.7499999999999
+        ]
+      ]
+    },
+    {
+      "title": "Soups - Pol\u00e9vky:",
+      "heading_level": null,
+      "page_id": 34,
+      "polygon": [
+        [
+          957.0,
+          627.7500000000001
+        ],
+        [
+          1173.0,
+          627.7500000000001
+        ],
+        [
+          1173.0,
+          661.5
+        ],
+        [
+          957.0,
+          661.5
+        ]
+      ]
+    },
+    {
+      "title": "Ham and noodles casserole - \u0160unkov\u00e9 nudle",
+      "heading_level": null,
+      "page_id": 35,
+      "polygon": [
+        [
+          442.5,
+          194.625
+        ],
+        [
+          1066.5,
+          194.625
+        ],
+        [
+          1066.5,
+          255.375
+        ],
+        [
+          442.5,
+          255.375
+        ]
+      ]
+    },
+    {
+      "title": "Stuffed peppers - Pln\u011bn\u00e9 papriky",
+      "heading_level": null,
+      "page_id": 35,
+      "polygon": [
+        [
+          526.5,
+          524.25
+        ],
+        [
+          984.0,
+          524.25
+        ],
+        [
+          984.0,
+          569.25
+        ],
+        [
+          526.5,
+          569.25
+        ]
+      ]
+    },
+    {
+      "title": "Stuffed cabbage rolls - Pln\u011bn\u00e1 kapusta",
+      "heading_level": null,
+      "page_id": 36,
+      "polygon": [
+        [
+          448.5,
+          181.56
+        ],
+        [
+          981.0,
+          181.56
+        ],
+        [
+          981.0,
+          215.73600000000002
+        ],
+        [
+          448.5,
+          215.73600000000002
+        ]
+      ]
+    },
+    {
+      "title": "Green cabbage - Hl\u00e1vkov\u00e9 zel\u00ed",
+      "heading_level": null,
+      "page_id": 36,
+      "polygon": [
+        [
+          511.5,
+          644.004
+        ],
+        [
+          921.0,
+          644.004
+        ],
+        [
+          921.0,
+          677.1120000000001
+        ],
+        [
+          511.5,
+          677.1120000000001
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 28,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          14
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 29,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 30,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 31,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 32,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 33,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 34,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 35,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 36,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "/Users/agaeta/AI Projects/personal/active/vera-cookbook/pilot/acceleration-wave-003/marker-output/debug/Culinary Adventures - Vera Gaeta"
+}

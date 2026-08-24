@@ -1,0 +1,4 @@
+# Validation dependencies for canonical YAML recipe records.
+jsonschema==4.26.0
+PyYAML==6.0.3
+Pillow==10.4.0

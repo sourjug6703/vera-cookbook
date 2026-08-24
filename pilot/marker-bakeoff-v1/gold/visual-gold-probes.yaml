@@ -1,0 +1,318 @@
+schema_version: "1.0"
+gold_id: "marker-bakeoff-v1-visual-probes"
+created_on: "2026-08-23"
+independence:
+  established_before_candidate_review: true
+  source: "direct visual inspection of 120 DPI renders from the immutable PDF"
+  marker_output_used: false
+review_status: "first-pass visually verified"
+normalization_for_scoring: "Unicode NFC, HTML decoded, tags removed, whitespace collapsed; punctuation and diacritics otherwise exact"
+scope_note: >-
+  This is a source-specific consequential-probe gold set, not a complete
+  character-error-rate transcription of every selected page. It tests exact
+  recipe inventory, reading order, ownership, titles, Czech diacritics,
+  fractions, units, temperatures, continuations, notes, and cross-references.
+pages:
+  - pdf_page: 2
+    printed_page: 1
+    page_kind: "section inventory"
+    group_order: ["Beef", "Veal", "Pork", "Lamb"]
+    exact_probes:
+      - "Beef - Hovězí maso."
+      - "Tenderloin with sour cream sauce - Svíčková na smetaně."
+      - "Brasciole (stuffed beef rolls) - Hovězí závitky."
+      - "Stuffed veal breast - Telecí hrudí nadivané."
+      - "Veal chops with caraway seeds - Telecí žebírka na kmíně."
+      - "Fresh ham with cream sauce - Vepřová kýta na smetaně."
+      - "Mutton or lamb goulash - Guláš skopový."
+    expected_order:
+      - "Beef - Hovězí maso."
+      - "Veal - Telecí maso."
+      - "Pork - Vepřové maso."
+      - "Lamb - Skopové maso."
+
+  - pdf_page: 3
+    printed_page: 2
+    page_kind: "section inventory continuation"
+    group_order: ["Chicken", "Turkey", "Pigeon", "Goose", "Duck", "Rabbit", "Hare", "Venison", "Pheasant", "Partridge/Quail", "Fresh water fish"]
+    exact_probes:
+      - "Chicken - Kuře."
+      - "Chicken ragoût on a half shell - Ragoût na mušlich."
+      - "Duckling with Madeira wine - Kachna na víně."
+      - "Rabbit with paprika sauce - Králík na paprice."
+      - "Marinated hare in wine sauce - Zajíc na černo."
+      - "Venison cutlets with fresh mushrooms - Srnčí žebírka s houbami."
+      - "Partridge/Quail - Koroptev/Křepelka."
+      - "Salmon trout with dill sauce - Pstruh s koprovou omáčkou."
+    expected_order:
+      - "Chicken - Kuře."
+      - "Turkey - Krocan."
+      - "Pigeon - Holub."
+      - "Goose - Husa."
+      - "Duck - Kachna."
+      - "Rabbit - Králík."
+      - "Hare - Zajíc."
+      - "Venison - Srnčí maso."
+      - "Pheasant - Bažant."
+      - "Partridge/Quail - Koroptev/Křepelka."
+      - "Fresh water fish - Ryby sladkovodní."
+
+  - pdf_page: 4
+    printed_page: 3
+    page_kind: "recipe"
+    expected_titles:
+      - "Roast beef tenderloin in sour cream sauce - Svíčková"
+    exact_probes:
+      - "4 lbs. beef tenderloin"
+      - "1/2 cup vegetable oil"
+      - "1-1/2 cups sour cream"
+      - "Roast 40-45 minutes"
+      - "Serves 6 - Preparation time: 2 hours"
+      - "Alternative - Lard the tenderloin"
+      - "475F"
+      - "350F"
+    ownership_pairs:
+      - title: "Roast beef tenderloin in sour cream sauce"
+        owned_text: "1-1/2 cups sour cream"
+
+  - pdf_page: 5
+    printed_page: 4
+    page_kind: "two recipes"
+    expected_titles:
+      - "Beef tenderloin slices (shortcut for “svíčková”) - Řezy ze svíčkové"
+      - "Beef croquettes - Karbanátky"
+    exact_probes:
+      - "2-1/2 minutes on each side"
+      - "1-1/2 cups chicken or beef stock, or water"
+      - "Serves 6 - Preparation time: 1 hour"
+      - "3/4 cup water"
+      - "3/4 cup bread crumbs"
+      - "Form 12 hamburgers"
+    ownership_pairs:
+      - title: "Beef tenderloin slices (shortcut for “svíčková”)"
+        owned_text: "1-1/2 cups sour cream"
+      - title: "Beef croquettes"
+        owned_text: "3/4 cup bread crumbs"
+    count_probes:
+      - text: "Serves 6 - Preparation time: 1 hour"
+        expected_count: 2
+
+  - pdf_page: 11
+    printed_page: 10
+    page_kind: "two recipes"
+    expected_titles:
+      - "Veal chops with caraway seeds - Telecí žebírka na kmíně"
+      - "Breaded veal chops - Telecí žebírka smažená"
+    exact_probes:
+      - "6 veal chops"
+      - "1/2 cup vegetable oil"
+      - "1 teaspoon caraway seeds"
+      - "1/2” thick"
+      - "Serves 6 - Preparation time: 45 minutes"
+      - "1/3 cup milk"
+    ownership_pairs:
+      - title: "Veal chops with caraway seeds"
+        owned_text: "1 teaspoon caraway seeds"
+      - title: "Breaded veal chops"
+        owned_text: "1/3 cup milk"
+    count_probes:
+      - text: "Serves 6 - Preparation time: 45 minutes"
+        expected_count: 2
+
+  - pdf_page: 17
+    printed_page: 16
+    page_kind: "recipe"
+    expected_titles:
+      - "Leg of lamb in wine sauce - Skopová kýta dušená"
+    exact_probes:
+      - "3-4 lbs. lamb leg, boned, skinned (4-5 lbs. with bone)"
+      - "1/2 teaspoon each of ginger and ground nutmeg"
+      - "1/4 cup cranberry juice, unsweetened"
+      - "1-2 cups chicken stock"
+      - "Cover and simmer 1 hour"
+      - "Serves 6 - Preparation time: 2 hours 30 minutes"
+
+  - pdf_page: 25
+    printed_page: 24
+    page_kind: "continuation plus two recipes"
+    begins_with_continuation_of: "Roast goose - Husa pečená"
+    expected_titles:
+      - "Roast duck - Kachna pečená"
+      - "Duckling with Madeira wine - Kachna na víně"
+    exact_probes:
+      - "Continue roasting for 1-1/2 hours."
+      - "Total roasting time is approximately 20 minutes per pound."
+      - "400F"
+      - "Serves 8-10 - Preparation time: 3 hours 30 minutes"
+      - "1 duck (approx 8 lbs.)"
+      - "Roast the duck in the same manner as the goose."
+      - "1 duckling, 5-6 lbs."
+      - "Roast 1 to 1-1/2 hours"
+    ownership_pairs:
+      - title: "Roast duck"
+        owned_text: "1 duck (approx 8 lbs.)"
+      - title: "Duckling with Madeira wine"
+        owned_text: "1 cup Madeira wine"
+
+  - pdf_page: 34
+    printed_page: 33
+    page_kind: "recipe with ingredient subgroup"
+    expected_titles:
+      - "Salmon trout with dill sauce - Pstruh s koprovou omáčkou"
+    exact_probes:
+      - "6 trouts, 4 lbs., cleaned, with heads and tails left on"
+      - "1-1/2 quarts water"
+      - "Sauce:"
+      - "2 tablespoons finely chopped dill"
+      - "1/2 cup heavy cream"
+      - "Hand sauce separately."
+      - "Serves 6 - Preparation time: 45 minutes"
+
+  - pdf_page: 35
+    printed_page: 34
+    page_kind: "section inventory"
+    group_order: ["Miscellaneous", "Soups"]
+    exact_probes:
+      - "Ham and noodles casserole - Šunkové nudle."
+      - "Stuffed cabbage rolls - Plněná kapusta."
+      - "Red cabbage - Červené zelí."
+      - "Mashed potatoes - Bramborová kaše."
+      - "Dumplings with croutons - Houskové knedlíky."
+      - "Potato salad - Bramborový salát."
+      - "Soups - Polévky:"
+      - "Tripe soup - Dršťková polévka."
+      - "Beer soup - Pivní polévka."
+    expected_order:
+      - "Miscellaneous"
+      - "Ham and noodles casserole - Šunkové nudle."
+      - "Mashed potatoes - Bramborová kaše."
+      - "Soups - Polévky:"
+
+  - pdf_page: 36
+    printed_page: 35
+    page_kind: "two recipes"
+    expected_titles:
+      - "Ham and noodles casserole - Šunkové nudle"
+      - "Stuffed peppers - Plněné papriky"
+    exact_probes:
+      - "12 oz. egg noodles"
+      - "2/3 cup heavy cream"
+      - "350F 35-40 minutes"
+      - "Serves 6 - Preparation time: 1 hour 15 minutes"
+      - "1 lb. finely ground pork or beef"
+      - "1/2 cup firmly cooked rice"
+      - "Pat dry cavities."
+      - "Simmer, covered, 30-35 minutes."
+    ownership_pairs:
+      - title: "Ham and noodles casserole"
+        owned_text: "2/3 cup heavy cream"
+      - title: "Stuffed peppers"
+        owned_text: "2 cups tomato sauce"
+    count_probes:
+      - text: "Serves 6 - Preparation time: 1 hour 15 minutes"
+        expected_count: 2
+
+  - pdf_page: 41
+    printed_page: 40
+    page_kind: "continuation plus recipe"
+    begins_with_continuation_of: "Yeast dumplings - Kynuté knedlíky"
+    expected_titles:
+      - "Potato dumplings - Bramborové knedlíky"
+    exact_probes:
+      - "Optional:"
+      - "3 tablespoons fried bread crumbs"
+      - "Optional: Coat with fried bread crumbs."
+      - "Serves 6 - Preparation time: 1 hour 15 minutes"
+      - "5 medium potatoes"
+      - "1 cup cream of wheat, regular, not precooked"
+      - "roll into 2” balls"
+      - "Cook in lightly salted boiling water 10-12 minutes."
+      - "Serves 6 - Preparation time: 1 hour"
+
+  - pdf_page: 46
+    printed_page: 45
+    page_kind: "section inventory"
+    group_order: ["Baking"]
+    exact_probes:
+      - "Baking guidelines."
+      - "Bohemian open face pastries - České koláčky"
+      - "Ricotta filling - Tvarohová nádivka"
+      - "Poppy seeds filling - Maková nádivka"
+      - "Silver dollars - Dukátové buchtičky"
+      - "Czech doughnuts, fried - Koblihy"
+      - "Karlasbader biscuits - Karlovarské suchary"
+      - "Christmas loaf - Vánočka"
+      - "Bread and apple baba - Žemlovka"
+      - "Plum dumplings - Švestkové knedlíky"
+      - "God's graces - Boží milosti"
+      - "Christmas cookies - Vánoční cukroví"
+      - "Truffles - Lanýže."
+    expected_order:
+      - "Baking guidelines."
+      - "Bohemian open face pastries - České koláčky"
+      - "Karlasbader biscuits - Karlovarské suchary"
+      - "Plum dumplings - Švestkové knedlíky"
+
+  - pdf_page: 47
+    printed_page: 46
+    page_kind: "reference guidance, not a recipe"
+    expected_titles: []
+    exact_probes:
+      - "Baking guidelines"
+      - "Baking with fresh yeast:"
+      - "packed in 2 oz. cubes"
+      - "remove it at least 1 hour prior to using."
+      - "Milk and butter must be lukewarm, not hot."
+      - "The quantities of ingredients indicated are to be followed exactly."
+      - "Butter always means unsalted butter"
+      - "Flour - means sifted flour."
+      - "Grated lemon rind - If you do not have a manual grater"
+
+  - pdf_page: 52
+    printed_page: 51
+    page_kind: "three related recipes"
+    expected_titles:
+      - "“Silver dollars” (miniature plain muffins) - Dukátové buchtičky"
+      - "Vanilla sauce - Vanilková omáčka"
+      - "White wine froth - Vinná omáčka"
+    exact_probes:
+      - "4 cups coarse flour, Gold Medal Wondra"
+      - "1-1/4 cups milk"
+      - "Prepare dough in the same manner as in Bohemian muffins."
+      - "350F, bake 20-25 minutes"
+      - "Serves 10 - Preparation time: 2 hours 30 minutes."
+      - "1 tablespoon corn starch"
+      - "Serves 10 - Preparation time: 30 minutes"
+      - "1 cup white table wine"
+      - "1/3 cup sugar"
+      - "Serves 10 - Preparation time: 20 minutes"
+    ownership_pairs:
+      - title: "“Silver dollars” (miniature plain muffins)"
+        owned_text: "1-1/4 cups milk"
+      - title: "Vanilla sauce"
+        owned_text: "1 tablespoon corn starch"
+      - title: "White wine froth"
+        owned_text: "1 cup white table wine"
+
+  - pdf_page: 75
+    printed_page: 74
+    page_kind: "two recipes"
+    expected_titles:
+      - "Butter rounds - Máslová kolečka"
+      - "Truffles - Lanýže"
+    exact_probes:
+      - "1/3 cup sugar mixed with 1 teaspoon vanilla sugar"
+      - "roll the dough out as thin as possible. (1/8”)."
+      - "1-1/4” round cakes"
+      - "bake at 350F for 15 minutes"
+      - "one “holed” round."
+      - "Preparation time - 1 hour 30 minutes"
+      - "2/3 cup heavy cream"
+      - "3/4 cup grated dark semi-sweet chocolate"
+      - "Let the “truffles” dry for 10 minutes"
+      - "Preparation time: 30 minutes, plus refrigeration."
+    ownership_pairs:
+      - title: "Butter rounds"
+        owned_text: "red raspberry or red currant preserve"
+      - title: "Truffles"
+        owned_text: "3/4 cup grated dark semi-sweet chocolate"

@@ -1,0 +1,384 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Stuffed meat loaf - Sv\u00ed\u010dkov\u00e1 sekan\u00e1 pln\u011bn\u00e1",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          459.0,
+          134.00000000000003
+        ],
+        [
+          1057.5,
+          134.00000000000003
+        ],
+        [
+          1057.5,
+          195.00000000000003
+        ],
+        [
+          459.0,
+          195.00000000000003
+        ]
+      ]
+    },
+    {
+      "title": "Beef goulash - Gul\u00e1\u0161 z hov\u011bziho masa",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          484.5,
+          155.0
+        ],
+        [
+          1009.5,
+          155.0
+        ],
+        [
+          1009.5,
+          200.0
+        ],
+        [
+          484.5,
+          200.0
+        ]
+      ]
+    },
+    {
+      "title": "Bohemian \"brasciole\" - stuffed beef (veal) rolls - Hov\u011bz\u00ed (telec\u00ed) z\u00e1vitky",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          238.5,
+          143.0
+        ],
+        [
+          1231.5,
+          143.0
+        ],
+        [
+          1231.5,
+          187.0
+        ],
+        [
+          238.5,
+          187.0
+        ]
+      ]
+    },
+    {
+      "title": "Roast veal - Telec\u00ed pe\u010den\u011b",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          556.5,
+          657.0
+        ],
+        [
+          916.5,
+          657.0
+        ],
+        [
+          916.5,
+          689.9999999999999
+        ],
+        [
+          556.5,
+          689.9999999999999
+        ]
+      ]
+    },
+    {
+      "title": "Stuffed veal breast - Teleci hrudi nadivan\u00e9",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          465.0,
+          316.94
+        ],
+        [
+          1044.0,
+          316.94
+        ],
+        [
+          1044.0,
+          366.76
+        ],
+        [
+          465.0,
+          366.76
+        ]
+      ]
+    },
+    {
+      "title": "Stuffings for veal breast",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          594.0,
+          205.875
+        ],
+        [
+          934.5,
+          205.875
+        ],
+        [
+          934.5,
+          254.25
+        ],
+        [
+          594.0,
+          254.25
+        ]
+      ]
+    },
+    {
+      "title": "Egg stuffing:",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          582.0,
+          257.625
+        ],
+        [
+          739.5,
+          257.625
+        ],
+        [
+          739.5,
+          295.875
+        ],
+        [
+          582.0,
+          295.875
+        ]
+      ]
+    },
+    {
+      "title": "Bread stuffing:",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          582.0,
+          465.75
+        ],
+        [
+          765.0,
+          465.75
+        ],
+        [
+          765.0,
+          501.75
+        ],
+        [
+          582.0,
+          501.75
+        ]
+      ]
+    },
+    {
+      "title": "Liver stuffing:",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          582.0,
+          747.0
+        ],
+        [
+          751.5,
+          747.0
+        ],
+        [
+          751.5,
+          779.625
+        ],
+        [
+          582.0,
+          779.625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          6
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          8
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "/Users/agaeta/AI Projects/personal/active/vera-cookbook/pilot/production-batch-002/marker-output/debug/Culinary Adventures - Vera Gaeta"
+}

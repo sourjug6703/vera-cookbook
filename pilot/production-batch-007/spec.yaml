@@ -1,0 +1,461 @@
+batch_id: production-batch-007
+batch_title: "Production batch 007 source review"
+batch_copy_title: "Vera Cookbook production batch 007 review status"
+candidate_summary: "Ten new local Marker machine candidates in source order across the FIRST/SECOND section boundary, with exact page context and cited regions. No trust promotion has been performed."
+audited_summary: "Ten new records in source order after a separate direct local AI visual source audit: seven source_checked and three needs_attention. This is not human verification."
+recipe_schema_version: "1.3.0"
+source_sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+pdf_page_count: 75
+marker_version: "2.0.0"
+marker_generated_at: "2026-08-24T00:15:11Z"
+marker_artifact: "pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures - Vera Gaeta.json"
+created_at: "2026-08-24T00:18:25Z"
+audited_at: "2026-08-24T00:27:37Z"
+auditor_id: "openai-codex"
+reserved_aliases:
+  - {recipe_id: vera-r0048, text: "Perch, Pike, or Trout with paprika sauce – Candát, Štika, Pstruh na paprice. – same as Carp with paprika sauce –", pdf_page: 33, block_id: /page/32/Text/8}
+non_record_context:
+  - {kind: section_directory, text: "SECOND section directory", pdf_page: 35, block_ids: [/page/34/SectionHeader/1, /page/34/SectionHeader/2, /page/34/Text/3, /page/34/Text/4, /page/34/SectionHeader/5, /page/34/Text/6]}
+recipes:
+  - recipe_id: vera-r0041
+    source_order: 41
+    slug: venison-cutlets-or-medallions
+    pages: [30]
+    printed_pages: ["29"]
+    display_title: "Venison cutlets, or medallions · Srnčí žebírka"
+    titles:
+      - {segment_id: title-en, text: "Venison cutlets, or medallions", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Srnčí žebírka", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 30, block_ids: [/page/29/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 30, block_ids: [/page/29/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 30, block_ids: [/page/29/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 30, block_ids: [/page/29/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 30, block_ids: [/page/29/Text/5]}
+      - {key: step-4, role: instruction, pdf_page: 30, block_ids: [/page/29/Text/6]}
+      - {key: yield, role: yield-time, pdf_page: 30, block_ids: [/page/29/Text/7]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "12 young venison cutlets, or medallions, 3 oz. ea.", region_keys: [ingredients]}
+          - {text: "12 juniper berries, crushed", region_keys: [ingredients]}
+          - {text: "4 tablespoons cognac", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+          - {text: "1·1/2 cups sour cream", region_keys: [ingredients]}
+          - {text: "1/2 cup chicken broth", region_keys: [ingredients]}
+          - {text: "3/4 cup olive oil", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 small onion, finely chopped", region_keys: [ingredients]}
+          - {text: "1 lb. fresh mushrooms, sliced lengthwise", region_keys: [ingredients]}
+          - {text: "snipped parsley", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Trim excess fat from the cutlets, pound them lightly, rub with juniper berries, sprinkle with salt and pepper, drizzle with cognac and olive oil. Cover, marinate at least 1 hour.", region_keys: [step-1]}
+          - {text: "Meanwhile melt butter in a large skillet, sauté onion and mushrooms. Season with salt and pepper. Reserve.", region_keys: [step-2]}
+          - {text: "Drain and wipe the cutlets, reserve marinade. Heat remaining oil in a heavy frying pan, fry venison over high heat, about 3 minutes each side. Remove cutlets, keep them warm. Deglaze pan with marinade. Add chicken broth and sour cream, simmer 5 minutes. Taste for salt and pepper.", region_keys: [step-3]}
+          - {text: "Coat the cutlets, or medallions, with the sauce. Garnish with mushrooms, snipped parsley, poached halves of apples, serve with noodles, rice.", region_keys: [step-4]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 20 minutes, plus marinating", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0042
+    source_order: 42
+    slug: roast-pheasant
+    pages: [30, 31]
+    printed_pages: ["29", "30"]
+    display_title: "Roast pheasant · Bažant pečený"
+    titles:
+      - {segment_id: title-en, text: "Roast pheasant", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Bažant pečený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 30, block_ids: [/page/29/SectionHeader/8]}
+      - {key: ingredients, role: ingredient, pdf_page: 30, block_ids: [/page/29/ListGroup/9]}
+      - {key: step-1a, role: continuation, pdf_page: 30, block_ids: [/page/29/Text/10]}
+      - {key: step-1b, role: continuation, pdf_page: 31, block_ids: [/page/30/Text/1]}
+      - {key: yield, role: yield-time, pdf_page: 31, block_ids: [/page/30/Text/2]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 pheasant", region_keys: [ingredients]}
+          - {text: "2 slices bacon cut in short strips", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "3·4 tablespoons flour", region_keys: [ingredients]}
+          - {text: "1·1/2 cups chicken broth", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse and wipe the pheasant inside and out. Lard the breast and thighs with bacon strips. Brown the pheasant evenly all around in a frying pan in half of the butter and onion. Preheat oven to 350F. Transfer pheasant, breast down, into an ovenproof deep dish together with the butter and onion from the frying pan. Add salt and pepper. Roast 30·40 minutes, until the top gets reddish. Baste often with the remaining butter and chicken broth. Turn the bird breast side up, continue roasting in the same manner, 40·45 minutes. On the stove top bring the pan juices to boil. Add flour and cook 5 minutes stirring constantly. Add the remaining chicken broth and cook a little more. When the sauce thickens, strain it and pour over pheasant, cut in four portion sizes. Serve with red cabbage, potatoes, cranberries.", region_keys: [step-1a, step-1b]}
+    yield_time_lines:
+      - {text: "Serves 4 – Preparation time: 1 hour 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    continuations:
+      - {from_region_key: step-1a, to_region_key: step-1b}
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0043
+    source_order: 43
+    slug: pheasant-in-cream-sauce
+    pages: [31]
+    printed_pages: ["30"]
+    display_title: "Pheasant in cream sauce · Bažant na smetaně"
+    titles:
+      - {segment_id: title-en, text: "Pheasant in cream sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Bažant na smetaně", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 31, block_ids: [/page/30/SectionHeader/3]}
+      - {key: ingredients, role: ingredient, pdf_page: 31, block_ids: [/page/30/ListGroup/4]}
+      - {key: step-1, role: instruction, pdf_page: 31, block_ids: [/page/30/Text/5]}
+      - {key: step-2, role: instruction, pdf_page: 31, block_ids: [/page/30/Text/6]}
+      - {key: yield, role: yield-time, pdf_page: 31, block_ids: [/page/30/Text/7]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 pheasant", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "2 slices bacon cut in short strips", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "1 cup chicken broth", region_keys: [ingredients]}
+          - {text: "1·1/2 cups heavy cream", region_keys: [ingredients]}
+          - {text: "2 tablespoons grated horseradish", region_keys: [ingredients]}
+          - {text: "1 tablespoon cognac", region_keys: [ingredients]}
+          - {text: "juice of 1 lemon", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse and wipe the pheasant inside and out. Lard the breast and thighs with bacon strips. Roast pheasant as indicated in “Roast pheasant”. In a saucepan blend pan juices, cream and horseradish. Cook for 5 minutes over medium heat. Add cognac and lemon juice. Season to taste with salt and pepper. Strain.", region_keys: [step-1]}
+          - {text: "Pour some gravy over the pheasant cut in 4 portions. Serve remaining gravy separately. Serve with rice, vegetables.", region_keys: [step-2]}
+    yield_time_lines:
+      - {text: "Serves 4 – Preparation time: 1 hour 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    related_recipe_ids: [vera-r0042]
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0044
+    source_order: 44
+    slug: partridge-quail
+    pages: [31, 32]
+    printed_pages: ["30", "31"]
+    display_title: "Partridge/Quail · Koroptev/Křepelka"
+    titles:
+      - {segment_id: title-en, text: "Partridge/Quail", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Koroptev/Křepelka", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 31, block_ids: [/page/30/SectionHeader/8]}
+      - {key: ingredients, role: ingredient, pdf_page: 31, block_ids: [/page/30/ListGroup/9]}
+      - {key: step-1a, role: continuation, pdf_page: 31, block_ids: [/page/30/Text/10]}
+      - {key: step-1b, role: continuation, pdf_page: 32, block_ids: [/page/31/Text/1]}
+      - {key: annotation, role: note, pdf_page: 32, block_ids: [/page/31/Text/1]}
+      - {key: yield, role: yield-time, pdf_page: 32, block_ids: [/page/31/Text/2]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 quails", region_keys: [ingredients]}
+          - {text: "3 slices bacon", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 cup chicken broth, or water", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse quails, pat dry. Sprinkle with salt and pepper inside and outside. Place 1/2 slice bacon inside each. Heat butter in a flameproof casserole, add quails. Roast 40·50 minutes at 350F. Baste often with pan drippings, chicken broth or water. Serve dish straight from the oven with quails cut in halves. Garnish with fresh parsley sprigs, red cabbage, cranberry sauce, poached halves of apples. Serve with rice, lentils.", region_keys: [step-1a, step-1b]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}
+    notes:
+      - text: "⟦overwritten inline word after ‘cranberry sauce,’⟧"
+        language: und
+        region_keys: [annotation]
+        uncertainties:
+          - substring: "⟦overwritten inline word after ‘cranberry sauce,’⟧"
+            issue: illegible
+            note: "A lighter overlapping word follows the source-clear printed phrase ‘cranberry sauce,’. It appears to repeat ‘sauce,’ but the first letters overlap the printed comma and its status as intended text versus a printing or scan artifact is not source-clear; the bracketed text is an explicit placeholder, not a guess."
+    cross_references: []
+    continuations:
+      - {from_region_key: step-1a, to_region_key: step-1b}
+    status: needs_attention
+    ambiguity_note: "The printed recipe text is source-clear, but a lighter overlapping word after ‘cranberry sauce,’ appears to repeat ‘sauce,’ and cannot be treated as intended text or excluded as a printing or scan artifact with confidence."
+    open_issues:
+      - issue_id: r0044-overwritten-inline-word
+        target_ids: [note-1]
+        description: "PDF page 32 has a lighter overlapping word immediately after the printed phrase ‘cranberry sauce,’. It appears to repeat ‘sauce,’, but the first letters overlap the printed comma and whether it is intended text or a printing or scan artifact is unresolved."
+        severity: textual
+
+  - recipe_id: vera-r0045
+    source_order: 45
+    slug: baked-carp
+    pages: [32]
+    printed_pages: ["31"]
+    display_title: "Baked carp · Kapr pečený"
+    titles:
+      - {segment_id: title-en, text: "Baked carp", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kapr pečený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 32, block_ids: [/page/31/SectionHeader/3]}
+      - {key: ingredients, role: ingredient, pdf_page: 32, block_ids: [/page/31/ListGroup/9]}
+      - {key: step-1, role: instruction, pdf_page: 32, block_ids: [/page/31/Text/4]}
+      - {key: annotation, role: note, pdf_page: 32, block_ids: [/page/31/Text/4]}
+      - {key: yield, role: yield-time, pdf_page: 32, block_ids: [/page/31/Text/5]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 carp steaks, 3·4 lbs.", region_keys: [ingredients]}
+          - {text: "1/2 cup vegetable oil", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "2 teaspoons caraway seeds", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Arrange carp steaks in a single layer in a well oiled baking pan. Season with caraway seeds, salt and pepper. Bake at 350F 25·30 minutes, or until fish flakes easily when tested with a fork. In a saucepan heat butter until lightly browned. Pour over fish. Garnish with lemon wedges. Serve with potatoes, vegetables, salad.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 40 minutes", region_keys: [yield]}
+    notes:
+      - text: "⟦overlapping inline corrections in the Baked carp instructions⟧"
+        language: und
+        region_keys: [annotation]
+        uncertainties:
+          - substring: "⟦overlapping inline corrections in the Baked carp instructions⟧"
+            issue: illegible
+            note: "Lighter characters overlap the source-clear printed phrases ‘baking pan.’ and ‘25·30’ and appear again after ‘fish.’; their exact text and correction intent are not source-clear."
+    cross_references: []
+    status: needs_attention
+    ambiguity_note: "The printed Baked carp text is source-clear, but three lighter overlapping inline marks cannot be transcribed or excluded with confidence."
+    open_issues:
+      - issue_id: r0045-overlapping-inline-corrections
+        target_ids: [note-1]
+        description: "PDF page 32 contains lighter overlapping characters over ‘baking pan.’ and ‘25·30’ and after ‘fish.’. Their exact letter sequence and whether they are authoritative corrections are unresolved."
+        severity: textual
+
+  - recipe_id: vera-r0046
+    source_order: 46
+    slug: fried-carp
+    pages: [32]
+    printed_pages: ["31"]
+    display_title: "Fried carp · Kapr smažený"
+    titles:
+      - {segment_id: title-en, text: "Fried carp", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kapr smažený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 32, block_ids: [/page/31/SectionHeader/6]}
+      - {key: ingredients, role: ingredient, pdf_page: 32, block_ids: [/page/31/ListGroup/10]}
+      - {key: step-1, role: instruction, pdf_page: 32, block_ids: [/page/31/Text/7]}
+      - {key: annotation, role: note, pdf_page: 32, block_ids: [/page/31/Text/7]}
+      - {key: yield, role: yield-time, pdf_page: 32, block_ids: [/page/31/Text/8]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 carp steaks, 3·4 lbs.", region_keys: [ingredients]}
+          - {text: "2 cups milk", region_keys: [ingredients]}
+          - {text: "3/4 cup flour", region_keys: [ingredients]}
+          - {text: "2 eggs", region_keys: [ingredients]}
+          - {text: "1 cup bread crumbs", region_keys: [ingredients]}
+          - {text: "1 cup vegetable oil for frying", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Soak fish 30 minutes in lightly salted milk. Dredge each piece in flour, dip in beaten eggs, coat with bread crumbs. Fry in hot oil until golden, about 4 minutes each side. Drain on paper towel. Serve on lettuce lined platter, garnish with lemon wedges and parsley sprigs. Serve with potato salad, green salad, vegetables.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}
+    notes:
+      - text: "⟦overwritten punctuation in the Fried carp instructions⟧"
+        language: und
+        region_keys: [annotation]
+        uncertainties:
+          - substring: "⟦overwritten punctuation in the Fried carp instructions⟧"
+            issue: ambiguous_glyph
+            note: "Lighter marks overlap or follow the source-clear commas after ‘flour’ and ‘golden’; their exact punctuation and correction intent are not source-clear."
+    cross_references: []
+    status: needs_attention
+    ambiguity_note: "The printed Fried carp text is source-clear, but lighter overlapping punctuation after ‘flour’ and ‘golden’ cannot be encoded or excluded with confidence."
+    open_issues:
+      - issue_id: r0046-overwritten-punctuation
+        target_ids: [note-1]
+        description: "PDF page 32 contains lighter overlapping marks around the commas after ‘flour’ and ‘golden’. Their exact encoding and whether they are authoritative corrections are unresolved."
+        severity: textual
+
+  - recipe_id: vera-r0047
+    source_order: 47
+    slug: carp-with-paprika-sauce
+    pages: [33]
+    printed_pages: ["32"]
+    display_title: "Carp with paprika sauce · Kapr na paprice"
+    titles:
+      - {segment_id: title-en, text: "Carp with paprika sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kapr na paprice", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 33, block_ids: [/page/32/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 33, block_ids: [/page/32/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/5]}
+      - {key: step-4, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/6]}
+      - {key: yield, role: yield-time, pdf_page: 33, block_ids: [/page/32/Text/7]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 carp steaks, 3·4 lbs.", region_keys: [ingredients]}
+          - {text: "1·1/2 cups water or fish broth", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "parsley, finely chopped", region_keys: [ingredients]}
+          - {text: "2 tablespoons paprika", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+          - {text: "3 tablespoons butter and 4 tablespoons flour for the roux", region_keys: [ingredients]}
+          - {text: "Optional: 1/2 cup heavy cream", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Melt butter in a large saucepot, add onion and cook until translucent. Add parsley and paprika, simmer 3 minutes. Add the fish and some of the fish broth or water.", region_keys: [step-1]}
+          - {text: "Cover and simmer 15·20 minutes.", region_keys: [step-2]}
+          - {text: "Using a slotted spatula, lift the carp portions onto a heated platter. For sauce, melt butter in a skillet and stir in flour. Cook and stir until golden.", region_keys: [step-3]}
+          - {text: "Add cooking liquid from the carp and some of the fish broth if needed.Cook until sauce thickens. Optional: for a creamier sauce blend in heavy cream. Season to taste with salt and pepper. Strain over fish. Serve with mashed potatoes, rice, tomato salad.", region_keys: [step-4]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0049
+    source_order: 49
+    slug: baked-pike-with-sour-cream
+    pages: [33]
+    printed_pages: ["32"]
+    display_title: "Baked pike with sour cream · Štika pečená se smetanou"
+    titles:
+      - {segment_id: title-en, text: "Baked pike with sour cream", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Štika pečená se smetanou", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 33, block_ids: [/page/32/SectionHeader/9]}
+      - {key: ingredients, role: ingredient, pdf_page: 33, block_ids: [/page/32/ListGroup/10]}
+      - {key: step-1, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/11]}
+      - {key: step-2, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/12]}
+      - {key: step-3, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/13]}
+      - {key: step-4, role: instruction, pdf_page: 33, block_ids: [/page/32/Text/14]}
+      - {key: yield, role: yield-time, pdf_page: 33, block_ids: [/page/32/Text/15]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 pike, 4 lbs., cleaned, with head and tail left on", region_keys: [ingredients]}
+          - {text: "2 bacon slices cut in thin strips", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "4 medium potatoes, parboiled, sliced", region_keys: [ingredients]}
+          - {text: "juice of 1 lemon", region_keys: [ingredients]}
+          - {text: "2 teaspoons paprika", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+          - {text: "1 pint sour cream", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Sauté onion in butter.", region_keys: [step-1]}
+          - {text: "Meanwhile, sprinkle pike with salt, paprika and lemon juice. Lard with strips of bacon. Lay fish in a lightly greased baking pan. Arrange potato slices on sides of fish and up, towards the edge of the pan. Sprinkle some salt over potatoes.", region_keys: [step-2]}
+          - {text: "Pour the butter onion mixture over fish. Top with sour cream. Bake at 350F, 30·40 minutes.", region_keys: [step-3]}
+          - {text: "Serve with tomato salad, vegetables.", region_keys: [step-4]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0050
+    source_order: 50
+    slug: salmon-trout-with-dill-sauce
+    pages: [34]
+    printed_pages: ["33"]
+    display_title: "Salmon trout with dill sauce · Pstruh s koprovou omáčkou"
+    titles:
+      - {segment_id: title-en, text: "Salmon trout with dill sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Pstruh s koprovou omáčkou", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 34, block_ids: [/page/33/SectionHeader/1]}
+      - {key: ingredients-main, role: ingredient, pdf_page: 34, block_ids: [/page/33/ListGroup/2]}
+      - {key: sauce-label, role: ingredient, pdf_page: 34, block_ids: [/page/33/SectionHeader/3]}
+      - {key: ingredients-sauce, role: ingredient, pdf_page: 34, block_ids: [/page/33/ListGroup/4]}
+      - {key: steps, role: instruction, pdf_page: 34, block_ids: [/page/33/Text/5]}
+      - {key: yield, role: yield-time, pdf_page: 34, block_ids: [/page/33/Text/6]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "6 trouts, 4 lbs., cleaned, with heads and tails left on", region_keys: [ingredients-main]}
+          - {text: "1/2 bottle white wine", region_keys: [ingredients-main]}
+          - {text: "1·1/2 quarts water", region_keys: [ingredients-main]}
+          - {text: "1 medium onion, quartered", region_keys: [ingredients-main]}
+          - {text: "juice of one lemon", region_keys: [ingredients-main]}
+          - {text: "10 black peppercorns", region_keys: [ingredients-main]}
+          - {text: "2 bay leaves", region_keys: [ingredients-main]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients-main]}
+          - {text: "parsley, finely chopped", region_keys: [ingredients-main]}
+          - {text: "salt", region_keys: [ingredients-main]}
+      - section_id: ingredients-sauce
+        label: {segment_id: label-sauce, text: "Sauce:", region_key: sauce-label}
+        items:
+          - {text: "3 tablespoons butter and 4 tablespoons flour", region_keys: [ingredients-sauce]}
+          - {text: "2 tablespoons finely chopped dill", region_keys: [ingredients-sauce]}
+          - {text: "1 small onion, finely chopped", region_keys: [ingredients-sauce]}
+          - {text: "parsley, finely chopped", region_keys: [ingredients-sauce]}
+          - {text: "2 cups fish broth", region_keys: [ingredients-sauce]}
+          - {text: "1 tablespoon vinegar", region_keys: [ingredients-sauce]}
+          - {text: "1 teaspoon sugar", region_keys: [ingredients-sauce]}
+          - {text: "1/2 cup heavy cream", region_keys: [ingredients-sauce]}
+          - {text: "salt", region_keys: [ingredients-sauce]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Heat the wine, water, onion, lemon juice, bay leaves and peppercorns. Simmer 10 minutes. Add the trouts and simmer gently for 15 minutes, without boiling.", region_keys: [steps]}
+          - {text: "Drain fish, arrange on a heated serving platter, keep it warm. Strain the broth from the fish, reserve 2 cups for dill sauce. Meanwhile, prepare the sauce. Melt butter in a saucepan, blend in flour, stir and cook until golden. Add onion, parsley, fish broth, vinegar, sugar, salt. Cook, uncovered, until sauce thickens. Strain. Blend in the cream and chopped dill. Heat through, do not boil. Pour hot butter over trouts, garnish with parsley. Hand sauce separately.", region_keys: [steps]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0051
+    source_order: 51
+    slug: ham-and-noodles-casserole
+    pages: [36]
+    printed_pages: ["35"]
+    display_title: "Ham and noodles casserole · Šunkové nudle"
+    titles:
+      - {segment_id: title-en, text: "Ham and noodles casserole", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Šunkové nudle", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 36, block_ids: [/page/35/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 36, block_ids: [/page/35/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 36, block_ids: [/page/35/Text/3]}
+      - {key: yield, role: yield-time, pdf_page: 36, block_ids: [/page/35/Text/4]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "12 oz. egg noodles", region_keys: [ingredients]}
+          - {text: "8 oz. fully cooked ham slices, cut into short strips", region_keys: [ingredients]}
+          - {text: "3 eggs, separated", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "grated rind of 1 lemon", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+          - {text: "1 tablespoon butter", region_keys: [ingredients]}
+          - {text: "2 tablespoons bread crumbs.", region_keys: [ingredients]}
+          - {text: "2/3 cup heavy cream", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Cook noodles in lightly salted water, drain and splash with cold water. In a bowl cream butter, egg yolks, lemon rind. Combine mixture with noodles and ham. Blend thoroughly. Fold in 3 stiffly beaten egg whites. Put into buttered and bread crumbs coated casserole. Pour the cream evenly over top and bake uncovered at 350F 35·40 minutes or until golden brown on top. Serve straight from oven, with green salad or tomato salad.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour 15 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []

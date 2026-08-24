@@ -1,0 +1,2036 @@
+{
+  "children": [
+    {
+      "id": "/page/5/Page/7",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/5/PageHeader/0'></content-ref><content-ref src='/page/5/SectionHeader/1'></content-ref><content-ref src='/page/5/ListGroup/2'></content-ref><content-ref src='/page/5/Text/3'></content-ref><content-ref src='/page/5/Text/4'></content-ref><content-ref src='/page/5/Text/5'></content-ref><content-ref src='/page/5/Text/6'></content-ref><content-ref src='/page/5/PageFooter/7'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/5/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1188.0,
+              81.00000000000001
+            ],
+            [
+              1299.0,
+              81.00000000000001
+            ],
+            [
+              1299.0,
+              104.99999999999999
+            ],
+            [
+              1188.0,
+              104.99999999999999
+            ]
+          ],
+          "bbox": [
+            1188.0,
+            81.00000000000001,
+            1299.0,
+            104.99999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {},
+          "images": {}
+        },
+        {
+          "id": "/page/5/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h3>Stuffed meat loaf - Svíčková sekaná plněná</h3>",
+          "polygon": [
+            [
+              459.0,
+              134.00000000000003
+            ],
+            [
+              1057.5,
+              134.00000000000003
+            ],
+            [
+              1057.5,
+              195.00000000000003
+            ],
+            [
+              459.0,
+              195.00000000000003
+            ]
+          ],
+          "bbox": [
+            459.0,
+            134.00000000000003,
+            1057.5,
+            195.00000000000003
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1-1/2 lbs. ground sirloin or chuck<br/>(ground pork shoulder can substitute<br/>half of the ground beef)</li>\n<li>• 1 whole egg</li>\n<li>• 2 hard baked rolls</li>\n<li>• 1 slice bacon</li>\n<li>• salt, pepper, marjoram</li>\n<li>• 1 small onion</li>\n<li>• 3/4 cup water</li>\n<li>• 3 tablespoons bread crumbs</li>\n<li>• 4 pickled dills</li>\n<li>• 4 hard boiled eggs</li>\n<li>• 3/4 cup chicken stock</li>\n<li>• 4 tablespoons vegetable oil</li>\n</ul>",
+          "polygon": [
+            [
+              132.0,
+              173.0
+            ],
+            [
+              529.5,
+              173.0
+            ],
+            [
+              529.5,
+              503.0
+            ],
+            [
+              132.0,
+              503.0
+            ]
+          ],
+          "bbox": [
+            132.0,
+            173.0,
+            529.5,
+            503.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/5/Text/3",
+          "block_type": "Text",
+          "html": "<p>Soak the rolls in water, squeeze off excess liquid, shred them and mix well with the ground meat. Add diced bacon, egg, salt, pepper, marjoram, chopped onion, 1 tablespoon water and mix it very well. If the mixture is not thick enough, add 1-2 tablespoons bread crumbs.</p>",
+          "polygon": [
+            [
+              576.0,
+              189.0
+            ],
+            [
+              1335.0,
+              189.0
+            ],
+            [
+              1335.0,
+              331.0
+            ],
+            [
+              576.0,
+              331.0
+            ]
+          ],
+          "bbox": [
+            576.0,
+            189.0,
+            1335.0,
+            331.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/Text/4",
+          "block_type": "Text",
+          "html": "<p>Turn the mixture over onto a board dusted with bread crumbs. Form a 3/4\" thick rectangle. Arrange hard boiled eggs and peeled and diced pickles by longer side of the rectangle. Roll the meat mixture over the eggs and form a loaf. Grease baking tray with oil, sprinkle the remaining oil over the loaf, and bake at 350F for one hour. Baste with chicken stock and juices from the pan. When done, slice the loaf on a serving dish, sprinkle with pan drippings.</p>",
+          "polygon": [
+            [
+              576.0,
+              324.00000000000006
+            ],
+            [
+              1329.0,
+              324.00000000000006
+            ],
+            [
+              1329.0,
+              539.0000000000001
+            ],
+            [
+              576.0,
+              539.0000000000001
+            ]
+          ],
+          "bbox": [
+            576.0,
+            324.00000000000006,
+            1329.0,
+            539.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/Text/5",
+          "block_type": "Text",
+          "html": "<p>Serve with vegetables, mashed potatoes, boiled potatoes, potato salad, etc.</p>",
+          "polygon": [
+            [
+              573.0,
+              536.0000000000001
+            ],
+            [
+              1323.0,
+              536.0000000000001
+            ],
+            [
+              1323.0,
+              592.0
+            ],
+            [
+              573.0,
+              592.0
+            ]
+          ],
+          "bbox": [
+            573.0,
+            536.0000000000001,
+            1323.0,
+            592.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/Text/6",
+          "block_type": "Text",
+          "html": "<p>Serves 6 - Preparation time: 1 hour 15 minutes</p>",
+          "polygon": [
+            [
+              571.5,
+              603.0
+            ],
+            [
+              1029.0,
+              603.0
+            ],
+            [
+              1029.0,
+              639.0
+            ],
+            [
+              571.5,
+              639.0
+            ]
+          ],
+          "bbox": [
+            571.5,
+            603.0,
+            1029.0,
+            639.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/5/PageFooter/7",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              711.0,
+              920.0000000000001
+            ],
+            [
+              784.5,
+              920.0000000000001
+            ],
+            [
+              784.5,
+              938.9999999999999
+            ],
+            [
+              711.0,
+              938.9999999999999
+            ]
+          ],
+          "bbox": [
+            711.0,
+            920.0000000000001,
+            784.5,
+            938.9999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "3": "/page/5/SectionHeader/1"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/6/Page/9",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/6/PageHeader/0'></content-ref><content-ref src='/page/6/SectionHeader/1'></content-ref><content-ref src='/page/6/ListGroup/2'></content-ref><content-ref src='/page/6/Text/3'></content-ref><content-ref src='/page/6/Text/4'></content-ref><content-ref src='/page/6/Text/5'></content-ref><content-ref src='/page/6/Text/6'></content-ref><content-ref src='/page/6/Text/7'></content-ref><content-ref src='/page/6/Text/8'></content-ref><content-ref src='/page/6/PageFooter/9'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/6/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              171.0,
+              55.0
+            ],
+            [
+              285.0,
+              55.0
+            ],
+            [
+              285.0,
+              79.0
+            ],
+            [
+              171.0,
+              79.0
+            ]
+          ],
+          "bbox": [
+            171.0,
+            55.0,
+            285.0,
+            79.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "3": "/page/5/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Beef goulash - Guláš z hověziho masa</h2>",
+          "polygon": [
+            [
+              484.5,
+              155.0
+            ],
+            [
+              1009.5,
+              155.0
+            ],
+            [
+              1009.5,
+              200.0
+            ],
+            [
+              484.5,
+              200.0
+            ]
+          ],
+          "bbox": [
+            484.5,
+            155.0,
+            1009.5,
+            200.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 3-4 lbs. boneless beef stew meat (bottom round, rump, chuck), cut in 1-1/2\" cubes</li>\n<li>• 2-3 cups beef stock or water</li>\n<li>• 1 large onion, thinly sliced</li>\n<li>• 3 slices bacon cut in short strips</li>\n<li>• 2 tablespoons vegetable oil</li>\n<li>• 3 cloves garlic, pressed or chopped</li>\n<li>• 2 tablespoons paprika</li>\n<li>• 3 tablespoons flour</li>\n<li>• 1/2 teaspoon each of caraway seeds and marjoram</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              126.0,
+              198.00000000000003
+            ],
+            [
+              511.5,
+              198.00000000000003
+            ],
+            [
+              511.5,
+              501.0
+            ],
+            [
+              126.0,
+              501.0
+            ]
+          ],
+          "bbox": [
+            126.0,
+            198.00000000000003,
+            511.5,
+            501.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/6/Text/3",
+          "block_type": "Text",
+          "html": "<p>Heat oil in a large stewpan. Add bacon and onion. Cook slowly, stirring and turning frequently until bacon is lightly browned and onion is translucent. Add beef. Sprinkle evenly over the meat: caraway seeds, marjoram, paprika, garlic. Cover, simmer one hour over low heat adding occasionally 2-3 tablespoons beef stock or water, if needed. Liquid in the pan should be just enough so that the onion and the meat do not burn or stick to the pan.</p>",
+          "polygon": [
+            [
+              564.0,
+              208.0
+            ],
+            [
+              1353.0,
+              208.0
+            ],
+            [
+              1353.0,
+              402.0
+            ],
+            [
+              564.0,
+              402.0
+            ]
+          ],
+          "bbox": [
+            564.0,
+            208.0,
+            1353.0,
+            402.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/4",
+          "block_type": "Text",
+          "html": "<p>When meat is half done, uncover pan and let cooking liquid nearly evaporate. Sprinkle flour over meat and braise 2-3 minutes. Add enough beef stock or water to cover the meat. Simmer 30 minutes or until meat is tender. Should the sauce be too thick, add some more beef stock or water.</p>",
+          "polygon": [
+            [
+              564.0,
+              395.00000000000006
+            ],
+            [
+              1347.0,
+              395.00000000000006
+            ],
+            [
+              1347.0,
+              530.0
+            ],
+            [
+              564.0,
+              530.0
+            ]
+          ],
+          "bbox": [
+            564.0,
+            395.00000000000006,
+            1347.0,
+            530.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/5",
+          "block_type": "Text",
+          "html": "<p>Taste sauce, season with salt and pepper. Lift meat onto a warmed deep serving dish. Strain sauce and pour over meat. Serve with boiled potatoes, rice, salad.</p>",
+          "polygon": [
+            [
+              564.0,
+              528.0000000000001
+            ],
+            [
+              1338.0,
+              528.0000000000001
+            ],
+            [
+              1338.0,
+              613.0
+            ],
+            [
+              564.0,
+              613.0
+            ]
+          ],
+          "bbox": [
+            564.0,
+            528.0000000000001,
+            1338.0,
+            613.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/6",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 2 hours</b></p>",
+          "polygon": [
+            [
+              564.0,
+              638.0
+            ],
+            [
+              919.5,
+              638.0
+            ],
+            [
+              919.5,
+              665.0
+            ],
+            [
+              564.0,
+              665.0
+            ]
+          ],
+          "bbox": [
+            564.0,
+            638.0,
+            919.5,
+            665.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/7",
+          "block_type": "Text",
+          "html": "<p><b>Alternative 1 –</b> Prepare beef goulash as shown above. Peel and slice 4 pickled cucumbers, add to the goulash, heat through, serve.</p>",
+          "polygon": [
+            [
+              561.0,
+              738.0
+            ],
+            [
+              1350.0,
+              738.0
+            ],
+            [
+              1350.0,
+              801.0000000000001
+            ],
+            [
+              561.0,
+              801.0000000000001
+            ]
+          ],
+          "bbox": [
+            561.0,
+            738.0,
+            1350.0,
+            801.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/Text/8",
+          "block_type": "Text",
+          "html": "<p><b>Alternative 2 –</b> Turn the goulash over into a deep serving dish, sprinkle with shredded ham and grated Parmesan cheese. Serve with white rice.</p>",
+          "polygon": [
+            [
+              561.0,
+              817.9999999999999
+            ],
+            [
+              1350.0,
+              817.9999999999999
+            ],
+            [
+              1350.0,
+              899.0000000000001
+            ],
+            [
+              561.0,
+              899.0000000000001
+            ]
+          ],
+          "bbox": [
+            561.0,
+            817.9999999999999,
+            1350.0,
+            899.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/6/PageFooter/9",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              703.5,
+              942.9999999999999
+            ],
+            [
+              780.0,
+              942.9999999999999
+            ],
+            [
+              780.0,
+              962.0
+            ],
+            [
+              703.5,
+              962.0
+            ]
+          ],
+          "bbox": [
+            703.5,
+            942.9999999999999,
+            780.0,
+            962.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/6/SectionHeader/1"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/7/Page/10",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/7/PageHeader/0'></content-ref><content-ref src='/page/7/SectionHeader/1'></content-ref><content-ref src='/page/7/ListGroup/2'></content-ref><content-ref src='/page/7/Text/3'></content-ref><content-ref src='/page/7/Text/4'></content-ref><content-ref src='/page/7/Text/5'></content-ref><content-ref src='/page/7/Text/6'></content-ref><content-ref src='/page/7/SectionHeader/7'></content-ref><content-ref src='/page/7/ListGroup/8'></content-ref><content-ref src='/page/7/Text/9'></content-ref><content-ref src='/page/7/PageFooter/10'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/7/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1170.0,
+              63.00000000000001
+            ],
+            [
+              1287.0,
+              63.00000000000001
+            ],
+            [
+              1287.0,
+              87.0
+            ],
+            [
+              1170.0,
+              87.0
+            ]
+          ],
+          "bbox": [
+            1170.0,
+            63.00000000000001,
+            1287.0,
+            87.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/6/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Bohemian \"brasciole\" - stuffed beef (veal) rolls - Hovězí (telecí) závitky</h2>",
+          "polygon": [
+            [
+              238.5,
+              143.0
+            ],
+            [
+              1231.5,
+              143.0
+            ],
+            [
+              1231.5,
+              187.0
+            ],
+            [
+              238.5,
+              187.0
+            ]
+          ],
+          "bbox": [
+            238.5,
+            143.0,
+            1231.5,
+            187.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 6 thin, approx. 1/4\", slices beef sirloin (or veal top round)</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 small onion</li>\n<li>• 1-1/2 cups sliced mushrooms</li>\n<li>• juice of one lemon</li>\n<li>• salt and pepper</li>\n<li>• 2 egg yolks</li>\n<li>• 6 thin slices bacon</li>\n<li>• 3/4 cup white wine</li>\n<li>• 3/4 cup olive oil</li>\n<li>• 3 tablespoons Worcestershire sauce</li>\n<li>• 3 cloves garlic</li>\n</ul>",
+          "polygon": [
+            [
+              121.5,
+              195.00000000000003
+            ],
+            [
+              531.0,
+              195.00000000000003
+            ],
+            [
+              531.0,
+              494.00000000000006
+            ],
+            [
+              121.5,
+              494.00000000000006
+            ]
+          ],
+          "bbox": [
+            121.5,
+            195.00000000000003,
+            531.0,
+            494.00000000000006
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/7/Text/3",
+          "block_type": "Text",
+          "html": "<p>Pound the meat slices and salt them on both sides. In a skillet, combine the butter and finely chopped onion. Brown the onion lightly, then add sliced mushrooms and lemon juice. Sauté 6-8 minutes. Discard the fat. Blend in two egg yolks, spice with salt and pepper. Spread the mixture evenly over the meat slices, roll each to enclose mixture, wrap each roll with a slice of bacon. Tie them with a string or fasten with wooden picks or small skewers. Place them in a container.</p>",
+          "polygon": [
+            [
+              553.5,
+              199.00000000000003
+            ],
+            [
+              1345.5,
+              199.00000000000003
+            ],
+            [
+              1345.5,
+              411.0
+            ],
+            [
+              553.5,
+              411.0
+            ]
+          ],
+          "bbox": [
+            553.5,
+            199.00000000000003,
+            1345.5,
+            411.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/Text/4",
+          "block_type": "Text",
+          "html": "<p>Mix wine, olive oil, Worcestershire sauce and pressed garlic and pour over the meat rolls. Let them marinate for 4 hours or overnight in a refrigerator.</p>",
+          "polygon": [
+            [
+              553.5,
+              414.0
+            ],
+            [
+              1344.0,
+              414.0
+            ],
+            [
+              1344.0,
+              493.0
+            ],
+            [
+              553.5,
+              493.0
+            ]
+          ],
+          "bbox": [
+            553.5,
+            414.0,
+            1344.0,
+            493.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/Text/5",
+          "block_type": "Text",
+          "html": "<p>On stove top heat a large heavy skillet. Add the rolls and brown them on all sides for about 20 minutes frequently adding some of the marinate. Remove the string, wooden picks or skewers. Serve with fried potatoes, vegetables, salad.</p>",
+          "polygon": [
+            [
+              553.5,
+              493.0
+            ],
+            [
+              1345.5,
+              493.0
+            ],
+            [
+              1345.5,
+              603.0
+            ],
+            [
+              553.5,
+              603.0
+            ]
+          ],
+          "bbox": [
+            553.5,
+            493.0,
+            1345.5,
+            603.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/Text/6",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour, plus marinating</b></p>",
+          "polygon": [
+            [
+              553.5,
+              607.0
+            ],
+            [
+              1060.5,
+              607.0
+            ],
+            [
+              1060.5,
+              635.0
+            ],
+            [
+              553.5,
+              635.0
+            ]
+          ],
+          "bbox": [
+            553.5,
+            607.0,
+            1060.5,
+            635.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/SectionHeader/7",
+          "block_type": "SectionHeader",
+          "html": "<h2>Roast veal - Telecí pečeně</h2>",
+          "polygon": [
+            [
+              556.5,
+              657.0
+            ],
+            [
+              916.5,
+              657.0
+            ],
+            [
+              916.5,
+              689.9999999999999
+            ],
+            [
+              556.5,
+              689.9999999999999
+            ]
+          ],
+          "bbox": [
+            556.5,
+            657.0,
+            916.5,
+            689.9999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/ListGroup/8",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3-4 lbs. leg of veal or top round, boned</li>\n<li>• 4 slices bacon</li>\n<li>• 1/2 cup cognac</li>\n<li>• 6 tablespoons butter</li>\n<li>• 2-1/2 cups white table wine</li>\n<li>• 1 cup chicken stock</li>\n<li>• 1 medium size onion</li>\n<li>• 2 carrots</li>\n</ul>",
+          "polygon": [
+            [
+              121.5,
+              708.9999999999999
+            ],
+            [
+              525.0,
+              708.9999999999999
+            ],
+            [
+              525.0,
+              889.0000000000001
+            ],
+            [
+              121.5,
+              889.0000000000001
+            ]
+          ],
+          "bbox": [
+            121.5,
+            708.9999999999999,
+            525.0,
+            889.0000000000001
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/7/Text/9",
+          "block_type": "Text",
+          "html": "<p>Lard the veal with strips of bacon. Rub it with salt and pepper. In a casserole combine the butter, chopped onion and the roast. Brown it lightly. Pour the cognac over and ignite it. When the flame dies down add the wine, sliced carrots, thyme, snipped parsley, crushed bay leaves, some of the chicken stock, and roast at 350F for 2 hours, basting occasionally with pan juices and chicken stock. Slice the roast. Strain pan juices into a saucepan, add 1/2 tablespoon</p>",
+          "polygon": [
+            [
+              553.5,
+              706.0
+            ],
+            [
+              1345.5,
+              706.0
+            ],
+            [
+              1345.5,
+              898.0
+            ],
+            [
+              553.5,
+              898.0
+            ]
+          ],
+          "bbox": [
+            553.5,
+            706.0,
+            1345.5,
+            898.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/7/PageFooter/10",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              697.5,
+              930.0
+            ],
+            [
+              775.5,
+              930.0
+            ],
+            [
+              775.5,
+              948.9999999999999
+            ],
+            [
+              697.5,
+              948.9999999999999
+            ]
+          ],
+          "bbox": [
+            697.5,
+            930.0,
+            775.5,
+            948.9999999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/7/SectionHeader/7"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/8/Page/12",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/8/PageHeader/0'></content-ref><content-ref src='/page/8/ListGroup/1'></content-ref><content-ref src='/page/8/Text/2'></content-ref><content-ref src='/page/8/Text/3'></content-ref><content-ref src='/page/8/SectionHeader/4'></content-ref><content-ref src='/page/8/ListGroup/5'></content-ref><content-ref src='/page/8/Text/6'></content-ref><content-ref src='/page/8/Text/7'></content-ref><content-ref src='/page/8/Text/8'></content-ref><content-ref src='/page/8/Text/9'></content-ref><content-ref src='/page/8/Text/10'></content-ref><content-ref src='/page/8/Text/11'></content-ref><content-ref src='/page/8/PageFooter/12'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1060.0
+        ],
+        [
+          0.0,
+          1060.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1060.0
+      ],
+      "children": [
+        {
+          "id": "/page/8/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              187.5,
+              64.66000000000001
+            ],
+            [
+              301.5,
+              64.66000000000001
+            ],
+            [
+              301.5,
+              91.16
+            ],
+            [
+              187.5,
+              91.16
+            ]
+          ],
+          "bbox": [
+            187.5,
+            64.66000000000001,
+            301.5,
+            91.16
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/ListGroup/1",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• snipped parsley, thyme, bay leaves</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              139.5,
+              162.18
+            ],
+            [
+              510.0,
+              162.18
+            ],
+            [
+              510.0,
+              218.35999999999999
+            ],
+            [
+              139.5,
+              218.35999999999999
+            ]
+          ],
+          "bbox": [
+            139.5,
+            162.18,
+            510.0,
+            218.35999999999999
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/8/Text/2",
+          "block_type": "Text",
+          "html": "<p>butter and more chicken stock if needed; bring to boil.<br/>\n  Serve sauce over sliced meat or on side.<br/>\n  Serve with vegetables, noodles, boiled potatoes.</p>",
+          "polygon": [
+            [
+              577.5,
+              177.02
+            ],
+            [
+              1201.5,
+              177.02
+            ],
+            [
+              1201.5,
+              283.02000000000004
+            ],
+            [
+              577.5,
+              283.02000000000004
+            ]
+          ],
+          "bbox": [
+            577.5,
+            177.02,
+            1201.5,
+            283.02000000000004
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/3",
+          "block_type": "Text",
+          "html": "<p>Serves 6 – Preparation time: 2 hours 30 minutes</p>",
+          "polygon": [
+            [
+              577.5,
+              272.42
+            ],
+            [
+              1039.5,
+              272.42
+            ],
+            [
+              1039.5,
+              311.64
+            ],
+            [
+              577.5,
+              311.64
+            ]
+          ],
+          "bbox": [
+            577.5,
+            272.42,
+            1039.5,
+            311.64
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/SectionHeader/4",
+          "block_type": "SectionHeader",
+          "html": "<h3>Stuffed veal breast - Teleci hrudi nadivané</h3>",
+          "polygon": [
+            [
+              465.0,
+              316.94
+            ],
+            [
+              1044.0,
+              316.94
+            ],
+            [
+              1044.0,
+              366.76
+            ],
+            [
+              465.0,
+              366.76
+            ]
+          ],
+          "bbox": [
+            465.0,
+            316.94,
+            1044.0,
+            366.76
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/ListGroup/5",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3-4 lbs. veal breast, boned</li>\n<li>• 1 cup chicken stock</li>\n<li>• 8 tablespoons butter</li>\n<li>• salt</li>\n<li>• stuffing – see below</li>\n</ul>",
+          "polygon": [
+            [
+              139.5,
+              361.46000000000004
+            ],
+            [
+              427.5,
+              361.46000000000004
+            ],
+            [
+              427.5,
+              484.4200000000001
+            ],
+            [
+              139.5,
+              484.4200000000001
+            ]
+          ],
+          "bbox": [
+            139.5,
+            361.46000000000004,
+            427.5,
+            484.4200000000001
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/8/Text/6",
+          "block_type": "Text",
+          "html": "<p>Rinse the meat and pat it dry with a paper towel. Using the handle of a wooden spoon, make an opening in the narrower end of the veal breast to form a cavity for stuffing. Most supermarkets sell the veal breast ready to be stuffed.</p>",
+          "polygon": [
+            [
+              577.5,
+              372.06
+            ],
+            [
+              1354.5,
+              372.06
+            ],
+            [
+              1354.5,
+              488.66
+            ],
+            [
+              577.5,
+              488.66
+            ]
+          ],
+          "bbox": [
+            577.5,
+            372.06,
+            1354.5,
+            488.66
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/7",
+          "block_type": "Text",
+          "html": "<p>Salt the meat and lightly fill the cavity with stuffing. Enclose it with stitches, or use a skewer. Lay the stuffed veal breast in a roasting pan with rack, skin down. Pour some of the melted butter on top and roast at 350F for 45 minutes. Turn it and roast 45 minutes to 1 hour, or until golden on top.</p>",
+          "polygon": [
+            [
+              574.5,
+              483.36000000000007
+            ],
+            [
+              1350.0,
+              483.36000000000007
+            ],
+            [
+              1350.0,
+              626.4599999999999
+            ],
+            [
+              574.5,
+              626.4599999999999
+            ]
+          ],
+          "bbox": [
+            574.5,
+            483.36000000000007,
+            1350.0,
+            626.4599999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/8",
+          "block_type": "Text",
+          "html": "<p>Baste occasionally with melted butter and pan drippings.</p>",
+          "polygon": [
+            [
+              574.5,
+              623.28
+            ],
+            [
+              1216.5,
+              623.28
+            ],
+            [
+              1216.5,
+              662.5
+            ],
+            [
+              574.5,
+              662.5
+            ]
+          ],
+          "bbox": [
+            574.5,
+            623.28,
+            1216.5,
+            662.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/9",
+          "block_type": "Text",
+          "html": "<p>Prick the stuffed cavity with fork several times to let out the steam. (The steam would push out the stuffing while slicing it). Remove the stitches or skewer.</p>",
+          "polygon": [
+            [
+              574.5,
+              651.9000000000001
+            ],
+            [
+              1350.0,
+              651.9000000000001
+            ],
+            [
+              1350.0,
+              734.58
+            ],
+            [
+              574.5,
+              734.58
+            ]
+          ],
+          "bbox": [
+            574.5,
+            651.9000000000001,
+            1350.0,
+            734.58
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/10",
+          "block_type": "Text",
+          "html": "<p>Let it stand 5 minutes. Slice and sprinkle with juices from the pan. Serve with boiled potatoes, vegetables, salad, compote.</p>",
+          "polygon": [
+            [
+              574.5,
+              733.52
+            ],
+            [
+              1330.5,
+              733.52
+            ],
+            [
+              1330.5,
+              798.1800000000002
+            ],
+            [
+              574.5,
+              798.1800000000002
+            ]
+          ],
+          "bbox": [
+            574.5,
+            733.52,
+            1330.5,
+            798.1800000000002
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/Text/11",
+          "block_type": "Text",
+          "html": "<p>Serves 6 – Preparation time: 2 hours 30 minutes</p>",
+          "polygon": [
+            [
+              571.5,
+              799.24
+            ],
+            [
+              1033.5,
+              799.24
+            ],
+            [
+              1033.5,
+              828.9200000000001
+            ],
+            [
+              571.5,
+              828.9200000000001
+            ]
+          ],
+          "bbox": [
+            571.5,
+            799.24,
+            1033.5,
+            828.9200000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/8/PageFooter/12",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              711.0,
+              996.4
+            ],
+            [
+              786.0,
+              996.4
+            ],
+            [
+              786.0,
+              1016.54
+            ],
+            [
+              711.0,
+              1016.54
+            ]
+          ],
+          "bbox": [
+            711.0,
+            996.4,
+            786.0,
+            1016.54
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/7/SectionHeader/7",
+        "3": "/page/8/SectionHeader/4"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/9/Page/11",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/9/PageHeader/0'></content-ref><content-ref src='/page/9/SectionHeader/1'></content-ref><content-ref src='/page/9/SectionHeader/2'></content-ref><content-ref src='/page/9/Text/3'></content-ref><content-ref src='/page/9/SectionHeader/4'></content-ref><content-ref src='/page/9/Text/5'></content-ref><content-ref src='/page/9/SectionHeader/6'></content-ref><content-ref src='/page/9/Text/7'></content-ref><content-ref src='/page/9/ListGroup/8'></content-ref><content-ref src='/page/9/ListGroup/9'></content-ref><content-ref src='/page/9/ListGroup/10'></content-ref><content-ref src='/page/9/PageFooter/11'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/9/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1185.0,
+              140.625
+            ],
+            [
+              1296.0,
+              140.625
+            ],
+            [
+              1296.0,
+              166.5
+            ],
+            [
+              1185.0,
+              166.5
+            ]
+          ],
+          "bbox": [
+            1185.0,
+            140.625,
+            1296.0,
+            166.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/7/SectionHeader/7",
+            "3": "/page/8/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Stuffings for veal breast</h2>",
+          "polygon": [
+            [
+              594.0,
+              205.875
+            ],
+            [
+              934.5,
+              205.875
+            ],
+            [
+              934.5,
+              254.25
+            ],
+            [
+              594.0,
+              254.25
+            ]
+          ],
+          "bbox": [
+            594.0,
+            205.875,
+            934.5,
+            254.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<h3>Egg stuffing:</h3>",
+          "polygon": [
+            [
+              582.0,
+              257.625
+            ],
+            [
+              739.5,
+              257.625
+            ],
+            [
+              739.5,
+              295.875
+            ],
+            [
+              582.0,
+              295.875
+            ]
+          ],
+          "bbox": [
+            582.0,
+            257.625,
+            739.5,
+            295.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/3",
+          "block_type": "Text",
+          "html": "<p>In a frying pan combine melted butter and lightly beaten eggs. Scramble until the egg whites stiffen. Blend in ham and green peas. Salt.</p>",
+          "polygon": [
+            [
+              582.0,
+              297.0
+            ],
+            [
+              1354.5,
+              297.0
+            ],
+            [
+              1354.5,
+              388.125
+            ],
+            [
+              582.0,
+              388.125
+            ]
+          ],
+          "bbox": [
+            582.0,
+            297.0,
+            1354.5,
+            388.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/SectionHeader/4",
+          "block_type": "SectionHeader",
+          "html": "<h3>Bread stuffing:</h3>",
+          "polygon": [
+            [
+              582.0,
+              465.75
+            ],
+            [
+              765.0,
+              465.75
+            ],
+            [
+              765.0,
+              501.75
+            ],
+            [
+              582.0,
+              501.75
+            ]
+          ],
+          "bbox": [
+            582.0,
+            465.75,
+            765.0,
+            501.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/5",
+          "block_type": "Text",
+          "html": "<p>Soak the rolls in milk, squeeze off excess, shred them. In a bowl cream the butter, whisk in the egg and the egg yolk. Add all remaining ingredients, leaving the bread crumbs to be added last. If the stuffing is thick enough, do not use up all bread crumbs. This stuffing may also be used for roasted stuffed chicken, pigeon, etc.</p>",
+          "polygon": [
+            [
+              582.0,
+              501.75
+            ],
+            [
+              1354.5,
+              501.75
+            ],
+            [
+              1354.5,
+              678.375
+            ],
+            [
+              582.0,
+              678.375
+            ]
+          ],
+          "bbox": [
+            582.0,
+            501.75,
+            1354.5,
+            678.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/SectionHeader/6",
+          "block_type": "SectionHeader",
+          "html": "<h3>Liver stuffing:</h3>",
+          "polygon": [
+            [
+              582.0,
+              747.0
+            ],
+            [
+              751.5,
+              747.0
+            ],
+            [
+              751.5,
+              779.625
+            ],
+            [
+              582.0,
+              779.625
+            ]
+          ],
+          "bbox": [
+            582.0,
+            747.0,
+            751.5,
+            779.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/Text/7",
+          "block_type": "Text",
+          "html": "<p>Soak the rolls in milk, squeeze off excess, shred them. Grind the liver, or mash it with a knife. Cream the butter, and blend in thoroughly all ingredients.</p>",
+          "polygon": [
+            [
+              582.0,
+              784.125
+            ],
+            [
+              1240.5,
+              784.125
+            ],
+            [
+              1240.5,
+              884.25
+            ],
+            [
+              582.0,
+              884.25
+            ]
+          ],
+          "bbox": [
+            582.0,
+            784.125,
+            1240.5,
+            884.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/9/ListGroup/8",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 6 eggs</li>\n<li>• 1/2 cup ham, diced</li>\n<li>• 1/2 cup cooked peas</li>\n<li>• 3 tablespoons butter</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              132.0,
+              279.0
+            ],
+            [
+              375.0,
+              279.0
+            ],
+            [
+              375.0,
+              405.0
+            ],
+            [
+              132.0,
+              405.0
+            ]
+          ],
+          "bbox": [
+            132.0,
+            279.0,
+            375.0,
+            405.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/9/ListGroup/9",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 3 hard baked rolls</li>\n<li>• 4 tablespoons butter</li>\n<li>• 1 cup milk</li>\n<li>• 1 whole egg, 1 egg yolk</li>\n<li>• 1/2 cup bread crumbs</li>\n<li>• snipped parsley</li>\n<li>• dash of ground nutmeg</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              132.0,
+              491.625
+            ],
+            [
+              397.5,
+              491.625
+            ],
+            [
+              397.5,
+              699.75
+            ],
+            [
+              132.0,
+              699.75
+            ]
+          ],
+          "bbox": [
+            132.0,
+            491.625,
+            397.5,
+            699.75
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/9/ListGroup/10",
+          "block_type": "ListGroup",
+          "html": "<ul>\n<li>• 6 oz. calf liver</li>\n<li>• 3 hard baked rolls</li>\n<li>• 1 cup milk</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 small onion</li>\n<li>• 1/3 cup bread crumbs</li>\n<li>• snipped parsley</li>\n<li>• dash of ground nutmeg, marjoram</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              129.0,
+              781.875
+            ],
+            [
+              501.0,
+              781.875
+            ],
+            [
+              501.0,
+              1012.5
+            ],
+            [
+              129.0,
+              1012.5
+            ]
+          ],
+          "bbox": [
+            129.0,
+            781.875,
+            501.0,
+            1012.5
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/9/PageFooter/11",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              720.0,
+              1059.75
+            ],
+            [
+              796.5,
+              1059.75
+            ],
+            [
+              796.5,
+              1082.25
+            ],
+            [
+              720.0,
+              1082.25
+            ]
+          ],
+          "bbox": [
+            720.0,
+            1059.75,
+            796.5,
+            1082.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/9/SectionHeader/1",
+            "3": "/page/9/SectionHeader/6"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/9/SectionHeader/1",
+        "3": "/page/9/SectionHeader/6"
+      },
+      "images": null
+    }
+  ],
+  "block_type": "Document"
+}

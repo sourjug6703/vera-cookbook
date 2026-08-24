@@ -1,0 +1,191 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0069
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 45
+  printed_pages:
+  - '44'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0069-title
+  pdf_page: 45
+  printed_page: '44'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1041
+    - 861
+  - - 1797
+    - 861
+  - - 1797
+    - 967
+  - - 1041
+    - 967
+  candidate_block_ids:
+  - /page/44/SectionHeader/5
+  region_image: evidence/production-batch-009/regions/vera-r0069/p45-title.png
+  region_image_pixel_sha256: 46769ffcbc5f337293c5edf2b5c37bff1b83cb38c0d05749695994048278c746
+- region_id: vera-r0069-text-1
+  pdf_page: 45
+  printed_page: '44'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1041
+    - 946
+  - - 2649
+    - 946
+  - - 2649
+    - 1117
+  - - 1041
+    - 1117
+  candidate_block_ids:
+  - /page/44/Text/6
+  region_image: evidence/production-batch-009/regions/vera-r0069/p45-text-1.png
+  region_image_pixel_sha256: 62c35e47358be0113b6124b89251fedafd5a2f4fd2e282131921049117656fc1
+- region_id: vera-r0069-text-2
+  pdf_page: 45
+  printed_page: '44'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1041
+    - 1104
+  - - 1848
+    - 1104
+  - - 1848
+    - 1195
+  - - 1041
+    - 1195
+  candidate_block_ids:
+  - /page/44/Text/7
+  region_image: evidence/production-batch-009/regions/vera-r0069/p45-text-2.png
+  region_image_pixel_sha256: 17d754bf725b9f4e2e7fde97556550f5c555ced9154edb6525d5f41e5296db42
+- region_id: vera-r0069-ingredients-wine
+  pdf_page: 45
+  printed_page: '44'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 212
+    - 980
+  - - 908
+    - 980
+  - - 908
+    - 1368
+  - - 212
+    - 1368
+  candidate_block_ids:
+  - manual-bbox:115,499,445,675
+  region_image: evidence/production-batch-009/regions/vera-r0069/p45-ingredients-wine.png
+  region_image_pixel_sha256: 37b91985d710de13b4e9bd2e522579f441e7b71aaf60d40f333e182623286f65
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Wine soup · Vinná polévka
+    language: mul
+    source_region_ids:
+    - vera-r0069-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Wine soup
+    language: en
+    source_region_ids:
+    - vera-r0069-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vinná polévka
+    language: cs
+    source_region_ids:
+    - vera-r0069-title
+    title_role: parallel
+  source_order: 69
+  slug_candidate: winesoup
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0069-text-2
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1·1/2 bottles white table wine
+      language: en
+      source_region_ids:
+      - vera-r0069-ingredients-wine
+    - segment_id: ingredient-2
+      text_verbatim: 6 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0069-ingredients-wine
+    - segment_id: ingredient-3
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0069-ingredients-wine
+    - segment_id: ingredient-4
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0069-ingredients-wine
+    - segment_id: ingredient-5
+      text_verbatim: toasts or crackers
+      language: en
+      source_region_ids:
+      - vera-r0069-ingredients-wine
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Combine all ingredients in a saucepan, set over medium heat. Beat at low speed until
+        soup starts to boil. Serve with toasts or crackers.
+      language: en
+      source_region_ids:
+      - vera-r0069-text-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

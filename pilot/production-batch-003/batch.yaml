@@ -1,0 +1,48 @@
+schema_version: "1.2"
+batch_id: production-batch-003
+frozen_on: "2026-08-23"
+purpose: "Third production extraction cohort; next five contiguous recipes in source order"
+source:
+  path: "source/Culinary Adventures - Vera Gaeta.pdf"
+  sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+  page_count: 75
+marker:
+  package: marker-pdf
+  version: "2.0.0"
+  mode: balanced
+  force_ocr: true
+  remote_llm: false
+pdf_pages: [11, 12, 13]
+marker_page_indexes: [10, 11, 12]
+recipes:
+  - recipe_id: vera-r0009
+    recipe_key: veal-chops-with-caraway-seeds
+    title: "Veal chops with caraway seeds"
+    pdf_pages: [11]
+    risks: [multi_recipe_page, fraction, punctuation, bilingual_title]
+  - recipe_id: vera-r0010
+    recipe_key: breaded-veal-chops
+    title: "Breaded veal chops"
+    pdf_pages: [11]
+    risks: [multi_recipe_page, fractions, ownership, bilingual_title]
+  - recipe_id: vera-r0011
+    recipe_key: wiener-schnitzel-breaded-veal-scallops
+    title: "Wiener Schnitzel · Breaded veal scallops"
+    pdf_pages: [12]
+    risks: [multi_recipe_page, multi_part_title, outlined_arrow_glyph, punctuation, diacritics]
+  - recipe_id: vera-r0012
+    recipe_key: veal-goulash
+    title: "Veal goulash"
+    pdf_pages: [12]
+    risks: [multi_recipe_page, centered_dot_form, abbreviations, ownership]
+  - recipe_id: vera-r0013
+    recipe_key: pork-roast
+    title: "Pork roast"
+    pdf_pages: [13]
+    risks: [multi_recipe_page, centered_dot_forms, temperature, recipe_boundary]
+promotion_boundary:
+  allowed_ai_statuses: [source_checked, needs_attention]
+  human_verification_separate: true
+  automatic_promotion_allowed: false
+  audit_performed_by: ai
+  audit_completed_at: "2026-08-23T21:35:39Z"

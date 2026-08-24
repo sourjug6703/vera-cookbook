@@ -1,0 +1,278 @@
+{
+  "batch_id": "production-batch-008",
+  "stage": "candidate",
+  "records": [
+    {
+      "recipe_id": "vera-r0051",
+      "record_path": "data/recipes/vera-r0051.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-007/overview/vera-r0051/page-36.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "15",
+        "12",
+        "8",
+        "3",
+        "4",
+        "2",
+        "2/3",
+        "350F",
+        "35·40"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai",
+      "read_back_only": true
+    },
+    {
+      "recipe_id": "vera-r0052",
+      "record_path": "data/recipes/vera-r0052.yaml",
+      "source_regions": 6,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0052/page-36.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "15",
+        "3",
+        "1/2",
+        "2",
+        "10",
+        "30·35"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0053",
+      "record_path": "data/recipes/vera-r0053.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0053/page-37.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "15",
+        "1/2",
+        "2",
+        "4",
+        "12",
+        "30·40"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0054",
+      "record_path": "data/recipes/vera-r0054.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0054/page-37.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1",
+        "2",
+        "4",
+        "3",
+        "1/3",
+        "15·20",
+        "2·3",
+        "1·2"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0055",
+      "record_path": "data/recipes/vera-r0055.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0055/page-38.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1",
+        "2",
+        "1·1/2",
+        "4",
+        "3",
+        "2/3",
+        "15",
+        "5·10"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0056",
+      "record_path": "data/recipes/vera-r0056.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0056/page-38.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "30",
+        "2",
+        "4",
+        "1",
+        "3",
+        "15",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0057",
+      "record_path": "data/recipes/vera-r0057.yaml",
+      "source_regions": 4,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0057/page-38.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "3",
+        "1·1/2",
+        "4"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0058",
+      "record_path": "data/recipes/vera-r0058.yaml",
+      "source_regions": 5,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0058/page-39.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "2",
+        "7",
+        "20",
+        "10",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0059",
+      "record_path": "data/recipes/vera-r0059.yaml",
+      "source_regions": 7,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0059/page-39.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "3",
+        "1·1/2",
+        "5",
+        "10"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0060",
+      "record_path": "data/recipes/vera-r0060.yaml",
+      "source_regions": 8,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0060/page-40.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1",
+        "2·1/2",
+        "3",
+        "4",
+        "1/2\"",
+        "25",
+        "1/2",
+        "3/4\""
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    },
+    {
+      "recipe_id": "vera-r0061",
+      "record_path": "data/recipes/vera-r0061.yaml",
+      "source_regions": 10,
+      "overview_images": [
+        "evidence/production-batch-008/overview/vera-r0061/page-40.png",
+        "evidence/production-batch-008/overview/vera-r0061/page-41.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "15",
+        "5",
+        "1·1/2",
+        "2",
+        "3",
+        "1/4",
+        "1/3",
+        "30",
+        "10"
+      ],
+      "open_issue_count": 0,
+      "status": "machine_candidate",
+      "audit_performed_by": null,
+      "resumed_without_rewrite": true
+    }
+  ],
+  "spec": "pilot/production-batch-008/spec.yaml",
+  "review_packet": "review/production-batch-008/machine-candidate.html",
+  "source_sha256": "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b",
+  "marker_pages_available": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "marker_pages_used": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "audit_completed_at": null,
+  "auditor_id": null
+}

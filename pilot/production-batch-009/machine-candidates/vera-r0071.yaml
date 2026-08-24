@@ -1,0 +1,449 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0071
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 48
+  printed_pages:
+  - '47'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0071-title
+  pdf_page: 48
+  printed_page: '47'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 804
+    - 269
+  - - 2130
+    - 269
+  - - 2130
+    - 382
+  - - 804
+    - 382
+  candidate_block_ids:
+  - /page/47/SectionHeader/1
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-title.png
+  region_image_pixel_sha256: 3af80b8c4f7f3a84c6b0d440dd5aaf38dd05782c3586ddee02b70f99e3c69345
+- region_id: vera-r0071-text-1
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1092
+    - 378
+  - - 2706
+    - 378
+  - - 2706
+    - 632
+  - - 1092
+    - 632
+  candidate_block_ids:
+  - /page/47/Text/3
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-1.png
+  region_image_pixel_sha256: 263a01b444564cc8d2ca21b6c0213b03f6b9345511c0764a07999a7a4e8c6d9f
+- region_id: vera-r0071-listgroup-2
+  pdf_page: 48
+  printed_page: '47'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 382
+  - - 984
+    - 382
+  - - 984
+    - 878
+  - - 228
+    - 878
+  candidate_block_ids:
+  - /page/47/ListGroup/2
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-listgroup-2.png
+  region_image_pixel_sha256: 9d1a537c4b447bb95101c5f4f87a5fa073feb3e7a8d15c8f438060fcc914c61a
+- region_id: vera-r0071-text-3
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1101
+    - 642
+  - - 2580
+    - 642
+  - - 2580
+    - 794
+  - - 1101
+    - 794
+  candidate_block_ids:
+  - /page/47/Text/4
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-3.png
+  region_image_pixel_sha256: b207debb7301c281f4ac1f13037b27a318da2ec7fa7dd25bcfe58e888bf0ce83
+- region_id: vera-r0071-text-4
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 750
+  - - 2616
+    - 750
+  - - 2616
+    - 946
+  - - 1107
+    - 946
+  candidate_block_ids:
+  - /page/47/Text/5
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-4.png
+  region_image_pixel_sha256: 95bedb733f5fd88b94c3a5c5e599dc3a783fd932320e6a990e1b34fe2f351a06
+- region_id: vera-r0071-text-5
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 908
+  - - 2667
+    - 908
+  - - 2667
+    - 1056
+  - - 1107
+    - 1056
+  candidate_block_ids:
+  - /page/47/Text/6
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-5.png
+  region_image_pixel_sha256: ef01724b695e24661f373378ffa8885fe416b544e9a8e87609d4c2849e32d018
+- region_id: vera-r0071-text-6
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1018
+  - - 2709
+    - 1018
+  - - 2709
+    - 1218
+  - - 1107
+    - 1218
+  candidate_block_ids:
+  - /page/47/Text/7
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-6.png
+  region_image_pixel_sha256: ac9b7da4d2bd8e7b026ddc0cd17b2650f1e59d10121e8de7f9c2ae014e9f15e9
+- region_id: vera-r0071-text-7
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1178
+  - - 2718
+    - 1178
+  - - 2718
+    - 1428
+  - - 1107
+    - 1428
+  candidate_block_ids:
+  - /page/47/Text/8
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-7.png
+  region_image_pixel_sha256: 84045ab2928abce0911b61fb1c0589cd5ddf4dc46017178c569866b4da0f343e
+- region_id: vera-r0071-text-8
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1390
+  - - 2721
+    - 1390
+  - - 2721
+    - 1536
+  - - 1107
+    - 1536
+  candidate_block_ids:
+  - /page/47/Text/9
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-8.png
+  region_image_pixel_sha256: a79b9d32e7b5b19cb76215c6fe8e6db45d6ae21957732530e0e86ca2ea110e7d
+- region_id: vera-r0071-text-9
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1498
+  - - 2718
+    - 1498
+  - - 2718
+    - 1640
+  - - 1107
+    - 1640
+  candidate_block_ids:
+  - /page/47/Text/10
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-9.png
+  region_image_pixel_sha256: ed79ec2a99cb6a8a30466ce32dd1924d0f070738118a909253610721b3364958
+- region_id: vera-r0071-text-10
+  pdf_page: 48
+  printed_page: '47'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1604
+  - - 1809
+    - 1604
+  - - 1809
+    - 1696
+  - - 1107
+    - 1696
+  candidate_block_ids:
+  - /page/47/Text/11
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-10.png
+  region_image_pixel_sha256: 53e2dbb47ddf00283f5228f602a496632ddfebf6fab3f9bedb79f76e6e8347b1
+- region_id: vera-r0071-text-11
+  pdf_page: 48
+  printed_page: '47'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1712
+  - - 1890
+    - 1712
+  - - 1890
+    - 1798
+  - - 1119
+    - 1798
+  candidate_block_ids:
+  - /page/47/Text/12
+  region_image: evidence/production-batch-009/regions/vera-r0071/p48-text-11.png
+  region_image_pixel_sha256: 129617370e66bf7b12f48ccba2e7928b15af3651e57e5a3c5bf7b2432c1c11c4
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Bohemian open-faced pastries · České koláčky
+    language: mul
+    source_region_ids:
+    - vera-r0071-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Bohemian open-faced pastries
+    language: en
+    source_region_ids:
+    - vera-r0071-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: České koláčky
+    language: cs
+    source_region_ids:
+    - vera-r0071-title
+    title_role: parallel
+  source_order: 71
+  slug_candidate: bohemianopenfacedpastries
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 10 – Preparation time: 3 hours'
+    language: en
+    source_region_ids:
+    - vera-r0071-text-11
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 2 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: dash of grated nutmeg
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: 1 whole egg for brushing
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 1 cup filling or thick fruit preserve
+      language: en
+      source_region_ids:
+      - vera-r0071-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Leavening: In a bowl stir yeast with 2 teaspoons sugar until dissolved. Add 2/3
+        cup flour and 1/2 cup lukewarm milk. Knead into a ball. Dust with flour, cover with napkin, let
+        rise in a warm place. It will double in bulk within 20 minutes.'
+      language: en
+      source_region_ids:
+      - vera-r0071-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a separate bowl combine remaining flour and sugar, lemon rind, nutmeg, salt. Place
+        risen leavening in center.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Lightly beat egg yolks and the remaining lukewarm milk, then add it gradually to
+        flour/leavening while mixing thoroughly. Finally add melted lukewarm butter and knead dough until
+        smooth and elastic.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-4
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Dust with flour, cover with a napkin and let rise 40 minutes in a warm place.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-5
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Punch dough down and turn onto lightly floured pastry board. Break off dough and
+        form balls the size of a walnut. Place them on a greased baking sheet, 4" apart. Let rise 10 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-6
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Press down the center of each ball, using bottom of a small glass or other round
+        object, or with your fingers, so that a higher border will be formed. Brush borders with beaten
+        egg. Spread filling evenly over center wells. Let rise 15 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-7
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: (If using butter crumbs filling, brush with melted butter first. This way filling
+        will stick).
+      language: en
+      source_region_ids:
+      - vera-r0071-text-8
+      step_number: 7
+    - segment_id: step-8
+      text_verbatim: Preheat oven to 350F, bake 15 minutes, or until borders are golden brown.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-9
+      step_number: 8
+    - segment_id: step-9
+      text_verbatim: Dust with sugar while warm.
+      language: en
+      source_region_ids:
+      - vera-r0071-text-10
+      step_number: 9
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0076
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

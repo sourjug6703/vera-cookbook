@@ -1,0 +1,439 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0033
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 25
+  - 26
+  printed_pages:
+  - '24'
+  - '25'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0033-title
+  pdf_page: 25
+  printed_page: '24'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1822
+    origin: top_left
+  polygon:
+  - - 813
+    - 1148
+  - - 2097
+    - 1148
+  - - 2097
+    - 1255
+  - - 813
+    - 1255
+  candidate_block_ids:
+  - /page/24/SectionHeader/5
+  region_image: evidence/production-batch-006/regions/vera-r0033/p25-title.png
+  region_image_pixel_sha256: 4821ae052fb6e461cb98bc5a34fe1d8df55b22c58cac03ed00114d627ea0a176
+- region_id: vera-r0033-ingredients
+  pdf_page: 25
+  printed_page: '24'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1822
+    origin: top_left
+  polygon:
+  - - 213
+    - 1266
+  - - 816
+    - 1266
+  - - 816
+    - 1637
+  - - 213
+    - 1637
+  candidate_block_ids:
+  - /page/24/ListGroup/6
+  region_image: evidence/production-batch-006/regions/vera-r0033/p25-ingredients.png
+  region_image_pixel_sha256: 01463b5febf09859fbedbb546100d08da3ca51d845e9fc7bcd04d33103de7df0
+- region_id: vera-r0033-step-1
+  pdf_page: 25
+  printed_page: '24'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1822
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1246
+  - - 2718
+    - 1246
+  - - 2718
+    - 1626
+  - - 1068
+    - 1626
+  candidate_block_ids:
+  - /page/24/Text/7
+  region_image: evidence/production-batch-006/regions/vera-r0033/p25-step-1.png
+  region_image_pixel_sha256: 9f7aee80dc4283b79a70cbbff5c62a018fb3cf0fbd97a6ddd678d8e1f637eca3
+- region_id: vera-r0033-step-2
+  pdf_page: 26
+  printed_page: '25'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 646
+  - - 2721
+    - 646
+  - - 2721
+    - 858
+  - - 1095
+    - 858
+  candidate_block_ids:
+  - /page/25/Text/1
+  region_image: evidence/production-batch-006/regions/vera-r0033/p26-step-2.png
+  region_image_pixel_sha256: 4396817304a437a8d4707ae7b209cde518ef31659a2016a1e52703c79f5de030
+- region_id: vera-r0033-step-3
+  pdf_page: 26
+  printed_page: '25'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 815
+  - - 2718
+    - 815
+  - - 2718
+    - 916
+  - - 1095
+    - 916
+  candidate_block_ids:
+  - /page/25/Text/2
+  region_image: evidence/production-batch-006/regions/vera-r0033/p26-step-3.png
+  region_image_pixel_sha256: c1db32220ce8a45d393ffa124975c93eb447536200c44193aeee9a5df656063b
+- region_id: vera-r0033-yield
+  pdf_page: 26
+  printed_page: '25'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2416
+    origin: top_left
+  polygon:
+  - - 1095
+    - 892
+  - - 2052
+    - 892
+  - - 2052
+    - 984
+  - - 1095
+    - 984
+  candidate_block_ids:
+  - /page/25/Text/3
+  region_image: evidence/production-batch-006/regions/vera-r0033/p26-yield.png
+  region_image_pixel_sha256: f45be644bc99a8671116ac4c8502fb34383931931f53ac4dd27452d28c2a7945
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Duckling with Madeira wine · Kachna na víně
+    language: mul
+    source_region_ids:
+    - vera-r0033-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Duckling with Madeira wine
+    language: en
+    source_region_ids:
+    - vera-r0033-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kachna na víně
+    language: cs
+    source_region_ids:
+    - vera-r0033-title
+    title_role: parallel
+  source_order: 33
+  slug_candidate: duckling-with-madeira-wine
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 4 – Preparation time: 1 hour 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0033-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 duckling, 5-6 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 5 slices ham, cut in stripes
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 8 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 cup Madeira wine
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0033-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Rinse duckling, pat dry. Sprinkle with salt and pepper inside and out. Melt butter
+        in a roasting pan, add ham and duckling. Brown it quickly on both sides under the broiler. Lower
+        oven temperature to 350F. Pour Madeira wine over duckling. Add some of the chicken stock, salt
+        and pepper, and cover with buttered waxpaper. Roast 1 to 1·1/2 hours, occasionally adding the
+        remaining chicken stock.
+      language: en
+      source_region_ids:
+      - vera-r0033-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Transfer duckling to a heated platter. Skim fat from pan drippings and strain into
+        a saucepan. Add flour and slowly cook over low heat until the mixture thickens.
+      language: en
+      source_region_ids:
+      - vera-r0033-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Quarter duckling, serve with the sauce, boiled potatoes, vegetables.
+      language: en
+      source_region_ids:
+      - vera-r0033-step-3
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations:
+  - from_region_id: vera-r0033-step-1
+    to_region_id: vera-r0033-step-2
+    relationship: continues_on
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T23:39:26Z'
+    artifact_path: pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:50:40Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0033
+    source_region_ids: &id001
+    - vera-r0033-title
+    - vera-r0033-ingredients
+    - vera-r0033-step-1
+    - vera-r0033-step-2
+    - vera-r0033-step-3
+    - vera-r0033-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0033
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    source_region_ids:
+    - vera-r0033-title
+    - vera-r0033-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids: &id002
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0033-title
+    - vera-r0033-step-1
+    - vera-r0033-step-2
+    - vera-r0033-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0033-title
+    - vera-r0033-yield
+    - vera-r0033-ingredients
+    - vera-r0033-step-1
+    - vera-r0033-step-2
+    - vera-r0033-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    source_region_ids:
+    - vera-r0033-yield
+    - vera-r0033-ingredients
+    - vera-r0033-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0033-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0033
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0033-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: ai-continuation
+    check_type: continuation
+    target_ids: *id002
+    source_region_ids:
+    - vera-r0033-step-1
+    - vera-r0033-step-2
+    - vera-r0033-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:50:40Z'
+    independent_of_extractor: true
+    note: Every declared cross-page continuation was followed directly across its cited regions.
+  open_issues: []

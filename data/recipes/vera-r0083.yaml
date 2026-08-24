@@ -1,0 +1,547 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0083
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 54
+  printed_pages:
+  - '53'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0083-title
+  pdf_page: 54
+  printed_page: '53'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1008
+    - 1052
+  - - 1905
+    - 1052
+  - - 1905
+    - 1153
+  - - 1008
+    - 1153
+  candidate_block_ids:
+  - /page/53/SectionHeader/4
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-title.png
+  region_image_pixel_sha256: 1e85f709d57c43505c981d8efd05e0e1625eb0e1d64a3b7b27c46973b10f1082
+- region_id: vera-r0083-text-1
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 1126
+  - - 2694
+    - 1126
+  - - 2694
+    - 1328
+  - - 1071
+    - 1328
+  candidate_block_ids:
+  - /page/53/Text/8
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-1.png
+  region_image_pixel_sha256: 84b8440791907d209acf8ca14d395d3061aa9db85b678062bf312b40978da43e
+- region_id: vera-r0083-listgroup-2
+  pdf_page: 54
+  printed_page: '53'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 1148
+  - - 762
+    - 1148
+  - - 762
+    - 1632
+  - - 228
+    - 1632
+  candidate_block_ids:
+  - /page/53/ListGroup/5
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-listgroup-2.png
+  region_image_pixel_sha256: 74e0e6538901f7f164b343851f2527244871f2318d0f1d5c041859751dc88180
+- region_id: vera-r0083-text-3
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 1286
+  - - 2694
+    - 1286
+  - - 2694
+    - 1486
+  - - 1071
+    - 1486
+  candidate_block_ids:
+  - /page/53/Text/9
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-3.png
+  region_image_pixel_sha256: 147c1d2124f7e854bc18bdfdd079aed8cd6bcc841dc1819b6f62ee453dfaa031
+- region_id: vera-r0083-text-4
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 1448
+  - - 1701
+    - 1448
+  - - 1701
+    - 1540
+  - - 1071
+    - 1540
+  candidate_block_ids:
+  - /page/53/Text/10
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-4.png
+  region_image_pixel_sha256: ce51a00f08b85822c726efb5042c566b054435634a04ba828195a031efb1cf47
+- region_id: vera-r0083-text-5
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 1550
+  - - 2676
+    - 1550
+  - - 2676
+    - 1696
+  - - 1071
+    - 1696
+  candidate_block_ids:
+  - /page/53/Text/11
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-5.png
+  region_image_pixel_sha256: 71a46f6e6238b9e8c05957ab5f6175e8a0199aed1c3fd1ed384d6e6c51b1e163
+- region_id: vera-r0083-text-6
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 1607
+  - - 453
+    - 1607
+  - - 453
+    - 1692
+  - - 228
+    - 1692
+  candidate_block_ids:
+  - /page/53/Text/6
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-6.png
+  region_image_pixel_sha256: 138545a324a2fb8d50b43a8aaf6b2c14b2d60d9c117065ab9e3a1767db06038e
+- region_id: vera-r0083-listgroup-7
+  pdf_page: 54
+  printed_page: '53'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 228
+    - 1656
+  - - 972
+    - 1656
+  - - 972
+    - 1828
+  - - 228
+    - 1828
+  candidate_block_ids:
+  - /page/53/ListGroup/7
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-listgroup-7.png
+  region_image_pixel_sha256: a0252f145a15e1d09281828d5ae227c7b33c7776b6b38889a63a0f89b7f42bfa
+- region_id: vera-r0083-text-8
+  pdf_page: 54
+  printed_page: '53'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 1688
+  - - 2076
+    - 1688
+  - - 2076
+    - 1774
+  - - 1071
+    - 1774
+  candidate_block_ids:
+  - /page/53/Text/12
+  region_image: evidence/production-batch-010/regions/vera-r0083/p54-text-8.png
+  region_image_pixel_sha256: b7652df6e3aef534da925a919a9898aec241e3f6105ba9155b8afa3ecbbd967c
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Open-faced doughnuts · Vdolky
+    language: mul
+    source_region_ids:
+    - vera-r0083-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Open-faced doughnuts
+    language: en
+    source_region_ids:
+    - vera-r0083-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vdolky
+    language: cs
+    source_region_ids:
+    - vera-r0083-title
+    title_role: parallel
+  source_order: 83
+  slug_candidate: openfaceddoughnuts
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 10 – Preparation time: 2 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0083-text-8
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1-1/2 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 1-1/2 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 3 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 1/3 cups sugar
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 1 tablespoon rum
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 1-1/2 cups oil for frying
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-2
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-11
+      text_verbatim: 1 cup plum or blueberry jam
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-7
+    - segment_id: ingredient-12
+      text_verbatim: 1/2 cup crumbled farmer's cheese
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-7
+    - segment_id: ingredient-13
+      text_verbatim: 1/2 cup sour cream
+      language: en
+      source_region_ids:
+      - vera-r0083-listgroup-7
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Prepare dough in the same manner as in Czech doughnuts, Roll it out to 1/3" thickness.
+        Cut out 3" round cakes. Let rise 30 minutes, in a warm place.
+      language: en
+      source_region_ids:
+      - vera-r0083-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Just before frying make an indentation with teaspoon or finger in center of each
+        cake. For frying, follow directions in Czech doughnuts recipe.
+      language: en
+      source_region_ids:
+      - vera-r0083-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Cool, sprinkle with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0083-text-4
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: 'Optional: Spread jam over each depression, sprinkle with crumbled farmer''s cheese,
+        dot with sour cream.'
+      language: en
+      source_region_ids:
+      - vera-r0083-text-5
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: 'Optional:'
+      language: en
+      source_region_ids:
+      - vera-r0083-text-6
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0082
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:28:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0083
+    source_region_ids: &id001
+    - vera-r0083-title
+    - vera-r0083-text-1
+    - vera-r0083-listgroup-2
+    - vera-r0083-text-3
+    - vera-r0083-text-4
+    - vera-r0083-text-5
+    - vera-r0083-text-6
+    - vera-r0083-listgroup-7
+    - vera-r0083-text-8
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0083
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    source_region_ids:
+    - vera-r0083-title
+    - vera-r0083-listgroup-2
+    - vera-r0083-listgroup-7
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    source_region_ids:
+    - vera-r0083-title
+    - vera-r0083-text-1
+    - vera-r0083-text-3
+    - vera-r0083-text-4
+    - vera-r0083-text-5
+    - vera-r0083-text-6
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    source_region_ids:
+    - vera-r0083-title
+    - vera-r0083-text-8
+    - vera-r0083-listgroup-2
+    - vera-r0083-listgroup-7
+    - vera-r0083-text-1
+    - vera-r0083-text-3
+    - vera-r0083-text-4
+    - vera-r0083-text-5
+    - vera-r0083-text-6
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - step-1
+    source_region_ids:
+    - vera-r0083-text-8
+    - vera-r0083-listgroup-2
+    - vera-r0083-listgroup-7
+    - vera-r0083-text-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0083-text-8
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0083
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  open_issues: []

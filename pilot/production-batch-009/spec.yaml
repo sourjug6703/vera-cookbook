@@ -1,0 +1,1132 @@
+batch_id: production-batch-009
+batch_title: Production batch 009 source review
+batch_copy_title: Vera Cookbook production batch 009 review status
+candidate_summary: Local Marker machine candidates for production batch 009; no trust promotion has been
+  performed.
+audited_summary: Production batch 009 after a separate direct local AI visual source audit. Source-clear
+  records are source_checked; genuine ambiguity remains needs_attention. This is not human verification.
+recipe_schema_version: 1.3.0
+source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+pdf_page_count: 75
+marker_version: 2.0.0
+marker_generated_at: '2026-08-24T03:09:28Z'
+marker_artifact: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures
+  - Vera Gaeta.json
+created_at: '2026-08-24T03:12:00Z'
+audited_at: '2026-08-24T03:28:00Z'
+auditor_id: openai-codex
+readback_record_ids: []
+recipes:
+- recipe_id: vera-r0062
+  source_order: 62
+  slug: potatodumplings
+  pages:
+  - 41
+  printed_pages:
+  - '40'
+  display_title: Potato dumplings · Bramborové knedlíky
+  titles:
+  - segment_id: title-en
+    text: Potato dumplings
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bramborové knedlíky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 41
+    block_ids:
+    - /page/40/SectionHeader/7
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 41
+    block_ids:
+    - /page/40/ListGroup/8
+  - key: text-2
+    role: instruction
+    pdf_page: 41
+    block_ids:
+    - /page/40/Text/9
+  - key: text-3
+    role: instruction
+    pdf_page: 41
+    block_ids:
+    - /page/40/Text/10
+  - key: text-4
+    role: instruction
+    pdf_page: 41
+    block_ids:
+    - /page/40/Text/11
+  - key: text-5
+    role: yield-time
+    pdf_page: 41
+    block_ids:
+    - /page/40/Text/12
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 5 medium potatoes
+      region_keys:
+      - listgroup-1
+    - text: 1 cup flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup cream of wheat, regular, not precooked
+      region_keys:
+      - listgroup-1
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 2 whole eggs
+      region_keys:
+      - listgroup-1
+    - text: salt
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Peel potatoes, cook in salted water, drain. Mash them, add butter, eggs, salt. Mix thoroughly,
+        blend in flour and cream of wheat. Knead until dough is smooth and dry.
+      region_keys:
+      - text-2
+    - text: Pinch off bits of dough, roll into 2" balls. Cook in lightly salted boiling water 10-12 minutes.
+        Serve immediately.
+      region_keys:
+      - text-3
+    - text: Serve with roast goose, pork, cabbage, sauerkraut.
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0063
+  source_order: 63
+  slug: potatosalad
+  pages:
+  - 42
+  printed_pages:
+  - '41'
+  display_title: Potato salad · Bramborový salát
+  titles:
+  - segment_id: title-en
+    text: Potato salad
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bramborový salát
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 42
+    block_ids:
+    - /page/41/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 42
+    block_ids:
+    - /page/41/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 42
+    block_ids:
+    - /page/41/Text/3
+  - key: text-3
+    role: yield-time
+    pdf_page: 42
+    block_ids:
+    - /page/41/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 5 medium potatoes, boiled, cooled, peeled and diced
+      region_keys:
+      - listgroup-1
+    - text: 2 medium onions, finely chopped
+      region_keys:
+      - listgroup-1
+    - text: 5 slices ham cut in thin strips
+      region_keys:
+      - listgroup-1
+    - text: 7 pickled cucumbers, peeled, diced, squeezed dry
+      region_keys:
+      - listgroup-1
+    - text: 2 large green apples, Granny Smith, peeled, cored, diced
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup Hellmann's mayonnaise mixed with 1 tablespoon Dijon mustard
+      region_keys:
+      - listgroup-1
+    - text: 2 teaspoons vinegar
+      region_keys:
+      - listgroup-1
+    - text: 2 teaspoons white wine Worcestershire sauce
+      region_keys:
+      - listgroup-1
+    - text: white pepper
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Place potatoes in a large bowl, sprinkle with vinegar, Worcestershire sauce, pepper. Add onions,
+        ham, apples. Add pickles last, making sure they are squeezed dry. Lightly toss together all ingredients.
+        With a spatula thoroughly but carefully blend in mayonnaise/mustard mixture. Chill to blend flavors,
+        at least several hours. To serve, spoon salad in a bowl lined with lettuce. Serve with roasts,
+        chicken, meatloaf.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: Serves 8-10 – Preparation time 1 hour 15 minutes
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0064
+  source_order: 64
+  slug: goulashsoup
+  pages:
+  - 42
+  printed_pages:
+  - '41'
+  display_title: Goulash soup · Gulášová polévka
+  titles:
+  - segment_id: title-en
+    text: Goulash soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Gulášová polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 42
+    block_ids:
+    - /page/41/SectionHeader/5
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 42
+    block_ids:
+    - /page/41/ListGroup/6
+  - key: text-2
+    role: instruction
+    pdf_page: 42
+    block_ids:
+    - /page/41/Text/7
+  - key: text-3
+    role: yield-time
+    pdf_page: 42
+    block_ids:
+    - /page/41/Text/8
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/2 quarts beef stock
+      region_keys:
+      - listgroup-1
+    - text: 1 lb. beef stew meat cut in 1/2" cubes
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons vegetable oil
+      region_keys:
+      - listgroup-1
+    - text: 2 slices bacon cut in short strips
+      region_keys:
+      - listgroup-1
+    - text: 1 medium onion, finely chopped
+      region_keys:
+      - listgroup-1
+    - text: 2 medium potatoes, peeled and cut in 1/2" cubes
+      region_keys:
+      - listgroup-1
+    - text: 1 tablespoon paprika
+      region_keys:
+      - listgroup-1
+    - text: 4 tablespoons flour
+      region_keys:
+      - listgroup-1
+    - text: 1/2 teaspoon each of caraway seeds, marjoram, ground nutmeg
+      region_keys:
+      - listgroup-1
+    - text: 3 cloves garlic, pressed or chopped
+      region_keys:
+      - listgroup-1
+    - text: salt and pepper
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a large saucepan combine oil, bacon and onion, brown it lightly. Add paprika, beef, pepper,
+        caraway seeds, marjoram, nutmeg, garlic. Cover and simmer until beef is almost tender, about 45
+        minutes, stirring occasionally and adding 2-3 tablespoons beef stock, just enough to keep moisture
+        in the pan. Uncover, blend in flour, braise 5 minutes. Add potatoes, beef stock, bring to boiling.
+        Cook over medium/low heat until potatoes and beef are tender, 15-20 minutes. Season to taste with
+        salt and pepper.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 2 hours'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0065
+  source_order: 65
+  slug: creamofchickensoup
+  pages:
+  - 43
+  printed_pages:
+  - '42'
+  display_title: Cream of chicken soup · Krém z kuřat
+  titles:
+  - segment_id: title-en
+    text: Cream of chicken soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Krém z kuřat
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 43
+    block_ids:
+    - /page/42/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/3
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 43
+    block_ids:
+    - /page/42/ListGroup/2
+  - key: text-3
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/5
+  - key: text-5
+    role: yield-time
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 quarts water
+      region_keys:
+      - listgroup-2
+    - text: 1 small chicken, 2 lbs., quartered
+      region_keys:
+      - listgroup-2
+    - text: 2 beef soup bones
+      region_keys:
+      - listgroup-2
+    - text: soup greens (carrot, celery, parsley)
+      region_keys:
+      - listgroup-2
+    - text: 1 medium onion, quartered
+      region_keys:
+      - listgroup-2
+    - text: 1/3 teaspoon ground allspice
+      region_keys:
+      - listgroup-2
+    - text: 1 egg yolk
+      region_keys:
+      - listgroup-2
+    - text: 1/2 cup heavy cream
+      region_keys:
+      - listgroup-2
+    - text: salt and pepper
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons butter and 3 tablespoons flour for the roux
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Place water, chicken, bones, soup greens, onion, salt in a large saucepan. Bring to boiling.
+        Simmer, covered, 45 minutes or until chicken is tender.
+      region_keys:
+      - text-1
+    - text: Remove chicken when cool, discard skin and bones, puree chicken meat. Reserve.
+      region_keys:
+      - text-3
+    - text: In a separate saucepan stir flour into melted butter and cook until bubbly and golden brown.
+        Gradually add the broth from the chicken, bones, allspice and pepper. Cook 10 minutes over medium
+        heat. Strain. Stir in puréed chicken. Lightly beat egg yolk and cream and blend mixture into soup.
+        Season with salt and pepper. Heat through. Do not boil after egg yolk/cream addition.
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 2 hours'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0066
+  source_order: 66
+  slug: tripesoup
+  pages:
+  - 43
+  - 44
+  printed_pages:
+  - '42'
+  - '43'
+  display_title: Tripe soup · Drštková polévka
+  titles:
+  - segment_id: title-en
+    text: Tripe soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Drštková polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 43
+    block_ids:
+    - /page/42/SectionHeader/7
+  - key: text-1
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/9
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 43
+    block_ids:
+    - /page/42/ListGroup/8
+  - key: text-3
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/10
+  - key: text-4
+    role: instruction
+    pdf_page: 43
+    block_ids:
+    - /page/42/Text/11
+  - key: text-5
+    role: instruction
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/1
+  - key: text-6
+    role: instruction
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/2
+  - key: text-7
+    role: instruction
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/3
+  - key: text-8
+    role: yield-time
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 lbs. tripe
+      region_keys:
+      - listgroup-2
+    - text: 2 quarts chicken broth
+      region_keys:
+      - listgroup-2
+    - text: 2 carrots
+      region_keys:
+      - listgroup-2
+    - text: 1 celery root, or 4 stalks
+      region_keys:
+      - listgroup-2
+    - text: 1 medium onion, quartered
+      region_keys:
+      - listgroup-2
+    - text: 4 cloves garlic, pressed or chopped
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons paprika
+      region_keys:
+      - listgroup-2
+    - text: 1/2 teaspoon each of marjoram, ground allspice, black pepper, ginger
+      region_keys:
+      - listgroup-2
+    - text: 3 tablespoons butter and 4 tablespoons flour for the roux
+      region_keys:
+      - listgroup-2
+    - text: salt
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Most supermarkets and butchers sell tripe already cleaned and parboiled, so just rinse it
+        well in cold water. However, if you need to start from scratch, here''s how:'
+      region_keys:
+      - text-1
+    - text: Clean tripe well and rinse thoroughly under running cold water. Rub with salt, scald with
+        boiling water, then rinse again under running cold water. Put in a large pot, cover with salted
+        water, and boil covered for 1 hour. Drain. Rinse thoroughly in cold water again. Start with clean
+        salted water and boil tripe until almost tender. 1-2 hours.
+      region_keys:
+      - text-3
+    - text: Cook tripe with carrots, celery and onion in chicken broth until tripe
+      region_keys:
+      - text-4
+    - text: and vegetables are tender, 30-40 minutes. Remove tripe and vegetables, reserve the broth.
+      region_keys:
+      - text-5
+    - text: Melt butter in a saucepan. Stir in flour to make a smooth paste. Cook and stir until golden.
+        Add garlic, paprika, marjoram, allspice, pepper and ginger. Brown mixture lightly. Add the broth,
+        simmer 10 minutes, strain.
+      region_keys:
+      - text-6
+    - text: Cut tripe in 2" long thin strips, slice vegetables, stir into soup. Season to taste with salt
+        and pepper.
+      region_keys:
+      - text-7
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-8
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+  continuations:
+  - from_region_key: text-4
+    to_region_key: text-5
+- recipe_id: vera-r0067
+  source_order: 67
+  slug: countrypotatosoup
+  pages:
+  - 44
+  printed_pages:
+  - '43'
+  display_title: Country potato soup · Bramborová polévka
+  titles:
+  - segment_id: title-en
+    text: Country potato soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bramborová polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 44
+    block_ids:
+    - /page/43/SectionHeader/5
+  - key: text-1
+    role: instruction
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/7
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 44
+    block_ids:
+    - /page/43/ListGroup/6
+  - key: text-3
+    role: instruction
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/8
+  - key: text-4
+    role: yield-time
+    pdf_page: 44
+    block_ids:
+    - /page/43/Text/9
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/2 quarts water
+      region_keys:
+      - listgroup-2
+    - text: 3 medium potatoes, peeled, cut in cubes
+      region_keys:
+      - listgroup-2
+    - text: 1 medium onion, finely chopped
+      region_keys:
+      - listgroup-2
+    - text: 4 cloves garlic, pressed
+      region_keys:
+      - listgroup-2
+    - text: 1/2 teaspoon each of caraway seeds, and marjoram
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: 3 tablespoons flour
+      region_keys:
+      - listgroup-2
+    - text: 1 cup fresh mushrooms, sliced lengthwise, sautéed in butter
+      region_keys:
+      - listgroup-2
+    - text: parsley, finely chopped
+      region_keys:
+      - listgroup-2
+    - text: salt and pepper
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a large saucepot combine potatoes, salt, caraway seeds, marjoram, water. Cook 20 minutes,
+        or until potatoes are crisp-tender.
+      region_keys:
+      - text-1
+    - text: Sauté onion and garlic in butter, stir in flour, brown lightly. Add 2 cups cooking liquid
+        from the potatoes. Bring to boiling, cook and stir 5 minutes. Strain mixture into potatoes. Simmer
+        10 minutes, add mushrooms and parsley. Season to taste with salt and pepper.
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0068
+  source_order: 68
+  slug: milksoup
+  pages:
+  - 45
+  printed_pages:
+  - '44'
+  display_title: Milk soup · Mléčná polévka
+  titles:
+  - segment_id: title-en
+    text: Milk soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Mléčná polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 45
+    block_ids:
+    - /page/44/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/3
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 45
+    block_ids:
+    - /page/44/ListGroup/2
+  - key: text-3
+    role: yield-time
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 quarts milk
+      region_keys:
+      - listgroup-2
+    - text: 3 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 1/4 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1/4 teaspoon salt
+      region_keys:
+      - listgroup-2
+    - text: toasts or croutons
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Lightly beat egg yolks in one cup milk. Pour remaining milk in a saucepot, add sugar and salt.
+        Set over medium/low heat, bring to boiling, stirring constantly. Blend in yolks/milk mixture,
+        heat through, but do not boil. Serve with toasts or croutons.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 15 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0069
+  source_order: 69
+  slug: winesoup
+  pages:
+  - 45
+  printed_pages:
+  - '44'
+  display_title: Wine soup · Vinná polévka
+  titles:
+  - segment_id: title-en
+    text: Wine soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Vinná polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 45
+    block_ids:
+    - /page/44/SectionHeader/5
+  - key: text-1
+    role: instruction
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/6
+  - key: text-2
+    role: yield-time
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/7
+  - key: ingredients-wine
+    role: ingredient
+    pdf_page: 45
+    block_ids:
+    - manual-bbox:115,499,445,675
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1·1/2 bottles white table wine
+      region_keys:
+      - ingredients-wine
+    - text: 6 egg yolks
+      region_keys:
+      - ingredients-wine
+    - text: 1/3 cup sugar
+      region_keys:
+      - ingredients-wine
+    - text: grated rind of 1 lemon
+      region_keys:
+      - ingredients-wine
+    - text: toasts or crackers
+      region_keys:
+      - ingredients-wine
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Combine all ingredients in a saucepan, set over medium heat. Beat at low speed until soup
+        starts to boil. Serve with toasts or crackers.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 15 minutes'
+    region_keys:
+    - text-2
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0070
+  source_order: 70
+  slug: beersoup
+  pages:
+  - 45
+  printed_pages:
+  - '44'
+  display_title: Beer soup · Pivní polévka
+  titles:
+  - segment_id: title-en
+    text: Beer soup
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Pivní polévka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 45
+    block_ids:
+    - /page/44/SectionHeader/8
+  - key: text-1
+    role: instruction
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/9
+  - key: text-2
+    role: yield-time
+    pdf_page: 45
+    block_ids:
+    - /page/44/Text/10
+  - key: ingredients-beer
+    role: ingredient
+    pdf_page: 45
+    block_ids:
+    - manual-bbox:115,680,445,858
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1·1/2 quarts light beer
+      region_keys:
+      - ingredients-beer
+    - text: 6 egg yolks
+      region_keys:
+      - ingredients-beer
+    - text: 3 level tablespoons sugar
+      region_keys:
+      - ingredients-beer
+    - text: grated rind of 1 lemon
+      region_keys:
+      - ingredients-beer
+    - text: dash of cinnamon, ground clove, nutmeg
+      region_keys:
+      - ingredients-beer
+    - text: French bread
+      region_keys:
+      - ingredients-beer
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Combine all ingredients in a saucepan, set over medium heat. Beat at low speed until soup
+        is hot. Must not boil. Serve with French bread.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 15 minutes'
+    region_keys:
+    - text-2
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0071
+  source_order: 71
+  slug: bohemianopenfacedpastries
+  pages:
+  - 48
+  printed_pages:
+  - '47'
+  display_title: Bohemian open-faced pastries · České koláčky
+  titles:
+  - segment_id: title-en
+    text: Bohemian open-faced pastries
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: České koláčky
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 48
+    block_ids:
+    - /page/47/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/3
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 48
+    block_ids:
+    - /page/47/ListGroup/2
+  - key: text-3
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/5
+  - key: text-5
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/6
+  - key: text-6
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/7
+  - key: text-7
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/8
+  - key: text-8
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/9
+  - key: text-9
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/10
+  - key: text-10
+    role: instruction
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/11
+  - key: text-11
+    role: yield-time
+    pdf_page: 48
+    block_ids:
+    - /page/47/Text/12
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 2 cups milk
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 6 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: dash of grated nutmeg
+      region_keys:
+      - listgroup-2
+    - text: 1 whole egg for brushing
+      region_keys:
+      - listgroup-2
+    - text: 1 cup filling or thick fruit preserve
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: In a bowl stir yeast with 2 teaspoons sugar until dissolved. Add 2/3 cup flour
+        and 1/2 cup lukewarm milk. Knead into a ball. Dust with flour, cover with napkin, let rise in
+        a warm place. It will double in bulk within 20 minutes.'
+      region_keys:
+      - text-1
+    - text: In a separate bowl combine remaining flour and sugar, lemon rind, nutmeg, salt. Place risen
+        leavening in center.
+      region_keys:
+      - text-3
+    - text: Lightly beat egg yolks and the remaining lukewarm milk, then add it gradually to flour/leavening
+        while mixing thoroughly. Finally add melted lukewarm butter and knead dough until smooth and elastic.
+      region_keys:
+      - text-4
+    - text: Dust with flour, cover with a napkin and let rise 40 minutes in a warm place.
+      region_keys:
+      - text-5
+    - text: Punch dough down and turn onto lightly floured pastry board. Break off dough and form balls
+        the size of a walnut. Place them on a greased baking sheet, 4" apart. Let rise 10 minutes.
+      region_keys:
+      - text-6
+    - text: Press down the center of each ball, using bottom of a small glass or other round object, or
+        with your fingers, so that a higher border will be formed. Brush borders with beaten egg. Spread
+        filling evenly over center wells. Let rise 15 minutes.
+      region_keys:
+      - text-7
+    - text: (If using butter crumbs filling, brush with melted butter first. This way filling will stick).
+      region_keys:
+      - text-8
+    - text: Preheat oven to 350F, bake 15 minutes, or until borders are golden brown.
+      region_keys:
+      - text-9
+    - text: Dust with sugar while warm.
+      region_keys:
+      - text-10
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 3 hours'
+    region_keys:
+    - text-11
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0076
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0072
+  source_order: 72
+  slug: bohemianmuffins
+  pages:
+  - 49
+  printed_pages:
+  - '48'
+  display_title: Bohemian muffins · Buchty
+  titles:
+  - segment_id: title-en
+    text: Bohemian muffins
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Buchty
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 49
+    block_ids:
+    - /page/48/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 49
+    block_ids:
+    - /page/48/Text/3
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 49
+    block_ids:
+    - /page/48/ListGroup/2
+  - key: text-3
+    role: instruction
+    pdf_page: 49
+    block_ids:
+    - /page/48/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 49
+    block_ids:
+    - /page/48/Text/5
+  - key: text-5
+    role: instruction
+    pdf_page: 49
+    block_ids:
+    - /page/48/Text/6
+  - key: yield-manual
+    role: yield-time
+    pdf_page: 49
+    block_ids:
+    - manual-bbox:550,970,1010,1035
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 cups coarse flour, Gold Medal Wondra
+      region_keys:
+      - listgroup-2
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 1-1/4 cups milk
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 1 whole egg
+      region_keys:
+      - listgroup-2
+    - text: 3 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 8 tablespoons butter
+      region_keys:
+      - listgroup-2
+    - text: dash of salt
+      region_keys:
+      - listgroup-2
+    - text: 4 tablespoons butter for brushing and for baking pan
+      region_keys:
+      - listgroup-2
+    - text: 1 cup filling
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: In a bowl stir yeast with 2 teaspoons sugar until dissolved. Add 2/3 cup flour
+        and 1/2 cup lukewarm milk. Knead into a ball. Dust with flour, cover with a napkin, set aside
+        to rise – in a warm draft free place. It should double in bulk within 15-20 minutes.'
+      region_keys:
+      - text-1
+    - text: In a separate bowl blend remaining flour with sugar, lemon rind and salt. Push to sides making
+        a well in the center. Place risen leavening in the well.
+      region_keys:
+      - text-3
+    - text: Lightly beat egg yolks and whole egg in remaining lukewarm milk. Add it gradually to flour/leavening
+        mixture, mixing thoroughly. Lastly, add melted lukewarm butter. Knead dough until smooth and no
+        longer sticks to the bowl. Dust with flour, cover with napkin and let it rise 40 minutes.
+      region_keys:
+      - text-4
+    - text: Turn dough over onto a floured pastry board and roll it out to 1/3" thickness. Cut into 2
+        × 3" rectangles. Drop filling by teaspoonfuls on narrower side of each rectangle, roll over so
+        that filling will be well covered with the dough. Pinch sides firmly to seal them. Dip each piece
+        in butter, or brush on all sides with melted butter. Arrange them close together in a buttered
+        baking pan. Let them rise 30 minutes. Preheat oven to 350F and bake 25 minutes or until golden
+        on top. Invert 'buchty' onto a wire rack and cool, at least 20 minutes. Separate them carefully
+        and sprinkle with sugar.
+      region_keys:
+      - text-5
+  yield_time_lines:
+  - text: 'Serves 10 – Preparation time: 3 hours'
+    region_keys:
+    - yield-manual
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []

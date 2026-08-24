@@ -1,0 +1,381 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0061
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 40
+  - 41
+  printed_pages:
+  - '39'
+  - '40'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0061-title
+  pdf_page: 40
+  printed_page: '39'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 957
+    - 1476
+  - - 1947
+    - 1476
+  - - 1947
+    - 1586
+  - - 957
+    - 1586
+  candidate_block_ids:
+  - /page/39/SectionHeader/8
+  region_image: evidence/production-batch-008/regions/vera-r0061/p40-title.png
+  region_image_pixel_sha256: a00d1cbbde244b74e9834c26f7e1a142f8a85917ab89fcdce71e1ceb8d92297c
+- region_id: vera-r0061-ingredients-main
+  pdf_page: 40
+  printed_page: '39'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 207
+    - 1586
+  - - 1047
+    - 1586
+  - - 1047
+    - 2011
+  - - 207
+    - 2011
+  candidate_block_ids:
+  - /page/39/ListGroup/9
+  region_image: evidence/production-batch-008/regions/vera-r0061/p40-ingredients-main.png
+  region_image_pixel_sha256: cfde575464c033554091fa7369fdc51f37e533bd5d2daaf8294462be9a2874ed
+- region_id: vera-r0061-leavening
+  pdf_page: 40
+  printed_page: '39'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1062
+    - 1584
+  - - 2685
+    - 1584
+  - - 2685
+    - 1858
+  - - 1062
+    - 1858
+  candidate_block_ids:
+  - /page/39/Text/10
+  region_image: evidence/production-batch-008/regions/vera-r0061/p40-leavening.png
+  region_image_pixel_sha256: 321054df57bbc8e3b487e29d0d4a0011ca762ba9d11601a6931a652eeb31ca3d
+- region_id: vera-r0061-step-1a
+  pdf_page: 40
+  printed_page: '39'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1053
+    - 1840
+  - - 2679
+    - 1840
+  - - 2679
+    - 2065
+  - - 1053
+    - 2065
+  candidate_block_ids:
+  - /page/39/Text/11
+  region_image: evidence/production-batch-008/regions/vera-r0061/p40-step-1a.png
+  region_image_pixel_sha256: 1ba6b6165fc498a43491f562e8c94a2f7f7226e5f225e1d70e2c51464bcecd3e
+- region_id: vera-r0061-optional-label
+  pdf_page: 41
+  printed_page: '40'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 258
+    - 353
+  - - 495
+    - 353
+  - - 495
+    - 450
+  - - 258
+    - 450
+  candidate_block_ids:
+  - /page/40/Text/1
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-optional-label.png
+  region_image_pixel_sha256: a2cb3856147314f1fd2be3beb35dafd06a92adebfe1ed87aa4f2c9273bbb0210
+- region_id: vera-r0061-optional-ingredients
+  pdf_page: 41
+  printed_page: '40'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 258
+    - 418
+  - - 1023
+    - 418
+  - - 1023
+    - 540
+  - - 258
+    - 540
+  candidate_block_ids:
+  - /page/40/ListGroup/2
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-optional-ingredients.png
+  region_image_pixel_sha256: 30ca57975be3dcea55a36d711f7b55531c0bf8d00e773b8a6d110384263f4ed8
+- region_id: vera-r0061-step-1b
+  pdf_page: 41
+  printed_page: '40'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1140
+    - 396
+  - - 2736
+    - 396
+  - - 2736
+    - 587
+  - - 1140
+    - 587
+  candidate_block_ids:
+  - /page/40/Text/3
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-step-1b.png
+  region_image_pixel_sha256: c1c94bc982812dfabd7b70ee59099929efeb8e6a6c32829d81e4d2cb3f8328cc
+- region_id: vera-r0061-step-2
+  pdf_page: 41
+  printed_page: '40'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1140
+    - 513
+  - - 2733
+    - 513
+  - - 2733
+    - 848
+  - - 1140
+    - 848
+  candidate_block_ids:
+  - /page/40/Text/4
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-step-2.png
+  region_image_pixel_sha256: 99d570edb2a63721c4d514a7af08931960ba36b68e24ce1da30036b7b5361234
+- region_id: vera-r0061-step-3
+  pdf_page: 41
+  printed_page: '40'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1140
+    - 803
+  - - 2082
+    - 803
+  - - 2082
+    - 981
+  - - 1140
+    - 981
+  candidate_block_ids:
+  - /page/40/Text/5
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-step-3.png
+  region_image_pixel_sha256: 3a7558447a42f22e4e478420aa7e4b0c13e9c96164250782b3adb699962e9358
+- region_id: vera-r0061-yield
+  pdf_page: 41
+  printed_page: '40'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1137
+    - 947
+  - - 2085
+    - 947
+  - - 2085
+    - 1071
+  - - 1137
+    - 1071
+  candidate_block_ids:
+  - /page/40/Text/6
+  region_image: evidence/production-batch-008/regions/vera-r0061/p41-yield.png
+  region_image_pixel_sha256: 6afbf354f57061b4a9e6f5e6ce0800ae7fdbef56edc95ba1f88ddc8ce31c40e2
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Yeast dumplings · Kynuté knedlíky
+    language: mul
+    source_region_ids:
+    - vera-r0061-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Yeast dumplings
+    language: en
+    source_region_ids:
+    - vera-r0061-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kynuté knedlíky
+    language: cs
+    source_region_ids:
+    - vera-r0061-title
+    title_role: parallel
+  source_order: 61
+  slug_candidate: yeast-dumplings
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0061-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 5 cups coarse flour, Gold Medal Wondra
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-2
+      text_verbatim: 1 teaspoon baking powder
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-3
+      text_verbatim: 1·1/2 cups milk, lukewarm
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-4
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-5
+      text_verbatim: 2 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-6
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-7
+      text_verbatim: 1 teaspoon sugar
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+    - segment_id: ingredient-8
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0061-ingredients-main
+  - section_id: ingredients-optional
+    ingredients:
+    - segment_id: ingredient-9
+      text_verbatim: 3 tablespoons fried bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0061-optional-ingredients
+    label:
+      segment_id: ingredient-label-optional
+      text_verbatim: 'Optional:'
+      language: en
+      source_region_ids:
+      - vera-r0061-optional-label
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Leavening: In a bowl stir fresh yeast and sugar until it dissolves. Add 1/4 cup
+        lukewarm milk and 1/3 cup flour, mix thoroughly into a smooth ball. Dust with flour, set aside
+        to rise, in a warm draft free place. Should double in bulk within 15 minutes.'
+      language: en
+      source_region_ids:
+      - vera-r0061-leavening
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a separate bowl combine remaining flour, baking powder, lemon rind, salt. Make
+        a well in center where you put egg yolks and the risen leavening. Mix all, gradually adding the
+        remaining lukewarm milk. Knead until dough is smooth and separates from the bowl. Let it rise
+        in a warm place for 30 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0061-step-1a
+      - vera-r0061-step-1b
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Cut tablespoonfuls of dough, round them into balls, let them rise on a floured surface
+        for 10 minutes. Drop dumplings into rapidly boiling salted water, boil 5 minutes, turn them around
+        with a spatula and cook another 5 minutes. Drain, pierce each with fork, sprinkle with hot butter.
+      language: en
+      source_region_ids:
+      - vera-r0061-step-2
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: 'Optional: Coat with fried bread crumbs. Serve with meats and sauces.'
+      language: en
+      source_region_ids:
+      - vera-r0061-step-3
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations:
+  - from_region_id: vera-r0061-step-1a
+    to_region_id: vera-r0061-step-1b
+    relationship: continues_on
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T02:24:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T02:23:27Z'
+    artifact_path: pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T02:24:00Z'
+  checks: []
+  open_issues: []

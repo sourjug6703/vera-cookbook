@@ -1,0 +1,297 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0049
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 33
+  printed_pages:
+  - '32'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0049-title
+  pdf_page: 33
+  printed_page: '32'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 702
+    - 1343
+  - - 2289
+    - 1343
+  - - 2289
+    - 1473
+  - - 702
+    - 1473
+  candidate_block_ids:
+  - /page/32/SectionHeader/9
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-title.png
+  region_image_pixel_sha256: b1cc06e0a2bc92a56f63f13062db6def482c27e26c6cb9369ca5deea16cef153
+- region_id: vera-r0049-ingredients
+  pdf_page: 33
+  printed_page: '32'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 234
+    - 1437
+  - - 1074
+    - 1437
+  - - 1074
+    - 1975
+  - - 234
+    - 1975
+  candidate_block_ids:
+  - /page/32/ListGroup/10
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-ingredients.png
+  region_image_pixel_sha256: 1f87cb84ced1566d4b53ec15433348c1c96f8f155e5299ffca8d9bf8b396d003
+- region_id: vera-r0049-step-1
+  pdf_page: 33
+  printed_page: '32'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1442
+  - - 1680
+    - 1442
+  - - 1680
+    - 1541
+  - - 1125
+    - 1541
+  candidate_block_ids:
+  - /page/32/Text/11
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-step-1.png
+  region_image_pixel_sha256: 7011d39db19db6585b7e2d08004af08c5a93b4db29b984efbc76ea0373a41e8d
+- region_id: vera-r0049-step-2
+  pdf_page: 33
+  printed_page: '32'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1503
+  - - 2715
+    - 1503
+  - - 2715
+    - 1773
+  - - 1125
+    - 1773
+  candidate_block_ids:
+  - /page/32/Text/12
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-step-2.png
+  region_image_pixel_sha256: d8e824ffa880ee1e262000dd9ee3bf1a764129fe86692d9598a12660f93eb874
+- region_id: vera-r0049-step-3
+  pdf_page: 33
+  printed_page: '32'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1732
+  - - 2697
+    - 1732
+  - - 2697
+    - 1885
+  - - 1125
+    - 1885
+  candidate_block_ids:
+  - /page/32/Text/13
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-step-3.png
+  region_image_pixel_sha256: 43a5e13fda4048e7604b11bbfe700459928af1897ce96947f2aaa0ed9c19e2e6
+- region_id: vera-r0049-step-4
+  pdf_page: 33
+  printed_page: '32'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1845
+  - - 2001
+    - 1845
+  - - 2001
+    - 1946
+  - - 1125
+    - 1946
+  candidate_block_ids:
+  - /page/32/Text/14
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-step-4.png
+  region_image_pixel_sha256: e6bde0dfe9a20d73fb364df0a6abf710fadcce1385cabe6f0e12177d4b5c703a
+- region_id: vera-r0049-yield
+  pdf_page: 33
+  printed_page: '32'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1928
+  - - 1848
+    - 1928
+  - - 1848
+    - 2018
+  - - 1125
+    - 2018
+  candidate_block_ids:
+  - /page/32/Text/15
+  region_image: evidence/production-batch-007/regions/vera-r0049/p33-yield.png
+  region_image_pixel_sha256: ebb6e4d579882c30d74ef8bc1930af3f70af7ec3366765787a0d3e28a790bd08
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Baked pike with sour cream · Štika pečená se smetanou
+    language: mul
+    source_region_ids:
+    - vera-r0049-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Baked pike with sour cream
+    language: en
+    source_region_ids:
+    - vera-r0049-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Štika pečená se smetanou
+    language: cs
+    source_region_ids:
+    - vera-r0049-title
+    title_role: parallel
+  source_order: 49
+  slug_candidate: baked-pike-with-sour-cream
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0049-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 pike, 4 lbs., cleaned, with head and tail left on
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 2 bacon slices cut in thin strips
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 medium onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 4 medium potatoes, parboiled, sliced
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: juice of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 2 teaspoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 1 pint sour cream
+      language: en
+      source_region_ids:
+      - vera-r0049-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Sauté onion in butter.
+      language: en
+      source_region_ids:
+      - vera-r0049-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Meanwhile, sprinkle pike with salt, paprika and lemon juice. Lard with strips of
+        bacon. Lay fish in a lightly greased baking pan. Arrange potato slices on sides of fish and up,
+        towards the edge of the pan. Sprinkle some salt over potatoes.
+      language: en
+      source_region_ids:
+      - vera-r0049-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Pour the butter onion mixture over fish. Top with sour cream. Bake at 350F, 30·40
+        minutes.
+      language: en
+      source_region_ids:
+      - vera-r0049-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Serve with tomato salad, vegetables.
+      language: en
+      source_region_ids:
+      - vera-r0049-step-4
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:18:25Z'
+  checks: []
+  open_issues: []

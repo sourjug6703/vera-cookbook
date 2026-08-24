@@ -1,0 +1,293 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Veal chops with caraway seeds - Teleci \u017eebirka na kmin\u00eb",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          355.5,
+          195.75
+        ],
+        [
+          1140.0,
+          195.75
+        ],
+        [
+          1140.0,
+          261.0
+        ],
+        [
+          355.5,
+          261.0
+        ]
+      ]
+    },
+    {
+      "title": "Breaded veal chops - Teleci \u017eebirka sma\u017een\u00e1",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          438.0,
+          716.625
+        ],
+        [
+          1059.0,
+          716.625
+        ],
+        [
+          1059.0,
+          757.1250000000001
+        ],
+        [
+          438.0,
+          757.1250000000001
+        ]
+      ]
+    },
+    {
+      "title": "Wiener Schnitzel - Breaded veal scallops - \u0158\u00edzky",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          402.0,
+          139.0
+        ],
+        [
+          1063.5,
+          139.0
+        ],
+        [
+          1063.5,
+          177.0
+        ],
+        [
+          402.0,
+          177.0
+        ]
+      ]
+    },
+    {
+      "title": "Serves 6 \u2013 Preparation time: 45 minutes",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          549.0,
+          370.0
+        ],
+        [
+          940.5,
+          370.0
+        ],
+        [
+          940.5,
+          394.0
+        ],
+        [
+          549.0,
+          394.0
+        ]
+      ]
+    },
+    {
+      "title": "Veal goulash - Gul\u00e1\u0161 telec\u00ed",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          549.0,
+          506.0
+        ],
+        [
+          912.0,
+          506.0
+        ],
+        [
+          912.0,
+          539.0000000000001
+        ],
+        [
+          549.0,
+          539.0000000000001
+        ]
+      ]
+    },
+    {
+      "title": "Serves 6 \u2013 Preparation time: 1 hour 30 minutes",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          549.0,
+          865.0
+        ],
+        [
+          1003.5,
+          865.0
+        ],
+        [
+          1003.5,
+          890.0000000000001
+        ],
+        [
+          549.0,
+          890.0000000000001
+        ]
+      ]
+    },
+    {
+      "title": "Pork roast - Vep\u0159ov\u00e1 pe\u010den\u011b",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          534.0,
+          151.0
+        ],
+        [
+          924.0,
+          151.0
+        ],
+        [
+          924.0,
+          185.0
+        ],
+        [
+          534.0,
+          185.0
+        ]
+      ]
+    },
+    {
+      "title": "Fresh ham in cream sauce - Vep\u0159ov\u00e1 k\u00fdta na smetan\u011b",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          358.5,
+          561.0000000000001
+        ],
+        [
+          1095.0,
+          561.0000000000001
+        ],
+        [
+          1095.0,
+          593.0
+        ],
+        [
+          358.5,
+          593.0
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          12
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "/Users/agaeta/AI Projects/personal/active/vera-cookbook/pilot/production-batch-003/marker-output/debug/Culinary Adventures - Vera Gaeta"
+}

@@ -1,0 +1,463 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0004
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 6
+  printed_pages:
+  - '5'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0004-title
+  pdf_page: 6
+  printed_page: '5'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 900
+    - 250
+  - - 2133
+    - 250
+  - - 2133
+    - 408
+  - - 900
+    - 408
+  candidate_block_ids:
+  - /page/5/SectionHeader/1
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-title.png
+  region_image_pixel_sha256: e0d0f2a8f38c1641ef00c99f309ce8b91b7fe4e75c7e928beb1fd571ad4d10cf
+- region_id: vera-r0004-ingredients
+  pdf_page: 6
+  printed_page: '5'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 246
+    - 328
+  - - 1077
+    - 328
+  - - 1077
+    - 1024
+  - - 246
+    - 1024
+  candidate_block_ids:
+  - /page/5/ListGroup/2
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-ingredients.png
+  region_image_pixel_sha256: 450e7ff80f62ba2dae9c17a9f659f11f8f1b6770fbc63001119d025c7cf5e07a
+- region_id: vera-r0004-step-1
+  pdf_page: 6
+  printed_page: '5'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1134
+    - 360
+  - - 2688
+    - 360
+  - - 2688
+    - 680
+  - - 1134
+    - 680
+  candidate_block_ids:
+  - /page/5/Text/3
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-step-1.png
+  region_image_pixel_sha256: d1f67f87e4db7ad3a83fc7f376ffa821c10641c7c2e1fdb7b9d4b33503594175
+- region_id: vera-r0004-step-2
+  pdf_page: 6
+  printed_page: '5'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1134
+    - 630
+  - - 2676
+    - 630
+  - - 2676
+    - 1096
+  - - 1134
+    - 1096
+  candidate_block_ids:
+  - /page/5/Text/4
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-step-2.png
+  region_image_pixel_sha256: 35f2bdcbbb770c8a927dd6ecfb94ab95cb33c186dd63c7013917ea1b267c963a
+- region_id: vera-r0004-step-3
+  pdf_page: 6
+  printed_page: '5'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1128
+    - 1054
+  - - 2664
+    - 1054
+  - - 2664
+    - 1202
+  - - 1128
+    - 1202
+  candidate_block_ids:
+  - /page/5/Text/5
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-step-3.png
+  region_image_pixel_sha256: 15e3ca75a7c0c5e5aace52a682d7e7ffa12413a56533a5c8e12a3dba9e2da262
+- region_id: vera-r0004-yield
+  pdf_page: 6
+  printed_page: '5'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1188
+  - - 2076
+    - 1188
+  - - 2076
+    - 1296
+  - - 1125
+    - 1296
+  candidate_block_ids:
+  - /page/5/Text/6
+  region_image: evidence/production-batch-002/regions/vera-r0004/p06-yield.png
+  region_image_pixel_sha256: fa558d463d4ee2937e38631958c614ffef21d0cbe27bd711de917cd3a935f263
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Stuffed meat loaf · Svíčková sekaná plněná
+    language: mul
+    source_region_ids:
+    - vera-r0004-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Stuffed meat loaf
+    language: en
+    source_region_ids:
+    - vera-r0004-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Svíčková sekaná plněná
+    language: cs
+    source_region_ids:
+    - vera-r0004-title
+    title_role: parallel
+  source_order: 4
+  slug_candidate: stuffed-meat-loaf
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0004-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1·1/2 lbs. ground sirloin or chuck (ground pork shoulder can substitute half of the
+        ground beef)
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1 whole egg
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 slice bacon
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: salt, pepper, marjoram
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 small onion
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 3/4 cup water
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 3 tablespoons bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 4 pickled dills
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 4 hard boiled eggs
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: 3/4 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: 4 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0004-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Soak the rolls in water, squeeze off excess liquid, shred them and mix well with
+        the ground meat. Add diced bacon, egg, salt, pepper, marjoram, chopped onion, 1 tablespoon water
+        and mix it very well. If the mixture is not thick enough, add 1-2 tablespoons bread crumbs.
+      language: en
+      source_region_ids:
+      - vera-r0004-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Turn the mixture over onto a board dusted with bread crumbs. Form a 3/4” thick rectangle.
+        Arrange hard boiled eggs and peeled and diced pickles by longer side of the rectangle. Roll the
+        meat mixture over the eggs and form a loaf. Grease baking tray with oil, sprinkle the remaining
+        oil over the loaf, and bake at 350F for one hour. Baste with chicken stock and juices from the
+        pan. When done, slice the loaf on a serving dish, sprinkle with pan drippings.
+      language: en
+      source_region_ids:
+      - vera-r0004-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Serve with vegetables, mashed potatoes, boiled potatoes, potato salad, etc.
+      language: en
+      source_region_ids:
+      - vera-r0004-step-3
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T21:09:29Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T21:09:29Z'
+    artifact_path: pilot/production-batch-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T21:09:29Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0004
+    source_region_ids: &id001
+    - vera-r0004-title
+    - vera-r0004-ingredients
+    - vera-r0004-step-1
+    - vera-r0004-step-2
+    - vera-r0004-step-3
+    - vera-r0004-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0004
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    source_region_ids:
+    - vera-r0004-title
+    - vera-r0004-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0004-title
+    - vera-r0004-step-1
+    - vera-r0004-step-2
+    - vera-r0004-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0004-title
+    - vera-r0004-yield
+    - vera-r0004-ingredients
+    - vera-r0004-step-1
+    - vera-r0004-step-2
+    - vera-r0004-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - step-1
+    - step-2
+    source_region_ids:
+    - vera-r0004-yield
+    - vera-r0004-ingredients
+    - vera-r0004-step-1
+    - vera-r0004-step-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0004-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0004
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0004-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

@@ -1,0 +1,407 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0011
+record_revision: 2
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 12
+  printed_pages:
+  - '11'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0011-title
+  pdf_page: 12
+  printed_page: '11'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 786
+    - 260
+  - - 2145
+    - 260
+  - - 2145
+    - 372
+  - - 786
+    - 372
+  candidate_block_ids:
+  - /page/11/SectionHeader/1
+  region_image: evidence/production-batch-003/regions/vera-r0011/p12-title.png
+  region_image_pixel_sha256: f8e8b41685b8033345a55c6c0839ad5d2ff67ef7be13bdcd9eb8de2655151a2c
+- region_id: vera-r0011-ingredients
+  pdf_page: 12
+  printed_page: '11'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 225
+    - 374
+  - - 1047
+    - 374
+  - - 1047
+    - 730
+  - - 225
+    - 730
+  candidate_block_ids:
+  - /page/11/ListGroup/2
+  region_image: evidence/production-batch-003/regions/vera-r0011/p12-ingredients.png
+  region_image_pixel_sha256: 63a1e61a8d1996381ee5d85f7ab853e9a0999ac3c13cd138929cb172677d3e1a
+- region_id: vera-r0011-step-1
+  pdf_page: 12
+  printed_page: '11'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 364
+  - - 2709
+    - 364
+  - - 2709
+    - 730
+  - - 1080
+    - 730
+  candidate_block_ids:
+  - /page/11/Text/3
+  region_image: evidence/production-batch-003/regions/vera-r0011/p12-step-1.png
+  region_image_pixel_sha256: 9e53db6bfe66554ff5ab41e4b510c842fdcd4e5c281cebf66f7a65a895f9a919
+- region_id: vera-r0011-yield
+  pdf_page: 12
+  printed_page: '11'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 722
+  - - 1899
+    - 722
+  - - 1899
+    - 806
+  - - 1080
+    - 806
+  candidate_block_ids:
+  - /page/11/SectionHeader/4
+  region_image: evidence/production-batch-003/regions/vera-r0011/p12-yield.png
+  region_image_pixel_sha256: d61f3f4c53cbed8b6381699ca4cf7e862bfa4b9ca6fa76a048e22953a48ca3a8
+- region_id: vera-r0011-tip
+  pdf_page: 12
+  printed_page: '11'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 786
+  - - 2607
+    - 786
+  - - 2607
+    - 1009
+  - - 1080
+    - 1009
+  candidate_block_ids:
+  - /page/11/ListGroup/5
+  region_image: evidence/production-batch-003/regions/vera-r0011/p12-tip.png
+  region_image_pixel_sha256: c4e59004e705e6ffba3e45432a267cdfcfcff2a0cc01b1bafba026f61a0cf05e
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Wiener Schnitzel · Breaded veal scallops · Řízky
+    language: mul
+    source_region_ids:
+    - vera-r0011-title
+  titles:
+  - segment_id: title-en-1
+    text_verbatim: Wiener Schnitzel
+    language: en
+    source_region_ids:
+    - vera-r0011-title
+    title_role: primary
+  - segment_id: title-en-2
+    text_verbatim: Breaded veal scallops
+    language: en
+    source_region_ids:
+    - vera-r0011-title
+    title_role: parallel
+  - segment_id: title-cs
+    text_verbatim: Řízky
+    language: cs
+    source_region_ids:
+    - vera-r0011-title
+    title_role: parallel
+  source_order: 11
+  slug_candidate: wiener-schnitzel-breaded-veal-scallops
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0011-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 veal scallops – leg of veal or veal top round, thin sliced
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 eggs
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0011-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pound the scallops. Make a few short cuts on the edges to prevent curling, salt them
+        on both sides. Dredge them in flour, shake off excess, dip in beaten eggs and coat with bread
+        crumbs. Fry in hot oil in a covered pan about 4 minutes or until golden brown; turn and fry the
+        other side uncovered. Drain on paper towel. Serve with potatoes, potato salad, mashed potatoes,
+        green salad.
+      language: en
+      source_region_ids:
+      - vera-r0011-step-1
+      step_number: 1
+  notes:
+  - segment_id: note-1
+    text_verbatim: This is the correct way to prepare Wiener Schnitzels,
+      a very popular meal in Bohemia. Thinly sliced boneless pork chops, beef tenderloin slices, boned
+      and skinned chicken breast or cutlets may be prepared in the same manner.
+    language: en
+    source_region_ids:
+    - vera-r0011-tip
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T21:31:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T21:29:23Z'
+    artifact_path: pilot/production-batch-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T05:17:30Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0011
+    source_region_ids: &id001
+    - vera-r0011-title
+    - vera-r0011-ingredients
+    - vera-r0011-step-1
+    - vera-r0011-yield
+    - vera-r0011-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0011
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0011-title
+    - vera-r0011-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0011-title
+    - vera-r0011-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en-1
+    - title-en-2
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    source_region_ids:
+    - vera-r0011-title
+    - vera-r0011-yield
+    - vera-r0011-ingredients
+    - vera-r0011-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0011-yield
+    - vera-r0011-ingredients
+    - vera-r0011-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0011-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0011
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0011-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: owner-source-policy
+    check_type: transcription_exactness
+    target_ids:
+    - note-1
+    source_region_ids:
+    - vera-r0011-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: human
+    auditor_id: project-owner
+    audited_at: '2026-08-24T05:17:30Z'
+    independent_of_extractor: true
+    note: "Owner decision: the leading outlined-arrow ornament is non-text decoration and is excluded from the verbatim note."
+  - check_id: ai-source-policy-application
+    check_type: transcription_exactness
+    target_ids:
+    - note-1
+    source_region_ids:
+    - vera-r0011-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T05:17:30Z'
+    independent_of_extractor: true
+    note: "AI applied the recorded human source decision; the decorative outlined-arrow ornament is excluded."
+  open_issues: []

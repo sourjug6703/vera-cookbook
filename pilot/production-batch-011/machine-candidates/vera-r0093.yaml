@@ -1,0 +1,342 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0093
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 61
+  printed_pages:
+  - '60'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0093-title
+  pdf_page: 61
+  printed_page: '60'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1065
+    - 794
+  - - 1998
+    - 794
+  - - 1998
+    - 896
+  - - 1065
+    - 896
+  candidate_block_ids:
+  - /page/60/SectionHeader/4
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-title.png
+  region_image_pixel_sha256: 17ff32e0dae1ebd19fccdb111f23d03022fc08944a4accfb17fe49a984a5f0dc
+- region_id: vera-r0093-text-1
+  pdf_page: 61
+  printed_page: '60'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1161
+    - 896
+  - - 2736
+    - 896
+  - - 2736
+    - 1098
+  - - 1161
+    - 1098
+  candidate_block_ids:
+  - /page/60/Text/5
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-text-1.png
+  region_image_pixel_sha256: cce500750d03d5dbf00577249426e5682f58a335e4951e373250346623ba2526
+- region_id: vera-r0093-listgroup-2
+  pdf_page: 61
+  printed_page: '60'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 270
+    - 906
+  - - 1134
+    - 906
+  - - 1134
+    - 1480
+  - - 270
+    - 1480
+  candidate_block_ids:
+  - /page/60/ListGroup/10
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-listgroup-2.png
+  region_image_pixel_sha256: c4a732cd2cd866f2a065a7863605398989dbed689cd7a9116d18215466b225a4
+- region_id: vera-r0093-text-3
+  pdf_page: 61
+  printed_page: '60'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1161
+    - 1058
+  - - 2748
+    - 1058
+  - - 2748
+    - 1382
+  - - 1161
+    - 1382
+  candidate_block_ids:
+  - /page/60/Text/6
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-text-3.png
+  region_image_pixel_sha256: 4f62b022a1cc0abd46babe0dc5895599d3ab984219f9f07270450128897920eb
+- region_id: vera-r0093-text-4
+  pdf_page: 61
+  printed_page: '60'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1167
+    - 1336
+  - - 2673
+    - 1336
+  - - 2673
+    - 1438
+  - - 1167
+    - 1438
+  candidate_block_ids:
+  - /page/60/Text/7
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-text-4.png
+  region_image_pixel_sha256: 10de0f4205b9533d7f62e5d279cf8ba69d16244f04c88a62a1b944bf0b9a4c86
+- region_id: vera-r0093-text-5
+  pdf_page: 61
+  printed_page: '60'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1167
+    - 1428
+  - - 1893
+    - 1428
+  - - 1893
+    - 1518
+  - - 1167
+    - 1518
+  candidate_block_ids:
+  - /page/60/Text/8
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-text-5.png
+  region_image_pixel_sha256: 59dfab8f12b8772df085e1f1a3988e0ae95fa42c9bbb592b4e4c78351ce60f99
+- region_id: vera-r0093-text-6
+  pdf_page: 61
+  printed_page: '60'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 285
+    - 1480
+  - - 471
+    - 1480
+  - - 471
+    - 1564
+  - - 285
+    - 1564
+  candidate_block_ids:
+  - /page/60/Text/11
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-text-6.png
+  region_image_pixel_sha256: a01456372d13cd697ff0c476f8c429e571a7412ab5d57b52e7e0f84df9c471e0
+- region_id: vera-r0093-listgroup-7
+  pdf_page: 61
+  printed_page: '60'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 288
+    - 1532
+  - - 1098
+    - 1532
+  - - 1098
+    - 1820
+  - - 288
+    - 1820
+  candidate_block_ids:
+  - /page/60/ListGroup/12
+  region_image: evidence/production-batch-011/regions/vera-r0093/p61-listgroup-7.png
+  region_image_pixel_sha256: 8e90df9ad45f2fcd411c4f1c998e4aaff209eda2a0125de990348e3969069e13
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Czech apple pie · Jablkový koláč
+    language: mul
+    source_region_ids:
+    - vera-r0093-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Czech apple pie
+    language: en
+    source_region_ids:
+    - vera-r0093-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Jablkový koláč
+    language: cs
+    source_region_ids:
+    - vera-r0093-title
+    title_role: parallel
+  source_order: 93
+  slug_candidate: czechapplepie
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0093-text-5
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 teaspoon baking powder
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 1/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 6 tablespoons butter, softened
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 2/3 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 1 egg yolk
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: pinch of salt
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: grease for oven tray
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 2 tablespoons sugar mixed with vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-2
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-11
+      text_verbatim: 3 medium apples, Granny Smith, peeled, cored, thinly sliced or grated
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-7
+    - segment_id: ingredient-12
+      text_verbatim: 1/3 cup golden raisins
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-7
+    - segment_id: ingredient-13
+      text_verbatim: 3 tablespoons sugar mixed with 1/2 teaspoon cinnamon
+      language: en
+      source_region_ids:
+      - vera-r0093-listgroup-7
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Blend baking powder and flour. Add sugar, egg yolk, lemon rind, salt, milk and butter.
+        Mix thoroughly and knead until smooth, about 10 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0093-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: On a greased oven tray roll dough out to 1/3" thickness, leaving the edges a little
+        higher. Mix apples, raisins, sugar-cinnamon and spread evenly over dough. Bake at 350F, 20-25
+        minutes, until border is golden brown. Place pie on a wire rack to cool, dust with sugar mixed
+        with vanilla sugar. Cut into squares.
+      language: en
+      source_region_ids:
+      - vera-r0093-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Instead of one oblong pie, you can make two smaller round pies.
+      language: en
+      source_region_ids:
+      - vera-r0093-text-4
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: 'Filling:'
+      language: en
+      source_region_ids:
+      - vera-r0093-text-6
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

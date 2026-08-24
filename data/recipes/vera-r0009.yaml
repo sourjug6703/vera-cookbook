@@ -1,0 +1,432 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0009
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 11
+  printed_pages:
+  - '10'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0009-title
+  pdf_page: 11
+  printed_page: '10'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 693
+    - 373
+  - - 2298
+    - 373
+  - - 2298
+    - 540
+  - - 693
+    - 540
+  candidate_block_ids:
+  - /page/10/SectionHeader/1
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-title.png
+  region_image_pixel_sha256: ebe32e66ddc99b621c35215c840e74428e3242be1e561347436aaebc2740f0b0
+- region_id: vera-r0009-ingredients
+  pdf_page: 11
+  printed_page: '10'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 231
+    - 474
+  - - 852
+    - 474
+  - - 852
+    - 915
+  - - 231
+    - 915
+  candidate_block_ids:
+  - /page/10/ListGroup/2
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-ingredients.png
+  region_image_pixel_sha256: bb5cc9d0536f6d096f9168534cb5493d89a10f557fa9983638b04541ec9e6007
+- region_id: vera-r0009-step-1
+  pdf_page: 11
+  printed_page: '10'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 501
+  - - 2721
+    - 501
+  - - 2721
+    - 861
+  - - 1122
+    - 861
+  candidate_block_ids:
+  - /page/10/Text/3
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-step-1.png
+  region_image_pixel_sha256: 0b41d284a5ce733950a8308f86017c67c73acb91fa1550de445890b9c69c8991
+- region_id: vera-r0009-step-2
+  pdf_page: 11
+  printed_page: '10'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 796
+  - - 2700
+    - 796
+  - - 2700
+    - 1026
+  - - 1122
+    - 1026
+  candidate_block_ids:
+  - /page/10/Text/4
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-step-2.png
+  region_image_pixel_sha256: 8e7b1c9d7840fecf6abe74c7e416b3b85e6750046dbadb3d00a7d1ad78683409
+- region_id: vera-r0009-step-3
+  pdf_page: 11
+  printed_page: '10'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 969
+  - - 2712
+    - 969
+  - - 2712
+    - 1251
+  - - 1122
+    - 1251
+  candidate_block_ids:
+  - /page/10/Text/5
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-step-3.png
+  region_image_pixel_sha256: 3501b7ec7f52fbfc30502f0a321fb93d78b5f1b6b1e8f98bfc450c2db9dbdc97
+- region_id: vera-r0009-yield
+  pdf_page: 11
+  printed_page: '10'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1122
+    - 1235
+  - - 1938
+    - 1235
+  - - 1938
+    - 1332
+  - - 1122
+    - 1332
+  candidate_block_ids:
+  - /page/10/Text/6
+  region_image: evidence/production-batch-003/regions/vera-r0009/p11-yield.png
+  region_image_pixel_sha256: 1c45a399d441051290de2cd4509173bff7d1f813d6d13c73a6f06a28e51654ef
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Veal chops with caraway seeds · Telecí žebírka na kmíně
+    language: mul
+    source_region_ids:
+    - vera-r0009-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Veal chops with caraway seeds
+    language: en
+    source_region_ids:
+    - vera-r0009-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Telecí žebírka na kmíně
+    language: cs
+    source_region_ids:
+    - vera-r0009-title
+    title_role: parallel
+  source_order: 9
+  slug_candidate: veal-chops-with-caraway-seeds
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0009-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 veal chops
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 small onion
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 teaspoon caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0009-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pound the veal chops lightly-they should not be more than 1/2” thick. Make a few
+        short cuts on the edges to prevent curling, salt them on both sides, and dust with flour on one
+        side. Brown chops in hot oil on both sides, floured side first. In a skillet combine the butter
+        and finely chopped onion and set over medium heat.
+      language: en
+      source_region_ids:
+      - vera-r0009-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: When the onion becomes translucent add the caraway seeds, some of the chicken stock
+        and the veal chops and simmer about 30 minutes or until the chops are tender.
+      language: en
+      source_region_ids:
+      - vera-r0009-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Remove the veal chops. Bring the liquid to boil, blend in flour and remaining stock,
+        and boil until the sauce thickens (about 5 minutes). Strain the sauce over the veal chops, simmer
+        5 minutes. Serve with noodles, rice, salad.
+      language: en
+      source_region_ids:
+      - vera-r0009-step-3
+      step_number: 3
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T21:31:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T21:29:23Z'
+    artifact_path: pilot/production-batch-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T21:35:39Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0009
+    source_region_ids: &id001
+    - vera-r0009-title
+    - vera-r0009-ingredients
+    - vera-r0009-step-1
+    - vera-r0009-step-2
+    - vera-r0009-step-3
+    - vera-r0009-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0009
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    source_region_ids:
+    - vera-r0009-title
+    - vera-r0009-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0009-title
+    - vera-r0009-step-1
+    - vera-r0009-step-2
+    - vera-r0009-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0009-title
+    - vera-r0009-yield
+    - vera-r0009-ingredients
+    - vera-r0009-step-1
+    - vera-r0009-step-2
+    - vera-r0009-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - step-1
+    - step-2
+    - step-3
+    source_region_ids:
+    - vera-r0009-yield
+    - vera-r0009-ingredients
+    - vera-r0009-step-1
+    - vera-r0009-step-2
+    - vera-r0009-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0009-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0009
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0009-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:35:39Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

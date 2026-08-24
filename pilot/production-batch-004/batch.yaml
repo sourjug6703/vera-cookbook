@@ -1,0 +1,52 @@
+schema_version: "1.2"
+batch_id: production-batch-004
+frozen_on: "2026-08-23"
+purpose: "Fourth production extraction cohort; next five contiguous recipes in source order"
+source:
+  path: "source/Culinary Adventures - Vera Gaeta.pdf"
+  sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+  page_count: 75
+marker:
+  package: marker-pdf
+  version: "2.0.0"
+  mode: balanced
+  force_ocr: true
+  remote_llm: false
+  acceleration_wave_pdf_pages: [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+pdf_pages: [13, 14, 15, 16]
+marker_page_indexes: [12, 13, 14, 15]
+recipes:
+  - recipe_id: vera-r0014
+    recipe_key: fresh-ham-in-cream-sauce
+    title: "Fresh ham in cream sauce"
+    pdf_pages: [13, 14]
+    risks: [continuation, centered_dot_forms, fractions, bilingual_title]
+  - recipe_id: vera-r0015
+    recipe_key: pork-chops-with-caraway-seeds
+    title: "Pork chops with caraway seeds"
+    pdf_pages: [14]
+    risks: [multi_recipe_page, centered_dot_punctuation, fraction, bilingual_title]
+  - recipe_id: vera-r0016
+    recipe_key: breaded-pork-chops
+    title: "Breaded pork chops"
+    pdf_pages: [15]
+    risks: [multi_recipe_page, fraction, punctuation, bilingual_title]
+  - recipe_id: vera-r0017
+    recipe_key: smoked-pork-loin
+    title: "Smoked pork loin"
+    pdf_pages: [15]
+    risks: [multi_recipe_page, centered_dot_form, fragment, ownership]
+  - recipe_id: vera-r0018
+    recipe_key: pork-goulash
+    title: "Pork goulash"
+    pdf_pages: [16]
+    risks: [multi_recipe_page, centered_dot_forms, fractions, punctuation]
+promotion_boundary:
+  allowed_ai_statuses: [source_checked, needs_attention]
+  human_verification_separate: true
+  automatic_promotion_allowed: false
+  audit_performed_by: ai
+  audit_completed_at: "2026-08-23T22:43:44Z"
+result:
+  source_checked: [vera-r0014, vera-r0015, vera-r0016, vera-r0017, vera-r0018]
+  needs_attention: []

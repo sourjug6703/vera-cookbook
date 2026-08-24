@@ -1,0 +1,463 @@
+batch_id: production-batch-005
+batch_title: "Production batch 005 source review"
+batch_copy_title: "Vera Cookbook production batch 005 review status"
+candidate_summary: "Ten local Marker machine candidates in contiguous source order, with exact page context and cited regions. No trust promotion has been performed."
+audited_summary: "Ten records in contiguous source order after a separate direct local AI visual source audit. This is not human verification."
+recipe_schema_version: "1.3.0"
+source_sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+pdf_page_count: 75
+marker_version: "2.0.0"
+marker_generated_at: "2026-08-23T22:35:44Z"
+marker_artifact: "pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures - Vera Gaeta.json"
+created_at: "2026-08-23T23:02:08Z"
+audited_at: "2026-08-23T23:13:24Z"
+auditor_id: "openai-codex"
+recipes:
+  - recipe_id: vera-r0019
+    source_order: 19
+    slug: goulash-with-sauerkraut
+    pages: [16]
+    printed_pages: ["15"]
+    display_title: "Goulash with sauerkraut · Guláš s kyselým zelím"
+    titles:
+      - {segment_id: title-en, text: "Goulash with sauerkraut", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Guláš s kyselým zelím", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 16, block_ids: [/page/15/SectionHeader/8]}
+      - {key: ingredients, role: ingredient, pdf_page: 16, block_ids: [/page/15/ListGroup/9]}
+      - {key: step-1, role: instruction, pdf_page: 16, block_ids: [/page/15/Text/10]}
+      - {key: step-2, role: instruction, pdf_page: 16, block_ids: [/page/15/Text/11]}
+      - {key: step-3, role: instruction, pdf_page: 16, block_ids: [/page/15/Text/12]}
+      - {key: yield, role: yield-time, pdf_page: 16, block_ids: [/page/15/Text/13]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: '3 lbs. boned pork shoulder, cut in 1·1/2" cubes', region_keys: [ingredients]}
+          - {text: "4 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "1 large onion, finely chopped", region_keys: [ingredients]}
+          - {text: "2 tablespoons paprika", region_keys: [ingredients]}
+          - {text: "1 teaspoon caraway seeds", region_keys: [ingredients]}
+          - {text: "2 tablespoons vinegar", region_keys: [ingredients]}
+          - {text: "1 lb. sauerkraut", region_keys: [ingredients]}
+          - {text: "1 cup heavy cream", region_keys: [ingredients]}
+          - {text: "1 large raw potato, peeled, grated or finely sliced,", region_keys: [ingredients]}
+          - {text: "salt and pepper,", region_keys: [ingredients]}
+          - {text: "water", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Sauté onion in oil until translucent. Sprinkle paprika evenly over onion, add pork, vinegar, caraway seeds, salt and pepper, 1/4 cup water. Cover and simmer until meat is almost tender, about 1 hr. 15 minutes. Occasionally add 1·2 tablespoons water, just enough to keep moisture in the stew. Stir and turn pork after each addition.", region_keys: [step-1]}
+          - {text: "Stir sauerkraut into the goulash, blend in cream and potato. Simmer 10·15 minutes, or until meat is tender. Add salt, pepper and more paprika if desired.", region_keys: [step-2]}
+          - {text: "Serve with crouton dumplings, boiled potatoes.", region_keys: [step-3]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0020
+    source_order: 20
+    slug: leg-of-lamb-in-wine-sauce
+    pages: [17]
+    printed_pages: ["16"]
+    display_title: "Leg of lamb in wine sauce · Skopová kýta dušená"
+    titles:
+      - {segment_id: title-en, text: "Leg of lamb in wine sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Skopová kýta dušená", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 17, block_ids: [/page/16/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 17, block_ids: [/page/16/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/5]}
+      - {key: step-4, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/6]}
+      - {key: step-5, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/7]}
+      - {key: step-6, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/8]}
+      - {key: step-7, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/9]}
+      - {key: step-8, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/10]}
+      - {key: step-9, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/11]}
+      - {key: step-10, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/12]}
+      - {key: step-11, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/13]}
+      - {key: step-12, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/14]}
+      - {key: step-13, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/15]}
+      - {key: step-14, role: instruction, pdf_page: 17, block_ids: [/page/16/Text/16]}
+      - {key: yield, role: yield-time, pdf_page: 17, block_ids: [/page/16/Text/17]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "3·4 lbs. lamb leg, boned, skinned (4·5 lbs. with bone)", region_keys: [ingredients]}
+          - {text: "1/3 cup vegetable oil", region_keys: [ingredients]}
+          - {text: "5 slices bacon", region_keys: [ingredients]}
+          - {text: "1/2 teaspoon each of ginger and ground nutmeg", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+          - {text: "1 parsnip, 3 carrots, 1 celery root,", region_keys: [ingredients]}
+          - {text: "1 medium onion", region_keys: [ingredients]}
+          - {text: "3 bay leaves, whole allspice, whole black pepper", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "juice of 1 lemon", region_keys: [ingredients]}
+          - {text: "1/4 cup cranberry juice, unsweetened", region_keys: [ingredients]}
+          - {text: "1 cup dry red wine", region_keys: [ingredients]}
+          - {text: "1·2 cups chicken stock", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Slice thinly parsnip, carrots, celery root and onion.", region_keys: [step-1]}
+          - {text: "Cut the bacon into short strips.", region_keys: [step-2]}
+          - {text: "Trim off excess fat from the meat, lard it with bacon (= make small slits in roast and push a strip of bacon into each slit).", region_keys: [step-3]}
+          - {text: "Mix salt, pepper, ginger, nutmeg. Rub over lamb.", region_keys: [step-4]}
+          - {text: "Heat the oil in a large stewpot, add the sliced vegetables, cook five minutes.", region_keys: [step-5]}
+          - {text: "Place the lamb in the pot, brown it lightly, sprinkle with the remaining spices.", region_keys: [step-6]}
+          - {text: "Cover and simmer 1 hour, gradually adding chicken stock.", region_keys: [step-7]}
+          - {text: "Remove the lamb.", region_keys: [step-8]}
+          - {text: "Spoon fat from the juices, stir in flour and cook until lightly browned.", region_keys: [step-9]}
+          - {text: "Blend in lemon juice, cranberry juice, wine, chicken stock.", region_keys: [step-10]}
+          - {text: "Return lamb to the mixture, cover and simmer until tender for about 1 hour.", region_keys: [step-11]}
+          - {text: "Place lamb on a warm serving platter, garnish with mint, cranberries, snipped parsley, chestnuts.", region_keys: [step-12]}
+          - {text: "Strain the sauce, heat thoroughly, serve in a saucedish.", region_keys: [step-13]}
+          - {text: "Serve with rice, noodles, vegetables, potatoes.", region_keys: [step-14]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0021
+    source_order: 21
+    slug: leg-of-lamb-in-cream-sauce
+    pages: [18]
+    printed_pages: ["17"]
+    display_title: "Leg of lamb in cream sauce · Skopová kýta na smetaně"
+    titles:
+      - {segment_id: title-en, text: "Leg of lamb in cream sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Skopová kýta na smetaně", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 18, block_ids: [/page/17/SectionHeader/1]}
+      - {key: cross-reference, role: cross-reference, pdf_page: 18, block_ids: [/page/17/Text/2]}
+      - {key: step-1, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/3]}
+    ingredient_sections: []
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "At the time of adding lemon juice, cranberry juice and red wine, substitute 1 cup sour cream for chicken stock.", region_keys: [step-1]}
+    yield_time_lines: []
+    notes: []
+    cross_references:
+      - {text: "Follow instructions for Leg of lamb in wine sauce.", region_keys: [cross-reference]}
+    related_recipe_ids: [vera-r0020]
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0022
+    source_order: 22
+    slug: mutton-goulash
+    pages: [18]
+    printed_pages: ["17"]
+    display_title: "Mutton goulash · Guláš skopový"
+    titles:
+      - {segment_id: title-en, text: "Mutton goulash", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Guláš skopový", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 18, block_ids: [/page/17/SectionHeader/4]}
+      - {key: ingredients, role: ingredient, pdf_page: 18, block_ids: [/page/17/ListGroup/5]}
+      - {key: cross-reference, role: cross-reference, pdf_page: 18, block_ids: [/page/17/Text/6]}
+      - {key: step-1, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/7]}
+      - {key: yield, role: yield-time, pdf_page: 18, block_ids: [/page/17/Text/8]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: '3 lbs. boned shoulder of mutton, cut in pieces, about 1·1/2"', region_keys: [ingredients]}
+          - {text: "2 tablespoons vegetable oil", region_keys: [ingredients]}
+          - {text: "5 oz. bacon, diced", region_keys: [ingredients]}
+          - {text: "1 large onion, finely chopped", region_keys: [ingredients]}
+          - {text: "5 cloves garlic, pressed or chopped", region_keys: [ingredients]}
+          - {text: "2 tablespoons paprika", region_keys: [ingredients]}
+          - {text: "1 teaspoon each of caraway seeds and marjoram", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Serve with potatoes, gnocchi, etc.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours", region_keys: [yield]}
+    notes: []
+    cross_references:
+      - {text: 'Follow instructions for “Beef goulash”', region_keys: [cross-reference]}
+    related_recipe_ids: [vera-r0005]
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0023
+    source_order: 23
+    slug: roast-chicken
+    pages: [18]
+    printed_pages: ["17"]
+    display_title: "Roast chicken · Kuře pečené"
+    titles:
+      - {segment_id: title-en, text: "Roast chicken", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kuře pečené", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 18, block_ids: [/page/17/SectionHeader/9]}
+      - {key: ingredients, role: ingredient, pdf_page: 18, block_ids: [/page/17/ListGroup/10]}
+      - {key: step-1, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/11]}
+      - {key: step-2, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/12]}
+      - {key: step-3, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/13]}
+      - {key: step-4, role: instruction, pdf_page: 18, block_ids: [/page/17/Text/14]}
+      - {key: yield, role: yield-time, pdf_page: 18, block_ids: [/page/17/Text/15]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 roasting chicken, 4·5 lbs.", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "2 slices bacon", region_keys: [ingredients]}
+          - {text: "1·1/2 cups chicken stock", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse and pat dry the chicken; season with salt and pepper. Place it on rack in a shallow roasting pan, breast down. Melt the butter and sprinkle some over the chicken. Pour half of the chicken stock into a roasting pan. Cook 30 minutes in 350F oven.", region_keys: [step-1]}
+          - {text: "Turn chicken breast up, lay bacon slices on top and continue baking 30·40 minutes until golden brown on top. Baste occasionally with the remaining butter and chicken stock, juices from the pan, or water.", region_keys: [step-2]}
+          - {text: "Let stand 5 minutes before cutting into serving portions.", region_keys: [step-3]}
+          - {text: "Serve with mashed potatoes, vegetables, salad, compote, mushrooms.", region_keys: [step-4]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0024
+    source_order: 24
+    slug: breaded-chicken
+    pages: [19]
+    printed_pages: ["18"]
+    display_title: "Breaded chicken · Smažené kuře"
+    titles:
+      - {segment_id: title-en, text: "Breaded chicken", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Smažené kuře", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 19, block_ids: [/page/18/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 19, block_ids: [/page/18/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/5]}
+      - {key: yield, role: yield-time, pdf_page: 19, block_ids: [/page/18/Text/6]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 broiler-fryer chicken, 4·5 lbs., cut in serving pieces or", region_keys: [ingredients]}
+          - {text: "12 chicken thighs", region_keys: [ingredients]}
+          - {text: "3/4 cup flour", region_keys: [ingredients]}
+          - {text: "2 eggs", region_keys: [ingredients]}
+          - {text: "1·1/2 cups bread crumbs", region_keys: [ingredients]}
+          - {text: "1·1/2 cups oil for frying", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse and pat dry chicken pieces, salt them lightly. Dredge each piece in flour, shake off excess, dip in beaten eggs with a little salt added and coat with bread crumbs. Fry in hot oil until golden, about 5 minutes each side. Drain on paper towel.", region_keys: [step-1]}
+          - {text: "Serve on lettuce-lined platter, garnish with lemon wedges and parsley.", region_keys: [step-2]}
+          - {text: "Serve with potato salad, green salad, mashed potatoes, vegetables.", region_keys: [step-3]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0025
+    source_order: 25
+    slug: chicken-paprika
+    pages: [19]
+    printed_pages: ["18"]
+    display_title: "Chicken paprika · Kuře na paprice"
+    titles:
+      - {segment_id: title-en, text: "Chicken paprika", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kuře na paprice", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 19, block_ids: [/page/18/SectionHeader/7]}
+      - {key: ingredients, role: ingredient, pdf_page: 19, block_ids: [/page/18/ListGroup/8]}
+      - {key: handwriting, role: note, pdf_page: 19, block_ids: [/page/18/Text/16]}
+      - {key: step-1, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/9]}
+      - {key: step-2, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/10]}
+      - {key: step-3, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/11]}
+      - {key: step-4, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/12]}
+      - {key: step-5, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/13]}
+      - {key: step-6, role: instruction, pdf_page: 19, block_ids: [/page/18/Text/14]}
+      - {key: yield, role: yield-time, pdf_page: 19, block_ids: [/page/18/Text/15]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 chicken, 4·5 lbs., cut up into small serving portions or", region_keys: [ingredients]}
+          - {text: "12 chicken thighs", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "2 tablespoons vinegar", region_keys: [ingredients]}
+          - {text: "3 tablespoons paprika", region_keys: [ingredients]}
+          - {text: "1 cup chicken broth", region_keys: [ingredients]}
+          - {text: "1·1/2 cups sour cream", region_keys: [ingredients]}
+          - {text: "2 tablespoons flour", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "In a large heavy skillet sauté onion in butter until translucent. Stir in paprika and vinegar. Lay chicken pieces on top, cover, and simmer until almost tender, about 20 minutes. Gradually add chicken broth, if needed. Cooking liquid should be just enough that onion and chicken do not burn.", region_keys: [step-1]}
+          - {text: "Using a slotted spoon remove chicken pieces.", region_keys: [step-2]}
+          - {text: "Blend flour and sour cream, stir into liquid in pan, and add remaining chicken broth. Simmer for 5 minutes, stirring often.", region_keys: [step-3]}
+          - {text: "Return chicken to pan, simmer until tender but not overcooked, 5·10 minutes.", region_keys: [step-4]}
+          - {text: "Season to taste with salt and pepper. Sauce should be medium thick and mildly piquant.", region_keys: [step-5]}
+          - {text: "Serve with rice, noodles, gnocchi, salad.", region_keys: [step-6]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}
+    notes:
+      - text: "⟦blue handwritten marginal word⟧"
+        language: und
+        region_keys: [handwriting]
+        uncertainties:
+          - substring: "⟦blue handwritten marginal word⟧"
+            issue: illegible
+            note: "The blue cursive word appears to belong to Chicken paprika and resembles ‘curry’, but its exact letterforms are not source-clear; the bracketed text is an explicit placeholder, not a guess."
+    cross_references: []
+    status: needs_attention
+    ambiguity_note: "The printed recipe text is source-clear, but the blue handwritten marginal word cannot be transcribed exactly without guessing."
+    open_issues:
+      - issue_id: r0025-handwritten-word
+        target_ids: [note-1]
+        description: "The blue handwritten marginal word below the ingredient list appears to belong to Chicken paprika and resembles ‘curry’, but its exact letter sequence is unresolved; retain the explicit placeholder until a human resolves it or explicitly excludes the annotation from authoritative transcription."
+        severity: textual
+
+  - recipe_id: vera-r0026
+    source_order: 26
+    slug: chicken-ragout
+    pages: [20]
+    printed_pages: ["19"]
+    display_title: "Chicken ragoût · Ragoût z kuřete"
+    titles:
+      - {segment_id: title-en, text: "Chicken ragoût", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Ragoût z kuřete", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 20, block_ids: [/page/19/SectionHeader/1]}
+      - {key: ingredients-main, role: ingredient, pdf_page: 20, block_ids: [/page/19/ListGroup/2]}
+      - {key: step-main, role: instruction, pdf_page: 20, block_ids: [/page/19/Text/4]}
+      - {key: yield-main, role: yield-time, pdf_page: 20, block_ids: [/page/19/Text/5]}
+      - {key: variant-label, role: other, pdf_page: 20, block_ids: [/page/19/Text/6]}
+      - {key: ingredients-au-gratin, role: ingredient, pdf_page: 20, block_ids: [/page/19/ListGroup/3]}
+      - {key: step-au-gratin, role: instruction, pdf_page: 20, block_ids: [/page/19/Text/7]}
+      - {key: yield-au-gratin, role: yield-time, pdf_page: 20, block_ids: [/page/19/Text/8]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "2 lbs. chicken breast, boned, skin removed", region_keys: [ingredients-main]}
+          - {text: "soup vegetables (carrot, parsley, onion, celery)", region_keys: [ingredients-main]}
+          - {text: "salt and pepper", region_keys: [ingredients-main]}
+          - {text: "1 cup sliced fresh mushrooms", region_keys: [ingredients-main]}
+          - {text: "2 tablespoons butter", region_keys: [ingredients-main]}
+          - {text: "1 small cauliflower", region_keys: [ingredients-main]}
+          - {text: "juice of 1·2 lemons", region_keys: [ingredients-main]}
+          - {text: "2 egg yolks", region_keys: [ingredients-main]}
+          - {text: "2 tablespoons butter and 3 tablespoons flour for the roux.", region_keys: [ingredients-main]}
+      - section_id: ingredients-au-gratin
+        items:
+          - {text: "4 tablespoons butter", region_keys: [ingredients-au-gratin]}
+          - {text: "chicken ragoût", region_keys: [ingredients-au-gratin]}
+          - {text: "1/2 cup grated Parmesan", region_keys: [ingredients-au-gratin]}
+          - {text: "1/2 cup bread crumbs", region_keys: [ingredients-au-gratin]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Cook chicken and soup vegetables in lightly salted boiling water. When cool enough to handle, dice the chicken, discard soup vegetables, reserve the broth. While the chicken cooks, heat 2 tablespoons butter in a skillet and sauté the mushrooms over medium heat (about 4 minutes) – must not be too soft. Remove from heat and reserve. Cook cauliflower in lightly salted boiling water – do not overcook, must be tender, not mushy. Drain and separate in rosettes. Reserve. In a large skillet melt the remaining 2 tablespoons butter, add 3 tablespoons flour and stir over low/medium heat until golden brown. Add 1·1/2 cups of the reserved chicken broth and simmer, uncovered, until the mixture thickens, 5·10 minutes. Add juice of 1 lemon, diced chicken, simmer 2 minutes. Blend in egg yolks, mushrooms and cauliflower rosettes. Season to taste with salt, pepper, more lemon juice. If the ragoût is too thick, add a little more chicken broth. Serve as is with boiled potatoes, lettuce.", region_keys: [step-main]}
+      - section_id: instructions-au-gratin
+        label: {segment_id: variant-label, text: "or serve au gratin:", region_key: variant-label}
+        items:
+          - {text: "Transfer the mixture into a buttered gratin dish, or casserole, top with grated Parmesan and bread crumbs. Sprinkle with melted butter. Bake in hot oven (400F), 10·15 minutes, or until the top is golden brown. Serve with french bread, bread sticks, lettuce.", region_keys: [step-au-gratin]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield-main]}
+      - {text: "Serves 6 – Preparation time: 1 hour 15 minutes", region_keys: [yield-au-gratin]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0027
+    source_order: 27
+    slug: chicken-ragout-on-a-half-shell
+    pages: [21]
+    printed_pages: ["20"]
+    display_title: "Chicken ragoût on a half shell · as an appetizer · Ragoût na mušlích"
+    titles:
+      - {segment_id: title-en, text: "Chicken ragoût on a half shell", language: en, title_role: primary}
+      - {segment_id: title-en-subtitle, text: "as an appetizer", language: en, title_role: subtitle}
+      - {segment_id: title-cs, text: "Ragoût na mušlích", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 21, block_ids: [/page/20/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 21, block_ids: [/page/20/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/3]}
+      - {key: yield, role: yield-time, pdf_page: 21, block_ids: [/page/20/Text/4]}
+      - {key: time, role: yield-time, pdf_page: 21, block_ids: [/page/20/Text/5]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "Chicken ragoût", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1/2 cup grated Parmesan", region_keys: [ingredients]}
+          - {text: "1/2 cup bread crumbs", region_keys: [ingredients]}
+          - {text: "12 shells", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Butter the shells, fill each little over half full with chicken ragoût, sprinkle with grated Parmesan, bread crumbs and melted butter. Bake at 400F about 15 minutes or until golden on top.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 12 as an appetizer", region_keys: [yield]}
+      - {text: "Preparation time: 1 hour 15 minutes", region_keys: [time]}
+    notes: []
+    cross_references: []
+    related_recipe_ids: [vera-r0026]
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0028
+    source_order: 28
+    slug: roast-turkey
+    pages: [21]
+    printed_pages: ["20"]
+    display_title: "Roast turkey · Krocan pečený"
+    titles:
+      - {segment_id: title-en, text: "Roast turkey", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Krocan pečený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 21, block_ids: [/page/20/SectionHeader/6]}
+      - {key: ingredients, role: ingredient, pdf_page: 21, block_ids: [/page/20/ListGroup/7]}
+      - {key: step-1, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/8]}
+      - {key: step-2, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/9]}
+      - {key: step-3, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/10]}
+      - {key: step-4, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/11]}
+      - {key: step-5, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/12]}
+      - {key: step-6, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/13]}
+      - {key: step-7, role: instruction, pdf_page: 21, block_ids: [/page/20/Text/14]}
+      - {key: yield, role: yield-time, pdf_page: 21, block_ids: [/page/20/Text/15]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 turkey, 15 lbs.", region_keys: [ingredients]}
+          - {text: "8 tablespoons (1 stick) butter", region_keys: [ingredients]}
+          - {text: "2 cups chicken broth", region_keys: [ingredients]}
+          - {text: "2 slices bacon", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse turkey with cold water, and pat dry inside and out with paper towel.", region_keys: [step-1]}
+          - {text: "Rub the body and neck cavities with salt and butter. Brush skin with butter.", region_keys: [step-2]}
+          - {text: "Preheat oven to 350F.", region_keys: [step-3]}
+          - {text: "Pour one cup chicken broth in a roasting pan. Place the bird in the pan, breast down. Roast, uncovered 1·1/2 hours, basting occasionally with butter, chicken broth and pan drippings.", region_keys: [step-4]}
+          - {text: "Turn turkey breast up, place 2 slices bacon on top and roast 1·1/2 – 2 hours, basting with the remaining butter, chicken broth and juices from the pan.", region_keys: [step-5]}
+          - {text: "When done, transfer the bird on a heated platter. Strain the pan drippings, discarding all fat, and pour some over the turkey. Serve the remaining juice in a saucedish. For easier carving allow turkey to stand 10·15 minutes.", region_keys: [step-6]}
+          - {text: "Serve with potatoes, salad, vegetables, compote.", region_keys: [step-7]}
+    yield_time_lines:
+      - {text: "Serves 15 – Preparation time: 3 hours 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []

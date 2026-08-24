@@ -1,0 +1,596 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0020
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 17
+  printed_pages:
+  - '16'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0020-title
+  pdf_page: 17
+  printed_page: '16'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 777
+    - 353
+  - - 2178
+    - 353
+  - - 2178
+    - 495
+  - - 777
+    - 495
+  candidate_block_ids:
+  - /page/16/SectionHeader/1
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-title.png
+  region_image_pixel_sha256: 13e436c9be9c3048c08ffce32466e5a870eca59c5b492131289db5fef4258d54
+- region_id: vera-r0020-ingredients
+  pdf_page: 17
+  printed_page: '16'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 219
+    - 450
+  - - 1089
+    - 450
+  - - 1089
+    - 1300
+  - - 219
+    - 1300
+  candidate_block_ids:
+  - /page/16/ListGroup/2
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-ingredients.png
+  region_image_pixel_sha256: babf58cca18d3e73f23b892196d4cb80ea2ce9c4e2e6975a037e98c929257a90
+- region_id: vera-r0020-step-1
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 472
+  - - 2292
+    - 472
+  - - 2292
+    - 596
+  - - 1104
+    - 596
+  candidate_block_ids:
+  - /page/16/Text/3
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-1.png
+  region_image_pixel_sha256: f744e1aa65e4e8a99451652ec7b33bda5dce0fbcd67c1496d96a70a4240c4a46
+- region_id: vera-r0020-step-2
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 533
+  - - 1866
+    - 533
+  - - 1866
+    - 645
+  - - 1104
+    - 645
+  candidate_block_ids:
+  - /page/16/Text/4
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-2.png
+  region_image_pixel_sha256: 98fbf943a73cfbf76df0599a16fa3000be2a32bbd9a5ee6dfb6235180a1e1dd4
+- region_id: vera-r0020-step-3
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 589
+  - - 2706
+    - 589
+  - - 2706
+    - 771
+  - - 1104
+    - 771
+  candidate_block_ids:
+  - /page/16/Text/5
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-3.png
+  region_image_pixel_sha256: 0d12ce14dc2ce16e2e79e16848c124a4c1cb7262c765dceb0e8a1b8861d3c895
+- region_id: vera-r0020-step-4
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 711
+  - - 2268
+    - 711
+  - - 2268
+    - 825
+  - - 1104
+    - 825
+  candidate_block_ids:
+  - /page/16/Text/6
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-4.png
+  region_image_pixel_sha256: 6164204a370eea52b8aac68011aa1d6e2adc769cc29bbb110cff884ddc24133b
+- region_id: vera-r0020-step-5
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 769
+  - - 2679
+    - 769
+  - - 2679
+    - 918
+  - - 1104
+    - 918
+  candidate_block_ids:
+  - /page/16/Text/7
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-5.png
+  region_image_pixel_sha256: 31e13699706dacf7c35f4045300f05667a09f3f4a926de38ef6d34310da4c02e
+- region_id: vera-r0020-step-6
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 882
+  - - 2712
+    - 882
+  - - 2712
+    - 1035
+  - - 1104
+    - 1035
+  candidate_block_ids:
+  - /page/16/Text/8
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-6.png
+  region_image_pixel_sha256: 840918a45e1b9ce2d513679f2e7b188cc5416e3608c2e8a4952287a62f40c426
+- region_id: vera-r0020-step-7
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 999
+  - - 2475
+    - 999
+  - - 2475
+    - 1113
+  - - 1104
+    - 1113
+  candidate_block_ids:
+  - /page/16/Text/9
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-7.png
+  region_image_pixel_sha256: 3400bb848c8e010afcb081dbe4ef7b6db240eac11ad4b34bcc7f3132055934db
+- region_id: vera-r0020-step-8
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1059
+  - - 1575
+    - 1059
+  - - 1575
+    - 1154
+  - - 1104
+    - 1154
+  candidate_block_ids:
+  - /page/16/Text/10
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-8.png
+  region_image_pixel_sha256: 47c63e1f4551d576bb69a2c75869224d7a2c5b4b8899a4b2e6e3529596e967f8
+- region_id: vera-r0020-step-9
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1118
+  - - 2706
+    - 1118
+  - - 2706
+    - 1233
+  - - 1104
+    - 1233
+  candidate_block_ids:
+  - /page/16/Text/11
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-9.png
+  region_image_pixel_sha256: b80444d3b66c97176d9b8c9545c02558b9c980e4bb3cf257d716419ee1f33b00
+- region_id: vera-r0020-step-10
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1179
+  - - 2469
+    - 1179
+  - - 2469
+    - 1286
+  - - 1104
+    - 1286
+  candidate_block_ids:
+  - /page/16/Text/12
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-10.png
+  region_image_pixel_sha256: b1292c9fa832b6526124dd587e293143465e11aa7cb950aded6ef8f6dba18df3
+- region_id: vera-r0020-step-11
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1237
+  - - 2709
+    - 1237
+  - - 2709
+    - 1381
+  - - 1104
+    - 1381
+  candidate_block_ids:
+  - /page/16/Text/13
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-11.png
+  region_image_pixel_sha256: cd60bcb0ce263f2d61f228472dc2eada79c420492ae862b1f057cdfc2b80ffbf
+- region_id: vera-r0020-step-12
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1345
+  - - 2709
+    - 1345
+  - - 2709
+    - 1507
+  - - 1104
+    - 1507
+  candidate_block_ids:
+  - /page/16/Text/14
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-12.png
+  region_image_pixel_sha256: bc532e0d515362905fd6ab93de279acdb9bae760d60689a5892699b043141aa9
+- region_id: vera-r0020-step-13
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1469
+  - - 2418
+    - 1469
+  - - 2418
+    - 1575
+  - - 1104
+    - 1575
+  candidate_block_ids:
+  - /page/16/Text/15
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-13.png
+  region_image_pixel_sha256: b66af8b52018136f0b7ab248b97a75e4ce49d4aa811f5937c61e9e31c744ff6c
+- region_id: vera-r0020-step-14
+  pdf_page: 17
+  printed_page: '16'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1527
+  - - 2202
+    - 1527
+  - - 2202
+    - 1631
+  - - 1104
+    - 1631
+  candidate_block_ids:
+  - /page/16/Text/16
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-step-14.png
+  region_image_pixel_sha256: d90b35083ecc12d6c94dbfea590418a9516306b4fcc292f07f9e1096a26be7f7
+- region_id: vera-r0020-yield
+  pdf_page: 17
+  printed_page: '16'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1944
+  - - 2079
+    - 1944
+  - - 2079
+    - 2034
+  - - 1104
+    - 2034
+  candidate_block_ids:
+  - /page/16/Text/17
+  region_image: evidence/production-batch-005/regions/vera-r0020/p17-yield.png
+  region_image_pixel_sha256: aeb475ce76e7e48efb8a6e58ed144e8b738722fa7f64dd48af40383a09ef192b
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Leg of lamb in wine sauce · Skopová kýta dušená
+    language: mul
+    source_region_ids:
+    - vera-r0020-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Leg of lamb in wine sauce
+    language: en
+    source_region_ids:
+    - vera-r0020-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Skopová kýta dušená
+    language: cs
+    source_region_ids:
+    - vera-r0020-title
+    title_role: parallel
+  source_order: 20
+  slug_candidate: leg-of-lamb-in-wine-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0020-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3·4 lbs. lamb leg, boned, skinned (4·5 lbs. with bone)
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/3 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 5 slices bacon
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1/2 teaspoon each of ginger and ground nutmeg
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 parsnip, 3 carrots, 1 celery root,
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 medium onion
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 3 bay leaves, whole allspice, whole black pepper
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: juice of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: 1/4 cup cranberry juice, unsweetened
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: 1 cup dry red wine
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+    - segment_id: ingredient-13
+      text_verbatim: 1·2 cups chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0020-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Slice thinly parsnip, carrots, celery root and onion.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Cut the bacon into short strips.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Trim off excess fat from the meat, lard it with bacon (= make small slits in roast
+        and push a strip of bacon into each slit).
+      language: en
+      source_region_ids:
+      - vera-r0020-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Mix salt, pepper, ginger, nutmeg. Rub over lamb.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Heat the oil in a large stewpot, add the sliced vegetables, cook five minutes.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: Place the lamb in the pot, brown it lightly, sprinkle with the remaining spices.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-6
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: Cover and simmer 1 hour, gradually adding chicken stock.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-7
+      step_number: 7
+    - segment_id: step-8
+      text_verbatim: Remove the lamb.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-8
+      step_number: 8
+    - segment_id: step-9
+      text_verbatim: Spoon fat from the juices, stir in flour and cook until lightly browned.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-9
+      step_number: 9
+    - segment_id: step-10
+      text_verbatim: Blend in lemon juice, cranberry juice, wine, chicken stock.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-10
+      step_number: 10
+    - segment_id: step-11
+      text_verbatim: Return lamb to the mixture, cover and simmer until tender for about 1 hour.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-11
+      step_number: 11
+    - segment_id: step-12
+      text_verbatim: Place lamb on a warm serving platter, garnish with mint, cranberries, snipped parsley,
+        chestnuts.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-12
+      step_number: 12
+    - segment_id: step-13
+      text_verbatim: Strain the sauce, heat thoroughly, serve in a saucedish.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-13
+      step_number: 13
+    - segment_id: step-14
+      text_verbatim: Serve with rice, noodles, vegetables, potatoes.
+      language: en
+      source_region_ids:
+      - vera-r0020-step-14
+      step_number: 14
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:02:08Z'
+  checks: []
+  open_issues: []

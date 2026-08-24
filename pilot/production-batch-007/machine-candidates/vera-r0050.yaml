@@ -1,0 +1,323 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0050
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 34
+  printed_pages:
+  - '33'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0050-title
+  pdf_page: 34
+  printed_page: '33'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 627
+    - 282
+  - - 2271
+    - 282
+  - - 2271
+    - 388
+  - - 627
+    - 388
+  candidate_block_ids:
+  - /page/33/SectionHeader/1
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-title.png
+  region_image_pixel_sha256: 1f8ec3bf69f8b2a6e407ca65242905bb5eb0257196e439c290d19a591c7ec0b0
+- region_id: vera-r0050-ingredients-main
+  pdf_page: 34
+  printed_page: '33'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 204
+    - 390
+  - - 1047
+    - 390
+  - - 1047
+    - 926
+  - - 204
+    - 926
+  candidate_block_ids:
+  - /page/33/ListGroup/2
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-ingredients-main.png
+  region_image_pixel_sha256: 2e059f08ef4ac1dd9ee64fd67eb0fa0d1e5c37581630d05c218946e99c8a66c0
+- region_id: vera-r0050-sauce-label
+  pdf_page: 34
+  printed_page: '33'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 213
+    - 932
+  - - 429
+    - 932
+  - - 429
+    - 1018
+  - - 213
+    - 1018
+  candidate_block_ids:
+  - /page/33/SectionHeader/3
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-sauce-label.png
+  region_image_pixel_sha256: 3fff6c2564a73b3cc1fd59fa4aab6666abb39335f88baeff1f53b63981ce5842
+- region_id: vera-r0050-ingredients-sauce
+  pdf_page: 34
+  printed_page: '33'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 213
+    - 982
+  - - 1056
+    - 982
+  - - 1056
+    - 1472
+  - - 213
+    - 1472
+  candidate_block_ids:
+  - /page/33/ListGroup/4
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-ingredients-sauce.png
+  region_image_pixel_sha256: 53aa1a9640efd2ba32fca4584c3f26b8c1c580b3263b347c5804ced678a70b03
+- region_id: vera-r0050-steps
+  pdf_page: 34
+  printed_page: '33'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 384
+  - - 2697
+    - 384
+  - - 2697
+    - 1009
+  - - 1068
+    - 1009
+  candidate_block_ids:
+  - /page/33/Text/5
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-steps.png
+  region_image_pixel_sha256: 553f30c7e99c45437971f9c14deb8f9c801f6aa27c5d22639da7342257dfa952
+- region_id: vera-r0050-yield
+  pdf_page: 34
+  printed_page: '33'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1068
+    - 1376
+  - - 1893
+    - 1376
+  - - 1893
+    - 1462
+  - - 1068
+    - 1462
+  candidate_block_ids:
+  - /page/33/Text/6
+  region_image: evidence/production-batch-007/regions/vera-r0050/p34-yield.png
+  region_image_pixel_sha256: 392dfe234cd6b63671557a03f395b9bc07d21152a8885c1f38ddacc424803866
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Salmon trout with dill sauce · Pstruh s koprovou omáčkou
+    language: mul
+    source_region_ids:
+    - vera-r0050-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Salmon trout with dill sauce
+    language: en
+    source_region_ids:
+    - vera-r0050-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Pstruh s koprovou omáčkou
+    language: cs
+    source_region_ids:
+    - vera-r0050-title
+    title_role: parallel
+  source_order: 50
+  slug_candidate: salmon-trout-with-dill-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0050-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 trouts, 4 lbs., cleaned, with heads and tails left on
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 bottle white wine
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-3
+      text_verbatim: 1·1/2 quarts water
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-4
+      text_verbatim: 1 medium onion, quartered
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-5
+      text_verbatim: juice of one lemon
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-6
+      text_verbatim: 10 black peppercorns
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-7
+      text_verbatim: 2 bay leaves
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-8
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-9
+      text_verbatim: parsley, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+    - segment_id: ingredient-10
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-main
+  - section_id: ingredients-sauce
+    ingredients:
+    - segment_id: ingredient-11
+      text_verbatim: 3 tablespoons butter and 4 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-12
+      text_verbatim: 2 tablespoons finely chopped dill
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-13
+      text_verbatim: 1 small onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-14
+      text_verbatim: parsley, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-15
+      text_verbatim: 2 cups fish broth
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-16
+      text_verbatim: 1 tablespoon vinegar
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-17
+      text_verbatim: 1 teaspoon sugar
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-18
+      text_verbatim: 1/2 cup heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    - segment_id: ingredient-19
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0050-ingredients-sauce
+    label:
+      segment_id: label-sauce
+      text_verbatim: 'Sauce:'
+      language: en
+      source_region_ids:
+      - vera-r0050-sauce-label
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Heat the wine, water, onion, lemon juice, bay leaves and peppercorns. Simmer 10 minutes.
+        Add the trouts and simmer gently for 15 minutes, without boiling.
+      language: en
+      source_region_ids:
+      - vera-r0050-steps
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Drain fish, arrange on a heated serving platter, keep it warm. Strain the broth from
+        the fish, reserve 2 cups for dill sauce. Meanwhile, prepare the sauce. Melt butter in a saucepan,
+        blend in flour, stir and cook until golden. Add onion, parsley, fish broth, vinegar, sugar, salt.
+        Cook, uncovered, until sauce thickens. Strain. Blend in the cream and chopped dill. Heat through,
+        do not boil. Pour hot butter over trouts, garnish with parsley. Hand sauce separately.
+      language: en
+      source_region_ids:
+      - vera-r0050-steps
+      step_number: 2
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:18:25Z'
+  checks: []
+  open_issues: []

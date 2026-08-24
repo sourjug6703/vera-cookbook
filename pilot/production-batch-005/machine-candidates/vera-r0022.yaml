@@ -1,0 +1,238 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0022
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 18
+  printed_pages:
+  - '17'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0022-title
+  pdf_page: 18
+  printed_page: '17'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1038
+    - 556
+  - - 1941
+    - 556
+  - - 1941
+    - 685
+  - - 1038
+    - 685
+  candidate_block_ids:
+  - /page/17/SectionHeader/4
+  region_image: evidence/production-batch-005/regions/vera-r0022/p18-title.png
+  region_image_pixel_sha256: 08d638afc41eb7ede516f689267cc991a39c864848a0b9d89ff0c24c96ca35d5
+- region_id: vera-r0022-ingredients
+  pdf_page: 18
+  printed_page: '17'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 240
+    - 639
+  - - 1089
+    - 639
+  - - 1089
+    - 1208
+  - - 240
+    - 1208
+  candidate_block_ids:
+  - /page/17/ListGroup/5
+  region_image: evidence/production-batch-005/regions/vera-r0022/p18-ingredients.png
+  region_image_pixel_sha256: afe1576f297950d160f7319fdd2c25477973ab061c16a5e8ccd9fe01c4326cf5
+- region_id: vera-r0022-cross-reference
+  pdf_page: 18
+  printed_page: '17'
+  role: cross-reference
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1110
+    - 658
+  - - 1971
+    - 658
+  - - 1971
+    - 773
+  - - 1110
+    - 773
+  candidate_block_ids:
+  - /page/17/Text/6
+  region_image: evidence/production-batch-005/regions/vera-r0022/p18-cross-reference.png
+  region_image_pixel_sha256: 5e2706068caaa5ab788aa1cb9958b9ef834131014c91882cf9b704ba2081eb17
+- region_id: vera-r0022-step-1
+  pdf_page: 18
+  printed_page: '17'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1110
+    - 716
+  - - 1914
+    - 716
+  - - 1914
+    - 828
+  - - 1110
+    - 828
+  candidate_block_ids:
+  - /page/17/Text/7
+  region_image: evidence/production-batch-005/regions/vera-r0022/p18-step-1.png
+  region_image_pixel_sha256: 0a7d6966def225073fc1e430f14e619367cd5ceb07dc92fcc04360a2355968b0
+- region_id: vera-r0022-yield
+  pdf_page: 18
+  printed_page: '17'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1134
+  - - 1839
+    - 1134
+  - - 1839
+    - 1232
+  - - 1104
+    - 1232
+  candidate_block_ids:
+  - /page/17/Text/8
+  region_image: evidence/production-batch-005/regions/vera-r0022/p18-yield.png
+  region_image_pixel_sha256: 5400526566c929a05cd799b7b281623867443294c584fa1df22747ff9fd367c6
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Mutton goulash · Guláš skopový
+    language: mul
+    source_region_ids:
+    - vera-r0022-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Mutton goulash
+    language: en
+    source_region_ids:
+    - vera-r0022-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Guláš skopový
+    language: cs
+    source_region_ids:
+    - vera-r0022-title
+    title_role: parallel
+  source_order: 22
+  slug_candidate: mutton-goulash
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0022-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 lbs. boned shoulder of mutton, cut in pieces, about 1·1/2"
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 2 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 5 oz. bacon, diced
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 large onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 5 cloves garlic, pressed or chopped
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 2 tablespoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1 teaspoon each of caraway seeds and marjoram
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0022-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Serve with potatoes, gnocchi, etc.
+      language: en
+      source_region_ids:
+      - vera-r0022-step-1
+      step_number: 1
+  notes: []
+  cross_references:
+  - segment_id: cross-reference-1
+    text_verbatim: Follow instructions for “Beef goulash”
+    language: en
+    source_region_ids:
+    - vera-r0022-cross-reference
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0005
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:02:08Z'
+  checks: []
+  open_issues: []

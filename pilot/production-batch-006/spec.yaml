@@ -1,0 +1,514 @@
+batch_id: production-batch-006
+batch_title: "Production batch 006 source review"
+batch_copy_title: "Vera Cookbook production batch 006 review status"
+candidate_summary: "Nine new local Marker machine candidates in source order plus a byte-preserved read-back of existing vera-r0031, with exact page context and cited regions. No trust promotion has been performed on the new records."
+audited_summary: "Nine new records in source order after a separate direct local AI visual source audit, plus the unchanged batch-001 read-back of vera-r0031. This is not human verification."
+recipe_schema_version: "1.3.0"
+source_sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+pdf_page_count: 75
+marker_version: "2.0.0"
+marker_generated_at: "2026-08-23T23:39:26Z"
+marker_artifact: "pilot/acceleration-wave-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures - Vera Gaeta.json"
+created_at: "2026-08-23T23:42:00Z"
+audited_at: "2026-08-23T23:50:40Z"
+auditor_id: "openai-codex"
+readback_record_ids: [vera-r0031]
+reserved_aliases:
+  - {recipe_id: vera-r0039, text: "Venison in cream sauce – same as Hare in cream sauce", pdf_page: 29, block_id: /page/28/Text/19}
+  - {recipe_id: vera-r0040, text: "Venison in wine sauce – same as Marinated hare in wine sauce", pdf_page: 29, block_id: /page/28/Text/20}
+recipes:
+  - recipe_id: vera-r0029
+    source_order: 29
+    slug: stuffed-turkey
+    pages: [22, 23]
+    printed_pages: ["21", "22"]
+    display_title: "Stuffed turkey · Krocan nadívaný"
+    titles:
+      - {segment_id: title-en, text: "Stuffed turkey", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Krocan nadívaný", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 22, block_ids: [/page/21/SectionHeader/1]}
+      - {key: step-main, role: instruction, pdf_page: 22, block_ids: [/page/21/Text/2]}
+      - {key: giblets-label, role: ingredient, pdf_page: 22, block_ids: [/page/21/SectionHeader/3]}
+      - {key: giblets-ingredients, role: ingredient, pdf_page: 22, block_ids: [/page/21/ListGroup/4]}
+      - {key: giblets-step-1, role: instruction, pdf_page: 22, block_ids: [/page/21/Text/5]}
+      - {key: giblets-step-2, role: instruction, pdf_page: 22, block_ids: [/page/21/Text/6]}
+      - {key: giblets-time, role: yield-time, pdf_page: 22, block_ids: [/page/21/Text/7]}
+      - {key: chestnuts-label, role: ingredient, pdf_page: 22, block_ids: [/page/21/SectionHeader/8]}
+      - {key: chestnuts-ingredients, role: ingredient, pdf_page: 22, block_ids: [/page/21/ListGroup/9]}
+      - {key: chestnuts-step-1, role: instruction, pdf_page: 22, block_ids: [/page/21/Text/10]}
+      - {key: chestnuts-step-2, role: instruction, pdf_page: 22, block_ids: [/page/21/Text/11]}
+      - {key: chestnuts-step-3a, role: continuation, pdf_page: 22, block_ids: [/page/21/Text/12]}
+      - {key: chestnuts-step-3b, role: continuation, pdf_page: 23, block_ids: [/page/22/Text/1]}
+      - {key: chestnuts-step-4, role: instruction, pdf_page: 23, block_ids: [/page/22/Text/2]}
+      - {key: chestnuts-time, role: yield-time, pdf_page: 23, block_ids: [/page/22/Text/3]}
+      - {key: chestnuts-note, role: note, pdf_page: 23, block_ids: [/page/22/Text/4]}
+      - {key: almond-label, role: ingredient, pdf_page: 23, block_ids: [/page/22/SectionHeader/5]}
+      - {key: almond-ingredients, role: ingredient, pdf_page: 23, block_ids: [/page/22/ListGroup/6]}
+      - {key: almond-step-1, role: instruction, pdf_page: 23, block_ids: [/page/22/Text/7]}
+      - {key: almond-step-2, role: instruction, pdf_page: 23, block_ids: [/page/22/Text/8]}
+      - {key: almond-step-3, role: instruction, pdf_page: 23, block_ids: [/page/22/Text/9]}
+      - {key: almond-time, role: yield-time, pdf_page: 23, block_ids: [/page/22/Text/10]}
+      - {key: raisins-label, role: instruction, pdf_page: 23, block_ids: [/page/22/SectionHeader/11]}
+      - {key: raisins-step, role: instruction, pdf_page: 23, block_ids: [/page/22/Text/12]}
+    ingredient_sections:
+      - section_id: ingredients-giblets
+        label: {segment_id: label-giblets, text: "Giblets stuffing:", region_key: giblets-label}
+        items:
+          - {text: "Giblets from the turkey", region_keys: [giblets-ingredients]}
+          - {text: "3 hard baked rolls", region_keys: [giblets-ingredients]}
+          - {text: "1 cup milk or water", region_keys: [giblets-ingredients]}
+          - {text: "2 whole eggs", region_keys: [giblets-ingredients]}
+          - {text: "1 small onion, chopped", region_keys: [giblets-ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [giblets-ingredients]}
+          - {text: "1/2 cup bread crumbs", region_keys: [giblets-ingredients]}
+          - {text: "salt, marjoram, thyme", region_keys: [giblets-ingredients]}
+      - section_id: ingredients-chestnuts
+        label: {segment_id: label-chestnuts, text: "Chestnuts stuffing:", region_key: chestnuts-label}
+        items:
+          - {text: "1 lb. chestnuts", region_keys: [chestnuts-ingredients]}
+          - {text: "10 tablespoons butter", region_keys: [chestnuts-ingredients]}
+          - {text: "4 eggs", region_keys: [chestnuts-ingredients]}
+          - {text: "5 hard baked rolls", region_keys: [chestnuts-ingredients]}
+          - {text: "2 cups milk", region_keys: [chestnuts-ingredients]}
+          - {text: "1/2 cup bread crumbs", region_keys: [chestnuts-ingredients]}
+          - {text: "dash of ground nutmeg", region_keys: [chestnuts-ingredients]}
+          - {text: "1/2 teaspoon sugar", region_keys: [chestnuts-ingredients]}
+          - {text: "salt", region_keys: [chestnuts-ingredients]}
+      - section_id: ingredients-almond
+        label: {segment_id: label-almond, text: "Almond stuffing:", region_key: almond-label}
+        items:
+          - {text: "5 oz. chopped or sliced almonds", region_keys: [almond-ingredients]}
+          - {text: "8 tablespoons butter", region_keys: [almond-ingredients]}
+          - {text: "4 egg yolks, 3 egg whites", region_keys: [almond-ingredients]}
+          - {text: "5 hard baked rolls", region_keys: [almond-ingredients]}
+          - {text: "2 cups milk", region_keys: [almond-ingredients]}
+          - {text: "1/4 cup sugar", region_keys: [almond-ingredients]}
+          - {text: "1/4 cup bread crumbs", region_keys: [almond-ingredients]}
+          - {text: "salt", region_keys: [almond-ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Prepare the bird as indicated in “roast turkey”. Turn the neck into the body cavity to block the passage between the neck and the body. The stuffing will stay in the neck cavity while roasting. Lightly fill neck cavity with stuffing. Do not pack · stuffing will expand while cooking. Fasten neck skin with stitches or skewer. Roast turkey as shown above.", region_keys: [step-main]}
+      - section_id: instructions-giblets
+        label: {segment_id: instruction-label-giblets, text: "Giblets stuffing:", region_key: giblets-label}
+        items:
+          - {text: "Soak the rolls in milk or water, squeeze off excess liquid, shred them. Rinse and finely chop the giblets.", region_keys: [giblets-step-1]}
+          - {text: "In a bowl cream butter, eggs, add the chopped onion, thyme, marjoram, shredded rolls, giblets, bread crumbs. Salt the mixture and mix thoroughly.", region_keys: [giblets-step-2]}
+      - section_id: instructions-chestnuts
+        label: {segment_id: instruction-label-chestnuts, text: "Chestnuts stuffing:", region_key: chestnuts-label}
+        items:
+          - {text: "Simmer chestnuts in water for 10·15 minutes. When the shells crack, peel and chop them coarsely.", region_keys: [chestnuts-step-1]}
+          - {text: "Break the rolls, soak them in milk, squeeze off excess, shred them. In a bowl cream butter, one whole egg and three egg yolks. Add the shredded rolls, nutmeg, sugar and coarsely chopped chestnuts. Salt the mixture; Fold in half of the bread crumbs and three stiffly whipped egg whites.", region_keys: [chestnuts-step-2]}
+          - {text: "Turn the stuffing into a fluted tube pan or a flan ring, buttered and dusted with bread crumbs. Bake in a bain-marie at 350F for 1·1/2 hours. When done, let it stand 5 minutes, then invert on a serving dish. Slice it like a cake.", region_keys: [chestnuts-step-3a, chestnuts-step-3b]}
+          - {text: "Serve with apricot or pear compote, cranberries, etc.", region_keys: [chestnuts-step-4]}
+      - section_id: instructions-almond
+        label: {segment_id: instruction-label-almond, text: "Almond stuffing:", region_key: almond-label}
+        items:
+          - {text: "Break the rolls and soak them in milk. Squeeze off excess, shred and strain them.", region_keys: [almond-step-1]}
+          - {text: "In a bowl cream butter, egg yolks and sugar. Combine all ingredients. Fold in three stiffly beaten egg whites.", region_keys: [almond-step-2]}
+          - {text: "Bake and serve in the same manner as chestnut stuffing.", region_keys: [almond-step-3]}
+      - section_id: instructions-raisins
+        label: {segment_id: instruction-label-raisins, text: "Raisins stuffing:", region_key: raisins-label}
+        items:
+          - {text: "Same as almond stuffing, replacing half of the almonds with 3/4 cup golden raisins.", region_keys: [raisins-step]}
+    yield_time_lines:
+      - {text: "Preparation time: 30 minutes", region_keys: [giblets-time]}
+      - {text: "Preparation time: 2 hours", region_keys: [chestnuts-time]}
+      - {text: "Preparation time: 2 hours", region_keys: [almond-time]}
+    notes:
+      - {text: "(Have chestnuts ready ahead of time. Bake stuffing while roasting turkey, so that both will be done at the same time).", region_keys: [chestnuts-note]}
+    cross_references: []
+    related_recipe_ids: [vera-r0028]
+    continuations:
+      - {from_region_key: chestnuts-step-3a, to_region_key: chestnuts-step-3b}
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0030
+    source_order: 30
+    slug: stuffed-pigeon
+    pages: [24]
+    printed_pages: ["23"]
+    display_title: "Stuffed pigeon · Holub nadívaný"
+    titles:
+      - {segment_id: title-en, text: "Stuffed pigeon", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Holub nadívaný", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 24, block_ids: [/page/23/SectionHeader/1]}
+      - {key: instruction-label, role: instruction, pdf_page: 24, block_ids: [/page/23/SectionHeader/2]}
+      - {key: ingredients-main, role: ingredient, pdf_page: 24, block_ids: [/page/23/ListGroup/3]}
+      - {key: stuffing-label, role: ingredient, pdf_page: 24, block_ids: [/page/23/SectionHeader/4]}
+      - {key: ingredients-stuffing, role: ingredient, pdf_page: 24, block_ids: [/page/23/ListGroup/5]}
+      - {key: step-1, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/6]}
+      - {key: step-2, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/7]}
+      - {key: step-3, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/8]}
+      - {key: step-4, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/9]}
+      - {key: step-5, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/10]}
+      - {key: step-6, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/11]}
+      - {key: step-7, role: instruction, pdf_page: 24, block_ids: [/page/23/Text/12]}
+      - {key: yield, role: yield-time, pdf_page: 24, block_ids: [/page/23/Text/13]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "3 young pigeons", region_keys: [ingredients-main]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients-main]}
+          - {text: "salt", region_keys: [ingredients-main]}
+          - {text: "3/4 cup chicken stock", region_keys: [ingredients-main]}
+      - section_id: ingredients-stuffing
+        label: {segment_id: label-stuffing, text: "Stuffing:", region_key: stuffing-label}
+        items:
+          - {text: "4 and 2 tablespoons butter (2. tbsp for braising the liver)", region_keys: [ingredients-stuffing]}
+          - {text: "2 egg yolks", region_keys: [ingredients-stuffing]}
+          - {text: "1 egg white", region_keys: [ingredients-stuffing]}
+          - {text: "2 hard baked rolls", region_keys: [ingredients-stuffing]}
+          - {text: "1/2 cup milk", region_keys: [ingredients-stuffing]}
+          - {text: "liver from three pigeons, chopped", region_keys: [ingredients-stuffing]}
+          - {text: "parsley", region_keys: [ingredients-stuffing]}
+          - {text: "1/2 cup bread crumbs", region_keys: [ingredients-stuffing]}
+          - {text: "salt", region_keys: [ingredients-stuffing]}
+    instruction_sections:
+      - section_id: instructions-main
+        label: {segment_id: label-prepare-stuffing, text: "Prepare stuffing first:", region_key: instruction-label}
+        items:
+          - {text: "Soak the rolls in milk, squeeze off excess, shred them. Cream the butter and the egg yolks, add the shredded rolls, the liver sautéed in butter, salt, snipped parsley, bread crumbs. Add stiffly whipped egg white.", region_keys: [step-1]}
+          - {text: "Carefully loosen the skin of the breasts and fill the pockets with stuffing. Enclose with stitches.", region_keys: [step-2]}
+          - {text: "Salt the pigeons. Place them in a roasting pan with melted butter, breasts down, roast at 350F for 20 minutes.", region_keys: [step-3]}
+          - {text: "Baste with melted butter, juices from the pan and a little chicken stock.", region_keys: [step-4]}
+          - {text: "Turn pigeons breasts up and finish roasting in the same manner.", region_keys: [step-5]}
+          - {text: "To serve, cut the pigeons in halves, sprinkle with pan drippings and snipped parsley. (Remove the stitches, of course).", region_keys: [step-6]}
+          - {text: "Serve with potatoes, green peas, salad, etc.", region_keys: [step-7]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1 hour", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0032
+    source_order: 32
+    slug: roast-duck
+    pages: [25]
+    printed_pages: ["24"]
+    display_title: "Roast duck · Kachna pečená"
+    titles:
+      - {segment_id: title-en, text: "Roast duck", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kachna pečená", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 25, block_ids: [/page/24/SectionHeader/2]}
+      - {key: ingredients, role: ingredient, pdf_page: 25, block_ids: [/page/24/ListGroup/3]}
+      - {key: step-1, role: instruction, pdf_page: 25, block_ids: [/page/24/Text/4]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 duck (approx 8 lbs.)", region_keys: [ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [ingredients]}
+          - {text: "salt, caraway seeds", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Roast the duck in the same manner as the goose. Do not stuff with apples. While roasting, baste often with butter.", region_keys: [step-1]}
+    yield_time_lines: []
+    notes: []
+    cross_references: []
+    related_recipe_ids: [vera-r0031]
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0033
+    source_order: 33
+    slug: duckling-with-madeira-wine
+    pages: [25, 26]
+    printed_pages: ["24", "25"]
+    display_title: "Duckling with Madeira wine · Kachna na víně"
+    titles:
+      - {segment_id: title-en, text: "Duckling with Madeira wine", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Kachna na víně", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 25, block_ids: [/page/24/SectionHeader/5]}
+      - {key: ingredients, role: ingredient, pdf_page: 25, block_ids: [/page/24/ListGroup/6]}
+      - {key: step-1, role: instruction, pdf_page: 25, block_ids: [/page/24/Text/7]}
+      - {key: step-2, role: continuation, pdf_page: 26, block_ids: [/page/25/Text/1]}
+      - {key: step-3, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/2]}
+      - {key: yield, role: yield-time, pdf_page: 26, block_ids: [/page/25/Text/3]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 duckling, 5-6 lbs.", region_keys: [ingredients]}
+          - {text: "5 slices ham, cut in stripes", region_keys: [ingredients]}
+          - {text: "8 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1 cup Madeira wine", region_keys: [ingredients]}
+          - {text: "1 cup chicken stock", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse duckling, pat dry. Sprinkle with salt and pepper inside and out. Melt butter in a roasting pan, add ham and duckling. Brown it quickly on both sides under the broiler. Lower oven temperature to 350F. Pour Madeira wine over duckling. Add some of the chicken stock, salt and pepper, and cover with buttered waxpaper. Roast 1 to 1·1/2 hours, occasionally adding the remaining chicken stock.", region_keys: [step-1]}
+          - {text: "Transfer duckling to a heated platter. Skim fat from pan drippings and strain into a saucepan. Add flour and slowly cook over low heat until the mixture thickens.", region_keys: [step-2]}
+          - {text: "Quarter duckling, serve with the sauce, boiled potatoes, vegetables.", region_keys: [step-3]}
+    yield_time_lines:
+      - {text: "Serves 4 – Preparation time: 1 hour 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    continuations:
+      - {from_region_key: step-1, to_region_key: step-2}
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0034
+    source_order: 34
+    slug: rabbit-with-paprika-sauce
+    pages: [26]
+    printed_pages: ["25"]
+    display_title: "Rabbit with paprika sauce · Králík na paprice"
+    titles:
+      - {segment_id: title-en, text: "Rabbit with paprika sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Králík na paprice", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 26, block_ids: [/page/25/SectionHeader/4]}
+      - {key: ingredients, role: ingredient, pdf_page: 26, block_ids: [/page/25/ListGroup/5]}
+      - {key: step-1, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/6]}
+      - {key: step-2, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/7]}
+      - {key: step-3, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/8]}
+      - {key: step-4, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/9]}
+      - {key: step-5, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/10]}
+      - {key: step-6, role: instruction, pdf_page: 26, block_ids: [/page/25/Text/11]}
+      - {key: yield, role: yield-time, pdf_page: 26, block_ids: [/page/25/Text/12]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 rabbit, 4·5 lbs., skinned, cleaned, cut in pieces", region_keys: [ingredients]}
+          - {text: "3 slices bacon, cut in strips", region_keys: [ingredients]}
+          - {text: "1/3 cup vegetable oil", region_keys: [ingredients]}
+          - {text: "1 small onion, finely chopped", region_keys: [ingredients]}
+          - {text: "3 tablespoons paprika", region_keys: [ingredients]}
+          - {text: "6 grains each of whole allspice and black peppercorns", region_keys: [ingredients]}
+          - {text: "thyme, 2 bay leaves", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "2 cups chicken stock", region_keys: [ingredients]}
+          - {text: "1·1/2 cups sour cream", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse, pat dry rabbit pieces. Sprinkle with salt and lard each with bacon strips.", region_keys: [step-1]}
+          - {text: "Heat oil in a large pan; add onion and cook until translucent. Add paprika, whole allspice, black peppercorns, thyme, bay leaves and rabbit pieces.", region_keys: [step-2]}
+          - {text: "Simmer, covered, for 1·1/2 hours, or until rabbit is tender, adding chicken stock when needed.", region_keys: [step-3]}
+          - {text: "Using a slotted spoon, lift rabbit pieces from liquid and place in a casserole.", region_keys: [step-4]}
+          - {text: "Stir flour into the liquid and simmer uncovered for 5 minutes. Add remaining chicken stock and sour cream and cook, stirring as necessary, until sauce is reduced to desired consistency, about 5 minutes. Strain sauce over rabbit. Simmer until heated through.", region_keys: [step-5]}
+          - {text: "Serve with gnocchi, dumplings, noodles.", region_keys: [step-6]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0035
+    source_order: 35
+    slug: fried-rabbit
+    pages: [27]
+    printed_pages: ["26"]
+    display_title: "Fried rabbit · Králík smažený"
+    titles:
+      - {segment_id: title-en, text: "Fried rabbit", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Králík smažený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 27, block_ids: [/page/26/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 27, block_ids: [/page/26/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 27, block_ids: [/page/26/Text/3]}
+      - {key: yield, role: yield-time, pdf_page: 27, block_ids: [/page/26/Text/4]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "1 rabbit, 4·5 lbs., skinned, cleaned, cut in small serving portions", region_keys: [ingredients]}
+          - {text: "2 eggs, whole", region_keys: [ingredients]}
+          - {text: "1/4 cup milk", region_keys: [ingredients]}
+          - {text: "3/4 cup flour", region_keys: [ingredients]}
+          - {text: "1·1/2 cups bread crumbs", region_keys: [ingredients]}
+          - {text: "1 cup vegetable oil for frying", region_keys: [ingredients]}
+          - {text: "salt", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Scald rabbit with hot water, pat dry. Pound each piece lightly, sprinkle with salt. Dredge each in flour shaking off excess, dip in mixture of beaten eggs and milk, coat with bread crumbs. Fry in hot oil until golden, about 5 minutes each side. Drain on paper towel. Serve with salad, vegetables, potatoes.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 45 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0036
+    source_order: 36
+    slug: roast-hare-or-wild-rabbit
+    pages: [27]
+    printed_pages: ["26"]
+    display_title: "Roast hare (or wild rabbit) · Zajíc pečený"
+    titles:
+      - {segment_id: title-en, text: "Roast hare (or wild rabbit)", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Zajíc pečený", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 27, block_ids: [/page/26/SectionHeader/5]}
+      - {key: ingredients, role: ingredient, pdf_page: 27, block_ids: [/page/26/ListGroup/6]}
+      - {key: step-1, role: instruction, pdf_page: 27, block_ids: [/page/26/Text/7]}
+      - {key: yield, role: yield-time, pdf_page: 27, block_ids: [/page/26/Text/8]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "Hindquarters of 1 hare, 4·5 lbs., cleaned, membrane removed", region_keys: [ingredients]}
+          - {text: "3 slices bacon, cut in short strips (1\")", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "8 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1·2 cups beef stock", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse, pat dry hare. Lard meaty side with bacon strips, sprinkle with salt and pepper. Melt butter in a roasting pan, add onion and the hare. Roast at 350F for 45 minutes, larded side down. Turn hare larded side up and roast 30·40 minutes or until tender. Baste frequently with beef stock and juices from the pan. Cut hare in serving portions. Serve with pan juices, fried potatoes, noodles, vegetables.", region_keys: [step-1]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 1·2 hours", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0037
+    source_order: 37
+    slug: hare-in-cream-sauce
+    pages: [28]
+    printed_pages: ["27"]
+    display_title: "Hare in cream sauce · Zajíc na smetaně"
+    titles:
+      - {segment_id: title-en, text: "Hare in cream sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Zajíc na smetaně", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 28, block_ids: [/page/27/SectionHeader/1]}
+      - {key: ingredients, role: ingredient, pdf_page: 28, block_ids: [/page/27/ListGroup/2]}
+      - {key: step-1, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/3]}
+      - {key: step-2, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/4]}
+      - {key: step-3, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/5]}
+      - {key: step-4, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/6]}
+      - {key: step-5, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/7]}
+      - {key: step-6, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/8]}
+      - {key: step-7, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/9]}
+      - {key: step-8, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/10]}
+      - {key: step-9, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/11]}
+      - {key: step-10, role: instruction, pdf_page: 28, block_ids: [/page/27/Text/12]}
+      - {key: yield, role: yield-time, pdf_page: 28, block_ids: [/page/27/Text/13]}
+    ingredient_sections:
+      - section_id: ingredients-main
+        items:
+          - {text: "Hindquarters of 1 hare, 4·5 lbs., cleaned, membrane removed", region_keys: [ingredients]}
+          - {text: "3 slices bacon cut in short strips", region_keys: [ingredients]}
+          - {text: "1 medium onion, finely chopped", region_keys: [ingredients]}
+          - {text: "carrot, celery, parsnip – sliced", region_keys: [ingredients]}
+          - {text: "5 grains each of black peppercorn, whole allspice, juniper berries", region_keys: [ingredients]}
+          - {text: "thyme, bay leaf, ground nutmeg", region_keys: [ingredients]}
+          - {text: "6 tablespoons butter", region_keys: [ingredients]}
+          - {text: "1·1/2 cups beef stock", region_keys: [ingredients]}
+          - {text: "1·1/2 cups heavy cream", region_keys: [ingredients]}
+          - {text: "juice of 1·2 lemons", region_keys: [ingredients]}
+          - {text: "3 tablespoons flour", region_keys: [ingredients]}
+          - {text: "salt and pepper", region_keys: [ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        items:
+          - {text: "Rinse the hare, pat dry. Rub with crushed juniper berries, sprinkle with salt, lard with bacon strips.", region_keys: [step-1]}
+          - {text: "Melt butter in a heavy skillet, add onion and vegetables, and sauté over medium heat.", region_keys: [step-2]}
+          - {text: "When onion is translucent, add hare and brown evenly on all sides.", region_keys: [step-3]}
+          - {text: "Transfer all into a roaster. Add spices and some of the beef stock.", region_keys: [step-4]}
+          - {text: "Roast 1 hour at 350F larded side down, then turn hare larded side up and continue roasting until tender, about 1 hour. Baste frequently with pan juices and beef stock.", region_keys: [step-5]}
+          - {text: "Remove hare to carving board.", region_keys: [step-6]}
+          - {text: "Make sauce by combining pan juices with flour. Simmer 5 minutes, stirring constantly. Add juice of 1 lemon and cream. Simmer a little more. Season to taste with salt, pepper and more lemon juice, if needed. Strain.", region_keys: [step-7]}
+          - {text: "To serve, slice hare and place slices on a warmed platter. Pour sauce over top.", region_keys: [step-8]}
+          - {text: "Serve remaining sauce in a gravy boat.", region_keys: [step-9]}
+          - {text: "Serve with rice, noodles, vegetables.", region_keys: [step-10]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours 30 minutes", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []
+
+  - recipe_id: vera-r0038
+    source_order: 38
+    slug: marinated-hare-in-wine-sauce
+    pages: [29]
+    printed_pages: ["28"]
+    display_title: "Marinated hare in wine sauce · Zajíc na černo"
+    titles:
+      - {segment_id: title-en, text: "Marinated hare in wine sauce", language: en, title_role: primary}
+      - {segment_id: title-cs, text: "Zajíc na černo", language: cs, title_role: parallel}
+    regions:
+      - {key: title, role: title, pdf_page: 29, block_ids: [/page/28/SectionHeader/1]}
+      - {key: marinade-label, role: ingredient, pdf_page: 29, block_ids: [/page/28/SectionHeader/2]}
+      - {key: marinade-ingredients, role: ingredient, pdf_page: 29, block_ids: [/page/28/ListGroup/3]}
+      - {key: hare-sauce-label, role: ingredient, pdf_page: 29, block_ids: [/page/28/SectionHeader/4]}
+      - {key: hare-sauce-ingredients, role: ingredient, pdf_page: 29, block_ids: [/page/28/ListGroup/5]}
+      - {key: instruction-label, role: instruction, pdf_page: 29, block_ids: [/page/28/SectionHeader/6]}
+      - {key: step-1, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/7]}
+      - {key: step-2, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/8]}
+      - {key: step-3, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/9]}
+      - {key: step-4, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/10]}
+      - {key: step-5, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/11]}
+      - {key: step-6, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/12]}
+      - {key: step-7, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/13]}
+      - {key: step-8, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/14]}
+      - {key: step-9, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/15]}
+      - {key: step-10, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/16]}
+      - {key: step-11, role: instruction, pdf_page: 29, block_ids: [/page/28/Text/17]}
+      - {key: yield, role: yield-time, pdf_page: 29, block_ids: [/page/28/Text/18]}
+    ingredient_sections:
+      - section_id: ingredients-marinade
+        label: {segment_id: label-marinade, text: "Marinade:", region_key: marinade-label}
+        items:
+          - {text: "1 cup sliced carrots", region_keys: [marinade-ingredients]}
+          - {text: "1 cup sliced onions", region_keys: [marinade-ingredients]}
+          - {text: "1 cup sliced shallots", region_keys: [marinade-ingredients]}
+          - {text: "3 cloves garlic, crushed", region_keys: [marinade-ingredients]}
+          - {text: "10 black peppercorns", region_keys: [marinade-ingredients]}
+          - {text: "3 bay leaves", region_keys: [marinade-ingredients]}
+          - {text: "thyme", region_keys: [marinade-ingredients]}
+          - {text: "1/4 cup cognac", region_keys: [marinade-ingredients]}
+          - {text: "3 cups red wine", region_keys: [marinade-ingredients]}
+          - {text: "1·1/2 cups vegetable oil", region_keys: [marinade-ingredients]}
+      - section_id: ingredients-hare-and-sauce
+        label: {segment_id: label-hare-and-sauce, text: "Hare and sauce:", region_key: hare-sauce-label}
+        items:
+          - {text: "Front part of 1 hare, 4·5 lbs.", region_keys: [hare-sauce-ingredients]}
+          - {text: "4 tablespoons butter", region_keys: [hare-sauce-ingredients]}
+          - {text: "3 oz. bacon, diced", region_keys: [hare-sauce-ingredients]}
+          - {text: "1 medium onion, chopped", region_keys: [hare-sauce-ingredients]}
+          - {text: "3 tablespoons vinegar", region_keys: [hare-sauce-ingredients]}
+          - {text: "1·1/2 cups beef stock", region_keys: [hare-sauce-ingredients]}
+          - {text: "1 cup red wine", region_keys: [hare-sauce-ingredients]}
+          - {text: "grated rind of 1 lemon", region_keys: [hare-sauce-ingredients]}
+          - {text: "5 grains each of black peppercorns and whole allspice", region_keys: [hare-sauce-ingredients]}
+          - {text: "2 bay leaves, thyme", region_keys: [hare-sauce-ingredients]}
+          - {text: "4 tablespoons flour", region_keys: [hare-sauce-ingredients]}
+          - {text: "2 tablespoons brown sugar", region_keys: [hare-sauce-ingredients]}
+          - {text: "1/4 cup cranberry sauce", region_keys: [hare-sauce-ingredients]}
+          - {text: "salt and pepper", region_keys: [hare-sauce-ingredients]}
+    instruction_sections:
+      - section_id: instructions-main
+        label: {segment_id: label-to-marinate, text: "To marinate:", region_key: instruction-label}
+        items:
+          - {text: "Place hare in a large crock. Add all dry ingredients, top with cognac, add wine.", region_keys: [step-1]}
+          - {text: "Add oil to seal air out. The hare must be submerged in the marinade. Soak hare overnight, or even better 2·3 days.", region_keys: [step-2]}
+          - {text: "Remove and wipe dry with a cloth.", region_keys: [step-3]}
+          - {text: "Heat butter in a 4 quart top·of·range casserole. Add bacon and onion and cook until soft. Add all spices and lemon rind. Sprinkle hare with salt and vinegar, put into casserole, and brown lightly on all sides.", region_keys: [step-4]}
+          - {text: "Reduce heat. Add some of the beef stock.", region_keys: [step-5]}
+          - {text: "Cover tightly and simmer 1·1·1/2 hours, or until meat is tender when pierced with a fork. Add beef stock occasionally.", region_keys: [step-6]}
+          - {text: "Transfer hare to a heated platter.", region_keys: [step-7]}
+          - {text: "Skim off fat from the cooking liquid, stir in the flour and continue cooking to a rich brown. Add the remaining beef stock and the wine.", region_keys: [step-8]}
+          - {text: "Cook until sauce thickens. Strain, blend in sugar and cranberry sauce. Season to taste with salt and pepper. Bring to boil, stirring constantly.", region_keys: [step-9]}
+          - {text: "Slice hare, pour hot sauce over top.", region_keys: [step-10]}
+          - {text: "Serve with noodles, gnocchi, dumplings.", region_keys: [step-11]}
+    yield_time_lines:
+      - {text: "Serves 6 – Preparation time: 2 hours,plus marinating", region_keys: [yield]}
+    notes: []
+    cross_references: []
+    status: source_checked
+    open_issues: []

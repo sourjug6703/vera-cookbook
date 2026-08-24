@@ -1,0 +1,442 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0016
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 15
+  printed_pages:
+  - '14'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0016-title
+  pdf_page: 15
+  printed_page: '14'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 789
+    - 232
+  - - 2130
+    - 232
+  - - 2130
+    - 336
+  - - 789
+    - 336
+  candidate_block_ids:
+  - /page/14/SectionHeader/1
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-title.png
+  region_image_pixel_sha256: cd7a3625e2415373d0925cd2a7ce73ffb61b941624a50223789a6d0676970c21
+- region_id: vera-r0016-ingredients
+  pdf_page: 15
+  printed_page: '14'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 231
+    - 340
+  - - 1017
+    - 340
+  - - 1017
+    - 712
+  - - 231
+    - 712
+  candidate_block_ids:
+  - /page/14/ListGroup/2
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-ingredients.png
+  region_image_pixel_sha256: 3419c04a388ecf3d0b10ea7e6b848aab7ea04f6f546a414c1e27820d9c4d9e7b
+- region_id: vera-r0016-step-1
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 330
+  - - 2691
+    - 330
+  - - 2691
+    - 482
+  - - 1080
+    - 482
+  candidate_block_ids:
+  - /page/14/Text/3
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-step-1.png
+  region_image_pixel_sha256: 07478b0c7374047636b4905a464d839c6a2830007a54a39974aae0851f38d1d8
+- region_id: vera-r0016-step-2
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 438
+  - - 2646
+    - 438
+  - - 2646
+    - 593
+  - - 1080
+    - 593
+  candidate_block_ids:
+  - /page/14/Text/4
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-step-2.png
+  region_image_pixel_sha256: 4dd98c46c7b32ee7f43b98ea692b098d6a527c188d34dce8d2656f423ab6afa6
+- region_id: vera-r0016-step-3
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 552
+  - - 2664
+    - 552
+  - - 2664
+    - 706
+  - - 1080
+    - 706
+  candidate_block_ids:
+  - /page/14/Text/5
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-step-3.png
+  region_image_pixel_sha256: b19e39be4cbe8568d1cbb64340ebba33114ee3dc45adafec3bff3886d6902387
+- region_id: vera-r0016-step-4
+  pdf_page: 15
+  printed_page: '14'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 668
+  - - 2232
+    - 668
+  - - 2232
+    - 760
+  - - 1080
+    - 760
+  candidate_block_ids:
+  - /page/14/Text/6
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-step-4.png
+  region_image_pixel_sha256: 8d088f42bd11d328942b9ea0a5babd59220dc27205e289a1b3b682a1edc796e5
+- region_id: vera-r0016-yield
+  pdf_page: 15
+  printed_page: '14'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 754
+  - - 1887
+    - 754
+  - - 1887
+    - 840
+  - - 1080
+    - 840
+  candidate_block_ids:
+  - /page/14/Text/7
+  region_image: evidence/production-batch-004/regions/vera-r0016/p15-yield.png
+  region_image_pixel_sha256: 1e666579fcee55299728be07e120e4c43d0366de721d88ccbe3b4426b35ee654
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Breaded pork chops · Vepřová žebírka smažená
+    language: mul
+    source_region_ids:
+    - vera-r0016-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Breaded pork chops
+    language: en
+    source_region_ids:
+    - vera-r0016-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Vepřová žebírka smažená
+    language: cs
+    source_region_ids:
+    - vera-r0016-title
+    title_role: parallel
+  source_order: 16
+  slug_candidate: breaded-pork-chops
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0016-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 6 pork loin rib chops, cut about 1/2" thick
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/2 cup flour
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 eggs
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0016-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Pound the pork chops lightly; make a few short cuts on the edges to prevent curling.
+      language: en
+      source_region_ids:
+      - vera-r0016-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Spice them with salt and pepper. Dredge them in flour shaking off excess, dip in
+        beaten eggs and coat with bread crumbs.
+      language: en
+      source_region_ids:
+      - vera-r0016-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Fry the chops in a covered pan for 5 minutes, turn them and finish frying uncovered.
+        Drain on paper towel.
+      language: en
+      source_region_ids:
+      - vera-r0016-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Serve with potato salad, green salad, vegetables.
+      language: en
+      source_region_ids:
+      - vera-r0016-step-4
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T22:42:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T22:43:44Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0016
+    source_region_ids: &id001
+    - vera-r0016-title
+    - vera-r0016-ingredients
+    - vera-r0016-step-1
+    - vera-r0016-step-2
+    - vera-r0016-step-3
+    - vera-r0016-step-4
+    - vera-r0016-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0016
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    source_region_ids:
+    - vera-r0016-title
+    - vera-r0016-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0016-title
+    - vera-r0016-step-1
+    - vera-r0016-step-2
+    - vera-r0016-step-3
+    - vera-r0016-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0016-title
+    - vera-r0016-yield
+    - vera-r0016-ingredients
+    - vera-r0016-step-1
+    - vera-r0016-step-2
+    - vera-r0016-step-3
+    - vera-r0016-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-3
+    source_region_ids:
+    - vera-r0016-yield
+    - vera-r0016-ingredients
+    - vera-r0016-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0016-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0016
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0016-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T22:43:44Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

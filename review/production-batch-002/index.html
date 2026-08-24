@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Cookbook · Batch 002 source audit</title>
+<style>
+:root { --ink:#27231d; --paper:#f3eee3; --card:#fffdf6; --rule:#b9aa92; --accent:#8f2924; --green:#245c47; --muted:#685d4d; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 Palatino, "Book Antiqua", Georgia, serif; }
+.mast { padding:64px max(24px,6vw) 46px; border-bottom:1px solid var(--rule); background:#e5dac5; }
+h1 { max-width:920px; margin:0 0 16px; font-size:clamp(42px,7vw,88px); line-height:.96; font-weight:500; letter-spacing:-.035em; text-wrap:balance; }
+.mast p { max-width:760px; margin:0; font-size:19px; line-height:1.55; }
+.toolbar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; padding:12px max(24px,6vw); background:#f3eee3; border-bottom:1px solid var(--rule); }
+.toolbar button { min-height:44px; border:1px solid var(--ink); background:var(--ink); color:#fff; padding:10px 16px; border-radius:999px; font:700 12px ui-monospace,SFMono-Regular,monospace; cursor:pointer; }
+.toolbar button.secondary { background:transparent; color:var(--ink); }
+.toolbar output { margin-inline-start:auto; font:700 13px ui-monospace,SFMono-Regular,monospace; }
+.toolbar span { color:var(--muted); }
+main { width:min(1500px,94vw); margin:42px auto 90px; display:grid; gap:42px; }
+.recipe { min-width:0; overflow:hidden; background:var(--card); border:1px solid var(--rule); border-radius:14px; }
+.recipe-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; padding:28px 32px; border-bottom:1px solid var(--rule); }
+.recipe h2 { margin:0; font-size:clamp(25px,3vw,42px); line-height:1.08; font-weight:500; overflow-wrap:anywhere; }
+.record-meta { margin:8px 0 0; color:var(--muted); font:12px/1.4 ui-monospace,SFMono-Regular,monospace; }
+.record-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px; flex:none; }
+.record-actions a { color:var(--ink); font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.08em; }
+.status { flex:none; border:1px solid var(--accent); color:var(--accent); padding:7px 11px; border-radius:999px; font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+.status-source_checked { border-color:var(--green); color:var(--green); }
+.compare { display:grid; grid-template-columns:auto minmax(0,1fr); }
+.source-disclosure { width:max-content; max-width:100%; border-inline-end:1px solid var(--rule); }
+.source-disclosure.is-open { width:min(720px,48vw); }
+.source-toggle { display:flex; width:100%; min-height:52px; align-items:center; gap:12px; padding:14px 18px; border:0; color:#fff; background:var(--ink); cursor:pointer; font:700 13px ui-monospace,SFMono-Regular,monospace; text-align:left; }
+.region-disclosure>summary::-webkit-details-marker { display:none; }
+.source-toggle small { color:#e8dcc8; font:11px ui-monospace,SFMono-Regular,monospace; white-space:nowrap; }
+.source-toggle-icon { margin-inline-start:auto; font-size:20px; line-height:1; }
+.source-panel { padding:24px; }
+.overview-grid { display:grid; gap:18px; }
+.region-disclosure { margin-top:22px; border-top:1px solid var(--rule); }
+.region-disclosure>summary { min-height:44px; padding:14px 0; color:var(--accent); cursor:pointer; font-weight:700; }
+.region-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.candidate { min-width:0; padding:28px 32px; }
+h3 { margin:0 0 18px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+h4 { margin:24px 0 7px; font-size:16px; }
+h5 { margin:18px 0 6px; color:var(--accent); font:700 12px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+figure { margin:0 0 20px; }
+figure a { display:block; }
+figure img { display:block; width:100%; max-height:720px; object-fit:contain; object-position:top; background:#eee4d4; border:1px solid #d8ccb8; }
+.region-crop img { height:150px; object-fit:contain; }
+figcaption { margin-top:6px; color:var(--muted); font:12px ui-monospace,SFMono-Regular,monospace; overflow-wrap:anywhere; }
+.candidate ul,.candidate ol { padding-left:22px; }
+.candidate li,.candidate p { max-width:75ch; margin:0 0 8px; line-height:1.5; overflow-wrap:anywhere; }
+.verbatim-title { padding:12px 14px; background:#f2eadc; border:1px solid #d9cbb5; }
+.risk { padding:24px 32px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); background:#f8eee7; }
+.risk ul { margin:0 0 12px; padding-left:20px; }
+.risk li,.risk p { max-width:100ch; margin:8px 0; line-height:1.45; overflow-wrap:anywhere; }
+.risk li span { margin-right:9px; color:var(--accent); font:700 10px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+fieldset { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; margin:0; padding:24px 32px 30px; border:0; }
+legend { padding-top:24px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+label { display:flex; gap:10px; align-items:flex-start; line-height:1.35; cursor:pointer; }
+input { appearance:none; width:20px; height:20px; flex:none; margin:1px 0 0; border:1px solid #75664f; background:#fff; }
+input:checked { background:var(--green); box-shadow:inset 0 0 0 4px #fff; }
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible { outline:3px solid #146b8c; outline-offset:3px; }
+#copy-feedback { min-width:16ch; color:var(--green); font-weight:700; }
+@media (hover:hover) { .source-toggle:hover,.toolbar button:hover { filter:brightness(1.16); } .record-actions a:hover { color:var(--accent); } }
+@media (max-width:900px) {
+  .recipe-head { flex-direction:column; } .record-actions { justify-content:flex-start; }
+  .compare { grid-template-columns:1fr; } .source-disclosure,.source-disclosure.is-open { width:100%; border-inline-end:0; border-bottom:1px solid var(--rule); }
+  .region-grid,fieldset { grid-template-columns:1fr; } .toolbar output { margin-inline-start:0; }
+}
+@media (max-width:560px) { .mast { padding-block:44px 34px; } .recipe-head,.candidate,.risk,fieldset { padding-inline:20px; } .toolbar span:not(#copy-feedback) { width:100%; } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+@media print { .toolbar { display:none; } body { background:#fff; } .recipe { break-before:page; } .source-disclosure { width:48%!important; } }
+</style>
+</head>
+<body>
+<header class="mast"><h1>Batch 002 source audit</h1><p>All five records passed a fresh direct local AI source audit. Human verification remains a separate trust state.</p></header>
+<div class="toolbar"><button type="button" onclick="window.print()">Print review packet</button><button type="button" class="secondary" onclick="copyStatus()">Copy checklist status</button><span>Optional human checks persist in this browser only.</span><output id="progress">0 / 40 checked</output><span id="copy-feedback" role="status" aria-live="polite"></span></div>
+<main>
+            <article class="recipe" id="vera-r0004">
+              <header class="recipe-head">
+                <div><h2>Stuffed meat loaf · Svíčková sekaná plněná</h2><p class="record-meta">vera-r0004 · PDF 6 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0004.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0004">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0004" aria-label="View source for Stuffed meat loaf · Svíčková sekaná plněná" data-source-title="Stuffed meat loaf · Svíčková sekaná plněná"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0004" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-002/overview/vera-r0004/page-06.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0004/page-06.png" alt="Source page context for Stuffed meat loaf · Svíčková sekaná plněná"></a><figcaption>PDF page 06 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-title.png" alt="Exact cited title crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>title · PDF 6</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-ingredients.png" alt="Exact cited ingredient crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>ingredients · PDF 6</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-step-1.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-step-1.png" alt="Exact cited instruction crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>step 1 · PDF 6</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-step-2.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-step-2.png" alt="Exact cited instruction crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>step 2 · PDF 6</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-step-3.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-step-3.png" alt="Exact cited instruction crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>step 3 · PDF 6</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0004/p06-yield.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0004/p06-yield.png" alt="Exact cited yield_time crop for Stuffed meat loaf · Svíčková sekaná plněná on PDF page 6"></a><figcaption>yield · PDF 6</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Stuffed meat loaf · Svíčková sekaná plněná</p>
+                  <h4>Ingredients</h4><ul><li>1·1/2 lbs. ground sirloin or chuck (ground pork shoulder can substitute half of the ground beef)</li><li>1 whole egg</li><li>2 hard baked rolls</li><li>1 slice bacon</li><li>salt, pepper, marjoram</li><li>1 small onion</li><li>3/4 cup water</li><li>3 tablespoons bread crumbs</li><li>4 pickled dills</li><li>4 hard boiled eggs</li><li>3/4 cup chicken stock</li><li>4 tablespoons vegetable oil</li></ul>
+                  <h4>Instructions</h4><ol><li>Soak the rolls in water, squeeze off excess liquid, shred them and mix well with the ground meat. Add diced bacon, egg, salt, pepper, marjoram, chopped onion, 1 tablespoon water and mix it very well. If the mixture is not thick enough, add 1-2 tablespoons bread crumbs.</li><li>Turn the mixture over onto a board dusted with bread crumbs. Form a 3/4” thick rectangle. Arrange hard boiled eggs and peeled and diced pickles by longer side of the rectangle. Roll the meat mixture over the eggs and form a loaf. Grease baking tray with oil, sprinkle the remaining oil over the loaf, and bake at 350F for one hour. Baste with chicken stock and juices from the pan. When done, slice the loaf on a serving dish, sprinkle with pan drippings.</li><li>Serve with vegetables, mashed potatoes, boiled potatoes, potato salad, etc.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour 15 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 15 · 1·1/2 · 2 · 3/4 · 3 · 4 · 1-2 · 3/4” · 350F</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0004"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0004"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0005">
+              <header class="recipe-head">
+                <div><h2>Beef goulash · Guláš z hovězího masa</h2><p class="record-meta">vera-r0005 · PDF 7 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0005.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0005">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0005" aria-label="View source for Beef goulash · Guláš z hovězího masa" data-source-title="Beef goulash · Guláš z hovězího masa"><span class="source-toggle-label">View source</span><small>8 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0005" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-002/overview/vera-r0005/page-07.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0005/page-07.png" alt="Source page context for Beef goulash · Guláš z hovězího masa"></a><figcaption>PDF page 07 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-title.png" alt="Exact cited title crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>title · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-ingredients.png" alt="Exact cited ingredient crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>ingredients · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-step-1.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-step-1.png" alt="Exact cited instruction crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>step 1 · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-step-2.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-step-2.png" alt="Exact cited instruction crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>step 2 · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-step-3.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-step-3.png" alt="Exact cited instruction crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>step 3 · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-yield.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-yield.png" alt="Exact cited yield_time crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>yield · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-alternative-1.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-alternative-1.png" alt="Exact cited note crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>alternative 1 · PDF 7</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0005/p07-alternative-2.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0005/p07-alternative-2.png" alt="Exact cited note crop for Beef goulash · Guláš z hovězího masa on PDF page 7"></a><figcaption>alternative 2 · PDF 7</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Beef goulash · Guláš z hovězího masa</p>
+                  <h4>Ingredients</h4><ul><li>3·4 lbs. boneless beef stew meat (bottom round, rump, chuck), cut in 1·1/2” cubes</li><li>2·3 cups beef stock or water</li><li>1 large onion, thinly sliced</li><li>3 slices bacon cut in short strips</li><li>2 tablespoons vegetable oil</li><li>3 cloves garlic, pressed or chopped</li><li>2 tablespoons paprika</li><li>3 tablespoons flour</li><li>1/2 teaspoon each of caraway seeds and marjoram</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Heat oil in a large stewpan. Add bacon and onion. Cook slowly, stirring and turning frequently until bacon is lightly browned and onion is translucent. Add beef. Sprinkle evenly over the meat: caraway seeds, marjoram, paprika, garlic. Cover, simmer one hour over low heat adding occasionally 2·3 tablespoons beef stock or water, if needed. Liquid in the pan should be just enough so that the onion and the meat do not burn or stick to the pan.</li><li>When meat is half done, uncover pan and let cooking liquid nearly evaporate. Sprinkle flour over meat and braise 2·3 minutes. Add enough beef stock or water to cover the meat. Simmer 30 minutes or until meat is tender. Should the sauce be too thick, add some more beef stock or water.</li><li>Taste sauce, season with salt and pepper. Lift meat onto a warmed deep serving dish. Strain sauce and pour over meat. Serve with boiled potatoes, rice, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours</p>
+                  <h4>Notes</h4><ul><li>Alternative 1 – Prepare beef goulash as shown above. Peel and slice 4 pickled cucumbers, add to the goulash, heat through, serve.</li><li>Alternative 2 – Turn the goulash over into a deep serving dish, sprinkle with shredded ham and grated Parmesan cheese. Serve with white rice.</li></ul>
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 3·4 · 1·1/2” · 2·3 · 1 · 3 · 1/2 · 30</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0005"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0005"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0006">
+              <header class="recipe-head">
+                <div><h2>Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky</h2><p class="record-meta">vera-r0006 · PDF 8 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0006.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0006">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0006" aria-label="View source for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky" data-source-title="Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0006" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-002/overview/vera-r0006/page-08.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0006/page-08.png" alt="Source page context for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky"></a><figcaption>PDF page 08 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-title.png" alt="Exact cited title crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>title · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-ingredients.png" alt="Exact cited ingredient crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>ingredients · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-step-1.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-step-1.png" alt="Exact cited instruction crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>step 1 · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-step-2.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-step-2.png" alt="Exact cited instruction crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>step 2 · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-step-3.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-step-3.png" alt="Exact cited instruction crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>step 3 · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0006/p08-yield.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0006/p08-yield.png" alt="Exact cited yield_time crop for Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky on PDF page 8"></a><figcaption>yield · PDF 8</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky</p>
+                  <h4>Ingredients</h4><ul><li>6 thin, approx. 1/4”, slices beef sirloin (or veal top round)</li><li>6 tablespoons butter</li><li>1 small onion</li><li>1·1/2 cups sliced mushrooms</li><li>juice of one lemon</li><li>salt and pepper</li><li>2 egg yolks</li><li>6 thin slices bacon</li><li>3/4 cup white wine</li><li>3/4 cup olive oil</li><li>3 tablespoons Worcestershire sauce</li><li>3 cloves garlic</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the meat slices and salt them on both sides. In a skillet, combine the butter and finely chopped onion. Brown the onion lightly, then add sliced mushrooms and lemon juice. Sauté 6-8 minutes. Discard the fat. Blend in two egg yolks, spice with salt and pepper. Spread the mixture evenly over the meat slices, roll each to enclose mixture, wrap each roll with a slice of bacon. Tie them with a string or fasten with wooden picks or small skewers. Place them in a container.</li><li>Mix wine, olive oil, Worcestershire sauce and pressed garlic and pour over the meat rolls. Let them marinate for 4 hours or overnight in a refrigerator.</li><li>On stove top heat a large heavy skillet. Add the rolls and brown them on all sides for about 20 minutes frequently adding some of the marinate. Remove the string, wooden picks or skewers. Serve with fried potatoes, vegetables, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour, plus marinating</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 1/4” · 1·1/2 · 2 · 3/4 · 3 · 6-8 · 4 · 20</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0006"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0006"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0007">
+              <header class="recipe-head">
+                <div><h2>Roast veal · Telecí pečeně</h2><p class="record-meta">vera-r0007 · PDF 8, 9 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0007.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0007">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0007" aria-label="View source for Roast veal · Telecí pečeně" data-source-title="Roast veal · Telecí pečeně"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0007" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-002/overview/vera-r0007/page-08.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0007/page-08.png" alt="Source page context for Roast veal · Telecí pečeně"></a><figcaption>PDF page 08 context</figcaption></figure><figure><a href="../../evidence/production-batch-002/overview/vera-r0007/page-09.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0007/page-09.png" alt="Source page context for Roast veal · Telecí pečeně"></a><figcaption>PDF page 09 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p08-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p08-title.png" alt="Exact cited title crop for Roast veal · Telecí pečeně on PDF page 8"></a><figcaption>title · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p08-ingredients-a.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p08-ingredients-a.png" alt="Exact cited ingredient crop for Roast veal · Telecí pečeně on PDF page 8"></a><figcaption>ingredients a · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p08-step-1a.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p08-step-1a.png" alt="Exact cited instruction crop for Roast veal · Telecí pečeně on PDF page 8"></a><figcaption>step 1a · PDF 8</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p09-ingredients-b.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p09-ingredients-b.png" alt="Exact cited continuation crop for Roast veal · Telecí pečeně on PDF page 9"></a><figcaption>ingredients b · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p09-step-1b.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p09-step-1b.png" alt="Exact cited continuation crop for Roast veal · Telecí pečeně on PDF page 9"></a><figcaption>step 1b · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0007/p09-yield.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0007/p09-yield.png" alt="Exact cited yield_time crop for Roast veal · Telecí pečeně on PDF page 9"></a><figcaption>yield · PDF 9</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Roast veal · Telecí pečeně</p>
+                  <h4>Ingredients</h4><ul><li>3·4 lbs. leg of veal or top round, boned</li><li>4 slices bacon</li><li>1/2 cup cognac</li><li>6 tablespoons butter</li><li>2·1/2 cups white table wine</li><li>1 cup chicken stock</li><li>1 medium size onion</li><li>2 carrots</li><li>snipped parsley, thyme, bay leaves</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Lard the veal with strips of bacon. Rub it with salt and pepper. In a casserole combine the butter, chopped onion and the roast. Brown it lightly. Pour the cognac over and ignite it. When the flame dies down add the wine, sliced carrots, thyme, snipped parsley, crushed bay leaves, some of the chicken stock, and roast at 350F for 2 hours, basting occasionally with pan juices and chicken stock. Slice the roast. Strain pan juices into a saucepan, add 1/2 tablespoon butter and more chicken stock if needed; bring to boil. Serve sauce over sliced meat or on side. Serve with vegetables, noodles, boiled potatoes.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours 30 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 30 · 3·4 · 4 · 1/2 · 2·1/2 · 1 · 350F</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0007"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0007"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0008">
+              <header class="recipe-head">
+                <div><h2>Stuffed veal breast · Telecí hrudí nadívané</h2><p class="record-meta">vera-r0008 · PDF 9, 10 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0008.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0008">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0008" aria-label="View source for Stuffed veal breast · Telecí hrudí nadívané" data-source-title="Stuffed veal breast · Telecí hrudí nadívané"><span class="source-toggle-label">View source</span><small>18 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0008" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-002/overview/vera-r0008/page-09.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0008/page-09.png" alt="Source page context for Stuffed veal breast · Telecí hrudí nadívané"></a><figcaption>PDF page 09 context</figcaption></figure><figure><a href="../../evidence/production-batch-002/overview/vera-r0008/page-10.png"><img loading="lazy" src="../../evidence/production-batch-002/overview/vera-r0008/page-10.png" alt="Source page context for Stuffed veal breast · Telecí hrudí nadívané"></a><figcaption>PDF page 10 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-title.png" alt="Exact cited title crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>title · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-ingredients.png" alt="Exact cited ingredient crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>ingredients · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-step-1.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-step-1.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>step 1 · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-step-2.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-step-2.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>step 2 · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-step-3.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-step-3.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>step 3 · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-step-4.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-step-4.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>step 4 · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-step-5.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-step-5.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>step 5 · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p09-yield.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p09-yield.png" alt="Exact cited yield_time crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 9"></a><figcaption>yield · PDF 9</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-stuffings-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-stuffings-title.png" alt="Exact cited continuation crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>stuffings title · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-title.png" alt="Exact cited title crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>egg title · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-ingredients.png" alt="Exact cited ingredient crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>egg ingredients · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-step.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-egg-step.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>egg step · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-title.png" alt="Exact cited title crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>bread title · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-ingredients.png" alt="Exact cited ingredient crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>bread ingredients · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-step.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-bread-step.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>bread step · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-title.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-title.png" alt="Exact cited title crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>liver title · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-ingredients.png" alt="Exact cited ingredient crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>liver ingredients · PDF 10</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-step.png"><img loading="lazy" src="../../evidence/production-batch-002/regions/vera-r0008/p10-liver-step.png" alt="Exact cited instruction crop for Stuffed veal breast · Telecí hrudí nadívané on PDF page 10"></a><figcaption>liver step · PDF 10</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Stuffed veal breast · Telecí hrudí nadívané</p>
+                  <h4>Ingredients</h4><ul><li>3·4 lbs. veal breast, boned</li><li>1 cup chicken stock</li><li>8 tablespoons butter</li><li>salt</li><li>stuffing – see below</li></ul><h5>Egg stuffing:</h5><ul><li>6 eggs</li><li>1/2 cup ham, diced</li><li>1/2 cup cooked peas</li><li>3 tablespoons butter</li><li>salt</li></ul><h5>Bread stuffing:</h5><ul><li>3 hard baked rolls</li><li>4 tablespoons butter</li><li>1 cup milk</li><li>1 whole egg, 1 egg yolk</li><li>1/2 cup bread crumbs</li><li>snipped parsley</li><li>dash of ground nutmeg</li><li>salt and pepper</li></ul><h5>Liver stuffing:</h5><ul><li>6 oz. calf liver</li><li>3 hard baked rolls</li><li>1 cup milk</li><li>6 tablespoons butter</li><li>1 small onion</li><li>1/3 cup bread crumbs</li><li>snipped parsley</li><li>dash of ground nutmeg, marjoram</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Rinse the meat and pat it dry with a paper towel. Using the handle of a wooden spoon, make an opening in the narrower end of the veal breast to form a cavity for stuffing. Most supermarkets sell the veal breast ready to be stuffed.</li><li>Salt the meat and lightly fill the cavity with stuffing. Enclose it with stitches, or use a skewer. Lay the stuffed veal breast in a roasting pan with rack, skin down. Pour some of the melted butter on top and roast at 350F for 45 minutes. Turn it and roast 45 minutes to 1 hour, or until golden on top.</li><li>Baste occasionally with melted butter and pan drippings.</li><li>Prick the stuffed cavity with fork several times to let out the steam. (The steam would push out the stuffing while slicing it). Remove the stitches or skewer.</li><li>Let it stand 5 minutes. Slice and sprinkle with juices from the pan. Serve with boiled potatoes, vegetables, salad, compote.</li></ol><h5>Egg stuffing:</h5><ol><li>In a frying pan combine melted butter and lightly beaten eggs. Scramble until the egg whites stiffen. Blend in ham and green peas. Salt.</li></ol><h5>Bread stuffing:</h5><ol><li>Soak the rolls in milk, squeeze off excess, shred them. In a bowl cream the butter, whisk in the egg and the egg yolk. Add all remaining ingredients, leaving the bread crumbs to be added last. If the stuffing is thick enough, do not use up all bread crumbs. This stuffing may also be used for roasted stuffed chicken, pigeon, etc.</li></ol><h5>Liver stuffing:</h5><ol><li>Soak the rolls in milk, squeeze off excess, shred them. Grind the liver, or mash it with a knife. Cream the butter, and blend in thoroughly all ingredients.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours 30 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 30 · 3·4 · 1 · 8 · 1/2 · 3 · 4 · 1/3 · 350F · 45 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0008"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0008"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            </main>
+<script>
+const key='vera-production-batch-002-human-checklist-v2';
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}');}catch(error){saved={};}
+boxes.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',()=>{saved[index]=box.checked;localStorage.setItem(key,JSON.stringify(saved));update();});});
+function update(){const count=boxes.filter(box=>box.checked).length;document.querySelector('#progress').textContent=`${count} / ${boxes.length} checked`;}
+async function writeClipboard(text){
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return;}
+  const area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+  if(!document.execCommand('copy')){throw new Error('Copy command was unavailable.');}area.remove();
+}
+async function copyStatus(){
+  const lines=['Vera Cookbook · Production Batch 002'];
+  document.querySelectorAll('.recipe').forEach(card=>{
+    const cardBoxes=[...card.querySelectorAll('input[type=checkbox]')];
+    const checked=cardBoxes.filter(box=>box.checked).length;
+    const status=card.querySelector('.status').textContent.trim();
+    lines.push(`${card.id}: ${status}; ${checked} / ${cardBoxes.length} optional human checks complete`);
+  });
+  const feedback=document.querySelector('#copy-feedback');
+  try{await writeClipboard(lines.join('\n'));feedback.textContent='Copied.';}catch(error){feedback.textContent='Copy failed; select the status manually.';}
+}
+const sourceDetails=[...document.querySelectorAll('[data-source]')];
+function setSourceOpen(container,open){
+  const toggle=container.querySelector('.source-toggle');
+  const panel=container.querySelector('.source-panel');
+  toggle.setAttribute('aria-expanded',String(open));
+  toggle.setAttribute('aria-label',`${open?'Hide':'View'} source for ${toggle.dataset.sourceTitle}`);
+  toggle.querySelector('.source-toggle-label').textContent=open?'Hide source':'View source';
+  toggle.querySelector('.source-toggle-icon').textContent=open?'−':'+';
+  panel.hidden=!open;
+  container.classList.toggle('is-open',open);
+}
+sourceDetails.forEach(container=>{
+  const toggle=container.querySelector('.source-toggle');
+  toggle.addEventListener('click',()=>setSourceOpen(container,toggle.getAttribute('aria-expanded')!=='true'));
+  toggle.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle.click();}
+  });
+});
+let printOpen=[];
+window.addEventListener('beforeprint',()=>{printOpen=sourceDetails.map(item=>item.classList.contains('is-open'));sourceDetails.forEach(item=>setSourceOpen(item,true));});
+window.addEventListener('afterprint',()=>{sourceDetails.forEach((item,index)=>setSourceOpen(item,printOpen[index]));});
+update();
+</script>
+</body>
+</html>

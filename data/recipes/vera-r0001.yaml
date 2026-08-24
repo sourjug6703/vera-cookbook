@@ -1,0 +1,697 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0001
+record_revision: 2
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 4
+  printed_pages:
+  - '3'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0001-title
+  pdf_page: 4
+  printed_page: '3'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 702
+    - 248
+  - - 2220
+    - 248
+  - - 2220
+    - 374
+  - - 702
+    - 374
+  candidate_block_ids:
+  - /page/3/SectionHeader/1
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-title.png
+  region_image_pixel_sha256: 008f5b666d8648d88f7761b6a1f5525e933593ef753624e8951ec4e65a3a8620
+- region_id: vera-r0001-ingredients
+  pdf_page: 4
+  printed_page: '3'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 213
+    - 348
+  - - 1056
+    - 348
+  - - 1056
+    - 984
+  - - 213
+    - 984
+  candidate_block_ids:
+  - /page/3/ListGroup/2
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-ingredients.png
+  region_image_pixel_sha256: 2166876e0851abc8c80472c6e8ffef63edccce4f2f89561e462c149a8820d469
+- region_id: vera-r0001-step-1
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 207
+    - 988
+  - - 1047
+    - 988
+  - - 1047
+    - 1348
+  - - 207
+    - 1348
+  candidate_block_ids:
+  - /page/3/Text/3
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-1.png
+  region_image_pixel_sha256: 90b5f511d5c832fd79c61402b88300d6b88577d8eb9fe3792522dd83e0ea0cde
+- region_id: vera-r0001-step-2
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 207
+    - 1312
+  - - 1041
+    - 1312
+  - - 1041
+    - 1564
+  - - 207
+    - 1564
+  candidate_block_ids:
+  - /page/3/Text/4
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-2.png
+  region_image_pixel_sha256: 58011856c9a1ed9af050c0b01bc56d842340468adf4435b228d3ed70825334b7
+- region_id: vera-r0001-step-3a
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 207
+    - 1522
+  - - 1038
+    - 1522
+  - - 1038
+    - 1778
+  - - 207
+    - 1778
+  candidate_block_ids:
+  - /page/3/Text/5
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-3a.png
+  region_image_pixel_sha256: 2ca1c2634a2ac4897af12d9d8e892184af99253a8f7af1ddf2c0cdd94447acda
+- region_id: vera-r0001-step-3b
+  pdf_page: 4
+  printed_page: '3'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1053
+    - 362
+  - - 1860
+    - 362
+  - - 1860
+    - 1144
+  - - 1053
+    - 1144
+  candidate_block_ids:
+  - /page/3/Text/6
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-3b.png
+  region_image_pixel_sha256: 8f486a03b95befa642c00b397e756d6b6c8ebcfe52a681b08b59c98c03fb12b4
+- region_id: vera-r0001-step-4
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1041
+    - 1108
+  - - 1848
+    - 1108
+  - - 1848
+    - 1464
+  - - 1041
+    - 1464
+  candidate_block_ids:
+  - /page/3/Text/7
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-4.png
+  region_image_pixel_sha256: 150f46ac2e0b4ed4cd56d83339142f2a223714d7638268022c85c06d474b15d0
+- region_id: vera-r0001-step-5
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1041
+    - 1428
+  - - 1845
+    - 1428
+  - - 1845
+    - 1622
+  - - 1041
+    - 1622
+  candidate_block_ids:
+  - /page/3/Text/8
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-5.png
+  region_image_pixel_sha256: 9e118f3372a89655f873464e2053f0e974b303d73bfe7cf0a33b95e6b9395622
+- region_id: vera-r0001-step-6a
+  pdf_page: 4
+  printed_page: '3'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1032
+    - 1586
+  - - 1839
+    - 1586
+  - - 1839
+    - 1790
+  - - 1032
+    - 1790
+  candidate_block_ids:
+  - /page/3/Text/9
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-6a.png
+  region_image_pixel_sha256: d28a6761016ae364d46093676513571be8bbc1e4d5e6a12f32e571d7546e0895
+- region_id: vera-r0001-step-6b
+  pdf_page: 4
+  printed_page: '3'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1857
+    - 376
+  - - 2622
+    - 376
+  - - 2622
+    - 734
+  - - 1857
+    - 734
+  candidate_block_ids:
+  - /page/3/Text/10
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-step-6b.png
+  region_image_pixel_sha256: 03ffa7ab3100e387d988121f71a3ff6c5398feb3b8b9d17eb64e34775ea027e8
+- region_id: vera-r0001-yield
+  pdf_page: 4
+  printed_page: '3'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1851
+    - 732
+  - - 2619
+    - 732
+  - - 2619
+    - 818
+  - - 1851
+    - 818
+  candidate_block_ids:
+  - /page/3/Text/11
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-yield.png
+  region_image_pixel_sha256: 40a111fb35f29412ab1189c1282e7645c65cefa26dedd74bc89902b77e06c0eb
+- region_id: vera-r0001-alternative
+  pdf_page: 4
+  printed_page: '3'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1842
+    - 834
+  - - 2682
+    - 834
+  - - 2682
+    - 1396
+  - - 1842
+    - 1396
+  candidate_block_ids:
+  - /page/3/Text/12
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-alternative.png
+  region_image_pixel_sha256: a19295060299c26d2786c6fff1ff19a967e8d97b849de230b0e7079baec11543
+- region_id: vera-r0001-tip
+  pdf_page: 4
+  printed_page: '3'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1830
+    - 1442
+  - - 2676
+    - 1442
+  - - 2676
+    - 1806
+  - - 1830
+    - 1806
+  candidate_block_ids:
+  - /page/3/Text/13
+  region_image: evidence/production-batch-001/regions/vera-r0001/p04-tip.png
+  region_image_pixel_sha256: c3019641333bdcfc51f78df1e86e666eeeb0e1f1082f6dd168e7cd2392c7cc2d
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Roast beef tenderloin in sour cream sauce - Svíčková
+    language: mul
+    source_region_ids:
+    - vera-r0001-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Roast beef tenderloin in sour cream sauce
+    language: en
+    source_region_ids:
+    - vera-r0001-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Svíčková
+    language: cs
+    source_region_ids:
+    - vera-r0001-title
+    title_role: parallel
+  source_order: 1
+  slug_candidate: roast-beef-tenderloin-sour-cream-sauce
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0001-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 lbs. beef tenderloin
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 3 slices bacon
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1/2 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 cups sliced soup greens (carrots, parsnips, celery root)
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1 medium onion, sliced
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: few grains allspice, whole black pepper, thyme, bay leaves, nutmeg
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 2 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1 cup beef stock
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: juice of one lemon
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 1·1/2 cups sour cream
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0001-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      step_number: 1
+      text_verbatim: Tenderloin must be aged and all the fat trimmed off. Cut small slits along the grain
+        of the meat and stuff them with thin strips of bacon. Salt and pepper the meat and set aside.
+      language: en
+      source_region_ids:
+      - vera-r0001-step-1
+    - segment_id: step-2
+      step_number: 2
+      text_verbatim: In a large frying pan combine the oil, half of the sliced soup greens and the onion;
+        place the roast on top and brown on all sides.
+      language: en
+      source_region_ids:
+      - vera-r0001-step-2
+    - segment_id: step-3
+      step_number: 3
+      text_verbatim: In the meantime preheat the oven to 350F. Transfer the roast and the vegetables into
+        a roasting pan, add the remaining vegetables and spices. Roast 40-45 minutes, basting with beef
+        stock and juices from the pan. Remove the roast, keep it warm. Pour the pan drippings into a large
+        stewpan, skim the fat, set pan over medium heat and deglaze, using stock or water. Add the flour,
+        simmer five minutes. Place the roast in the sauce, add the lemon juice and simmer until the meat
+        becomes tender on the outside (20 minutes).
+      language: en
+      source_region_ids:
+      - vera-r0001-step-3a
+      - vera-r0001-step-3b
+    - segment_id: step-4
+      step_number: 4
+      text_verbatim: Strain the sauce, discard the spices, mash the vegetables and mix them into the sauce.
+        Blend in the sour cream and simmer for a few minutes. The sauce should be medium thick.
+      language: en
+      source_region_ids:
+      - vera-r0001-step-4
+    - segment_id: step-5
+      step_number: 5
+      text_verbatim: Slice the roast, pour some sauce over it and serve the remainder in a sauce dish.
+      language: en
+      source_region_ids:
+      - vera-r0001-step-5
+    - segment_id: step-6
+      step_number: 6
+      text_verbatim: It is important that you make enough sauce, adding beef stock and sour cream. Taste
+        it and add salt, pepper, lemon juice – if needed. The taste should be mildly piquant. The typical
+        accompaniment is crouton or yeast dumplings, or noodles.
+      language: en
+      source_region_ids:
+      - vera-r0001-step-6a
+      - vera-r0001-step-6b
+  notes:
+  - segment_id: note-1
+    text_verbatim: Alternative – Lard the tenderloin, grease a roasting pan with oil, cover the bottom
+      of the pan with the vegetables, lay the roast on top, add more vegetables, spices and lemon juice.
+      Add the remaining oil, cover and marinate overnight. Next day prepare the roast as indicated above.
+    language: en
+    source_region_ids:
+    - vera-r0001-alternative
+  - segment_id: note-2
+    text_verbatim: If planning to prepare a larger quantity, for example
+      a whole tenderloin, increase all ingredients accordingly. Instead of browning the roast by frying,
+      roast it on all sides in a hot oven (475F), then lower the temperature to 350F and proceed as shown
+      above.
+    language: en
+    source_region_ids:
+    - vera-r0001-tip
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T20:00:00Z'
+  created_by: codex-preflight
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T19:59:12Z'
+    artifact_path: pilot/production-batch-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T05:17:30Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0001
+    source_region_ids: &id001
+    - vera-r0001-title
+    - vera-r0001-ingredients
+    - vera-r0001-step-1
+    - vera-r0001-step-2
+    - vera-r0001-step-3a
+    - vera-r0001-step-3b
+    - vera-r0001-step-4
+    - vera-r0001-step-5
+    - vera-r0001-step-6a
+    - vera-r0001-step-6b
+    - vera-r0001-yield
+    - vera-r0001-alternative
+    - vera-r0001-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0001
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    source_region_ids:
+    - vera-r0001-title
+    - vera-r0001-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    source_region_ids:
+    - vera-r0001-title
+    - vera-r0001-step-1
+    - vera-r0001-step-2
+    - vera-r0001-step-3a
+    - vera-r0001-step-3b
+    - vera-r0001-step-4
+    - vera-r0001-step-5
+    - vera-r0001-step-6a
+    - vera-r0001-step-6b
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    - note-1
+    source_region_ids:
+    - vera-r0001-title
+    - vera-r0001-yield
+    - vera-r0001-ingredients
+    - vera-r0001-step-1
+    - vera-r0001-step-2
+    - vera-r0001-step-3a
+    - vera-r0001-step-3b
+    - vera-r0001-step-4
+    - vera-r0001-step-5
+    - vera-r0001-step-6a
+    - vera-r0001-step-6b
+    - vera-r0001-alternative
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-7
+    - ingredient-8
+    - ingredient-10
+    - step-3
+    - note-2
+    source_region_ids:
+    - vera-r0001-yield
+    - vera-r0001-ingredients
+    - vera-r0001-step-3a
+    - vera-r0001-step-3b
+    - vera-r0001-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0001-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0001
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0001-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T20:32:18Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: owner-source-policy
+    check_type: transcription_exactness
+    target_ids:
+    - note-2
+    source_region_ids:
+    - vera-r0001-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: human
+    auditor_id: project-owner
+    audited_at: '2026-08-24T05:17:30Z'
+    independent_of_extractor: true
+    note: "Owner decision: the leading outlined-arrow ornament is non-text decoration and is excluded from the verbatim note."
+  - check_id: ai-source-policy-application
+    check_type: transcription_exactness
+    target_ids:
+    - note-2
+    source_region_ids:
+    - vera-r0001-tip
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T05:17:30Z'
+    independent_of_extractor: true
+    note: "AI applied the recorded human source decision; the decorative outlined-arrow ornament is excluded."
+  open_issues: []

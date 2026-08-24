@@ -1,0 +1,344 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0084
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 55
+  printed_pages:
+  - '54'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0084-title
+  pdf_page: 55
+  printed_page: '54'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 903
+    - 322
+  - - 2091
+    - 322
+  - - 2091
+    - 420
+  - - 903
+    - 420
+  candidate_block_ids:
+  - /page/54/SectionHeader/1
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-title.png
+  region_image_pixel_sha256: fe32dba1b4738f30748042d78a1a3d1a63874e902244f691a9d958ec818659e5
+- region_id: vera-r0084-text-1
+  pdf_page: 55
+  printed_page: '54'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1116
+    - 409
+  - - 2724
+    - 409
+  - - 2724
+    - 674
+  - - 1116
+    - 674
+  candidate_block_ids:
+  - /page/54/Text/3
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-1.png
+  region_image_pixel_sha256: b70c95da8c264781384f7465a2f683fd8eb9de52c528ec02b13cef0545989615
+- region_id: vera-r0084-listgroup-2
+  pdf_page: 55
+  printed_page: '54'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 246
+    - 430
+  - - 1101
+    - 430
+  - - 1101
+    - 1060
+  - - 246
+    - 1060
+  candidate_block_ids:
+  - /page/54/ListGroup/2
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-listgroup-2.png
+  region_image_pixel_sha256: 766f23e11e6474a8fac8e0f99cf1752388ec3c5db16b6244640b001065caa096
+- region_id: vera-r0084-text-3
+  pdf_page: 55
+  printed_page: '54'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 676
+  - - 2721
+    - 676
+  - - 2721
+    - 936
+  - - 1122
+    - 936
+  candidate_block_ids:
+  - /page/54/Text/4
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-3.png
+  region_image_pixel_sha256: c3f069c3ee67e87dbb6a626dfebc10e60343e22e165bc788c1169496a525d64d
+- region_id: vera-r0084-text-4
+  pdf_page: 55
+  printed_page: '54'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 886
+  - - 2724
+    - 886
+  - - 2724
+    - 1096
+  - - 1122
+    - 1096
+  candidate_block_ids:
+  - /page/54/Text/5
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-4.png
+  region_image_pixel_sha256: b2b40de899261c6d0ec2de9597cd63a2a62c131b29fb43aafeefd0cd583f71f2
+- region_id: vera-r0084-text-5
+  pdf_page: 55
+  printed_page: '54'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1098
+  - - 2712
+    - 1098
+  - - 2712
+    - 1302
+  - - 1125
+    - 1302
+  candidate_block_ids:
+  - /page/54/Text/6
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-5.png
+  region_image_pixel_sha256: 755a5d80f784012231f974d4aa6865bc64ad2dc27fd17c71396143be2ae880fc
+- region_id: vera-r0084-text-6
+  pdf_page: 55
+  printed_page: '54'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1128
+    - 1258
+  - - 2376
+    - 1258
+  - - 2376
+    - 1360
+  - - 1128
+    - 1360
+  candidate_block_ids:
+  - /page/54/Text/7
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-6.png
+  region_image_pixel_sha256: bbf62a423e9f3677072ac3a65b22ede49281feef34d7cf601fd7b33983f18ba1
+- region_id: vera-r0084-text-7
+  pdf_page: 55
+  printed_page: '54'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1128
+    - 1340
+  - - 2388
+    - 1340
+  - - 2388
+    - 1438
+  - - 1128
+    - 1438
+  candidate_block_ids:
+  - /page/54/Text/8
+  region_image: evidence/production-batch-011/regions/vera-r0084/p55-text-7.png
+  region_image_pixel_sha256: d9eb343c62e13f7053a5e11f7809f970e2dbaf5abaa1d40eb25e13c73c50fc9c
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Karlsbader biscuits · Karlovarské suchary
+    language: mul
+    source_region_ids:
+    - vera-r0084-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Karlsbader biscuits
+    language: en
+    source_region_ids:
+    - vera-r0084-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Karlovarské suchary
+    language: cs
+    source_region_ids:
+    - vera-r0084-title
+    title_role: parallel
+  source_order: 84
+  slug_candidate: karlsbaderbiscuits
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Preparation time: 2 hours 30 minutes, plus 30 minutes next day'
+    language: en
+    source_region_ids:
+    - vera-r0084-text-7
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1-1/2 lbs. flour
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1-3/4 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 1-1/2 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 2/3 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 3 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 10 tablespoons melted butter
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 1/2 teaspoon salt
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: 1 tablespoon vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 10 oz. chopped almonds
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-11
+      text_verbatim: grease for baking pan
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+    - segment_id: ingredient-12
+      text_verbatim: 1 cup sugar mixed with vanilla sugar for dusting
+      language: en
+      source_region_ids:
+      - vera-r0084-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Leavening: in a bowl stir yeast with 2 teaspoons sugar until liquefied. Add 3/4
+        cup flour and 3/4 cup lukewarm milk. Mix thoroughly, knead, form a ball. Dust lightly with flour,
+        cover with a napkin. Let rise 30 minutes, or until doubled in bulk.'
+      language: en
+      source_region_ids:
+      - vera-r0084-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Place all remaining ingredients and the risen leavening on a floured pastry board,
+        knead with the palms of your hands, until dough feels smooth, dry and elastic. Sprinkle with flour,
+        cover with napkin, let rise 40 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0084-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Punch dough down, shape into a loaf and transfer into a buttered and floured loaf
+        pan. Let rise 15 minutes. Preheat oven to 350F, bake 30 minutes, or until top is golden.
+      language: en
+      source_region_ids:
+      - vera-r0084-text-4
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: 'Next day: Cut loaf into 1/3" thick slices. Dredge each slice in sugar mixed with
+        vanilla sugar, shake off excess. Put them on a clean dry baking sheet, brown lightly on both sides
+        in 250-300F oven.'
+      language: en
+      source_region_ids:
+      - vera-r0084-text-5
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Biscuits keep fresh for many weeks in an airtight tin.
+      language: en
+      source_region_ids:
+      - vera-r0084-text-6
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

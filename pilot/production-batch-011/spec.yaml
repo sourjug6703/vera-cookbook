@@ -1,0 +1,1089 @@
+batch_id: production-batch-011
+batch_title: Production batch 011 source review
+batch_copy_title: Vera Cookbook production batch 011 review status
+candidate_summary: Local Marker machine candidates for production batch 011; no trust promotion has been
+  performed.
+audited_summary: Production batch 011 after a separate direct local AI visual source audit. Source-clear
+  records are source_checked; genuine ambiguity remains needs_attention. This is not human verification.
+recipe_schema_version: 1.3.0
+source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+pdf_page_count: 75
+marker_version: 2.0.0
+marker_generated_at: '2026-08-24T03:09:28Z'
+marker_artifact: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary Adventures
+  - Vera Gaeta.json
+created_at: '2026-08-24T03:12:00Z'
+audited_at: '2026-08-24T03:28:00Z'
+auditor_id: openai-codex
+readback_record_ids: []
+recipes:
+- recipe_id: vera-r0084
+  source_order: 84
+  slug: karlsbaderbiscuits
+  pages:
+  - 55
+  printed_pages:
+  - '54'
+  display_title: Karlsbader biscuits · Karlovarské suchary
+  titles:
+  - segment_id: title-en
+    text: Karlsbader biscuits
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Karlovarské suchary
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 55
+    block_ids:
+    - /page/54/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/3
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 55
+    block_ids:
+    - /page/54/ListGroup/2
+  - key: text-3
+    role: instruction
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/5
+  - key: text-5
+    role: instruction
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/6
+  - key: text-6
+    role: instruction
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/7
+  - key: text-7
+    role: yield-time
+    pdf_page: 55
+    block_ids:
+    - /page/54/Text/8
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/2 lbs. flour
+      region_keys:
+      - listgroup-2
+    - text: 1-3/4 cups milk
+      region_keys:
+      - listgroup-2
+    - text: 1-1/2 oz. fresh yeast
+      region_keys:
+      - listgroup-2
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 3 egg yolks
+      region_keys:
+      - listgroup-2
+    - text: 10 tablespoons melted butter
+      region_keys:
+      - listgroup-2
+    - text: 1/2 teaspoon salt
+      region_keys:
+      - listgroup-2
+    - text: 1 tablespoon vanilla sugar
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: 10 oz. chopped almonds
+      region_keys:
+      - listgroup-2
+    - text: grease for baking pan
+      region_keys:
+      - listgroup-2
+    - text: 1 cup sugar mixed with vanilla sugar for dusting
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: in a bowl stir yeast with 2 teaspoons sugar until liquefied. Add 3/4 cup flour
+        and 3/4 cup lukewarm milk. Mix thoroughly, knead, form a ball. Dust lightly with flour, cover
+        with a napkin. Let rise 30 minutes, or until doubled in bulk.'
+      region_keys:
+      - text-1
+    - text: Place all remaining ingredients and the risen leavening on a floured pastry board, knead with
+        the palms of your hands, until dough feels smooth, dry and elastic. Sprinkle with flour, cover
+        with napkin, let rise 40 minutes.
+      region_keys:
+      - text-3
+    - text: Punch dough down, shape into a loaf and transfer into a buttered and floured loaf pan. Let
+        rise 15 minutes. Preheat oven to 350F, bake 30 minutes, or until top is golden.
+      region_keys:
+      - text-4
+    - text: 'Next day: Cut loaf into 1/3" thick slices. Dredge each slice in sugar mixed with vanilla
+        sugar, shake off excess. Put them on a clean dry baking sheet, brown lightly on both sides in
+        250-300F oven.'
+      region_keys:
+      - text-5
+    - text: Biscuits keep fresh for many weeks in an airtight tin.
+      region_keys:
+      - text-6
+  yield_time_lines:
+  - text: 'Preparation time: 2 hours 30 minutes, plus 30 minutes next day'
+    region_keys:
+    - text-7
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0085
+  source_order: 85
+  slug: easterbread
+  pages:
+  - 56
+  printed_pages:
+  - '55'
+  display_title: Easter bread · Bochánek
+  titles:
+  - segment_id: title-en
+    text: Easter bread
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bochánek
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 56
+    block_ids:
+    - /page/55/SectionHeader/2
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 56
+    block_ids:
+    - /page/55/ListGroup/1
+  - key: text-2
+    role: instruction
+    pdf_page: 56
+    block_ids:
+    - /page/55/Text/3
+  - key: text-3
+    role: instruction
+    pdf_page: 56
+    block_ids:
+    - /page/55/Text/4
+  - key: text-4
+    role: instruction
+    pdf_page: 56
+    block_ids:
+    - /page/55/Text/5
+  - key: text-5
+    role: yield-time
+    pdf_page: 56
+    block_ids:
+    - /page/55/Text/6
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 4 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 8 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-1
+    - text: 2 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 1 whole egg
+      region_keys:
+      - listgroup-1
+    - text: grated rind of one lemon
+      region_keys:
+      - listgroup-1
+    - text: dash of salt
+      region_keys:
+      - listgroup-1
+    - text: 1 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup golden raisins
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup slivered almonds
+      region_keys:
+      - listgroup-1
+    - text: 1/2 teaspoon baking powder
+      region_keys:
+      - listgroup-1
+    - text: 1 egg for brushing, butter for baking tray
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: In a bowl stir the yeast and 2 teaspoons sugar until the yeast dissolves. Add
+        1/2 cup flour and one third of the milk and knead it into a ball. Sprinkle with flour and set
+        aside to rise, in a warm, draft free area. It will double in bulk within 20 minutes.'
+      region_keys:
+      - text-2
+    - text: In a separate bowl combine the remaining flour, sugar, salt and lemon rind. Make a well in
+        the center and place the risen leavening, egg yolks and whole egg in it. Gradually adding the
+        remaining milk, mix well. Lastly add raisins and melted butter and knead with a wooden spoon,
+        or with hands, until dough is smooth and no longer sticks to the bowl. Set aside, dust with flour
+        and let rise 30 minutes. Punch dough down, let rise 30 minutes again.
+      region_keys:
+      - text-3
+    - text: After the dough has risen at the second time, turn it over a floured pastry board and divide
+        in two halves. Shape each into a ball. Place on a baking tray lined with buttered wax paper. Let
+        rise 30 minutes. Brush with lightly beaten egg. With a sharp knife slit the top of each bread
+        cross-wise. Let rise 10 minutes. Preheat oven to 350°F. Sprinkle with slivered almonds and bake
+        30-35 minutes or until breads are golden brown. Dust with sugar and cool at room temperature.
+      region_keys:
+      - text-4
+  yield_time_lines:
+  - text: '2 breads – Preparation time: 3 hours 30 minutes'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0086
+  source_order: 86
+  slug: easterbraid
+  pages:
+  - 57
+  printed_pages:
+  - '56'
+  display_title: Easter braid · Velikonoční pomlázka
+  titles:
+  - segment_id: title-en
+    text: Easter braid
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Velikonoční pomlázka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 57
+    block_ids:
+    - /page/56/SectionHeader/1
+  - key: text-1
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/2
+  - key: text-2
+    role: yield-time
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/3
+  ingredient_sections: []
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Prepare the dough exactly as for Easter braid. After it has risen twice, turn it out onto
+        a floured pastry board and divide in three identical sections. Roll and stretch each section into
+        a rope 25" long. Press together both ends of each rope twist it so that it will be braided and
+        make a loop at the end. Place a raw egg in each loop. Place braids on an oven tray lined with
+        buttered wax paper, let them rise 20 minutes. Brush with lightly beaten egg and bake 30 minutes
+        in 350 F preheated oven.
+      region_keys:
+      - text-1
+  yield_time_lines:
+  - text: '3 braids - Preparation time: 3 hours'
+    region_keys:
+    - text-2
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0085
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0087
+  source_order: 87
+  slug: christmasloaf
+  pages:
+  - 57
+  - 58
+  printed_pages:
+  - '56'
+  - '57'
+  display_title: Christmas loaf · Vánočka
+  titles:
+  - segment_id: title-en
+    text: Christmas loaf
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Vánočka
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 57
+    block_ids:
+    - /page/56/SectionHeader/4
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 57
+    block_ids:
+    - /page/56/ListGroup/5
+  - key: text-2
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/8
+  - key: text-3
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/9
+  - key: text-4
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/10
+  - key: text-5
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/11
+  - key: text-6
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/12
+  - key: text-7
+    role: instruction
+    pdf_page: 57
+    block_ids:
+    - /page/56/Text/6
+  - key: listgroup-8
+    role: ingredient
+    pdf_page: 57
+    block_ids:
+    - /page/56/ListGroup/7
+  - key: text-9
+    role: instruction
+    pdf_page: 58
+    block_ids:
+    - /page/57/Text/1
+  - key: text-10
+    role: instruction
+    pdf_page: 58
+    block_ids:
+    - /page/57/Text/2
+  - key: text-11
+    role: instruction
+    pdf_page: 58
+    block_ids:
+    - /page/57/Text/3
+  - key: text-12
+    role: yield-time
+    pdf_page: 58
+    block_ids:
+    - /page/57/Text/4
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 lb. flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 oz. fresh yeast
+      region_keys:
+      - listgroup-1
+    - text: 6 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 6 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup golden raisins
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: dash of salt
+      region_keys:
+      - listgroup-1
+    - text: 1 beaten egg for brushing
+      region_keys:
+      - listgroup-1
+    - text: 3 tablespoons sugar mixed with vanilla sugar for dusting
+      region_keys:
+      - listgroup-1
+  - section_id: ingredients-2
+    items:
+    - text: 1/3 cup slivered almonds to sprinkle over loaf before baking
+      region_keys:
+      - listgroup-8
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Leavening: In a bowl stir yeast and 2 teaspoons sugar until dissolved. Add 1/2 cup flour
+        and 1/3 cup lukewarm milk. Knead into a ball, dust with flour, let rise 20-30 minutes, until doubled
+        in bulk.'
+      region_keys:
+      - text-2
+    - text: In a separate bowl combine remaining flour, sugar, salt, lemon rind. Make a well in center.
+        Put egg yolks and risen leavening in the well. Gradually adding remaining lukewarm milk, mix thoroughly.
+        Add raisins and melted butter, knead dough until smooth, dry and elastic. Dust with flour, let
+        rise 30 minutes.
+      region_keys:
+      - text-3
+    - text: Punch dough down, let rise again 30 minutes.
+      region_keys:
+      - text-4
+    - text: Turn dough over onto a lightly floured pastry board, divide in two halves.
+      region_keys:
+      - text-5
+    - text: Divide one half into 3 identical sections. Form 3 ropes 13" long. Braid them, pinch together
+        both ends. Place on oven tray lined with buttered wax paper. Make a shallow indentation in center
+        lengthwise,
+      region_keys:
+      - text-6
+    - text: 'Optional:'
+      region_keys:
+      - text-7
+    - text: then brush depression lightly with a beaten egg white. Divide remaining dough into 5 identical
+        sections. Form 5 ropes 13" long. Braid 3 ropes and place on top of the thicker braid. Again make
+        indentation in center and brush with beaten egg white. Braid last two ropes, place on top of second
+        layer. Press each end firmly together. Let loaf rise 30 minutes. Brush with beaten egg.
+      region_keys:
+      - text-9
+    - text: 'Optional: sprinkle with slivered almonds.'
+      region_keys:
+      - text-10
+    - text: Preheat oven to 375F. Bake 10 minutes. Reduce oven temperature to 350F, bake 20-25 minutes,
+        check with wooden pick for doneness. Dust with sugar mixed with vanilla sugar while hot. Cool
+        at room temperature at least 1 hour. Slice.
+      region_keys:
+      - text-11
+  yield_time_lines:
+  - text: '1 loaf - Preparation time: 3 hours'
+    region_keys:
+    - text-12
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+  continuations:
+  - from_region_key: text-2
+    to_region_key: text-9
+- recipe_id: vera-r0088
+  source_order: 88
+  slug: bishopsbreadfruitcake
+  pages:
+  - 59
+  printed_pages:
+  - '58'
+  display_title: Bishop’s bread (fruit cake) · Biskupský chlebíček
+  titles:
+  - segment_id: title-en
+    text: Bishop’s bread (fruit cake)
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Biskupský chlebíček
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 59
+    block_ids:
+    - /page/58/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 59
+    block_ids:
+    - /page/58/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 59
+    block_ids:
+    - /page/58/Text/3
+  - key: text-3
+    role: instruction
+    pdf_page: 59
+    block_ids:
+    - /page/58/Text/4
+  - key: text-4
+    role: yield-time
+    pdf_page: 59
+    block_ids:
+    - /page/58/Text/5
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1-1/4 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1 whole egg
+      region_keys:
+      - listgroup-1
+    - text: 6 egg yolks
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 teaspoon baking powder
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup diced dried apricots, other dry fruit can substitute
+      region_keys:
+      - listgroup-1
+    - text: 1/4 cup slivered almonds
+      region_keys:
+      - listgroup-1
+    - text: 1/2 cup golden raisins
+      region_keys:
+      - listgroup-1
+    - text: 4 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: grated rind of one lemon
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a saucepan combine the egg yolks, the egg, sugar and lemon rind and set over medium/low
+        heat. Beat until the mixture is lukewarm. Remove from heat and continue beating until cool and
+        creamy. Fold in the flour mixed with baking powder, dried apricots, almonds, raisins. Lastly,
+        add melted butter. Turn the batter into a buttered oblong loaf pan lined with wax paper. Bake
+        30 minutes at 350F. Test for doneness with a cake tester or toothpick. Inserting it in the center,
+        it should come out clean. Let stand for 5 minutes before turning the bread out onto a cake rack.
+        Dust lightly with sugar. Cool and slice.
+      region_keys:
+      - text-2
+    - text: 'Optional: Spread apricot jelly very thinly over the bread and top with sugar icing. When
+        cooled, or when the icing hardens (approximately 2 hours), slice.'
+      region_keys:
+      - text-3
+  yield_time_lines:
+  - text: '1 bread – Preparation time: 1 hour 30 minutes'
+    region_keys:
+    - text-4
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0089
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0089
+  source_order: 89
+  slug: sugaricing
+  pages:
+  - 59
+  printed_pages:
+  - '58'
+  display_title: 'Sugar icing:'
+  titles:
+  - segment_id: title-en
+    text: 'Sugar icing:'
+    language: en
+    title_role: primary
+  regions:
+  - key: title
+    role: title
+    pdf_page: 59
+    block_ids:
+    - /page/58/Text/6
+  - key: text-1
+    role: instruction
+    pdf_page: 59
+    block_ids:
+    - /page/58/Text/8
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 59
+    block_ids:
+    - /page/58/ListGroup/7
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: apricot jelly
+      region_keys:
+      - listgroup-2
+    - text: 1/2 cup confectioners' sugar
+      region_keys:
+      - listgroup-2
+    - text: 6 teaspoons water
+      region_keys:
+      - listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: 'Mix sugar and water well and cover the cake evenly. If the icing is too thick, add water.
+        It should be somewhat thick, not too runny. For variety: replace 3 teaspoons of water with 3 teaspoons
+        of lemon juice, coffee, rum or any other juice to add taste and color. The cake must be warm while
+        frosting it in order to achieve a glossy look. Using hot water or milk you will get a fondant-like
+        look.'
+      region_keys:
+      - text-1
+  yield_time_lines: []
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0090
+  source_order: 90
+  slug: nutbread
+  pages:
+  - 60
+  printed_pages:
+  - '59'
+  display_title: Nut bread · Ořechový chlebíček
+  titles:
+  - segment_id: title-en
+    text: Nut bread
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Ořechový chlebíček
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 60
+    block_ids:
+    - /page/59/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 60
+    block_ids:
+    - /page/59/ListGroup/2
+  - key: text-2
+    role: instruction
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/4
+  - key: text-3
+    role: instruction
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/5
+  - key: text-4
+    role: instruction
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/6
+  - key: text-5
+    role: instruction
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/7
+  - key: text-6
+    role: yield-time
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/8
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 1 cup flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 1 cup ground walnuts
+      region_keys:
+      - listgroup-1
+    - text: 3/4 cup sponge crumbs, or bread crumbs
+      region_keys:
+      - listgroup-1
+    - text: 2 eggs, whole
+      region_keys:
+      - listgroup-1
+    - text: 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-1
+    - text: 1/4 cup golden raisins
+      region_keys:
+      - listgroup-1
+    - text: 2 teaspoons baking powder
+      region_keys:
+      - listgroup-1
+    - text: butter and flour for baking pan
+      region_keys:
+      - listgroup-1
+    - text: 10 walnut or pecan halves for decorating
+      region_keys:
+      - listgroup-1
+    - text: 3/4 cup sugar icing
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Beat the whole eggs until they are foamy, adding the sugar gradually. Stir in all ingredients,
+        leaving the flour mixed with baking powder to be added last. Turn the batter into a buttered and
+        floured loaf pan and bake at 350F 40-45 minutes, or until the toothpick comes out clean. When
+        done, invert the bread onto a cake rack, cover with icing and decorate with walnut or pecan halves.
+      region_keys:
+      - text-2
+    - text: 'Sugar icing: Same as used on fruit cake.'
+      region_keys:
+      - text-3
+    - text: 'Note:'
+      region_keys:
+      - text-4
+    - text: Instead of icing and decorating with nuts, just dust it with sugar mixed with a pinch of cinnamon.
+      region_keys:
+      - text-5
+  yield_time_lines:
+  - text: 'Serves 8 – Preparation time: 1 hour'
+    region_keys:
+    - text-6
+  notes: []
+  cross_references: []
+  related_recipe_ids:
+  - vera-r0089
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0091
+  source_order: 91
+  slug: cherrycake
+  pages:
+  - 60
+  printed_pages:
+  - '59'
+  display_title: Cherry cake · Bublanina
+  titles:
+  - segment_id: title-en
+    text: Cherry cake
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Bublanina
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 60
+    block_ids:
+    - /page/59/SectionHeader/9
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 60
+    block_ids:
+    - /page/59/ListGroup/3
+  - key: text-2
+    role: instruction
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/10
+  - key: text-3
+    role: yield-time
+    pdf_page: 60
+    block_ids:
+    - /page/59/Text/11
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2·1/2 cups flour
+      region_keys:
+      - listgroup-1
+    - text: 1 cup sugar
+      region_keys:
+      - listgroup-1
+    - text: 10 tablespoons butter
+      region_keys:
+      - listgroup-1
+    - text: 2 eggs, separated
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: 2 teaspoons vanilla sugar
+      region_keys:
+      - listgroup-1
+    - text: 2·1/2 teaspoons baking powder
+      region_keys:
+      - listgroup-1
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-1
+    - text: 1 lb. cherries (preferably Morello cherries)
+      region_keys:
+      - listgroup-1
+    - text: butter or margarine and flour for baking dish
+      region_keys:
+      - listgroup-1
+    - text: sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Beat two egg whites and half of the sugar until stiff, set aside. In a bowl combine the butter,
+        the egg yolks and the remaining sugar and beat until creamy and fluffy. Add lemon rind, vanilla
+        sugar and milk, mix well. Fold in the beaten egg whites by spoonfuls, mixing gently after each
+        addition. Fold in the flour mixed with baking powder. Pour the batter into a buttered and floured
+        baking dish – fill no more than half full. Spread the cherries evenly over the batter and bake
+        at 375F for 30 minutes, or until golden on top. Remove from oven, cool, cut into squares, dust
+        with sugar.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Serves 8 – Preparation time: 45 minutes'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0092
+  source_order: 92
+  slug: poppyseedpie
+  pages:
+  - 61
+  printed_pages:
+  - '60'
+  display_title: Poppy seed pie · Makovec
+  titles:
+  - segment_id: title-en
+    text: Poppy seed pie
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Makovec
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 61
+    block_ids:
+    - /page/60/SectionHeader/1
+  - key: listgroup-1
+    role: ingredient
+    pdf_page: 61
+    block_ids:
+    - /page/60/ListGroup/9
+  - key: text-2
+    role: instruction
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/2
+  - key: text-3
+    role: yield-time
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/3
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2·1/2 cups milk
+      region_keys:
+      - listgroup-1
+    - text: 1·1/2 cups sugar
+      region_keys:
+      - listgroup-1
+    - text: 1·1/2 cups ground or pounded poppy seeds
+      region_keys:
+      - listgroup-1
+    - text: 2 cups cornstarch
+      region_keys:
+      - listgroup-1
+    - text: 1 package (1/2 oz.) baking powder
+      region_keys:
+      - listgroup-1
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-1
+    - text: grease and flour for baking dish
+      region_keys:
+      - listgroup-1
+    - text: sugar for dusting
+      region_keys:
+      - listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: In a bowl combine all dry ingredients, mix them, add the lemon rind and the milk. Mix thoroughly
+        and pour the batter into a greased and floured baking dish. Bake in preheated 350F oven about
+        45 minutes. Cool, cut into squares and dust with sugar.
+      region_keys:
+      - text-2
+  yield_time_lines:
+  - text: 'Serves 8 – Preparation time: 1 hour'
+    region_keys:
+    - text-3
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []
+- recipe_id: vera-r0093
+  source_order: 93
+  slug: czechapplepie
+  pages:
+  - 61
+  printed_pages:
+  - '60'
+  display_title: Czech apple pie · Jablkový koláč
+  titles:
+  - segment_id: title-en
+    text: Czech apple pie
+    language: en
+    title_role: primary
+  - segment_id: title-cs
+    text: Jablkový koláč
+    language: cs
+    title_role: parallel
+  regions:
+  - key: title
+    role: title
+    pdf_page: 61
+    block_ids:
+    - /page/60/SectionHeader/4
+  - key: text-1
+    role: instruction
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/5
+  - key: listgroup-2
+    role: ingredient
+    pdf_page: 61
+    block_ids:
+    - /page/60/ListGroup/10
+  - key: text-3
+    role: instruction
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/6
+  - key: text-4
+    role: instruction
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/7
+  - key: text-5
+    role: yield-time
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/8
+  - key: text-6
+    role: instruction
+    pdf_page: 61
+    block_ids:
+    - /page/60/Text/11
+  - key: listgroup-7
+    role: ingredient
+    pdf_page: 61
+    block_ids:
+    - /page/60/ListGroup/12
+  ingredient_sections:
+  - section_id: ingredients-1
+    items:
+    - text: 2 cups flour
+      region_keys:
+      - listgroup-2
+    - text: 1 teaspoon baking powder
+      region_keys:
+      - listgroup-2
+    - text: 1/3 cup sugar
+      region_keys:
+      - listgroup-2
+    - text: 6 tablespoons butter, softened
+      region_keys:
+      - listgroup-2
+    - text: 2/3 cup milk
+      region_keys:
+      - listgroup-2
+    - text: 1 egg yolk
+      region_keys:
+      - listgroup-2
+    - text: grated rind of 1 lemon
+      region_keys:
+      - listgroup-2
+    - text: pinch of salt
+      region_keys:
+      - listgroup-2
+    - text: grease for oven tray
+      region_keys:
+      - listgroup-2
+    - text: 2 tablespoons sugar mixed with vanilla sugar
+      region_keys:
+      - listgroup-2
+  - section_id: ingredients-2
+    items:
+    - text: 3 medium apples, Granny Smith, peeled, cored, thinly sliced or grated
+      region_keys:
+      - listgroup-7
+    - text: 1/3 cup golden raisins
+      region_keys:
+      - listgroup-7
+    - text: 3 tablespoons sugar mixed with 1/2 teaspoon cinnamon
+      region_keys:
+      - listgroup-7
+  instruction_sections:
+  - section_id: instructions-main
+    items:
+    - text: Blend baking powder and flour. Add sugar, egg yolk, lemon rind, salt, milk and butter. Mix
+        thoroughly and knead until smooth, about 10 minutes.
+      region_keys:
+      - text-1
+    - text: On a greased oven tray roll dough out to 1/3" thickness, leaving the edges a little higher.
+        Mix apples, raisins, sugar-cinnamon and spread evenly over dough. Bake at 350F, 20-25 minutes,
+        until border is golden brown. Place pie on a wire rack to cool, dust with sugar mixed with vanilla
+        sugar. Cut into squares.
+      region_keys:
+      - text-3
+    - text: Instead of one oblong pie, you can make two smaller round pies.
+      region_keys:
+      - text-4
+    - text: 'Filling:'
+      region_keys:
+      - text-6
+  yield_time_lines:
+  - text: 'Serves 6 – Preparation time: 1 hour'
+    region_keys:
+    - text-5
+  notes: []
+  cross_references: []
+  related_recipe_ids: []
+  status: source_checked
+  open_issues: []

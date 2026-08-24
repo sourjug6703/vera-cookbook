@@ -1,0 +1,347 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0082
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 53
+  - 54
+  printed_pages:
+  - '52'
+  - '53'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0082-title
+  pdf_page: 53
+  printed_page: '52'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1113
+    - 1372
+  - - 1884
+    - 1372
+  - - 1884
+    - 1482
+  - - 1113
+    - 1482
+  candidate_block_ids:
+  - /page/52/SectionHeader/7
+  region_image: evidence/production-batch-010/regions/vera-r0082/p53-title.png
+  region_image_pixel_sha256: 9e1fb4fb93fc3264cd765d82c81a7bf543decf0fbc8a6de8390d54f14560a3d6
+- region_id: vera-r0082-text-1
+  pdf_page: 53
+  printed_page: '52'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1107
+    - 1458
+  - - 2658
+    - 1458
+  - - 2658
+    - 1723
+  - - 1107
+    - 1723
+  candidate_block_ids:
+  - /page/52/Text/8
+  region_image: evidence/production-batch-010/regions/vera-r0082/p53-text-1.png
+  region_image_pixel_sha256: 090621bf77adb00a10396de8020308921e57f4435a5a2ee465cd2e8fe22a869f
+- region_id: vera-r0082-listgroup-2
+  pdf_page: 53
+  printed_page: '52'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 258
+    - 1467
+  - - 1095
+    - 1467
+  - - 1095
+    - 2049
+  - - 258
+    - 2049
+  candidate_block_ids:
+  - /page/52/ListGroup/10
+  region_image: evidence/production-batch-010/regions/vera-r0082/p53-listgroup-2.png
+  region_image_pixel_sha256: e69d5e3bad81b0f0c620aa1763aee352871630e6efcf07246225b7d9a92ad92d
+- region_id: vera-r0082-text-3
+  pdf_page: 53
+  printed_page: '52'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1694
+  - - 2631
+    - 1694
+  - - 2631
+    - 2018
+  - - 1119
+    - 2018
+  candidate_block_ids:
+  - /page/52/Text/9
+  region_image: evidence/production-batch-010/regions/vera-r0082/p53-text-3.png
+  region_image_pixel_sha256: fcc5808f76567d049fcbf29adbb548b8267ac594f3dfd2e9b5caec2d4feda31c
+- region_id: vera-r0082-text-4
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1059
+    - 296
+  - - 2691
+    - 296
+  - - 2691
+    - 466
+  - - 1059
+    - 466
+  candidate_block_ids:
+  - /page/53/Text/0
+  region_image: evidence/production-batch-010/regions/vera-r0082/p54-text-4.png
+  region_image_pixel_sha256: e071ac675e1551d2eb77def5f0cc6aa6d208dc0c372eb2e041bc10554570c548
+- region_id: vera-r0082-text-5
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1059
+    - 409
+  - - 2610
+    - 409
+  - - 2610
+    - 576
+  - - 1059
+    - 576
+  candidate_block_ids:
+  - /page/53/Text/1
+  region_image: evidence/production-batch-010/regions/vera-r0082/p54-text-5.png
+  region_image_pixel_sha256: 299fbcb3c259490cf854acdb086658ba51c0c7084554a1157b20ea74b24cec4a
+- region_id: vera-r0082-text-6
+  pdf_page: 54
+  printed_page: '53'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1059
+    - 520
+  - - 2700
+    - 520
+  - - 2700
+    - 998
+  - - 1059
+    - 998
+  candidate_block_ids:
+  - /page/53/Text/2
+  region_image: evidence/production-batch-010/regions/vera-r0082/p54-text-6.png
+  region_image_pixel_sha256: 0a35014ef1b61ef8ad84b2092f82f376dcc8dc859664de4d24d34a51bd8857b6
+- region_id: vera-r0082-text-7
+  pdf_page: 54
+  printed_page: '53'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1071
+    - 982
+  - - 1818
+    - 982
+  - - 1818
+    - 1064
+  - - 1071
+    - 1064
+  candidate_block_ids:
+  - /page/53/Text/3
+  region_image: evidence/production-batch-010/regions/vera-r0082/p54-text-7.png
+  region_image_pixel_sha256: 4f9b785efa77deda138d66ec76f4a7b7fded335ff16c971c8cb8c4b8f91e7e56
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Czech doughnuts · Koblihy
+    language: mul
+    source_region_ids:
+    - vera-r0082-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Czech doughnuts
+    language: en
+    source_region_ids:
+    - vera-r0082-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Koblihy
+    language: cs
+    source_region_ids:
+    - vera-r0082-title
+    title_role: parallel
+  source_order: 82
+  slug_candidate: czechdoughnuts
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 8 – Preparation time: 3 hours'
+    language: en
+    source_region_ids:
+    - vera-r0082-text-7
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 6 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 3/4 cup heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 3/4 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 1/3 cup sugar mixed with vanilla sugar
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: 1 tablespoon rum
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: 1 tablespoon orange juice
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: pinch of salt
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-10
+      text_verbatim: 3/4 cup thick fruit preserve
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+    - segment_id: ingredient-11
+      text_verbatim: 2 cups oil for frying
+      language: en
+      source_region_ids:
+      - vera-r0082-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Leavening: In a bowl stir yeast with 2 teaspoons sugar until liquefied. Add 1 cup
+        flour and 3/4 cup milk. Mix thoroughly. Knead into a smooth neat ball. Dust with flour, cover
+        with a napkin and let rise 20 minutes. It should double in bulk.'
+      language: en
+      source_region_ids:
+      - vera-r0082-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: In a separate bowl cream egg yolks and vanilla sugar. Gradually adding heavy cream
+        beat at low speed until foamy. Blend in remaining flour, salt, rum, orange juice and risen leavening.
+        Mix thoroughly. Knead into a smooth, dry, elastic dough. Let rise 30 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0082-text-3
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Punch dough down, turn onto a floured pastry board and roll out to 1/3" thickness.
+      language: en
+      source_region_ids:
+      - vera-r0082-text-4
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Using a cookie cutter or a small cup, cut out round cakes, about 2-1/2" in diameter.
+      language: en
+      source_region_ids:
+      - vera-r0082-text-5
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Drop fruit preserve by teaspoonfuls in center of half of round cakes. Top each with
+        a plain round cake. Press borders firmly together. Be sure they are well sealed to prevent the
+        filling from leaking out. With a smaller round cutter cut out the final shape of the doughnuts.
+        Put doughnuts on lightly floured board, cover with a large napkin, let rest 20 minutes. Fry in
+        hot oil, starting with top side down, in a covered frying pan. When bottom is golden brown turn
+        them over and finish frying, uncovered. Drain on a sieve or paper towel. When cooled, sprinkle
+        with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0082-text-6
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations:
+  - from_region_id: vera-r0082-text-1
+    to_region_id: vera-r0082-text-4
+    relationship: continues_on
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

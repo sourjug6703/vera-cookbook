@@ -1,0 +1,1019 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0008
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 9
+  - 10
+  printed_pages:
+  - '8'
+  - '9'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0008-title
+  pdf_page: 9
+  printed_page: '8'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 912
+    - 615
+  - - 2106
+    - 615
+  - - 2106
+    - 751
+  - - 912
+    - 751
+  candidate_block_ids:
+  - /page/8/SectionHeader/4
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-title.png
+  region_image_pixel_sha256: 37938f9f63f326a2d010ad318a542c1277ce9256d1c9aae55c2e80ae6888fb34
+- region_id: vera-r0008-ingredients
+  pdf_page: 9
+  printed_page: '8'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 261
+    - 704
+  - - 873
+    - 704
+  - - 873
+    - 986
+  - - 261
+    - 986
+  candidate_block_ids:
+  - /page/8/ListGroup/5
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-ingredients.png
+  region_image_pixel_sha256: f82b7fc82484b576dea2b5b0976a1eefed608615539a8bc2cb469973bed88ccd
+- region_id: vera-r0008-step-1
+  pdf_page: 9
+  printed_page: '8'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1137
+    - 726
+  - - 2727
+    - 726
+  - - 2727
+    - 995
+  - - 1137
+    - 995
+  candidate_block_ids:
+  - /page/8/Text/6
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-step-1.png
+  region_image_pixel_sha256: e07ccde306d50b4bcdac0da6f5743dd0b2dbec94b6af62b0f03715ec7f408e74
+- region_id: vera-r0008-step-2
+  pdf_page: 9
+  printed_page: '8'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1131
+    - 948
+  - - 2718
+    - 948
+  - - 2718
+    - 1270
+  - - 1131
+    - 1270
+  candidate_block_ids:
+  - /page/8/Text/7
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-step-2.png
+  region_image_pixel_sha256: 769dcbe6543ee2705f708fe74d5c9e73da2c16e85eb43fded82a4e34cfe5b34a
+- region_id: vera-r0008-step-3
+  pdf_page: 9
+  printed_page: '8'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1131
+    - 1228
+  - - 2451
+    - 1228
+  - - 2451
+    - 1343
+  - - 1131
+    - 1343
+  candidate_block_ids:
+  - /page/8/Text/8
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-step-3.png
+  region_image_pixel_sha256: 74e189db7ef4fb4bb5459e8d92165650c718c06fa76f7bf105b4c8d312d48faa
+- region_id: vera-r0008-step-4
+  pdf_page: 9
+  printed_page: '8'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1131
+    - 1285
+  - - 2718
+    - 1285
+  - - 2718
+    - 1487
+  - - 1131
+    - 1487
+  candidate_block_ids:
+  - /page/8/Text/9
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-step-4.png
+  region_image_pixel_sha256: f0a82cfe54ffbd156936f1422b1ce36d14f6581c3f5ad1e9e0806cad9f70a0cf
+- region_id: vera-r0008-step-5
+  pdf_page: 9
+  printed_page: '8'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1131
+    - 1449
+  - - 2679
+    - 1449
+  - - 2679
+    - 1614
+  - - 1131
+    - 1614
+  candidate_block_ids:
+  - /page/8/Text/10
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-step-5.png
+  region_image_pixel_sha256: 2d722d83e83d89f024c10635b7794dcd5fc5229907cfe0606552a1302ca9835c
+- region_id: vera-r0008-yield
+  pdf_page: 9
+  printed_page: '8'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2120
+    origin: top_left
+  polygon:
+  - - 1125
+    - 1580
+  - - 2085
+    - 1580
+  - - 2085
+    - 1675
+  - - 1125
+    - 1675
+  candidate_block_ids:
+  - /page/8/Text/11
+  region_image: evidence/production-batch-002/regions/vera-r0008/p09-yield.png
+  region_image_pixel_sha256: 9726c44ebc61eda771b0a2ae38aff3180aa06f411d15d05096179f96d3f9e69f
+- region_id: vera-r0008-stuffings-title
+  pdf_page: 10
+  printed_page: '9'
+  role: continuation
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1170
+    - 393
+  - - 1887
+    - 393
+  - - 1887
+    - 526
+  - - 1170
+    - 526
+  candidate_block_ids:
+  - /page/9/SectionHeader/1
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-stuffings-title.png
+  region_image_pixel_sha256: 7f3857504ef749abb5e651518fbb0f8530a21aeb9aa2e62a8876fb5246407be6
+- region_id: vera-r0008-egg-title
+  pdf_page: 10
+  printed_page: '9'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 497
+  - - 1497
+    - 497
+  - - 1497
+    - 609
+  - - 1146
+    - 609
+  candidate_block_ids:
+  - /page/9/SectionHeader/2
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-egg-title.png
+  region_image_pixel_sha256: ce4fcd4b7e2f8f1c5b0a5e2fde5b3f61ebe69a75ed6414b2a147e79feef6a767
+- region_id: vera-r0008-egg-ingredients
+  pdf_page: 10
+  printed_page: '9'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 246
+    - 540
+  - - 768
+    - 540
+  - - 768
+    - 828
+  - - 246
+    - 828
+  candidate_block_ids:
+  - /page/9/ListGroup/8
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-egg-ingredients.png
+  region_image_pixel_sha256: 47bc95131024aff31fc6674c943b62a2ef10b36e2d8108dcc35175e514d0df20
+- region_id: vera-r0008-egg-step
+  pdf_page: 10
+  printed_page: '9'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 576
+  - - 2727
+    - 576
+  - - 2727
+    - 794
+  - - 1146
+    - 794
+  candidate_block_ids:
+  - /page/9/Text/3
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-egg-step.png
+  region_image_pixel_sha256: 4bc8751f0aa587b687adcae076ec05661d1771538169dd9776808ff701b5a6c0
+- region_id: vera-r0008-bread-title
+  pdf_page: 10
+  printed_page: '9'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 913
+  - - 1548
+    - 913
+  - - 1548
+    - 1021
+  - - 1146
+    - 1021
+  candidate_block_ids:
+  - /page/9/SectionHeader/4
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-bread-title.png
+  region_image_pixel_sha256: 64ec4d4f006e54daa9c14975bd6b0a2ff34c4484e325f1a8a68667edbb9586e7
+- region_id: vera-r0008-bread-ingredients
+  pdf_page: 10
+  printed_page: '9'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 246
+    - 965
+  - - 813
+    - 965
+  - - 813
+    - 1417
+  - - 246
+    - 1417
+  candidate_block_ids:
+  - /page/9/ListGroup/9
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-bread-ingredients.png
+  region_image_pixel_sha256: 00f5cf7d87877c5bf7f5d4ce89402243babca8f66c86b77382c0570c532a0bf6
+- region_id: vera-r0008-bread-step
+  pdf_page: 10
+  printed_page: '9'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 985
+  - - 2727
+    - 985
+  - - 2727
+    - 1374
+  - - 1146
+    - 1374
+  candidate_block_ids:
+  - /page/9/Text/5
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-bread-step.png
+  region_image_pixel_sha256: 62f708f436f6e554932b390170eddb192d10e823ede3d22e05f82a3edf0263ac
+- region_id: vera-r0008-liver-title
+  pdf_page: 10
+  printed_page: '9'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 1476
+  - - 1521
+    - 1476
+  - - 1521
+    - 1577
+  - - 1146
+    - 1577
+  candidate_block_ids:
+  - /page/9/SectionHeader/6
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-liver-title.png
+  region_image_pixel_sha256: 8c09b282e61a6e8ac58bf9734f339ebed2a8bcc648591a6534b5062cb771627c
+- region_id: vera-r0008-liver-ingredients
+  pdf_page: 10
+  printed_page: '9'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 240
+    - 1545
+  - - 1020
+    - 1545
+  - - 1020
+    - 2043
+  - - 240
+    - 2043
+  candidate_block_ids:
+  - /page/9/ListGroup/10
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-liver-ingredients.png
+  region_image_pixel_sha256: 3fd051e20a4edebfbb2ce6c6a92095035e78dc1260794368e7441b5bcf084417
+- region_id: vera-r0008-liver-step
+  pdf_page: 10
+  printed_page: '9'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1146
+    - 1550
+  - - 2499
+    - 1550
+  - - 2499
+    - 1786
+  - - 1146
+    - 1786
+  candidate_block_ids:
+  - /page/9/Text/7
+  region_image: evidence/production-batch-002/regions/vera-r0008/p10-liver-step.png
+  region_image_pixel_sha256: 5837c01376b60fe9df874f841e69c11b69358a7b9a50118f718a190afe96c9c2
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Stuffed veal breast · Telecí hrudí nadívané
+    language: mul
+    source_region_ids:
+    - vera-r0008-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Stuffed veal breast
+    language: en
+    source_region_ids:
+    - vera-r0008-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Telecí hrudí nadívané
+    language: cs
+    source_region_ids:
+    - vera-r0008-title
+    title_role: parallel
+  source_order: 8
+  slug_candidate: stuffed-veal-breast
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0008-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3·4 lbs. veal breast, boned
+      language: en
+      source_region_ids:
+      - vera-r0008-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1 cup chicken stock
+      language: en
+      source_region_ids:
+      - vera-r0008-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 8 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0008-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0008-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: stuffing – see below
+      language: en
+      source_region_ids:
+      - vera-r0008-ingredients
+  - section_id: ingredients-egg-stuffing
+    ingredients:
+    - segment_id: ingredient-6
+      text_verbatim: 6 eggs
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 1/2 cup ham, diced
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1/2 cup cooked peas
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 3 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-ingredients
+    label:
+      segment_id: label-ingredient-egg
+      text_verbatim: 'Egg stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-title
+  - section_id: ingredients-bread-stuffing
+    ingredients:
+    - segment_id: ingredient-11
+      text_verbatim: 3 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-12
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-13
+      text_verbatim: 1 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-14
+      text_verbatim: 1 whole egg, 1 egg yolk
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-15
+      text_verbatim: 1/2 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-16
+      text_verbatim: snipped parsley
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-17
+      text_verbatim: dash of ground nutmeg
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    - segment_id: ingredient-18
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-ingredients
+    label:
+      segment_id: label-ingredient-bread
+      text_verbatim: 'Bread stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-title
+  - section_id: ingredients-liver-stuffing
+    ingredients:
+    - segment_id: ingredient-19
+      text_verbatim: 6 oz. calf liver
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-20
+      text_verbatim: 3 hard baked rolls
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-21
+      text_verbatim: 1 cup milk
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-22
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-23
+      text_verbatim: 1 small onion
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-24
+      text_verbatim: 1/3 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-25
+      text_verbatim: snipped parsley
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-26
+      text_verbatim: dash of ground nutmeg, marjoram
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    - segment_id: ingredient-27
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-ingredients
+    label:
+      segment_id: label-ingredient-liver
+      text_verbatim: 'Liver stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-title
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Rinse the meat and pat it dry with a paper towel. Using the handle of a wooden spoon,
+        make an opening in the narrower end of the veal breast to form a cavity for stuffing. Most supermarkets
+        sell the veal breast ready to be stuffed.
+      language: en
+      source_region_ids:
+      - vera-r0008-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Salt the meat and lightly fill the cavity with stuffing. Enclose it with stitches,
+        or use a skewer. Lay the stuffed veal breast in a roasting pan with rack, skin down. Pour some
+        of the melted butter on top and roast at 350F for 45 minutes. Turn it and roast 45 minutes to
+        1 hour, or until golden on top.
+      language: en
+      source_region_ids:
+      - vera-r0008-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Baste occasionally with melted butter and pan drippings.
+      language: en
+      source_region_ids:
+      - vera-r0008-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Prick the stuffed cavity with fork several times to let out the steam. (The steam
+        would push out the stuffing while slicing it). Remove the stitches or skewer.
+      language: en
+      source_region_ids:
+      - vera-r0008-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Let it stand 5 minutes. Slice and sprinkle with juices from the pan. Serve with boiled
+        potatoes, vegetables, salad, compote.
+      language: en
+      source_region_ids:
+      - vera-r0008-step-5
+      step_number: 5
+  - section_id: instructions-egg-stuffing
+    steps:
+    - segment_id: step-6
+      text_verbatim: In a frying pan combine melted butter and lightly beaten eggs. Scramble until the
+        egg whites stiffen. Blend in ham and green peas. Salt.
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-step
+      step_number: 6
+    label:
+      segment_id: label-instruction-egg
+      text_verbatim: 'Egg stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-egg-title
+  - section_id: instructions-bread-stuffing
+    steps:
+    - segment_id: step-7
+      text_verbatim: Soak the rolls in milk, squeeze off excess, shred them. In a bowl cream the butter,
+        whisk in the egg and the egg yolk. Add all remaining ingredients, leaving the bread crumbs to
+        be added last. If the stuffing is thick enough, do not use up all bread crumbs. This stuffing
+        may also be used for roasted stuffed chicken, pigeon, etc.
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-step
+      step_number: 7
+    label:
+      segment_id: label-instruction-bread
+      text_verbatim: 'Bread stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-bread-title
+  - section_id: instructions-liver-stuffing
+    steps:
+    - segment_id: step-8
+      text_verbatim: Soak the rolls in milk, squeeze off excess, shred them. Grind the liver, or mash
+        it with a knife. Cream the butter, and blend in thoroughly all ingredients.
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-step
+      step_number: 8
+    label:
+      segment_id: label-instruction-liver
+      text_verbatim: 'Liver stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0008-liver-title
+  notes: []
+  cross_references: []
+  headnotes:
+  - segment_id: headnote-1
+    text_verbatim: Stuffings for veal breast
+    language: en
+    source_region_ids:
+    - vera-r0008-stuffings-title
+relationships:
+  continuations:
+  - from_region_id: vera-r0008-ingredients
+    to_region_id: vera-r0008-stuffings-title
+    relationship: continues_on
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T21:09:29Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T21:09:29Z'
+    artifact_path: pilot/production-batch-002/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T21:09:29Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0008
+    source_region_ids: &id001
+    - vera-r0008-title
+    - vera-r0008-ingredients
+    - vera-r0008-step-1
+    - vera-r0008-step-2
+    - vera-r0008-step-3
+    - vera-r0008-step-4
+    - vera-r0008-step-5
+    - vera-r0008-yield
+    - vera-r0008-stuffings-title
+    - vera-r0008-egg-title
+    - vera-r0008-egg-ingredients
+    - vera-r0008-egg-step
+    - vera-r0008-bread-title
+    - vera-r0008-bread-ingredients
+    - vera-r0008-bread-step
+    - vera-r0008-liver-title
+    - vera-r0008-liver-ingredients
+    - vera-r0008-liver-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0008
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-15
+    - ingredient-16
+    - ingredient-17
+    - ingredient-18
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - ingredient-25
+    - ingredient-26
+    - ingredient-27
+    source_region_ids:
+    - vera-r0008-title
+    - vera-r0008-ingredients
+    - vera-r0008-egg-ingredients
+    - vera-r0008-bread-ingredients
+    - vera-r0008-liver-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids: &id002
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    - step-7
+    - step-8
+    source_region_ids:
+    - vera-r0008-title
+    - vera-r0008-step-1
+    - vera-r0008-step-2
+    - vera-r0008-step-3
+    - vera-r0008-step-4
+    - vera-r0008-step-5
+    - vera-r0008-egg-step
+    - vera-r0008-bread-step
+    - vera-r0008-liver-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - headnote-1
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - label-ingredient-egg
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - label-ingredient-bread
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-15
+    - ingredient-16
+    - ingredient-17
+    - ingredient-18
+    - label-ingredient-liver
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - ingredient-25
+    - ingredient-26
+    - ingredient-27
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - label-instruction-egg
+    - step-6
+    - label-instruction-bread
+    - step-7
+    - label-instruction-liver
+    - step-8
+    source_region_ids:
+    - vera-r0008-title
+    - vera-r0008-stuffings-title
+    - vera-r0008-yield
+    - vera-r0008-ingredients
+    - vera-r0008-egg-title
+    - vera-r0008-egg-ingredients
+    - vera-r0008-bread-title
+    - vera-r0008-bread-ingredients
+    - vera-r0008-liver-title
+    - vera-r0008-liver-ingredients
+    - vera-r0008-step-1
+    - vera-r0008-step-2
+    - vera-r0008-step-3
+    - vera-r0008-step-4
+    - vera-r0008-step-5
+    - vera-r0008-egg-step
+    - vera-r0008-bread-step
+    - vera-r0008-liver-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-11
+    - ingredient-12
+    - ingredient-13
+    - ingredient-14
+    - ingredient-15
+    - ingredient-19
+    - ingredient-20
+    - ingredient-21
+    - ingredient-22
+    - ingredient-23
+    - ingredient-24
+    - step-2
+    - step-5
+    source_region_ids:
+    - vera-r0008-yield
+    - vera-r0008-ingredients
+    - vera-r0008-egg-ingredients
+    - vera-r0008-bread-ingredients
+    - vera-r0008-liver-ingredients
+    - vera-r0008-step-2
+    - vera-r0008-step-5
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0008-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0008
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0008-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  - check_id: ai-continuation
+    check_type: continuation
+    target_ids: *id002
+    source_region_ids:
+    - vera-r0008-step-1
+    - vera-r0008-step-2
+    - vera-r0008-step-3
+    - vera-r0008-step-4
+    - vera-r0008-step-5
+    - vera-r0008-egg-step
+    - vera-r0008-bread-step
+    - vera-r0008-liver-step
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: Every declared cross-page continuation was followed directly across its cited regions.
+  - check_id: ai-cross-reference
+    check_type: cross_reference
+    target_ids:
+    - ingredient-5
+    source_region_ids:
+    - vera-r0008-ingredients
+    - vera-r0008-stuffings-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T21:09:29Z'
+    independent_of_extractor: true
+    note: The printed 'stuffing – see below' reference was followed to all three stuffing sections on
+      PDF page 10.
+  open_issues: []

@@ -1,0 +1,177 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0108
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 73
+  printed_pages:
+  - '72'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0108-title
+  pdf_page: 73
+  printed_page: '72'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 981
+    - 362
+  - - 1998
+    - 362
+  - - 1998
+    - 483
+  - - 981
+    - 483
+  candidate_block_ids:
+  - /page/72/SectionHeader/1
+  region_image: evidence/production-batch-013/regions/vera-r0108/p73-title.png
+  region_image_pixel_sha256: a114e4ab781e1a07d0d2fd25956938e2a56e4c0f08377706d3350a8187595236
+- region_id: vera-r0108-listgroup-1
+  pdf_page: 73
+  printed_page: '72'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 237
+    - 468
+  - - 966
+    - 468
+  - - 966
+    - 652
+  - - 237
+    - 652
+  candidate_block_ids:
+  - /page/72/ListGroup/2
+  region_image: evidence/production-batch-013/regions/vera-r0108/p73-listgroup-1.png
+  region_image_pixel_sha256: 514960298c2e749247b0a8407b028c11c4950e83a438e494c879fa42292c9a44
+- region_id: vera-r0108-text-2
+  pdf_page: 73
+  printed_page: '72'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 477
+  - - 2727
+    - 477
+  - - 2727
+    - 801
+  - - 1104
+    - 801
+  candidate_block_ids:
+  - /page/72/Text/3
+  region_image: evidence/production-batch-013/regions/vera-r0108/p73-text-2.png
+  region_image_pixel_sha256: bc53454fcaf0a713bd9f7bf7f8ef7338bc8bef262cb4e9f2d1da4923d9331a38
+- region_id: vera-r0108-text-3
+  pdf_page: 73
+  printed_page: '72'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2250
+    origin: top_left
+  polygon:
+  - - 1104
+    - 801
+  - - 2307
+    - 801
+  - - 2307
+    - 897
+  - - 1104
+    - 897
+  candidate_block_ids:
+  - /page/72/Text/4
+  region_image: evidence/production-batch-013/regions/vera-r0108/p73-text-3.png
+  region_image_pixel_sha256: 0c32e92fa5071cdd773f40f0c640ad3eba3120ae4f85e602343304aab0048a23
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Chocolate filling · Čokoládový krém
+    language: mul
+    source_region_ids:
+    - vera-r0108-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Chocolate filling
+    language: en
+    source_region_ids:
+    - vera-r0108-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Čokoládový krém
+    language: cs
+    source_region_ids:
+    - vera-r0108-title
+    title_role: parallel
+  source_order: 108
+  slug_candidate: chocolatefilling
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'For 1 cake – Preparation time: 15 minutes, plus refrigeration'
+    language: en
+    source_region_ids:
+    - vera-r0108-text-3
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 pint heavy cream
+      language: en
+      source_region_ids:
+      - vera-r0108-listgroup-1
+    - segment_id: ingredient-2
+      text_verbatim: 1·1/2 cups semi sweet chocolate morsels
+      language: en
+      source_region_ids:
+      - vera-r0108-listgroup-1
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Combine cream and chocolate in a saucepan, set over low heat and bring to boil, stirring
+        constantly. Remove from heat and pour mixture in a clean bowl. Refrigerate at least 3 hours or
+        overnight. Whip with electric mixer at medium speed until smooth and creamy for about 7 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0108-text-2
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

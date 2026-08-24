@@ -1,0 +1,4250 @@
+{
+  "children": [
+    {
+      "id": "/page/28/Page/21",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/28/PageHeader/0'></content-ref><content-ref src='/page/28/SectionHeader/1'></content-ref><content-ref src='/page/28/SectionHeader/2'></content-ref><content-ref src='/page/28/ListGroup/3'></content-ref><content-ref src='/page/28/SectionHeader/4'></content-ref><content-ref src='/page/28/ListGroup/5'></content-ref><content-ref src='/page/28/SectionHeader/6'></content-ref><content-ref src='/page/28/Text/7'></content-ref><content-ref src='/page/28/Text/8'></content-ref><content-ref src='/page/28/Text/9'></content-ref><content-ref src='/page/28/Text/10'></content-ref><content-ref src='/page/28/Text/11'></content-ref><content-ref src='/page/28/Text/12'></content-ref><content-ref src='/page/28/Text/13'></content-ref><content-ref src='/page/28/Text/14'></content-ref><content-ref src='/page/28/Text/15'></content-ref><content-ref src='/page/28/Text/16'></content-ref><content-ref src='/page/28/Text/17'></content-ref><content-ref src='/page/28/Text/18'></content-ref><content-ref src='/page/28/Text/19'></content-ref><content-ref src='/page/28/Text/20'></content-ref><content-ref src='/page/28/PageFooter/21'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/28/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              165.0,
+              88.875
+            ],
+            [
+              280.5,
+              88.875
+            ],
+            [
+              280.5,
+              114.75
+            ],
+            [
+              165.0,
+              114.75
+            ]
+          ],
+          "bbox": [
+            165.0,
+            88.875,
+            280.5,
+            114.75
+          ],
+          "children": null,
+          "section_hierarchy": {},
+          "images": {}
+        },
+        {
+          "id": "/page/28/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Marinated hare in wine sauce - Zajic na černo</h2>",
+          "polygon": [
+            [
+              423.0,
+              192.375
+            ],
+            [
+              1053.0,
+              192.375
+            ],
+            [
+              1053.0,
+              236.25
+            ],
+            [
+              423.0,
+              236.25
+            ]
+          ],
+          "bbox": [
+            423.0,
+            192.375,
+            1053.0,
+            236.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<h3>Marinade:</h3>",
+          "polygon": [
+            [
+              123.0,
+              240.75
+            ],
+            [
+              255.0,
+              240.75
+            ],
+            [
+              255.0,
+              268.875
+            ],
+            [
+              123.0,
+              268.875
+            ]
+          ],
+          "bbox": [
+            123.0,
+            240.75,
+            255.0,
+            268.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/2"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/ListGroup/3",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 cup sliced carrots</li>\n<li>• 1 cup sliced onions</li>\n<li>• 1 cup sliced shallots</li>\n<li>• 3 cloves garlic, crushed</li>\n<li>• 10 black peppercorns</li>\n<li>• 3 bay leaves</li>\n<li>• thyme</li>\n<li>• 1/4 cup cognac</li>\n<li>• 3 cups red wine</li>\n<li>• 1-1/2 cups vegetable oil</li>\n</ul>",
+          "polygon": [
+            [
+              123.0,
+              268.875
+            ],
+            [
+              388.5,
+              268.875
+            ],
+            [
+              388.5,
+              518.625
+            ],
+            [
+              123.0,
+              518.625
+            ]
+          ],
+          "bbox": [
+            123.0,
+            268.875,
+            388.5,
+            518.625
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/2"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/28/SectionHeader/4",
+          "block_type": "SectionHeader",
+          "html": "<h3>Hare and sauce:</h3>",
+          "polygon": [
+            [
+              126.0,
+              540.0
+            ],
+            [
+              334.5,
+              540.0
+            ],
+            [
+              334.5,
+              569.25
+            ],
+            [
+              126.0,
+              569.25
+            ]
+          ],
+          "bbox": [
+            126.0,
+            540.0,
+            334.5,
+            569.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/4"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/ListGroup/5",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• Front part of 1 hare, 4-5 lbs.</li>\n<li>• 4 tablespoons butter</li>\n<li>• 3 oz. bacon, diced</li>\n<li>• 1 medium onion, chopped</li>\n<li>• 3 tablespoons vinegar</li>\n<li>• 1-1/2 cups beef stock</li>\n<li>• 1 cup red wine</li>\n<li>• grated rind of 1 lemon</li>\n<li>• 5 grains each of black peppercorns and whole allspice</li>\n<li>• 2 bay leaves, thyme</li>\n<li>• 4 tablespoons flour</li>\n<li>• 2 tablespoons brown sugar</li>\n<li>• 1/4 cup cranberry sauce</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              126.0,
+              569.25
+            ],
+            [
+              537.0,
+              569.25
+            ],
+            [
+              537.0,
+              946.125
+            ],
+            [
+              126.0,
+              946.125
+            ]
+          ],
+          "bbox": [
+            126.0,
+            569.25,
+            537.0,
+            946.125
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/4"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/28/SectionHeader/6",
+          "block_type": "SectionHeader",
+          "html": "<h3>To marinate:</h3>",
+          "polygon": [
+            [
+              559.5,
+              274.5
+            ],
+            [
+              715.5,
+              274.5
+            ],
+            [
+              715.5,
+              302.625
+            ],
+            [
+              559.5,
+              302.625
+            ]
+          ],
+          "bbox": [
+            559.5,
+            274.5,
+            715.5,
+            302.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/7",
+          "block_type": "Text",
+          "html": "<p>Place hare in a large crock. Add all dry ingredients, top with cognac, add wine.</p>",
+          "polygon": [
+            [
+              559.5,
+              303.75
+            ],
+            [
+              1345.5,
+              303.75
+            ],
+            [
+              1345.5,
+              361.125
+            ],
+            [
+              559.5,
+              361.125
+            ]
+          ],
+          "bbox": [
+            559.5,
+            303.75,
+            1345.5,
+            361.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/8",
+          "block_type": "Text",
+          "html": "<p>Add oil to seal air out. The hare must be submerged in the marinade. Soak hare overnight, or even better 2-3 days.</p>",
+          "polygon": [
+            [
+              559.5,
+              361.125
+            ],
+            [
+              1347.0,
+              361.125
+            ],
+            [
+              1347.0,
+              424.125
+            ],
+            [
+              559.5,
+              424.125
+            ]
+          ],
+          "bbox": [
+            559.5,
+            361.125,
+            1347.0,
+            424.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/9",
+          "block_type": "Text",
+          "html": "<p>Remove and wipe dry with a cloth.</p>",
+          "polygon": [
+            [
+              559.5,
+              419.625
+            ],
+            [
+              960.0,
+              419.625
+            ],
+            [
+              960.0,
+              450.0
+            ],
+            [
+              559.5,
+              450.0
+            ]
+          ],
+          "bbox": [
+            559.5,
+            419.625,
+            960.0,
+            450.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/10",
+          "block_type": "Text",
+          "html": "<p>Heat butter in a 4 quart top-of-range casserole. Add bacon and onion and cook until soft. Add all spices and lemon rind. Sprinkle hare with salt and vinegar, put into casserole, and brown lightly on all sides.</p>",
+          "polygon": [
+            [
+              559.5,
+              455.625
+            ],
+            [
+              1347.0,
+              455.625
+            ],
+            [
+              1347.0,
+              547.875
+            ],
+            [
+              559.5,
+              547.875
+            ]
+          ],
+          "bbox": [
+            559.5,
+            455.625,
+            1347.0,
+            547.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/11",
+          "block_type": "Text",
+          "html": "<p>Reduce heat. Add some of the beef stock.</p>",
+          "polygon": [
+            [
+              559.5,
+              543.375
+            ],
+            [
+              1050.0,
+              543.375
+            ],
+            [
+              1050.0,
+              572.625
+            ],
+            [
+              559.5,
+              572.625
+            ]
+          ],
+          "bbox": [
+            559.5,
+            543.375,
+            1050.0,
+            572.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/12",
+          "block_type": "Text",
+          "html": "<p>Cover tightly and simmer 1-1-1/2 hours, or until meat is tender when pierced with a fork. Add beef stock occasionally.</p>",
+          "polygon": [
+            [
+              559.5,
+              572.625
+            ],
+            [
+              1351.5,
+              572.625
+            ],
+            [
+              1351.5,
+              633.3749999999999
+            ],
+            [
+              559.5,
+              633.3749999999999
+            ]
+          ],
+          "bbox": [
+            559.5,
+            572.625,
+            1351.5,
+            633.3749999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/13",
+          "block_type": "Text",
+          "html": "<p>Transfer hare to a heated platter.</p>",
+          "polygon": [
+            [
+              559.5,
+              631.1250000000001
+            ],
+            [
+              954.0,
+              631.1250000000001
+            ],
+            [
+              954.0,
+              660.375
+            ],
+            [
+              559.5,
+              660.375
+            ]
+          ],
+          "bbox": [
+            559.5,
+            631.1250000000001,
+            954.0,
+            660.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/14",
+          "block_type": "Text",
+          "html": "<p>Skim off fat from the cooking liquid, stir in the flour and continue cooking to a rich brown. Add the remaining beef stock and the wine.</p>",
+          "polygon": [
+            [
+              559.5,
+              660.375
+            ],
+            [
+              1351.5,
+              660.375
+            ],
+            [
+              1351.5,
+              722.25
+            ],
+            [
+              559.5,
+              722.25
+            ]
+          ],
+          "bbox": [
+            559.5,
+            660.375,
+            1351.5,
+            722.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/15",
+          "block_type": "Text",
+          "html": "<p>Cook until sauce thickens. Strain, blend in sugar and cranberry sauce. Season to taste with salt and pepper. Bring to boil, stirring constantly.</p>",
+          "polygon": [
+            [
+              559.5,
+              718.875
+            ],
+            [
+              1326.0,
+              718.875
+            ],
+            [
+              1326.0,
+              803.25
+            ],
+            [
+              559.5,
+              803.25
+            ]
+          ],
+          "bbox": [
+            559.5,
+            718.875,
+            1326.0,
+            803.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/16",
+          "block_type": "Text",
+          "html": "<p>Slice hare, pour hot sauce over top.</p>",
+          "polygon": [
+            [
+              559.5,
+              803.25
+            ],
+            [
+              981.0,
+              803.25
+            ],
+            [
+              981.0,
+              833.625
+            ],
+            [
+              559.5,
+              833.625
+            ]
+          ],
+          "bbox": [
+            559.5,
+            803.25,
+            981.0,
+            833.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/17",
+          "block_type": "Text",
+          "html": "<p>Serve with noodles, gnocchi, dumplings.</p>",
+          "polygon": [
+            [
+              559.5,
+              832.5
+            ],
+            [
+              1030.5,
+              832.5
+            ],
+            [
+              1030.5,
+              862.875
+            ],
+            [
+              559.5,
+              862.875
+            ]
+          ],
+          "bbox": [
+            559.5,
+            832.5,
+            1030.5,
+            862.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/18",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 2 hours, plus marinating</b></p>",
+          "polygon": [
+            [
+              564.0,
+              894.375
+            ],
+            [
+              1080.0,
+              894.375
+            ],
+            [
+              1080.0,
+              921.375
+            ],
+            [
+              564.0,
+              921.375
+            ]
+          ],
+          "bbox": [
+            564.0,
+            894.375,
+            1080.0,
+            921.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/19",
+          "block_type": "Text",
+          "html": "<p>⇒ <i>Venison</i> in cream sauce – same as Hare in cream sauce</p>",
+          "polygon": [
+            [
+              564.0,
+              947.25
+            ],
+            [
+              1119.0,
+              947.25
+            ],
+            [
+              1119.0,
+              972.0
+            ],
+            [
+              564.0,
+              972.0
+            ]
+          ],
+          "bbox": [
+            564.0,
+            947.25,
+            1119.0,
+            972.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/Text/20",
+          "block_type": "Text",
+          "html": "<p><i>Venison</i> in wine sauce – same as Marinated hare in wine sauce</p>",
+          "polygon": [
+            [
+              591.0,
+              972.0
+            ],
+            [
+              1185.0,
+              972.0
+            ],
+            [
+              1185.0,
+              996.75
+            ],
+            [
+              591.0,
+              996.75
+            ]
+          ],
+          "bbox": [
+            591.0,
+            972.0,
+            1185.0,
+            996.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/28/PageFooter/21",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              705.0,
+              1046.25
+            ],
+            [
+              795.0,
+              1046.25
+            ],
+            [
+              795.0,
+              1068.75
+            ],
+            [
+              705.0,
+              1068.75
+            ]
+          ],
+          "bbox": [
+            705.0,
+            1046.25,
+            795.0,
+            1068.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/28/SectionHeader/1",
+        "3": "/page/28/SectionHeader/6"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/29/Page/11",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/29/PageHeader/0'></content-ref><content-ref src='/page/29/SectionHeader/1'></content-ref><content-ref src='/page/29/ListGroup/2'></content-ref><content-ref src='/page/29/Text/3'></content-ref><content-ref src='/page/29/Text/4'></content-ref><content-ref src='/page/29/Text/5'></content-ref><content-ref src='/page/29/Text/6'></content-ref><content-ref src='/page/29/Text/7'></content-ref><content-ref src='/page/29/SectionHeader/8'></content-ref><content-ref src='/page/29/ListGroup/9'></content-ref><content-ref src='/page/29/Text/10'></content-ref><content-ref src='/page/29/PageFooter/11'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1064.0
+        ],
+        [
+          0.0,
+          1064.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1064.0
+      ],
+      "children": [
+        {
+          "id": "/page/29/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1167.0,
+              106.4
+            ],
+            [
+              1279.5,
+              106.4
+            ],
+            [
+              1279.5,
+              129.808
+            ],
+            [
+              1167.0,
+              129.808
+            ]
+          ],
+          "bbox": [
+            1167.0,
+            106.4,
+            1279.5,
+            129.808
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/28/SectionHeader/1",
+            "3": "/page/28/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Venison cutlets, or medallions - Srnči žebírka</h2>",
+          "polygon": [
+            [
+              432.0,
+              168.112
+            ],
+            [
+              1056.0,
+              168.112
+            ],
+            [
+              1056.0,
+              226.632
+            ],
+            [
+              432.0,
+              226.632
+            ]
+          ],
+          "bbox": [
+            432.0,
+            168.112,
+            1056.0,
+            226.632
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 12 young venison cutlets, or medallions, 3 oz. ea.</li>\n<li>• 12 juniper berries, crushed</li>\n<li>• 4 tablespoons cognac</li>\n<li>• salt and pepper</li>\n<li>• 1·1/2 cups sour cream</li>\n<li>• 1/2 cup chicken broth</li>\n<li>• 3/4 cup olive oil</li>\n<li>• 4 tablespoons butter</li>\n<li>• 1 small onion, finely chopped</li>\n<li>• 1 lb. fresh mushrooms, sliced lengthwise</li>\n<li>• snipped parsley</li>\n</ul>",
+          "polygon": [
+            [
+              129.0,
+              212.8
+            ],
+            [
+              541.5,
+              212.8
+            ],
+            [
+              541.5,
+              532.0
+            ],
+            [
+              129.0,
+              532.0
+            ]
+          ],
+          "bbox": [
+            129.0,
+            212.8,
+            541.5,
+            532.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/29/Text/3",
+          "block_type": "Text",
+          "html": "<p>Trim excess fat from the cutlets, pound them lightly, rub with juniper berries, sprinkle with salt and pepper, drizzle with cognac and olive oil. Cover, marinate at least 1 hour.</p>",
+          "polygon": [
+            [
+              568.5,
+              227.696
+            ],
+            [
+              1344.0,
+              227.696
+            ],
+            [
+              1344.0,
+              325.584
+            ],
+            [
+              568.5,
+              325.584
+            ]
+          ],
+          "bbox": [
+            568.5,
+            227.696,
+            1344.0,
+            325.584
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/Text/4",
+          "block_type": "Text",
+          "html": "<p>Meanwhile melt butter in a large skillet, sauté onion and mushrooms. Season with salt and pepper. Reserve.</p>",
+          "polygon": [
+            [
+              568.5,
+              312.816
+            ],
+            [
+              1341.0,
+              312.816
+            ],
+            [
+              1341.0,
+              369.20799999999997
+            ],
+            [
+              568.5,
+              369.20799999999997
+            ]
+          ],
+          "bbox": [
+            568.5,
+            312.816,
+            1341.0,
+            369.20799999999997
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/Text/5",
+          "block_type": "Text",
+          "html": "<p>Drain and wipe the cutlets, reserve marinade. Heat remaining oil in a heavy frying pan, fry venison over high heat, about 3 minutes each side. Remove cutlets, keep them warm. Deglaze pan with marinade. Add chicken broth and sour cream, simmer 5 minutes. Taste for salt and pepper.</p>",
+          "polygon": [
+            [
+              568.5,
+              367.0799999999999
+            ],
+            [
+              1341.0,
+              367.0799999999999
+            ],
+            [
+              1341.0,
+              508.5919999999999
+            ],
+            [
+              568.5,
+              508.5919999999999
+            ]
+          ],
+          "bbox": [
+            568.5,
+            367.0799999999999,
+            1341.0,
+            508.5919999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/Text/6",
+          "block_type": "Text",
+          "html": "<p>Coat the cutlets, or medallions, with the sauce. Garnish with mushrooms, snipped parsley, poached halves of apples, serve with noodles, rice.</p>",
+          "polygon": [
+            [
+              568.5,
+              506.46399999999994
+            ],
+            [
+              1330.5,
+              506.46399999999994
+            ],
+            [
+              1330.5,
+              590.52
+            ],
+            [
+              568.5,
+              590.52
+            ]
+          ],
+          "bbox": [
+            568.5,
+            506.46399999999994,
+            1330.5,
+            590.52
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/Text/7",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 20 minutes, plus marinating</b></p>",
+          "polygon": [
+            [
+              568.5,
+              603.288
+            ],
+            [
+              1114.5,
+              603.288
+            ],
+            [
+              1114.5,
+              639.4639999999999
+            ],
+            [
+              568.5,
+              639.4639999999999
+            ]
+          ],
+          "bbox": [
+            568.5,
+            603.288,
+            1114.5,
+            639.4639999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/SectionHeader/8",
+          "block_type": "SectionHeader",
+          "html": "<h2>Roast pheasant - Bažant pečený</h2>",
+          "polygon": [
+            [
+              531.0,
+              680.9599999999999
+            ],
+            [
+              970.5,
+              680.9599999999999
+            ],
+            [
+              970.5,
+              720.328
+            ],
+            [
+              531.0,
+              720.328
+            ]
+          ],
+          "bbox": [
+            531.0,
+            680.9599999999999,
+            970.5,
+            720.328
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/ListGroup/9",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 pheasant</li>\n<li>• 2 slices bacon cut in short strips</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• 3·4 tablespoons flour</li>\n<li>• 1·1/2 cups chicken broth</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              132.0,
+              727.7760000000001
+            ],
+            [
+              478.5,
+              727.7760000000001
+            ],
+            [
+              478.5,
+              899.08
+            ],
+            [
+              132.0,
+              899.08
+            ]
+          ],
+          "bbox": [
+            132.0,
+            727.7760000000001,
+            478.5,
+            899.08
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/29/Text/10",
+          "block_type": "Text",
+          "html": "<p>Rinse and wipe the pheasant inside and out. Lard the breast and thighs with bacon strips. Brown the pheasant evenly all around in a frying pan in half of the butter and onion. Preheat oven to 350F. Transfer pheasant, breast down, into an ovenproof deep dish together with the butter and onion from the frying pan. Add salt and pepper. Roast 30·40 minutes, until the top gets reddish. Baste often with the remaining butter and chicken broth. Turn the bird breast side up, continue roasting in the same manner, 40-45 minutes.</p>",
+          "polygon": [
+            [
+              568.5,
+              728.84
+            ],
+            [
+              1348.5,
+              728.84
+            ],
+            [
+              1348.5,
+              960.7919999999999
+            ],
+            [
+              568.5,
+              960.7919999999999
+            ]
+          ],
+          "bbox": [
+            568.5,
+            728.84,
+            1348.5,
+            960.7919999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/29/PageFooter/11",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              708.0,
+              995.904
+            ],
+            [
+              798.0,
+              995.904
+            ],
+            [
+              798.0,
+              1017.1839999999999
+            ],
+            [
+              708.0,
+              1017.1839999999999
+            ]
+          ],
+          "bbox": [
+            708.0,
+            995.904,
+            798.0,
+            1017.1839999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/29/SectionHeader/8"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/30/Page/11",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/30/PageHeader/0'></content-ref><content-ref src='/page/30/Text/1'></content-ref><content-ref src='/page/30/Text/2'></content-ref><content-ref src='/page/30/SectionHeader/3'></content-ref><content-ref src='/page/30/ListGroup/4'></content-ref><content-ref src='/page/30/Text/5'></content-ref><content-ref src='/page/30/Text/6'></content-ref><content-ref src='/page/30/Text/7'></content-ref><content-ref src='/page/30/SectionHeader/8'></content-ref><content-ref src='/page/30/ListGroup/9'></content-ref><content-ref src='/page/30/Text/10'></content-ref><content-ref src='/page/30/PageFooter/11'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/30/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              169.5,
+              25.0
+            ],
+            [
+              277.5,
+              25.0
+            ],
+            [
+              277.5,
+              49.0
+            ],
+            [
+              169.5,
+              49.0
+            ]
+          ],
+          "bbox": [
+            169.5,
+            25.0,
+            277.5,
+            49.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/Text/1",
+          "block_type": "Text",
+          "html": "<p>On the stove top bring the pan juices to boil. Add flour and cook 5 minutes stirring constantly. Add the remaining chicken broth and cook a little more. When the sauce thickens, strain it and pour over pheasant, cut in four portion sizes. Serve with red cabbage, potatoes, cranberries.</p>",
+          "polygon": [
+            [
+              540.0,
+              85.00000000000001
+            ],
+            [
+              1356.0,
+              85.00000000000001
+            ],
+            [
+              1356.0,
+              253.0
+            ],
+            [
+              540.0,
+              253.0
+            ]
+          ],
+          "bbox": [
+            540.0,
+            85.00000000000001,
+            1356.0,
+            253.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/Text/2",
+          "block_type": "Text",
+          "html": "<p><b>Serves 4 – Preparation time: 1 hour 30 minutes</b></p>",
+          "polygon": [
+            [
+              543.0,
+              263.0
+            ],
+            [
+              1002.0,
+              263.0
+            ],
+            [
+              1002.0,
+              294.0
+            ],
+            [
+              543.0,
+              294.0
+            ]
+          ],
+          "bbox": [
+            543.0,
+            263.0,
+            1002.0,
+            294.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/SectionHeader/3",
+          "block_type": "SectionHeader",
+          "html": "<h3>Pheasant in cream sauce - Bažant na smetanë</h3>",
+          "polygon": [
+            [
+              406.5,
+              321.0
+            ],
+            [
+              1045.5,
+              321.0
+            ],
+            [
+              1045.5,
+              360.0
+            ],
+            [
+              406.5,
+              360.0
+            ]
+          ],
+          "bbox": [
+            406.5,
+            321.0,
+            1045.5,
+            360.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/ListGroup/4",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 pheasant</li>\n<li>• 6 tablespoons butter</li>\n<li>• 2 slices bacon cut in short strips</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• 1 cup chicken broth</li>\n<li>• 1-1/2 cups heavy cream</li>\n<li>• 2 tablespoons grated horseradish</li>\n<li>• 1 tablespoon cognac</li>\n<li>• juice of 1 lemon</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              127.5,
+              382.0
+            ],
+            [
+              462.0,
+              382.0
+            ],
+            [
+              462.0,
+              619.0
+            ],
+            [
+              127.5,
+              619.0
+            ]
+          ],
+          "bbox": [
+            127.5,
+            382.0,
+            462.0,
+            619.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/3"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/30/Text/5",
+          "block_type": "Text",
+          "html": "<p>Rinse and wipe the pheasant inside and out. Lard the breast and thighs with bacon strips. Roast pheasant as indicated in \"Roast pheasant\". In a saucepan blend pan juices, cream and horseradish. Cook for 5 minutes over medium heat. Add cognac and lemon juice. Season to taste with salt and pepper. Strain.</p>",
+          "polygon": [
+            [
+              543.0,
+              362.0
+            ],
+            [
+              1341.0,
+              362.0
+            ],
+            [
+              1341.0,
+              540.0
+            ],
+            [
+              543.0,
+              540.0
+            ]
+          ],
+          "bbox": [
+            543.0,
+            362.0,
+            1341.0,
+            540.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/Text/6",
+          "block_type": "Text",
+          "html": "<p>Pour some gravy over the pheasant cut in 4 portions. Serve remaining gravy separately. Serve with rice, vegetables.</p>",
+          "polygon": [
+            [
+              543.0,
+              536.0000000000001
+            ],
+            [
+              1342.5,
+              536.0000000000001
+            ],
+            [
+              1342.5,
+              600.0
+            ],
+            [
+              543.0,
+              600.0
+            ]
+          ],
+          "bbox": [
+            543.0,
+            536.0000000000001,
+            1342.5,
+            600.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/Text/7",
+          "block_type": "Text",
+          "html": "<p><b>Serves 4 – Preparation time: 1 hour 30 minutes</b></p>",
+          "polygon": [
+            [
+              543.0,
+              612.0
+            ],
+            [
+              997.5,
+              612.0
+            ],
+            [
+              997.5,
+              639.0
+            ],
+            [
+              543.0,
+              639.0
+            ]
+          ],
+          "bbox": [
+            543.0,
+            612.0,
+            997.5,
+            639.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/SectionHeader/8",
+          "block_type": "SectionHeader",
+          "html": "<h3>Partridge/Quail - Koroptev/Křepelka</h3>",
+          "polygon": [
+            [
+              474.0,
+              672.0000000000001
+            ],
+            [
+              970.5,
+              672.0000000000001
+            ],
+            [
+              970.5,
+              706.0
+            ],
+            [
+              474.0,
+              706.0
+            ]
+          ],
+          "bbox": [
+            474.0,
+            672.0000000000001,
+            970.5,
+            706.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/ListGroup/9",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 quails</li>\n<li>• 3 slices bacon</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 cup chicken broth, or water</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              127.5,
+              729.0
+            ],
+            [
+              420.0,
+              729.0
+            ],
+            [
+              420.0,
+              847.0
+            ],
+            [
+              127.5,
+              847.0
+            ]
+          ],
+          "bbox": [
+            127.5,
+            729.0,
+            420.0,
+            847.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/30/Text/10",
+          "block_type": "Text",
+          "html": "<p>Rinse quails, pat dry. Sprinkle with salt and pepper inside and outside. Place 1/2 slice bacon inside each. Heat butter in a flameproof casserole, add quails. Roast 40-50 minutes at 350F. Baste often with pan drippings, chicken broth or water. Serve dish straight from the oven with quails cut in halves.</p>",
+          "polygon": [
+            [
+              543.0,
+              722.0
+            ],
+            [
+              1267.5,
+              722.0
+            ],
+            [
+              1267.5,
+              895.0000000000001
+            ],
+            [
+              543.0,
+              895.0000000000001
+            ]
+          ],
+          "bbox": [
+            543.0,
+            722.0,
+            1267.5,
+            895.0000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/30/PageFooter/11",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              672.0,
+              931.0000000000001
+            ],
+            [
+              760.5,
+              931.0000000000001
+            ],
+            [
+              760.5,
+              951.0
+            ],
+            [
+              672.0,
+              951.0
+            ]
+          ],
+          "bbox": [
+            672.0,
+            931.0000000000001,
+            760.5,
+            951.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/29/SectionHeader/8",
+        "3": "/page/30/SectionHeader/8"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/31/Page/11",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/31/PageHeader/0'></content-ref><content-ref src='/page/31/Text/1'></content-ref><content-ref src='/page/31/Text/2'></content-ref><content-ref src='/page/31/SectionHeader/3'></content-ref><content-ref src='/page/31/Text/4'></content-ref><content-ref src='/page/31/Text/5'></content-ref><content-ref src='/page/31/SectionHeader/6'></content-ref><content-ref src='/page/31/Text/7'></content-ref><content-ref src='/page/31/Text/8'></content-ref><content-ref src='/page/31/ListGroup/9'></content-ref><content-ref src='/page/31/ListGroup/10'></content-ref><content-ref src='/page/31/PageFooter/11'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/31/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1191.0,
+              127.125
+            ],
+            [
+              1299.0,
+              127.125
+            ],
+            [
+              1299.0,
+              154.12500000000003
+            ],
+            [
+              1191.0,
+              154.12500000000003
+            ]
+          ],
+          "bbox": [
+            1191.0,
+            127.125,
+            1299.0,
+            154.12500000000003
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/1",
+          "block_type": "Text",
+          "html": "<p>Garnish with fresh parsley sprigs, red cabbage, cranberry sauce, poached halves of apples.<br/>Serve with rice, lentils.</p>",
+          "polygon": [
+            [
+              586.5,
+              187.87500000000003
+            ],
+            [
+              1371.0,
+              187.87500000000003
+            ],
+            [
+              1371.0,
+              292.5
+            ],
+            [
+              586.5,
+              292.5
+            ]
+          ],
+          "bbox": [
+            586.5,
+            187.87500000000003,
+            1371.0,
+            292.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/2",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour</b></p>",
+          "polygon": [
+            [
+              588.0,
+              295.875
+            ],
+            [
+              936.0,
+              295.875
+            ],
+            [
+              936.0,
+              338.625
+            ],
+            [
+              588.0,
+              338.625
+            ]
+          ],
+          "bbox": [
+            588.0,
+            295.875,
+            936.0,
+            338.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/30/SectionHeader/8"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/SectionHeader/3",
+          "block_type": "SectionHeader",
+          "html": "<h3><b>Baked carp - Kapr pečený</b></h3>",
+          "polygon": [
+            [
+              592.5,
+              348.75
+            ],
+            [
+              952.5,
+              348.75
+            ],
+            [
+              952.5,
+              398.25
+            ],
+            [
+              592.5,
+              398.25
+            ]
+          ],
+          "bbox": [
+            592.5,
+            348.75,
+            952.5,
+            398.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/4",
+          "block_type": "Text",
+          "html": "<p>Arrange carp steaks in a single layer in a well oiled baking pan.<br/>Season with caraway seeds, salt and pepper. Bake at <b>350F 25-30</b><br/>minutes, or until fish flakes easily when tested with a fork.<br/>In a saucepan heat butter until lightly browned. Pour over fish.<br/>Garnish with lemon wedges.<br/>Serve with potatoes, vegetables, salad.</p>",
+          "polygon": [
+            [
+              588.0,
+              400.5
+            ],
+            [
+              1336.5,
+              400.5
+            ],
+            [
+              1336.5,
+              588.375
+            ],
+            [
+              588.0,
+              588.375
+            ]
+          ],
+          "bbox": [
+            588.0,
+            400.5,
+            1336.5,
+            588.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/5",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 40 minutes</b></p>",
+          "polygon": [
+            [
+              592.5,
+              592.875
+            ],
+            [
+              981.0,
+              592.875
+            ],
+            [
+              981.0,
+              628.8750000000001
+            ],
+            [
+              592.5,
+              628.8750000000001
+            ]
+          ],
+          "bbox": [
+            592.5,
+            592.875,
+            981.0,
+            628.8750000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/SectionHeader/6",
+          "block_type": "SectionHeader",
+          "html": "<h3><b>Fried carp - Kapr smažený</b></h3>",
+          "polygon": [
+            [
+              592.5,
+              645.7499999999999
+            ],
+            [
+              957.0,
+              645.7499999999999
+            ],
+            [
+              957.0,
+              687.375
+            ],
+            [
+              592.5,
+              687.375
+            ]
+          ],
+          "bbox": [
+            592.5,
+            645.7499999999999,
+            957.0,
+            687.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/7",
+          "block_type": "Text",
+          "html": "<p>Soak fish 30 minutes in lightly salted milk. Dredge each piece in flour,<br/>dip in beaten eggs, coat with bread crumbs. Fry in hot oil until golden,<br/>about 4 minutes each side. Drain on paper towel.<br/>Serve on lettuce lined platter, garnish with lemon wedges and parsley<br/>sprigs.<br/>Serve with potato salad, green salad, vegetables.</p>",
+          "polygon": [
+            [
+              588.0,
+              698.625
+            ],
+            [
+              1360.5,
+              698.625
+            ],
+            [
+              1360.5,
+              880.875
+            ],
+            [
+              588.0,
+              880.875
+            ]
+          ],
+          "bbox": [
+            588.0,
+            698.625,
+            1360.5,
+            880.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/Text/8",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour</b></p>",
+          "polygon": [
+            [
+              592.5,
+              893.25
+            ],
+            [
+              939.0,
+              893.25
+            ],
+            [
+              939.0,
+              920.25
+            ],
+            [
+              592.5,
+              920.25
+            ]
+          ],
+          "bbox": [
+            592.5,
+            893.25,
+            939.0,
+            920.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/31/ListGroup/9",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 carp steaks, 3-4 lbs.</li>\n<li>• 1/2 cup vegetable oil</li>\n<li>• 6 tablespoons butter</li>\n<li>• 2 teaspoons caraway seeds</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              133.5,
+              385.875
+            ],
+            [
+              445.5,
+              385.875
+            ],
+            [
+              445.5,
+              519.75
+            ],
+            [
+              133.5,
+              519.75
+            ]
+          ],
+          "bbox": [
+            133.5,
+            385.875,
+            445.5,
+            519.75
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/31/ListGroup/10",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 carp steaks, 3-4 lbs.</li>\n<li>• 2 cups milk</li>\n<li>• 3/4 cup flour</li>\n<li>• 2 eggs</li>\n<li>• 1 cup bread crumbs</li>\n<li>• 1 cup vegetable oil for frying</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              136.5,
+              696.375
+            ],
+            [
+              459.0,
+              696.375
+            ],
+            [
+              459.0,
+              876.375
+            ],
+            [
+              136.5,
+              876.375
+            ]
+          ],
+          "bbox": [
+            136.5,
+            696.375,
+            459.0,
+            876.375
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/31/PageFooter/11",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              730.5,
+              1049.625
+            ],
+            [
+              820.5,
+              1049.625
+            ],
+            [
+              820.5,
+              1071.0
+            ],
+            [
+              730.5,
+              1071.0
+            ]
+          ],
+          "bbox": [
+            730.5,
+            1049.625,
+            820.5,
+            1071.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/29/SectionHeader/8",
+        "3": "/page/31/SectionHeader/6"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/32/Page/16",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/32/PageHeader/0'></content-ref><content-ref src='/page/32/SectionHeader/1'></content-ref><content-ref src='/page/32/ListGroup/2'></content-ref><content-ref src='/page/32/Text/3'></content-ref><content-ref src='/page/32/Text/4'></content-ref><content-ref src='/page/32/Text/5'></content-ref><content-ref src='/page/32/Text/6'></content-ref><content-ref src='/page/32/Text/7'></content-ref><content-ref src='/page/32/Text/8'></content-ref><content-ref src='/page/32/SectionHeader/9'></content-ref><content-ref src='/page/32/ListGroup/10'></content-ref><content-ref src='/page/32/Text/11'></content-ref><content-ref src='/page/32/Text/12'></content-ref><content-ref src='/page/32/Text/13'></content-ref><content-ref src='/page/32/Text/14'></content-ref><content-ref src='/page/32/Text/15'></content-ref><content-ref src='/page/32/PageFooter/16'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/32/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              166.5,
+              75.375
+            ],
+            [
+              286.5,
+              75.375
+            ],
+            [
+              286.5,
+              105.75
+            ],
+            [
+              166.5,
+              105.75
+            ]
+          ],
+          "bbox": [
+            166.5,
+            75.375,
+            286.5,
+            105.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/31/SectionHeader/6"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h3>Carp with paprika sauce - Kapr na paprice</h3>",
+          "polygon": [
+            [
+              457.5,
+              192.375
+            ],
+            [
+              1050.0,
+              192.375
+            ],
+            [
+              1050.0,
+              254.25
+            ],
+            [
+              457.5,
+              254.25
+            ]
+          ],
+          "bbox": [
+            457.5,
+            192.375,
+            1050.0,
+            254.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 carp steaks, 3-4 lbs.</li>\n<li>• 1-1/2 cups water or fish broth</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• parsley, finely chopped</li>\n<li>• 2 tablespoons paprika</li>\n<li>• salt</li>\n<li>• 3 tablespoons butter and 4 tablespoons flour for the roux</li>\n</ul>\n<p><i>Optional: 1/2 cup heavy cream</i></p>",
+          "polygon": [
+            [
+              123.0,
+              228.375
+            ],
+            [
+              546.0,
+              228.375
+            ],
+            [
+              546.0,
+              492.75
+            ],
+            [
+              123.0,
+              492.75
+            ]
+          ],
+          "bbox": [
+            123.0,
+            228.375,
+            546.0,
+            492.75
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/32/Text/3",
+          "block_type": "Text",
+          "html": "<p>Melt butter in a large saucepot, add onion and cook until translucent. Add parsley and paprika, simmer 3 minutes. Add the fish and some of the fish broth or water.</p>",
+          "polygon": [
+            [
+              571.5,
+              246.375
+            ],
+            [
+              1359.0,
+              246.375
+            ],
+            [
+              1359.0,
+              355.5
+            ],
+            [
+              571.5,
+              355.5
+            ]
+          ],
+          "bbox": [
+            571.5,
+            246.375,
+            1359.0,
+            355.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/4",
+          "block_type": "Text",
+          "html": "<p>Cover and simmer 15-20 minutes.</p>",
+          "polygon": [
+            [
+              571.5,
+              336.375
+            ],
+            [
+              969.0,
+              336.375
+            ],
+            [
+              969.0,
+              378.00000000000006
+            ],
+            [
+              571.5,
+              378.00000000000006
+            ]
+          ],
+          "bbox": [
+            571.5,
+            336.375,
+            969.0,
+            378.00000000000006
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/5",
+          "block_type": "Text",
+          "html": "<p>Using a slotted spatula, lift the carp portions onto a heated platter. For sauce, melt butter in a skillet and stir in flour. Cook and stir until golden.</p>",
+          "polygon": [
+            [
+              571.5,
+              365.625
+            ],
+            [
+              1353.0,
+              365.625
+            ],
+            [
+              1353.0,
+              453.375
+            ],
+            [
+              571.5,
+              453.375
+            ]
+          ],
+          "bbox": [
+            571.5,
+            365.625,
+            1353.0,
+            453.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/6",
+          "block_type": "Text",
+          "html": "<p>Add cooking liquid from the carp and some of the fish broth if needed. Cook until sauce thickens. Optional: for a creamier sauce blend in heavy cream. Season to taste with salt and pepper. Strain over fish. Serve with mashed potatoes, rice, tomato salad.</p>",
+          "polygon": [
+            [
+              571.5,
+              451.125
+            ],
+            [
+              1353.0,
+              451.125
+            ],
+            [
+              1353.0,
+              580.5
+            ],
+            [
+              571.5,
+              580.5
+            ]
+          ],
+          "bbox": [
+            571.5,
+            451.125,
+            1353.0,
+            580.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/7",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 45 minutes</b></p>",
+          "polygon": [
+            [
+              571.5,
+              579.375
+            ],
+            [
+              961.5,
+              579.375
+            ],
+            [
+              961.5,
+              613.1250000000001
+            ],
+            [
+              571.5,
+              613.1250000000001
+            ]
+          ],
+          "bbox": [
+            571.5,
+            579.375,
+            961.5,
+            613.1250000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/8",
+          "block_type": "Text",
+          "html": "<p>⇔ <i>Perch, Pike, or Trout with paprika sauce</i> – Candát, Štika, Pstruh na paprice. – same as Carp with paprika sauce –</p>",
+          "polygon": [
+            [
+              571.5,
+              616.5000000000001
+            ],
+            [
+              1350.0,
+              616.5000000000001
+            ],
+            [
+              1350.0,
+              671.625
+            ],
+            [
+              571.5,
+              671.625
+            ]
+          ],
+          "bbox": [
+            571.5,
+            616.5000000000001,
+            1350.0,
+            671.625
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/SectionHeader/9",
+          "block_type": "SectionHeader",
+          "html": "<h3>Baked pike with sour cream - Štika pečená se smetanou</h3>",
+          "polygon": [
+            [
+              360.0,
+              680.625
+            ],
+            [
+              1135.5,
+              680.625
+            ],
+            [
+              1135.5,
+              727.875
+            ],
+            [
+              360.0,
+              727.875
+            ]
+          ],
+          "bbox": [
+            360.0,
+            680.625,
+            1135.5,
+            727.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/ListGroup/10",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 pike, 4 lbs., cleaned, with head and tail left on</li>\n<li>• 2 bacon slices cut in thin strips</li>\n<li>• 6 tablespoons butter</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• 4 medium potatoes, parboiled, sliced</li>\n<li>• juice of 1 lemon</li>\n<li>• 2 teaspoons paprika</li>\n<li>• salt</li>\n<li>• 1 pint sour cream</li>\n</ul>",
+          "polygon": [
+            [
+              126.0,
+              727.875
+            ],
+            [
+              528.0,
+              727.875
+            ],
+            [
+              528.0,
+              978.75
+            ],
+            [
+              126.0,
+              978.75
+            ]
+          ],
+          "bbox": [
+            126.0,
+            727.875,
+            528.0,
+            978.75
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/32/Text/11",
+          "block_type": "Text",
+          "html": "<p>Sauté onion in butter.</p>",
+          "polygon": [
+            [
+              571.5,
+              730.125
+            ],
+            [
+              831.0,
+              730.125
+            ],
+            [
+              831.0,
+              761.6250000000001
+            ],
+            [
+              571.5,
+              761.6250000000001
+            ]
+          ],
+          "bbox": [
+            571.5,
+            730.125,
+            831.0,
+            761.6250000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/12",
+          "block_type": "Text",
+          "html": "<p>Meanwhile, sprinkle pike with salt, paprika and lemon juice. Lard with strips of bacon. Lay fish in a lightly greased baking pan. Arrange potato slices on sides of fish and up, towards the edge of the pan. Sprinkle some salt over potatoes.</p>",
+          "polygon": [
+            [
+              571.5,
+              760.5000000000001
+            ],
+            [
+              1348.5,
+              760.5000000000001
+            ],
+            [
+              1348.5,
+              877.5
+            ],
+            [
+              571.5,
+              877.5
+            ]
+          ],
+          "bbox": [
+            571.5,
+            760.5000000000001,
+            1348.5,
+            877.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/13",
+          "block_type": "Text",
+          "html": "<p>Pour the butter onion mixture over fish. Top with sour cream. Bake at 350F, 30-40 minutes.</p>",
+          "polygon": [
+            [
+              571.5,
+              875.25
+            ],
+            [
+              1339.5,
+              875.25
+            ],
+            [
+              1339.5,
+              933.75
+            ],
+            [
+              571.5,
+              933.75
+            ]
+          ],
+          "bbox": [
+            571.5,
+            875.25,
+            1339.5,
+            933.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/14",
+          "block_type": "Text",
+          "html": "<p>Serve with tomato salad, vegetables.</p>",
+          "polygon": [
+            [
+              571.5,
+              931.5
+            ],
+            [
+              991.5,
+              931.5
+            ],
+            [
+              991.5,
+              964.125
+            ],
+            [
+              571.5,
+              964.125
+            ]
+          ],
+          "bbox": [
+            571.5,
+            931.5,
+            991.5,
+            964.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/Text/15",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour</b></p>",
+          "polygon": [
+            [
+              571.5,
+              973.125
+            ],
+            [
+              915.0,
+              973.125
+            ],
+            [
+              915.0,
+              1000.125
+            ],
+            [
+              571.5,
+              1000.125
+            ]
+          ],
+          "bbox": [
+            571.5,
+            973.125,
+            915.0,
+            1000.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/32/PageFooter/16",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              706.5,
+              1045.125
+            ],
+            [
+              795.0,
+              1045.125
+            ],
+            [
+              795.0,
+              1066.5
+            ],
+            [
+              706.5,
+              1066.5
+            ]
+          ],
+          "bbox": [
+            706.5,
+            1045.125,
+            795.0,
+            1066.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/29/SectionHeader/8",
+        "3": "/page/32/SectionHeader/9"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/33/Page/7",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/33/PageHeader/0'></content-ref><content-ref src='/page/33/SectionHeader/1'></content-ref><content-ref src='/page/33/ListGroup/2'></content-ref><content-ref src='/page/33/SectionHeader/3'></content-ref><content-ref src='/page/33/ListGroup/4'></content-ref><content-ref src='/page/33/Text/5'></content-ref><content-ref src='/page/33/Text/6'></content-ref><content-ref src='/page/33/PageFooter/7'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1000.0
+        ],
+        [
+          0.0,
+          1000.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1000.0
+      ],
+      "children": [
+        {
+          "id": "/page/33/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1156.5,
+              58.00000000000001
+            ],
+            [
+              1279.5,
+              58.00000000000001
+            ],
+            [
+              1279.5,
+              81.00000000000001
+            ],
+            [
+              1156.5,
+              81.00000000000001
+            ]
+          ],
+          "bbox": [
+            1156.5,
+            58.00000000000001,
+            1279.5,
+            81.00000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/29/SectionHeader/8",
+            "3": "/page/32/SectionHeader/9"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/33/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Salmon trout with dill sauce - Pstruh s koprovou omáčkou</h2>",
+          "polygon": [
+            [
+              322.5,
+              150.0
+            ],
+            [
+              1126.5,
+              150.0
+            ],
+            [
+              1126.5,
+              185.0
+            ],
+            [
+              322.5,
+              185.0
+            ]
+          ],
+          "bbox": [
+            322.5,
+            150.0,
+            1126.5,
+            185.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/33/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 trouts, 4 lbs., cleaned, with heads and tails left on</li>\n<li>• 1/2 bottle white wine</li>\n<li>• 1.1/2 quarts water</li>\n<li>• 1 medium onion, quartered</li>\n<li>• juice of one lemon</li>\n<li>• 10 black peppercorns</li>\n<li>• 2 bay leaves</li>\n<li>• 6 tablespoons butter</li>\n<li>• parsley, finely chopped</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              111.0,
+              204.0
+            ],
+            [
+              514.5,
+              204.0
+            ],
+            [
+              514.5,
+              454.0
+            ],
+            [
+              111.0,
+              454.0
+            ]
+          ],
+          "bbox": [
+            111.0,
+            204.0,
+            514.5,
+            454.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/33/SectionHeader/3",
+          "block_type": "SectionHeader",
+          "html": "<h3>Sauce:</h3>",
+          "polygon": [
+            [
+              115.5,
+              475.00000000000006
+            ],
+            [
+              205.5,
+              475.00000000000006
+            ],
+            [
+              205.5,
+              500.0
+            ],
+            [
+              115.5,
+              500.0
+            ]
+          ],
+          "bbox": [
+            115.5,
+            475.00000000000006,
+            205.5,
+            500.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/33/ListGroup/4",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 3 tablespoons butter and 4 tablespoons flour</li>\n<li>• 2 tablespoons finely chopped dill</li>\n<li>• 1 small onion, finely chopped</li>\n<li>• parsley, finely chopped</li>\n<li>• 2 cups fish broth</li>\n<li>• 1 tablespoon vinegar</li>\n<li>• 1 teaspoon sugar</li>\n<li>• 1/2 cup heavy cream</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              115.5,
+              500.0
+            ],
+            [
+              519.0,
+              500.0
+            ],
+            [
+              519.0,
+              727.0
+            ],
+            [
+              115.5,
+              727.0
+            ]
+          ],
+          "bbox": [
+            115.5,
+            500.0,
+            519.0,
+            727.0
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/33/Text/5",
+          "block_type": "Text",
+          "html": "<p>Heat the wine, water, onion, lemon juice, bay leaves and peppercorns. Simmer 10 minutes. Add the trouts and simmer gently for 15 minutes, without boiling.</p>\n<p>Drain fish, arrange on a heated serving platter, keep it warm. Strain the broth from the fish, reserve 2 cups for dill sauce. Meanwhile, prepare the sauce. Melt butter in a saucepan, blend in flour, stir and cook until golden. Add onion, parsley, fish broth, vinegar, sugar, salt. Cook, uncovered, until sauce thickens. Strain. Blend in the cream and chopped dill. Heat through, do not boil. Pour hot butter over trouts, garnish with parsley. Hand sauce separately.</p>",
+          "polygon": [
+            [
+              543.0,
+              201.0
+            ],
+            [
+              1339.5,
+              201.0
+            ],
+            [
+              1339.5,
+              495.99999999999994
+            ],
+            [
+              543.0,
+              495.99999999999994
+            ]
+          ],
+          "bbox": [
+            543.0,
+            201.0,
+            1339.5,
+            495.99999999999994
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/33/Text/6",
+          "block_type": "Text",
+          "html": "<p>Serves 6 – Preparation time: 45 minutes</p>",
+          "polygon": [
+            [
+              543.0,
+              697.0
+            ],
+            [
+              937.5,
+              697.0
+            ],
+            [
+              937.5,
+              722.0
+            ],
+            [
+              543.0,
+              722.0
+            ]
+          ],
+          "bbox": [
+            543.0,
+            697.0,
+            937.5,
+            722.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/33/PageFooter/7",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              682.5,
+              931.0000000000001
+            ],
+            [
+              775.5,
+              931.0000000000001
+            ],
+            [
+              775.5,
+              951.0
+            ],
+            [
+              682.5,
+              951.0
+            ]
+          ],
+          "bbox": [
+            682.5,
+            931.0000000000001,
+            775.5,
+            951.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/33/SectionHeader/1",
+        "3": "/page/33/SectionHeader/3"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/34/Page/7",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/34/PageHeader/0'></content-ref><content-ref src='/page/34/SectionHeader/1'></content-ref><content-ref src='/page/34/SectionHeader/2'></content-ref><content-ref src='/page/34/Text/3'></content-ref><content-ref src='/page/34/Text/4'></content-ref><content-ref src='/page/34/SectionHeader/5'></content-ref><content-ref src='/page/34/Text/6'></content-ref><content-ref src='/page/34/PageFooter/7'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/34/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              165.0,
+              72.0
+            ],
+            [
+              286.5,
+              72.0
+            ],
+            [
+              286.5,
+              102.375
+            ],
+            [
+              165.0,
+              102.375
+            ]
+          ],
+          "bbox": [
+            165.0,
+            72.0,
+            286.5,
+            102.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "SECOND",
+          "polygon": [
+            [
+              541.5,
+              438.75
+            ],
+            [
+              963.0,
+              438.75
+            ],
+            [
+              963.0,
+              501.75
+            ],
+            [
+              541.5,
+              501.75
+            ]
+          ],
+          "bbox": [
+            541.5,
+            438.75,
+            963.0,
+            501.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/SectionHeader/2",
+          "block_type": "SectionHeader",
+          "html": "<b>Miscellaneous</b>",
+          "polygon": [
+            [
+              127.5,
+              613.1250000000001
+            ],
+            [
+              330.0,
+              613.1250000000001
+            ],
+            [
+              330.0,
+              645.7499999999999
+            ],
+            [
+              127.5,
+              645.7499999999999
+            ]
+          ],
+          "bbox": [
+            127.5,
+            613.1250000000001,
+            330.0,
+            645.7499999999999
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/Text/3",
+          "block_type": "Text",
+          "html": "<p>Ham and noodles casserole - Šunkové nudle.<br/>\n  Stuffed peppers - Plněné papriky.<br/>\n  Stuffed cabbage rolls - Plněná kapusta.<br/>\n  Green cabbage - Hlávkové zelí.<br/>\n  Red cabbage - Červené zelí.<br/>\n  Sauerkraut - Kyselé zelí.</p>",
+          "polygon": [
+            [
+              127.5,
+              643.4999999999999
+            ],
+            [
+              522.0,
+              643.4999999999999
+            ],
+            [
+              522.0,
+              822.375
+            ],
+            [
+              127.5,
+              822.375
+            ]
+          ],
+          "bbox": [
+            127.5,
+            643.4999999999999,
+            522.0,
+            822.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/Text/4",
+          "block_type": "Text",
+          "html": "<p>Mashed potatoes - Bramborová kaše.<br/>\n  Gnocchi - Krupicové noky.<br/>\n  Country gnocchi - Škubánky.<br/>\n  Dumplings with croutons - Houskové knedliky.<br/>\n  Yeast dumplings - Kynuté knedliky.<br/>\n  Potato dumplings - Bramborové knedliky.<br/>\n  Potato salad - Bramborový salát.</p>",
+          "polygon": [
+            [
+              558.0,
+              625.5000000000001
+            ],
+            [
+              945.0,
+              625.5000000000001
+            ],
+            [
+              945.0,
+              825.75
+            ],
+            [
+              558.0,
+              825.75
+            ]
+          ],
+          "bbox": [
+            558.0,
+            625.5000000000001,
+            945.0,
+            825.75
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/SectionHeader/5",
+          "block_type": "SectionHeader",
+          "html": "<b>Soups - Polévky:</b>",
+          "polygon": [
+            [
+              957.0,
+              627.7500000000001
+            ],
+            [
+              1173.0,
+              627.7500000000001
+            ],
+            [
+              1173.0,
+              661.5
+            ],
+            [
+              957.0,
+              661.5
+            ]
+          ],
+          "bbox": [
+            957.0,
+            627.7500000000001,
+            1173.0,
+            661.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/Text/6",
+          "block_type": "Text",
+          "html": "<p>Goulash soup - Gulášová polévka.<br/>\n  Cream of chicken soup - Krém z kuřat.<br/>\n  Tripe soup - Drštková polévka.<br/>\n  Country potato soup - Bramborová polévka.<br/>\n  Milk soup - Mléčná polévka.<br/>\n  Wine soup - Vinná polévka.<br/>\n  Beer soup - Pivní polévka.</p>",
+          "polygon": [
+            [
+              957.0,
+              658.125
+            ],
+            [
+              1341.0,
+              658.125
+            ],
+            [
+              1341.0,
+              829.125
+            ],
+            [
+              957.0,
+              829.125
+            ]
+          ],
+          "bbox": [
+            957.0,
+            658.125,
+            1341.0,
+            829.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/34/PageFooter/7",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              705.0,
+              1049.625
+            ],
+            [
+              795.0,
+              1049.625
+            ],
+            [
+              795.0,
+              1071.0
+            ],
+            [
+              705.0,
+              1071.0
+            ]
+          ],
+          "bbox": [
+            705.0,
+            1049.625,
+            795.0,
+            1071.0
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/33/SectionHeader/1",
+        "3": "/page/33/SectionHeader/3"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/35/Page/11",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/35/PageHeader/0'></content-ref><content-ref src='/page/35/SectionHeader/1'></content-ref><content-ref src='/page/35/ListGroup/2'></content-ref><content-ref src='/page/35/Text/3'></content-ref><content-ref src='/page/35/Text/4'></content-ref><content-ref src='/page/35/SectionHeader/5'></content-ref><content-ref src='/page/35/ListGroup/6'></content-ref><content-ref src='/page/35/Text/7'></content-ref><content-ref src='/page/35/Text/8'></content-ref><content-ref src='/page/35/Text/9'></content-ref><content-ref src='/page/35/Text/10'></content-ref><content-ref src='/page/35/PageFooter/11'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1125.0
+        ],
+        [
+          0.0,
+          1125.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1125.0
+      ],
+      "children": [
+        {
+          "id": "/page/35/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              1186.5,
+              129.375
+            ],
+            [
+              1299.0,
+              129.375
+            ],
+            [
+              1299.0,
+              156.37500000000003
+            ],
+            [
+              1186.5,
+              156.37500000000003
+            ]
+          ],
+          "bbox": [
+            1186.5,
+            129.375,
+            1299.0,
+            156.37500000000003
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/33/SectionHeader/1",
+            "3": "/page/33/SectionHeader/3"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h2>Ham and noodles casserole - Šunkové nudle</h2>",
+          "polygon": [
+            [
+              442.5,
+              194.625
+            ],
+            [
+              1066.5,
+              194.625
+            ],
+            [
+              1066.5,
+              255.375
+            ],
+            [
+              442.5,
+              255.375
+            ]
+          ],
+          "bbox": [
+            442.5,
+            194.625,
+            1066.5,
+            255.375
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 12 oz. egg noodles</li>\n<li>• 8 oz. fully cooked ham slices, cut into short strips</li>\n<li>• 3 eggs, separated</li>\n<li>• 4 tablespoons butter</li>\n<li>• grated rind of 1 lemon</li>\n<li>• salt</li>\n<li>• 1 tablespoon butter</li>\n<li>• 2 tablespoons bread crumbs.</li>\n<li>• 2/3 cup heavy cream</li>\n</ul>",
+          "polygon": [
+            [
+              124.5,
+              239.625
+            ],
+            [
+              529.5,
+              239.625
+            ],
+            [
+              529.5,
+              497.25
+            ],
+            [
+              124.5,
+              497.25
+            ]
+          ],
+          "bbox": [
+            124.5,
+            239.625,
+            529.5,
+            497.25
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/35/Text/3",
+          "block_type": "Text",
+          "html": "<p>Cook noodles in lightly salted water, drain and splash with cold water. In a bowl cream butter, egg yolks, lemon rind. Combine mixture with noodles and ham. Blend thoroughly. Fold in 3 stiffly beaten egg whites. Put into buttered and bread crumbs coated casserole. Pour the cream evenly over top and bake uncovered at 350F 35-40 minutes or until golden brown on top. Serve straight from oven, with green salad or tomato salad.</p>",
+          "polygon": [
+            [
+              573.0,
+              255.375
+            ],
+            [
+              1357.5,
+              255.375
+            ],
+            [
+              1357.5,
+              478.125
+            ],
+            [
+              573.0,
+              478.125
+            ]
+          ],
+          "bbox": [
+            573.0,
+            255.375,
+            1357.5,
+            478.125
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/Text/4",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour 15 minutes</b></p>",
+          "polygon": [
+            [
+              573.0,
+              474.75
+            ],
+            [
+              1032.0,
+              474.75
+            ],
+            [
+              1032.0,
+              511.875
+            ],
+            [
+              573.0,
+              511.875
+            ]
+          ],
+          "bbox": [
+            573.0,
+            474.75,
+            1032.0,
+            511.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/SectionHeader/5",
+          "block_type": "SectionHeader",
+          "html": "<h2>Stuffed peppers - Plněné papriky</h2>",
+          "polygon": [
+            [
+              526.5,
+              524.25
+            ],
+            [
+              984.0,
+              524.25
+            ],
+            [
+              984.0,
+              569.25
+            ],
+            [
+              526.5,
+              569.25
+            ]
+          ],
+          "bbox": [
+            526.5,
+            524.25,
+            984.0,
+            569.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/ListGroup/6",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 6 medium size green peppers</li>\n<li>• 3 tablespoons vegetable oil</li>\n<li>• 1 small onion, finely chopped</li>\n<li>• 1 lb. finely ground pork or beef</li>\n<li>• 1 egg, whole</li>\n<li>• 1/2 cup firmly cooked rice</li>\n<li>• 2 tablespoons butter</li>\n<li>• 2 cups tomato sauce</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              127.5,
+              572.625
+            ],
+            [
+              466.5,
+              572.625
+            ],
+            [
+              466.5,
+              796.5
+            ],
+            [
+              127.5,
+              796.5
+            ]
+          ],
+          "bbox": [
+            127.5,
+            572.625,
+            466.5,
+            796.5
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/35/Text/7",
+          "block_type": "Text",
+          "html": "<p>Slice stem ends from peppers, remove white fiber and seeds. Drop into boiling salted water, simmer 1 minute. Drain on a sieve or paper towel. Pat dry cavities.</p>",
+          "polygon": [
+            [
+              573.0,
+              578.25
+            ],
+            [
+              1350.0,
+              578.25
+            ],
+            [
+              1350.0,
+              670.5
+            ],
+            [
+              573.0,
+              670.5
+            ]
+          ],
+          "bbox": [
+            573.0,
+            578.25,
+            1350.0,
+            670.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/Text/8",
+          "block_type": "Text",
+          "html": "<p>Meanwhile, heat oil in a skillet, add onion and ground meat, sauté 10 minutes, mixing often. Blend in the egg, rice and salt. Spoon mixture into peppers, pressing firmly towards bottom and sides.</p>",
+          "polygon": [
+            [
+              573.0,
+              664.875
+            ],
+            [
+              1350.0,
+              664.875
+            ],
+            [
+              1350.0,
+              760.5000000000001
+            ],
+            [
+              573.0,
+              760.5000000000001
+            ]
+          ],
+          "bbox": [
+            573.0,
+            664.875,
+            1350.0,
+            760.5000000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/Text/9",
+          "block_type": "Text",
+          "html": "<p>Arrange stuffed peppers in a flameproof buttered casserole, pour tomato sauce over all. Simmer, covered, 30-35 minutes. Serve with noodles or gnocchi.</p>",
+          "polygon": [
+            [
+              573.0,
+              752.6250000000001
+            ],
+            [
+              1320.0,
+              752.6250000000001
+            ],
+            [
+              1320.0,
+              839.25
+            ],
+            [
+              573.0,
+              839.25
+            ]
+          ],
+          "bbox": [
+            573.0,
+            752.6250000000001,
+            1320.0,
+            839.25
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/Text/10",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour 15 minutes</b></p>",
+          "polygon": [
+            [
+              570.0,
+              853.875
+            ],
+            [
+              1027.5,
+              853.875
+            ],
+            [
+              1027.5,
+              880.875
+            ],
+            [
+              570.0,
+              880.875
+            ]
+          ],
+          "bbox": [
+            570.0,
+            853.875,
+            1027.5,
+            880.875
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/35/PageFooter/11",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              706.5,
+              1045.125
+            ],
+            [
+              795.0,
+              1045.125
+            ],
+            [
+              795.0,
+              1066.5
+            ],
+            [
+              706.5,
+              1066.5
+            ]
+          ],
+          "bbox": [
+            706.5,
+            1045.125,
+            795.0,
+            1066.5
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/35/SectionHeader/5"
+      },
+      "images": null
+    },
+    {
+      "id": "/page/36/Page/9",
+      "block_type": "Page",
+      "html": "<content-ref src='/page/36/PageHeader/0'></content-ref><content-ref src='/page/36/SectionHeader/1'></content-ref><content-ref src='/page/36/ListGroup/2'></content-ref><content-ref src='/page/36/Text/3'></content-ref><content-ref src='/page/36/Text/4'></content-ref><content-ref src='/page/36/SectionHeader/5'></content-ref><content-ref src='/page/36/ListGroup/6'></content-ref><content-ref src='/page/36/Text/7'></content-ref><content-ref src='/page/36/Text/8'></content-ref><content-ref src='/page/36/PageFooter/9'></content-ref>",
+      "polygon": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1500.0,
+          0.0
+        ],
+        [
+          1500.0,
+          1068.0
+        ],
+        [
+          0.0,
+          1068.0
+        ]
+      ],
+      "bbox": [
+        0.0,
+        0.0,
+        1500.0,
+        1068.0
+      ],
+      "children": [
+        {
+          "id": "/page/36/PageHeader/0",
+          "block_type": "PageHeader",
+          "html": "",
+          "polygon": [
+            [
+              153.0,
+              90.78
+            ],
+            [
+              262.5,
+              90.78
+            ],
+            [
+              262.5,
+              113.208
+            ],
+            [
+              153.0,
+              113.208
+            ]
+          ],
+          "bbox": [
+            153.0,
+            90.78,
+            262.5,
+            113.208
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/SectionHeader/1",
+          "block_type": "SectionHeader",
+          "html": "<h3>Stuffed cabbage rolls - Plněná kapusta</h3>",
+          "polygon": [
+            [
+              448.5,
+              181.56
+            ],
+            [
+              981.0,
+              181.56
+            ],
+            [
+              981.0,
+              215.73600000000002
+            ],
+            [
+              448.5,
+              215.73600000000002
+            ]
+          ],
+          "bbox": [
+            448.5,
+            181.56,
+            981.0,
+            215.73600000000002
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/ListGroup/2",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 savoy cabbage head</li>\n<li>• 1/2 lb. ground veal</li>\n<li>• 1/2 lb. ground pork</li>\n<li>• 1 cup chicken stock</li>\n<li>• 1 hard baked roll</li>\n<li>• 1/2 cup milk</li>\n<li>• 2 small onions, chopped</li>\n<li>• 2 cloves garlic, pressed or chopped</li>\n<li>• 1 egg, whole</li>\n<li>• 4 tablespoons butter</li>\n<li>• minced parsely</li>\n<li>• marjoram</li>\n<li>• salt and pepper</li>\n</ul>",
+          "polygon": [
+            [
+              115.5,
+              239.232
+            ],
+            [
+              474.0,
+              239.232
+            ],
+            [
+              474.0,
+              545.748
+            ],
+            [
+              115.5,
+              545.748
+            ]
+          ],
+          "bbox": [
+            115.5,
+            239.232,
+            474.0,
+            545.748
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/1"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/36/Text/3",
+          "block_type": "Text",
+          "html": "<p>Pull off 12 large leaves from the cabbage head. Parboil them in salted water, place each on a napkin and flatten it with rolling pin or hand. Soak roll in milk, squeeze off excess and shred it. In a mixing bowl combine ground meat, shredded roll, 1 chopped onion, minced parsely, marjoram, garlic, salt and pepper. Mix thoroughly and spread evenly on the cabbage leaves. Roll them tightly, fasten each with a string or wooden pick. In a large skillet sauté onion in butter, add the stuffed cabbage rolls, simmer 30-40 minutes, adding occasionally some of the chicken stock. Lift rolls onto a serving dish, sprinkle with juices from the pan, serve with rice or potatoes.</p>",
+          "polygon": [
+            [
+              534.0,
+              228.552
+            ],
+            [
+              1326.0,
+              228.552
+            ],
+            [
+              1326.0,
+              569.244
+            ],
+            [
+              534.0,
+              569.244
+            ]
+          ],
+          "bbox": [
+            534.0,
+            228.552,
+            1326.0,
+            569.244
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/Text/4",
+          "block_type": "Text",
+          "html": "<p><b>Serves 6 – Preparation time: 1 hour 15 minutes</b></p>",
+          "polygon": [
+            [
+              535.5,
+              584.1960000000001
+            ],
+            [
+              987.0,
+              584.1960000000001
+            ],
+            [
+              987.0,
+              608.76
+            ],
+            [
+              535.5,
+              608.76
+            ]
+          ],
+          "bbox": [
+            535.5,
+            584.1960000000001,
+            987.0,
+            608.76
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/1"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/SectionHeader/5",
+          "block_type": "SectionHeader",
+          "html": "<h3>Green cabbage - Hlávkové zelí</h3>",
+          "polygon": [
+            [
+              511.5,
+              644.004
+            ],
+            [
+              921.0,
+              644.004
+            ],
+            [
+              921.0,
+              677.1120000000001
+            ],
+            [
+              511.5,
+              677.1120000000001
+            ]
+          ],
+          "bbox": [
+            511.5,
+            644.004,
+            921.0,
+            677.1120000000001
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/ListGroup/6",
+          "block_type": "ListGroup",
+          "html": "<ul style=\"list-style-type: none;\">\n<li>• 1 head of cabbage, about 2 lbs.</li>\n<li>• 1 medium onion, finely chopped</li>\n<li>• 4 tablespoons vegetable oil</li>\n<li>• 3 tablespoons flour</li>\n<li>• caraway seeds</li>\n<li>• 1/3 cup vinegar</li>\n<li>• 2 tablespoons sugar</li>\n<li>• salt</li>\n</ul>",
+          "polygon": [
+            [
+              123.0,
+              698.472
+            ],
+            [
+              444.0,
+              698.472
+            ],
+            [
+              444.0,
+              883.2359999999999
+            ],
+            [
+              123.0,
+              883.2359999999999
+            ]
+          ],
+          "bbox": [
+            123.0,
+            698.472,
+            444.0,
+            883.2359999999999
+          ],
+          "children": [],
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/5"
+          },
+          "images": null
+        },
+        {
+          "id": "/page/36/Text/7",
+          "block_type": "Text",
+          "html": "<p>Discard outside leaves from the fresh head of cabbage. Quarter, core, rinse and cut in strips. Scald with boiling water. Drain. Sauté onion in oil until translucent. Add cabbage, salt and caraway seeds. Simmer, turning occasionally, until cabbage is tender but crisp, about 15-20 minutes. Blend in flour, simmer 2-3 minutes. Add vinegar and sugar, simmer 1-2 minutes until thoroughly heated through. Serve with pork roast, meatloaf, smoked pork.</p>",
+          "polygon": [
+            [
+              535.5,
+              694.2
+            ],
+            [
+              1323.0,
+              694.2
+            ],
+            [
+              1323.0,
+              922.752
+            ],
+            [
+              535.5,
+              922.752
+            ]
+          ],
+          "bbox": [
+            535.5,
+            694.2,
+            1323.0,
+            922.752
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/Text/8",
+          "block_type": "Text",
+          "html": "",
+          "polygon": [
+            [
+              535.5,
+              934.5
+            ],
+            [
+              919.5,
+              934.5
+            ],
+            [
+              919.5,
+              960.132
+            ],
+            [
+              535.5,
+              960.132
+            ]
+          ],
+          "bbox": [
+            535.5,
+            934.5,
+            919.5,
+            960.132
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/5"
+          },
+          "images": {}
+        },
+        {
+          "id": "/page/36/PageFooter/9",
+          "block_type": "PageFooter",
+          "html": "",
+          "polygon": [
+            [
+              667.5,
+              998.58
+            ],
+            [
+              756.0,
+              998.58
+            ],
+            [
+              756.0,
+              1018.8719999999998
+            ],
+            [
+              667.5,
+              1018.8719999999998
+            ]
+          ],
+          "bbox": [
+            667.5,
+            998.58,
+            756.0,
+            1018.8719999999998
+          ],
+          "children": null,
+          "section_hierarchy": {
+            "2": "/page/35/SectionHeader/5",
+            "3": "/page/36/SectionHeader/5"
+          },
+          "images": {}
+        }
+      ],
+      "section_hierarchy": {
+        "2": "/page/35/SectionHeader/5",
+        "3": "/page/36/SectionHeader/5"
+      },
+      "images": null
+    }
+  ],
+  "block_type": "Document"
+}

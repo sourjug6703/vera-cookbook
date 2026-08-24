@@ -1,0 +1,351 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0056
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 38
+  printed_pages:
+  - '37'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0056-title
+  pdf_page: 38
+  printed_page: '37'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1122
+    - 919
+  - - 1815
+    - 919
+  - - 1815
+    - 1024
+  - - 1122
+    - 1024
+  candidate_block_ids:
+  - /page/37/SectionHeader/5
+  region_image: evidence/production-batch-008/regions/vera-r0056/p38-title.png
+  region_image_pixel_sha256: 79b5d022c6973081f6fa567289e72da38fb4d39663855c6ebbdc7e686df65422
+- region_id: vera-r0056-ingredients
+  pdf_page: 38
+  printed_page: '37'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 222
+    - 1002
+  - - 1058
+    - 1002
+  - - 1058
+    - 1428
+  - - 222
+    - 1428
+  candidate_block_ids:
+  - manual-bbox:120,510,520,705
+  region_image: evidence/production-batch-008/regions/vera-r0056/p38-ingredients.png
+  region_image_pixel_sha256: 4c089ca7d1d3ccf49bae43b67f8da06be326b2f685315c4af7ad3bdc26e14193
+- region_id: vera-r0056-step-1
+  pdf_page: 38
+  printed_page: '37'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1086
+    - 1016
+  - - 2679
+    - 1016
+  - - 2679
+    - 1332
+  - - 1086
+    - 1332
+  candidate_block_ids:
+  - /page/37/Text/6
+  region_image: evidence/production-batch-008/regions/vera-r0056/p38-step-1.png
+  region_image_pixel_sha256: 9a82d1e956423e8dee1bae472452a8d1362c218597d86294d4e07d7c4e0748b5
+- region_id: vera-r0056-yield
+  pdf_page: 38
+  printed_page: '37'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1080
+    - 1312
+  - - 1896
+    - 1312
+  - - 1896
+    - 1402
+  - - 1080
+    - 1402
+  candidate_block_ids:
+  - /page/37/Text/7
+  region_image: evidence/production-batch-008/regions/vera-r0056/p38-yield.png
+  region_image_pixel_sha256: 3452450dd667fcf64e4d10f765c5d3795482a71dbbb8820914c05b423c23b959
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Sauerkraut · Kyselé zelí
+    language: mul
+    source_region_ids:
+    - vera-r0056-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Sauerkraut
+    language: en
+    source_region_ids:
+    - vera-r0056-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Kyselé zelí
+    language: cs
+    source_region_ids:
+    - vera-r0056-title
+    title_role: parallel
+  source_order: 56
+  slug_candidate: sauerkraut
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0056-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 lbs. sauerkraut, drained
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 4 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1 medium onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0056-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: In a skillet combine oil, onion and flour. Brown mixture lightly. Add sauerkraut,
+        caraway seeds, dash of salt and simmer 15 minutes, or until tender. Add sugar, mix thoroughly,
+        simmer about 5 minutes more. Sauerkraut should be tender but crisp. Taste sweet-sour. Serve with
+        pork roast, roast goose, smoked pork.
+      language: en
+      source_region_ids:
+      - vera-r0056-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T02:24:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T02:23:27Z'
+    artifact_path: pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T02:31:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0056
+    source_region_ids: &id001
+    - vera-r0056-title
+    - vera-r0056-ingredients
+    - vera-r0056-step-1
+    - vera-r0056-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0056
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    source_region_ids:
+    - vera-r0056-title
+    - vera-r0056-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0056-title
+    - vera-r0056-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - step-1
+    source_region_ids:
+    - vera-r0056-title
+    - vera-r0056-yield
+    - vera-r0056-ingredients
+    - vera-r0056-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    source_region_ids:
+    - vera-r0056-yield
+    - vera-r0056-ingredients
+    - vera-r0056-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0056-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0056
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0056-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

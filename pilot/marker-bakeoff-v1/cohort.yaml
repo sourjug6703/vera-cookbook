@@ -1,0 +1,90 @@
+schema_version: "1.0"
+cohort_id: "marker-bakeoff-v1"
+frozen_on: "2026-08-23"
+source:
+  path: "source/Culinary Adventures - Vera Gaeta.pdf"
+  sha256: "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b"
+  page_count: 75
+  embedded_text: false
+candidate:
+  name: "marker"
+  package: "marker-pdf"
+  version: "2.0.0"
+  ocr_model_package: "surya-ocr"
+  ocr_model_version: "0.22.1"
+  mode: "balanced"
+  force_ocr: true
+  remote_llm: false
+pages:
+  - pdf_page: 2
+    marker_page_index: 1
+    role: "first-section inventory"
+    risks: ["three-column reading order", "bilingual titles", "dense catalog"]
+  - pdf_page: 3
+    marker_page_index: 2
+    role: "first-section inventory continuation"
+    risks: ["three-column reading order", "bilingual titles", "Czech diacritics"]
+  - pdf_page: 4
+    marker_page_index: 3
+    role: "single dense recipe"
+    risks: ["ingredients-to-instructions association", "three-column continuation", "fractions", "alternative method"]
+  - pdf_page: 5
+    marker_page_index: 4
+    role: "multiple recipes"
+    risks: ["recipe boundaries", "ingredients-to-instructions association", "temperatures"]
+  - pdf_page: 11
+    marker_page_index: 10
+    role: "multiple recipes"
+    risks: ["recipe boundaries", "fractions", "notes"]
+  - pdf_page: 17
+    marker_page_index: 16
+    role: "multiple compact recipes"
+    risks: ["dense layout", "recipe boundaries", "Czech diacritics"]
+  - pdf_page: 25
+    marker_page_index: 24
+    role: "difficult photographed page"
+    risks: ["rotation", "uneven lighting", "reading order", "continuations"]
+  - pdf_page: 34
+    marker_page_index: 33
+    role: "end-of-section recipe page"
+    risks: ["sparse layout", "notes", "footer handling"]
+  - pdf_page: 35
+    marker_page_index: 34
+    role: "second-section inventory"
+    risks: ["three-column reading order", "bilingual titles", "catalog grouping"]
+  - pdf_page: 36
+    marker_page_index: 35
+    role: "two recipes"
+    risks: ["recipe boundaries", "ingredients-to-instructions association", "fractions"]
+  - pdf_page: 41
+    marker_page_index: 40
+    role: "mixed recipe layout"
+    risks: ["recipe boundaries", "cross-column association", "yield and time"]
+  - pdf_page: 46
+    marker_page_index: 45
+    role: "third-section inventory"
+    risks: ["three-column reading order", "bilingual titles", "dense catalog"]
+  - pdf_page: 47
+    marker_page_index: 46
+    role: "dense baking recipe"
+    risks: ["fractions", "temperature", "long instructions", "continuations"]
+  - pdf_page: 52
+    marker_page_index: 51
+    role: "three related recipes"
+    risks: ["recipe boundaries", "cross-references", "fractions", "Czech diacritics"]
+  - pdf_page: 75
+    marker_page_index: 74
+    role: "final page with two recipes"
+    risks: ["recipe boundaries", "fractions", "quoted text", "scan artifacts", "footer handling"]
+scoring_dimensions:
+  - "recipe_inventory"
+  - "reading_order"
+  - "recipe_boundary_and_ownership"
+  - "exact_titles_and_diacritics"
+  - "exact_numbers_fractions_units_temperatures"
+  - "notes_alternatives_and_cross_references"
+  - "missing_or_invented_text"
+authority:
+  source_pdf: "immutable evidence"
+  visual_gold: "authoritative for pilot scoring"
+  marker_output: "rebuildable non-authoritative candidate"

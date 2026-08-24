@@ -1,0 +1,445 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Roast beef tenderloin in sour cream sauce - Sv\u00ed\u010dkov\u00e1",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          360.0,
+          133.0
+        ],
+        [
+          1101.0,
+          133.0
+        ],
+        [
+          1101.0,
+          178.0
+        ],
+        [
+          360.0,
+          178.0
+        ]
+      ]
+    },
+    {
+      "title": "Beef tenderloin slices (shortcut for \"sv\u00ed\u010dkov\u00e1\") - \u0158ezy ze sv\u00ed\u010dkov\u00e9",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          279.0,
+          150.0
+        ],
+        [
+          1191.0,
+          150.0
+        ],
+        [
+          1191.0,
+          200.0
+        ],
+        [
+          279.0,
+          200.0
+        ]
+      ]
+    },
+    {
+      "title": "Beef croquettes - Karban\u00e1tky",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          526.5,
+          556.0
+        ],
+        [
+          928.5,
+          556.0
+        ],
+        [
+          928.5,
+          593.0
+        ],
+        [
+          526.5,
+          593.0
+        ]
+      ]
+    },
+    {
+      "title": "Stuffed pigeon - Holub nadivan\u00fd",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          514.5,
+          360.03599999999994
+        ],
+        [
+          958.5,
+          360.03599999999994
+        ],
+        [
+          958.5,
+          400.725
+        ],
+        [
+          514.5,
+          400.725
+        ]
+      ]
+    },
+    {
+      "title": "Prepare stuffing first:",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          555.0,
+          411.822
+        ],
+        [
+          813.0,
+          411.822
+        ],
+        [
+          813.0,
+          443.88
+        ],
+        [
+          555.0,
+          443.88
+        ]
+      ]
+    },
+    {
+      "title": "Stuffing:",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          118.5,
+          553.6170000000001
+        ],
+        [
+          211.5,
+          553.6170000000001
+        ],
+        [
+          211.5,
+          580.7429999999999
+        ],
+        [
+          118.5,
+          580.7429999999999
+        ]
+      ]
+    },
+    {
+      "title": "Roast goose - Husa pe\u010den\u00e1",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          549.0,
+          913.653
+        ],
+        [
+          922.5,
+          913.653
+        ],
+        [
+          922.5,
+          946.9440000000001
+        ],
+        [
+          549.0,
+          946.9440000000001
+        ]
+      ]
+    },
+    {
+      "title": "Roast duck - Kachna pe\u010den\u00e1",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          532.5,
+          395.37399999999997
+        ],
+        [
+          925.5,
+          395.37399999999997
+        ],
+        [
+          925.5,
+          427.25899999999996
+        ],
+        [
+          532.5,
+          427.25899999999996
+        ]
+      ]
+    },
+    {
+      "title": "Duckling with Madeira wine - Kachna na vin\u011b",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          415.5,
+          583.04
+        ],
+        [
+          1039.5,
+          583.04
+        ],
+        [
+          1039.5,
+          618.569
+        ],
+        [
+          415.5,
+          618.569
+        ]
+      ]
+    },
+    {
+      "title": "\u201cSilver dollars\u201d (miniature plain muffins) - Duk\u00e1tov\u00e9 buchti\u010dky",
+      "heading_level": null,
+      "page_id": 51,
+      "polygon": [
+        [
+          301.5,
+          24.84
+        ],
+        [
+          1183.5,
+          24.84
+        ],
+        [
+          1183.5,
+          62.56000000000001
+        ],
+        [
+          301.5,
+          62.56000000000001
+        ]
+      ]
+    },
+    {
+      "title": "Vanilla sauce - Vanilkov\u00e1 om\u00e1\u010dka",
+      "heading_level": null,
+      "page_id": 51,
+      "polygon": [
+        [
+          555.0,
+          345.0
+        ],
+        [
+          943.5,
+          345.0
+        ],
+        [
+          943.5,
+          370.76000000000005
+        ],
+        [
+          555.0,
+          370.76000000000005
+        ]
+      ]
+    },
+    {
+      "title": "White wine froth - Vinn\u00e1 om\u00e1\u010dka",
+      "heading_level": null,
+      "page_id": 51,
+      "polygon": [
+        [
+          562.5,
+          563.9599999999999
+        ],
+        [
+          942.0,
+          563.9599999999999
+        ],
+        [
+          942.0,
+          592.48
+        ],
+        [
+          562.5,
+          592.48
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          11
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 51,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "/Users/agaeta/AI Projects/personal/active/vera-cookbook/pilot/production-batch-001/marker-output/debug/Culinary Adventures - Vera Gaeta"
+}

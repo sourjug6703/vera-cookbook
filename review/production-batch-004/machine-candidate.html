@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Cookbook · Production batch 004 source review</title>
+<style>
+:root { --ink:#27231d; --paper:#f3eee3; --card:#fffdf6; --rule:#b9aa92; --accent:#8f2924; --green:#245c47; --muted:#685d4d; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 Palatino, "Book Antiqua", Georgia, serif; }
+.mast { padding:64px max(24px,6vw) 46px; border-bottom:1px solid var(--rule); background:#e5dac5; }
+h1 { max-width:920px; margin:0 0 16px; font-size:clamp(42px,7vw,88px); line-height:.96; font-weight:500; letter-spacing:-.035em; text-wrap:balance; }
+.mast p { max-width:760px; margin:0; font-size:19px; line-height:1.55; }
+.toolbar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; padding:12px max(24px,6vw); background:#f3eee3; border-bottom:1px solid var(--rule); }
+.toolbar button { min-height:44px; border:1px solid var(--ink); background:var(--ink); color:#fff; padding:10px 16px; border-radius:999px; font:700 12px ui-monospace,SFMono-Regular,monospace; cursor:pointer; }
+.toolbar button.secondary { background:transparent; color:var(--ink); }
+.toolbar output { margin-inline-start:auto; font:700 13px ui-monospace,SFMono-Regular,monospace; }
+.toolbar span { color:var(--muted); }
+main { width:min(1500px,94vw); margin:42px auto 90px; display:grid; gap:42px; }
+.recipe { min-width:0; overflow:hidden; background:var(--card); border:1px solid var(--rule); border-radius:14px; }
+.recipe-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; padding:28px 32px; border-bottom:1px solid var(--rule); }
+.recipe h2 { margin:0; font-size:clamp(25px,3vw,42px); line-height:1.08; font-weight:500; overflow-wrap:anywhere; }
+.record-meta { margin:8px 0 0; color:var(--muted); font:12px/1.4 ui-monospace,SFMono-Regular,monospace; }
+.record-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px; flex:none; }
+.record-actions a { color:var(--ink); font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.08em; }
+.status { flex:none; border:1px solid var(--accent); color:var(--accent); padding:7px 11px; border-radius:999px; font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+.status-source_checked { border-color:var(--green); color:var(--green); }
+.compare { display:grid; grid-template-columns:auto minmax(0,1fr); }
+.source-disclosure { width:max-content; max-width:100%; border-inline-end:1px solid var(--rule); }
+.source-disclosure.is-open { width:min(720px,48vw); }
+.source-toggle { display:flex; width:100%; min-height:52px; align-items:center; gap:12px; padding:14px 18px; border:0; color:#fff; background:var(--ink); cursor:pointer; font:700 13px ui-monospace,SFMono-Regular,monospace; text-align:left; }
+.region-disclosure>summary::-webkit-details-marker { display:none; }
+.source-toggle small { color:#e8dcc8; font:11px ui-monospace,SFMono-Regular,monospace; white-space:nowrap; }
+.source-toggle-icon { margin-inline-start:auto; font-size:20px; line-height:1; }
+.source-panel { padding:24px; }
+.overview-grid { display:grid; gap:18px; }
+.region-disclosure { margin-top:22px; border-top:1px solid var(--rule); }
+.region-disclosure>summary { min-height:44px; padding:14px 0; color:var(--accent); cursor:pointer; font-weight:700; }
+.region-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.candidate { min-width:0; padding:28px 32px; }
+h3 { margin:0 0 18px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+h4 { margin:24px 0 7px; font-size:16px; }
+h5 { margin:18px 0 6px; color:var(--accent); font:700 12px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+figure { margin:0 0 20px; }
+figure a { display:block; }
+figure img { display:block; width:100%; max-height:720px; object-fit:contain; object-position:top; background:#eee4d4; border:1px solid #d8ccb8; }
+.region-crop img { height:150px; object-fit:contain; }
+figcaption { margin-top:6px; color:var(--muted); font:12px ui-monospace,SFMono-Regular,monospace; overflow-wrap:anywhere; }
+.candidate ul,.candidate ol { padding-left:22px; }
+.candidate li,.candidate p { max-width:75ch; margin:0 0 8px; line-height:1.5; overflow-wrap:anywhere; }
+.verbatim-title { padding:12px 14px; background:#f2eadc; border:1px solid #d9cbb5; }
+.risk { padding:24px 32px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); background:#f8eee7; }
+.risk ul { margin:0 0 12px; padding-left:20px; }
+.risk li,.risk p { max-width:100ch; margin:8px 0; line-height:1.45; overflow-wrap:anywhere; }
+.risk li span { margin-right:9px; color:var(--accent); font:700 10px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+fieldset { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; margin:0; padding:24px 32px 30px; border:0; }
+legend { padding-top:24px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+label { display:flex; gap:10px; align-items:flex-start; line-height:1.35; cursor:pointer; }
+input { appearance:none; width:20px; height:20px; flex:none; margin:1px 0 0; border:1px solid #75664f; background:#fff; }
+input:checked { background:var(--green); box-shadow:inset 0 0 0 4px #fff; }
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible { outline:3px solid #146b8c; outline-offset:3px; }
+#copy-feedback { min-width:16ch; color:var(--green); font-weight:700; }
+@media (hover:hover) { .source-toggle:hover,.toolbar button:hover { filter:brightness(1.16); } .record-actions a:hover { color:var(--accent); } }
+@media (max-width:900px) {
+  .recipe-head { flex-direction:column; } .record-actions { justify-content:flex-start; }
+  .compare { grid-template-columns:1fr; } .source-disclosure,.source-disclosure.is-open { width:100%; border-inline-end:0; border-bottom:1px solid var(--rule); }
+  .region-grid,fieldset { grid-template-columns:1fr; } .toolbar output { margin-inline-start:0; }
+}
+@media (max-width:560px) { .mast { padding-block:44px 34px; } .recipe-head,.candidate,.risk,fieldset { padding-inline:20px; } .toolbar span:not(#copy-feedback) { width:100%; } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+@media print { .toolbar { display:none; } body { background:#fff; } .recipe { break-before:page; } .source-disclosure { width:48%!important; } }
+</style>
+</head>
+<body>
+<header class="mast"><h1>Production batch 004 source review</h1><p>Five local Marker machine candidates in contiguous source order, with exact page context and cited regions. No trust promotion has been performed.</p></header>
+<div class="toolbar"><button type="button" onclick="window.print()">Print review packet</button><button type="button" class="secondary" onclick="copyStatus()">Copy checklist status</button><span>Optional human checks persist in this browser only.</span><output id="progress">0 / 40 checked</output><span id="copy-feedback" role="status" aria-live="polite"></span></div>
+<main>
+            <article class="recipe" id="vera-r0014">
+              <header class="recipe-head">
+                <div><h2>Fresh ham in cream sauce - Vepřová kýta na smetaně</h2><p class="record-meta">vera-r0014 · PDF 13, 14 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0014.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0014">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0014" aria-label="View source for Fresh ham in cream sauce - Vepřová kýta na smetaně" data-source-title="Fresh ham in cream sauce - Vepřová kýta na smetaně"><span class="source-toggle-label">View source</span><small>10 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0014" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-004/overview/vera-r0014/page-13.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0014/page-13.png" alt="Source page context for Fresh ham in cream sauce - Vepřová kýta na smetaně"></a><figcaption>PDF page 13 context</figcaption></figure><figure><a href="../../evidence/production-batch-004/overview/vera-r0014/page-14.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0014/page-14.png" alt="Source page context for Fresh ham in cream sauce - Vepřová kýta na smetaně"></a><figcaption>PDF page 14 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-title.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-title.png" alt="Exact cited title crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>title · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-ingredients.png" alt="Exact cited ingredient crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>ingredients · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-1.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-1.png" alt="Exact cited instruction crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 1 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-2.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-2.png" alt="Exact cited instruction crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 2 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-3.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-3.png" alt="Exact cited instruction crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 3 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-4.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-4.png" alt="Exact cited instruction crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 4 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-5.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-5.png" alt="Exact cited instruction crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 5 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p13-step-6a.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p13-step-6a.png" alt="Exact cited continuation crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 13"></a><figcaption>step 6a · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p14-step-6b.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p14-step-6b.png" alt="Exact cited continuation crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 14"></a><figcaption>step 6b · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0014/p14-yield.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0014/p14-yield.png" alt="Exact cited yield_time crop for Fresh ham in cream sauce - Vepřová kýta na smetaně on PDF page 14"></a><figcaption>yield · PDF 14</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Fresh ham in cream sauce - Vepřová kýta na smetaně</p>
+                  <h4>Ingredients</h4><ul><li>3-4 lbs. fresh ham, boned and skinned</li><li>4 slices bacon</li><li>6 tablespoons butter</li><li>2 carrots</li><li>1 celery root</li><li>1 parsnip</li><li>3 bay leaves, thyme, whole allspice, whole black pepper</li><li>1 lemon</li><li>1-1/2 cups sour cream</li><li>2 tablespoons flour</li><li>1-1/2 cups chicken stock or water</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Dice the carrots, celery root and parsnip. Cut the bacon into short strips.</li><li>Skim off fat from the meat, rinse and pat it dry, salt it and lard with bacon strips.</li><li>In a large stewpot combine melted butter, vegetables, spices, lemon rind, grated or chopped.</li><li>Set over medium heat. Add the meat and brown it lightly on all sides. Lower the heat, cover tightly and simmer over low heat until tender, about 2 hours, gradually adding the chicken stock or water.</li><li>Remove meat from pot, keep it warm.</li><li>Strain the gravy into a saucepan. Combine flour and sour cream and blend it into the gravy. Add lemon juice, simmer 5 minutes. Slice meat, pour the gravy over it or serve separately. Serve with dumplings, noodles, vegetables.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 3 hours</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 3 · 3-4 · 4 · 2 · 1 · 1-1/2 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0014"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0014"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0015">
+              <header class="recipe-head">
+                <div><h2>Pork chops with caraway seeds - Vepřová žebírka na kmíně</h2><p class="record-meta">vera-r0015 · PDF 14 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0015.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0015">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0015" aria-label="View source for Pork chops with caraway seeds - Vepřová žebírka na kmíně" data-source-title="Pork chops with caraway seeds - Vepřová žebírka na kmíně"><span class="source-toggle-label">View source</span><small>8 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0015" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-004/overview/vera-r0015/page-14.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0015/page-14.png" alt="Source page context for Pork chops with caraway seeds - Vepřová žebírka na kmíně"></a><figcaption>PDF page 14 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-title.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-title.png" alt="Exact cited title crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>title · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-ingredients.png" alt="Exact cited ingredient crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>ingredients · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-step-1.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-step-1.png" alt="Exact cited instruction crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>step 1 · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-step-2.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-step-2.png" alt="Exact cited instruction crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>step 2 · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-step-3.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-step-3.png" alt="Exact cited instruction crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>step 3 · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-step-4.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-step-4.png" alt="Exact cited instruction crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>step 4 · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-step-5.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-step-5.png" alt="Exact cited instruction crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>step 5 · PDF 14</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0015/p14-yield.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0015/p14-yield.png" alt="Exact cited yield_time crop for Pork chops with caraway seeds - Vepřová žebírka na kmíně on PDF page 14"></a><figcaption>yield · PDF 14</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Pork chops with caraway seeds - Vepřová žebírka na kmíně</p>
+                  <h4>Ingredients</h4><ul><li>6 pork chops</li><li>1/2 cup flour</li><li>1/2 cup vegetable oil</li><li>2 tablespoons butter</li><li>1 cup chicken stock</li><li>1 small onion</li><li>2 teaspoons caraway seeds</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the pork chops lightly-they should not be more than 1/2&quot; thick. Make a few short cuts on the edges to prevent curling, salt them on both sides and dust with flour on one side. Brown chops in hot oil, floured side first.</li><li>In a large skillet combine the butter and finely chopped onion and set over medium heat.</li><li>When the onion becomes translucent, add caraway seeds and some of the chicken stock. Add the pork chops and simmer about 30 minutes or until they are tender.</li><li>Remove the chops, bring the liquid to boil, blend in flour and chicken stock and simmer until the sauce thickens. The sauce should be medium thick. Strain.</li><li>Return pork chops in the sauce, simmer until heated through. Serve with boiled potatoes, rice, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 45 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 45 · 1/2 · 2 · 1 · 1/2&quot; · 30</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0015"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0015"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0016">
+              <header class="recipe-head">
+                <div><h2>Breaded pork chops - Vepřová žebírka smažená</h2><p class="record-meta">vera-r0016 · PDF 15 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0016.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0016">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0016" aria-label="View source for Breaded pork chops - Vepřová žebírka smažená" data-source-title="Breaded pork chops - Vepřová žebírka smažená"><span class="source-toggle-label">View source</span><small>7 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0016" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-004/overview/vera-r0016/page-15.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0016/page-15.png" alt="Source page context for Breaded pork chops - Vepřová žebírka smažená"></a><figcaption>PDF page 15 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-title.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-title.png" alt="Exact cited title crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>title · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-ingredients.png" alt="Exact cited ingredient crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>ingredients · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-step-1.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-step-1.png" alt="Exact cited instruction crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>step 1 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-step-2.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-step-2.png" alt="Exact cited instruction crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>step 2 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-step-3.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-step-3.png" alt="Exact cited instruction crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>step 3 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-step-4.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-step-4.png" alt="Exact cited instruction crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>step 4 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0016/p15-yield.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0016/p15-yield.png" alt="Exact cited yield_time crop for Breaded pork chops - Vepřová žebírka smažená on PDF page 15"></a><figcaption>yield · PDF 15</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Breaded pork chops - Vepřová žebírka smažená</p>
+                  <h4>Ingredients</h4><ul><li>6 pork loin rib chops, cut about 1/2&quot; thick</li><li>1/2 cup flour</li><li>2 eggs</li><li>1 cup bread crumbs</li><li>1 cup vegetable oil</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the pork chops lightly; make a few short cuts on the edges to prevent curling.</li><li>Spice them with salt and pepper. Dredge them in flour shaking off excess, dip in beaten eggs and coat with bread crumbs.</li><li>Fry the chops in a covered pan for 5 minutes, turn them and finish frying uncovered. Drain on paper towel.</li><li>Serve with potato salad, green salad, vegetables.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 45 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 45 · 1/2&quot; · 1/2 · 2 · 1 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0016"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0016"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0017">
+              <header class="recipe-head">
+                <div><h2>Smoked pork loin - Uzené vepřové maso</h2><p class="record-meta">vera-r0017 · PDF 15 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0017.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0017">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0017" aria-label="View source for Smoked pork loin - Uzené vepřové maso" data-source-title="Smoked pork loin - Uzené vepřové maso"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0017" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-004/overview/vera-r0017/page-15.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0017/page-15.png" alt="Source page context for Smoked pork loin - Uzené vepřové maso"></a><figcaption>PDF page 15 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-title.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-title.png" alt="Exact cited title crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>title · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-ingredients.png" alt="Exact cited ingredient crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>ingredients · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-step-1.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-step-1.png" alt="Exact cited instruction crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>step 1 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-step-2.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-step-2.png" alt="Exact cited instruction crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>step 2 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-step-3.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-step-3.png" alt="Exact cited instruction crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>step 3 · PDF 15</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0017/p15-yield.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0017/p15-yield.png" alt="Exact cited yield_time crop for Smoked pork loin - Uzené vepřové maso on PDF page 15"></a><figcaption>yield · PDF 15</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Smoked pork loin - Uzené vepřové maso</p>
+                  <h4>Ingredients</h4><ul><li>2-3 lbs. fully cooked smoked pork loin or shoulder</li><li>water</li></ul>
+                  <h4>Instructions</h4><ol><li>Place meat in boiling water and simmer until thoroughly heated.</li><li>About 30 minutes. To serve, cut meat into slices.</li><li>Serve with boiled potatoes and sauerkraut, mashed potatoes, vegetables, poached apples, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 40 minutes</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 40 · 2-3 · 30</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0017"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0017"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0018">
+              <header class="recipe-head">
+                <div><h2>Pork goulash - Guláš vepřový</h2><p class="record-meta">vera-r0018 · PDF 16 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0018.yaml">Open YAML</a><span class="status status-machine_candidate">machine candidate</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0018">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0018" aria-label="View source for Pork goulash - Guláš vepřový" data-source-title="Pork goulash - Guláš vepřový"><span class="source-toggle-label">View source</span><small>7 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0018" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-004/overview/vera-r0018/page-16.png"><img loading="lazy" src="../../evidence/production-batch-004/overview/vera-r0018/page-16.png" alt="Source page context for Pork goulash - Guláš vepřový"></a><figcaption>PDF page 16 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-title.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-title.png" alt="Exact cited title crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>title · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-ingredients.png" alt="Exact cited ingredient crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>ingredients · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-step-1.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-step-1.png" alt="Exact cited instruction crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>step 1 · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-step-2.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-step-2.png" alt="Exact cited instruction crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>step 2 · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-step-3.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-step-3.png" alt="Exact cited instruction crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>step 3 · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-step-4.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-step-4.png" alt="Exact cited instruction crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>step 4 · PDF 16</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-004/regions/vera-r0018/p16-yield.png"><img loading="lazy" src="../../evidence/production-batch-004/regions/vera-r0018/p16-yield.png" alt="Exact cited yield_time crop for Pork goulash - Guláš vepřový on PDF page 16"></a><figcaption>yield · PDF 16</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Pork goulash - Guláš vepřový</p>
+                  <h4>Ingredients</h4><ul><li>3 lbs. boned pork shoulder, cut in 1-1/2&quot; cubes</li><li>1/4 cup vegetable oil</li><li>1 large onion, chopped</li><li>2 tablespoons vinegar</li><li>2 tablespoons paprika</li><li>1 teaspoon caraway seeds</li><li>2 cups beef stock</li><li>4 tablespoons flour</li><li>3/4 cup sour cream</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Sauté onion in oil. Add paprika, vinegar, pork, caraway seeds, pepper, few spoons of beef stock. Cover and simmer 1-1/2 hrs, or until meat is tender. Stir occasionally and gradually add beef stock, little at a time, just enough to keep moisture in the stew.</li><li>Blend flour, sour cream and 1/2 cup beef stock. Stir the mixture in the pan with the meat. Simmer 10-15 minutes. If the sauce is too thick, add more beef stock.</li><li>Taste for salt. Should you prefer to redden the color of the sauce, add 2-3 tablespoons tomato paste.</li><li>Serve with potatoes or dumplings.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 2 hours</p>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 2 · 3 · 1-1/2&quot; · 1/4 · 1 · 4 · 3/4 · 1-1/2 · 1/2 · 10-15 · 2-3</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0018"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0018"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            </main>
+<script>
+const key='vera-production-batch-004-human-checklist-v2';
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}');}catch(error){saved={};}
+boxes.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',()=>{saved[index]=box.checked;localStorage.setItem(key,JSON.stringify(saved));update();});});
+function update(){const count=boxes.filter(box=>box.checked).length;document.querySelector('#progress').textContent=`${count} / ${boxes.length} checked`;}
+async function writeClipboard(text){
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return;}
+  const area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+  if(!document.execCommand('copy')){throw new Error('Copy command was unavailable.');}area.remove();
+}
+async function copyStatus(){
+  const lines=['Vera Cookbook production batch 004 review status'];
+  document.querySelectorAll('.recipe').forEach(card=>{
+    const cardBoxes=[...card.querySelectorAll('input[type=checkbox]')];
+    const checked=cardBoxes.filter(box=>box.checked).length;
+    const status=card.querySelector('.status').textContent.trim();
+    lines.push(`${card.id}: ${status}; ${checked} / ${cardBoxes.length} optional human checks complete`);
+  });
+  const feedback=document.querySelector('#copy-feedback');
+  try{await writeClipboard(lines.join('\n'));feedback.textContent='Copied.';}catch(error){feedback.textContent='Copy failed; select the status manually.';}
+}
+const sourceDetails=[...document.querySelectorAll('[data-source]')];
+function setSourceOpen(container,open){
+  const toggle=container.querySelector('.source-toggle');
+  const panel=container.querySelector('.source-panel');
+  toggle.setAttribute('aria-expanded',String(open));
+  toggle.setAttribute('aria-label',`${open?'Hide':'View'} source for ${toggle.dataset.sourceTitle}`);
+  toggle.querySelector('.source-toggle-label').textContent=open?'Hide source':'View source';
+  toggle.querySelector('.source-toggle-icon').textContent=open?'−':'+';
+  panel.hidden=!open;
+  container.classList.toggle('is-open',open);
+}
+sourceDetails.forEach(container=>{
+  const toggle=container.querySelector('.source-toggle');
+  toggle.addEventListener('click',()=>setSourceOpen(container,toggle.getAttribute('aria-expanded')!=='true'));
+  toggle.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle.click();}
+  });
+});
+let printOpen=[];
+window.addEventListener('beforeprint',()=>{printOpen=sourceDetails.map(item=>item.classList.contains('is-open'));sourceDetails.forEach(item=>setSourceOpen(item,true));});
+window.addEventListener('afterprint',()=>{sourceDetails.forEach((item,index)=>setSourceOpen(item,printOpen[index]));});
+update();
+</script>
+</body>
+</html>

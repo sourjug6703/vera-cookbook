@@ -1,0 +1,2 @@
+# Isolated OCR/layout candidate used only for the reproducible bake-off.
+marker-pdf==2.0.0

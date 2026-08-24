@@ -1,0 +1,404 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0078
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 52
+  printed_pages:
+  - '51'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0078-title
+  pdf_page: 52
+  printed_page: '51'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 585
+    - 31
+  - - 2385
+    - 31
+  - - 2385
+    - 143
+  - - 585
+    - 143
+  candidate_block_ids:
+  - /page/51/SectionHeader/0
+  region_image: evidence/production-batch-010/regions/vera-r0078/p52-title.png
+  region_image_pixel_sha256: ae81ead1b49a3e475c13e79cf12ca592f9d7797f84d0a1547c59a8e53b5ae4b2
+- region_id: vera-r0078-text-1
+  pdf_page: 52
+  printed_page: '51'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1107
+    - 129
+  - - 2736
+    - 129
+  - - 2736
+    - 514
+  - - 1107
+    - 514
+  candidate_block_ids:
+  - /page/51/Text/4
+  region_image: evidence/production-batch-010/regions/vera-r0078/p52-text-1.png
+  region_image_pixel_sha256: 5076357dfe815de8f41105dcd26c14f89368a394ed47c07c25d12872f6654996
+- region_id: vera-r0078-listgroup-2
+  pdf_page: 52
+  printed_page: '51'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 234
+    - 151
+  - - 1095
+    - 151
+  - - 1095
+    - 667
+  - - 234
+    - 667
+  candidate_block_ids:
+  - /page/51/ListGroup/1
+  region_image: evidence/production-batch-010/regions/vera-r0078/p52-listgroup-2.png
+  region_image_pixel_sha256: 3aeb7e38eff06bc2ae18fe51127e8673ba8b0271e187f7a51516494b7c83c4e5
+- region_id: vera-r0078-text-3
+  pdf_page: 52
+  printed_page: '51'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1113
+    - 476
+  - - 2169
+    - 476
+  - - 2169
+    - 570
+  - - 1113
+    - 570
+  candidate_block_ids:
+  - /page/51/Text/5
+  region_image: evidence/production-batch-010/regions/vera-r0078/p52-text-3.png
+  region_image_pixel_sha256: a11da91233c72c5a7f325730991b8b08a82807da75a4255aa5f8d44b00130aa4
+- region_id: vera-r0078-text-4
+  pdf_page: 52
+  printed_page: '51'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 1840
+    origin: top_left
+  polygon:
+  - - 1113
+    - 561
+  - - 2121
+    - 561
+  - - 2121
+    - 652
+  - - 1113
+    - 652
+  candidate_block_ids:
+  - /page/51/Text/6
+  region_image: evidence/production-batch-010/regions/vera-r0078/p52-text-4.png
+  region_image_pixel_sha256: ff18ae0ce74e0db4e12e12075c3593a57c8a220fa79f9fe61a2674583e3fbc7c
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: “Silver dollars” (miniature plain muffins) · Dukátové buchtičky
+    language: mul
+    source_region_ids:
+    - vera-r0078-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: “Silver dollars” (miniature plain muffins)
+    language: en
+    source_region_ids:
+    - vera-r0078-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Dukátové buchtičky
+    language: cs
+    source_region_ids:
+    - vera-r0078-title
+    title_role: parallel
+  source_order: 78
+  slug_candidate: silverdollarsminiatureplainmuffins
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 10 – Preparation time: 2 hours 30 minutes.'
+    language: en
+    source_region_ids:
+    - vera-r0078-text-4
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 cups coarse flour, Gold Medal Wondra
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 1 oz. fresh yeast
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 1-1/4 cups milk
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 1/2 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: 4 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-6
+      text_verbatim: 6 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-7
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-8
+      text_verbatim: grated rind of 1 lemon
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+    - segment_id: ingredient-9
+      text_verbatim: 4 tablespoons butter for baking pan and brushing
+      language: en
+      source_region_ids:
+      - vera-r0078-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Prepare dough in the same manner as in Bohemian muffins. Roll it out to 1/3" thickness.
+        Using a cookie cutter or a glass 1" in diameter cut out round cakes and lay them tightly together
+        in a buttered baking pan. Brush sides and top with melted butter. Let rise 30 minutes in a warm
+        place. Preheat oven to 350F, bake 20-25 minutes or until golden brown on top.
+      language: en
+      source_region_ids:
+      - vera-r0078-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Serve warm with vanilla sauce or wine froth.
+      language: en
+      source_region_ids:
+      - vera-r0078-text-3
+      step_number: 2
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0072
+  - vera-r0079
+  - vera-r0080
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:28:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0078
+    source_region_ids: &id001
+    - vera-r0078-title
+    - vera-r0078-text-1
+    - vera-r0078-listgroup-2
+    - vera-r0078-text-3
+    - vera-r0078-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0078
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    source_region_ids:
+    - vera-r0078-title
+    - vera-r0078-listgroup-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    source_region_ids:
+    - vera-r0078-title
+    - vera-r0078-text-1
+    - vera-r0078-text-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - step-1
+    - step-2
+    source_region_ids:
+    - vera-r0078-title
+    - vera-r0078-text-4
+    - vera-r0078-listgroup-2
+    - vera-r0078-text-1
+    - vera-r0078-text-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-8
+    - ingredient-9
+    - step-1
+    source_region_ids:
+    - vera-r0078-text-4
+    - vera-r0078-listgroup-2
+    - vera-r0078-text-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0078-text-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0078
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0078-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T03:28:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

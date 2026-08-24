@@ -1,0 +1,147 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0086
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 57
+  printed_pages:
+  - '56'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0086-title
+  pdf_page: 57
+  printed_page: '56'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1008
+    - 204
+  - - 2025
+    - 204
+  - - 2025
+    - 320
+  - - 1008
+    - 320
+  candidate_block_ids:
+  - /page/56/SectionHeader/1
+  region_image: evidence/production-batch-011/regions/vera-r0086/p57-title.png
+  region_image_pixel_sha256: f17c98c306cddc33cfc76d6875ab449349a12d6e9d802a7456eaf5b76cc44a5a
+- region_id: vera-r0086-text-1
+  pdf_page: 57
+  printed_page: '56'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1134
+    - 310
+  - - 2736
+    - 310
+  - - 2736
+    - 790
+  - - 1134
+    - 790
+  candidate_block_ids:
+  - /page/56/Text/2
+  region_image: evidence/production-batch-011/regions/vera-r0086/p57-text-1.png
+  region_image_pixel_sha256: 64fb5e48892e5bcff813df21e3b9d90941c374e3208872e5db3320120b89d697
+- region_id: vera-r0086-text-2
+  pdf_page: 57
+  printed_page: '56'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1134
+    - 754
+  - - 1866
+    - 754
+  - - 1866
+    - 841
+  - - 1134
+    - 841
+  candidate_block_ids:
+  - /page/56/Text/3
+  region_image: evidence/production-batch-011/regions/vera-r0086/p57-text-2.png
+  region_image_pixel_sha256: c7c013d741500ee3967f1678f7a72ec73f5fe188b6ad495a53430442bdb6c71a
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Easter braid · Velikonoční pomlázka
+    language: mul
+    source_region_ids:
+    - vera-r0086-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Easter braid
+    language: en
+    source_region_ids:
+    - vera-r0086-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Velikonoční pomlázka
+    language: cs
+    source_region_ids:
+    - vera-r0086-title
+    title_role: parallel
+  source_order: 86
+  slug_candidate: easterbraid
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: '3 braids - Preparation time: 3 hours'
+    language: en
+    source_region_ids:
+    - vera-r0086-text-2
+  ingredient_sections: []
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Prepare the dough exactly as for Easter braid. After it has risen twice, turn it
+        out onto a floured pastry board and divide in three identical sections. Roll and stretch each
+        section into a rope 25" long. Press together both ends of each rope twist it so that it will be
+        braided and make a loop at the end. Place a raw egg in each loop. Place braids on an oven tray
+        lined with buttered wax paper, let them rise 20 minutes. Brush with lightly beaten egg and bake
+        30 minutes in 350 F preheated oven.
+      language: en
+      source_region_ids:
+      - vera-r0086-text-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids:
+  - vera-r0085
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

@@ -1,0 +1,488 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0041
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 30
+  printed_pages:
+  - '29'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0041-title
+  pdf_page: 30
+  printed_page: '29'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 846
+    - 318
+  - - 2130
+    - 318
+  - - 2130
+    - 471
+  - - 846
+    - 471
+  candidate_block_ids:
+  - /page/29/SectionHeader/1
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-title.png
+  region_image_pixel_sha256: 8cc381b769631b839fc699801541cb1f5720e35fa55858e7e9afc76e7ef3f370
+- region_id: vera-r0041-ingredients
+  pdf_page: 30
+  printed_page: '29'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 240
+    - 407
+  - - 1101
+    - 407
+  - - 1101
+    - 1082
+  - - 240
+    - 1082
+  candidate_block_ids:
+  - /page/29/ListGroup/2
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-ingredients.png
+  region_image_pixel_sha256: abbae255fb1b7b6cb6e00ac0858f78e27410fee52d14445d7f2dc953c7610bcf
+- region_id: vera-r0041-step-1
+  pdf_page: 30
+  printed_page: '29'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 1119
+    - 437
+  - - 2706
+    - 437
+  - - 2706
+    - 669
+  - - 1119
+    - 669
+  candidate_block_ids:
+  - /page/29/Text/3
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-step-1.png
+  region_image_pixel_sha256: 7a387201ff025f8686a0bff495cd94c57f324b37f2c83b37e1f728e380917089
+- region_id: vera-r0041-step-2
+  pdf_page: 30
+  printed_page: '29'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 1119
+    - 607
+  - - 2700
+    - 607
+  - - 2700
+    - 756
+  - - 1119
+    - 756
+  candidate_block_ids:
+  - /page/29/Text/4
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-step-2.png
+  region_image_pixel_sha256: 4eb7b65afa92ed53c0349d8d2b92126c70885cf54ed55b65ffb4af74e29bcce6
+- region_id: vera-r0041-step-3
+  pdf_page: 30
+  printed_page: '29'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 1119
+    - 716
+  - - 2700
+    - 716
+  - - 2700
+    - 1035
+  - - 1119
+    - 1035
+  candidate_block_ids:
+  - /page/29/Text/5
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-step-3.png
+  region_image_pixel_sha256: 97c567759c2275fba4cdf9d2615f6cb3a9c2efdb5beed2948ed7d0f3da2fef44
+- region_id: vera-r0041-step-4
+  pdf_page: 30
+  printed_page: '29'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 1119
+    - 994
+  - - 2679
+    - 994
+  - - 2679
+    - 1199
+  - - 1119
+    - 1199
+  candidate_block_ids:
+  - /page/29/Text/6
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-step-4.png
+  region_image_pixel_sha256: b9791ad9516bed41b807321633b8bdfa89c9dff183f228cd12f7131cc295c0d5
+- region_id: vera-r0041-yield
+  pdf_page: 30
+  printed_page: '29'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2128
+    origin: top_left
+  polygon:
+  - - 1119
+    - 1188
+  - - 2247
+    - 1188
+  - - 2247
+    - 1296
+  - - 1119
+    - 1296
+  candidate_block_ids:
+  - /page/29/Text/7
+  region_image: evidence/production-batch-007/regions/vera-r0041/p30-yield.png
+  region_image_pixel_sha256: e7eee031dac738481cf894c33d22223a1f729ad595bf3186bbaca5e4639b0ba1
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Venison cutlets, or medallions · Srnčí žebírka
+    language: mul
+    source_region_ids:
+    - vera-r0041-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Venison cutlets, or medallions
+    language: en
+    source_region_ids:
+    - vera-r0041-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Srnčí žebírka
+    language: cs
+    source_region_ids:
+    - vera-r0041-title
+    title_role: parallel
+  source_order: 41
+  slug_candidate: venison-cutlets-or-medallions
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 20 minutes, plus marinating'
+    language: en
+    source_region_ids:
+    - vera-r0041-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 12 young venison cutlets, or medallions, 3 oz. ea.
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 12 juniper berries, crushed
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 4 tablespoons cognac
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 1·1/2 cups sour cream
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1/2 cup chicken broth
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 3/4 cup olive oil
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 1 small onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 1 lb. fresh mushrooms, sliced lengthwise
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: snipped parsley
+      language: en
+      source_region_ids:
+      - vera-r0041-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Trim excess fat from the cutlets, pound them lightly, rub with juniper berries, sprinkle
+        with salt and pepper, drizzle with cognac and olive oil. Cover, marinate at least 1 hour.
+      language: en
+      source_region_ids:
+      - vera-r0041-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Meanwhile melt butter in a large skillet, sauté onion and mushrooms. Season with
+        salt and pepper. Reserve.
+      language: en
+      source_region_ids:
+      - vera-r0041-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Drain and wipe the cutlets, reserve marinade. Heat remaining oil in a heavy frying
+        pan, fry venison over high heat, about 3 minutes each side. Remove cutlets, keep them warm. Deglaze
+        pan with marinade. Add chicken broth and sour cream, simmer 5 minutes. Taste for salt and pepper.
+      language: en
+      source_region_ids:
+      - vera-r0041-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Coat the cutlets, or medallions, with the sauce. Garnish with mushrooms, snipped
+        parsley, poached halves of apples, serve with noodles, rice.
+      language: en
+      source_region_ids:
+      - vera-r0041-step-4
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T00:18:25Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T00:15:11Z'
+    artifact_path: pilot/acceleration-wave-003/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T00:27:37Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0041
+    source_region_ids: &id001
+    - vera-r0041-title
+    - vera-r0041-ingredients
+    - vera-r0041-step-1
+    - vera-r0041-step-2
+    - vera-r0041-step-3
+    - vera-r0041-step-4
+    - vera-r0041-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0041
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    source_region_ids:
+    - vera-r0041-title
+    - vera-r0041-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0041-title
+    - vera-r0041-step-1
+    - vera-r0041-step-2
+    - vera-r0041-step-3
+    - vera-r0041-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    source_region_ids:
+    - vera-r0041-title
+    - vera-r0041-yield
+    - vera-r0041-ingredients
+    - vera-r0041-step-1
+    - vera-r0041-step-2
+    - vera-r0041-step-3
+    - vera-r0041-step-4
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - step-1
+    - step-3
+    source_region_ids:
+    - vera-r0041-yield
+    - vera-r0041-ingredients
+    - vera-r0041-step-1
+    - vera-r0041-step-3
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0041-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0041
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    - step-2
+    source_region_ids:
+    - vera-r0041-title
+    - vera-r0041-step-2
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T00:27:37Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

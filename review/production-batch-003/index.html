@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Cookbook · Production batch 003 source review</title>
+<style>
+:root { --ink:#27231d; --paper:#f3eee3; --card:#fffdf6; --rule:#b9aa92; --accent:#8f2924; --green:#245c47; --muted:#685d4d; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 Palatino, "Book Antiqua", Georgia, serif; }
+.mast { padding:64px max(24px,6vw) 46px; border-bottom:1px solid var(--rule); background:#e5dac5; }
+h1 { max-width:920px; margin:0 0 16px; font-size:clamp(42px,7vw,88px); line-height:.96; font-weight:500; letter-spacing:-.035em; text-wrap:balance; }
+.mast p { max-width:760px; margin:0; font-size:19px; line-height:1.55; }
+.toolbar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; padding:12px max(24px,6vw); background:#f3eee3; border-bottom:1px solid var(--rule); }
+.toolbar button { min-height:44px; border:1px solid var(--ink); background:var(--ink); color:#fff; padding:10px 16px; border-radius:999px; font:700 12px ui-monospace,SFMono-Regular,monospace; cursor:pointer; }
+.toolbar button.secondary { background:transparent; color:var(--ink); }
+.toolbar output { margin-inline-start:auto; font:700 13px ui-monospace,SFMono-Regular,monospace; }
+.toolbar span { color:var(--muted); }
+main { width:min(1500px,94vw); margin:42px auto 90px; display:grid; gap:42px; }
+.recipe { min-width:0; overflow:hidden; background:var(--card); border:1px solid var(--rule); border-radius:14px; }
+.recipe-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; padding:28px 32px; border-bottom:1px solid var(--rule); }
+.recipe h2 { margin:0; font-size:clamp(25px,3vw,42px); line-height:1.08; font-weight:500; overflow-wrap:anywhere; }
+.record-meta { margin:8px 0 0; color:var(--muted); font:12px/1.4 ui-monospace,SFMono-Regular,monospace; }
+.record-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px; flex:none; }
+.record-actions a { color:var(--ink); font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.08em; }
+.status { flex:none; border:1px solid var(--accent); color:var(--accent); padding:7px 11px; border-radius:999px; font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+.status-source_checked { border-color:var(--green); color:var(--green); }
+.compare { display:grid; grid-template-columns:auto minmax(0,1fr); }
+.source-disclosure { width:max-content; max-width:100%; border-inline-end:1px solid var(--rule); }
+.source-disclosure.is-open { width:min(720px,48vw); }
+.source-toggle { display:flex; width:100%; min-height:52px; align-items:center; gap:12px; padding:14px 18px; border:0; color:#fff; background:var(--ink); cursor:pointer; font:700 13px ui-monospace,SFMono-Regular,monospace; text-align:left; }
+.region-disclosure>summary::-webkit-details-marker { display:none; }
+.source-toggle small { color:#e8dcc8; font:11px ui-monospace,SFMono-Regular,monospace; white-space:nowrap; }
+.source-toggle-icon { margin-inline-start:auto; font-size:20px; line-height:1; }
+.source-panel { padding:24px; }
+.overview-grid { display:grid; gap:18px; }
+.region-disclosure { margin-top:22px; border-top:1px solid var(--rule); }
+.region-disclosure>summary { min-height:44px; padding:14px 0; color:var(--accent); cursor:pointer; font-weight:700; }
+.region-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.candidate { min-width:0; padding:28px 32px; }
+h3 { margin:0 0 18px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+h4 { margin:24px 0 7px; font-size:16px; }
+h5 { margin:18px 0 6px; color:var(--accent); font:700 12px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+figure { margin:0 0 20px; }
+figure a { display:block; }
+figure img { display:block; width:100%; max-height:720px; object-fit:contain; object-position:top; background:#eee4d4; border:1px solid #d8ccb8; }
+.region-crop img { height:150px; object-fit:contain; }
+figcaption { margin-top:6px; color:var(--muted); font:12px ui-monospace,SFMono-Regular,monospace; overflow-wrap:anywhere; }
+.candidate ul,.candidate ol { padding-left:22px; }
+.candidate li,.candidate p { max-width:75ch; margin:0 0 8px; line-height:1.5; overflow-wrap:anywhere; }
+.verbatim-title { padding:12px 14px; background:#f2eadc; border:1px solid #d9cbb5; }
+.risk { padding:24px 32px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); background:#f8eee7; }
+.risk ul { margin:0 0 12px; padding-left:20px; }
+.risk li,.risk p { max-width:100ch; margin:8px 0; line-height:1.45; overflow-wrap:anywhere; }
+.risk li span { margin-right:9px; color:var(--accent); font:700 10px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+fieldset { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; margin:0; padding:24px 32px 30px; border:0; }
+legend { padding-top:24px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+label { display:flex; gap:10px; align-items:flex-start; line-height:1.35; cursor:pointer; }
+input { appearance:none; width:20px; height:20px; flex:none; margin:1px 0 0; border:1px solid #75664f; background:#fff; }
+input:checked { background:var(--green); box-shadow:inset 0 0 0 4px #fff; }
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible { outline:3px solid #146b8c; outline-offset:3px; }
+#copy-feedback { min-width:16ch; color:var(--green); font-weight:700; }
+@media (hover:hover) { .source-toggle:hover,.toolbar button:hover { filter:brightness(1.16); } .record-actions a:hover { color:var(--accent); } }
+@media (max-width:900px) {
+  .recipe-head { flex-direction:column; } .record-actions { justify-content:flex-start; }
+  .compare { grid-template-columns:1fr; } .source-disclosure,.source-disclosure.is-open { width:100%; border-inline-end:0; border-bottom:1px solid var(--rule); }
+  .region-grid,fieldset { grid-template-columns:1fr; } .toolbar output { margin-inline-start:0; }
+}
+@media (max-width:560px) { .mast { padding-block:44px 34px; } .recipe-head,.candidate,.risk,fieldset { padding-inline:20px; } .toolbar span:not(#copy-feedback) { width:100%; } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+@media print { .toolbar { display:none; } body { background:#fff; } .recipe { break-before:page; } .source-disclosure { width:48%!important; } }
+</style>
+</head>
+<body>
+<header class="mast"><h1>Production batch 003 source review</h1><p>Canonical transcription after local source audit and recorded owner source decisions. This review page does not claim human verification unless a record says so.</p></header>
+<div class="toolbar"><button type="button" onclick="window.print()">Print review packet</button><button type="button" class="secondary" onclick="copyStatus()">Copy checklist status</button><span>Optional human checks persist in this browser only.</span><output id="progress">0 / 40 checked</output><span id="copy-feedback" role="status" aria-live="polite"></span></div>
+<main>
+            <article class="recipe" id="vera-r0009">
+              <header class="recipe-head">
+                <div><h2>Veal chops with caraway seeds · Telecí žebírka na kmíně</h2><p class="record-meta">vera-r0009 · PDF 11 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0009.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0009">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0009" aria-label="View source for Veal chops with caraway seeds · Telecí žebírka na kmíně" data-source-title="Veal chops with caraway seeds · Telecí žebírka na kmíně"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0009" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-003/overview/vera-r0009/page-11.png"><img loading="lazy" src="../../evidence/production-batch-003/overview/vera-r0009/page-11.png" alt="Source page context for Veal chops with caraway seeds · Telecí žebírka na kmíně"></a><figcaption>PDF page 11 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-title.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-title.png" alt="Exact cited title crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>title · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-ingredients.png" alt="Exact cited ingredient crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>ingredients · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-step-1.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-step-1.png" alt="Exact cited instruction crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>step 1 · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-step-2.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-step-2.png" alt="Exact cited instruction crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>step 2 · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-step-3.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-step-3.png" alt="Exact cited instruction crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>step 3 · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0009/p11-yield.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0009/p11-yield.png" alt="Exact cited yield_time crop for Veal chops with caraway seeds · Telecí žebírka na kmíně on PDF page 11"></a><figcaption>yield · PDF 11</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Veal chops with caraway seeds · Telecí žebírka na kmíně</p>
+                  <h4>Ingredients</h4><ul><li>6 veal chops</li><li>1/2 cup flour</li><li>1/2 cup vegetable oil</li><li>2 tablespoons butter</li><li>1 cup chicken stock</li><li>1 small onion</li><li>1 teaspoon caraway seeds</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the veal chops lightly-they should not be more than 1/2” thick. Make a few short cuts on the edges to prevent curling, salt them on both sides, and dust with flour on one side. Brown chops in hot oil on both sides, floured side first. In a skillet combine the butter and finely chopped onion and set over medium heat.</li><li>When the onion becomes translucent add the caraway seeds, some of the chicken stock and the veal chops and simmer about 30 minutes or until the chops are tender.</li><li>Remove the veal chops. Bring the liquid to boil, blend in flour and remaining stock, and boil until the sauce thickens (about 5 minutes). Strain the sauce over the veal chops, simmer 5 minutes. Serve with noodles, rice, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 45 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 45 · 1/2 · 2 · 1 · 1/2” · 30 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0009"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0009"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0010">
+              <header class="recipe-head">
+                <div><h2>Breaded veal chops · Telecí žebírka smažená</h2><p class="record-meta">vera-r0010 · PDF 11 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0010.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0010">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0010" aria-label="View source for Breaded veal chops · Telecí žebírka smažená" data-source-title="Breaded veal chops · Telecí žebírka smažená"><span class="source-toggle-label">View source</span><small>5 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0010" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-003/overview/vera-r0010/page-11.png"><img loading="lazy" src="../../evidence/production-batch-003/overview/vera-r0010/page-11.png" alt="Source page context for Breaded veal chops · Telecí žebírka smažená"></a><figcaption>PDF page 11 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0010/p11-title.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0010/p11-title.png" alt="Exact cited title crop for Breaded veal chops · Telecí žebírka smažená on PDF page 11"></a><figcaption>title · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0010/p11-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0010/p11-ingredients.png" alt="Exact cited ingredient crop for Breaded veal chops · Telecí žebírka smažená on PDF page 11"></a><figcaption>ingredients · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0010/p11-step-1.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0010/p11-step-1.png" alt="Exact cited instruction crop for Breaded veal chops · Telecí žebírka smažená on PDF page 11"></a><figcaption>step 1 · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0010/p11-step-2.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0010/p11-step-2.png" alt="Exact cited instruction crop for Breaded veal chops · Telecí žebírka smažená on PDF page 11"></a><figcaption>step 2 · PDF 11</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0010/p11-yield.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0010/p11-yield.png" alt="Exact cited yield_time crop for Breaded veal chops · Telecí žebírka smažená on PDF page 11"></a><figcaption>yield · PDF 11</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Breaded veal chops · Telecí žebírka smažená</p>
+                  <h4>Ingredients</h4><ul><li>6 veal chops</li><li>1/2 cup flour</li><li>2 eggs</li><li>1/3 cup milk</li><li>1 cup bread crumbs</li><li>1 cup vegetable oil</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the veal chops. Make a few short cuts on the edges to prevent curling, salt them on both sides. Dip each in milk, dredge in flour shaking off excess, then dip in beaten eggs and coat with bread crumbs.</li><li>Fry in hot oil in a covered pan for 5 minutes, turn them and finish frying uncovered. Drain on paper towel. Serve with potato salad, mashed potatoes, green vegetables, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 45 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 45 · 1/2 · 2 · 1/3 · 1 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0010"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0010"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0011">
+              <header class="recipe-head">
+                <div><h2>Wiener Schnitzel · Breaded veal scallops · Řízky</h2><p class="record-meta">vera-r0011 · PDF 12 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0011.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0011">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0011" aria-label="View source for Wiener Schnitzel · Breaded veal scallops · Řízky" data-source-title="Wiener Schnitzel · Breaded veal scallops · Řízky"><span class="source-toggle-label">View source</span><small>5 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0011" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-003/overview/vera-r0011/page-12.png"><img loading="lazy" src="../../evidence/production-batch-003/overview/vera-r0011/page-12.png" alt="Source page context for Wiener Schnitzel · Breaded veal scallops · Řízky"></a><figcaption>PDF page 12 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0011/p12-title.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0011/p12-title.png" alt="Exact cited title crop for Wiener Schnitzel · Breaded veal scallops · Řízky on PDF page 12"></a><figcaption>title · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0011/p12-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0011/p12-ingredients.png" alt="Exact cited ingredient crop for Wiener Schnitzel · Breaded veal scallops · Řízky on PDF page 12"></a><figcaption>ingredients · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0011/p12-step-1.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0011/p12-step-1.png" alt="Exact cited instruction crop for Wiener Schnitzel · Breaded veal scallops · Řízky on PDF page 12"></a><figcaption>step 1 · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0011/p12-yield.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0011/p12-yield.png" alt="Exact cited yield_time crop for Wiener Schnitzel · Breaded veal scallops · Řízky on PDF page 12"></a><figcaption>yield · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0011/p12-tip.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0011/p12-tip.png" alt="Exact cited note crop for Wiener Schnitzel · Breaded veal scallops · Řízky on PDF page 12"></a><figcaption>tip · PDF 12</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Wiener Schnitzel · Breaded veal scallops · Řízky</p>
+                  <h4>Ingredients</h4><ul><li>6 veal scallops – leg of veal or veal top round, thin sliced</li><li>1/2 cup flour</li><li>2 eggs</li><li>1 cup bread crumbs</li><li>1 cup vegetable oil</li><li>salt</li></ul>
+                  <h4>Instructions</h4><ol><li>Pound the scallops. Make a few short cuts on the edges to prevent curling, salt them on both sides. Dredge them in flour, shake off excess, dip in beaten eggs and coat with bread crumbs. Fry in hot oil in a covered pan about 4 minutes or until golden brown; turn and fry the other side uncovered. Drain on paper towel. Serve with potatoes, potato salad, mashed potatoes, green salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 45 minutes</p>
+                  <h4>Notes</h4><ul><li>This is the correct way to prepare Wiener Schnitzels, a very popular meal in Bohemia. Thinly sliced boneless pork chops, beef tenderloin slices, boned and skinned chicken breast or cutlets may be prepared in the same manner.</li></ul>
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 45 · 1/2 · 2 · 1 · 4</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0011"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0011"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0012">
+              <header class="recipe-head">
+                <div><h2>Veal goulash · Guláš telecí</h2><p class="record-meta">vera-r0012 · PDF 12 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0012.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0012">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0012" aria-label="View source for Veal goulash · Guláš telecí" data-source-title="Veal goulash · Guláš telecí"><span class="source-toggle-label">View source</span><small>6 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0012" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-003/overview/vera-r0012/page-12.png"><img loading="lazy" src="../../evidence/production-batch-003/overview/vera-r0012/page-12.png" alt="Source page context for Veal goulash · Guláš telecí"></a><figcaption>PDF page 12 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-title.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-title.png" alt="Exact cited title crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>title · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-ingredients.png" alt="Exact cited ingredient crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>ingredients · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-step-1.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-step-1.png" alt="Exact cited instruction crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>step 1 · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-step-2.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-step-2.png" alt="Exact cited instruction crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>step 2 · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-step-3.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-step-3.png" alt="Exact cited instruction crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>step 3 · PDF 12</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0012/p12-yield.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0012/p12-yield.png" alt="Exact cited yield_time crop for Veal goulash · Guláš telecí on PDF page 12"></a><figcaption>yield · PDF 12</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Veal goulash · Guláš telecí</p>
+                  <h4>Ingredients</h4><ul><li>3 lbs. boneless veal shoulder, cut in 1” cubes</li><li>6 tablespoons butter</li><li>1 medium onion, finely chopped</li><li>2 tablespoons paprika</li><li>dash of hot curry powder</li><li>2 cups chicken broth</li><li>juice of 1 lemon</li><li>4 tablespoons flour</li><li>1 pint heavy cream</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>Melt butter in a heavy 3 quart saucepan. Add onion and cook over medium heat until translucent. Add paprika, curry, veal, 2·3 tablespoons chicken broth.</li><li>Simmer over low heat about 1 hr. adding gradually chicken broth, if needed. The meat must be simmering in just enough liquid so that it does not stick to the pot. You may not use up all of the chicken broth. When the veal is tender, not overcooked, add lemon juice. Mix well flour and cream and blend the mixture into the stew. Bring to boil, simmer 5 minutes, stirring often. Season to taste with salt and pepper.</li><li>Serve with dumplings, noodles, salad.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 1 hour 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 1 · 30 · 3 · 1” · 2 · 4 · 2·3 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0012"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0012"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0013">
+              <header class="recipe-head">
+                <div><h2>Pork roast · Vepřová pečeně</h2><p class="record-meta">vera-r0013 · PDF 13 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0013.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0013">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0013" aria-label="View source for Pork roast · Vepřová pečeně" data-source-title="Pork roast · Vepřová pečeně"><span class="source-toggle-label">View source</span><small>8 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0013" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-003/overview/vera-r0013/page-13.png"><img loading="lazy" src="../../evidence/production-batch-003/overview/vera-r0013/page-13.png" alt="Source page context for Pork roast · Vepřová pečeně"></a><figcaption>PDF page 13 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-title.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-title.png" alt="Exact cited title crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>title · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-ingredients.png" alt="Exact cited ingredient crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>ingredients · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-step-1.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-step-1.png" alt="Exact cited instruction crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>step 1 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-step-2.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-step-2.png" alt="Exact cited instruction crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>step 2 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-step-3.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-step-3.png" alt="Exact cited instruction crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>step 3 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-step-4.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-step-4.png" alt="Exact cited instruction crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>step 4 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-step-5.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-step-5.png" alt="Exact cited instruction crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>step 5 · PDF 13</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-003/regions/vera-r0013/p13-yield.png"><img loading="lazy" src="../../evidence/production-batch-003/regions/vera-r0013/p13-yield.png" alt="Exact cited yield_time crop for Pork roast · Vepřová pečeně on PDF page 13"></a><figcaption>yield · PDF 13</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Pork roast · Vepřová pečeně</p>
+                  <h4>Ingredients</h4><ul><li>3·4 lbs. center cut pork roast – (ask the butcher to saw across the rib bones of the roast, at the base of the backbone – separating the ribs from the backbone. It will ease the carving).</li><li>2 cups chicken stock</li><li>2 teaspoons caraway seeds</li><li>3 cloves garlic, pressed</li><li>2 bay leaves</li><li>salt and pepper</li></ul>
+                  <h4>Instructions</h4><ol><li>In a saucepan heat the chicken stock, caraway seeds, bay leaves and garlic.</li><li>Rinse and pat dry the meat and rub it with salt and pepper. Place it, skin down, on a rack in an open roasting pan. Pour half of the liquid from the saucepan over the meat and roast at 350F for 1 hour, basting frequently with the juices from the pan and the liquid from the saucepan. Turn the meat and continue roasting for 1·1/2 hours, until the top is golden brown and the meat tender. Allow 35 minutes per pound.</li><li>When done let it rest 5 minutes, carve.</li><li>Skim fat from the pan drippings, strain some over the roast, serve the rest in a saucedish.</li><li>Serve with dumplings, potato dumplings, boiled potatoes and sauerkraut.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 6 – Preparation time: 3 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 6 · 3 · 3·4 · 2 · 350F · 1 · 1·1/2 · 35 · 5</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0013"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0013"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            </main>
+<script>
+const key='vera-production-batch-003-human-checklist-v2';
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}');}catch(error){saved={};}
+boxes.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',()=>{saved[index]=box.checked;localStorage.setItem(key,JSON.stringify(saved));update();});});
+function update(){const count=boxes.filter(box=>box.checked).length;document.querySelector('#progress').textContent=`${count} / ${boxes.length} checked`;}
+async function writeClipboard(text){
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return;}
+  const area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+  if(!document.execCommand('copy')){throw new Error('Copy command was unavailable.');}area.remove();
+}
+async function copyStatus(){
+  const lines=['Vera Cookbook production batch 003 review status'];
+  document.querySelectorAll('.recipe').forEach(card=>{
+    const cardBoxes=[...card.querySelectorAll('input[type=checkbox]')];
+    const checked=cardBoxes.filter(box=>box.checked).length;
+    const status=card.querySelector('.status').textContent.trim();
+    lines.push(`${card.id}: ${status}; ${checked} / ${cardBoxes.length} optional human checks complete`);
+  });
+  const feedback=document.querySelector('#copy-feedback');
+  try{await writeClipboard(lines.join('\n'));feedback.textContent='Copied.';}catch(error){feedback.textContent='Copy failed; select the status manually.';}
+}
+const sourceDetails=[...document.querySelectorAll('[data-source]')];
+function setSourceOpen(container,open){
+  const toggle=container.querySelector('.source-toggle');
+  const panel=container.querySelector('.source-panel');
+  toggle.setAttribute('aria-expanded',String(open));
+  toggle.setAttribute('aria-label',`${open?'Hide':'View'} source for ${toggle.dataset.sourceTitle}`);
+  toggle.querySelector('.source-toggle-label').textContent=open?'Hide source':'View source';
+  toggle.querySelector('.source-toggle-icon').textContent=open?'−':'+';
+  panel.hidden=!open;
+  container.classList.toggle('is-open',open);
+}
+sourceDetails.forEach(container=>{
+  const toggle=container.querySelector('.source-toggle');
+  toggle.addEventListener('click',()=>setSourceOpen(container,toggle.getAttribute('aria-expanded')!=='true'));
+  toggle.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle.click();}
+  });
+});
+let printOpen=[];
+window.addEventListener('beforeprint',()=>{printOpen=sourceDetails.map(item=>item.classList.contains('is-open'));sourceDetails.forEach(item=>setSourceOpen(item,true));});
+window.addEventListener('afterprint',()=>{sourceDetails.forEach((item,index)=>setSourceOpen(item,printOpen[index]));});
+update();
+</script>
+</body>
+</html>

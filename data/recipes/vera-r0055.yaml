@@ -1,0 +1,387 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0055
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 38
+  printed_pages:
+  - '37'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0055-title
+  pdf_page: 38
+  printed_page: '37'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 264
+  - - 1872
+    - 264
+  - - 1872
+    - 374
+  - - 1074
+    - 374
+  candidate_block_ids:
+  - /page/37/SectionHeader/1
+  region_image: evidence/production-batch-008/regions/vera-r0055/p38-title.png
+  region_image_pixel_sha256: 1c1480d7c8524752ceeb69bce9c81cbdc3c73ab49706117081341d092c5b7d50
+- region_id: vera-r0055-ingredients
+  pdf_page: 38
+  printed_page: '37'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 222
+    - 354
+  - - 1047
+    - 354
+  - - 1047
+    - 932
+  - - 222
+    - 932
+  candidate_block_ids:
+  - /page/37/ListGroup/2
+  region_image: evidence/production-batch-008/regions/vera-r0055/p38-ingredients.png
+  region_image_pixel_sha256: 11ddee967e9d87e8ffc173c678f13bc490e13d649405303a1d5d9e8d6498f8b6
+- region_id: vera-r0055-step-1
+  pdf_page: 38
+  printed_page: '37'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1086
+    - 366
+  - - 2706
+    - 366
+  - - 2706
+    - 846
+  - - 1086
+    - 846
+  candidate_block_ids:
+  - /page/37/Text/3
+  region_image: evidence/production-batch-008/regions/vera-r0055/p38-step-1.png
+  region_image_pixel_sha256: 8aa7815c50bfcc0b588437732d205ce2945055d51cf9164d8b50a9d6f1f20bb7
+- region_id: vera-r0055-yield
+  pdf_page: 38
+  printed_page: '37'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1086
+    - 820
+  - - 1902
+    - 820
+  - - 1902
+    - 912
+  - - 1086
+    - 912
+  candidate_block_ids:
+  - /page/37/Text/4
+  region_image: evidence/production-batch-008/regions/vera-r0055/p38-yield.png
+  region_image_pixel_sha256: b1024c0f5044006fc51ac8e5cfeef66e0f7cacb3307450ab21e881d30babae26
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Red cabbage · Červené zelí
+    language: mul
+    source_region_ids:
+    - vera-r0055-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Red cabbage
+    language: en
+    source_region_ids:
+    - vera-r0055-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Červené zelí
+    language: cs
+    source_region_ids:
+    - vera-r0055-title
+    title_role: parallel
+  source_order: 55
+  slug_candidate: red-cabbage
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 45 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0055-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 fresh head of red cabbage, about 2 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1·1/2 cups vinegar
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 4 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 1 medium onion, chopped
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 2 oz. bacon, diced
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 1 large apple, peeled and thinly sliced
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 3 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: 2/3 cup red wine
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+    - segment_id: ingredient-11
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0055-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Remove wilted outside leaves from the head of red cabbage. Quarter, core and rinse
+        it. Cut in strips, scald with hot vinegar. In a skillet combine oil, bacon, onion, caraway seeds
+        and sugar. Sauté mixture until brownned. Add cabbage, thinly sliced apple, dash of salt, cover
+        and simmer 15 minutes, or until cabbage is almost tender. Uncover, let liquid almost dry out,
+        blend in flour and red wine, simmer 5·10 minutes. Cabbage should be tender but crisp. Serve with
+        roast goose, duckling, pork, game.
+      language: en
+      source_region_ids:
+      - vera-r0055-step-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T02:24:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T02:23:27Z'
+    artifact_path: pilot/acceleration-wave-004/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T02:31:00Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0055
+    source_region_ids: &id001
+    - vera-r0055-title
+    - vera-r0055-ingredients
+    - vera-r0055-step-1
+    - vera-r0055-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0055
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    source_region_ids:
+    - vera-r0055-title
+    - vera-r0055-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    source_region_ids:
+    - vera-r0055-title
+    - vera-r0055-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-7
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - ingredient-11
+    - step-1
+    source_region_ids:
+    - vera-r0055-title
+    - vera-r0055-yield
+    - vera-r0055-ingredients
+    - vera-r0055-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - ingredient-6
+    - ingredient-8
+    - ingredient-9
+    - ingredient-10
+    - step-1
+    source_region_ids:
+    - vera-r0055-yield
+    - vera-r0055-ingredients
+    - vera-r0055-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0055-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0055
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    - step-1
+    source_region_ids:
+    - vera-r0055-title
+    - vera-r0055-step-1
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-24T02:31:00Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

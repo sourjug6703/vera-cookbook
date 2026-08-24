@@ -1,0 +1,541 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0028
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 21
+  printed_pages:
+  - '20'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0028-title
+  pdf_page: 21
+  printed_page: '20'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1104
+    - 809
+  - - 1947
+    - 809
+  - - 1947
+    - 922
+  - - 1104
+    - 922
+  candidate_block_ids:
+  - /page/20/SectionHeader/6
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-title.png
+  region_image_pixel_sha256: b4fd8b2ae91a4b3dd7ad0207c5bfa689abf70115be51b3c243c2371250526419
+- region_id: vera-r0028-ingredients
+  pdf_page: 21
+  printed_page: '20'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 258
+    - 903
+  - - 939
+    - 903
+  - - 939
+    - 1178
+  - - 258
+    - 1178
+  candidate_block_ids:
+  - /page/20/ListGroup/7
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-ingredients.png
+  region_image_pixel_sha256: 4247d65e1e99687452c4fabdac8fef04d263b55bad267ab1e7b6f6de5be96f9b
+- region_id: vera-r0028-step-1
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 910
+  - - 2700
+    - 910
+  - - 2700
+    - 1055
+  - - 1143
+    - 1055
+  candidate_block_ids:
+  - /page/20/Text/8
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-1.png
+  region_image_pixel_sha256: 029ac27c98ddb50f0c5cedac4e8d95a14452589494c24960a37f35c6f76696de
+- region_id: vera-r0028-step-2
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1021
+  - - 2721
+    - 1021
+  - - 2721
+    - 1168
+  - - 1143
+    - 1168
+  candidate_block_ids:
+  - /page/20/Text/9
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-2.png
+  region_image_pixel_sha256: 6442e0031af821f5a498c91e21796e2384adc014fdf21f3a2dd89907241a4322
+- region_id: vera-r0028-step-3
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1132
+  - - 1707
+    - 1132
+  - - 1707
+    - 1227
+  - - 1143
+    - 1227
+  candidate_block_ids:
+  - /page/20/Text/10
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-3.png
+  region_image_pixel_sha256: aa0a1b01dca57db800c71dfd0fc15b1544df501d9e78b8e565bfcce990e4be38
+- region_id: vera-r0028-step-4
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1191
+  - - 2721
+    - 1191
+  - - 2721
+    - 1398
+  - - 1143
+    - 1398
+  candidate_block_ids:
+  - /page/20/Text/11
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-4.png
+  region_image_pixel_sha256: 70015a3fe51fcc019265359f46bb67f9bbe2e5aded6c8ca81c8b3fe94cdc5d44
+- region_id: vera-r0028-step-5
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1358
+  - - 2721
+    - 1358
+  - - 2721
+    - 1563
+  - - 1143
+    - 1563
+  candidate_block_ids:
+  - /page/20/Text/12
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-5.png
+  region_image_pixel_sha256: 6b1c55d6c49fd136455cba0e4b001c8a06da1a3b59353f0582b8505a987580de
+- region_id: vera-r0028-step-6
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1527
+  - - 2721
+    - 1527
+  - - 2721
+    - 1782
+  - - 1143
+    - 1782
+  candidate_block_ids:
+  - /page/20/Text/13
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-6.png
+  region_image_pixel_sha256: c86a6e968dffe4f10bef886307f4c55f727ee83a5a0d107f50602a83d0e920bb
+- region_id: vera-r0028-step-7
+  pdf_page: 21
+  printed_page: '20'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1746
+  - - 2292
+    - 1746
+  - - 2292
+    - 1842
+  - - 1143
+    - 1842
+  candidate_block_ids:
+  - /page/20/Text/14
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-step-7.png
+  region_image_pixel_sha256: a556357d7c77e14a68a6f488b4a7b76d8799702ed278f4ff3df3bb9f8ae6e18c
+- region_id: vera-r0028-yield
+  pdf_page: 21
+  printed_page: '20'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2134
+    origin: top_left
+  polygon:
+  - - 1143
+    - 1832
+  - - 2136
+    - 1832
+  - - 2136
+    - 1923
+  - - 1143
+    - 1923
+  candidate_block_ids:
+  - /page/20/Text/15
+  region_image: evidence/production-batch-005/regions/vera-r0028/p21-yield.png
+  region_image_pixel_sha256: d4d1fd121e8d2fa1041396a9da7535a4995f82cca0be4257562183e2a3fdc4f4
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Roast turkey · Krocan pečený
+    language: mul
+    source_region_ids:
+    - vera-r0028-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Roast turkey
+    language: en
+    source_region_ids:
+    - vera-r0028-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Krocan pečený
+    language: cs
+    source_region_ids:
+    - vera-r0028-title
+    title_role: parallel
+  source_order: 28
+  slug_candidate: roast-turkey
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 15 – Preparation time: 3 hours 30 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0028-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 1 turkey, 15 lbs.
+      language: en
+      source_region_ids:
+      - vera-r0028-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 8 tablespoons (1 stick) butter
+      language: en
+      source_region_ids:
+      - vera-r0028-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 2 cups chicken broth
+      language: en
+      source_region_ids:
+      - vera-r0028-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 slices bacon
+      language: en
+      source_region_ids:
+      - vera-r0028-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: salt
+      language: en
+      source_region_ids:
+      - vera-r0028-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Rinse turkey with cold water, and pat dry inside and out with paper towel.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Rub the body and neck cavities with salt and butter. Brush skin with butter.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Preheat oven to 350F.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Pour one cup chicken broth in a roasting pan. Place the bird in the pan, breast down.
+        Roast, uncovered 1·1/2 hours, basting occasionally with butter, chicken broth and pan drippings.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-4
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Turn turkey breast up, place 2 slices bacon on top and roast 1·1/2 – 2 hours, basting
+        with the remaining butter, chicken broth and juices from the pan.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-5
+      step_number: 5
+    - segment_id: step-6
+      text_verbatim: When done, transfer the bird on a heated platter. Strain the pan drippings, discarding
+        all fat, and pour some over the turkey. Serve the remaining juice in a saucedish. For easier carving
+        allow turkey to stand 10·15 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-6
+      step_number: 6
+    - segment_id: step-7
+      text_verbatim: Serve with potatoes, salad, vegetables, compote.
+      language: en
+      source_region_ids:
+      - vera-r0028-step-7
+      step_number: 7
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T23:02:08Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: source_checked
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T23:13:24Z'
+  checks:
+  - check_id: ai-region-coverage
+    check_type: region_coverage
+    target_ids:
+    - vera-r0028
+    source_region_ids: &id001
+    - vera-r0028-title
+    - vera-r0028-ingredients
+    - vera-r0028-step-1
+    - vera-r0028-step-2
+    - vera-r0028-step-3
+    - vera-r0028-step-4
+    - vera-r0028-step-5
+    - vera-r0028-step-6
+    - vera-r0028-step-7
+    - vera-r0028-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every cited region and full-page layout context was inspected locally.
+  - check_id: ai-recipe-boundary
+    check_type: recipe_boundary
+    target_ids:
+    - vera-r0028
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Recipe ownership was checked against neighboring content on every cited page.
+  - check_id: ai-ingredient-ownership
+    check_type: ingredient_ownership
+    target_ids:
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    source_region_ids:
+    - vera-r0028-title
+    - vera-r0028-ingredients
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+  - check_id: ai-instruction-ownership
+    check_type: instruction_ownership
+    target_ids:
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    - step-7
+    source_region_ids:
+    - vera-r0028-title
+    - vera-r0028-step-1
+    - vera-r0028-step-2
+    - vera-r0028-step-3
+    - vera-r0028-step-4
+    - vera-r0028-step-5
+    - vera-r0028-step-6
+    - vera-r0028-step-7
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+  - check_id: ai-transcription-exactness
+    check_type: transcription_exactness
+    target_ids:
+    - title-display
+    - title-en
+    - title-cs
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - ingredient-5
+    - step-1
+    - step-2
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    - step-7
+    source_region_ids:
+    - vera-r0028-title
+    - vera-r0028-yield
+    - vera-r0028-ingredients
+    - vera-r0028-step-1
+    - vera-r0028-step-2
+    - vera-r0028-step-3
+    - vera-r0028-step-4
+    - vera-r0028-step-5
+    - vera-r0028-step-6
+    - vera-r0028-step-7
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: All source-clear spelling, punctuation, omissions, and printed separators match the cited scans.
+  - check_id: ai-numeric-tokens
+    check_type: numeric_tokens
+    target_ids:
+    - yield-1
+    - ingredient-1
+    - ingredient-2
+    - ingredient-3
+    - ingredient-4
+    - step-3
+    - step-4
+    - step-5
+    - step-6
+    source_region_ids:
+    - vera-r0028-yield
+    - vera-r0028-ingredients
+    - vera-r0028-step-3
+    - vera-r0028-step-4
+    - vera-r0028-step-5
+    - vera-r0028-step-6
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every visible quantity, fraction separator, temperature, time, and yield number was compared
+      directly.
+  - check_id: ai-yield-time-presence
+    check_type: yield_time_presence
+    target_ids:
+    - yield-1
+    source_region_ids:
+    - vera-r0028-yield
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Every printed yield/preparation-time line was compared directly.
+  - check_id: ai-occurrence-count
+    check_type: occurrence_count
+    target_ids:
+    - vera-r0028
+    source_region_ids: *id001
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: Repeated and visually omitted candidate text was checked against the page layout.
+  - check_id: ai-diacritics
+    check_type: diacritics
+    target_ids:
+    - title-display
+    - title-cs
+    source_region_ids:
+    - vera-r0028-title
+    result: pass
+    method: direct_visual_source
+    performed_by: ai
+    auditor_id: openai-codex
+    audited_at: '2026-08-23T23:13:24Z'
+    independent_of_extractor: true
+    note: All visible Czech diacritics were compared character by character.
+  open_issues: []

@@ -1,0 +1,119 @@
+{
+  "batch_id": "production-batch-003",
+  "stage": "audited",
+  "records": [
+    {
+      "recipe_id": "vera-r0009",
+      "record_path": "data/recipes/vera-r0009.yaml",
+      "source_regions": 6,
+      "overview_images": [
+        "evidence/production-batch-003/overview/vera-r0009/page-11.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1/2",
+        "2",
+        "1",
+        "1/2”",
+        "30",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0010",
+      "record_path": "data/recipes/vera-r0010.yaml",
+      "source_regions": 5,
+      "overview_images": [
+        "evidence/production-batch-003/overview/vera-r0010/page-11.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1/2",
+        "2",
+        "1/3",
+        "1",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0011",
+      "record_path": "data/recipes/vera-r0011.yaml",
+      "source_regions": 5,
+      "overview_images": [
+        "evidence/production-batch-003/overview/vera-r0011/page-12.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1/2",
+        "2",
+        "1",
+        "4"
+      ],
+      "open_issue_count": 1,
+      "status": "needs_attention",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0012",
+      "record_path": "data/recipes/vera-r0012.yaml",
+      "source_regions": 6,
+      "overview_images": [
+        "evidence/production-batch-003/overview/vera-r0012/page-12.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "1",
+        "30",
+        "3",
+        "1”",
+        "2",
+        "4",
+        "2·3",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0013",
+      "record_path": "data/recipes/vera-r0013.yaml",
+      "source_regions": 8,
+      "overview_images": [
+        "evidence/production-batch-003/overview/vera-r0013/page-13.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "3",
+        "3·4",
+        "2",
+        "350F",
+        "1",
+        "1·1/2",
+        "35",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    }
+  ],
+  "review_packet": "review/production-batch-003/index.html",
+  "source_sha256": "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b",
+  "marker_pages": [
+    11,
+    12,
+    13
+  ],
+  "audit_completed_at": "2026-08-23T21:35:39Z",
+  "auditor_id": "openai-codex"
+}

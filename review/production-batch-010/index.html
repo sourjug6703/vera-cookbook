@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Cookbook · Production batch 010 source review</title>
+<style>
+:root { --ink:#27231d; --paper:#f3eee3; --card:#fffdf6; --rule:#b9aa92; --accent:#8f2924; --green:#245c47; --muted:#685d4d; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 Palatino, "Book Antiqua", Georgia, serif; }
+.mast { padding:64px max(24px,6vw) 46px; border-bottom:1px solid var(--rule); background:#e5dac5; }
+h1 { max-width:920px; margin:0 0 16px; font-size:clamp(42px,7vw,88px); line-height:.96; font-weight:500; letter-spacing:-.035em; text-wrap:balance; }
+.mast p { max-width:760px; margin:0; font-size:19px; line-height:1.55; }
+.toolbar { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; padding:12px max(24px,6vw); background:#f3eee3; border-bottom:1px solid var(--rule); }
+.toolbar button { min-height:44px; border:1px solid var(--ink); background:var(--ink); color:#fff; padding:10px 16px; border-radius:999px; font:700 12px ui-monospace,SFMono-Regular,monospace; cursor:pointer; }
+.toolbar button.secondary { background:transparent; color:var(--ink); }
+.toolbar output { margin-inline-start:auto; font:700 13px ui-monospace,SFMono-Regular,monospace; }
+.toolbar span { color:var(--muted); }
+main { width:min(1500px,94vw); margin:42px auto 90px; display:grid; gap:42px; }
+.recipe { min-width:0; overflow:hidden; background:var(--card); border:1px solid var(--rule); border-radius:14px; }
+.recipe-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; padding:28px 32px; border-bottom:1px solid var(--rule); }
+.recipe h2 { margin:0; font-size:clamp(25px,3vw,42px); line-height:1.08; font-weight:500; overflow-wrap:anywhere; }
+.record-meta { margin:8px 0 0; color:var(--muted); font:12px/1.4 ui-monospace,SFMono-Regular,monospace; }
+.record-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:12px; flex:none; }
+.record-actions a { color:var(--ink); font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.08em; }
+.status { flex:none; border:1px solid var(--accent); color:var(--accent); padding:7px 11px; border-radius:999px; font:700 11px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+.status-source_checked { border-color:var(--green); color:var(--green); }
+.compare { display:grid; grid-template-columns:auto minmax(0,1fr); }
+.source-disclosure { width:max-content; max-width:100%; border-inline-end:1px solid var(--rule); }
+.source-disclosure.is-open { width:min(720px,48vw); }
+.source-toggle { display:flex; width:100%; min-height:52px; align-items:center; gap:12px; padding:14px 18px; border:0; color:#fff; background:var(--ink); cursor:pointer; font:700 13px ui-monospace,SFMono-Regular,monospace; text-align:left; }
+.region-disclosure>summary::-webkit-details-marker { display:none; }
+.source-toggle small { color:#e8dcc8; font:11px ui-monospace,SFMono-Regular,monospace; white-space:nowrap; }
+.source-toggle-icon { margin-inline-start:auto; font-size:20px; line-height:1; }
+.source-panel { padding:24px; }
+.overview-grid { display:grid; gap:18px; }
+.region-disclosure { margin-top:22px; border-top:1px solid var(--rule); }
+.region-disclosure>summary { min-height:44px; padding:14px 0; color:var(--accent); cursor:pointer; font-weight:700; }
+.region-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.candidate { min-width:0; padding:28px 32px; }
+h3 { margin:0 0 18px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+h4 { margin:24px 0 7px; font-size:16px; }
+h5 { margin:18px 0 6px; color:var(--accent); font:700 12px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+figure { margin:0 0 20px; }
+figure a { display:block; }
+figure img { display:block; width:100%; max-height:720px; object-fit:contain; object-position:top; background:#eee4d4; border:1px solid #d8ccb8; }
+.region-crop img { height:150px; object-fit:contain; }
+figcaption { margin-top:6px; color:var(--muted); font:12px ui-monospace,SFMono-Regular,monospace; overflow-wrap:anywhere; }
+.candidate ul,.candidate ol { padding-left:22px; }
+.candidate li,.candidate p { max-width:75ch; margin:0 0 8px; line-height:1.5; overflow-wrap:anywhere; }
+.verbatim-title { padding:12px 14px; background:#f2eadc; border:1px solid #d9cbb5; }
+.risk { padding:24px 32px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); background:#f8eee7; }
+.risk ul { margin:0 0 12px; padding-left:20px; }
+.risk li,.risk p { max-width:100ch; margin:8px 0; line-height:1.45; overflow-wrap:anywhere; }
+.risk li span { margin-right:9px; color:var(--accent); font:700 10px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.1em; }
+fieldset { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px; margin:0; padding:24px 32px 30px; border:0; }
+legend { padding-top:24px; font:700 13px ui-monospace,SFMono-Regular,monospace; text-transform:uppercase; letter-spacing:.14em; }
+label { display:flex; gap:10px; align-items:flex-start; line-height:1.35; cursor:pointer; }
+input { appearance:none; width:20px; height:20px; flex:none; margin:1px 0 0; border:1px solid #75664f; background:#fff; }
+input:checked { background:var(--green); box-shadow:inset 0 0 0 4px #fff; }
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible { outline:3px solid #146b8c; outline-offset:3px; }
+#copy-feedback { min-width:16ch; color:var(--green); font-weight:700; }
+@media (hover:hover) { .source-toggle:hover,.toolbar button:hover { filter:brightness(1.16); } .record-actions a:hover { color:var(--accent); } }
+@media (max-width:900px) {
+  .recipe-head { flex-direction:column; } .record-actions { justify-content:flex-start; }
+  .compare { grid-template-columns:1fr; } .source-disclosure,.source-disclosure.is-open { width:100%; border-inline-end:0; border-bottom:1px solid var(--rule); }
+  .region-grid,fieldset { grid-template-columns:1fr; } .toolbar output { margin-inline-start:0; }
+}
+@media (max-width:560px) { .mast { padding-block:44px 34px; } .recipe-head,.candidate,.risk,fieldset { padding-inline:20px; } .toolbar span:not(#copy-feedback) { width:100%; } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+@media print { .toolbar { display:none; } body { background:#fff; } .recipe { break-before:page; } .source-disclosure { width:48%!important; } }
+</style>
+</head>
+<body>
+<header class="mast"><h1>Production batch 010 source review</h1><p>Canonical transcription after local source audit and recorded owner source decisions. This review page does not claim human verification unless a record says so.</p></header>
+<div class="toolbar"><button type="button" onclick="window.print()">Print review packet</button><button type="button" class="secondary" onclick="copyStatus()">Copy checklist status</button><span>Optional human checks persist in this browser only.</span><output id="progress">0 / 88 checked</output><span id="copy-feedback" role="status" aria-live="polite"></span></div>
+<main>
+            <article class="recipe" id="vera-r0073">
+              <header class="recipe-head">
+                <div><h2>Ricotta filling · Tvarohová nádivka</h2><p class="record-meta">vera-r0073 · PDF 50 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0073.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0073">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0073" aria-label="View source for Ricotta filling · Tvarohová nádivka" data-source-title="Ricotta filling · Tvarohová nádivka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0073" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0073/page-50.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0073/page-50.png" alt="Source page context for Ricotta filling · Tvarohová nádivka"></a><figcaption>PDF page 50 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0073/p50-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0073/p50-title.png" alt="Exact cited title crop for Ricotta filling · Tvarohová nádivka on PDF page 50"></a><figcaption>title · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0073/p50-listgroup-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0073/p50-listgroup-1.png" alt="Exact cited ingredient crop for Ricotta filling · Tvarohová nádivka on PDF page 50"></a><figcaption>listgroup 1 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0073/p50-text-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0073/p50-text-2.png" alt="Exact cited instruction crop for Ricotta filling · Tvarohová nádivka on PDF page 50"></a><figcaption>text 2 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0073/p50-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0073/p50-text-3.png" alt="Exact cited yield_time crop for Ricotta filling · Tvarohová nádivka on PDF page 50"></a><figcaption>text 3 · PDF 50</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Ricotta filling · Tvarohová nádivka</p>
+                  <h4>Ingredients</h4><ul><li>8 oz. ricotta</li><li>1/3 cup sugar</li><li>2 egg yolks</li><li>grated rind of 1 lemon</li><li>2-3 tablespoons sponge crumbs</li><li>1 tablespoon rum</li><li>3 tablespoons golden raisins</li></ul>
+                  <h4>Instructions</h4><ol><li>In a bowl cream the sugar and the egg yolks. Add ricotta, lemon rind, sponge crumbs, rum and raisins - mix well. The sponge crumbs are added to thicken the filling. You can add a little more or less, to achieve the right consistency. If the filling is not thick enough, is runny, it would run out while baking and jeopardize the good look of the finished product.</li></ol>
+                  <h4>Yield / time</h4><p>Makes approx. 1 - 1/2 cups - Preparation time: 20 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 1/2 · 20 · 8 · 1/3 · 2 · 2-3 · 3</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0073"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0073"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0074">
+              <header class="recipe-head">
+                <div><h2>Walnuts filling · Ořechová nádivka</h2><p class="record-meta">vera-r0074 · PDF 50 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0074.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0074">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0074" aria-label="View source for Walnuts filling · Ořechová nádivka" data-source-title="Walnuts filling · Ořechová nádivka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0074" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0074/page-50.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0074/page-50.png" alt="Source page context for Walnuts filling · Ořechová nádivka"></a><figcaption>PDF page 50 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0074/p50-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0074/p50-title.png" alt="Exact cited title crop for Walnuts filling · Ořechová nádivka on PDF page 50"></a><figcaption>title · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0074/p50-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0074/p50-text-1.png" alt="Exact cited instruction crop for Walnuts filling · Ořechová nádivka on PDF page 50"></a><figcaption>text 1 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0074/p50-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0074/p50-listgroup-2.png" alt="Exact cited ingredient crop for Walnuts filling · Ořechová nádivka on PDF page 50"></a><figcaption>listgroup 2 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0074/p50-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0074/p50-text-3.png" alt="Exact cited yield_time crop for Walnuts filling · Ořechová nádivka on PDF page 50"></a><figcaption>text 3 · PDF 50</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Walnuts filling · Ořechová nádivka</p>
+                  <h4>Ingredients</h4><ul><li>6 oz. ground or chopped walnuts</li><li>2/3 cup maple syrup</li><li>3/4 cup sponge crumbs</li><li>grated rind of 1 lemon</li><li>1 teaspoon vanilla sugar</li><li>2 tablespoons heavy cream</li></ul>
+                  <h4>Instructions</h4><ol><li>Pour the maple syrup in a saucepan and bring over medium heat. When hot, but not boiling, remove from heat, add the walnuts, vanilla sugar, lemon rind and heavy cream and as much of the sponge crumbs as needed to thicken the mixture. Mix well.</li></ol>
+                  <h4>Yield / time</h4><p>Makes approx. 1 - 1/2 cups - Preparation time: 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 1/2 · 30 · 6 · 2/3 · 3/4 · 2</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0074"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0074"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0075">
+              <header class="recipe-head">
+                <div><h2>Apple filling · Jablková nádivka</h2><p class="record-meta">vera-r0075 · PDF 50 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0075.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0075">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0075" aria-label="View source for Apple filling · Jablková nádivka" data-source-title="Apple filling · Jablková nádivka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0075" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0075/page-50.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0075/page-50.png" alt="Source page context for Apple filling · Jablková nádivka"></a><figcaption>PDF page 50 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0075/p50-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0075/p50-title.png" alt="Exact cited title crop for Apple filling · Jablková nádivka on PDF page 50"></a><figcaption>title · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0075/p50-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0075/p50-text-1.png" alt="Exact cited instruction crop for Apple filling · Jablková nádivka on PDF page 50"></a><figcaption>text 1 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0075/p50-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0075/p50-listgroup-2.png" alt="Exact cited ingredient crop for Apple filling · Jablková nádivka on PDF page 50"></a><figcaption>listgroup 2 · PDF 50</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0075/p50-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0075/p50-text-3.png" alt="Exact cited yield_time crop for Apple filling · Jablková nádivka on PDF page 50"></a><figcaption>text 3 · PDF 50</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Apple filling · Jablková nádivka</p>
+                  <h4>Ingredients</h4><ul><li>3 large apples (Granny Smith)</li><li>3/4 cup sugar</li><li>1/4 cup water</li><li>1/2 teaspoon cinnamon</li><li>1 tablespoon rum</li><li>3 oz. ground or chopped almonds</li><li>1/2 cup sponge crumbs</li></ul>
+                  <h4>Instructions</h4><ol><li>Peel, core and quarter the apples. In a saucepan combine apples and water and simmer until soft. Purée the apples in a bowl, and mix in all remaining ingredients. To attain the desired thickness, add some of the sponge crumbs.</li></ol>
+                  <h4>Yield / time</h4><p>Makes approx. 1 - 1/2 cups - Preparation time: 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 1/2 · 30 · 3 · 3/4 · 1/4</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0075"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0075"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0076">
+              <header class="recipe-head">
+                <div><h2>Butter crumb filling · Máslová drobenka</h2><p class="record-meta">vera-r0076 · PDF 51 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0076.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0076">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0076" aria-label="View source for Butter crumb filling · Máslová drobenka" data-source-title="Butter crumb filling · Máslová drobenka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0076" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0076/page-51.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0076/page-51.png" alt="Source page context for Butter crumb filling · Máslová drobenka"></a><figcaption>PDF page 51 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0076/p51-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0076/p51-title.png" alt="Exact cited title crop for Butter crumb filling · Máslová drobenka on PDF page 51"></a><figcaption>title · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0076/p51-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0076/p51-text-1.png" alt="Exact cited instruction crop for Butter crumb filling · Máslová drobenka on PDF page 51"></a><figcaption>text 1 · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0076/p51-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0076/p51-listgroup-2.png" alt="Exact cited ingredient crop for Butter crumb filling · Máslová drobenka on PDF page 51"></a><figcaption>listgroup 2 · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0076/p51-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0076/p51-text-3.png" alt="Exact cited yield_time crop for Butter crumb filling · Máslová drobenka on PDF page 51"></a><figcaption>text 3 · PDF 51</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Butter crumb filling · Máslová drobenka</p>
+                  <h4>Ingredients</h4><ul><li>6 tablespoons butter</li><li>1·1/2 cups flour</li><li>1/3 cup sugar</li><li>1 teaspoon vanilla sugar</li></ul>
+                  <h4>Instructions</h4><ol><li>In a saucepan melt butter, add flour, sugar and vanilla sugar and stir until the mixture crumbles. Cool.</li></ol>
+                  <h4>Yield / time</h4><p>Makes approx. 1 - 1/2 cups - Preparation time: 15 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 1/2 · 15 · 6 · 1·1/2 · 1/3</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0076"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0076"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0077">
+              <header class="recipe-head">
+                <div><h2>Poppy seeds filling · Maková nádivka</h2><p class="record-meta">vera-r0077 · PDF 51 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0077.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0077">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0077" aria-label="View source for Poppy seeds filling · Maková nádivka" data-source-title="Poppy seeds filling · Maková nádivka"><span class="source-toggle-label">View source</span><small>5 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0077" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0077/page-51.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0077/page-51.png" alt="Source page context for Poppy seeds filling · Maková nádivka"></a><figcaption>PDF page 51 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0077/p51-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0077/p51-title.png" alt="Exact cited title crop for Poppy seeds filling · Maková nádivka on PDF page 51"></a><figcaption>title · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0077/p51-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0077/p51-text-1.png" alt="Exact cited instruction crop for Poppy seeds filling · Maková nádivka on PDF page 51"></a><figcaption>text 1 · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0077/p51-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0077/p51-listgroup-2.png" alt="Exact cited ingredient crop for Poppy seeds filling · Maková nádivka on PDF page 51"></a><figcaption>listgroup 2 · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0077/p51-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0077/p51-text-3.png" alt="Exact cited yield_time crop for Poppy seeds filling · Maková nádivka on PDF page 51"></a><figcaption>text 3 · PDF 51</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0077/p51-text-4.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0077/p51-text-4.png" alt="Exact cited instruction crop for Poppy seeds filling · Maková nádivka on PDF page 51"></a><figcaption>text 4 · PDF 51</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Poppy seeds filling · Maková nádivka</p>
+                  <h4>Ingredients</h4><ul><li>1 cup ground or pounded poppy seeds</li><li>1 cup milk</li><li>2/3 cup sugar</li><li>4 tablespoons butter</li><li>2 tablespoons golden raisins</li><li>1/4 teaspoon cinnamon</li><li>grated rind of 1 lemon</li></ul>
+                  <h4>Instructions</h4><ol><li>In a saucepan combine poppy seeds and milk. Cook over medium/low heat, stirring often, until poppy seeds are mashed, 10-15 minutes. Add all remaining ingredients. Mix thoroughly. Cool.</li><li>A thick fruit preserve may also be used to fill &quot;Buchty&quot; and &quot;Koláčky&quot;.</li></ol>
+                  <h4>Yield / time</h4><p>Makes approx. 1 - 1/2 cups - Preparation time: 20 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 1/2 · 20 · 2/3 · 4 · 2 · 1/4 · 10-15</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0077"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0077"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0078">
+              <header class="recipe-head">
+                <div><h2>“Silver dollars” (miniature plain muffins) · Dukátové buchtičky</h2><p class="record-meta">vera-r0078 · PDF 52 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0078.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0078">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0078" aria-label="View source for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky" data-source-title="“Silver dollars” (miniature plain muffins) · Dukátové buchtičky"><span class="source-toggle-label">View source</span><small>5 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0078" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0078/page-52.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0078/page-52.png" alt="Source page context for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky"></a><figcaption>PDF page 52 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0078/p52-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0078/p52-title.png" alt="Exact cited title crop for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky on PDF page 52"></a><figcaption>title · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0078/p52-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0078/p52-text-1.png" alt="Exact cited instruction crop for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky on PDF page 52"></a><figcaption>text 1 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0078/p52-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0078/p52-listgroup-2.png" alt="Exact cited ingredient crop for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky on PDF page 52"></a><figcaption>listgroup 2 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0078/p52-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0078/p52-text-3.png" alt="Exact cited instruction crop for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky on PDF page 52"></a><figcaption>text 3 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0078/p52-text-4.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0078/p52-text-4.png" alt="Exact cited yield_time crop for “Silver dollars” (miniature plain muffins) · Dukátové buchtičky on PDF page 52"></a><figcaption>text 4 · PDF 52</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">“Silver dollars” (miniature plain muffins) · Dukátové buchtičky</p>
+                  <h4>Ingredients</h4><ul><li>4 cups coarse flour, Gold Medal Wondra</li><li>1 oz. fresh yeast</li><li>1-1/4 cups milk</li><li>1/2 cup sugar</li><li>4 egg yolks</li><li>6 tablespoons butter</li><li>dash of salt</li><li>grated rind of 1 lemon</li><li>4 tablespoons butter for baking pan and brushing</li></ul>
+                  <h4>Instructions</h4><ol><li>Prepare dough in the same manner as in Bohemian muffins. Roll it out to 1/3&quot; thickness. Using a cookie cutter or a glass 1&quot; in diameter cut out round cakes and lay them tightly together in a buttered baking pan. Brush sides and top with melted butter. Let rise 30 minutes in a warm place. Preheat oven to 350F, bake 20-25 minutes or until golden brown on top.</li><li>Serve warm with vanilla sauce or wine froth.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 2 hours 30 minutes.</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 2 · 30 · 4 · 1 · 1-1/4 · 1/2 · 6 · 1/3&quot; · 1&quot; · 350F · 20-25</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0078"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0078"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0079">
+              <header class="recipe-head">
+                <div><h2>Vanilla sauce - Vanilková omáčka</h2><p class="record-meta">vera-r0079 · PDF 52 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0079.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0079">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0079" aria-label="View source for Vanilla sauce - Vanilková omáčka" data-source-title="Vanilla sauce - Vanilková omáčka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0079" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-001/overview/vera-r0079/page-52.png"><img loading="lazy" src="../../evidence/production-batch-001/overview/vera-r0079/page-52.png" alt="Source page context for Vanilla sauce - Vanilková omáčka"></a><figcaption>PDF page 52 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-001/regions/vera-r0079/p52-title.png"><img loading="lazy" src="../../evidence/production-batch-001/regions/vera-r0079/p52-title.png" alt="Exact cited title crop for Vanilla sauce - Vanilková omáčka on PDF page 52"></a><figcaption>title · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-001/regions/vera-r0079/p52-ingredients.png"><img loading="lazy" src="../../evidence/production-batch-001/regions/vera-r0079/p52-ingredients.png" alt="Exact cited ingredient crop for Vanilla sauce - Vanilková omáčka on PDF page 52"></a><figcaption>ingredients · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-001/regions/vera-r0079/p52-step-1.png"><img loading="lazy" src="../../evidence/production-batch-001/regions/vera-r0079/p52-step-1.png" alt="Exact cited instruction crop for Vanilla sauce - Vanilková omáčka on PDF page 52"></a><figcaption>step 1 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-001/regions/vera-r0079/p52-yield.png"><img loading="lazy" src="../../evidence/production-batch-001/regions/vera-r0079/p52-yield.png" alt="Exact cited yield_time crop for Vanilla sauce - Vanilková omáčka on PDF page 52"></a><figcaption>yield · PDF 52</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Vanilla sauce - Vanilková omáčka</p>
+                  <h4>Ingredients</h4><ul><li>2 cups milk, or light cream</li><li>4 egg yolks</li><li>1/2 cup sugar</li><li>1 teaspoon vanilla sugar</li><li>1 tablespoon corn starch</li></ul>
+                  <h4>Instructions</h4><ol><li>In a saucepan cream egg yolks, sugar mixed with vanilla sugar, corn starch. Gradually add hot milk or cream, stirring constantly. Set over low heat, bring to boiling, stirring steadily until desired thickness is reached. Sauce should be medium thick. Strain, serve warm.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 30 · 2 · 4 · 1/2 · 1</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0079"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0079"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0080">
+              <header class="recipe-head">
+                <div><h2>White wine froth · Vinná omáčka</h2><p class="record-meta">vera-r0080 · PDF 52 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0080.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0080">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0080" aria-label="View source for White wine froth · Vinná omáčka" data-source-title="White wine froth · Vinná omáčka"><span class="source-toggle-label">View source</span><small>4 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0080" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0080/page-52.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0080/page-52.png" alt="Source page context for White wine froth · Vinná omáčka"></a><figcaption>PDF page 52 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0080/p52-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0080/p52-title.png" alt="Exact cited title crop for White wine froth · Vinná omáčka on PDF page 52"></a><figcaption>title · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0080/p52-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0080/p52-text-1.png" alt="Exact cited instruction crop for White wine froth · Vinná omáčka on PDF page 52"></a><figcaption>text 1 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0080/p52-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0080/p52-listgroup-2.png" alt="Exact cited ingredient crop for White wine froth · Vinná omáčka on PDF page 52"></a><figcaption>listgroup 2 · PDF 52</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0080/p52-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0080/p52-text-3.png" alt="Exact cited yield_time crop for White wine froth · Vinná omáčka on PDF page 52"></a><figcaption>text 3 · PDF 52</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">White wine froth · Vinná omáčka</p>
+                  <h4>Ingredients</h4><ul><li>1 cup white table wine</li><li>1 whole egg</li><li>3 egg yolks</li><li>1/3 cup sugar</li><li>1 teaspoon vanilla sugar</li><li>dash of cinnamon</li><li>grated rind of 1 lemon</li></ul>
+                  <h4>Instructions</h4><ol><li>Combine all ingredients in a saucepan. Set over low heat, beat with a wire whisk or electric mixer at low speed until mixture thickens and foams. Serve warm.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 20 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 20 · 1 · 3 · 1/3</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0080"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0080"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0081">
+              <header class="recipe-head">
+                <div><h2>Poppy seed loaf · Makový závin</h2><p class="record-meta">vera-r0081 · PDF 53 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0081.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0081">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0081" aria-label="View source for Poppy seed loaf · Makový závin" data-source-title="Poppy seed loaf · Makový závin"><span class="source-toggle-label">View source</span><small>7 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0081" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0081/page-53.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0081/page-53.png" alt="Source page context for Poppy seed loaf · Makový závin"></a><figcaption>PDF page 53 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-title.png" alt="Exact cited title crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>title · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-listgroup-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-listgroup-1.png" alt="Exact cited ingredient crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>listgroup 1 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-sectionheader-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-sectionheader-2.png" alt="Exact cited note crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>sectionheader 2 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-text-3.png" alt="Exact cited instruction crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>text 3 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-text-4.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-text-4.png" alt="Exact cited instruction crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>text 4 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-text-5.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-text-5.png" alt="Exact cited instruction crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>text 5 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0081/p53-text-6.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0081/p53-text-6.png" alt="Exact cited yield_time crop for Poppy seed loaf · Makový závin on PDF page 53"></a><figcaption>text 6 · PDF 53</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Poppy seed loaf · Makový závin</p>
+                  <h4>Ingredients</h4><ul><li>1 lb. flour</li><li>1 cup milk</li><li>1 oz. fresh yeast</li><li>8 tablespoons butter</li><li>2 whole eggs</li><li>1/3 cup sugar</li><li>grated rind of 1 lemon</li><li>dash of salt</li><li>1 egg yolk to brush the loaf with</li><li>grease for baking sheet</li></ul>
+                  <h4>Instructions</h4><ol><li>Dissolve the yeast by mixing it with a teaspoon of sugar. Add three tablespoons of flour and 1/4 cup lukewarm milk; knead the leavening into a small ball. Let it rise 20 minutes, it should double in size.</li><li>Place the remaining flour in a bowl, add eggs, lemon rind, remaining sugar, salt and milk, mix well. Finally add melted or softened butter. Knead the dough until it becames smooth and dry and no longer sticks to the bowl. Let it rise 30 minutes.</li><li>Turn the dough onto a floured pastry board and roll it out into 1/8&quot; thick rectangle. Cover evenly with poppy seed filling and roll it into a long narrow loaf (16-17&quot; long). Place loaf on a greased baking sheet and let rise 10 minutes. Brush with lightly beaten egg yolk and bake 20-25 minutes in 35OF oven. When cooled, cut in 3/4&quot; slices and serve.</li></ol>
+                  <h4>Yield / time</h4><p>1 loaf - Preparation time: 2 hours 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 1 · 2 · 30 · 8 · 1/3 · 1/4 · 20 · 1/8&quot; · 16-17&quot; · 10 · 20-25 · 35 · 3/4&quot;</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0081"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0081"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0082">
+              <header class="recipe-head">
+                <div><h2>Czech doughnuts · Koblihy</h2><p class="record-meta">vera-r0082 · PDF 53, 54 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0082.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0082">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0082" aria-label="View source for Czech doughnuts · Koblihy" data-source-title="Czech doughnuts · Koblihy"><span class="source-toggle-label">View source</span><small>8 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0082" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0082/page-53.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0082/page-53.png" alt="Source page context for Czech doughnuts · Koblihy"></a><figcaption>PDF page 53 context</figcaption></figure><figure><a href="../../evidence/production-batch-010/overview/vera-r0082/page-54.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0082/page-54.png" alt="Source page context for Czech doughnuts · Koblihy"></a><figcaption>PDF page 54 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p53-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p53-title.png" alt="Exact cited title crop for Czech doughnuts · Koblihy on PDF page 53"></a><figcaption>title · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p53-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p53-text-1.png" alt="Exact cited instruction crop for Czech doughnuts · Koblihy on PDF page 53"></a><figcaption>text 1 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p53-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p53-listgroup-2.png" alt="Exact cited ingredient crop for Czech doughnuts · Koblihy on PDF page 53"></a><figcaption>listgroup 2 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p53-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p53-text-3.png" alt="Exact cited instruction crop for Czech doughnuts · Koblihy on PDF page 53"></a><figcaption>text 3 · PDF 53</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p54-text-4.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p54-text-4.png" alt="Exact cited instruction crop for Czech doughnuts · Koblihy on PDF page 54"></a><figcaption>text 4 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p54-text-5.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p54-text-5.png" alt="Exact cited instruction crop for Czech doughnuts · Koblihy on PDF page 54"></a><figcaption>text 5 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p54-text-6.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p54-text-6.png" alt="Exact cited instruction crop for Czech doughnuts · Koblihy on PDF page 54"></a><figcaption>text 6 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0082/p54-text-7.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0082/p54-text-7.png" alt="Exact cited yield_time crop for Czech doughnuts · Koblihy on PDF page 54"></a><figcaption>text 7 · PDF 54</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Czech doughnuts · Koblihy</p>
+                  <h4>Ingredients</h4><ul><li>3 cups flour</li><li>1 oz. fresh yeast</li><li>6 egg yolks</li><li>3/4 cup heavy cream</li><li>3/4 cup milk</li><li>1/3 cup sugar mixed with vanilla sugar</li><li>1 tablespoon rum</li><li>1 tablespoon orange juice</li><li>pinch of salt</li><li>3/4 cup thick fruit preserve</li><li>2 cups oil for frying</li></ul>
+                  <h4>Instructions</h4><ol><li>Leavening: In a bowl stir yeast with 2 teaspoons sugar until liquefied. Add 1 cup flour and 3/4 cup milk. Mix thoroughly. Knead into a smooth neat ball. Dust with flour, cover with a napkin and let rise 20 minutes. It should double in bulk.</li><li>In a separate bowl cream egg yolks and vanilla sugar. Gradually adding heavy cream beat at low speed until foamy. Blend in remaining flour, salt, rum, orange juice and risen leavening. Mix thoroughly. Knead into a smooth, dry, elastic dough. Let rise 30 minutes.</li><li>Punch dough down, turn onto a floured pastry board and roll out to 1/3&quot; thickness.</li><li>Using a cookie cutter or a small cup, cut out round cakes, about 2-1/2&quot; in diameter.</li><li>Drop fruit preserve by teaspoonfuls in center of half of round cakes. Top each with a plain round cake. Press borders firmly together. Be sure they are well sealed to prevent the filling from leaking out. With a smaller round cutter cut out the final shape of the doughnuts. Put doughnuts on lightly floured board, cover with a large napkin, let rest 20 minutes. Fry in hot oil, starting with top side down, in a covered frying pan. When bottom is golden brown turn them over and finish frying, uncovered. Drain on a sieve or paper towel. When cooled, sprinkle with sugar.</li></ol>
+                  <h4>Yield / time</h4><p>Serves 8 – Preparation time: 3 hours</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 8 · 3 · 1 · 6 · 3/4 · 1/3 · 2 · 20 · 30 · 1/3&quot; · 2-1/2&quot;</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0082"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0082"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            
+            <article class="recipe" id="vera-r0083">
+              <header class="recipe-head">
+                <div><h2>Open-faced doughnuts · Vdolky</h2><p class="record-meta">vera-r0083 · PDF 54 · AI source audit</p></div>
+                <div class="record-actions"><a href="../../data/recipes/vera-r0083.yaml">Open YAML</a><span class="status status-source_checked">source checked</span></div>
+              </header>
+              <div class="compare">
+                <section class="source-disclosure" data-source="vera-r0083">
+                  <button class="source-toggle" type="button" aria-expanded="false" aria-controls="source-panel-vera-r0083" aria-label="View source for Open-faced doughnuts · Vdolky" data-source-title="Open-faced doughnuts · Vdolky"><span class="source-toggle-label">View source</span><small>9 cited regions</small><span class="source-toggle-icon" aria-hidden="true">+</span></button>
+                  <div class="source-panel" id="source-panel-vera-r0083" hidden>
+                    <h3>Recipe context</h3><div class="overview-grid"><figure><a href="../../evidence/production-batch-010/overview/vera-r0083/page-54.png"><img loading="lazy" src="../../evidence/production-batch-010/overview/vera-r0083/page-54.png" alt="Source page context for Open-faced doughnuts · Vdolky"></a><figcaption>PDF page 54 context</figcaption></figure></div>
+                    <details class="region-disclosure">
+                      <summary>View exact cited regions</summary>
+                      <div class="region-grid"><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-title.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-title.png" alt="Exact cited title crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>title · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-1.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-1.png" alt="Exact cited instruction crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 1 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-listgroup-2.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-listgroup-2.png" alt="Exact cited ingredient crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>listgroup 2 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-3.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-3.png" alt="Exact cited instruction crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 3 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-4.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-4.png" alt="Exact cited instruction crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 4 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-5.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-5.png" alt="Exact cited instruction crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 5 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-6.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-6.png" alt="Exact cited instruction crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 6 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-listgroup-7.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-listgroup-7.png" alt="Exact cited ingredient crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>listgroup 7 · PDF 54</figcaption></figure><figure class="region-crop"><a href="../../evidence/production-batch-010/regions/vera-r0083/p54-text-8.png"><img loading="lazy" src="../../evidence/production-batch-010/regions/vera-r0083/p54-text-8.png" alt="Exact cited yield_time crop for Open-faced doughnuts · Vdolky on PDF page 54"></a><figcaption>text 8 · PDF 54</figcaption></figure></div>
+                    </details>
+                  </div>
+                </section>
+                <section class="candidate">
+                  <h3>Canonical transcription</h3>
+                  <p class="verbatim-title">Open-faced doughnuts · Vdolky</p>
+                  <h4>Ingredients</h4><ul><li>4 cups flour</li><li>1-1/2 oz. fresh yeast</li><li>1-1/2 cups milk</li><li>3 egg yolks</li><li>4 tablespoons butter</li><li>1/3 cups sugar</li><li>1 tablespoon rum</li><li>grated rind of 1 lemon</li><li>dash of salt</li><li>1-1/2 cups oil for frying</li></ul><ul><li>1 cup plum or blueberry jam</li><li>1/2 cup crumbled farmer&#x27;s cheese</li><li>1/2 cup sour cream</li></ul>
+                  <h4>Instructions</h4><ol><li>Prepare dough in the same manner as in Czech doughnuts, Roll it out to 1/3&quot; thickness. Cut out 3&quot; round cakes. Let rise 30 minutes, in a warm place.</li><li>Just before frying make an indentation with teaspoon or finger in center of each cake. For frying, follow directions in Czech doughnuts recipe.</li><li>Cool, sprinkle with sugar.</li><li>Optional: Spread jam over each depression, sprinkle with crumbled farmer&#x27;s cheese, dot with sour cream.</li><li>Optional:</li></ol>
+                  <h4>Yield / time</h4><p>Serves 10 – Preparation time: 2 hours 30 minutes</p>
+                  
+                  
+                </section>
+              </div>
+              <div class="risk"><h3>Audit findings</h3><p>No unresolved source ambiguities.</p><p><b>Checked high-risk tokens:</b> 10 · 2 · 30 · 4 · 1-1/2 · 3 · 1/3 · 1 · 1/2 · 1/3&quot; · 3&quot;</p></div>
+              <fieldset><legend>Optional human verification checklist</legend><label><input type="checkbox" data-recipe="vera-r0083"><span>Page and region coverage is complete</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Recipe boundaries are correct</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Every ingredient belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Every instruction belongs to this recipe</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Verbatim spelling and punctuation match</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Numbers, fractions, units, times, and temperatures match</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Yield/preparation-time presence is correct</span></label><label><input type="checkbox" data-recipe="vera-r0083"><span>Repeated text occurrence count is correct</span></label></fieldset>
+            </article>
+            </main>
+<script>
+const key='vera-production-batch-010-human-checklist-v2';
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}');}catch(error){saved={};}
+boxes.forEach((box,index)=>{box.checked=Boolean(saved[index]);box.addEventListener('change',()=>{saved[index]=box.checked;localStorage.setItem(key,JSON.stringify(saved));update();});});
+function update(){const count=boxes.filter(box=>box.checked).length;document.querySelector('#progress').textContent=`${count} / ${boxes.length} checked`;}
+async function writeClipboard(text){
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return;}
+  const area=document.createElement('textarea');area.value=text;area.setAttribute('readonly','');area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();
+  if(!document.execCommand('copy')){throw new Error('Copy command was unavailable.');}area.remove();
+}
+async function copyStatus(){
+  const lines=['Vera Cookbook production batch 010 review status'];
+  document.querySelectorAll('.recipe').forEach(card=>{
+    const cardBoxes=[...card.querySelectorAll('input[type=checkbox]')];
+    const checked=cardBoxes.filter(box=>box.checked).length;
+    const status=card.querySelector('.status').textContent.trim();
+    lines.push(`${card.id}: ${status}; ${checked} / ${cardBoxes.length} optional human checks complete`);
+  });
+  const feedback=document.querySelector('#copy-feedback');
+  try{await writeClipboard(lines.join('\n'));feedback.textContent='Copied.';}catch(error){feedback.textContent='Copy failed; select the status manually.';}
+}
+const sourceDetails=[...document.querySelectorAll('[data-source]')];
+function setSourceOpen(container,open){
+  const toggle=container.querySelector('.source-toggle');
+  const panel=container.querySelector('.source-panel');
+  toggle.setAttribute('aria-expanded',String(open));
+  toggle.setAttribute('aria-label',`${open?'Hide':'View'} source for ${toggle.dataset.sourceTitle}`);
+  toggle.querySelector('.source-toggle-label').textContent=open?'Hide source':'View source';
+  toggle.querySelector('.source-toggle-icon').textContent=open?'−':'+';
+  panel.hidden=!open;
+  container.classList.toggle('is-open',open);
+}
+sourceDetails.forEach(container=>{
+  const toggle=container.querySelector('.source-toggle');
+  toggle.addEventListener('click',()=>setSourceOpen(container,toggle.getAttribute('aria-expanded')!=='true'));
+  toggle.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle.click();}
+  });
+});
+let printOpen=[];
+window.addEventListener('beforeprint',()=>{printOpen=sourceDetails.map(item=>item.classList.contains('is-open'));sourceDetails.forEach(item=>setSourceOpen(item,true));});
+window.addEventListener('afterprint',()=>{sourceDetails.forEach((item,index)=>setSourceOpen(item,printOpen[index]));});
+update();
+</script>
+</body>
+</html>

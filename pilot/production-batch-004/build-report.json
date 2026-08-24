@@ -1,0 +1,145 @@
+{
+  "batch_id": "production-batch-004",
+  "stage": "audited",
+  "records": [
+    {
+      "recipe_id": "vera-r0014",
+      "record_path": "data/recipes/vera-r0014.yaml",
+      "source_regions": 10,
+      "overview_images": [
+        "evidence/production-batch-004/overview/vera-r0014/page-13.png",
+        "evidence/production-batch-004/overview/vera-r0014/page-14.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "3",
+        "3·4",
+        "4",
+        "2",
+        "1",
+        "1·1/2",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0015",
+      "record_path": "data/recipes/vera-r0015.yaml",
+      "source_regions": 8,
+      "overview_images": [
+        "evidence/production-batch-004/overview/vera-r0015/page-14.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1/2",
+        "2",
+        "1",
+        "1/2\"",
+        "30"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0016",
+      "record_path": "data/recipes/vera-r0016.yaml",
+      "source_regions": 7,
+      "overview_images": [
+        "evidence/production-batch-004/overview/vera-r0016/page-15.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "45",
+        "1/2\"",
+        "1/2",
+        "2",
+        "1",
+        "5"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0017",
+      "record_path": "data/recipes/vera-r0017.yaml",
+      "source_regions": 6,
+      "overview_images": [
+        "evidence/production-batch-004/overview/vera-r0017/page-15.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "40",
+        "2·3",
+        "30"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    },
+    {
+      "recipe_id": "vera-r0018",
+      "record_path": "data/recipes/vera-r0018.yaml",
+      "source_regions": 7,
+      "overview_images": [
+        "evidence/production-batch-004/overview/vera-r0018/page-16.png"
+      ],
+      "high_risk_tokens": [
+        "6",
+        "2",
+        "3",
+        "1·1/2\"",
+        "1/4",
+        "1",
+        "4",
+        "3/4",
+        "1·1/2",
+        "1/2",
+        "10·15",
+        "2·3"
+      ],
+      "open_issue_count": 0,
+      "status": "source_checked",
+      "audit_performed_by": "ai"
+    }
+  ],
+  "spec": "pilot/production-batch-004/spec.yaml",
+  "review_packet": "review/production-batch-004/index.html",
+  "source_sha256": "58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b",
+  "marker_pages_available": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "marker_pages_used": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "audit_completed_at": "2026-08-23T22:43:44Z",
+  "auditor_id": "openai-codex"
+}

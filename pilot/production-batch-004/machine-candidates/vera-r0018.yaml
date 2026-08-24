@@ -1,0 +1,303 @@
+schema_version: 1.2.0
+record_type: recipe
+recipe_id: vera-r0018
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 16
+  printed_pages:
+  - '15'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0018-title
+  pdf_page: 16
+  printed_page: '15'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1074
+    - 216
+  - - 1905
+    - 216
+  - - 1905
+    - 328
+  - - 1074
+    - 328
+  candidate_block_ids:
+  - /page/15/SectionHeader/2
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-title.png
+  region_image_pixel_sha256: 441bf197a1e349d476652a5392c9c64e033160fb3de6f49738cc55902c7354f0
+- region_id: vera-r0018-ingredients
+  pdf_page: 16
+  printed_page: '15'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 240
+    - 286
+  - - 987
+    - 286
+  - - 987
+    - 844
+  - - 240
+    - 844
+  candidate_block_ids:
+  - /page/15/ListGroup/1
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-ingredients.png
+  region_image_pixel_sha256: 113b8886250edcce7fa53a08d234a932bb657a1e122298c66302b3f203f59158
+- region_id: vera-r0018-step-1
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 296
+  - - 2715
+    - 296
+  - - 2715
+    - 564
+  - - 1104
+    - 564
+  candidate_block_ids:
+  - /page/15/Text/3
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-step-1.png
+  region_image_pixel_sha256: 44d9a580aa2d0e540e24728e2bb06b1bc49162e4147d4ca4045d88e6534d9c25
+- region_id: vera-r0018-step-2
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 520
+  - - 2682
+    - 520
+  - - 2682
+    - 722
+  - - 1104
+    - 722
+  candidate_block_ids:
+  - /page/15/Text/4
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-step-2.png
+  region_image_pixel_sha256: 9566651aef65fb1bef5d2f0c63579f5a080f1385a73f475e8f8438460966ba27
+- region_id: vera-r0018-step-3
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 682
+  - - 2697
+    - 682
+  - - 2697
+    - 834
+  - - 1104
+    - 834
+  candidate_block_ids:
+  - /page/15/Text/5
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-step-3.png
+  region_image_pixel_sha256: 9c3832e1936ecd85937988cf7cd1fabe27508cb13e30ae6aaafd82fcf56568d7
+- region_id: vera-r0018-step-4
+  pdf_page: 16
+  printed_page: '15'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1098
+    - 816
+  - - 1911
+    - 816
+  - - 1911
+    - 914
+  - - 1098
+    - 914
+  candidate_block_ids:
+  - /page/15/Text/6
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-step-4.png
+  region_image_pixel_sha256: a2256c3ee6f71c7a73e4125656825890d0266b3eb4ef6d45696062064911b1fc
+- region_id: vera-r0018-yield
+  pdf_page: 16
+  printed_page: '15'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1095
+    - 902
+  - - 1833
+    - 902
+  - - 1833
+    - 990
+  - - 1095
+    - 990
+  candidate_block_ids:
+  - /page/15/Text/7
+  region_image: evidence/production-batch-004/regions/vera-r0018/p16-yield.png
+  region_image_pixel_sha256: d33c3321c7822493e4001f56110aaa7ea0ff351372069bff5555df0fbcc2ab45
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Pork goulash - Guláš vepřový
+    language: mul
+    source_region_ids:
+    - vera-r0018-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Pork goulash
+    language: en
+    source_region_ids:
+    - vera-r0018-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Guláš vepřový
+    language: cs
+    source_region_ids:
+    - vera-r0018-title
+    title_role: parallel
+  source_order: 18
+  slug_candidate: pork-goulash
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 2 hours'
+    language: en
+    source_region_ids:
+    - vera-r0018-yield
+  ingredient_sections:
+  - section_id: ingredients-main
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 3 lbs. boned pork shoulder, cut in 1-1/2" cubes
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-2
+      text_verbatim: 1/4 cup vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-3
+      text_verbatim: 1 large onion, chopped
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-4
+      text_verbatim: 2 tablespoons vinegar
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-5
+      text_verbatim: 2 tablespoons paprika
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-6
+      text_verbatim: 1 teaspoon caraway seeds
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-7
+      text_verbatim: 2 cups beef stock
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-8
+      text_verbatim: 4 tablespoons flour
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-9
+      text_verbatim: 3/4 cup sour cream
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+    - segment_id: ingredient-10
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0018-ingredients
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Sauté onion in oil. Add paprika, vinegar, pork, caraway seeds, pepper, few spoons
+        of beef stock. Cover and simmer 1-1/2 hrs, or until meat is tender. Stir occasionally and gradually
+        add beef stock, little at a time, just enough to keep moisture in the stew.
+      language: en
+      source_region_ids:
+      - vera-r0018-step-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Blend flour, sour cream and 1/2 cup beef stock. Stir the mixture in the pan with
+        the meat. Simmer 10-15 minutes. If the sauce is too thick, add more beef stock.
+      language: en
+      source_region_ids:
+      - vera-r0018-step-2
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: Taste for salt. Should you prefer to redden the color of the sauce, add 2-3 tablespoons
+        tomato paste.
+      language: en
+      source_region_ids:
+      - vera-r0018-step-3
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Serve with potatoes or dumplings.
+      language: en
+      source_region_ids:
+      - vera-r0018-step-4
+      step_number: 4
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-23T22:48:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-23T22:35:44Z'
+    artifact_path: pilot/acceleration-wave-001/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-23T22:48:00Z'
+  checks: []
+  open_issues: []

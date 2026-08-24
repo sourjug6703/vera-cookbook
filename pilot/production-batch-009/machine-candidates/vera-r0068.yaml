@@ -1,0 +1,192 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0068
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 45
+  printed_pages:
+  - '44'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0068-title
+  pdf_page: 45
+  printed_page: '44'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1029
+    - 348
+  - - 1809
+    - 348
+  - - 1809
+    - 461
+  - - 1029
+    - 461
+  candidate_block_ids:
+  - /page/44/SectionHeader/1
+  region_image: evidence/production-batch-009/regions/vera-r0068/p45-title.png
+  region_image_pixel_sha256: 9e59d12bb6011a78d8b106373b2a61ad7f35bd09b3b9511b48039223a031aa51
+- region_id: vera-r0068-text-1
+  pdf_page: 45
+  printed_page: '44'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1041
+    - 427
+  - - 2670
+    - 427
+  - - 2670
+    - 778
+  - - 1041
+    - 778
+  candidate_block_ids:
+  - /page/44/Text/3
+  region_image: evidence/production-batch-009/regions/vera-r0068/p45-text-1.png
+  region_image_pixel_sha256: 2124e1c9edccb780d21ae939617c43b9a26c2b326380cf0df396874edbc54866
+- region_id: vera-r0068-listgroup-2
+  pdf_page: 45
+  printed_page: '44'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 213
+    - 480
+  - - 636
+    - 480
+  - - 636
+    - 752
+  - - 213
+    - 752
+  candidate_block_ids:
+  - /page/44/ListGroup/2
+  region_image: evidence/production-batch-009/regions/vera-r0068/p45-listgroup-2.png
+  region_image_pixel_sha256: 9bc1aeb365cc96b196d9c4f6962a7fb0856eaf01c5e598f613a51180cb681799
+- region_id: vera-r0068-text-3
+  pdf_page: 45
+  printed_page: '44'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2130
+    origin: top_left
+  polygon:
+  - - 1041
+    - 763
+  - - 1848
+    - 763
+  - - 1848
+    - 859
+  - - 1041
+    - 859
+  candidate_block_ids:
+  - /page/44/Text/4
+  region_image: evidence/production-batch-009/regions/vera-r0068/p45-text-3.png
+  region_image_pixel_sha256: 3eb9b0dd20a7acc75188538e9333aa4ca19d939c0ebcac7a8f6ea001bf8bd283
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Milk soup · Mléčná polévka
+    language: mul
+    source_region_ids:
+    - vera-r0068-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Milk soup
+    language: en
+    source_region_ids:
+    - vera-r0068-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Mléčná polévka
+    language: cs
+    source_region_ids:
+    - vera-r0068-title
+    title_role: parallel
+  source_order: 68
+  slug_candidate: milksoup
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 15 minutes'
+    language: en
+    source_region_ids:
+    - vera-r0068-text-3
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 2 quarts milk
+      language: en
+      source_region_ids:
+      - vera-r0068-listgroup-2
+    - segment_id: ingredient-2
+      text_verbatim: 3 egg yolks
+      language: en
+      source_region_ids:
+      - vera-r0068-listgroup-2
+    - segment_id: ingredient-3
+      text_verbatim: 1/4 cup sugar
+      language: en
+      source_region_ids:
+      - vera-r0068-listgroup-2
+    - segment_id: ingredient-4
+      text_verbatim: 1/4 teaspoon salt
+      language: en
+      source_region_ids:
+      - vera-r0068-listgroup-2
+    - segment_id: ingredient-5
+      text_verbatim: toasts or croutons
+      language: en
+      source_region_ids:
+      - vera-r0068-listgroup-2
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: Lightly beat egg yolks in one cup milk. Pour remaining milk in a saucepot, add sugar
+        and salt. Set over medium/low heat, bring to boiling, stirring constantly. Blend in yolks/milk
+        mixture, heat through, but do not boil. Serve with toasts or croutons.
+      language: en
+      source_region_ids:
+      - vera-r0068-text-1
+      step_number: 1
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []

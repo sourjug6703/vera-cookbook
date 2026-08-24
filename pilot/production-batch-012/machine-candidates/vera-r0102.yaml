@@ -1,0 +1,483 @@
+schema_version: 1.3.0
+record_type: recipe
+recipe_id: vera-r0102
+record_revision: 1
+source_work:
+  work_id: vera-culinary-adventures
+  source_file: source/Culinary Adventures - Vera Gaeta.pdf
+  source_sha256: 58542d8b58bf57aadfd4c08f6728271ac5bd9d19aa77a2fe9ef412c68b2a989b
+  pdf_page_count: 75
+  pdf_pages:
+  - 69
+  printed_pages:
+  - '68'
+  rights_status: not_assessed
+source_regions:
+- region_id: vera-r0102-title
+  pdf_page: 69
+  printed_page: '68'
+  role: title
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1011
+    - 282
+  - - 1968
+    - 282
+  - - 1968
+    - 386
+  - - 1011
+    - 386
+  candidate_block_ids:
+  - /page/68/SectionHeader/1
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-title.png
+  region_image_pixel_sha256: dfe7baf153b726c7530550169e4ece54bfa44f7d18f406f2ade413b895b689cb
+- region_id: vera-r0102-text-1
+  pdf_page: 69
+  printed_page: '68'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 404
+  - - 2733
+    - 404
+  - - 2733
+    - 608
+  - - 1104
+    - 608
+  candidate_block_ids:
+  - /page/68/Text/8
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-1.png
+  region_image_pixel_sha256: dab09ee0d1fa69a94ad81a4bc7d44dd05c4661b7225063db7e7be7d94751b842
+- region_id: vera-r0102-sectionheader-2
+  pdf_page: 69
+  printed_page: '68'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 225
+    - 409
+  - - 423
+    - 409
+  - - 423
+    - 494
+  - - 225
+    - 494
+  candidate_block_ids:
+  - /page/68/SectionHeader/2
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-sectionheader-2.png
+  region_image_pixel_sha256: 870e54f05910ca54bfb5529a93c8be608ab120caa038af715d6653bdf577acec
+- region_id: vera-r0102-listgroup-3
+  pdf_page: 69
+  printed_page: '68'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 225
+    - 469
+  - - 1032
+    - 469
+  - - 1032
+    - 831
+  - - 225
+    - 831
+  candidate_block_ids:
+  - /page/68/ListGroup/3
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-listgroup-3.png
+  region_image_pixel_sha256: 499173d3085fc396c1a4bd2a0b69013436da5f579c250a146a7cb7069c357224
+- region_id: vera-r0102-text-4
+  pdf_page: 69
+  printed_page: '68'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 616
+  - - 2670
+    - 616
+  - - 2670
+    - 766
+  - - 1104
+    - 766
+  candidate_block_ids:
+  - /page/68/Text/9
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-4.png
+  region_image_pixel_sha256: 219f66057fdefcdea7ab6880f0783a39908f753d4ca14a59e228614a2d287a2c
+- region_id: vera-r0102-text-5
+  pdf_page: 69
+  printed_page: '68'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 778
+  - - 2727
+    - 778
+  - - 2727
+    - 1036
+  - - 1104
+    - 1036
+  candidate_block_ids:
+  - /page/68/Text/10
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-5.png
+  region_image_pixel_sha256: 874991b7b16787859479d3873eb05fb64d0d24705c6a4d8cf7778f9ded68da98
+- region_id: vera-r0102-sectionheader-6
+  pdf_page: 69
+  printed_page: '68'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 240
+    - 828
+  - - 465
+    - 828
+  - - 465
+    - 910
+  - - 240
+    - 910
+  candidate_block_ids:
+  - /page/68/SectionHeader/4
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-sectionheader-6.png
+  region_image_pixel_sha256: 9c58259b672f35c7994f3004286771c59e46687d748a5e92aa13a76bd65713f1
+- region_id: vera-r0102-listgroup-7
+  pdf_page: 69
+  printed_page: '68'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 240
+    - 884
+  - - 906
+    - 884
+  - - 906
+    - 1152
+  - - 240
+    - 1152
+  candidate_block_ids:
+  - /page/68/ListGroup/5
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-listgroup-7.png
+  region_image_pixel_sha256: d35227f91ac54164c9f3f3ad4da09893beb638c2893febcbaedffa5e0682e5f1
+- region_id: vera-r0102-text-8
+  pdf_page: 69
+  printed_page: '68'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 996
+  - - 2238
+    - 996
+  - - 2238
+    - 1088
+  - - 1104
+    - 1088
+  candidate_block_ids:
+  - /page/68/Text/11
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-8.png
+  region_image_pixel_sha256: 0707234c728183e6d2a6142e4559435bde4e9cf20915018faeef5b3513e5ecb0
+- region_id: vera-r0102-text-9
+  pdf_page: 69
+  printed_page: '68'
+  role: instruction
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1048
+  - - 2616
+    - 1048
+  - - 2616
+    - 1198
+  - - 1104
+    - 1198
+  candidate_block_ids:
+  - /page/68/Text/12
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-9.png
+  region_image_pixel_sha256: 5fc54c57dfeb72f6f33a11a0d4025de37ec5da77c54676121341689015a564be
+- region_id: vera-r0102-sectionheader-10
+  pdf_page: 69
+  printed_page: '68'
+  role: note
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 249
+    - 1152
+  - - 474
+    - 1152
+  - - 474
+    - 1234
+  - - 249
+    - 1234
+  candidate_block_ids:
+  - /page/68/SectionHeader/6
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-sectionheader-10.png
+  region_image_pixel_sha256: de6cef71d9f85bc57127b2617c1f484694d3a9df63cb93fff0968b6a57de5a44
+- region_id: vera-r0102-text-11
+  pdf_page: 69
+  printed_page: '68'
+  role: yield_time
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 1104
+    - 1188
+  - - 1842
+    - 1188
+  - - 1842
+    - 1274
+  - - 1104
+    - 1274
+  candidate_block_ids:
+  - /page/68/Text/13
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-text-11.png
+  region_image_pixel_sha256: cc1e6ad0c15507127802ceadabc2572f12b941406772ebb0ddef63498cfa47d6
+- region_id: vera-r0102-listgroup-12
+  pdf_page: 69
+  printed_page: '68'
+  role: ingredient
+  coordinate_space:
+    unit: pixel
+    width: 3000
+    height: 2000
+    origin: top_left
+  polygon:
+  - - 249
+    - 1206
+  - - 777
+    - 1206
+  - - 777
+    - 1384
+  - - 249
+    - 1384
+  candidate_block_ids:
+  - /page/68/ListGroup/7
+  region_image: evidence/production-batch-012/regions/vera-r0102/p69-listgroup-12.png
+  region_image_pixel_sha256: 1870522dd242709c27edd70cc963ee062858826bd27622857ae7645e17594d26
+identity:
+  display_title:
+    segment_id: title-display
+    text_verbatim: Cabbage pockets · Zelné taštičky
+    language: mul
+    source_region_ids:
+    - vera-r0102-title
+  titles:
+  - segment_id: title-en
+    text_verbatim: Cabbage pockets
+    language: en
+    source_region_ids:
+    - vera-r0102-title
+    title_role: primary
+  - segment_id: title-cs
+    text_verbatim: Zelné taštičky
+    language: cs
+    source_region_ids:
+    - vera-r0102-title
+    title_role: parallel
+  source_order: 102
+  slug_candidate: cabbagepockets
+transcription:
+  yield_time_lines:
+  - segment_id: yield-1
+    text_verbatim: 'Serves 6 – Preparation time: 1 hour'
+    language: en
+    source_region_ids:
+    - vera-r0102-text-11
+  ingredient_sections:
+  - section_id: ingredients-1
+    ingredients:
+    - segment_id: ingredient-1
+      text_verbatim: 4 medium potatoes, boiled, mashed, cooled
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    - segment_id: ingredient-2
+      text_verbatim: 1-1/2 cups flour
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    - segment_id: ingredient-3
+      text_verbatim: 1 egg
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    - segment_id: ingredient-4
+      text_verbatim: 2 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    - segment_id: ingredient-5
+      text_verbatim: dash of salt
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    - segment_id: ingredient-6
+      text_verbatim: 1 egg white for brushing
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-3
+    label:
+      segment_id: label-2
+      text_verbatim: 'Dough:'
+      language: en
+      source_region_ids:
+      - vera-r0102-sectionheader-2
+  - section_id: ingredients-2
+    ingredients:
+    - segment_id: ingredient-7
+      text_verbatim: 3 tablespoons vegetable oil
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-7
+    - segment_id: ingredient-8
+      text_verbatim: 1 small onion, finely chopped
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-7
+    - segment_id: ingredient-9
+      text_verbatim: 1 tablespoon sugar
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-7
+    - segment_id: ingredient-10
+      text_verbatim: 2 cups shredded cabbage
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-7
+    - segment_id: ingredient-11
+      text_verbatim: salt and pepper
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-7
+    label:
+      segment_id: label-6
+      text_verbatim: 'Stuffing:'
+      language: en
+      source_region_ids:
+      - vera-r0102-sectionheader-6
+  - section_id: ingredients-3
+    ingredients:
+    - segment_id: ingredient-12
+      text_verbatim: 3/4 cup bread crumbs
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-12
+    - segment_id: ingredient-13
+      text_verbatim: 4 tablespoons butter
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-12
+    - segment_id: ingredient-14
+      text_verbatim: 3 tablespoons sugar
+      language: en
+      source_region_ids:
+      - vera-r0102-listgroup-12
+    label:
+      segment_id: label-10
+      text_verbatim: 'Topping:'
+      language: en
+      source_region_ids:
+      - vera-r0102-sectionheader-10
+  instruction_sections:
+  - section_id: instructions-main
+    steps:
+    - segment_id: step-1
+      text_verbatim: 'Make stuffing: Sauté onion in oil until translucent. Stir in sugar. Add cabbage,
+        salt and pepper, cook 10-15 minutes, until cabbage is tender. Do not overcook. Properly cooked
+        cabbage should be crisp.'
+      language: en
+      source_region_ids:
+      - vera-r0102-text-1
+      step_number: 1
+    - segment_id: step-2
+      text_verbatim: Combine dough ingredients and knead until smooth, for about 10 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0102-text-4
+      step_number: 2
+    - segment_id: step-3
+      text_verbatim: On a floured surface roll dough out to 1/4" thickness. Cut out 2-1/2" squares. Drop
+        a spoonful of cabbage in center of each square. Brush edges with egg white, fold squares to form
+        a triangle. Press edges firmly together.
+      language: en
+      source_region_ids:
+      - vera-r0102-text-5
+      step_number: 3
+    - segment_id: step-4
+      text_verbatim: Boil slowly in lightly salted water for 5 minutes.
+      language: en
+      source_region_ids:
+      - vera-r0102-text-8
+      step_number: 4
+    - segment_id: step-5
+      text_verbatim: Drain, dredge in bread crumbs browned in butter, sprinkle with sugar.
+      language: en
+      source_region_ids:
+      - vera-r0102-text-9
+      step_number: 5
+  notes: []
+  cross_references: []
+relationships:
+  continuations: []
+  related_recipe_ids: []
+provenance:
+  created_at: '2026-08-24T03:12:00Z'
+  created_by: codex-candidate
+  candidate_sources:
+  - tool: marker-pdf
+    tool_version: 2.0.0
+    generated_at: '2026-08-24T03:09:28Z'
+    artifact_path: pilot/acceleration-wave-005/marker-output/Culinary Adventures - Vera Gaeta/Culinary
+      Adventures - Vera Gaeta.json
+    remote_model_used: false
+verification:
+  status: machine_candidate
+  audit_policy: source_audit
+  status_set_at: '2026-08-24T03:12:00Z'
+  checks: []
+  open_issues: []
