@@ -175,11 +175,16 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
 .feature-empty p { margin: 0; font-family: var(--font-display); font-size: 1.8rem; line-height: .95; }
 .feature-reset { border: 0; color: var(--red-dark); background: transparent; font-weight: 800; text-decoration: underline; }
 
-.recipe-dialog { width: min(940px, calc(100vw - 2rem)); max-height: min(880px, calc(100vh - 2rem)); padding: 0; border: 2px solid var(--line); color: var(--ink); background: var(--paper); box-shadow: 0 20px 80px rgba(0,0,0,.48); }
+.recipe-dialog { width: min(940px, calc(100vw - 2rem)); max-height: min(880px, calc(100vh - 2rem)); overflow: auto; padding: 0; border: 2px solid var(--line); color: var(--ink); background: var(--paper); box-shadow: 0 20px 80px rgba(0,0,0,.48); }
 .recipe-dialog::backdrop { background: rgba(16,16,15,.72); backdrop-filter: blur(3px); }
 .dialog-close { position: sticky; z-index: 2; float: right; top: .85rem; right: .85rem; display: grid; width: 2.2rem; height: 2.2rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper-strong); }
 .dialog-close svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
-.dialog-recipe { padding: 2.4rem; }
+.dialog-recipe { padding: 0; }
+.dialog-art-field { position: relative; isolation: isolate; overflow: hidden; padding-top: .75rem; background: var(--paper); }
+.dialog-art-field::after { position: absolute; z-index: 1; inset: .75rem 0 0; content: ""; pointer-events: none; background: radial-gradient(ellipse 104% 93% at 50% 42%, transparent 60%, var(--paper) 100%); }
+.dialog-art { width: min(96%, 900px); height: clamp(16rem, 48vh, 34rem); margin: 0 auto; }
+.dialog-art img { object-position: 50% 54%; }
+.dialog-recipe-body { padding: 1.1rem 2.4rem 2.4rem; border-top: 1px solid var(--line); }
 .dialog-eyeline { margin: 0 0 .55rem; color: var(--red); font-size: .76rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .dialog-recipe h2 { max-width: 16ch; margin: 0; font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: .84; letter-spacing: -.065em; }
 .dialog-meta { margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .95rem; font-weight: 700; }
@@ -239,7 +244,10 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .featured-recipe { display: block; }
   .featured-visual { margin-top: .9rem; }
   .featured-title { margin-top: .9rem; }
-  .dialog-recipe { padding: 1.4rem; }
+  .dialog-art-field { padding-top: 0; }
+  .dialog-art-field::after { inset: 0; }
+  .dialog-art { width: 100%; height: clamp(15rem, 65vw, 23rem); }
+  .dialog-recipe-body { padding: 1.25rem 1.4rem 1.4rem; }
   .dialog-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .source-recipe { padding: 1.4rem; }
 }

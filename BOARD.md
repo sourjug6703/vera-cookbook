@@ -12,11 +12,13 @@ publication-safe cookbook reader.
 
 ## Now
 
-- No active implementation task. The local reader remains unpublished.
+- [ ] `TASK-006` Build and deploy an optimized public GitHub Pages reader.
+  Publish the derived reader bundle and its public-facing assets through a
+  repeatable workflow; retain canonical source material unchanged.
 
 ## Next
 
-- No follow-on implementation. Hosting requires separate explicit approval.
+- Add a print / Save as PDF experience after the public reader is live.
 
 ## Completed
 

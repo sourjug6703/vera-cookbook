@@ -2,21 +2,21 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T18:06:53Z
-Generated from commit: e5f58543dc6a
+Generated at: 2026-08-24T19:31:34Z
+Generated from commit: b9917ab798da
 Git observed at generation: branch main, upstream origin/main, dirty
-Manifest SHA-256: cc0ffa754faec5e33dd50f6c1cadf27d83ba424f14609e26611444674c5401a3
-Board SHA-256: b6cbf0ad90b3f31c7a7f0ec6f8f69c27cf2accff59e5ddb039daf2a83665b20e
+Manifest SHA-256: 6dd64461d75839e0535e66c0d719467552fd5d2a4385456f08e8b477d77e1900
+Board SHA-256: f8d0a6efa2c425a9cdeb07f4abc75a5e64ce4fe35200bc1bfbbb3b935bece1bf
 Plan SHA-256: none
-Latest session SHA-256: ee6ea1d6a9b4f60793706675d49cadca1ef5c3a9541bc125cad1d863a300bcc8
-Upstream at generation: origin/main e5f58543dc6a722d71ff3b5e0315b38314c4c0d8
+Latest session SHA-256: c41629f3daa80fac6aca251ae1c54be8a8b7b7d319e31b822db773843c765417
+Upstream at generation: origin/main b9917ab798da09febb257217b49c038ec131c6fd
 Profile: lite
 
 ## Wake-up snapshot
 
-- Current objective: No active implementation task. The local reader remains unpublished.
-- Current task IDs: None.
-- Next safe action: Continue current objective: No active implementation task. The local reader remains unpublished.
+- Current objective: `TASK-006` Build and deploy an optimized public GitHub Pages reader.
+- Current task IDs: TASK-006
+- Next safe action: Continue current objective: `TASK-006` Build and deploy an optimized public GitHub Pages reader.
 
 ## Active blockers
 
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T180653313269Z-macbook-052r3-3df72477e2a94bda957b21cef7ad1c85.md
-- Summary: TASK-005 delivery benchmark, scale build, local reader integration, and visual review
+- Session: SESSIONS/20260824T193134810397Z-macbook-052r3-df89464bb9a340b4a3ff017f4c0cfbb6.md
+- Summary: TASK-006 public GitHub Pages release
 
 ## Source pointers
 

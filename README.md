@@ -13,8 +13,8 @@ For an AI session, ask:
 This project preserves every recipe in Vera Gaeta's scanned cookbook as a
 granular, durable, source-grounded dataset. The immediate objective is highly
 accurate extraction and a separate, source-backed AI audit. The current phase
-may generate a local reader for family cooks from the complete cookbook
-collection. Public hosting remains a separately approved action.
+also produces an optimized public reader for family cooks from the complete
+cookbook collection.
 
 ## Boundaries
 
@@ -34,8 +34,6 @@ Do not use this project for:
   transcription.
 - Sending cookbook pages to remote models or services without explicit
   approval.
-- Publishing a website, enabling GitHub Pages, or exposing source material
-  without separate explicit approval.
 
 ## How to use or run it
 
@@ -64,7 +62,18 @@ recipe and ingredient search, local saved recipes, full preserved
 transcriptions, and a reading-optimized source page for every source-checked
 recipe. Each source page links to its untouched retained original scan. Its
 browse groups follow cookbook order; they are not new canonical categories.
-It does not enable GitHub Pages or any public hosting.
+It is also the source for the public GitHub Pages release. Build the published
+bundle with:
+
+```sh
+ruby scripts/build_public_site.rb
+```
+
+This writes an ignored `dist/` directory containing the reader, responsive
+AVIF/WebP recipe studies, source-reader fallbacks, and original scans used by
+the reader's existing source links. It deliberately excludes the larger
+recipe-master PNGs, which are not needed for modern web delivery. The GitHub
+Pages workflow publishes this generated bundle after a change to the reader.
 
 ## Canonical recipe format
 

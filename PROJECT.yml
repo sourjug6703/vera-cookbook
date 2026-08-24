@@ -89,6 +89,13 @@ artifacts:
     classification: internal
     default_read: false
     rebuildable: true
+  deployment_workflow:
+    path: .github
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: true
   recipe_data:
     path: data
     kind: active

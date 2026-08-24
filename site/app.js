@@ -46,15 +46,20 @@ function deliverySourceSet(pngPath, format) {
     .join(", ");
 }
 
+function deliveryImage(pngPath, format = "webp", width = 1080) {
+  const stem = pngPath.split("/").pop().replace(/\.png$/i, "");
+  return `assets/delivery/recipes/${format}/${stem}-${width}.${format}`;
+}
+
 function recipePicture(recipe, sizes, className = "") {
-  const fallback = recipe.illustration?.image || artFor[recipe.section];
-  if (!recipe.illustration) {
-    return `<img class="${className}" src="${escapeHtml(fallback)}" alt="" decoding="async" />`;
+  const illustration = recipe.illustration?.image;
+  if (!illustration) {
+    return `<img class="${className}" src="${escapeHtml(artFor[recipe.section])}" alt="" decoding="async" />`;
   }
   return `<picture class="${className}">
-    <source type="image/avif" srcset="${escapeHtml(deliverySourceSet(fallback, "avif"))}" sizes="${escapeHtml(sizes)}" />
-    <source type="image/webp" srcset="${escapeHtml(deliverySourceSet(fallback, "webp"))}" sizes="${escapeHtml(sizes)}" />
-    <img src="${escapeHtml(fallback)}" alt="" loading="lazy" decoding="async" />
+    <source type="image/avif" srcset="${escapeHtml(deliverySourceSet(illustration, "avif"))}" sizes="${escapeHtml(sizes)}" />
+    <source type="image/webp" srcset="${escapeHtml(deliverySourceSet(illustration, "webp"))}" sizes="${escapeHtml(sizes)}" />
+    <img src="${escapeHtml(deliveryImage(illustration))}" alt="" loading="lazy" decoding="async" />
   </picture>`;
 }
 
@@ -189,12 +194,15 @@ function openRecipe(recipe, trigger) {
     : "";
   dialogContent.innerHTML = `
     <article class="dialog-recipe">
-      <p class="dialog-eyeline">Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${escapeHtml(recipe.section)}</p>
-      <h2 id="dialog-title">${escapeHtml(recipe.title)}</h2>
-      <p class="dialog-meta">${escapeHtml(recipe.yieldTime.join(" · ") || "Source-checked family recipe")} · Source page ${escapeHtml(recipe.sourcePages.join(", ") || "not labeled")}</p>
-      <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button>${sourceAction}</div>
-      <div class="dialog-grid"><section><h3>Ingredients</h3><ul>${ingredientItems}</ul></section><section><h3>Preparation</h3><ol>${instructionItems}</ol>${notes}</section></div>
-      <p class="source-stamp">Transcription is shown as preserved from the source-checked record. Recipe ID: ${escapeHtml(recipe.id)}.</p>
+      <div class="dialog-art-field" aria-hidden="true">${recipePicture(recipe, "(max-width: 780px) calc(100vw - 2rem), 900px", "dialog-art")}</div>
+      <div class="dialog-recipe-body">
+        <p class="dialog-eyeline">Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${escapeHtml(recipe.section)}</p>
+        <h2 id="dialog-title">${escapeHtml(recipe.title)}</h2>
+        <p class="dialog-meta">${escapeHtml(recipe.yieldTime.join(" · ") || "Source-checked family recipe")} · Source page ${escapeHtml(recipe.sourcePages.join(", ") || "not labeled")}</p>
+        <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button>${sourceAction}</div>
+        <div class="dialog-grid"><section><h3>Ingredients</h3><ul>${ingredientItems}</ul></section><section><h3>Preparation</h3><ol>${instructionItems}</ol>${notes}</section></div>
+        <p class="source-stamp">Transcription is shown as preserved from the source-checked record. Recipe ID: ${escapeHtml(recipe.id)}.</p>
+      </div>
     </article>`;
   const dialogSave = dialogContent.querySelector(".dialog-save");
   dialogSave.addEventListener("click", () => {
