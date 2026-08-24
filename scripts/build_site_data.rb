@@ -5,12 +5,16 @@
 # never writes to the canonical records and publishes only source-checked data.
 
 require "json"
+require "fileutils"
 require "time"
 require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
 RECIPES_PATH = File.join(ROOT, "data", "recipes", "*.yaml")
 OUTPUT_PATH = File.join(ROOT, "site", "data", "recipes.json")
+SOURCE_PREVIEW_OUTPUT_DIRECTORY = File.join(ROOT, "site", "assets", "source-pilot")
+SOURCE_VIEWER_OUTPUT_DIRECTORY = File.join(ROOT, "site", "assets", "source-viewer")
+RECIPE_ILLUSTRATION_DIRECTORY = File.join(ROOT, "site", "assets", "recipes")
 
 def section_for(source_order)
   case source_order
@@ -21,6 +25,45 @@ def section_for(source_order)
   else "Baking & sweets"
   end
 end
+
+def source_preview_for(record)
+  source_region = record.fetch("source_regions").first
+  batch = source_region.fetch("region_image").split("/")[1]
+  pdf_pages = record.dig("source_work", "pdf_pages").to_a
+  printed_pages = record.dig("source_work", "printed_pages").to_a
+  pages = []
+  pdf_pages.each_with_index do |pdf_page, index|
+    source_path = File.join(ROOT, "evidence", batch, "overview", record.fetch("recipe_id"), format("page-%02d.png", pdf_page))
+    next unless File.file?(source_path)
+
+    filename = format("%s-page-%02d.png", record.fetch("recipe_id"), pdf_page)
+    FileUtils.cp(source_path, File.join(SOURCE_PREVIEW_OUTPUT_DIRECTORY, filename))
+    viewer_path = File.join(SOURCE_VIEWER_OUTPUT_DIRECTORY, filename)
+    pages << {
+      pdfPage: pdf_page,
+      printedPage: printed_pages[index],
+      image: File.file?(viewer_path) ? File.join("assets", "source-viewer", filename) : File.join("assets", "source-pilot", filename),
+      originalImage: File.join("assets", "source-pilot", filename)
+    }
+  end
+
+  return if pages.empty?
+
+  { label: "Retained source scan", pages: pages }
+end
+
+def illustration_for(record)
+  filename = "#{record.fetch("recipe_id")}.png"
+  path = File.join(RECIPE_ILLUSTRATION_DIRECTORY, filename)
+  return unless File.file?(path)
+
+  {
+    image: File.join("assets", "recipes", filename),
+    alt: "Illustrated serving of #{record.dig("identity", "display_title", "text_verbatim")}"
+  }
+end
+
+FileUtils.mkdir_p(SOURCE_PREVIEW_OUTPUT_DIRECTORY)
 
 records = Dir[RECIPES_PATH].sort.map do |path|
   record = YAML.load_file(path)
@@ -47,6 +90,8 @@ records = Dir[RECIPES_PATH].sort.map do |path|
     notes: record.dig("transcription", "notes").to_a.map { |note| note.fetch("text_verbatim") },
     sourcePages: record.dig("source_work", "printed_pages").to_a,
     sourceRegions: record.fetch("source_regions").select { |region| region["role"] == "title" }.map { |region| region["region_image"] },
+    sourcePreview: source_preview_for(record),
+    illustration: illustration_for(record),
     verification: record.dig("verification", "status")
   }
 end.compact

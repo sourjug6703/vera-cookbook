@@ -17,18 +17,22 @@ publication-safe cookbook reader.
 
 ## Next
 
-- If broader access is wanted later, make a separately approved decision about
-  GitHub Pages publication. Keep the reader local unless that decision is made.
+- `TASK-005` (not started): before any separately approved hosting decision,
+  benchmark delivery copies: responsive AVIF/WebP recipe illustrations and
+  lossless WebP reader scans with grayscale-PNG fallback. Keep original scans
+  and canonical YAML untouched; keep the reader local without approval.
 
 ## Completed
 
 - [x] `TASK-004` Completed and locally reviewed the dependency-free static
   family recipe reader. It presents all 110 source-checked records with
   source-order browsing, recipe and ingredient search, local saved recipes,
-  and full preserved transcriptions; the final family-cook pass made saving
-  available from the transcription, clarified an empty saved list, restored
-  dialog focus, and kept the narrow mobile header usable. No hosting or public
-  publication was enabled.
+  full transcriptions, an exact source-proof path, and 110 local recipe
+  illustrations in the approved Family Recipe Issue language. Source pages
+  use a grayscale, deskewed reading copy and link to untouched scans. The
+  family-cook pass made saving available from transcription, clarified an
+  empty saved list, restored dialog focus, and kept the narrow mobile header
+  usable. No hosting or public publication was enabled.
 - [x] `TASK-002` Finalized the versioned YAML/JSON recipe-record schema, source-region provenance model, visual verification contract, promotion validator, and tested example fixture.
 - [x] `TASK-001` Ran a reproducible 15-page Marker bake-off against an independently verified visual gold set. Adopt Marker as the local first-pass OCR/layout engine, with geometry-aware recipe segmentation and a separate visual source audit required before canonical promotion.
 - [x] `TASK-003` Completed the source-audit gate for all 110 materialized

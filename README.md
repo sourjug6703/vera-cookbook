@@ -60,9 +60,11 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory site
 ```
 
 Open `http://127.0.0.1:4173/`. The reader supports source-order browsing,
-recipe and ingredient search, local saved recipes, and full preserved
-transcriptions. Its browse groups follow cookbook order; they are not new
-canonical categories. It does not enable GitHub Pages or any public hosting.
+recipe and ingredient search, local saved recipes, full preserved
+transcriptions, and a reading-optimized source page for every source-checked
+recipe. Each source page links to its untouched retained original scan. Its
+browse groups follow cookbook order; they are not new canonical categories.
+It does not enable GitHub Pages or any public hosting.
 
 ## Canonical recipe format
 

@@ -127,6 +127,11 @@ typography:
     fontSize: "clamp(3rem, 7vw, 6rem)"
     lineHeight: 0.84
     letterSpacing: "-0.065em"
+  source-dialog-title:
+    fontFamily: "Bodoni Cookbook, Didot, serif"
+    fontSize: "clamp(2.5rem, 5vw, 4.75rem)"
+    lineHeight: 0.88
+    letterSpacing: "-0.04em"
   dialog-meta:
     fontFamily: "Barlow Kitchen, Arial, sans-serif"
     fontSize: "0.95rem"
@@ -312,6 +317,11 @@ Buttons are confident kitchen-book controls: direct labels, firm ink outlines, s
 
 - **Style:** a large square paper sheet with a 2px rule-ink edge, dark translucent blurred backdrop, a circular sticky close control, and generous transcription padding.
 - **Content rhythm:** a red uppercase eyeline leads into a large display title; double rules frame source metadata; ingredients and preparation form a two-column reading grid before stacking on mobile.
+
+### Source Evidence Viewer
+
+- **Style:** a second paper-sheet dialog opens above the transcription for every source-checked recipe.
+- **Content rhythm:** the source label, preserved recipe title, and exact PDF/printed-page caption frame a full-width scan. The viewer presents only the retained scan matched to that recipe's canonical provenance.
 
 ## Do's and Don'ts
 

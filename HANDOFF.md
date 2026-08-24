@@ -2,13 +2,13 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T07:05:31Z
-Generated from commit: a6b310cd12b5
+Generated at: 2026-08-24T17:19:21Z
+Generated from commit: 18838ef7eda8
 Git observed at generation: branch main, upstream origin/main, dirty
 Manifest SHA-256: cc0ffa754faec5e33dd50f6c1cadf27d83ba424f14609e26611444674c5401a3
-Board SHA-256: ad822fdf2f9b469e2bc4b1909def2602cc640ffe2f6b2c9001fece65b9858885
+Board SHA-256: 98b57d5c849c8028cab767fcd7e22b1b2eaf9ae7930e17a1fd2ce478f3973732
 Plan SHA-256: none
-Latest session SHA-256: da80f20681fa832188476a5ca4cff1d0876ac05a65aab8aab840e5c64ee45261
+Latest session SHA-256: 8134df5e4fd300431b0cedd8d1b8d2cc50335dab09f995060134f281a6bc0274
 Upstream at generation: origin/main a6b310cd12b56f5d8212340b2ab6e32d5a60a485
 Profile: lite
 
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T070531190332Z-macbook-052r3-bef463fd862542abb9d86a7ca423fe54.md
-- Summary: Checkpoint only.
+- Session: SESSIONS/20260824T171921410950Z-macbook-052r3-f6ca06017c1a4b5baccc167f2e440014.md
+- Summary: Completed the local source-proof and recipe-illustration enhancements for TASK-004.
 
 ## Source pointers
 

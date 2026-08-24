@@ -29,8 +29,11 @@ const savedFilter = document.querySelector("#saved-filter");
 const savedCount = document.querySelector("#saved-count");
 const dialog = document.querySelector("#recipe-dialog");
 const dialogContent = document.querySelector("#dialog-content");
+const sourceDialog = document.querySelector("#source-dialog");
+const sourceContent = document.querySelector("#source-content");
 const clearSearch = document.querySelector("#clear-search");
 let recipeTrigger = null;
+let sourceTrigger = null;
 
 function escapeHtml(value = "") {
   return String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[character]));
@@ -78,8 +81,8 @@ function cardFor(recipe) {
   const open = (event) => openRecipe(recipe, event.currentTarget);
   image.dataset.openRecipeId = recipe.id;
   fragment.querySelector(".open-recipe").dataset.openRecipeId = recipe.id;
-  image.style.backgroundImage = `url("${artFor[recipe.section]}")`;
-  image.innerHTML = `<span class="collection-study">Collection study · ${escapeHtml(recipe.section)}</span>`;
+  image.style.backgroundImage = `url("${recipe.illustration?.image || artFor[recipe.section]}")`;
+  image.innerHTML = `<span class="collection-study">${recipe.illustration ? "Recipe study" : "Collection study"} · ${escapeHtml(recipe.section)}</span>`;
   image.addEventListener("click", open);
   title.textContent = recipe.title;
   fragment.querySelector(".card-order").textContent = `Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${recipe.section}`;
@@ -106,7 +109,7 @@ function renderFeature(recipe) {
   }
   const ingredients = recipe.ingredients.slice(0, 5).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   feature.innerHTML = `
-    <div class="featured-visual" style="background-image:url('${artFor[recipe.section]}')"></div>
+    <div class="featured-visual" style="background-image:url('${recipe.illustration?.image || artFor[recipe.section]}')"></div>
     <div>
       <h2 class="featured-title">${escapeHtml(recipe.title)}</h2>
       <p class="feature-meta"><span>${escapeHtml(recipe.yieldTime[0] || "Source-checked recipe")}</span><span>${escapeHtml(recipe.section)}</span></p>
@@ -157,12 +160,15 @@ function openRecipe(recipe, trigger) {
   const instructionItems = recipe.instructions.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>No preparation text is printed for this source record.</li>";
   const notes = recipe.notes.length ? `<section><h3>Notes from the cookbook</h3><ul>${recipe.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}</ul></section>` : "";
   const isSaved = state.saved.has(recipe.id);
+  const sourceAction = recipe.sourcePreview?.pages?.length
+    ? '<button class="source-open" type="button">View source</button>'
+    : "";
   dialogContent.innerHTML = `
     <article class="dialog-recipe">
       <p class="dialog-eyeline">Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${escapeHtml(recipe.section)}</p>
       <h2 id="dialog-title">${escapeHtml(recipe.title)}</h2>
       <p class="dialog-meta">${escapeHtml(recipe.yieldTime.join(" · ") || "Source-checked family recipe")} · Source page ${escapeHtml(recipe.sourcePages.join(", ") || "not labeled")}</p>
-      <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button></div>
+      <div class="dialog-actions"><button class="dialog-save" type="button" aria-pressed="${isSaved}" aria-label="${isSaved ? "Remove" : "Save"} ${escapeHtml(recipe.title)}">${isSaved ? "Saved for the table" : "Save for the table"}</button>${sourceAction}</div>
       <div class="dialog-grid"><section><h3>Ingredients</h3><ul>${ingredientItems}</ul></section><section><h3>Preparation</h3><ol>${instructionItems}</ol>${notes}</section></div>
       <p class="source-stamp">Transcription is shown as preserved from the source-checked record. Recipe ID: ${escapeHtml(recipe.id)}.</p>
     </article>`;
@@ -175,7 +181,27 @@ function openRecipe(recipe, trigger) {
     dialogSave.setAttribute("aria-label", `${saved ? "Remove" : "Save"} ${recipe.title}`);
     dialogSave.textContent = saved ? "Saved for the table" : "Save for the table";
   });
+  dialogContent.querySelector(".source-open")?.addEventListener("click", (event) => openSource(recipe, event.currentTarget));
   if (!dialog.open) dialog.showModal();
+}
+
+function openSource(recipe, trigger) {
+  const pages = recipe.sourcePreview?.pages || [];
+  if (!pages.length) return;
+
+  sourceTrigger = trigger;
+  sourceContent.innerHTML = `
+    <article class="source-recipe">
+      <p class="dialog-eyeline">${escapeHtml(recipe.sourcePreview.label)} · recipe source</p>
+      <h2 id="source-dialog-title">${escapeHtml(recipe.title)}</h2>
+      <p class="source-dialog-note">This grayscale, deskewed reading rendition is derived from the retained scan used for this source-checked recipe. The untouched original remains available from each page.</p>
+      <div class="source-pages">${pages.map((page) => `
+        <figure class="source-figure">
+          <img src="${escapeHtml(page.image)}" alt="Scanned cookbook page for ${escapeHtml(recipe.title)}" />
+          <figcaption>PDF page ${escapeHtml(page.pdfPage)} · printed page ${escapeHtml(page.printedPage || "not labeled")} · <a href="${escapeHtml(page.originalImage)}" target="_blank" rel="noopener">Open original scan</a></figcaption>
+        </figure>`).join("")}</div>
+    </article>`;
+  if (!sourceDialog.open) sourceDialog.showModal();
 }
 
 search.addEventListener("input", (event) => { state.query = event.target.value; state.visible = 9; render(); });
@@ -193,6 +219,9 @@ dialog.addEventListener("close", () => {
   const recipeId = recipeTrigger?.dataset.openRecipeId;
   document.querySelector(`[data-open-recipe-id="${recipeId}"]`)?.focus();
 });
+document.querySelector("#source-close").addEventListener("click", () => sourceDialog.close());
+sourceDialog.addEventListener("click", (event) => { if (event.target === sourceDialog) sourceDialog.close(); });
+sourceDialog.addEventListener("close", () => sourceTrigger?.focus());
 
 fetch("data/recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("Could not load the recipe collection.")))
