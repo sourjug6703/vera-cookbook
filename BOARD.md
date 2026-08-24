@@ -12,18 +12,18 @@ publication-safe cookbook reader.
 
 ## Now
 
-- No active implementation task. `TASK-004` is complete as a local family-cook
-  reader; do not enable GitHub Pages or publish without separate approval.
+- No active implementation task. The local reader remains unpublished.
 
 ## Next
 
-- `TASK-005` (not started): before any separately approved hosting decision,
-  benchmark delivery copies: responsive AVIF/WebP recipe illustrations and
-  lossless WebP reader scans with grayscale-PNG fallback. Keep original scans
-  and canonical YAML untouched; keep the reader local without approval.
+- No follow-on implementation. Hosting requires separate explicit approval.
 
 ## Completed
 
+- [x] `TASK-005` Built and locally integrated 783 delivery copies: responsive
+  AVIF/WebP recipe illustrations and lossless-WebP source-reader pages with
+  PNG fallback. PNG masters and canonical data remain authoritative; no
+  hosting, privacy, publication, commit, or push action occurred.
 - [x] `TASK-004` Completed and locally reviewed the dependency-free static
   family recipe reader. It presents all 110 source-checked records with
   source-order browsing, recipe and ingredient search, local saved recipes,

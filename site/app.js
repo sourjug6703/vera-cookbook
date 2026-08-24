@@ -39,6 +39,31 @@ function escapeHtml(value = "") {
   return String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[character]));
 }
 
+function deliverySourceSet(pngPath, format) {
+  const stem = pngPath.split("/").pop().replace(/\.png$/i, "");
+  return [480, 720, 1080]
+    .map((width) => `assets/delivery/recipes/${format}/${stem}-${width}.${format} ${width}w`)
+    .join(", ");
+}
+
+function recipePicture(recipe, sizes, className = "") {
+  const fallback = recipe.illustration?.image || artFor[recipe.section];
+  if (!recipe.illustration) {
+    return `<img class="${className}" src="${escapeHtml(fallback)}" alt="" decoding="async" />`;
+  }
+  return `<picture class="${className}">
+    <source type="image/avif" srcset="${escapeHtml(deliverySourceSet(fallback, "avif"))}" sizes="${escapeHtml(sizes)}" />
+    <source type="image/webp" srcset="${escapeHtml(deliverySourceSet(fallback, "webp"))}" sizes="${escapeHtml(sizes)}" />
+    <img src="${escapeHtml(fallback)}" alt="" loading="lazy" decoding="async" />
+  </picture>`;
+}
+
+function sourceReaderWebp(pngPath) {
+  return pngPath
+    .replace("assets/source-viewer/", "assets/delivery/source-reader-webp/")
+    .replace(/\.png$/i, ".webp");
+}
+
 function persistSaved() {
   localStorage.setItem("vera-cookbook-saved", JSON.stringify([...state.saved]));
   savedCount.textContent = state.saved.size;
@@ -81,8 +106,7 @@ function cardFor(recipe) {
   const open = (event) => openRecipe(recipe, event.currentTarget);
   image.dataset.openRecipeId = recipe.id;
   fragment.querySelector(".open-recipe").dataset.openRecipeId = recipe.id;
-  image.style.backgroundImage = `url("${recipe.illustration?.image || artFor[recipe.section]}")`;
-  image.innerHTML = `<span class="collection-study">${recipe.illustration ? "Recipe study" : "Collection study"} · ${escapeHtml(recipe.section)}</span>`;
+  image.innerHTML = `${recipePicture(recipe, "(max-width: 470px) 100vw, (max-width: 780px) 50vw, (max-width: 1120px) 33vw, 340px", "card-art")}<span class="collection-study">${recipe.illustration ? "Recipe study" : "Collection study"} · ${escapeHtml(recipe.section)}</span>`;
   image.addEventListener("click", open);
   title.textContent = recipe.title;
   fragment.querySelector(".card-order").textContent = `Recipe ${String(recipe.sourceOrder).padStart(3, "0")} · ${recipe.section}`;
@@ -109,7 +133,7 @@ function renderFeature(recipe) {
   }
   const ingredients = recipe.ingredients.slice(0, 5).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   feature.innerHTML = `
-    <div class="featured-visual" style="background-image:url('${recipe.illustration?.image || artFor[recipe.section]}')"></div>
+    <div class="featured-visual">${recipePicture(recipe, "(max-width: 780px) 100vw, (max-width: 1120px) 220px, 330px", "featured-art")}</div>
     <div>
       <h2 class="featured-title">${escapeHtml(recipe.title)}</h2>
       <p class="feature-meta"><span>${escapeHtml(recipe.yieldTime[0] || "Source-checked recipe")}</span><span>${escapeHtml(recipe.section)}</span></p>
@@ -197,7 +221,10 @@ function openSource(recipe, trigger) {
       <p class="source-dialog-note">This grayscale, deskewed reading rendition is derived from the retained scan used for this source-checked recipe. The untouched original remains available from each page.</p>
       <div class="source-pages">${pages.map((page) => `
         <figure class="source-figure">
-          <img src="${escapeHtml(page.image)}" alt="Scanned cookbook page for ${escapeHtml(recipe.title)}" />
+          <picture>
+            <source type="image/webp" srcset="${escapeHtml(sourceReaderWebp(page.image))}" />
+            <img src="${escapeHtml(page.image)}" alt="Scanned cookbook page for ${escapeHtml(recipe.title)}" loading="lazy" decoding="async" />
+          </picture>
           <figcaption>PDF page ${escapeHtml(page.pdfPage)} · printed page ${escapeHtml(page.printedPage || "not labeled")} · <a href="${escapeHtml(page.originalImage)}" target="_blank" rel="noopener">Open original scan</a></figcaption>
         </figure>`).join("")}</div>
     </article>`;

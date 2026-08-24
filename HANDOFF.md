@@ -2,21 +2,21 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T17:19:21Z
-Generated from commit: 18838ef7eda8
+Generated at: 2026-08-24T18:06:53Z
+Generated from commit: e5f58543dc6a
 Git observed at generation: branch main, upstream origin/main, dirty
 Manifest SHA-256: cc0ffa754faec5e33dd50f6c1cadf27d83ba424f14609e26611444674c5401a3
-Board SHA-256: 98b57d5c849c8028cab767fcd7e22b1b2eaf9ae7930e17a1fd2ce478f3973732
+Board SHA-256: b6cbf0ad90b3f31c7a7f0ec6f8f69c27cf2accff59e5ddb039daf2a83665b20e
 Plan SHA-256: none
-Latest session SHA-256: 8134df5e4fd300431b0cedd8d1b8d2cc50335dab09f995060134f281a6bc0274
-Upstream at generation: origin/main a6b310cd12b56f5d8212340b2ab6e32d5a60a485
+Latest session SHA-256: ee6ea1d6a9b4f60793706675d49cadca1ef5c3a9541bc125cad1d863a300bcc8
+Upstream at generation: origin/main e5f58543dc6a722d71ff3b5e0315b38314c4c0d8
 Profile: lite
 
 ## Wake-up snapshot
 
-- Current objective: No active implementation task. `TASK-004` is complete as a local family-cook
-- Current task IDs: TASK-004
-- Next safe action: Continue current objective: No active implementation task. `TASK-004` is complete as a local family-cook
+- Current objective: No active implementation task. The local reader remains unpublished.
+- Current task IDs: None.
+- Next safe action: Continue current objective: No active implementation task. The local reader remains unpublished.
 
 ## Active blockers
 
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T171921410950Z-macbook-052r3-f6ca06017c1a4b5baccc167f2e440014.md
-- Summary: Completed the local source-proof and recipe-illustration enhancements for TASK-004.
+- Session: SESSIONS/20260824T180653313269Z-macbook-052r3-3df72477e2a94bda957b21cef7ad1c85.md
+- Summary: TASK-005 delivery benchmark, scale build, local reader integration, and visual review
 
 ## Source pointers
 
