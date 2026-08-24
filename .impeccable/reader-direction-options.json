@@ -1,0 +1,60 @@
+{
+  "title": "Choose Vera's family reader",
+  "question": "Which reader world belongs in your kitchen? This is a local design choice only; nothing will publish.",
+  "options": [
+    {
+      "id": "kitchen-timer-atlas",
+      "label": "Kitchen Timer Atlas",
+      "kicker": "THE ROLL",
+      "lineage": "a mid-century kitchen timer and a household recipe index",
+      "thesis": "A large recipe dial turns the family collection into a usable kitchen atlas.",
+      "palette": ["#13253D", "#F0522D", "#FFD34A", "#DCE4DD"],
+      "materials": ["enamel", "chrome ticks", "stamped recipe strips"],
+      "viewport": "A giant recipe dial fills the fold; the selected recipe opens as a calm reading tray beside it.",
+      "risk": "The dial must remain a useful navigator, not a nostalgic prop.",
+      "sketch": ".impeccable/sketches/kitchen-timer-atlas.webp"
+    },
+    {
+      "id": "grid-recipe-specimen",
+      "label": "Grid Recipe Specimen",
+      "kicker": "CHALLENGER",
+      "lineage": "Wim Crouwel's gridded type specimens",
+      "thesis": "The 110 recipes become a bold alphabetical instrument for finding what to cook.",
+      "palette": ["#0E54C6", "#F4F4F0", "#F0422D"],
+      "materials": ["construction grid", "cell-built lettering", "index marks"],
+      "viewport": "Recipe initials form a monumental grid while the active recipe reads in a precise side column.",
+      "risk": "The system can become cooler than the family stories it needs to carry.",
+      "case": "Fuses cleanly: the recipe inventory gains exceptional scanability without pretending it is a generic recipe feed.",
+      "sketch": ".impeccable/sketches/grid-recipe-specimen.webp",
+      "hero": "https://impeccable.style/worlds/cards/crouwel-grid-specimen-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/crouwel-grid-specimen.webp"
+    },
+    {
+      "id": "family-recipe-issue",
+      "label": "Family Recipe Issue",
+      "kicker": "CHALLENGER",
+      "lineage": "a mid-century magazine program with an abstract recurring mark",
+      "thesis": "Each cookbook section becomes an issue to browse, read, and remember.",
+      "palette": ["#151515", "#FFFFFF", "#E5402B"],
+      "materials": ["coated-paper contrast", "spot-color sections", "commissioned illustration"],
+      "viewport": "One full-bleed family-food image frames an opening recipe while a compact issue index anchors the reading path.",
+      "risk": "It may feel like an archive publication before it feels useful at the stove.",
+      "case": "Fuses cleanly: recipe families can become issues, but the cooking controls must stay more immediate than editorial decoration.",
+      "sketch": ".impeccable/sketches/family-recipe-issue.webp",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-art-paul-magazine-program-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/brand-identity-canon-art-paul-magazine-program.webp"
+    }
+  ],
+  "reroll": true,
+  "steer": true,
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A straightforward cookbook library, executed with exceptional clarity.",
+    "palette": ["#FFFFFF", "#161616", "#C83E27"],
+    "materials": ["clear recipe cards", "quiet photography", "simple filters"],
+    "viewport": "A familiar featured recipe with a searchable card grid below it.",
+    "risk": "It is dependable but could erase the collection's family-specific character.",
+    "sketch": ".impeccable/sketches/canon.webp"
+  }
+}

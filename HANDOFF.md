@@ -2,21 +2,21 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T05:46:57Z
-Generated from commit: unborn
-Git observed at generation: branch main, upstream none, dirty
-Manifest SHA-256: 351ff9382f7e4e90cf7326853f6f2873047b8a649c9d8a9b3c072791b33736d0
-Board SHA-256: eb5d7f61b7a839567bc95b01f30c8fae6bd951cadc33c361092fb9ac4147f3d5
+Generated at: 2026-08-24T06:48:32Z
+Generated from commit: 31aead6236c2
+Git observed at generation: branch main, upstream origin/main, dirty
+Manifest SHA-256: cc0ffa754faec5e33dd50f6c1cadf27d83ba424f14609e26611444674c5401a3
+Board SHA-256: d7762ceb72795e83282cd070343939e697903c85fc386ed0575041c05b09164a
 Plan SHA-256: none
-Latest session SHA-256: 660260b1f30e2ff47b19b16625551086aff352da18645985b96bc572c869b7c3
-Upstream at generation: none
+Latest session SHA-256: 18e678bf047d539c9b051dca694e167172866595abaddc3aff92fb5018f1bca9
+Upstream at generation: origin/main 31aead6236c25b48aee91e9525a513bc11446d5a
 Profile: lite
 
 ## Wake-up snapshot
 
-- Current objective: No active extraction batch. `TASK-003` is complete: all materialized cookbook records have passed the local source-audit gate.
-- Current task IDs: TASK-003
-- Next safe action: Continue current objective: No active extraction batch. `TASK-003` is complete: all materialized cookbook records have passed the local source-audit gate.
+- Current objective: `TASK-004` Explore and design a local static cookbook reader for family
+- Current task IDs: TASK-004
+- Next safe action: Continue current objective: `TASK-004` Explore and design a local static cookbook reader for family
 
 ## Active blockers
 
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T054657940033Z-macbook-052r3-7f84fe3153334087b7e469966e28d7c6.md
-- Summary: Initial Git repository setup
+- Session: SESSIONS/20260824T064832051742Z-macbook-052r3-efe78198992c43688abc2384e5992b2a.md
+- Summary: Checkpoint only.
 
 ## Source pointers
 

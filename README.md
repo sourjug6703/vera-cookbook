@@ -12,9 +12,9 @@ For an AI session, ask:
 
 This project preserves every recipe in Vera Gaeta's scanned cookbook as a
 granular, durable, source-grounded dataset. The immediate objective is highly
-accurate extraction and a separate, source-backed AI audit. A later phase may
-generate a website from the source-checked records, but publication is not part
-of the current scope.
+accurate extraction and a separate, source-backed AI audit. The current phase
+may generate a local reader for family cooks from the complete cookbook
+collection. Public hosting remains a separately approved action.
 
 ## Boundaries
 
@@ -34,7 +34,8 @@ Do not use this project for:
   transcription.
 - Sending cookbook pages to remote models or services without explicit
   approval.
-- Publishing a public website during the extraction phase.
+- Publishing a website, enabling GitHub Pages, or exposing source material
+  without separate explicit approval.
 
 ## How to use or run it
 
@@ -46,6 +47,22 @@ Do not use this project for:
 5. Promote text into canonical recipe records only after a distinct source
    audit against the cited page regions. Keep genuine ambiguities visible as
    `needs_attention`; never describe an AI audit as human verification.
+
+### Local recipe reader
+
+The first local reader is in `site/`. It is a dependency-free static site that
+uses a generated derivative of source-checked records only. Regenerate its
+browser data, then preview it locally:
+
+```sh
+ruby scripts/build_site_data.rb
+python3 -m http.server 4173 --bind 127.0.0.1 --directory site
+```
+
+Open `http://127.0.0.1:4173/`. The reader supports source-order browsing,
+recipe and ingredient search, local saved recipes, and full preserved
+transcriptions. Its browse groups follow cookbook order; they are not new
+canonical categories. It does not enable GitHub Pages or any public hosting.
 
 ## Canonical recipe format
 

@@ -61,6 +61,34 @@ artifacts:
     classification: internal
     default_read: false
     rebuildable: false
+  product_context:
+    path: PRODUCT.md
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  design_system:
+    path: DESIGN.md
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: false
+  design_exploration:
+    path: .impeccable
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: true
+  reader_site:
+    path: site
+    kind: active
+    sync: git
+    classification: internal
+    default_read: false
+    rebuildable: true
   recipe_data:
     path: data
     kind: active

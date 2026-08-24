@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T00:00:00-07:00",
+  "title": "Design System: Vera's Family Recipes",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Ivory Paper", "canonical": "#f6f2e9", "tonalRamp": ["oklch(15% 0.008 85)", "oklch(27% 0.008 85)", "oklch(39% 0.008 85)", "oklch(51% 0.008 85)", "oklch(63% 0.008 85)", "oklch(75% 0.008 85)", "oklch(87% 0.008 85)", "oklch(96% 0.008 85)"] },
+      "paper-strong": { "role": "neutral", "displayName": "Clean Recipe Paper", "canonical": "#fffdf7", "tonalRamp": ["oklch(15% 0.006 85)", "oklch(27% 0.006 85)", "oklch(39% 0.006 85)", "oklch(51% 0.006 85)", "oklch(63% 0.006 85)", "oklch(75% 0.006 85)", "oklch(87% 0.006 85)", "oklch(99% 0.006 85)"] },
+      "ink": { "role": "neutral", "displayName": "Kitchen Ink", "canonical": "#10100f", "tonalRamp": ["oklch(15% 0.005 100)", "oklch(27% 0.005 100)", "oklch(39% 0.005 100)", "oklch(51% 0.005 100)", "oklch(63% 0.005 100)", "oklch(75% 0.005 100)", "oklch(87% 0.005 100)", "oklch(95% 0.005 100)"] },
+      "tomato-red": { "role": "primary", "displayName": "Tomato Red", "canonical": "#bd2c1f", "tonalRamp": ["oklch(15% 0.13 30)", "oklch(27% 0.15 30)", "oklch(39% 0.17 30)", "oklch(51% 0.19 30)", "oklch(63% 0.19 30)", "oklch(75% 0.17 30)", "oklch(87% 0.13 30)", "oklch(95% 0.07 30)"] },
+      "tomato-red-dark": { "role": "primary", "displayName": "Deep Tomato Red", "canonical": "#852116", "tonalRamp": ["oklch(15% 0.11 30)", "oklch(27% 0.13 30)", "oklch(39% 0.15 30)", "oklch(51% 0.17 30)", "oklch(63% 0.17 30)", "oklch(75% 0.15 30)", "oklch(87% 0.11 30)", "oklch(95% 0.06 30)"] },
+      "rule-ink": { "role": "neutral", "displayName": "Rule Ink", "canonical": "#161615", "tonalRamp": ["oklch(15% 0.005 100)", "oklch(27% 0.005 100)", "oklch(39% 0.005 100)", "oklch(51% 0.005 100)", "oklch(63% 0.005 100)", "oklch(75% 0.005 100)", "oklch(87% 0.005 100)", "oklch(95% 0.005 100)"] },
+      "muted-copy": { "role": "neutral", "displayName": "Quiet Gray", "canonical": "#726d65", "tonalRamp": ["oklch(15% 0.01 80)", "oklch(27% 0.01 80)", "oklch(39% 0.01 80)", "oklch(51% 0.01 80)", "oklch(63% 0.01 80)", "oklch(75% 0.01 80)", "oklch(87% 0.01 80)", "oklch(95% 0.01 80)"] },
+      "soft-rule": { "role": "neutral", "displayName": "Soft Paper Rule", "canonical": "#ddd7ca", "tonalRamp": ["oklch(15% 0.009 85)", "oklch(27% 0.009 85)", "oklch(39% 0.009 85)", "oklch(51% 0.009 85)", "oklch(63% 0.009 85)", "oklch(75% 0.009 85)", "oklch(87% 0.009 85)", "oklch(95% 0.009 85)"] },
+      "dialog-shadow-ink": { "role": "neutral", "displayName": "Dialog Shadow Ink", "canonical": "rgba(0,0,0,.48)", "tonalRamp": ["rgba(0,0,0,.95)", "rgba(0,0,0,.83)", "rgba(0,0,0,.71)", "rgba(0,0,0,.59)", "rgba(0,0,0,.47)", "rgba(0,0,0,.35)", "rgba(0,0,0,.23)", "rgba(0,0,0,.11)"] },
+      "dialog-backdrop-ink": { "role": "neutral", "displayName": "Dialog Backdrop Ink", "canonical": "rgba(16,16,15,.72)", "tonalRamp": ["rgba(16,16,15,.95)", "rgba(16,16,15,.83)", "rgba(16,16,15,.71)", "rgba(16,16,15,.59)", "rgba(16,16,15,.47)", "rgba(16,16,15,.35)", "rgba(16,16,15,.23)", "rgba(16,16,15,.11)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Recipe Display", "purpose": "Recipe names, section headings, featured titles, and primary kitchen-book actions." },
+      "body": { "displayName": "Kitchen Utility", "purpose": "Search, navigation, recipe metadata, source context, and ingredients." },
+      "label": { "displayName": "Source Label", "purpose": "Order markers, stamps, image studies, and concise direct actions." },
+      "wordmark": { "displayName": "Desktop Wordmark", "purpose": "The large handwritten-feeling kitchen-book masthead in the header." },
+      "wordmark-mobile": { "displayName": "Mobile Wordmark", "purpose": "The compact fluid masthead below the 780px breakpoint." },
+      "search": { "displayName": "Search Utility", "purpose": "Search-field input copy." },
+      "saved-action": { "displayName": "Saved Action", "purpose": "Header saved-recipes control." },
+      "saved-icon-only": { "displayName": "Saved Icon Only", "purpose": "Hides the text label when the saved control is icon-only on mobile." },
+      "panel-label": { "displayName": "Panel Label", "purpose": "Collection and featured-panel labels." },
+      "navigation": { "displayName": "Navigation", "purpose": "Desktop collection browse labels." },
+      "navigation-count": { "displayName": "Navigation Count", "purpose": "Quiet tabular browse counts." },
+      "source-note": { "displayName": "Source Note", "purpose": "Provenance note beneath the collection rail." },
+      "library-summary": { "displayName": "Library Summary", "purpose": "Collection result summary." },
+      "study-label": { "displayName": "Study Label", "purpose": "Uppercase image-study stamp." },
+      "recipe-order": { "displayName": "Recipe Order", "purpose": "Uppercase source-order and browse-group label." },
+      "card-title": { "displayName": "Card Title", "purpose": "Fluid recipe titles in the collection grid." },
+      "card-meta": { "displayName": "Card Metadata", "purpose": "Compact yield or source context beneath a card title." },
+      "action-label": { "displayName": "Action Label", "purpose": "Tracked Read recipe action and its close variants." },
+      "load-more": { "displayName": "Load More", "purpose": "Collection continuation control." },
+      "empty-state": { "displayName": "Empty State", "purpose": "No-results recipe-library message." },
+      "featured-stamp": { "displayName": "Featured Stamp", "purpose": "Uppercase featured and source-checked image stamp." },
+      "featured-title": { "displayName": "Featured Title", "purpose": "Fluid recipe title in Tonight's table." },
+      "ingredients-heading": { "displayName": "Ingredients Heading", "purpose": "Featured ingredients subsection heading." },
+      "ingredient-preview": { "displayName": "Ingredient Preview", "purpose": "Compact featured ingredient list." },
+      "featured-action": { "displayName": "Featured Action", "purpose": "View full recipe control." },
+      "feature-empty": { "displayName": "Featured Empty State", "purpose": "No-recipe-on-the-table message." },
+      "dialog-eyeline": { "displayName": "Dialog Eyeline", "purpose": "Uppercase recipe source label in the dialog." },
+      "dialog-title": { "displayName": "Dialog Title", "purpose": "Largest fluid recipe title in the full transcription." },
+      "dialog-meta": { "displayName": "Dialog Metadata", "purpose": "Source-page and yield row between rules." },
+      "dialog-section-title": { "displayName": "Dialog Section Title", "purpose": "Ingredients and preparation headings." },
+      "source-stamp": { "displayName": "Source Stamp", "purpose": "Preserved-transcription provenance note." },
+      "navigation-mobile": { "displayName": "Mobile Navigation", "purpose": "Browse labels inside compact horizontal pills." },
+      "card-title-mobile": { "displayName": "Mobile Card Title", "purpose": "Single-column card title override." }
+    },
+    "shadows": [
+      { "name": "card-hover", "value": "0 10px 22px rgba(16,16,15,.18)", "purpose": "The only everyday lift; used when a recipe card is hovered." },
+      { "name": "recipe-dialog", "value": "0 20px 80px rgba(0,0,0,.48)", "purpose": "Lifts the full recipe transcription above the reader." }
+    ],
+    "elevation": [
+      { "name": "recipe-dialog-modal", "shadow": "0 20px 80px rgba(0,0,0,.48)", "backdropColor": "rgba(16,16,15,.72)", "backdropFilter": "blur(3px)", "purpose": "The complete-recipe modal uses a deep shadow and a distinct blurred Kitchen Ink backdrop." }
+    ],
+    "motion": [
+      { "name": "card-lift", "value": "transform 180ms cubic-bezier(.16,1,.3,1), box-shadow 180ms ease", "purpose": "Recipe cards lift 3px on hover." }
+    ],
+    "breakpoints": [
+      { "name": "featured-row", "value": "1120px" },
+      { "name": "compact-reader", "value": "780px" },
+      { "name": "single-column", "value": "470px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Saved Recipes Button",
+      "kind": "button",
+      "refersTo": "button-saved",
+      "description": "Primary saved-recipes filter in the reader header.",
+      "html": "<button class=\"ds-saved-button\" type=\"button\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M6 3h12v18l-6-3.8L6 21V3Z\"/></svg>Saved recipes<span class=\"ds-saved-count\">3</span></button>",
+      "css": ".ds-saved-button{display:inline-flex;align-items:center;justify-content:center;gap:.62rem;min-height:3.45rem;padding:.75rem 1rem;border:1px solid #852116;border-radius:5px;color:#fffaf2;background:#bd2c1f;font-family:'Bodoni Cookbook',Didot,serif;font-size:1.2rem;font-weight:700;cursor:pointer}.ds-saved-button svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-saved-button:hover,.ds-saved-button[aria-pressed='true']{background:#10100f;border-color:#10100f}.ds-saved-button:focus-visible{outline:3px solid #bd2c1f;outline-offset:3px}.ds-saved-count{min-width:1.28rem;padding:.05rem .3rem;border-radius:100px;color:#10100f;background:#fffaf2;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.82rem;line-height:1.15}"
+    },
+    {
+      "name": "Recipe Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Full-width search field for preserved titles and ingredients.",
+      "html": "<label class=\"ds-search-field\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"m16 16 5 5\"/></svg><input type=\"search\" placeholder=\"Find a recipe\"></label>",
+      "css": ".ds-search-field{display:flex;align-items:center;gap:.8rem;min-height:3.45rem;padding:0 .95rem;border:1px solid #161615;border-radius:5px;background:rgba(255,253,247,.72)}.ds-search-field svg{width:1.25rem;height:1.25rem;fill:none;stroke:#10100f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}.ds-search-field input{width:100%;border:0;outline:0;color:#10100f;background:transparent;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:1.13rem}.ds-search-field input::placeholder{color:#756f66;opacity:1}.ds-search-field:focus-within{outline:3px solid #bd2c1f;outline-offset:3px}"
+    },
+    {
+      "name": "Collection Tab",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Source-order browse group with a collection mark and quiet count.",
+      "html": "<button class=\"ds-collection-tab\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-tab-mark\"></span><span>All recipes</span><span class=\"ds-tab-count\">110</span></button>",
+      "css": ".ds-collection-tab{display:grid;grid-template-columns:16px 1fr auto;align-items:center;gap:.68rem;width:100%;padding:.6rem .45rem;border:0;border-bottom:1px solid rgba(16,16,15,.15);color:#10100f;background:transparent;text-align:left;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.98rem;font-weight:600;cursor:pointer}.ds-tab-mark{width:10px;height:10px;background:#10100f;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}.ds-collection-tab[aria-pressed='true']{color:#bd2c1f}.ds-collection-tab[aria-pressed='true'] .ds-tab-mark{background:#bd2c1f;border-radius:50%;clip-path:none}.ds-tab-count{color:#726d65;font-size:.85rem;font-variant-numeric:tabular-nums}.ds-collection-tab:hover{color:#bd2c1f}.ds-collection-tab:focus-visible{outline:3px solid #bd2c1f;outline-offset:3px}"
+    },
+    {
+      "name": "Recipe Card",
+      "kind": "card",
+      "refersTo": "recipe-card",
+      "description": "Framed food study and compact source-ordered recipe summary.",
+      "html": "<article class=\"ds-recipe-card\"><div class=\"ds-card-image\"><span class=\"ds-study\">Collection study</span></div><div class=\"ds-card-copy\"><div class=\"ds-card-order\">Recipe 001 · Soups</div><h3>Chicken Soup</h3><p>Source-checked family recipe</p><div class=\"ds-card-actions\"><button class=\"ds-read\">Read recipe ↗</button><button class=\"ds-save\" aria-label=\"Save recipe\"></button></div></div></article>",
+      "css": ".ds-recipe-card{min-width:0;border:1px solid #161615;background:#fffdf7;transition:transform 180ms cubic-bezier(.16,1,.3,1),box-shadow 180ms ease}.ds-recipe-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(16,16,15,.18)}.ds-card-image{position:relative;aspect-ratio:1.27/1;border-bottom:1px solid #161615;background:linear-gradient(125deg,#dfd9cd 0 52%,rgba(246,242,233,.24) 52% 58%,#dfd9cd 58%)}.ds-study{position:absolute;left:.45rem;bottom:.45rem;padding:.25rem .38rem;color:#f6f2e9;background:#10100f;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.61rem;font-weight:800;letter-spacing:.065em;line-height:1.1;text-transform:uppercase}.ds-card-copy{padding:.8rem}.ds-card-order{color:#bd2c1f;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.71rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.ds-recipe-card h3{margin:.26rem 0 .35rem;font-family:'Bodoni Cookbook',Didot,serif;font-size:2.05rem;font-weight:400;line-height:.95;letter-spacing:-.04em}.ds-recipe-card p{margin:0;color:#726d65;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.83rem;line-height:1.22}.ds-card-actions{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;padding-top:.6rem;border-top:1px solid #ddd7ca}.ds-read{border:0;padding:0;color:#10100f;background:transparent;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.82rem;font-weight:800;letter-spacing:.045em;text-transform:uppercase;cursor:pointer}.ds-read:hover{color:#bd2c1f}.ds-read:focus-visible,.ds-save:focus-visible{outline:3px solid #bd2c1f;outline-offset:3px}.ds-save{width:1.7rem;height:1.8rem;border:2px solid #10100f;background:transparent;clip-path:polygon(0 0,100% 0,100% 100%,50% 76%,0 100%);cursor:pointer}.ds-save:hover{border-color:#bd2c1f;background:#bd2c1f}"
+    },
+    {
+      "name": "Featured Recipe Actions",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Paired primary read action and transparent save action for Tonight's table.",
+      "html": "<div class=\"ds-feature-actions\"><button class=\"ds-feature-open\" type=\"button\">View full recipe</button><button class=\"ds-feature-save\" type=\"button\" aria-label=\"Save recipe\">▱</button></div>",
+      "css": ".ds-feature-actions{display:flex;gap:.7rem}.ds-feature-open,.ds-feature-save{min-height:2.95rem;border:1px solid #852116;border-radius:5px;font-family:'Bodoni Cookbook',Didot,serif;font-size:1.1rem;font-weight:700;cursor:pointer}.ds-feature-open{flex:1;color:#fff;background:#bd2c1f}.ds-feature-save{flex:0 0 3rem;color:#10100f;background:transparent}.ds-feature-open:hover{background:#852116}.ds-feature-save:hover{color:#bd2c1f;border-color:#bd2c1f}.ds-feature-open:focus-visible,.ds-feature-save:focus-visible{outline:3px solid #bd2c1f;outline-offset:3px}"
+    },
+    {
+      "name": "Recipe Dialog",
+      "kind": "custom",
+      "refersTo": "recipe-dialog",
+      "description": "Full preserved transcription in a modal kitchen-book sheet.",
+      "html": "<section class=\"ds-dialog\"><button class=\"ds-dialog-close\" aria-label=\"Close recipe\">×</button><p class=\"ds-eyeline\">Recipe 001 · Soups</p><h2>Chicken Soup</h2><p class=\"ds-meta\">Source page 24</p><div class=\"ds-dialog-grid\"><section><h3>Ingredients</h3><ul><li>Chicken</li><li>Root vegetables</li></ul></section><section><h3>Preparation</h3><ol><li>Prepare the stock.</li><li>Serve hot.</li></ol></section></div></section>",
+      "css": ".ds-dialog{position:relative;max-width:940px;padding:2.4rem;border:2px solid #161615;color:#10100f;background:#f6f2e9;box-shadow:0 20px 80px rgba(0,0,0,.48)}.ds-dialog-close{position:absolute;top:.85rem;right:.85rem;display:grid;width:2.2rem;height:2.2rem;place-items:center;border:1px solid #161615;border-radius:50%;color:#10100f;background:#fffdf7;font-size:1.35rem;cursor:pointer}.ds-dialog-close:hover{color:#bd2c1f}.ds-dialog-close:focus-visible{outline:3px solid #bd2c1f;outline-offset:3px}.ds-eyeline{margin:0 0 .55rem;color:#bd2c1f;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ds-dialog h2{max-width:16ch;margin:0;font-family:'Bodoni Cookbook',Didot,serif;font-size:clamp(3rem,7vw,6rem);font-weight:400;line-height:.84;letter-spacing:-.065em}.ds-meta{margin:1.1rem 0 1.5rem;padding:.8rem 0;border-top:1px solid #161615;border-bottom:1px solid #161615;font-family:'Barlow Kitchen',Arial,sans-serif;font-size:.95rem;font-weight:700}.ds-dialog-grid{display:grid;grid-template-columns:minmax(210px,.75fr) minmax(0,1.45fr);gap:2.2rem}.ds-dialog-grid h3{margin:0 0 .65rem;font-family:'Bodoni Cookbook',Didot,serif;font-size:1.7rem}.ds-dialog-grid ul,.ds-dialog-grid ol{margin:0;padding-left:1.1rem;font-family:'Barlow Kitchen',Arial,sans-serif;line-height:1.48}.ds-dialog-grid li+li{margin-top:.45rem}@media(max-width:780px){.ds-dialog{padding:1.4rem}.ds-dialog-grid{grid-template-columns:1fr;gap:1.5rem}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Family Recipe Issue",
+    "overview": "This is a practical recipe library with the material character of a family kitchen book: ivory paper, black ink, tomato red, framed food studies, and display typography used with restraint. The reader keeps browsing, saved recipes, and a featured recipe on one shared work surface instead of turning the cookbook into a magazine-style sequence of pages.\n\nThe visual system supports a private, source-grounded family collection. Strong rules, source-order labels, and small source-checked stamps make provenance visible while the generous display type keeps recipes easy to scan. The result is editorial in character but utility-led in operation.",
+    "keyCharacteristics": ["Ivory paper texture framed by a black outer field.", "High-contrast Bodoni titles paired with condensed, direct utility copy.", "Tomato red reserved for active, saved, and source-signaling moments.", "Thin ink rules and rectangular image frames structure the archive.", "A responsive practical-library layout, not magazine-page navigation."],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Tomato red is a locator and an action signal, not a wash. Keep the paper-and-ink field dominant; use red for current selection, saved state, source evidence, and the clearest next action.", "section": "colors" },
+      { "name": "The Title-Then-Utility Rule", "body": "Let Bodoni identify the recipe or section; let Barlow explain its order, time, source, and action. Do not use display typography to turn dense operational copy into decoration.", "section": "typography" },
+      { "name": "The Paper-First Rule", "body": "Build separation with paper tones and ink rules at rest. Use shadow only for a hover response or an explicitly modal reading state.", "section": "elevation" }
+    ],
+    "dos": ["Do keep the ivory paper, Kitchen Ink, and thin-rule base visually dominant; use Tomato Red for state and action.", "Do pair Bodoni recipe or section titles with Barlow operational text, counts, source context, and controls.", "Do retain strong rectangular content frames and source-order labels when extending collection views.", "Do preserve the responsive shift from three-part reader to horizontal browse pills and a single-column reading flow.", "Do make keyboard focus visible with the established tomato-red outlined treatment."],
+    "donts": ["Don't recast this as a generic public recipe feed or a magazine-page navigation experience.", "Don't introduce broad color washes, soft card stacks, or routine shadows that compete with the paper-and-ink hierarchy.", "Don't replace compact source and utility labels with oversized display type.", "Don't use tomato red as decorative background across an entire surface; its rarity is part of its meaning."]
+  }
+}

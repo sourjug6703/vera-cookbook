@@ -7,21 +7,29 @@ Last reviewed: 2026-08-24.
 Faithfully preserve every recipe in Vera Gaeta's scanned cookbook as a
 versioned, source-checked, future-proof dataset with exact source provenance.
 Keep the audit status honest about whether review was performed by AI or a
-human, and keep the records suitable for later publication without making a
-website part of the current extraction scope.
+human, and keep the records suitable for a separately approved,
+publication-safe cookbook reader.
 
 ## Now
 
-- No active extraction batch. `TASK-003` is complete: all materialized cookbook records have passed the local source-audit gate.
+- `TASK-004` Explore and design a local static cookbook reader for family
+  cooks. The full cookbook corpus may inform the local experience. Do not
+  enable GitHub Pages or publish without separate approval.
 
 ## Next
 
-- No pending extraction or source-policy decisions. Any future work should be a separately authorized derivative, such as a local cookbook reader.
+- Review the first local reader build against the approved recipe-collection
+  direction and refine its family-cook workflow.
+- After local review, make a separately approved decision about GitHub Pages
+  publication.
 
 ## Completed
 
 - [x] `TASK-002` Finalized the versioned YAML/JSON recipe-record schema, source-region provenance model, visual verification contract, promotion validator, and tested example fixture.
 - [x] `TASK-001` Ran a reproducible 15-page Marker bake-off against an independently verified visual gold set. Adopt Marker as the local first-pass OCR/layout engine, with geometry-aware recipe segmentation and a separate visual source audit required before canonical promotion.
+- [x] `TASK-003` Completed the source-audit gate for all 110 materialized
+  cookbook records; genuine source ambiguities remain explicit rather than
+  guessed.
 
 ## Waiting or blocked
 

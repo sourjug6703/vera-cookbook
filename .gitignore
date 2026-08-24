@@ -24,6 +24,9 @@ build/
 # Disposable PDF render and inspection cache; canonical source and audit evidence live elsewhere.
 /tmp/
 
+# Local Impeccable decision-server logs and transient server state.
+/.impeccable/questions/
+
 .env
 .env.*
 !.env.example
