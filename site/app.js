@@ -27,6 +27,7 @@ const summary = document.querySelector("#result-summary");
 const loadMore = document.querySelector("#load-more");
 const emptyState = document.querySelector("#empty-state");
 const feature = document.querySelector("#featured-recipe");
+const recipePanel = document.querySelector("#recipe-panel");
 const savedFilter = document.querySelector("#saved-filter");
 const savedCount = document.querySelector("#saved-count");
 const collectionView = document.querySelector("#collection-view");
@@ -187,6 +188,7 @@ function render() {
   savedFilter.setAttribute("aria-pressed", String(state.savedOnly));
   persistSaved();
   const openRecipe = state.recipes.find((recipe) => recipe.id === state.openRecipeId);
+  recipePanel.hidden = Boolean(openRecipe);
   if (openRecipe) {
     state.sourceOpen ? renderSource(openRecipe) : renderRecipe(openRecipe);
     collectionView.hidden = true;

@@ -19,6 +19,7 @@ asset_entries = %w[
   BodoniModa-700.ttf
   BodoniModa-800.ttf
   delivery
+  vera-portrait-linocut-plus-20-b-transparent.png
   fish.webp
   meats.webp
   sides.webp
