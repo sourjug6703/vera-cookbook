@@ -9,7 +9,7 @@
     <style>
       body { background: var(--ink); }
       .mock-note { max-width: 1680px; margin: 0 auto; padding: .55rem 2.35rem; color: var(--paper); background: var(--ink); font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-align: center; text-transform: uppercase; }
-      .mock-layout { display: grid; grid-template-columns: 238px minmax(0, 1fr) 300px; min-height: calc(100vh - 136px); }
+      .mock-layout { display: grid; grid-template-columns: 238px minmax(0, 1fr); min-height: calc(100vh - 136px); }
       .mock-nav { padding: 1.65rem 1.2rem 1.6rem 2.35rem; border-right: 1px solid var(--line); }
       .mock-tabs { display: grid; gap: .3rem; margin-top: 1.2rem; }
       .mock-tab { display: grid; grid-template-columns: 12px 1fr auto; gap: .68rem; align-items: center; padding: .6rem .45rem; border-bottom: 1px solid rgba(16,16,15,.15); font-size: .98rem; font-weight: 600; }
@@ -39,26 +39,8 @@
       .horizontal-copy h2 { margin: .12rem 0 .42rem; font-family: var(--font-display); font-size: clamp(1.45rem, 1.8vw, 2.15rem); font-weight: 400; line-height: .92; letter-spacing: -.04em; }
       .horizontal-copy .card-meta { min-height: 0; }
       .horizontal-copy .card-actions { margin-top: auto; }
-      .mock-panel { padding: 1.65rem 1.3rem 1.5rem; border-left: 1px solid var(--line); background: rgba(255,253,247,.34); }
-      .mock-panel h2 { margin: 0; font-family: var(--font-display); font-size: 1.64rem; font-weight: 700; }
-      .mock-feature-art { position: relative; aspect-ratio: 1.25 / 1; overflow: hidden; margin-top: 1rem; border: 1px solid var(--line); background: #dfd9cd; }
-      .mock-feature-art picture, .mock-feature-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
-      .mock-feature-art::after { position: absolute; right: 0; bottom: 0; content: "Featured / source-checked"; padding: .32rem .48rem; color: var(--paper); background: var(--ink); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-      .mock-feature-title { margin: .95rem 0 .45rem; font-family: var(--font-display); font-size: clamp(2.1rem, 3.2vw, 3.5rem); font-weight: 400; line-height: .88; letter-spacing: -.04em; }
-      .mock-feature-meta { margin: 0; padding-bottom: .9rem; border-bottom: 1px solid var(--line); font-size: .83rem; font-weight: 700; }
-      .mock-ingredients { margin: 1rem 0 .55rem; font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
-      .mock-ingredient-list { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; font-size: .91rem; line-height: 1.2; }
-      .mock-ingredient-list li { position: relative; padding-left: .9rem; }
-      .mock-ingredient-list li::before { position: absolute; top: .35rem; left: 0; width: .34rem; height: .34rem; content: ""; border-radius: 50%; background: var(--red); }
-      .mock-feature-action { width: 100%; min-height: 2.95rem; margin-top: 1.25rem; border: 1px solid var(--red-dark); border-radius: 5px; color: #fffaf2; background: var(--red); font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
       @media (max-width: 1250px) {
         .mock-layout { grid-template-columns: 210px minmax(0, 1fr); }
-        .mock-panel { grid-column: 1 / -1; display: grid; grid-template-columns: 210px minmax(220px, .75fr) minmax(0, 1.25fr); gap: 1.25rem; padding-left: 2.35rem; border-top: 1px solid var(--line); border-left: 0; }
-        .mock-panel h2 { grid-row: 1 / span 3; }
-        .mock-feature-art { grid-row: 1 / span 3; margin: 0; }
-        .mock-feature-title, .mock-feature-meta, .mock-ingredients, .mock-ingredient-list, .mock-feature-action { grid-column: 3; }
-        .mock-feature-title { margin: 0 0 .45rem; }
-        .mock-ingredients { margin-top: .2rem; }
       }
       @media (max-width: 880px) {
         .horizontal-grid { grid-template-columns: 1fr; }
@@ -71,9 +53,6 @@
         .mock-tab { flex: 0 0 auto; grid-template-columns: 12px auto; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 99px; font-size: .86rem; }
         .mock-tab span, .mock-source { display: none; }
         .mock-library { padding: 1.25rem 1rem 2rem; }
-        .mock-panel { display: block; padding: 1.25rem 1rem 1.6rem; }
-        .mock-feature-art { margin-top: .9rem; }
-        .mock-feature-title { margin-top: .9rem; }
       }
       @media (max-width: 500px) {
         .mock-heading { align-items: flex-start; flex-direction: column; }
@@ -115,15 +94,6 @@
             <article class="horizontal-card"><div class="horizontal-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0069-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0069-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0069-720.webp" alt="Potato soup illustration" /></picture></div><div class="horizontal-copy"><p class="running-line"><strong>Soups</strong><span>Recipe 069</span></p><h2>Potato soup · Bramborová polévka</h2><p class="card-meta">Serves 6 · Preparation time: 1 hour</p><div class="card-actions"><span class="open-recipe">Read recipe ↗</span><span class="save-mark" aria-hidden="true"></span></div></div></article>
           </div>
         </section>
-        <aside class="mock-panel">
-          <h2>Tonight's table</h2>
-          <div class="mock-feature-art"><picture><source type="image/avif" srcset="assets/delivery/recipes/avif/vera-r0064-720.avif" /><source type="image/webp" srcset="assets/delivery/recipes/webp/vera-r0064-720.webp" /><img src="assets/delivery/recipes/webp/vera-r0064-720.webp" alt="Goulash soup illustration" /></picture></div>
-          <h3 class="mock-feature-title">Goulash soup · Gulášová polévka</h3>
-          <p class="mock-feature-meta">Serves 6 · Preparation time: 2 hours · Soups</p>
-          <h3 class="mock-ingredients">Ingredients preview</h3>
-          <ul class="mock-ingredient-list"><li>1-1/2 quarts beef stock</li><li>1 lb. beef stew meat</li><li>3 tablespoons vegetable oil</li><li>1 medium onion, finely chopped</li></ul>
-          <button class="mock-feature-action" type="button">View full recipe</button>
-        </aside>
       </main>
     </div>
   </body>
