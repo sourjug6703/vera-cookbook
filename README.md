@@ -88,6 +88,21 @@ JSON, Schema.org Recipe data, search indexes, and databases are generated
 derivatives; they do not replace the canonical YAML records or their cited scan
 regions.
 
+### Recipe context
+
+Historical and cooking context lives separately in `context/`; it is not part
+of a canonical recipe transcription. Each visible note must cite a source and
+state that it describes the wider dish tradition, not the exact printed recipe.
+The current registry covers all 110 materialized recipes with 14 registered
+sources: 25 recipe-specific notes and 85 deliberately shared notes for closely
+related dish families. This is reader-only derivative material; it does not
+alter the canonical YAML, retained scans, or source-audit evidence.
+Validate it with:
+
+```sh
+ruby scripts/validate_recipe_context.rb
+```
+
 Read `docs/RECIPE-DATA-CONTRACT.md` before creating or reviewing records. Run:
 
 ```sh
@@ -111,8 +126,10 @@ handwritten `Curry` note in `vera-r0025`; excluded the pale page-32 overlaps in
 `2 1/2` correction for `vera-r0110` Vanilla horns. The original evidence is
 preserved alongside these decisions.
 Every record exposes its page context and exact cited crops through a click/tap
-**View source** control. Completing an optional browser checklist does not
-itself change trust state or mutate canonical data.
+**View source** control. Source pages replace the same central reader panel;
+Back to recipe and Escape restore the selected transcription without losing
+the reader state. Completing an optional browser checklist does not itself
+change trust state or mutate canonical data.
 
 The reconciled full inventory and thirteen-batch completion history are in
 `docs/RECIPE-INVENTORY.md`. The cookbook contains 110 complete recipe/component

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T17:19:03Z",
+  "generatedAt": "2026-08-25T06:47:50Z",
   "recordCount": 110,
   "recipes": [
     {
@@ -58,6 +58,19 @@
         "image": "assets/recipes/vera-r0001.png",
         "alt": "Illustrated serving of Roast beef tenderloin in sour cream sauce - Svíčková"
       },
+      "history": {
+        "label": "Svíčková as a festive dish",
+        "note": "Svíčková takes its name from tenderloin and sits among the best-known Czech festive dishes. Creamy root-vegetable sauce and dumplings give it the sweet-savory richness associated with special meals. Families keep their own preferred balance of cream, spice, and garnish.",
+        "scope": "This describes the wider svíčková tradition; Vera's printed ingredients and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Explore Svíčková na Smetaně: The Crown of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-svickova-na-smetane",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -114,6 +127,19 @@
         "image": "assets/recipes/vera-r0002.png",
         "alt": "Illustrated serving of Beef tenderloin slices (shortcut for “svíčková”) · Řezy ze svíčkové"
       },
+      "history": {
+        "label": "A shortcut within the svíčková family",
+        "note": "The Czech title identifies slices of tenderloin and places this dish near the svíčková family. That family is known for creamy sauce and dumplings, but it leaves generous room for household shortcuts and variations. A quicker slice-based preparation belongs naturally beside its more ceremonial relatives.",
+        "scope": "This offers dish-family context only; Vera's wording and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Explore Svíčková na Smetaně: The Crown of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-svickova-na-smetane",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -166,6 +192,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0003.png",
         "alt": "Illustrated serving of Beef croquettes · Karbanátky"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -222,6 +261,19 @@
         "image": "assets/recipes/vera-r0004.png",
         "alt": "Illustrated serving of Stuffed meat loaf · Svíčková sekaná plněná"
       },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -275,6 +327,25 @@
       "illustration": {
         "image": "assets/recipes/vera-r0005.png",
         "alt": "Illustrated serving of Beef goulash · Guláš z hovězího masa"
+      },
+      "history": {
+        "label": "Czech goulash is a regional adaptation",
+        "note": "Czech goulash is a meat-and-onion stew, most often made with beef and paprika. Sauerkraut and game versions show how readily the dish changes from one table to another. Its roots are Central European, so it belongs to a shared regional tradition rather than to one country alone.",
+        "scope": "This describes the goulash family, not a claim that every ingredient or proportion in this cookbook recipe is standard.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Do You Know Czech Regional Specialties?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2022/05/n-czech-regional-specialities",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -330,6 +401,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0006.png",
         "alt": "Illustrated serving of Bohemian “brasciole” - stuffed beef (veal) rolls · Hovězí (telecí) závitky"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -388,6 +472,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0007.png",
         "alt": "Illustrated serving of Roast veal · Telecí pečeně"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -474,6 +571,19 @@
         "image": "assets/recipes/vera-r0008.png",
         "alt": "Illustrated serving of Stuffed veal breast · Telecí hrudí nadívané"
       },
+      "history": {
+        "label": "Stuffing as a celebration of abundance",
+        "note": "Stuffed poultry turns bread, eggs, herbs, and meat into a dish meant for a fuller table. Czech Easter cooking especially treats stuffing as a sign that the lean season has ended. The technique also makes a festive use of every part of a household's provisions.",
+        "scope": "This is holiday and kitchen context, not a claim that these recipes belong to one occasion.",
+        "citations": [
+          {
+            "title": "Czech Easter Customs and Traditions",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -525,6 +635,19 @@
         "image": "assets/recipes/vera-r0009.png",
         "alt": "Illustrated serving of Veal chops with caraway seeds · Telecí žebírka na kmíně"
       },
+      "history": {
+        "label": "Caraway's familiar Czech aroma",
+        "note": "Caraway is one of the seasonings most closely associated with Czech and Moravian cooking. Its warm, resinous flavor works especially well with roast veal and pork. A small scattering of the seeds can make a plain roast immediately recognizable.",
+        "scope": "This describes a regional seasoning habit; it does not add anything to the recipe.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -574,6 +697,19 @@
         "image": "assets/recipes/vera-r0010.png",
         "alt": "Illustrated serving of Breaded veal chops · Telecí žebírka smažená"
       },
+      "history": {
+        "label": "The golden cutlet tradition",
+        "note": "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens.",
+        "scope": "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Recipe: Original Wiener Schnitzel",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-us/recipes/wiener-schnitzel/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -620,6 +756,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0011.png",
         "alt": "Illustrated serving of Wiener Schnitzel · Breaded veal scallops · Řízky"
+      },
+      "history": {
+        "label": "The golden cutlet tradition",
+        "note": "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens.",
+        "scope": "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Recipe: Original Wiener Schnitzel",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-us/recipes/wiener-schnitzel/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -674,6 +823,25 @@
         "image": "assets/recipes/vera-r0012.png",
         "alt": "Illustrated serving of Veal goulash · Guláš telecí"
       },
+      "history": {
+        "label": "A place in the Czech goulash family",
+        "note": "Goulash in Czech cooking is a flexible meat-and-onion stew, even though beef is its most familiar form. Veal, pork, mutton, sauerkraut, and game all make room for regional and household variations. The dish carries a shared Central European history rather than a single fixed recipe.",
+        "scope": "This is broader dish-family context; Vera's veal version is preserved exactly as printed.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Do You Know Czech Regional Specialties?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2022/05/n-czech-regional-specialities",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -724,6 +892,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0013.png",
         "alt": "Illustrated serving of Pork roast · Vepřová pečeně"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -792,6 +973,19 @@
         "image": "assets/recipes/vera-r0014.png",
         "alt": "Illustrated serving of Fresh ham in cream sauce · Vepřová kýta na smetaně"
       },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -846,6 +1040,19 @@
         "image": "assets/recipes/vera-r0015.png",
         "alt": "Illustrated serving of Pork chops with caraway seeds · Vepřová žebírka na kmíně"
       },
+      "history": {
+        "label": "Caraway's familiar Czech aroma",
+        "note": "Caraway is one of the seasonings most closely associated with Czech and Moravian cooking. Its warm, resinous flavor works especially well with roast veal and pork. A small scattering of the seeds can make a plain roast immediately recognizable.",
+        "scope": "This describes a regional seasoning habit; it does not add anything to the recipe.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -896,6 +1103,19 @@
         "image": "assets/recipes/vera-r0016.png",
         "alt": "Illustrated serving of Breaded pork chops · Vepřová žebírka smažená"
       },
+      "history": {
+        "label": "The golden cutlet tradition",
+        "note": "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens.",
+        "scope": "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Recipe: Original Wiener Schnitzel",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-us/recipes/wiener-schnitzel/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -940,6 +1160,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0017.png",
         "alt": "Illustrated serving of Smoked pork loin · Uzené vepřové maso"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -995,6 +1228,25 @@
         "image": "assets/recipes/vera-r0018.png",
         "alt": "Illustrated serving of Pork goulash · Guláš vepřový"
       },
+      "history": {
+        "label": "A place in the Czech goulash family",
+        "note": "Goulash in Czech cooking is a flexible meat-and-onion stew, even though beef is its most familiar form. Veal, pork, mutton, sauerkraut, and game all make room for regional and household variations. The dish carries a shared Central European history rather than a single fixed recipe.",
+        "scope": "This is broader dish-family context; Vera's pork version is preserved exactly as printed.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Do You Know Czech Regional Specialties?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2022/05/n-czech-regional-specialities",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1048,6 +1300,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0019.png",
         "alt": "Illustrated serving of Goulash with sauerkraut · Guláš s kyselým zelím"
+      },
+      "history": {
+        "label": "Sauerkraut is a recognized goulash variation",
+        "note": "Sauerkraut goulash shows how a familiar stew can become brighter, tangier, and more wintry with preserved cabbage. Fermented cabbage has long been a practical cold-season ingredient across Central Europe. Here it turns the goulash family toward the sharp, savory side of the Czech table.",
+        "scope": "This describes a recognized variation, not a standard against which the cookbook transcription is judged.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1116,6 +1381,19 @@
         "image": "assets/recipes/vera-r0020.png",
         "alt": "Illustrated serving of Leg of lamb in wine sauce · Skopová kýta dušená"
       },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1157,6 +1435,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0021.png",
         "alt": "Illustrated serving of Leg of lamb in cream sauce · Skopová kýta na smetaně"
+      },
+      "history": {
+        "label": "A Central European family table",
+        "note": "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen.",
+        "scope": "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1208,6 +1499,19 @@
         "image": "assets/recipes/vera-r0022.png",
         "alt": "Illustrated serving of Mutton goulash · Guláš skopový"
       },
+      "history": {
+        "label": "A place in the Czech goulash family",
+        "note": "The Czech goulash family begins with meat and onions but travels easily across different meats. Beef is the everyday reference point, while game and other meats appear in regional variations. Mutton gives this version a deeper, more pastoral place in that Central European stew tradition.",
+        "scope": "This is wider cultural context only; it does not classify the printed recipe as a traditional or definitive version.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1256,6 +1560,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0023.png",
         "alt": "Illustrated serving of Roast chicken · Kuře pečené"
+      },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1306,6 +1623,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0024.png",
         "alt": "Illustrated serving of Breaded chicken · Smažené kuře"
+      },
+      "history": {
+        "label": "The golden cutlet tradition",
+        "note": "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens.",
+        "scope": "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Recipe: Original Wiener Schnitzel",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-us/recipes/wiener-schnitzel/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1363,6 +1693,19 @@
         "image": "assets/recipes/vera-r0025.png",
         "alt": "Illustrated serving of Chicken paprika · Kuře na paprice"
       },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1419,6 +1762,19 @@
         "image": "assets/recipes/vera-r0026.png",
         "alt": "Illustrated serving of Chicken ragoût · Ragoût z kuřete"
       },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1465,6 +1821,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0027.png",
         "alt": "Illustrated serving of Chicken ragoût on a half shell · as an appetizer · Ragoût na mušlích"
+      },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1517,6 +1886,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0028.png",
         "alt": "Illustrated serving of Roast turkey · Krocan pečený"
+      },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1603,6 +1985,19 @@
         "image": "assets/recipes/vera-r0029.png",
         "alt": "Illustrated serving of Stuffed turkey · Krocan nadívaný"
       },
+      "history": {
+        "label": "Stuffing as a celebration of abundance",
+        "note": "Stuffed poultry turns bread, eggs, herbs, and meat into a dish meant for a fuller table. Czech Easter cooking especially treats stuffing as a sign that the lean season has ended. The technique also makes a festive use of every part of a household's provisions.",
+        "scope": "This is holiday and kitchen context, not a claim that these recipes belong to one occasion.",
+        "citations": [
+          {
+            "title": "Czech Easter Customs and Traditions",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1663,6 +2058,19 @@
         "image": "assets/recipes/vera-r0030.png",
         "alt": "Illustrated serving of Stuffed pigeon · Holub nadívaný"
       },
+      "history": {
+        "label": "Stuffing as a celebration of abundance",
+        "note": "Stuffed poultry turns bread, eggs, herbs, and meat into a dish meant for a fuller table. Czech Easter cooking especially treats stuffing as a sign that the lean season has ended. The technique also makes a festive use of every part of a household's provisions.",
+        "scope": "This is holiday and kitchen context, not a claim that these recipes belong to one occasion.",
+        "citations": [
+          {
+            "title": "Czech Easter Customs and Traditions",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1717,6 +2125,19 @@
         "image": "assets/recipes/vera-r0031.png",
         "alt": "Illustrated serving of Roast goose · Husa pečená"
       },
+      "history": {
+        "label": "Goose for St. Martin's Day",
+        "note": "Roast goose is the great Czech meal of St. Martin's Day on November 11. The autumn feast once marked the close of the farming year and the renewal of work agreements. Caraway, apples, cabbage, dumplings, and young wine turn the bird into a full seasonal ceremony.",
+        "scope": "This is a seasonal association; Vera's roast goose can be enjoyed at any time of year.",
+        "citations": [
+          {
+            "title": "St. Martin Day",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/11/n-st-martin-day",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1760,6 +2181,25 @@
       "illustration": {
         "image": "assets/recipes/vera-r0032.png",
         "alt": "Illustrated serving of Roast duck · Kachna pečená"
+      },
+      "history": {
+        "label": "Duck with classic Czech accompaniments",
+        "note": "Roast duck with caraway, cabbage, and dumplings is one of the classic Czech restaurant combinations. Caraway brings its warm, earthy aroma to both meat and cabbage, making it a familiar Czech and Moravian seasoning. The pairing reflects a table built around roast juices, dumplings, and slowly cooked vegetables.",
+        "scope": "The note gives serving and flavor context; it does not add cabbage, dumplings, or apples to Vera's printed recipe.",
+        "citations": [
+          {
+            "title": "Do You Know Czech Regional Specialties?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2022/05/n-czech-regional-specialities",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -1818,6 +2258,19 @@
         "image": "assets/recipes/vera-r0033.png",
         "alt": "Illustrated serving of Duckling with Madeira wine · Kachna na víně"
       },
+      "history": {
+        "label": "Poultry beyond the Sunday roast",
+        "note": "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain.",
+        "scope": "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1875,6 +2328,19 @@
         "image": "assets/recipes/vera-r0034.png",
         "alt": "Illustrated serving of Rabbit with paprika sauce · Králík na paprice"
       },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1923,6 +2389,19 @@
         "image": "assets/recipes/vera-r0035.png",
         "alt": "Illustrated serving of Fried rabbit · Králík smažený"
       },
+      "history": {
+        "label": "The golden cutlet tradition",
+        "note": "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens.",
+        "scope": "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Recipe: Original Wiener Schnitzel",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-us/recipes/wiener-schnitzel/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -1969,6 +2448,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0036.png",
         "alt": "Illustrated serving of Roast hare (or wild rabbit) · Zajíc pečený"
+      },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2031,6 +2523,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0037.png",
         "alt": "Illustrated serving of Hare in cream sauce · Zajíc na smetaně"
+      },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2107,6 +2612,19 @@
         "image": "assets/recipes/vera-r0038.png",
         "alt": "Illustrated serving of Marinated hare in wine sauce · Zajíc na černo"
       },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2161,6 +2679,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0041.png",
         "alt": "Illustrated serving of Venison cutlets, or medallions · Srnčí žebírka"
+      },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2217,6 +2748,19 @@
         "image": "assets/recipes/vera-r0042.png",
         "alt": "Illustrated serving of Roast pheasant · Bažant pečený"
       },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2268,6 +2812,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0043.png",
         "alt": "Illustrated serving of Pheasant in cream sauce · Bažant na smetaně"
+      },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2322,6 +2879,19 @@
         "image": "assets/recipes/vera-r0044.png",
         "alt": "Illustrated serving of Partridge/Quail · Koroptev/Křepelka"
       },
+      "history": {
+        "label": "Autumn game from forest to table",
+        "note": "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive.",
+        "scope": "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes.",
+        "citations": [
+          {
+            "title": "A delicacy from the autumn forests - game",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2367,6 +2937,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0045.png",
         "alt": "Illustrated serving of Baked carp · Kapr pečený"
+      },
+      "history": {
+        "label": "Freshwater fish from the pond country",
+        "note": "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. A baked carp belongs to the same long pond-to-table tradition.",
+        "scope": "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2415,6 +2998,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0046.png",
         "alt": "Illustrated serving of Fried carp · Kapr smažený"
+      },
+      "history": {
+        "label": "A Christmas-Eve association",
+        "note": "Fried carp with potato salad is a classic Czech Christmas-Eve meal. The fish became part of the fasting supper, while potato salad brought a practical winter side dish to the table. That holiday association helps explain carp's prominent place in family cooking.",
+        "scope": "This notes a holiday association only; the recipe is not limited to Christmas.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2469,6 +3065,19 @@
         "image": "assets/recipes/vera-r0047.png",
         "alt": "Illustrated serving of Carp with paprika sauce · Kapr na paprice"
       },
+      "history": {
+        "label": "Freshwater fish from the pond country",
+        "note": "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. Paprika sauce gives this carp a warmer, more Central European accent.",
+        "scope": "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2521,6 +3130,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0049.png",
         "alt": "Illustrated serving of Baked pike with sour cream · Štika pečená se smetanou"
+      },
+      "history": {
+        "label": "Freshwater fish from the pond country",
+        "note": "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. Cream sauce places pike within the rich, sauce-friendly side of Czech home cooking.",
+        "scope": "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2583,6 +3205,19 @@
         "image": "assets/recipes/vera-r0050.png",
         "alt": "Illustrated serving of Salmon trout with dill sauce · Pstruh s koprovou omáčkou"
       },
+      "history": {
+        "label": "Dill sauce alongside a Czech habit of pairing sauces and dumplings",
+        "note": "Czech cooking gives sauces an important place at the table, often with dumplings ready to catch every spoonful. Dill brings a fresh, aromatic counterpoint to creamy preparations. This trout recipe joins freshwater fish to that broader sauce tradition.",
+        "scope": "This is wider cuisine context; Vera's trout preparation remains unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2632,6 +3267,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0051.png",
         "alt": "Illustrated serving of Ham and noodles casserole · Šunkové nudle"
+      },
+      "history": {
+        "label": "Everyday dishes with a place at the table",
+        "note": "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal.",
+        "scope": "This is general household context; it does not classify any recipe as a fixed traditional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2684,6 +3332,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0052.png",
         "alt": "Illustrated serving of Stuffed peppers · Plněné papriky"
+      },
+      "history": {
+        "label": "Everyday dishes with a place at the table",
+        "note": "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal.",
+        "scope": "This is general household context; it does not classify any recipe as a fixed traditional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2739,6 +3400,19 @@
         "image": "assets/recipes/vera-r0053.png",
         "alt": "Illustrated serving of Stuffed cabbage rolls · Plněná kapusta"
       },
+      "history": {
+        "label": "Everyday dishes with a place at the table",
+        "note": "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal.",
+        "scope": "This is general household context; it does not classify any recipe as a fixed traditional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2787,6 +3461,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0054.png",
         "alt": "Illustrated serving of Green cabbage · Hlávkové zelí"
+      },
+      "history": {
+        "label": "Cabbage in a classic Czech trio",
+        "note": "Roasted meat, dumplings, and stewed cabbage form one of the most recognizable Czech combinations. Cabbage brings softness and gentle acidity against richer roast juices. Green cabbage gives that familiar table setting its lighter, sweeter expression.",
+        "scope": "This describes a common serving context, not a required pairing for Vera's recipe.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2840,6 +3527,19 @@
         "image": "assets/recipes/vera-r0055.png",
         "alt": "Illustrated serving of Red cabbage · Červené zelí"
       },
+      "history": {
+        "label": "Cabbage in a classic Czech trio",
+        "note": "Roasted meat, dumplings, and stewed cabbage form one of the most recognizable Czech combinations. Cabbage brings softness and gentle acidity against richer roast juices. Red cabbage gives the plate its deeper color and a sweeter, fruit-friendly side.",
+        "scope": "This describes a common serving context, not a required pairing for Vera's recipe.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2888,6 +3588,25 @@
         "image": "assets/recipes/vera-r0056.png",
         "alt": "Illustrated serving of Sauerkraut · Kyselé zelí"
       },
+      "history": {
+        "label": "Sauerkraut in the classic trio",
+        "note": "Sauerkraut belongs to the famous Czech trio of roast pork, dumplings, and cabbage. Its tang also appears in goulash variations, where it cuts through a long-cooked stew. Fermentation turns an ordinary cabbage into a durable winter ingredient with a distinct, lively flavor.",
+        "scope": "This is dish-family context only; it does not prescribe a serving for the cookbook's sauerkraut recipe.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -2932,6 +3651,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0057.png",
         "alt": "Illustrated serving of Mashed potatoes · Bramborová kaše"
+      },
+      "history": {
+        "label": "Everyday dishes with a place at the table",
+        "note": "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal.",
+        "scope": "This is general household context; it does not classify any recipe as a fixed traditional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -2978,6 +3710,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0058.png",
         "alt": "Illustrated serving of Gnocchi · Krupicové noky"
+      },
+      "history": {
+        "label": "Everyday dishes with a place at the table",
+        "note": "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal.",
+        "scope": "This is general household context; it does not classify any recipe as a fixed traditional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3026,6 +3771,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0059.png",
         "alt": "Illustrated serving of Country gnocchi · Škubánky"
+      },
+      "history": {
+        "label": "Dumplings as a Czech calling card",
+        "note": "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This potato-based dumpling belongs to the sturdy, comforting side of that tradition.",
+        "scope": "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3078,6 +3836,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0060.png",
         "alt": "Illustrated serving of Dumplings with croutons · Houskové knedlíky"
+      },
+      "history": {
+        "label": "Dumplings as a Czech calling card",
+        "note": "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This bread-and-crouton dumpling belongs to the lighter, sauce-soaking branch of the tradition.",
+        "scope": "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3139,6 +3910,19 @@
         "image": "assets/recipes/vera-r0061.png",
         "alt": "Illustrated serving of Yeast dumplings · Kynuté knedlíky"
       },
+      "history": {
+        "label": "Dumplings as a Czech calling card",
+        "note": "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This yeast dumpling adds a softer, airy branch to that wide Czech tradition.",
+        "scope": "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3187,6 +3971,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0062.png",
         "alt": "Illustrated serving of Potato dumplings · Bramborové knedlíky"
+      },
+      "history": {
+        "label": "Dumplings as a Czech calling card",
+        "note": "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This potato dumpling belongs to the substantial, everyday side of that tradition.",
+        "scope": "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3237,6 +4034,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0063.png",
         "alt": "Illustrated serving of Potato salad · Bramborový salát"
+      },
+      "history": {
+        "label": "Potato salad at the Christmas table",
+        "note": "Potato salad is the classic partner for fried carp on a Czech Christmas-Eve table. Its cool, substantial character balances the hot fried fish and works well with winter ingredients. That pairing gives an everyday salad an especially strong holiday identity.",
+        "scope": "This is a cultural association, not a claim that the cookbook recipe is a Christmas-only preparation.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3290,6 +4100,19 @@
         "image": "assets/recipes/vera-r0064.png",
         "alt": "Illustrated serving of Goulash soup · Gulášová polévka"
       },
+      "history": {
+        "label": "Goulash moves easily into soup form",
+        "note": "Goulash is a broad Central European family rather than one fixed recipe. Meat and onions form its familiar core, while local cooks carry it toward thicker stews, sauerkraut variations, and soup. A bowl of goulash soup is therefore part of the family, not an outlier from it.",
+        "scope": "This is broader dish-family context; the cookbook's soup wording and method are preserved independently.",
+        "citations": [
+          {
+            "title": "Goulash (or goulash)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3342,6 +4165,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0065.png",
         "alt": "Illustrated serving of Cream of chicken soup · Krém z kuřat"
+      },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3406,6 +4242,19 @@
         "image": "assets/recipes/vera-r0066.png",
         "alt": "Illustrated serving of Tripe soup · Drštková polévka"
       },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3458,6 +4307,19 @@
         "image": "assets/recipes/vera-r0067.png",
         "alt": "Illustrated serving of Country potato soup · Bramborová polévka"
       },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3503,6 +4365,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0068.png",
         "alt": "Illustrated serving of Milk soup · Mléčná polévka"
+      },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3550,6 +4425,19 @@
         "image": "assets/recipes/vera-r0069.png",
         "alt": "Illustrated serving of Wine soup · Vinná polévka"
       },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3596,6 +4484,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0070.png",
         "alt": "Illustrated serving of Beer soup · Pivní polévka"
+      },
+      "history": {
+        "label": "Soup as a meal, not a prelude",
+        "note": "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question.",
+        "scope": "This describes the soup tradition broadly; Vera's individual recipes remain unchanged.",
+        "citations": [
+          {
+            "title": "Specialities of Czech winter cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3656,6 +4557,19 @@
         "image": "assets/recipes/vera-r0071.png",
         "alt": "Illustrated serving of Bohemian open-faced pastries · České koláčky"
       },
+      "history": {
+        "label": "Koláče for gatherings",
+        "note": "Koláče are round, flat yeast pastries with a filled center. Poppy seed, cottage cheese, and plum butter are classic fillings, and the pastries appear at weddings, church gatherings, and other festive occasions. Their small size makes them as social as they are sweet.",
+        "scope": "This describes the wider koláč tradition; Vera's pastry retains its own printed filling and method.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3710,6 +4624,19 @@
         "image": "assets/recipes/vera-r0072.png",
         "alt": "Illustrated serving of Bohemian muffins · Buchty"
       },
+      "history": {
+        "label": "Buchty, the filled bun",
+        "note": "Buchty are soft filled buns, often made with poppy seed, cottage cheese, or plum jam. They belong to the yeasted, home-baked side of Central European sweets rather than to a single formal occasion. A tray of buns turns a simple dough into something meant to share.",
+        "scope": "This provides family context for the bun style; Vera's printed recipe remains unchanged.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3758,6 +4685,19 @@
         "image": "assets/recipes/vera-r0073.png",
         "alt": "Illustrated serving of Ricotta filling · Tvarohová nádivka"
       },
+      "history": {
+        "label": "Fillings make one dough many things",
+        "note": "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember.",
+        "scope": "This is a baking-family note; it does not prescribe how any filling must be used.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3804,6 +4744,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0074.png",
         "alt": "Illustrated serving of Walnuts filling · Ořechová nádivka"
+      },
+      "history": {
+        "label": "Fillings make one dough many things",
+        "note": "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember.",
+        "scope": "This is a baking-family note; it does not prescribe how any filling must be used.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3853,6 +4806,19 @@
         "image": "assets/recipes/vera-r0075.png",
         "alt": "Illustrated serving of Apple filling · Jablková nádivka"
       },
+      "history": {
+        "label": "Fillings make one dough many things",
+        "note": "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember.",
+        "scope": "This is a baking-family note; it does not prescribe how any filling must be used.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -3897,6 +4863,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0076.png",
         "alt": "Illustrated serving of Butter crumb filling · Máslová drobenka"
+      },
+      "history": {
+        "label": "Fillings make one dough many things",
+        "note": "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember.",
+        "scope": "This is a baking-family note; it does not prescribe how any filling must be used.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3946,6 +4925,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0077.png",
         "alt": "Illustrated serving of Poppy seeds filling · Maková nádivka"
+      },
+      "history": {
+        "label": "Fillings make one dough many things",
+        "note": "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember.",
+        "scope": "This is a baking-family note; it does not prescribe how any filling must be used.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -3998,6 +4990,19 @@
         "image": "assets/recipes/vera-r0078.png",
         "alt": "Illustrated serving of “Silver dollars” (miniature plain muffins) · Dukátové buchtičky"
       },
+      "history": {
+        "label": "Small sweet doughs and their sauces",
+        "note": "Tiny leavened cakes with vanilla cream are a beloved Czech sweet course. A warm sauce changes a small cake from a tea-time bite into a spoonable dessert. Vanilla and wine sauces show how a simple dough can move easily between everyday comfort and celebration.",
+        "scope": "This describes a dessert tradition generally; Vera's sauces and cakes remain exactly as printed.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4043,6 +5048,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0079.png",
         "alt": "Illustrated serving of Vanilla sauce - Vanilková omáčka"
+      },
+      "history": {
+        "label": "Small sweet doughs and their sauces",
+        "note": "Tiny leavened cakes with vanilla cream are a beloved Czech sweet course. A warm sauce changes a small cake from a tea-time bite into a spoonable dessert. Vanilla and wine sauces show how a simple dough can move easily between everyday comfort and celebration.",
+        "scope": "This describes a dessert tradition generally; Vera's sauces and cakes remain exactly as printed.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4091,6 +5109,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0080.png",
         "alt": "Illustrated serving of White wine froth · Vinná omáčka"
+      },
+      "history": {
+        "label": "Small sweet doughs and their sauces",
+        "note": "Tiny leavened cakes with vanilla cream are a beloved Czech sweet course. A warm sauce changes a small cake from a tea-time bite into a spoonable dessert. Vanilla and wine sauces show how a simple dough can move easily between everyday comfort and celebration.",
+        "scope": "This describes a dessert tradition generally; Vera's sauces and cakes remain exactly as printed.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4144,6 +5175,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0081.png",
         "alt": "Illustrated serving of Poppy seed loaf · Makový závin"
+      },
+      "history": {
+        "label": "Yeast dough, poppy seed, and spa-town sweets",
+        "note": "Poppy seed, cottage cheese, and fruit fillings are among the signatures of Czech sweet baking. Yeast dough carries them into loaves, doughnuts, and small cakes, while Karlovy Vary adds its own spa-town biscuit tradition. Together they show how one pantry can produce very different treats.",
+        "scope": "This is broad baking context; it does not turn these recipes into one shared formula.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4208,6 +5252,19 @@
         "image": "assets/recipes/vera-r0082.png",
         "alt": "Illustrated serving of Czech doughnuts · Koblihy"
       },
+      "history": {
+        "label": "Yeast dough, poppy seed, and spa-town sweets",
+        "note": "Poppy seed, cottage cheese, and fruit fillings are among the signatures of Czech sweet baking. Yeast dough carries them into loaves, doughnuts, and small cakes, while Karlovy Vary adds its own spa-town biscuit tradition. Together they show how one pantry can produce very different treats.",
+        "scope": "This is broad baking context; it does not turn these recipes into one shared formula.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4266,6 +5323,19 @@
         "image": "assets/recipes/vera-r0083.png",
         "alt": "Illustrated serving of Open-faced doughnuts · Vdolky"
       },
+      "history": {
+        "label": "Yeast dough, poppy seed, and spa-town sweets",
+        "note": "Poppy seed, cottage cheese, and fruit fillings are among the signatures of Czech sweet baking. Yeast dough carries them into loaves, doughnuts, and small cakes, while Karlovy Vary adds its own spa-town biscuit tradition. Together they show how one pantry can produce very different treats.",
+        "scope": "This is broad baking context; it does not turn these recipes into one shared formula.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4323,6 +5393,19 @@
         "image": "assets/recipes/vera-r0084.png",
         "alt": "Illustrated serving of Karlsbader biscuits · Karlovarské suchary"
       },
+      "history": {
+        "label": "Yeast dough, poppy seed, and spa-town sweets",
+        "note": "Poppy seed, cottage cheese, and fruit fillings are among the signatures of Czech sweet baking. Yeast dough carries them into loaves, doughnuts, and small cakes, while Karlovy Vary adds its own spa-town biscuit tradition. Together they show how one pantry can produce very different treats.",
+        "scope": "This is broad baking context; it does not turn these recipes into one shared formula.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4379,6 +5462,25 @@
         "image": "assets/recipes/vera-r0085.png",
         "alt": "Illustrated serving of Easter bread · Bochánek"
       },
+      "history": {
+        "label": "Mazanec, the round Easter bread",
+        "note": "Mazanec is the round sweet bread of the Czech Easter table, traditionally baked on Holy Saturday. Almonds and raisins make it feel celebratory after Lent. The cross-cut on top carries a religious echo while also helping the loaf rise and release steam.",
+        "scope": "This contextual note describes the wider Easter bread tradition, not proof that Vera's loaf follows a specific regional custom.",
+        "citations": [
+          {
+            "title": "Sweet Easter Bread (Mazanec)",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-sweet-easter-bread",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Czech Easter Customs and Traditions",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4420,6 +5522,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0086.png",
         "alt": "Illustrated serving of Easter braid · Velikonoční pomlázka"
+      },
+      "history": {
+        "label": "A Czech Easter word with two meanings nearby",
+        "note": "In Czech Easter custom, a pomlázka is the braided willow switch carried on Easter Monday as a symbol of returning health and spring. Braided sweet bread belongs to a neighboring Easter baking tradition. The difference is worth knowing while preserving the cookbook's family wording exactly as it stands.",
+        "scope": "This explains a cultural word, not a correction to the title or recipe.",
+        "citations": [
+          {
+            "title": "Czech Easter Customs and Traditions",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4489,6 +5604,19 @@
         "image": "assets/recipes/vera-r0087.png",
         "alt": "Illustrated serving of Christmas loaf · Vánočka"
       },
+      "history": {
+        "label": "Vánočka and the Christmas table",
+        "note": "Vánočka is the braided raisin-and-almond bread of the Czech Christmas table. Its shape recalls swaddled Baby Jesus, and its braids were once thought to protect those gathered at the meal. The tradition reaches back to the fourteenth century.",
+        "scope": "This gives holiday context for the bread family; it does not authenticate any individual household recipe as medieval.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4541,6 +5669,19 @@
         "image": "assets/recipes/vera-r0088.png",
         "alt": "Illustrated serving of Bishop’s bread (fruit cake) · Biskupský chlebíček"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4584,6 +5725,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0089.png",
         "alt": "Illustrated serving of Sugar icing:"
+      },
+      "history": {
+        "label": "Icing as a finishing touch",
+        "note": "A simple sugar icing gives a home-baked cake a bright, finished look with very little extra work. It can turn an everyday loaf into something fit for a tray of guests. Separate icing recipes reflect the practical, mix-and-match nature of family baking.",
+        "scope": "This is kitchen context for a finishing element; it does not prescribe its use on any one cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4640,6 +5794,19 @@
         "image": "assets/recipes/vera-r0090.png",
         "alt": "Illustrated serving of Nut bread · Ořechový chlebíček"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4692,6 +5859,19 @@
         "image": "assets/recipes/vera-r0091.png",
         "alt": "Illustrated serving of Cherry cake · Bublanina"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4740,6 +5920,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0092.png",
         "alt": "Illustrated serving of Poppy seed pie · Makovec"
+      },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4798,6 +5991,19 @@
         "image": "assets/recipes/vera-r0093.png",
         "alt": "Illustrated serving of Czech apple pie · Jablkový koláč"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4850,6 +6056,19 @@
         "image": "assets/recipes/vera-r0094.png",
         "alt": "Illustrated serving of Potato apple pie · Jablkový koláč bramborový"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -4899,6 +6118,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0095.png",
         "alt": "Illustrated serving of Bread and apple baba · Žemlovka"
+      },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -4954,6 +6186,19 @@
         "image": "assets/recipes/vera-r0096.png",
         "alt": "Illustrated serving of Apple strudel · Jablkový závin"
       },
+      "history": {
+        "label": "Strudel across the old imperial kitchen",
+        "note": "Apple strudel is one of the pastries shared across the former Habsburg world. Its thin dough and layered filling reflect a Central European kitchen shaped by exchange among Bohemian, Hungarian, Italian, and Austrian traditions. The roll carries that crossroads history in every slice.",
+        "scope": "This gives regional context for strudel; Vera's apple filling and method remain unchanged.",
+        "citations": [
+          {
+            "title": "Culinary delights in Vienna",
+            "publisher": "Austria Info",
+            "url": "https://www.austria.info/en-gb/inspiration/culinary-vienna/",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5005,6 +6250,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0097.png",
         "alt": "Illustrated serving of Yellow cake · Bábovka"
+      },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5060,6 +6318,19 @@
         "image": "assets/recipes/vera-r0098.png",
         "alt": "Illustrated serving of Fudge Marble cake · Mramorová bábovka"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5113,6 +6384,19 @@
         "image": "assets/recipes/vera-r0099.png",
         "alt": "Illustrated serving of Plum dumplings · Švestkové knedlíky"
       },
+      "history": {
+        "label": "Fruit dumplings follow the harvest",
+        "note": "Fruit dumplings are a Czech specialty with a long seasonal life. Plum fillings are among the best known, and potato dough became especially natural in places where potatoes were widely grown. Sweet dumplings can be lunch, supper, or dessert rather than a course with only one role.",
+        "scope": "This describes the wider fruit-dumpling tradition; Vera's dough and filling remain unchanged.",
+        "citations": [
+          {
+            "title": "Summer Belongs to Fruit Dumplings!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-summer-fruit-dumplings",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5160,6 +6444,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0100.png",
         "alt": "Illustrated serving of Potato plum dumplings · Švestkové knedlíky bramborové"
+      },
+      "history": {
+        "label": "Fruit dumplings follow the harvest",
+        "note": "Fruit dumplings are a Czech specialty with a long seasonal life. Plum fillings are among the best known, and potato dough became especially natural in places where potatoes were widely grown. Sweet dumplings can be lunch, supper, or dessert rather than a course with only one role.",
+        "scope": "This describes the wider fruit-dumpling tradition; Vera's dough and filling remain unchanged.",
+        "citations": [
+          {
+            "title": "Summer Belongs to Fruit Dumplings!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-summer-fruit-dumplings",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5244,6 +6541,19 @@
         "image": "assets/recipes/vera-r0101.png",
         "alt": "Illustrated serving of Apple, plum, peach, banana fritters (or other fruits of similar consistency) · Ovocné kobližky"
       },
+      "history": {
+        "label": "Fruit in the frying pan",
+        "note": "Sweet Czech cooking makes room for fried fruit, pancakes, and other small batter dishes at many times of day. A slightly thicker crêpe and a warm fruit fritter both turn pantry basics into a relaxed shared treat. These recipes sit on the playful side of the sweet kitchen.",
+        "scope": "This is a wider dessert context; it does not alter the fruit or batter named in the cookbook.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5303,6 +6613,19 @@
         "image": "assets/recipes/vera-r0102.png",
         "alt": "Illustrated serving of Cabbage pockets · Zelné taštičky"
       },
+      "history": {
+        "label": "Cabbage in a pastry pocket",
+        "note": "Cabbage is as comfortable inside a pastry as it is beside roast meat and dumplings. A pocket turns a humble winter vegetable into something portable, crisp, and shareable. It is a reminder that Czech baking has a savory side as well as a sweet one.",
+        "scope": "This is kitchen context for a savory pastry, not a claim about one fixed regional version.",
+        "citations": [
+          {
+            "title": "What Is Czech Cuisine Like?",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5358,6 +6681,19 @@
         "image": "assets/recipes/vera-r0103.png",
         "alt": "Illustrated serving of Country pancakes · Lívance"
       },
+      "history": {
+        "label": "Fruit in the frying pan",
+        "note": "Sweet Czech cooking makes room for fried fruit, pancakes, and other small batter dishes at many times of day. A slightly thicker crêpe and a warm fruit fritter both turn pantry basics into a relaxed shared treat. These recipes sit on the playful side of the sweet kitchen.",
+        "scope": "This is a wider dessert context; it does not alter the fruit or batter named in the cookbook.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5407,6 +6743,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0104.png",
         "alt": "Illustrated serving of Apple pancakes · Jablkové palačinky"
+      },
+      "history": {
+        "label": "Fruit in the frying pan",
+        "note": "Sweet Czech cooking makes room for fried fruit, pancakes, and other small batter dishes at many times of day. A slightly thicker crêpe and a warm fruit fritter both turn pantry basics into a relaxed shared treat. These recipes sit on the playful side of the sweet kitchen.",
+        "scope": "This is a wider dessert context; it does not alter the fruit or batter named in the cookbook.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5459,6 +6808,19 @@
         "image": "assets/recipes/vera-r0105.png",
         "alt": "Illustrated serving of God’s graces · Boží milosti"
       },
+      "history": {
+        "label": "Fried sweets for a festive tray",
+        "note": "Delicate fried sweets belong to the celebration side of Central European baking. Their thin, crisp texture depends on a quick meeting of dough and hot fat rather than a long oven bake. A tray of them brings contrast to softer cakes and yeast buns.",
+        "scope": "This is general pastry context; it does not assign a particular feast day to the recipe.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5510,6 +6872,19 @@
         "image": "assets/recipes/vera-r0106.png",
         "alt": "Illustrated serving of Pretzels, sweet · Preclíčky"
       },
+      "history": {
+        "label": "A sweet twist on a familiar shape",
+        "note": "Pretzel shapes travel easily between savory bread and sweet baking. A sweet version turns a recognizable loop into a small confection, easy to glaze, sprinkle, or set beside coffee. The form itself is a reminder that bakery traditions cross borders and occasions.",
+        "scope": "This is form-and-technique context; Vera's sweet pretzels remain their own recipe.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5558,6 +6933,19 @@
         "image": "assets/recipes/vera-r0107.png",
         "alt": "Illustrated serving of Nut cake · Ořechový dort"
       },
+      "history": {
+        "label": "The generous Czech cake table",
+        "note": "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms.",
+        "scope": "This is a broad baking note; it does not assign one occasion or origin to each cake.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5600,6 +6988,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0108.png",
         "alt": "Illustrated serving of Chocolate filling · Čokoládový krém"
+      },
+      "history": {
+        "label": "Cream fillings as a family toolkit",
+        "note": "Chocolate and mocha creams are building blocks for celebration baking. One bowl of filling can finish a cake, sandwich a cookie, or turn a plain sponge into dessert. Separate cream recipes make that flexible family toolkit visible.",
+        "scope": "This is kitchen context for the fillings; it does not prescribe a single finished dessert.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5645,6 +7046,19 @@
       "illustration": {
         "image": "assets/recipes/vera-r0109.png",
         "alt": "Illustrated serving of Mocha filling · Mocca krém"
+      },
+      "history": {
+        "label": "Cream fillings as a family toolkit",
+        "note": "Chocolate and mocha creams are building blocks for celebration baking. One bowl of filling can finish a cake, sandwich a cookie, or turn a plain sponge into dessert. Separate cream recipes make that flexible family toolkit visible.",
+        "scope": "This is kitchen context for the fillings; it does not prescribe a single finished dessert.",
+        "citations": [
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5693,6 +7107,19 @@
         "image": "assets/recipes/vera-r0110.png",
         "alt": "Illustrated serving of Vanilla horns · Vanilkové rohlíčky"
       },
+      "history": {
+        "label": "Vanilla rolls among Christmas cookies",
+        "note": "Vanilla rolls belong among the small cookies that make a Czech Christmas table feel complete. Czech households often bake several varieties for the season, turning the holiday into a long-running home-baking ritual. The crescent shape and vanilla finish make these cookies especially recognizable.",
+        "scope": "This is a seasonal cultural note, not evidence that this cookbook's recipe is tied to one particular household custom.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5739,6 +7166,25 @@
       "illustration": {
         "image": "assets/recipes/vera-r0111.png",
         "alt": "Illustrated serving of Almond snow-balls · Kostrby"
+      },
+      "history": {
+        "label": "Small confections, big occasions",
+        "note": "Small butter-rich cookies and truffles are made for a tray of choices rather than one large slice. Their size invites variety: a family can offer several shapes, flavors, and textures at once. That abundance is part of the pleasure of holiday and celebration baking.",
+        "scope": "This describes a shared confectionery setting; each recipe keeps its own ingredients and method.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     },
@@ -5788,6 +7234,25 @@
         "image": "assets/recipes/vera-r0112.png",
         "alt": "Illustrated serving of Butter rounds · Máslová kolečka"
       },
+      "history": {
+        "label": "Small confections, big occasions",
+        "note": "Small butter-rich cookies and truffles are made for a tray of choices rather than one large slice. Their size invites variety: a family can offer several shapes, flavors, and textures at once. That abundance is part of the pleasure of holiday and celebration baking.",
+        "scope": "This describes a shared confectionery setting; each recipe keeps its own ingredients and method.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
+      },
       "verification": "source_checked"
     },
     {
@@ -5834,6 +7299,25 @@
       "illustration": {
         "image": "assets/recipes/vera-r0113.png",
         "alt": "Illustrated serving of Truffles · Lanýže"
+      },
+      "history": {
+        "label": "Small confections, big occasions",
+        "note": "Small butter-rich cookies and truffles are made for a tray of choices rather than one large slice. Their size invites variety: a family can offer several shapes, flavors, and textures at once. That abundance is part of the pleasure of holiday and celebration baking.",
+        "scope": "This describes a shared confectionery setting; each recipe keeps its own ingredients and method.",
+        "citations": [
+          {
+            "title": "Taste Czech Christmas!",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas",
+            "accessedOn": "2026-08-24"
+          },
+          {
+            "title": "Sweet Delicacies of Czech Cuisine",
+            "publisher": "VisitCzechia",
+            "url": "https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine",
+            "accessedOn": "2026-08-24"
+          }
+        ]
       },
       "verification": "source_checked"
     }

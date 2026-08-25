@@ -151,9 +151,10 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
 .card-actions { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: auto; padding-top: .6rem; border-top: 1px solid var(--soft); }
 .open-recipe { border: 0; padding: 0; color: var(--ink); background: transparent; font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .045em; }
 .open-recipe svg { width: .95rem; height: .95rem; margin-left: .25rem; vertical-align: -.12rem; fill: none; stroke: var(--red); stroke-width: 2; stroke-linecap: round; }
-.save-recipe { position: relative; width: 1.7rem; height: 1.8rem; border: 0; background: transparent; }
-.save-recipe::before { content: ""; position: absolute; inset: .14rem .35rem; border: 2px solid var(--ink); clip-path: polygon(0 0,100% 0,100% 100%,50% 76%,0 100%); }
-.save-recipe[aria-pressed="true"]::before { border-color: var(--red); background: var(--red); }
+.save-recipe { display: inline-grid; width: 1.7rem; height: 1.8rem; place-items: center; border: 0; padding: 0; color: var(--ink); background: transparent; }
+.save-recipe svg, .feature-save svg { width: 1.42rem; height: 1.42rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.save-recipe[aria-pressed="true"], .feature-save[aria-pressed="true"] { color: var(--red); }
+.save-recipe[aria-pressed="true"] svg, .feature-save[aria-pressed="true"] svg { fill: currentColor; }
 .load-more { display: flex; align-items: center; justify-content: center; gap: .5rem; min-width: 220px; margin: 1.5rem auto 0; padding: .75rem 1rem; border: 1px solid var(--line); border-radius: 5px; color: var(--ink); background: transparent; font-family: var(--font-display); font-size: 1.08rem; }
 .empty-state { padding: 4rem 1rem; text-align: center; }
 .empty-state p { font-family: var(--font-display); font-size: 1.7rem; }
@@ -176,37 +177,45 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
 .feature-empty p { margin: 0; font-family: var(--font-display); font-size: 1.8rem; line-height: .95; }
 .feature-reset { border: 0; color: var(--red-dark); background: transparent; font-weight: 800; text-decoration: underline; }
 
-.recipe-dialog { width: min(940px, calc(100vw - 2rem)); max-height: min(880px, calc(100vh - 2rem)); overflow: auto; padding: 0; border: 2px solid var(--line); color: var(--ink); background: var(--paper); box-shadow: 0 20px 80px rgba(0,0,0,.48); }
-.recipe-dialog::backdrop { background: rgba(16,16,15,.72); backdrop-filter: blur(3px); }
-.dialog-close { position: sticky; z-index: 2; float: right; top: .85rem; right: .85rem; display: grid; width: 2.2rem; height: 2.2rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper-strong); }
-.dialog-close svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
-.dialog-recipe { padding: 0; }
-.dialog-art-field { position: relative; isolation: isolate; overflow: hidden; padding-top: .75rem; background: var(--paper); }
-.dialog-art-field::after { position: absolute; z-index: 1; inset: .75rem 0 0; content: ""; pointer-events: none; background: radial-gradient(ellipse 104% 93% at 50% 42%, transparent 60%, var(--paper) 100%); }
-.dialog-art { width: min(96%, 900px); height: clamp(16rem, 48vh, 34rem); margin: 0 auto; }
-.dialog-art img { object-position: 50% 54%; }
-.dialog-recipe-body { padding: 1.1rem 2.4rem 2.4rem; border-top: 1px solid var(--line); }
-.dialog-eyeline { margin: 0 0 .55rem; color: var(--red); font-size: .76rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.dialog-recipe h2 { max-width: 20ch; margin: 0; font-family: var(--font-display); font-size: clamp(2.25rem, 3.6vw, 3.5rem); line-height: .9; letter-spacing: -.04em; }
-.dialog-czech-name { display: block; margin-top: .14em; color: var(--red-dark); font-size: .8em; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
-.dialog-meta { margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .95rem; font-weight: 700; }
-.dialog-actions { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: flex-start; margin: -0.55rem 0 1.5rem; }
-.dialog-save { min-height: 2.8rem; padding: .6rem .9rem; border: 1px solid var(--red-dark); border-radius: 5px; color: #fffaf2; background: var(--red); font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
-.dialog-save[aria-pressed="true"] { border-color: var(--ink); color: var(--paper-strong); background: var(--ink); }
+.recipe-reader[hidden] { display: none; }
+.reader-recipe { min-width: 0; }
+.reader-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+.reader-topline p { margin: 0; color: var(--muted); font-size: .76rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; }
+.reader-back { display: inline-flex; align-items: center; gap: .42rem; min-height: 2.5rem; border: 0; padding: 0; color: var(--ink); background: transparent; font-size: .88rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+.reader-back svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: var(--red); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.reader-art-field { position: relative; isolation: isolate; overflow: hidden; padding-top: .75rem; background: var(--paper); }
+.reader-art-field::after { position: absolute; z-index: 1; inset: .75rem 0 0; content: ""; pointer-events: none; background: radial-gradient(ellipse 104% 93% at 50% 42%, transparent 60%, var(--paper) 100%); }
+.reader-art { display: block; width: min(96%, 900px); height: clamp(15rem, 29vw, 24rem); margin: 0 auto; overflow: hidden; }
+.reader-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 54%; }
+.reader-recipe-body { padding: 1.1rem 1.15rem 2.4rem; border-top: 1px solid var(--line); }
+.reader-recipe h1 { max-width: 20ch; margin: 0; font-family: var(--font-display); font-size: clamp(2.25rem, 3.6vw, 3.5rem); line-height: .9; letter-spacing: -.04em; }
+.reader-recipe h1:focus { outline: none; }
+.reader-czech-name { display: block; margin-top: .14em; color: var(--red-dark); font-size: .8em; font-style: italic; font-weight: 400; letter-spacing: -.025em; }
+.reader-meta { margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .95rem; font-weight: 700; }
+.history-nugget { margin: 0 0 1.5rem; padding: 1rem 1.1rem; border-left: 1px solid var(--red); background: var(--paper-strong); }
+.history-kicker { margin: 0 0 .25rem; color: var(--red-dark); font-size: .72rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.history-nugget h3 { margin: 0; font-family: var(--font-display); font-size: 1.35rem; line-height: 1; }
+.history-nugget p { margin: .6rem 0 0; line-height: 1.45; }
+.history-scope { color: var(--muted); font-size: .85rem; }
+.history-citations { display: grid; gap: .35rem; margin: .85rem 0 0; padding: .75rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.history-citations li { display: grid; gap: .08rem; }
+.history-citations a { color: var(--red-dark); font-weight: 800; }
+.history-citations span { color: var(--muted); font-size: .78rem; }
+.reader-actions { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: flex-start; margin: -0.55rem 0 1.5rem; }
+.reader-save { min-height: 2.8rem; padding: .6rem .9rem; border: 1px solid var(--red-dark); border-radius: 5px; color: #fffaf2; background: var(--red); font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
+.reader-save[aria-pressed="true"] { border-color: var(--ink); color: var(--paper-strong); background: var(--ink); }
 .source-open { min-height: 2.8rem; padding: .6rem .9rem; border: 1px solid var(--line); border-radius: 5px; color: var(--ink); background: transparent; font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
-.dialog-grid { display: grid; grid-template-columns: minmax(210px,.75fr) minmax(0,1.45fr); gap: 2.2rem; }
-.dialog-grid h3 { margin: 0 0 .65rem; font-family: var(--font-display); font-size: 1.7rem; }
-.dialog-grid ul, .dialog-grid ol { margin: 0; padding-left: 1.1rem; line-height: 1.48; }
-.dialog-grid li + li { margin-top: .45rem; }
+.reader-grid { display: grid; grid-template-columns: minmax(210px,.75fr) minmax(0,1.45fr); gap: 2.2rem; }
+.reader-grid h2 { margin: 0 0 .65rem; font-family: var(--font-display); font-size: 1.7rem; }
+.reader-grid ul, .reader-grid ol { margin: 0; padding-left: 1.1rem; line-height: 1.48; }
+.reader-grid li + li { margin-top: .45rem; }
 .source-stamp { margin-top: 1.6rem; padding-top: .75rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 
-.source-dialog { width: min(1180px, calc(100vw - 2rem)); max-height: min(920px, calc(100vh - 2rem)); overflow: auto; padding: 0; border: 2px solid var(--line); color: var(--ink); background: var(--paper); box-shadow: 0 20px 80px rgba(0,0,0,.48); }
-.source-dialog::backdrop { background: rgba(16,16,15,.72); backdrop-filter: blur(3px); }
-.source-close { position: sticky; z-index: 2; float: right; top: .85rem; right: .85rem; display: grid; width: 2.2rem; height: 2.2rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper-strong); }
-.source-close svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
-.source-recipe { padding: 2.4rem; }
-.source-recipe h2 { max-width: 18ch; margin: 0; font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4.75rem); line-height: .88; letter-spacing: -.04em; }
-.source-dialog-note { max-width: 62ch; margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: .95rem; font-weight: 700; }
+.source-reader { min-width: 0; }
+.source-reader-body { padding: 1.1rem 1.15rem 2.4rem; }
+.source-reader h1 { max-width: 18ch; margin: 0; font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4.75rem); line-height: .88; letter-spacing: -.04em; }
+.source-reader h1:focus { outline: none; }
+.source-reader-note { max-width: 62ch; margin: 1.1rem 0 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: .95rem; font-weight: 700; line-height: 1.35; }
 .source-pages { display: grid; gap: 1.2rem; }
 .source-figure { margin: 0; border: 1px solid var(--line); background: var(--paper-strong); }
 .source-figure picture { display: block; }
@@ -245,12 +254,13 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .featured-recipe { display: block; }
   .featured-visual { margin-top: .9rem; }
   .featured-title { margin-top: .9rem; }
-  .dialog-art-field { padding-top: 0; }
-  .dialog-art-field::after { inset: 0; }
-  .dialog-art { width: 100%; height: clamp(15rem, 65vw, 23rem); }
-  .dialog-recipe-body { padding: 1.25rem 1.4rem 1.4rem; }
-  .dialog-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .source-recipe { padding: 1.4rem; }
+  .reader-topline { align-items: flex-start; flex-direction: column; gap: .25rem; }
+  .reader-art-field { padding-top: 0; }
+  .reader-art-field::after { inset: 0; }
+  .reader-art { width: 100%; height: clamp(15rem, 65vw, 23rem); }
+  .reader-recipe-body { padding: 1.25rem 0 1.4rem; }
+  .reader-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .source-reader-body { padding: 1.25rem 0 1.4rem; }
 }
 
 @media (max-width: 470px) {

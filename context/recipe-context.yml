@@ -1,0 +1,327 @@
+schema_version: 1
+
+sources:
+  - source_id: visitczechia-svickova
+    publisher: VisitCzechia
+    title: "Explore Svíčková na Smetaně: The Crown of Czech Cuisine"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-svickova-na-smetane
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-cuisine
+    publisher: VisitCzechia
+    title: "What Is Czech Cuisine Like?"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-cuisine
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-regional-specialities
+    publisher: VisitCzechia
+    title: "Do You Know Czech Regional Specialties?"
+    url: https://www.visitczechia.com/en-us/news/2022/05/n-czech-regional-specialities
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-goulash
+    publisher: VisitCzechia
+    title: "Goulash (or goulash)"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-goulash
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-christmas
+    publisher: VisitCzechia
+    title: "Taste Czech Christmas!"
+    url: https://www.visitczechia.com/en-us/news/2024/12/n-taste-czech-christmas
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-easter
+    publisher: VisitCzechia
+    title: "Czech Easter Customs and Traditions"
+    url: https://www.visitczechia.com/en-us/campaigns/traditions-2022/spirituality/easter
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-mazanec
+    publisher: VisitCzechia
+    title: "Sweet Easter Bread (Mazanec)"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/recipes/g-sweet-easter-bread
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-st-martin
+    publisher: VisitCzechia
+    title: "St. Martin Day"
+    url: https://www.visitczechia.com/en-us/news/2021/11/n-st-martin-day
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-game
+    publisher: VisitCzechia
+    title: "A delicacy from the autumn forests - game"
+    url: https://www.visitczechia.com/en-us/news/2021/10/n-delicacy-from-the-autumn-forests-game
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-winter-cuisine
+    publisher: VisitCzechia
+    title: "Specialities of Czech winter cuisine"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-czech-winter-cuisine
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-fruit-dumplings
+    publisher: VisitCzechia
+    title: "Summer Belongs to Fruit Dumplings!"
+    url: https://www.visitczechia.com/en-us/things-to-do/places/gastronomic-tourism/czech-cuisine-and-regional-products/g-summer-fruit-dumplings
+    accessed_on: "2026-08-24"
+  - source_id: visitczechia-sweet-delicacies
+    publisher: VisitCzechia
+    title: "Sweet Delicacies of Czech Cuisine"
+    url: https://www.visitczechia.com/en-us/news/2024/08/n-sweet-delicacies-czech-cuisine
+    accessed_on: "2026-08-24"
+  - source_id: austria-wiener-schnitzel
+    publisher: Austria Info
+    title: "Recipe: Original Wiener Schnitzel"
+    url: https://www.austria.info/en-us/recipes/wiener-schnitzel/
+    accessed_on: "2026-08-24"
+  - source_id: austria-viennese-cuisine
+    publisher: Austria Info
+    title: "Culinary delights in Vienna"
+    url: https://www.austria.info/en-gb/inspiration/culinary-vienna/
+    accessed_on: "2026-08-24"
+
+entries:
+  - recipe_id: vera-r0001
+    label: Svíčková as a festive dish
+    note: "Svíčková takes its name from tenderloin and sits among the best-known Czech festive dishes. Creamy root-vegetable sauce and dumplings give it the sweet-savory richness associated with special meals. Families keep their own preferred balance of cream, spice, and garnish."
+    scope: "This describes the wider svíčková tradition; Vera's printed ingredients and method remain unchanged."
+    source_ids: [visitczechia-svickova]
+  - recipe_id: vera-r0002
+    label: A shortcut within the svíčková family
+    note: "The Czech title identifies slices of tenderloin and places this dish near the svíčková family. That family is known for creamy sauce and dumplings, but it leaves generous room for household shortcuts and variations. A quicker slice-based preparation belongs naturally beside its more ceremonial relatives."
+    scope: "This offers dish-family context only; Vera's wording and method remain unchanged."
+    source_ids: [visitczechia-svickova]
+  - recipe_id: vera-r0005
+    label: Czech goulash is a regional adaptation
+    note: "Czech goulash is a meat-and-onion stew, most often made with beef and paprika. Sauerkraut and game versions show how readily the dish changes from one table to another. Its roots are Central European, so it belongs to a shared regional tradition rather than to one country alone."
+    scope: "This describes the goulash family, not a claim that every ingredient or proportion in this cookbook recipe is standard."
+    source_ids: [visitczechia-goulash, visitczechia-regional-specialities]
+  - recipe_id: vera-r0012
+    label: A place in the Czech goulash family
+    note: "Goulash in Czech cooking is a flexible meat-and-onion stew, even though beef is its most familiar form. Veal, pork, mutton, sauerkraut, and game all make room for regional and household variations. The dish carries a shared Central European history rather than a single fixed recipe."
+    scope: "This is broader dish-family context; Vera's veal version is preserved exactly as printed."
+    source_ids: [visitczechia-goulash, visitczechia-regional-specialities]
+  - recipe_id: vera-r0018
+    label: A place in the Czech goulash family
+    note: "Goulash in Czech cooking is a flexible meat-and-onion stew, even though beef is its most familiar form. Veal, pork, mutton, sauerkraut, and game all make room for regional and household variations. The dish carries a shared Central European history rather than a single fixed recipe."
+    scope: "This is broader dish-family context; Vera's pork version is preserved exactly as printed."
+    source_ids: [visitczechia-goulash, visitczechia-regional-specialities]
+  - recipe_id: vera-r0019
+    label: Sauerkraut is a recognized goulash variation
+    note: "Sauerkraut goulash shows how a familiar stew can become brighter, tangier, and more wintry with preserved cabbage. Fermented cabbage has long been a practical cold-season ingredient across Central Europe. Here it turns the goulash family toward the sharp, savory side of the Czech table."
+    scope: "This describes a recognized variation, not a standard against which the cookbook transcription is judged."
+    source_ids: [visitczechia-goulash]
+  - recipe_id: vera-r0022
+    label: A place in the Czech goulash family
+    note: "The Czech goulash family begins with meat and onions but travels easily across different meats. Beef is the everyday reference point, while game and other meats appear in regional variations. Mutton gives this version a deeper, more pastoral place in that Central European stew tradition."
+    scope: "This is wider cultural context only; it does not classify the printed recipe as a traditional or definitive version."
+    source_ids: [visitczechia-goulash]
+  - recipe_id: vera-r0032
+    label: Duck with classic Czech accompaniments
+    note: "Roast duck with caraway, cabbage, and dumplings is one of the classic Czech restaurant combinations. Caraway brings its warm, earthy aroma to both meat and cabbage, making it a familiar Czech and Moravian seasoning. The pairing reflects a table built around roast juices, dumplings, and slowly cooked vegetables."
+    scope: "The note gives serving and flavor context; it does not add cabbage, dumplings, or apples to Vera's printed recipe."
+    source_ids: [visitczechia-regional-specialities, visitczechia-cuisine]
+  - recipe_id: vera-r0045
+    label: Freshwater fish from the pond country
+    note: "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. A baked carp belongs to the same long pond-to-table tradition."
+    scope: "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0046
+    label: A Christmas-Eve association
+    note: "Fried carp with potato salad is a classic Czech Christmas-Eve meal. The fish became part of the fasting supper, while potato salad brought a practical winter side dish to the table. That holiday association helps explain carp's prominent place in family cooking."
+    scope: "This notes a holiday association only; the recipe is not limited to Christmas."
+    source_ids: [visitczechia-christmas]
+  - recipe_id: vera-r0047
+    label: Freshwater fish from the pond country
+    note: "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. Paprika sauce gives this carp a warmer, more Central European accent."
+    scope: "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0049
+    label: Freshwater fish from the pond country
+    note: "South Bohemia's pond country, especially around Třeboň, has made freshwater fish a defining regional food. Carp and pike are both closely associated with that landscape of managed ponds. Cream sauce places pike within the rich, sauce-friendly side of Czech home cooking."
+    scope: "This is regional context for the fish family, not evidence that this recipe came from Třeboň or uses a regional method."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0050
+    label: Dill sauce alongside a Czech habit of pairing sauces and dumplings
+    note: "Czech cooking gives sauces an important place at the table, often with dumplings ready to catch every spoonful. Dill brings a fresh, aromatic counterpoint to creamy preparations. This trout recipe joins freshwater fish to that broader sauce tradition."
+    scope: "This is wider cuisine context; Vera's trout preparation remains unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0054
+    label: Cabbage in a classic Czech trio
+    note: "Roasted meat, dumplings, and stewed cabbage form one of the most recognizable Czech combinations. Cabbage brings softness and gentle acidity against richer roast juices. Green cabbage gives that familiar table setting its lighter, sweeter expression."
+    scope: "This describes a common serving context, not a required pairing for Vera's recipe."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0055
+    label: Cabbage in a classic Czech trio
+    note: "Roasted meat, dumplings, and stewed cabbage form one of the most recognizable Czech combinations. Cabbage brings softness and gentle acidity against richer roast juices. Red cabbage gives the plate its deeper color and a sweeter, fruit-friendly side."
+    scope: "This describes a common serving context, not a required pairing for Vera's recipe."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0056
+    label: Sauerkraut in the classic trio
+    note: "Sauerkraut belongs to the famous Czech trio of roast pork, dumplings, and cabbage. Its tang also appears in goulash variations, where it cuts through a long-cooked stew. Fermentation turns an ordinary cabbage into a durable winter ingredient with a distinct, lively flavor."
+    scope: "This is dish-family context only; it does not prescribe a serving for the cookbook's sauerkraut recipe."
+    source_ids: [visitczechia-cuisine, visitczechia-goulash]
+  - recipe_id: vera-r0059
+    label: Dumplings as a Czech calling card
+    note: "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This potato-based dumpling belongs to the sturdy, comforting side of that tradition."
+    scope: "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0060
+    label: Dumplings as a Czech calling card
+    note: "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This bread-and-crouton dumpling belongs to the lighter, sauce-soaking branch of the tradition."
+    scope: "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0061
+    label: Dumplings as a Czech calling card
+    note: "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This yeast dumpling adds a softer, airy branch to that wide Czech tradition."
+    scope: "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0062
+    label: Dumplings as a Czech calling card
+    note: "Dumplings are a Czech calling card, served at home and in restaurants wherever roast juices or sauces need company. Bread and potato versions are the two great everyday families. This potato dumpling belongs to the substantial, everyday side of that tradition."
+    scope: "This describes dumpling traditions generally; Vera's ingredients and method remain unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_id: vera-r0063
+    label: Potato salad at the Christmas table
+    note: "Potato salad is the classic partner for fried carp on a Czech Christmas-Eve table. Its cool, substantial character balances the hot fried fish and works well with winter ingredients. That pairing gives an everyday salad an especially strong holiday identity."
+    scope: "This is a cultural association, not a claim that the cookbook recipe is a Christmas-only preparation."
+    source_ids: [visitczechia-christmas]
+  - recipe_id: vera-r0064
+    label: Goulash moves easily into soup form
+    note: "Goulash is a broad Central European family rather than one fixed recipe. Meat and onions form its familiar core, while local cooks carry it toward thicker stews, sauerkraut variations, and soup. A bowl of goulash soup is therefore part of the family, not an outlier from it."
+    scope: "This is broader dish-family context; the cookbook's soup wording and method are preserved independently."
+    source_ids: [visitczechia-goulash]
+  - recipe_id: vera-r0085
+    label: Mazanec, the round Easter bread
+    note: "Mazanec is the round sweet bread of the Czech Easter table, traditionally baked on Holy Saturday. Almonds and raisins make it feel celebratory after Lent. The cross-cut on top carries a religious echo while also helping the loaf rise and release steam."
+    scope: "This contextual note describes the wider Easter bread tradition, not proof that Vera's loaf follows a specific regional custom."
+    source_ids: [visitczechia-mazanec, visitczechia-easter]
+  - recipe_id: vera-r0087
+    label: Vánočka and the Christmas table
+    note: "Vánočka is the braided raisin-and-almond bread of the Czech Christmas table. Its shape recalls swaddled Baby Jesus, and its braids were once thought to protect those gathered at the meal. The tradition reaches back to the fourteenth century."
+    scope: "This gives holiday context for the bread family; it does not authenticate any individual household recipe as medieval."
+    source_ids: [visitczechia-christmas]
+  - recipe_id: vera-r0110
+    label: Vanilla rolls among Christmas cookies
+    note: "Vanilla rolls belong among the small cookies that make a Czech Christmas table feel complete. Czech households often bake several varieties for the season, turning the holiday into a long-running home-baking ritual. The crescent shape and vanilla finish make these cookies especially recognizable."
+    scope: "This is a seasonal cultural note, not evidence that this cookbook's recipe is tied to one particular household custom."
+    source_ids: [visitczechia-christmas]
+
+groups:
+  - recipe_ids: [vera-r0003, vera-r0004, vera-r0006, vera-r0007, vera-r0013, vera-r0014, vera-r0017, vera-r0020, vera-r0021]
+    label: A Central European family table
+    note: "Czech cooking grew at the center of Europe, where courtly cooking and practical household food met at the same table. Roasts, cream sauces, stuffed meats, and smoked cuts all show that blend of abundance and thrift. These dishes carry the generous, sauce-friendly character of that Central European kitchen."
+    scope: "This sets a broader culinary scene; each recipe keeps its own printed ingredients and method."
+    source_ids: [visitczechia-cuisine]
+  - recipe_ids: [vera-r0009, vera-r0015]
+    label: Caraway's familiar Czech aroma
+    note: "Caraway is one of the seasonings most closely associated with Czech and Moravian cooking. Its warm, resinous flavor works especially well with roast veal and pork. A small scattering of the seeds can make a plain roast immediately recognizable."
+    scope: "This describes a regional seasoning habit; it does not add anything to the recipe."
+    source_ids: [visitczechia-cuisine]
+  - recipe_ids: [vera-r0010, vera-r0011, vera-r0016, vera-r0024, vera-r0035]
+    label: The golden cutlet tradition
+    note: "Breaded cutlets belong to a Central European tradition that crosses modern borders. The classic Wiener schnitzel is a veal escalope, and its first known Austrian mention dates to 1831. Pork, chicken, rabbit, and other meats carried the crisp flour-egg-breadcrumb method into many family kitchens."
+    scope: "This gives regional context for the breaded technique; Vera's chosen meat and method remain unchanged."
+    source_ids: [austria-wiener-schnitzel]
+  - recipe_ids: [vera-r0008, vera-r0029, vera-r0030]
+    label: Stuffing as a celebration of abundance
+    note: "Stuffed poultry turns bread, eggs, herbs, and meat into a dish meant for a fuller table. Czech Easter cooking especially treats stuffing as a sign that the lean season has ended. The technique also makes a festive use of every part of a household's provisions."
+    scope: "This is holiday and kitchen context, not a claim that these recipes belong to one occasion."
+    source_ids: [visitczechia-easter]
+  - recipe_ids: [vera-r0023, vera-r0025, vera-r0026, vera-r0027, vera-r0028, vera-r0033]
+    label: Poultry beyond the Sunday roast
+    note: "Czech cooking balances rich roasts with lighter poultry dishes and vegetable-forward sauces. Chicken and turkey appear in everyday meals as well as celebrations, while a wine or paprika sauce shifts the same bird into a more formal register. The range keeps the poultry chapter practical without making it plain."
+    scope: "This is wider kitchen context; each recipe's own treatment of the bird remains unchanged."
+    source_ids: [visitczechia-cuisine]
+  - recipe_ids: [vera-r0031]
+    label: Goose for St. Martin's Day
+    note: "Roast goose is the great Czech meal of St. Martin's Day on November 11. The autumn feast once marked the close of the farming year and the renewal of work agreements. Caraway, apples, cabbage, dumplings, and young wine turn the bird into a full seasonal ceremony."
+    scope: "This is a seasonal association; Vera's roast goose can be enjoyed at any time of year."
+    source_ids: [visitczechia-st-martin]
+  - recipe_ids: [vera-r0034, vera-r0036, vera-r0037, vera-r0038, vera-r0041, vera-r0042, vera-r0043, vera-r0044]
+    label: Autumn game from forest to table
+    note: "Game belongs to the autumn side of Czech cooking, when forest meats are at their best. Furred game often appears with cream sauce or wine, while feathered game welcomes aromatic herbs and rich stuffing. These recipes keep that seasonal, celebratory thread alive."
+    scope: "This describes a broader game-cooking tradition; it does not assign a season or origin to the cookbook recipes."
+    source_ids: [visitczechia-game]
+  - recipe_ids: [vera-r0051, vera-r0052, vera-r0053, vera-r0057, vera-r0058]
+    label: Everyday dishes with a place at the table
+    note: "Czech food is not only ceremonial roasts and elaborate sauces. Casseroles, filled vegetables, potatoes, and small dumplings show the equally important home-kitchen side of the tradition. These are the dishes that turn modest ingredients into a complete meal."
+    scope: "This is general household context; it does not classify any recipe as a fixed traditional version."
+    source_ids: [visitczechia-cuisine]
+  - recipe_ids: [vera-r0065, vera-r0066, vera-r0067, vera-r0068, vera-r0069, vera-r0070]
+    label: Soup as a meal, not a prelude
+    note: "A Czech soup can be substantial enough to warm and feed a household on its own. Thick potato soups are classic winter fare, while cream, milk, wine, beer, and tripe point to the older habit of making use of whatever the pantry or farm supplied. Each bowl carries a different answer to the same cold-weather question."
+    scope: "This describes the soup tradition broadly; Vera's individual recipes remain unchanged."
+    source_ids: [visitczechia-winter-cuisine]
+  - recipe_ids: [vera-r0071]
+    label: Koláče for gatherings
+    note: "Koláče are round, flat yeast pastries with a filled center. Poppy seed, cottage cheese, and plum butter are classic fillings, and the pastries appear at weddings, church gatherings, and other festive occasions. Their small size makes them as social as they are sweet."
+    scope: "This describes the wider koláč tradition; Vera's pastry retains its own printed filling and method."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0072]
+    label: Buchty, the filled bun
+    note: "Buchty are soft filled buns, often made with poppy seed, cottage cheese, or plum jam. They belong to the yeasted, home-baked side of Central European sweets rather than to a single formal occasion. A tray of buns turns a simple dough into something meant to share."
+    scope: "This provides family context for the bun style; Vera's printed recipe remains unchanged."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0073, vera-r0074, vera-r0075, vera-r0076, vera-r0077]
+    label: Fillings make one dough many things
+    note: "Czech festive baking often begins with a simple yeasted dough and changes character through its filling. Poppy seed, cottage cheese, fruit, nuts, and butter crumbs create a whole family of pastries from the same basic idea. Keeping the fillings separate makes that family easy to mix, match, and remember."
+    scope: "This is a baking-family note; it does not prescribe how any filling must be used."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0078, vera-r0079, vera-r0080]
+    label: Small sweet doughs and their sauces
+    note: "Tiny leavened cakes with vanilla cream are a beloved Czech sweet course. A warm sauce changes a small cake from a tea-time bite into a spoonable dessert. Vanilla and wine sauces show how a simple dough can move easily between everyday comfort and celebration."
+    scope: "This describes a dessert tradition generally; Vera's sauces and cakes remain exactly as printed."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0081, vera-r0082, vera-r0083, vera-r0084]
+    label: Yeast dough, poppy seed, and spa-town sweets
+    note: "Poppy seed, cottage cheese, and fruit fillings are among the signatures of Czech sweet baking. Yeast dough carries them into loaves, doughnuts, and small cakes, while Karlovy Vary adds its own spa-town biscuit tradition. Together they show how one pantry can produce very different treats."
+    scope: "This is broad baking context; it does not turn these recipes into one shared formula."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0086]
+    label: A Czech Easter word with two meanings nearby
+    note: "In Czech Easter custom, a pomlázka is the braided willow switch carried on Easter Monday as a symbol of returning health and spring. Braided sweet bread belongs to a neighboring Easter baking tradition. The difference is worth knowing while preserving the cookbook's family wording exactly as it stands."
+    scope: "This explains a cultural word, not a correction to the title or recipe."
+    source_ids: [visitczechia-easter]
+  - recipe_ids: [vera-r0088, vera-r0090, vera-r0091, vera-r0092, vera-r0093, vera-r0094, vera-r0095, vera-r0097, vera-r0098, vera-r0107]
+    label: The generous Czech cake table
+    note: "Czech sweet baking moves easily between simple family cakes and more decorated celebration cakes. Fruit, poppy seed, nuts, apples, and butter give the table variety without abandoning familiar pantry ingredients. A cake book like this preserves that pleasure in many small forms."
+    scope: "This is a broad baking note; it does not assign one occasion or origin to each cake."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0089]
+    label: Icing as a finishing touch
+    note: "A simple sugar icing gives a home-baked cake a bright, finished look with very little extra work. It can turn an everyday loaf into something fit for a tray of guests. Separate icing recipes reflect the practical, mix-and-match nature of family baking."
+    scope: "This is kitchen context for a finishing element; it does not prescribe its use on any one cake."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0096]
+    label: Strudel across the old imperial kitchen
+    note: "Apple strudel is one of the pastries shared across the former Habsburg world. Its thin dough and layered filling reflect a Central European kitchen shaped by exchange among Bohemian, Hungarian, Italian, and Austrian traditions. The roll carries that crossroads history in every slice."
+    scope: "This gives regional context for strudel; Vera's apple filling and method remain unchanged."
+    source_ids: [austria-viennese-cuisine]
+  - recipe_ids: [vera-r0099, vera-r0100]
+    label: Fruit dumplings follow the harvest
+    note: "Fruit dumplings are a Czech specialty with a long seasonal life. Plum fillings are among the best known, and potato dough became especially natural in places where potatoes were widely grown. Sweet dumplings can be lunch, supper, or dessert rather than a course with only one role."
+    scope: "This describes the wider fruit-dumpling tradition; Vera's dough and filling remain unchanged."
+    source_ids: [visitczechia-fruit-dumplings]
+  - recipe_ids: [vera-r0101, vera-r0103, vera-r0104]
+    label: Fruit in the frying pan
+    note: "Sweet Czech cooking makes room for fried fruit, pancakes, and other small batter dishes at many times of day. A slightly thicker crêpe and a warm fruit fritter both turn pantry basics into a relaxed shared treat. These recipes sit on the playful side of the sweet kitchen."
+    scope: "This is a wider dessert context; it does not alter the fruit or batter named in the cookbook."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0102]
+    label: Cabbage in a pastry pocket
+    note: "Cabbage is as comfortable inside a pastry as it is beside roast meat and dumplings. A pocket turns a humble winter vegetable into something portable, crisp, and shareable. It is a reminder that Czech baking has a savory side as well as a sweet one."
+    scope: "This is kitchen context for a savory pastry, not a claim about one fixed regional version."
+    source_ids: [visitczechia-cuisine]
+  - recipe_ids: [vera-r0105]
+    label: Fried sweets for a festive tray
+    note: "Delicate fried sweets belong to the celebration side of Central European baking. Their thin, crisp texture depends on a quick meeting of dough and hot fat rather than a long oven bake. A tray of them brings contrast to softer cakes and yeast buns."
+    scope: "This is general pastry context; it does not assign a particular feast day to the recipe."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0106]
+    label: A sweet twist on a familiar shape
+    note: "Pretzel shapes travel easily between savory bread and sweet baking. A sweet version turns a recognizable loop into a small confection, easy to glaze, sprinkle, or set beside coffee. The form itself is a reminder that bakery traditions cross borders and occasions."
+    scope: "This is form-and-technique context; Vera's sweet pretzels remain their own recipe."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0108, vera-r0109]
+    label: Cream fillings as a family toolkit
+    note: "Chocolate and mocha creams are building blocks for celebration baking. One bowl of filling can finish a cake, sandwich a cookie, or turn a plain sponge into dessert. Separate cream recipes make that flexible family toolkit visible."
+    scope: "This is kitchen context for the fillings; it does not prescribe a single finished dessert."
+    source_ids: [visitczechia-sweet-delicacies]
+  - recipe_ids: [vera-r0111, vera-r0112, vera-r0113]
+    label: Small confections, big occasions
+    note: "Small butter-rich cookies and truffles are made for a tray of choices rather than one large slice. Their size invites variety: a family can offer several shapes, flavors, and textures at once. That abundance is part of the pleasure of holiday and celebration baking."
+    scope: "This describes a shared confectionery setting; each recipe keeps its own ingredients and method."
+    source_ids: [visitczechia-christmas, visitczechia-sweet-delicacies]

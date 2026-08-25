@@ -12,25 +12,37 @@ publication-safe cookbook reader.
 
 ## Now
 
-- [ ] `TASK-006` Build and deploy an optimized public GitHub Pages reader.
-  Publish the derived reader bundle and its public-facing assets through a
-  repeatable workflow; retain canonical source material unchanged.
+- No selected implementation task. Choose the next reader improvement before
+  changing the local working tree.
 
 ## Next
 
 - Add a print / Save as PDF experience after the public reader is live.
-- [ ] `TASK-007` After pending UI work, add a cited recipe-context and
-  cook's-learning layer: Czech/Czechoslovak context, traditional
-  preparation/serving, qualified curiosities, and explanations of unfamiliar
-  techniques or ingredients. Keep it separate from canonical transcription;
-  distinguish evidence, interpretation, and unknowns.
-- [ ] `TASK-008` After the recipe-context work, explore a small stylized
+- [ ] `TASK-008` After the source-reader navigation work, explore a small stylized
   portrait mark of Vera for optional reader branding, using owner-supplied
   photographs and testing it against the existing recipe-study illustration
   language before it becomes part of the interface.
 
 ## Completed
 
+- [x] `TASK-009` Replaced the **View source** popup with an in-place
+  source-reader state in the existing collection panel. It retains the
+  grayscale reading copies and original-scan links; Back and Escape return to
+  the selected recipe without losing the reader state. Desktop and narrow
+  mobile checks passed with no source dialog or console errors. This local work
+  remains uncommitted and has not changed hosting or publication.
+- [x] `TASK-007` Added a separate cited recipe-context and cook-learning
+  layer for all 110 recipes. The local reader derivative presents 25
+  recipe-specific notes and 85 carefully bounded family notes, each with a
+  visible source link and an explicit wider-tradition boundary. Canonical
+  recipe YAML, scans, and audit evidence remain unchanged; the context
+  validator reports 110/110 coverage with 14 registered sources. This local
+  work remains uncommitted and has not changed hosting or publication.
+- [x] `TASK-006` Built and deployed the derived public reader through the
+  GitHub Pages workflow while retaining the canonical source material
+  unchanged. The workflow deployment at `c9fe031` completed successfully;
+  this status records the verified delivery state and does not change hosting
+  settings.
 - [x] `TASK-005` Built and locally integrated 783 delivery copies: responsive
   AVIF/WebP recipe illustrations and lossless-WebP source-reader pages with
   PNG fallback. PNG masters and canonical data remain authoritative; no

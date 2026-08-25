@@ -11,6 +11,7 @@ require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
 RECIPES_PATH = File.join(ROOT, "data", "recipes", "*.yaml")
+CONTEXT_PATH = File.join(ROOT, "context", "recipe-context.yml")
 OUTPUT_PATH = File.join(ROOT, "site", "data", "recipes.json")
 SOURCE_PREVIEW_OUTPUT_DIRECTORY = File.join(ROOT, "site", "assets", "source-pilot")
 SOURCE_VIEWER_OUTPUT_DIRECTORY = File.join(ROOT, "site", "assets", "source-viewer")
@@ -63,7 +64,42 @@ def illustration_for(record)
   }
 end
 
+def history_for(recipe_id, entries, sources)
+  entry = entries[recipe_id]
+  return unless entry
+
+  {
+    label: entry.fetch("label"),
+    note: entry.fetch("note"),
+    scope: entry.fetch("scope"),
+    citations: entry.fetch("source_ids").map do |source_id|
+      source = sources.fetch(source_id)
+      {
+        title: source.fetch("title"),
+        publisher: source.fetch("publisher"),
+        url: source.fetch("url"),
+        accessedOn: source.fetch("accessed_on")
+      }
+    end
+  }
+end
+
+def normalized_context_entries(document)
+  individual_entries = document.fetch("entries", [])
+  grouped_entries = document.fetch("groups", []).flat_map do |group|
+    recipe_ids = group.fetch("recipe_ids")
+    shared_entry = group.reject { |key, _| key == "recipe_ids" }
+    recipe_ids.map { |recipe_id| shared_entry.merge("recipe_id" => recipe_id) }
+  end
+
+  individual_entries + grouped_entries
+end
+
 FileUtils.mkdir_p(SOURCE_PREVIEW_OUTPUT_DIRECTORY)
+
+context_document = YAML.load_file(CONTEXT_PATH)
+context_sources = context_document.fetch("sources").to_h { |source| [source.fetch("source_id"), source] }
+context_by_recipe_id = normalized_context_entries(context_document).to_h { |entry| [entry.fetch("recipe_id"), entry] }
 
 records = Dir[RECIPES_PATH].sort.map do |path|
   record = YAML.load_file(path)
@@ -92,6 +128,7 @@ records = Dir[RECIPES_PATH].sort.map do |path|
     sourceRegions: record.fetch("source_regions").select { |region| region["role"] == "title" }.map { |region| region["region_image"] },
     sourcePreview: source_preview_for(record),
     illustration: illustration_for(record),
+    history: history_for(record.fetch("recipe_id"), context_by_recipe_id, context_sources),
     verification: record.dig("verification", "status")
   }
 end.compact

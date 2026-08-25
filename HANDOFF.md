@@ -2,21 +2,21 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-24T22:40:31Z
-Generated from commit: 962d21ea31b7
+Generated at: 2026-08-25T06:45:12Z
+Generated from commit: c9fe0310a30f
 Git observed at generation: branch main, upstream origin/main, dirty
-Manifest SHA-256: 6dd64461d75839e0535e66c0d719467552fd5d2a4385456f08e8b477d77e1900
-Board SHA-256: 86daa48bc8b5063cac26dc30a235d836b11677d9b0e80499915c7d2bed222b84
+Manifest SHA-256: a07581de2b59d73604750272cc43b6fdef414c7b2bb16141a5b3ebcbe8deff1b
+Board SHA-256: 9f9746ae2884fb85bcf0fa629d7262ee99cb10d1150f61c7facc591b30b53734
 Plan SHA-256: none
-Latest session SHA-256: 3f14d43c0a60f6d8c688be84e4bbea39fd5b6d1e904b4121864df2d7df7ce2b4
-Upstream at generation: origin/main 962d21ea31b73c3ef1038d44318a20ba393a50e5
+Latest session SHA-256: 05ab19d5c25801b1c4c792b7fd7df1e88be6a5a5a722145703b310920095a764
+Upstream at generation: origin/main c9fe0310a30f02fe9cabbe9e9d8230aed948c865
 Profile: lite
 
 ## Wake-up snapshot
 
-- Current objective: `TASK-006` Build and deploy an optimized public GitHub Pages reader.
-- Current task IDs: TASK-006
-- Next safe action: Continue current objective: `TASK-006` Build and deploy an optimized public GitHub Pages reader.
+- Current objective: No selected implementation task. Choose the next reader improvement before
+- Current task IDs: None.
+- Next safe action: Continue current objective: No selected implementation task. Choose the next reader improvement before
 
 ## Active blockers
 
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260824T224031081674Z-macbook-052r3-a1855c6b41034021a28b438f05b1b7c7.md
-- Summary: Checkpoint only.
+- Session: SESSIONS/20260825T064512612569Z-macbook-052r3-af305aead7c944178d2b373ad757afbc.md
+- Summary: Replaced the source dialog with a central source-reader state that preserves source-page copies and original-scan links.
 
 ## Source pointers
 
