@@ -236,8 +236,8 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid 
   .saved-button svg { width: 1.45rem; height: 1.45rem; }
   .reader-layout { display: flex; flex-direction: column; }
   .collection-nav { order: 1; padding: 1rem; border-right: 0; border-bottom: 1px solid var(--line); }
-  .collection-tabs { display: flex; gap: .55rem; overflow-x: auto; padding-bottom: .2rem; margin-top: .7rem; }
-  .collection-tab { flex: 0 0 auto; display: inline-flex; gap: .45rem; width: auto; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 99px; font-size: .86rem; }
+  .collection-tabs { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .7rem; }
+  .collection-tab { flex: 0 0 auto; display: inline-flex; min-height: 2.75rem; gap: .45rem; width: auto; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 99px; font-size: .86rem; line-height: 1.1; }
   .collection-tab .tab-count { display: none; }
   .source-note { display: none; }
   .recipe-library { order: 2; padding: 1.25rem 1rem 2rem; }
