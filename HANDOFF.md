@@ -2,14 +2,14 @@
 
 # vera-cookbook Handoff
 
-Generated at: 2026-08-25T06:45:12Z
-Generated from commit: c9fe0310a30f
+Generated at: 2026-08-26T15:55:24Z
+Generated from commit: e0078b89fe5b
 Git observed at generation: branch main, upstream origin/main, dirty
 Manifest SHA-256: a07581de2b59d73604750272cc43b6fdef414c7b2bb16141a5b3ebcbe8deff1b
 Board SHA-256: 9f9746ae2884fb85bcf0fa629d7262ee99cb10d1150f61c7facc591b30b53734
 Plan SHA-256: none
-Latest session SHA-256: 05ab19d5c25801b1c4c792b7fd7df1e88be6a5a5a722145703b310920095a764
-Upstream at generation: origin/main c9fe0310a30f02fe9cabbe9e9d8230aed948c865
+Latest session SHA-256: 3c7edb944c475f1c3fef8b3b6f22e2a839b70f32edd50379517be0fecc6dced7
+Upstream at generation: origin/main e0078b89fe5b0c079e9322eaf2a2c023e122781d
 Profile: lite
 
 ## Wake-up snapshot
@@ -28,8 +28,8 @@ Profile: lite
 
 ## Latest curated session
 
-- Session: SESSIONS/20260825T064512612569Z-macbook-052r3-af305aead7c944178d2b373ad757afbc.md
-- Summary: Replaced the source dialog with a central source-reader state that preserves source-page copies and original-scan links.
+- Session: SESSIONS/20260826T155524970589Z-macbook-052r3-aafa6b83789447d09dd69a5bc28bf409.md
+- Summary: Refined the Vera cookbook reader header, portrait treatment, in-page source viewing, and mobile browse-category wrapping.
 
 ## Source pointers
 
